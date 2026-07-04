@@ -1,0 +1,43 @@
+:root {
+  --bg: #12151b; --panel: #1a1f28; --line: #2a3342;
+  --txt: #dce3ee; --dim: #8b97a8; --acc: #7fb4ff; --warm: #e8b25c;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 260px; background: var(--bg); color: var(--txt);
+  font: 14px/1.5 -apple-system, 'Segoe UI', sans-serif; padding: 20px 18px; }
+.wrap { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+
+.orb-box { position: relative; width: 96px; height: 96px; display: flex; align-items: center; justify-content: center; }
+.orb { width: 44px; height: 44px; border-radius: 50%;
+  background: radial-gradient(circle at 40% 38%, #9ecbff, #4a78c8);
+  box-shadow: 0 0 24px rgba(127, 180, 255, 0.35);
+  transition: width .8s ease, height .8s ease, opacity .8s ease, background .8s ease;
+  animation: breathe 7s ease-in-out infinite; opacity: .85; }
+.orb.off { animation: none; background: none; border: 1.5px solid var(--dim); box-shadow: none; width: 28px; height: 28px; opacity: .6; }
+@keyframes breathe { 0%,100% { transform: scale(.9); opacity: .7; } 50% { transform: scale(1.08); opacity: 1; } }
+.remaining { position: absolute; bottom: -2px; font-size: 12px; color: var(--dim); font-variant-numeric: tabular-nums; }
+
+.phase-label { font-size: 12.5px; color: var(--dim); letter-spacing: .04em; min-height: 16px; }
+
+.primary { width: 100%; padding: 11px; border: none; border-radius: 12px;
+  background: var(--acc); color: #0e1116; font-size: 14px; font-weight: 600; cursor: pointer; transition: background .2s; }
+.primary:hover { background: #9ec6ff; }
+.primary:disabled { background: var(--line); color: var(--dim); cursor: default; }
+
+.durations { display: flex; gap: 8px; width: 100%; }
+.chip { flex: 1; padding: 7px; border: 1px solid var(--line); border-radius: 9px;
+  background: transparent; color: var(--dim); font-size: 13px; cursor: pointer; }
+.chip.active { border-color: var(--acc); color: var(--txt); }
+
+.secondary { width: 100%; padding: 8px; border: 1px solid var(--line); border-radius: 10px;
+  background: transparent; color: var(--dim); font-size: 13px; cursor: pointer; }
+.secondary:hover { color: var(--txt); }
+
+.tune { width: 100%; margin-top: 4px; }
+.tune summary { font-size: 12px; color: var(--dim); cursor: pointer; list-style: none; text-align: center; }
+.tune summary::-webkit-details-marker { display: none; }
+.tune label { display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  font-size: 12px; color: var(--dim); margin-top: 10px; }
+.tune input[type=range] { flex: 1; accent-color: var(--acc); }
+
+.hidden { display: none !important; }

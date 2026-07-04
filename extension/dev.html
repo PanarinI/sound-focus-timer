@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Tide — dev-стенд движка</title>
+  <style>
+    body { background: #12151b; color: #dce3ee; font: 15px/1.6 -apple-system, 'Segoe UI', sans-serif;
+      display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 40px 20px; }
+    h1 { font-size: 20px; font-weight: 600; }
+    .hint { color: #8b97a8; font-size: 13px; max-width: 460px; text-align: center; }
+    .orb-box { width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; }
+    #orb { width: 60px; height: 60px; border-radius: 50%;
+      background: radial-gradient(circle at 40% 38%, #9ecbff, #4a78c8);
+      box-shadow: 0 0 40px rgba(127,180,255,.35); transition: all .8s ease; }
+    .row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; max-width: 520px; }
+    button { padding: 10px 16px; border: 1px solid #2a3342; border-radius: 10px;
+      background: #1a1f28; color: #dce3ee; font-size: 14px; cursor: pointer; }
+    button.primary { background: #7fb4ff; color: #0e1116; border: none; font-weight: 600; }
+    button:hover { border-color: #7fb4ff; }
+    .state { font-variant-numeric: tabular-nums; color: #8b97a8; font-size: 14px; min-height: 22px; }
+    label { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #8b97a8; }
+    .tune { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
+    .fast { color: #e8b25c; }
+  </style>
+</head>
+<body>
+  <h1>🌊 Tide — стенд движка</h1>
+  <p class="hint">Это движок расширения как есть, в обычной странице. Жми <b>Включить</b> (звук
+    запускается по клику — таково правило браузеров), потом <b>Сессия</b>. В <span class="fast">быстром
+    режиме</span> вся арка (собирание → ткань → рассвет) укладывается в ~1 минуту, чтобы услышать целиком.</p>
+
+  <div class="orb-box"><div id="orb"></div></div>
+  <div class="state" id="state">выключено</div>
+
+  <div class="row">
+    <button class="primary" id="on">Включить (ручей)</button>
+    <button id="session">Сессия</button>
+    <button id="pause">Пауза</button>
+    <button id="resume">Продолжить</button>
+    <button id="end">Завершить</button>
+    <button id="off">Выключить</button>
+  </div>
+
+  <label><input type="checkbox" id="fast" checked> быстрый режим (арка ~1 мин)</label>
+
+  <div class="tune">
+    <label>светлее <input type="range" id="brightness" min="-0.3" max="0.3" step="0.02" value="0"></label>
+    <label>плотнее <input type="range" id="density" min="-0.4" max="0.4" step="0.02" value="0"></label>
+    <label>громче <input type="range" id="volume" min="-0.4" max="0.4" step="0.02" value="0"></label>
+  </div>
+
+  <script src="engine.js"></script>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const engine = new AudioEngine((st) => {
+      const rem = st.remaining ? ' · ' + Math.floor(st.remaining / 60) + ':' + String(Math.floor(st.remaining % 60)).padStart(2, '0') : '';
+      $('state').textContent = st.phase + rem + (st.justEnded ? '  ✓ сессия завершена' : '');
+      const d = Math.max(0, Math.min(1, st.depth || 0.15));
+      const b = Math.max(0, Math.min(1.2, st.brightness || 0.6));
+      const px = 40 + d * 60;
+      $('orb').style.width = $('orb').style.height = px + 'px';
+      const warm = Math.round(90 + b * 150), g = Math.round(120 + b * 90), bl = Math.round(210 - b * 70);
+      $('orb').style.background = `radial-gradient(circle at 40% 38%, rgb(${warm + 40},${g + 40},${bl}), rgb(${warm - 20},${g - 30},${bl - 60}))`;
+      $('orb').style.opacity = st.on ? (0.6 + d * 0.4) : 0.3;
+    });
+
+    function applyFast() {
+      if ($('fast').checked) { engine.GATHER = 12; engine.DAWN = 15; }
+      else { engine.GATHER = 60; engine.DAWN = 120; }
+    }
+    $('fast').addEventListener('change', applyFast);
+    applyFast();
+
+    $('on').addEventListener('click', () => engine.turnOn());
+    $('session').addEventListener('click', () => engine.startSession($('fast').checked ? 45 : 3000));
+    $('pause').addEventListener('click', () => engine.pause());
+    $('resume').addEventListener('click', () => engine.resume());
+    $('end').addEventListener('click', () => engine.endSession());
+    $('off').addEventListener('click', () => engine.turnOff());
+    ['brightness', 'density', 'volume'].forEach((k) => {
+      $(k).addEventListener('input', () => engine.setChar({ [k]: +$(k).value }));
+    });
+  </script>
+</body>
+</html>
