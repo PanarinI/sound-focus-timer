@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Tide — дегустация звука</title>
+  <style>
+    :root { --bg:#12151b; --panel:#1a1f28; --line:#2a3342; --txt:#dce3ee; --dim:#8b97a8; --acc:#7fb4ff; --warm:#e8b25c; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { background:var(--bg); color:var(--txt); font:15px/1.6 -apple-system,'Segoe UI',sans-serif;
+      display:flex; flex-direction:column; align-items:center; gap:20px; padding:36px 20px 60px; }
+    h1 { font-size:20px; font-weight:600; }
+    .hint { color:var(--dim); font-size:13.5px; max-width:520px; text-align:center; }
+    .hint b { color:var(--txt); }
+    .cards { display:flex; flex-direction:column; gap:12px; width:100%; max-width:520px; }
+    .card { border:1px solid var(--line); border-radius:14px; padding:16px 18px; cursor:pointer;
+      background:var(--panel); transition:border-color .2s, background .2s; display:flex; gap:14px; align-items:center; }
+    .card:hover { border-color:var(--acc); }
+    .card.active { border-color:var(--acc); background:#1e2735; }
+    .dot { width:16px; height:16px; border-radius:50%; flex:none; background:#3a4759; transition:background .4s, box-shadow .4s; }
+    .card.active .dot { background:var(--acc); box-shadow:0 0 14px var(--acc); }
+    .card h3 { font-size:15px; margin-bottom:2px; }
+    .card p { font-size:12.5px; color:var(--dim); }
+    .controls { display:flex; gap:14px; align-items:center; margin-top:6px; }
+    button { padding:9px 18px; border:1px solid var(--line); border-radius:10px; background:var(--panel);
+      color:var(--txt); font-size:14px; cursor:pointer; }
+    button.primary { background:var(--acc); color:#0e1116; border:none; font-weight:600; }
+    button:hover { border-color:var(--acc); }
+    label { display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--dim); }
+    input[type=range] { accent-color:var(--acc); }
+    .note { color:var(--warm); font-size:12.5px; max-width:520px; text-align:center; }
+    .status { font-size:13px; color:var(--dim); min-height:18px; }
+  </style>
+</head>
+<body>
+  <h1>🌊 Tide — дегустация звука</h1>
+  <p class="hint">Четыре генеративных характера (без единого файла — всё считается на лету).
+    Нажми карточку — звук мягко перетечёт в неё. <b>Слушай не в упор, а фоном, пока читаешь/работаешь</b> —
+    так честнее. Ищем не «вау», а «не хочется выключить через 20 минут».</p>
+
+  <div class="controls">
+    <button class="primary" id="startBtn">▶ Запустить звук</button>
+    <button id="stopBtn">Стоп</button>
+    <label>громкость <input type="range" id="vol" min="0" max="1" step="0.02" value="0.5"></label>
+  </div>
+  <div class="status" id="status">звук выключен · нажми «Запустить»</div>
+
+  <div class="cards" id="cards">
+    <div class="card" data-i="0"><div class="dot"></div><div>
+      <h3>1 · Brown — тёплый шум</h3>
+      <p>Мягкий низкий шум (любимец рынка: «brown noise»). Тёплый, ровный, без тона. Медленно дышит фильтром.</p></div></div>
+    <div class="card" data-i="1"><div class="dot"></div><div>
+      <h3>2 · Pink — воздушный шум</h3>
+      <p>Сбалансированный «шелест» — чуть светлее brown, ближе к шуму дождя/листвы. Природный, безопасный.</p></div></div>
+    <div class="card" data-i="2"><div class="dot"></div><div>
+      <h3>3 · Ветер — шум с порывами</h3>
+      <p>Полосовой шум с медленными наплывами громкости и тембра — как ветер за окном. Живой, стохастичный.</p></div></div>
+    <div class="card" data-i="3"><div class="dot"></div><div>
+      <h3>4 · Шум + далёкий тон (с пространством)</h3>
+      <p>Тихий шумовой ковёр + еле слышный высокий аккорд, утопленный в реверб — тон есть, но «вдали», без «трубы».</p></div></div>
+  </div>
+
+  <p class="note">Тест на 20 минут: включи любимый характер и просто работай. Вернулся мыслью к звуку —
+    хорошо; захотел выключить — мимо.</p>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    let AC = null, master = null, chars = [], active = -1, started = false;
+
+    // --- генерация цветного шума (правильными алгоритмами, а не белый-через-фильтр) ---
+    function fillWhite(d){ for (let i=0;i<d.length;i++) d[i]=Math.random()*2-1; }
+    function fillPink(d){ // Paul Kellet
+      let b0=0,b1=0,b2=0,b3=0,b4=0,b5=0,b6=0;
+      for (let i=0;i<d.length;i++){ const w=Math.random()*2-1;
+        b0=0.99886*b0+w*0.0555179; b1=0.99332*b1+w*0.0750759; b2=0.96900*b2+w*0.1538520;
+        b3=0.86650*b3+w*0.3104856; b4=0.55000*b4+w*0.5329522; b5=-0.7616*b5-w*0.0168980;
+        d[i]=(b0+b1+b2+b3+b4+b5+b6+w*0.5362)*0.11; b6=w*0.115926; }
+    }
+    function fillBrown(d){ let last=0;
+      for (let i=0;i<d.length;i++){ const w=Math.random()*2-1; last=(last+0.02*w)/1.02; d[i]=last*3.5; }
+    }
+    function noiseBuf(fill){ const len=AC.sampleRate*8; const b=AC.createBuffer(1,len,AC.sampleRate); fill(b.getChannelData(0)); return b; }
+    function loopSrc(buf){ const s=AC.createBufferSource(); s.buffer=buf; s.loop=true; s.start(); return s; }
+
+    // генеративный реверб: импульс = затухающий шум (стерео)
+    function makeReverb(seconds, decay){
+      const len=AC.sampleRate*seconds, ir=AC.createBuffer(2,len,AC.sampleRate);
+      for (let ch=0;ch<2;ch++){ const d=ir.getChannelData(ch);
+        for (let i=0;i<len;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/len,decay); }
+      const cv=AC.createConvolver(); cv.buffer=ir; return cv;
+    }
+    function slowLFO(rate, depth, target, base){ // медленный дрейф параметра
+      const o=AC.createOscillator(), g=AC.createGain();
+      o.frequency.value=rate; g.gain.value=depth; o.connect(g); g.connect(target);
+      target.value=base; o.start(); return o;
+    }
+
+    function build(){
+      master=AC.createGain(); master.gain.value=+$('vol').value; master.connect(AC.destination);
+      const reverb=makeReverb(3.2,2.5); const revGain=AC.createGain(); revGain.gain.value=0.9; reverb.connect(revGain); revGain.connect(master);
+
+      const mk=()=>{ const g=AC.createGain(); g.gain.value=0; return g; }; // вход характера (кроссфейд)
+
+      // 1 · Brown
+      { const g=mk(); const s=loopSrc(noiseBuf(fillBrown));
+        const f=AC.createBiquadFilter(); f.type='lowpass'; f.frequency.value=480; f.Q.value=0.5;
+        slowLFO(0.02,120,f.frequency,480); s.connect(f); f.connect(g); g.connect(master); chars.push({g,dry:0.9}); }
+
+      // 2 · Pink
+      { const g=mk(); const s=loopSrc(noiseBuf(fillPink));
+        const f=AC.createBiquadFilter(); f.type='lowpass'; f.frequency.value=1200; f.Q.value=0.4;
+        slowLFO(0.03,300,f.frequency,1200); s.connect(f); f.connect(g); g.connect(master);
+        const send=AC.createGain(); send.gain.value=0.15; f.connect(send); send.connect(reverb); chars.push({g,dry:0.5}); }
+
+      // 3 · Ветер — полосовой шум с порывами
+      { const g=mk(); const s=loopSrc(noiseBuf(fillWhite));
+        const f=AC.createBiquadFilter(); f.type='bandpass'; f.frequency.value=620; f.Q.value=0.8;
+        slowLFO(0.05,380,f.frequency,620);            // порывы тембра
+        const gust=AC.createGain(); gust.gain.value=0.7; slowLFO(0.06,0.4,gust.gain,0.6); // порывы громкости
+        s.connect(f); f.connect(gust); gust.connect(g); g.connect(master);
+        const send=AC.createGain(); send.gain.value=0.2; gust.connect(send); send.connect(reverb); chars.push({g,dry:0.75}); }
+
+      // 4 · Шум + далёкий тон в реверабе
+      { const g=mk();
+        const s=loopSrc(noiseBuf(fillBrown)); const bf=AC.createBiquadFilter(); bf.type='lowpass'; bf.frequency.value=600;
+        const bed=AC.createGain(); bed.gain.value=0.35; s.connect(bf); bf.connect(bed); bed.connect(g);
+        // тихий высокий аккорд (кварта/квинта), без тремоло — весь в реверб
+        const tone=AC.createGain(); tone.gain.value=0.05;
+        [220, 293.66, 329.63].forEach((fr,idx)=>{ const o=AC.createOscillator(); o.type='sine'; o.frequency.value=fr;
+          const og=AC.createGain(); og.gain.value=idx===0?0.5:0.32; o.connect(og); og.connect(tone); o.start(); });
+        const tlp=AC.createBiquadFilter(); tlp.type='lowpass'; tlp.frequency.value=900; tone.connect(tlp);
+        tlp.connect(reverb);                 // тон — целиком в пространство
+        const toneDry=AC.createGain(); toneDry.gain.value=0.12; tlp.connect(toneDry); toneDry.connect(g);
+        g.connect(master); chars.push({g,dry:1.0}); }
+    }
+
+    function select(i){
+      active=i;
+      chars.forEach((c,idx)=> c.g.gain.setTargetAtTime(idx===i?c.dry:0, AC.currentTime, 1.2));
+      [...document.querySelectorAll('.card')].forEach((el,idx)=> el.classList.toggle('active', idx===i));
+      $('status').textContent = 'играет: характер ' + (i+1);
+    }
+
+    $('startBtn').addEventListener('click', ()=>{
+      if (!started){ AC=new (window.AudioContext||window.webkitAudioContext)(); build(); started=true; }
+      if (AC.state==='suspended') AC.resume();
+      if (active<0) select(0);
+      $('status').textContent = 'играет: характер ' + (active+1);
+    });
+    $('stopBtn').addEventListener('click', ()=>{ if(!started) return; chars.forEach(c=>c.g.gain.setTargetAtTime(0,AC.currentTime,0.8));
+      [...document.querySelectorAll('.card')].forEach(el=>el.classList.remove('active')); active=-1; $('status').textContent='звук приглушён'; });
+    $('vol').addEventListener('input', ()=>{ if(master) master.gain.setTargetAtTime(+$('vol').value, AC.currentTime, 0.3); });
+    document.querySelectorAll('.card').forEach(el=> el.addEventListener('click', ()=>{
+      if(!started){ $('startBtn').click(); } select(+el.dataset.i); }));
+  </script>
+</body>
+</html>

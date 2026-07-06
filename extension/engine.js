@@ -27,7 +27,8 @@
       this.noiseGain = null; this.noiseFilter = null;
       this.tickTimer = null;
       this.cur = { master: 0, depth: 0.15, brightness: timeOfDayBrightness() };
-      this.char = { brightness: 0, density: 0, volume: 0 }; // пользовательские крутилки
+      // balance: 0 = чистый тон (пад), 1 = чистый шум. По умолчанию шум впереди.
+      this.char = { balance: 0.62, brightness: 0, volume: 0 };
       this.phase = 'off';
       this.phaseStart = 0;
       this.sessionDur = 0;
@@ -52,9 +53,9 @@
         }
         o.start(); return { o, gg };
       };
-      mkOsc(55, 0.5, 0.05, 0.4);
-      mkOsc(82.41, 0.28, 0.073, 0.5);
-      this.osc3 = mkOsc(164.81, 0.14, 0.031, 0.6); // верхний синус — красится яркостью
+      mkOsc(55, 0.16, 0.05, 0.4);      // низ приглушён — чтобы не «дудело в трубу»
+      mkOsc(82.41, 0.15, 0.073, 0.5);
+      this.osc3 = mkOsc(164.81, 0.10, 0.031, 0.6); // верхний синус — красится яркостью
 
       // шум: дыхание фильтрованного шума
       const bl = AC.createBuffer(1, AC.sampleRate * 3, AC.sampleRate);
@@ -73,14 +74,19 @@
       if (!this.AC) return;
       const t = this.AC.currentTime;
       const bright = clamp(this.cur.brightness + this.char.brightness, 0, 1.2);
-      const depth = clamp(this.cur.depth + this.char.density * 0.3, 0, 1);
+      const depth = clamp(this.cur.depth, 0, 1);
       const vol = clamp(1 + this.char.volume, 0, 1.6);
+      const balance = clamp(this.char.balance, 0, 1); // 0 тон … 1 шум
 
-      this.master.gain.setTargetAtTime(this.cur.master * vol * 0.5, t, 1.5);
-      this.noiseGain.gain.setTargetAtTime(0.08 + depth * 0.20, t, 2.0);
-      const cutoff = lerp(280, 900, bright) - depth * 120;
-      this.noiseFilter.frequency.setTargetAtTime(clamp(cutoff, 180, 1400), t, 2.0);
-      if (this.osc3) this.osc3.gg.gain.setTargetAtTime(0.06 + bright * 0.14, t, 2.0);
+      this.master.gain.setTargetAtTime(this.cur.master * vol * 0.42, t, 1.5);
+      // пад тише при сдвиге к шуму — и вообще мягче
+      this.padGain.gain.setTargetAtTime(lerp(0.85, 0.16, balance), t, 2.0);
+      // шум — основной материал: растёт с глубиной и со сдвигом к шуму
+      this.noiseGain.gain.setTargetAtTime((0.12 + depth * 0.22) * lerp(0.6, 1.7, balance), t, 2.0);
+      // более воздушный/шелестящий шум — выше срез фильтра (был глухой рокот)
+      const cutoff = lerp(520, 1750, bright) - depth * 110;
+      this.noiseFilter.frequency.setTargetAtTime(clamp(cutoff, 320, 2300), t, 2.0);
+      if (this.osc3) this.osc3.gg.gain.setTargetAtTime((0.05 + bright * 0.11) * (1 - balance * 0.5), t, 2.0);
     }
 
     _remaining() {

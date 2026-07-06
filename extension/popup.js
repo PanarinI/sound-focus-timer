@@ -80,7 +80,7 @@ document.querySelectorAll('.chip').forEach((ch) => {
   });
 });
 
-['brightness', 'density', 'volume'].forEach((k) => {
+['balance', 'brightness', 'volume'].forEach((k) => {
   $(k).addEventListener('input', () => {
     cmd('setChar', { char: { [k]: +$(k).value } });
   });
