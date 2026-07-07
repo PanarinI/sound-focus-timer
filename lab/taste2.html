@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Tide — дегустация v2 (ADHD-ядро)</title>
+  <style>
+    :root { --bg:#12151b; --panel:#1a1f28; --line:#2a3342; --txt:#dce3ee; --dim:#8b97a8; --acc:#7fb4ff; --warm:#e8b25c; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { background:var(--bg); color:var(--txt); font:15px/1.6 -apple-system,'Segoe UI',sans-serif;
+      display:flex; flex-direction:column; align-items:center; gap:18px; padding:34px 20px 60px; }
+    h1 { font-size:20px; font-weight:600; }
+    .hint { color:var(--dim); font-size:13.5px; max-width:540px; text-align:center; }
+    .hint b { color:var(--txt); }
+    .cards { display:flex; flex-direction:column; gap:10px; width:100%; max-width:540px; }
+    .card { border:1px solid var(--line); border-radius:12px; padding:13px 16px; cursor:pointer;
+      background:var(--panel); display:flex; gap:12px; align-items:center; transition:border-color .2s, background .2s; }
+    .card:hover { border-color:var(--acc); }
+    .card.active { border-color:var(--acc); background:#1e2735; }
+    .dot { width:14px; height:14px; border-radius:50%; flex:none; background:#3a4759; transition:.4s; }
+    .card.active .dot { background:var(--acc); box-shadow:0 0 12px var(--acc); }
+    .card h3 { font-size:14.5px; } .card p { font-size:12px; color:var(--dim); }
+    .controls { display:flex; gap:12px; align-items:center; flex-wrap:wrap; justify-content:center; }
+    button { padding:9px 18px; border:1px solid var(--line); border-radius:10px; background:var(--panel);
+      color:var(--txt); font-size:14px; cursor:pointer; }
+    button.primary { background:var(--acc); color:#0e1116; border:none; font-weight:600; }
+    button:hover { border-color:var(--acc); }
+    .knobs { display:flex; flex-direction:column; gap:12px; width:100%; max-width:540px;
+      background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+    .knob { display:flex; align-items:center; gap:12px; font-size:13px; color:var(--dim); }
+    .knob span { width:190px; flex:none; }
+    .knob input[type=range] { flex:1; accent-color:var(--acc); }
+    .toggles { display:flex; gap:20px; }
+    label.tg { display:flex; align-items:center; gap:7px; font-size:13px; color:var(--dim); cursor:pointer; }
+    .status { font-size:13px; color:var(--dim); min-height:18px; }
+    .note { color:var(--warm); font-size:12.5px; max-width:540px; text-align:center; }
+  </style>
+</head>
+<body>
+  <h1>🌊 Tide — дегустация v2 · ADHD-ядро</h1>
+  <p class="hint">Тёплый шум как ядро, с пространством и вечным микро-дрейфом (несоизмеримые слои —
+    никогда не повторяется, но <b>без событий</b>). Две функциональные крутилки. Тумблер «пульс» —
+    выкл по умолчанию, реши сам. <b>Слушай под работой, тест на «пережить 20 минут и забыть».</b></p>
+
+  <div class="controls">
+    <button class="primary" id="startBtn">▶ Запустить</button>
+    <button id="stopBtn">Стоп</button>
+    <label class="tg"><input type="checkbox" id="enter" checked> войти плавно (погружение ~15с)</label>
+  </div>
+  <div class="status" id="status">выключено</div>
+
+  <div class="cards" id="cards">
+    <div class="card active" data-i="0"><div class="dot"></div><div>
+      <h3>1 · Brown-ядро <span style="color:#5fce8f">◆ кандидат</span></h3>
+      <p>Тёплый широкополосный шум с медленным дрейфом. Маскирует, ровно стимулирует, ничего не «событийно».</p></div></div>
+    <div class="card" data-i="1"><div class="dot"></div><div>
+      <h3>2 · Brown + воздух</h3><p>То же ядро + тихий верхний слой (розовый шум) — светлее, ближе к дождю/листве.</p></div></div>
+    <div class="card" data-i="2"><div class="dot"></div><div>
+      <h3>3 · Brown + далёкий тон</h3><p>Ядро + еле слышный высокий аккорд, утопленный в реверб — тепло с намёком на «дом».</p></div></div>
+  </div>
+
+  <div class="knobs">
+    <div class="knob"><span>спокойнее ↔ энергичнее</span><input type="range" id="energy" min="0" max="1" step="0.02" value="0.4"></div>
+    <div class="knob"><span>маскировка (тоньше ↔ толще стена)</span><input type="range" id="masking" min="0" max="1" step="0.02" value="0.45"></div>
+    <div class="knob"><span>громкость</span><input type="range" id="vol" min="0" max="1" step="0.02" value="0.5"></div>
+    <div class="toggles">
+      <label class="tg"><input type="checkbox" id="pulse"> пульс (эксперимент — возбуждение ритмом)</label>
+    </div>
+  </div>
+
+  <p class="note">Крутилки: «энергичнее» = плотнее/живее (стимуляция) · «маскировка» = шире+громче (стена от комнаты).
+    Пульс регулярный (не случайный) — если раздражает, значит ритм нам не друг.</p>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    let AC=null, master=null, started=false, char=0;
+    let brownLP=null, brownGain=null, pinkGain=null, toneGain=null, charBus=null, pulseLFOgain=null;
+    let baseCut=600;
+
+    function fillBrown(d){ let last=0; for(let i=0;i<d.length;i++){ const w=Math.random()*2-1; last=(last+0.02*w)/1.02; d[i]=last*3.5; } }
+    function fillPink(d){ let b0=0,b1=0,b2=0,b3=0,b4=0,b5=0,b6=0;
+      for(let i=0;i<d.length;i++){ const w=Math.random()*2-1;
+        b0=0.99886*b0+w*0.0555179; b1=0.99332*b1+w*0.0750759; b2=0.96900*b2+w*0.1538520;
+        b3=0.86650*b3+w*0.3104856; b4=0.55000*b4+w*0.5329522; b5=-0.7616*b5-w*0.0168980;
+        d[i]=(b0+b1+b2+b3+b4+b5+b6+w*0.5362)*0.11; b6=w*0.115926; } }
+    function noiseBuf(fill){ const b=AC.createBuffer(1,AC.sampleRate*8,AC.sampleRate); fill(b.getChannelData(0)); return b; }
+    function loopSrc(buf){ const s=AC.createBufferSource(); s.buffer=buf; s.loop=true; s.start(); return s; }
+    function makeReverb(sec,decay){ const len=AC.sampleRate*sec, ir=AC.createBuffer(2,len,AC.sampleRate);
+      for(let ch=0;ch<2;ch++){ const d=ir.getChannelData(ch); for(let i=0;i<len;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/len,decay); }
+      const cv=AC.createConvolver(); cv.buffer=ir; return cv; }
+    // медленный дрейф параметра (несоизмеримые частоты → сумма не повторяется; всё гладко, без событий)
+    function drift(rate, depth, param){ const o=AC.createOscillator(), g=AC.createGain(); o.frequency.value=rate; g.gain.value=depth; o.connect(g); g.connect(param); o.start(); }
+
+    function build(){
+      master=AC.createGain(); master.gain.value=+$('vol').value; master.connect(AC.destination);
+      const reverb=makeReverb(3.2,2.4); const rev=AC.createGain(); rev.gain.value=0.85; reverb.connect(rev); rev.connect(master);
+      charBus=AC.createGain(); charBus.gain.value=0.9; charBus.connect(master);
+      const send=AC.createGain(); send.gain.value=0.18; charBus.connect(send); send.connect(reverb); // немного пространства всем
+
+      // пульс (эксперимент): регулярный LFO ~1.1 Гц на громкость шины, глубина по тумблеру
+      pulseLFOgain=AC.createGain(); pulseLFOgain.gain.value=0;
+      const plfo=AC.createOscillator(); plfo.frequency.value=1.1; plfo.connect(pulseLFOgain); pulseLFOgain.connect(charBus.gain); plfo.start();
+
+      // brown-ядро
+      const bs=loopSrc(noiseBuf(fillBrown));
+      brownLP=AC.createBiquadFilter(); brownLP.type='lowpass'; brownLP.Q.value=0.5; brownLP.frequency.value=baseCut;
+      brownGain=AC.createGain(); brownGain.gain.value=0.7;
+      bs.connect(brownLP); brownLP.connect(brownGain); brownGain.connect(charBus);
+      drift(0.017,130,brownLP.frequency);  // дрейф среза
+      drift(0.023,0.08,brownGain.gain);     // дрейф уровня
+
+      // воздух (розовый, верхний)
+      const ps=loopSrc(noiseBuf(fillPink));
+      const php=AC.createBiquadFilter(); php.type='highpass'; php.frequency.value=900;
+      pinkGain=AC.createGain(); pinkGain.gain.value=0.0;
+      ps.connect(php); php.connect(pinkGain); pinkGain.connect(charBus);
+      drift(0.031,0.04,pinkGain.gain);
+
+      // далёкий тон (в реверб)
+      const tmix=AC.createGain(); tmix.gain.value=1;
+      [220,293.66,329.63].forEach((fr,i)=>{ const o=AC.createOscillator(); o.type='sine'; o.frequency.value=fr;
+        const g=AC.createGain(); g.gain.value=i===0?0.5:0.32; o.connect(g); g.connect(tmix); o.start(); });
+      const tlp=AC.createBiquadFilter(); tlp.type='lowpass'; tlp.frequency.value=850;
+      toneGain=AC.createGain(); toneGain.gain.value=0.0; tmix.connect(tlp); tlp.connect(toneGain);
+      toneGain.connect(reverb); const tdry=AC.createGain(); tdry.gain.value=0.1; toneGain.connect(tdry); tdry.connect(charBus);
+
+      applyKnobs(); selectChar(0);
+    }
+
+    function applyKnobs(){
+      const energy=+$('energy').value, masking=+$('masking').value;
+      const t=AC.currentTime;
+      baseCut = 350 + masking*1050;                       // маскировка = ширина спектра
+      brownLP.frequency.setTargetAtTime(baseCut, t, 1.2);
+      brownGain.gain.setTargetAtTime(0.5+energy*0.5, t, 1.2); // энергия = плотность ядра
+      master.gain.setTargetAtTime((+$('vol').value)*(0.75+masking*0.4), t, 0.4);
+      pulseLFOgain.gain.setTargetAtTime($('pulse').checked ? (0.02+energy*0.06) : 0, t, 0.8);
+    }
+
+    function selectChar(i){ char=i;
+      const t=AC.currentTime;
+      pinkGain.gain.setTargetAtTime(i===1?0.22:(i===0?0.04:0.02), t, 1.0);
+      toneGain.gain.setTargetAtTime(i===2?0.05:0, t, 1.2);
+      [...document.querySelectorAll('.card')].forEach((el,idx)=>el.classList.toggle('active',idx===i));
+      $('status').textContent='играет: характер '+(i+1);
+    }
+
+    function doEnter(){ // плавное погружение: открыто → базовый срез за ~15с
+      if(!$('enter').checked) return;
+      const t=AC.currentTime;
+      brownLP.frequency.cancelScheduledValues(t);
+      brownLP.frequency.setValueAtTime(1600, t);
+      brownLP.frequency.setTargetAtTime(baseCut, t, 5.0);
+    }
+
+    $('startBtn').addEventListener('click', ()=>{
+      if(!started){ AC=new (window.AudioContext||window.webkitAudioContext)(); build(); started=true; }
+      if(AC.state==='suspended') AC.resume();
+      doEnter(); $('status').textContent='играет: характер '+(char+1);
+    });
+    $('stopBtn').addEventListener('click', ()=>{ if(!started) return; master.gain.setTargetAtTime(0,AC.currentTime,0.8); $('status').textContent='приглушено'; });
+    ['energy','masking','vol','pulse'].forEach(id=> $(id).addEventListener('input', ()=>{ if(started) applyKnobs(); }));
+    $('pulse').addEventListener('change', ()=>{ if(started) applyKnobs(); });
+    document.querySelectorAll('.card').forEach(el=> el.addEventListener('click', ()=>{ if(!started) $('startBtn').click(); selectChar(+el.dataset.i); }));
+  </script>
+</body>
+</html>
