@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tide</title>
+  <style>
+    :root{ --bg:#0f1116; --panel:#171a21; --panel2:#1e222b; --line:#2b323e;
+      --txt:#e6ebf3; --dim:#8a94a6; --warm:#e8b25c; --acc:#7fb4ff; --ok:#5fce8f; }
+    *{ box-sizing:border-box; margin:0; padding:0; -webkit-user-select:none; user-select:none; }
+    body{ background:var(--bg); color:var(--txt); font:13.5px/1.5 -apple-system,'Segoe UI',sans-serif;
+      min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:18px 16px 22px; gap:6px; }
+
+    .top{ width:100%; max-width:300px; display:flex; align-items:center; justify-content:space-between; }
+    .brand{ display:flex; align-items:center; gap:7px; font-weight:600; }
+    .brand .led{ width:7px; height:7px; border-radius:50%; background:#3a4759; transition:.4s; }
+    .brand.on .led{ background:var(--ok); box-shadow:0 0 9px var(--ok); }
+    .seg{ display:flex; background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:2px; font-size:11px; }
+    .seg button{ border:none; background:none; color:var(--dim); padding:4px 10px; border-radius:15px; cursor:pointer; }
+    .seg button.on{ background:var(--panel2); color:var(--txt); box-shadow:inset 0 0 0 1px var(--line); }
+    .seg button.on[data-t="premium"]{ color:var(--warm); }
+
+    /* компас */
+    .compass{ position:relative; width:230px; height:230px; margin:10px 0 2px; touch-action:none; cursor:pointer; }
+    .compass svg{ width:100%; height:100%; display:block; }
+    .track{ stroke:var(--line); }
+    .arc{ stroke:var(--warm); transition:stroke-dashoffset .5s linear, stroke .6s; }
+    .orb{ position:absolute; top:50%; left:50%; width:116px; height:116px; margin:-58px 0 0 -58px; border-radius:50%;
+      background:radial-gradient(circle at 42% 36%, #2a303c, #12151b); border:1px solid #2c333f;
+      box-shadow:inset 0 2px 6px rgba(255,255,255,.05), inset 0 -8px 18px rgba(0,0,0,.5); transition:all .8s ease; }
+    .orb.on{ background:radial-gradient(circle at 42% 36%, #9ecbff, #3d63a8);
+      box-shadow:0 0 34px rgba(127,180,255,.3), inset 0 3px 8px rgba(255,255,255,.18); animation:breathe 7s ease-in-out infinite; }
+    @keyframes breathe{ 0%,100%{ transform:scale(.965);} 50%{ transform:scale(1.02);} }
+    .num{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:34px; font-weight:300;
+      font-variant-numeric:tabular-nums; color:#fff; opacity:0; transition:opacity .3s; pointer-events:none; text-shadow:0 2px 8px rgba(0,0,0,.5); }
+    .num.show{ opacity:1; }
+    .num small{ font-size:15px; color:var(--dim); }
+
+    .phase{ font-size:12px; color:var(--dim); min-height:16px; letter-spacing:.03em; }
+    .row{ display:flex; align-items:center; gap:10px; margin-top:2px; }
+    .off{ width:34px; height:34px; border-radius:50%; border:1px solid var(--line); background:transparent; color:var(--dim);
+      font-size:15px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+    .off:hover{ color:var(--txt); border-color:var(--dim); }
+    .hint{ font-size:11px; color:var(--dim); }
+
+    details.tune{ width:100%; max-width:300px; margin-top:12px; border-top:1px solid var(--line); padding-top:10px; }
+    details.tune > summary{ font-size:12px; color:var(--dim); cursor:pointer; list-style:none; text-align:center; }
+    summary::-webkit-details-marker{ display:none; }
+    .chars{ display:flex; gap:6px; margin:12px 0 6px; }
+    .chip{ flex:1; padding:7px 3px; border:1px solid var(--line); border-radius:10px; background:var(--panel);
+      color:var(--dim); font-size:11.5px; cursor:pointer; text-align:center; }
+    .chip.on{ border-color:var(--warm); color:var(--txt); background:var(--panel2); }
+    .chip.soon{ opacity:.45; cursor:not-allowed; }
+    .ctl{ display:flex; align-items:center; gap:9px; margin-top:11px; }
+    .ctl .lbl{ width:92px; flex:none; font-size:11.5px; color:var(--dim); display:flex; align-items:center; gap:5px; }
+    .ctl input[type=range]{ flex:1; -webkit-appearance:none; height:4px; border-radius:2px; background:var(--line); outline:none; }
+    .ctl input[type=range]::-webkit-slider-thumb{ -webkit-appearance:none; width:15px; height:15px; border-radius:50%; background:var(--warm); cursor:pointer; }
+    .q{ width:14px; height:14px; border-radius:50%; border:1px solid var(--line); color:var(--dim); font-size:9.5px;
+      display:inline-flex; align-items:center; justify-content:center; cursor:help; position:relative; }
+    .q .tip{ position:absolute; bottom:135%; left:50%; transform:translateX(-50%); width:185px; background:#0b0d12;
+      border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:11px; line-height:1.4; color:var(--txt);
+      opacity:0; pointer-events:none; transition:.15s; z-index:5; box-shadow:0 8px 22px rgba(0,0,0,.5); }
+    .q:hover .tip{ opacity:1; }
+    .exp{ border-top:1px dashed var(--warm); margin-top:12px; padding-top:10px; }
+    .exp.hidden{ display:none; }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="brand" id="brand"><span class="led"></span>🌊 Tide</div>
+    <div class="seg" id="seg">
+      <button data-t="basic" class="on">базовый</button>
+      <button data-t="premium">премиум</button>
+    </div>
+  </div>
+
+  <div class="compass" id="compass">
+    <svg viewBox="0 0 230 230">
+      <circle class="track" cx="115" cy="115" r="95" fill="none" stroke-width="9"/>
+      <circle class="arc" id="arc" cx="115" cy="115" r="95" fill="none" stroke-width="9" stroke-linecap="round"
+        transform="rotate(-90 115 115)" stroke-dasharray="597" stroke-dashoffset="597"/>
+    </svg>
+    <div class="orb" id="orb"></div>
+    <div class="num" id="num"></div>
+  </div>
+
+  <div class="phase" id="phase">выключено</div>
+  <div class="row">
+    <button class="off" id="off" title="Выключить">⏻</button>
+    <span class="hint" id="hint">крути кольцо → время · жми орб → звук</span>
+  </div>
+
+  <details class="tune">
+    <summary>настроить</summary>
+    <div class="chars" id="chars">
+      <div class="chip on" data-c="warm" title="Тёплый коричневый шум — база. Обволакивает, ничего не «событийно».">Тёплый</div>
+      <div class="chip" data-c="bright" title="Ярче и воздушнее — больше стимуляции.">Светлый</div>
+      <div class="chip" data-c="deep" title="Темнее и плотнее — «укрытие».">Глубокий</div>
+      <div class="chip soon" title="Метель за окном. Скоро.">Пурга·скоро</div>
+    </div>
+    <div class="ctl">
+      <span class="lbl">спокойнее↔энергичнее<span class="q">?<span class="tip">Плотность/яркость звука. Вправо — активнее, больше стимуляции, когда мозгу нужно «топливо» держать фокус.</span></span></span>
+      <input type="range" id="energy" min="0" max="1" step="0.02" value="0.4">
+    </div>
+    <div class="ctl">
+      <span class="lbl">стена от мира<span class="q">?<span class="tip">Толщина звуковой стены от голосов, кликов, улицы. Больше — плотнее укрытие (особенно в наушниках).</span></span></span>
+      <input type="range" id="masking" min="0" max="1" step="0.02" value="0.45">
+    </div>
+    <div class="ctl">
+      <span class="lbl">громкость</span>
+      <input type="range" id="volume" min="0" max="1" step="0.02" value="0.5">
+    </div>
+    <div class="exp hidden" id="experiments">
+      <div class="ctl">
+        <span class="lbl">гармонизация<span class="q">?<span class="tip">Премиум-эксперимент: редкие мягкие созвучные тоны в фоне. Убавляй/прибавляй. Твои уши решают.</span></span></span>
+        <input type="range" id="harmony" min="0" max="1" step="0.02" value="0.7">
+      </div>
+    </div>
+  </details>
+
+  <script src="engine.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

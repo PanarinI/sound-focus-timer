@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tide — пульт</title>
+  <style>
+    :root {
+      --bg:#0f1116; --panel:#171a21; --panel2:#1e222b; --line:#2b323e;
+      --txt:#e6ebf3; --dim:#8a94a6; --warm:#e8b25c; --acc:#7fb4ff; --ok:#5fce8f;
+    }
+    * { box-sizing:border-box; margin:0; padding:0; -webkit-user-select:none; user-select:none; }
+    body { background:var(--bg); color:var(--txt); font:14px/1.5 -apple-system,'Segoe UI',sans-serif;
+      min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px; }
+
+    .device { width:340px; background:linear-gradient(180deg,#1a1e26,#141720); border:1px solid var(--line);
+      border-radius:22px; padding:20px 20px 22px; box-shadow:0 20px 60px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.04); }
+
+    .top { display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; }
+    .brand { display:flex; align-items:center; gap:8px; font-weight:600; letter-spacing:.02em; }
+    .brand .led { width:8px; height:8px; border-radius:50%; background:#3a4759; transition:.4s; }
+    .brand.on .led { background:var(--ok); box-shadow:0 0 10px var(--ok); }
+
+    /* segmented basic/premium */
+    .seg { display:flex; background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:2px; font-size:11.5px; }
+    .seg button { border:none; background:none; color:var(--dim); padding:5px 11px; border-radius:16px; cursor:pointer; }
+    .seg button.on { background:var(--panel2); color:var(--txt); box-shadow:inset 0 0 0 1px var(--line); }
+    .seg button.on[data-t="premium"] { color:var(--warm); }
+
+    /* dial */
+    .stage { position:relative; width:100%; height:230px; display:flex; align-items:center; justify-content:center; margin:6px 0 2px; }
+    .halo { position:absolute; width:150px; height:150px; border-radius:50%;
+      background:radial-gradient(circle,rgba(127,180,255,.35),rgba(127,180,255,0) 70%); opacity:.15; transition:all .8s ease; }
+    .knob { position:relative; width:172px; height:172px; border-radius:50%; cursor:grab; touch-action:none;
+      background:conic-gradient(from 0deg,#20242e,#161a22,#20242e,#161a22,#20242e);
+      box-shadow:0 8px 20px rgba(0,0,0,.5), inset 0 2px 4px rgba(255,255,255,.06), inset 0 -6px 14px rgba(0,0,0,.5); }
+    .knob:active { cursor:grabbing; }
+    .knob .face { position:absolute; inset:16px; border-radius:50%; background:radial-gradient(circle at 42% 36%,#232833,#12151b);
+      border:1px solid #2c333f; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+    .knob .ind { position:absolute; top:12px; left:50%; width:4px; height:26px; margin-left:-2px; border-radius:2px;
+      background:var(--warm); box-shadow:0 0 8px var(--warm); transform-origin:50% 74px; }
+    .readout { font-size:42px; font-weight:300; font-variant-numeric:tabular-nums; letter-spacing:-.02em; line-height:1; }
+    .readout small { font-size:18px; color:var(--dim); }
+    .sub { font-size:11px; color:var(--dim); margin-top:4px; letter-spacing:.06em; text-transform:uppercase; }
+
+    .phase { text-align:center; font-size:12.5px; color:var(--dim); min-height:17px; letter-spacing:.03em; margin-top:2px; }
+
+    .actions { display:flex; gap:9px; margin:10px 0 4px; }
+    .btn { flex:1; padding:12px; border:none; border-radius:13px; font-size:14px; font-weight:600; cursor:pointer; transition:.15s; }
+    .btn.primary { background:var(--acc); color:#0e1116; }
+    .btn.primary:hover { background:#9ec6ff; }
+    .btn.primary:disabled { background:var(--line); color:var(--dim); cursor:default; }
+    .btn.ghost { flex:0 0 auto; background:transparent; color:var(--dim); border:1px solid var(--line); }
+    .btn.ghost:hover { color:var(--txt); }
+    .btn.ghost.hidden { display:none; }
+
+    /* characters */
+    .chars { display:flex; gap:7px; margin:12px 0 4px; }
+    .chip { flex:1; padding:8px 4px; border:1px solid var(--line); border-radius:11px; background:var(--panel);
+      color:var(--dim); font-size:12px; cursor:pointer; text-align:center; transition:.15s; }
+    .chip.on { border-color:var(--warm); color:var(--txt); background:var(--panel2); }
+    .chip.soon { opacity:.45; cursor:not-allowed; }
+
+    /* settings */
+    .settings { margin-top:12px; border-top:1px solid var(--line); padding-top:12px; display:flex; flex-direction:column; gap:13px; }
+    .ctl { display:flex; align-items:center; gap:10px; }
+    .ctl .lbl { width:96px; flex:none; font-size:12px; color:var(--dim); display:flex; align-items:center; gap:5px; }
+    .ctl input[type=range] { flex:1; -webkit-appearance:none; height:4px; border-radius:2px; background:var(--line); outline:none; }
+    .ctl input[type=range]::-webkit-slider-thumb { -webkit-appearance:none; width:16px; height:16px; border-radius:50%;
+      background:var(--warm); box-shadow:0 1px 4px rgba(0,0,0,.5); cursor:pointer; }
+    .q { width:15px; height:15px; border-radius:50%; border:1px solid var(--line); color:var(--dim); font-size:10px;
+      display:inline-flex; align-items:center; justify-content:center; cursor:help; position:relative; }
+    .q .tip { position:absolute; bottom:130%; left:50%; transform:translateX(-50%); width:200px; background:#0b0d12;
+      border:1px solid var(--line); border-radius:9px; padding:9px 11px; font-size:11.5px; line-height:1.45; color:var(--txt);
+      opacity:0; pointer-events:none; transition:.15s; z-index:5; box-shadow:0 8px 24px rgba(0,0,0,.5); }
+    .q:hover .tip { opacity:1; }
+    .foot { margin-top:12px; text-align:center; font-size:10.5px; color:var(--dim); }
+  </style>
+</head>
+<body>
+  <div class="device">
+    <div class="top">
+      <div class="brand" id="brand"><span class="led"></span>🌊 Tide</div>
+      <div class="seg" id="seg">
+        <button data-t="basic" class="on">базовый</button>
+        <button data-t="premium">премиум</button>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="halo" id="halo"></div>
+      <div class="knob" id="knob">
+        <div class="ind" id="ind"></div>
+        <div class="face">
+          <div class="readout" id="readout">45<small>′</small></div>
+          <div class="sub" id="sub">заведи время</div>
+        </div>
+      </div>
+    </div>
+    <div class="phase" id="phase">выключено</div>
+
+    <div class="actions">
+      <button class="btn primary" id="primary">Включить</button>
+      <button class="btn ghost hidden" id="secondary">Выключить</button>
+    </div>
+
+    <div class="chars" id="chars">
+      <div class="chip on" data-c="warm" title="Тёплый коричневый шум — база. Обволакивает, ничего не «событийно».">Тёплый</div>
+      <div class="chip" data-c="bright" title="Ярче и воздушнее — больше стимуляции, когда мозгу нужно топливо для фокуса.">Светлый</div>
+      <div class="chip" data-c="deep" title="Темнее и плотнее — «укрытие», когда нужно спрятаться в звук.">Глубокий</div>
+      <div class="chip soon" title="Метель за окном — укрытие. Скоро.">Пурга ·скоро</div>
+    </div>
+
+    <div class="settings">
+      <div class="ctl">
+        <span class="lbl">спокойнее↔энергичнее
+          <span class="q">?<span class="tip">Плотность звука. Влево — мягче и тише для нервов; вправо — активнее, больше стимуляции, когда мозгу нужно «топливо», чтобы держать фокус.</span></span>
+        </span>
+        <input type="range" id="energy" min="0" max="1" step="0.02" value="0.4">
+      </div>
+      <div class="ctl">
+        <span class="lbl">стена от мира
+          <span class="q">?<span class="tip">Насколько толстая звуковая стена отгораживает тебя от голосов, кликов, улицы. Больше — плотнее укрытие (особенно в наушниках).</span></span>
+        </span>
+        <input type="range" id="masking" min="0" max="1" step="0.02" value="0.45">
+      </div>
+      <div class="ctl">
+        <span class="lbl">громкость</span>
+        <input type="range" id="volume" min="0" max="1" step="0.02" value="0.5">
+      </div>
+    </div>
+
+    <div class="settings hidden" id="experiments" style="border-top-color:var(--warm)">
+      <div class="ctl">
+        <span class="lbl">гармонизация
+          <span class="q">?<span class="tip">Премиум-эксперимент: редкие мягкие созвучные тоны в фоне («воздушные трубки»). Больше — заметнее. Твои уши решают, помогает или дёргает.</span></span>
+        </span>
+        <input type="range" id="harmony" min="0" max="1" step="0.02" value="0.7">
+      </div>
+      <div class="chars"><div class="chip soon" title="Тонкие непрерывные примеси — дождь, метель. Следующий слой.">примеси ·скоро</div></div>
+    </div>
+
+    <div class="foot">крути диск → заведи время · нажми, чтобы начать</div>
+  </div>
+
+  <script src="engine.js"></script>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    let minutes = 45, dragging = false;
+
+    const engine = new AudioEngine(render);
+
+    const PRESETS = {
+      warm:   { energy: 0.38, masking: 0.45 },
+      bright: { energy: 0.72, masking: 0.34 },
+      deep:   { energy: 0.24, masking: 0.70 },
+    };
+    const LABELS = { off:'выключено', 'ручей':'ручей — фон дня', 'собирание':'собирание…',
+      'ткань':'в потоке', 'рассвет':'рассвет — заканчивай мысль', 'ниточка':'пауза' };
+
+    function fmt(sec){ const m=Math.floor(sec/60), s=Math.floor(sec%60); return m+':'+String(s).padStart(2,'0'); }
+
+    // --- диск: угол ↔ минуты (5..120) ---
+    function angForMin(min){ return -135 + (min-5)/(120-5)*270; }
+    function setKnob(ang){ $('ind').style.transform = 'rotate('+ang+'deg)'; }
+    function renderReadout(st){
+      const active = st && st.on && st.remaining > 0;
+      if (active){ $('readout').innerHTML = fmt(st.remaining); $('sub').textContent = 'осталось'; }
+      else { $('readout').innerHTML = minutes + '<small>′</small>'; $('sub').textContent = 'заведи время'; }
+    }
+    function pointerToMin(e){
+      const r=$('knob').getBoundingClientRect(), cx=r.left+r.width/2, cy=r.top+r.height/2;
+      let a = Math.atan2(e.clientY-cy, e.clientX-cx)*180/Math.PI + 90;
+      if (a>180) a-=360;
+      a = Math.max(-135, Math.min(135, a));
+      minutes = Math.round((5 + (a+135)/270*(120-5))/5)*5;
+      setKnob(angForMin(minutes)); renderReadout();
+    }
+    const canDial = () => ['off','ручей'].includes(engine.phase);
+    $('knob').addEventListener('pointerdown', e=>{ if(!canDial()) return; dragging=true; $('knob').setPointerCapture(e.pointerId); pointerToMin(e); });
+    window.addEventListener('pointermove', e=>{ if(dragging) pointerToMin(e); });
+    window.addEventListener('pointerup', ()=>{ dragging=false; });
+    setKnob(angForMin(minutes));
+
+    // --- render состояния (из движка) ---
+    function render(st){
+      const phase = st ? st.phase : 'off';
+      $('phase').textContent = LABELS[phase] || phase;
+      $('brand').classList.toggle('on', !!(st && st.on));
+
+      const d = Math.max(0, Math.min(1, (st && st.depth) || 0.15));
+      const b = Math.max(0, Math.min(1.2, (st && st.brightness) || 0.6));
+      const halo = $('halo');
+      halo.style.transform = 'scale('+(0.7 + d*0.7)+')';
+      halo.style.opacity = st && st.on ? (0.18 + d*0.5) : 0.12;
+      const warm = Math.round(120 + b*120), g = Math.round(150 + b*60), bl = Math.round(230 - b*60);
+      halo.style.background = `radial-gradient(circle,rgba(${warm},${g},${bl},.4),rgba(${warm},${g},${bl},0) 70%)`;
+
+      renderReadout(st);
+
+      // кнопки по фазе
+      const P=$('primary'), S=$('secondary');
+      P.disabled=false; S.classList.add('hidden');
+      if (phase==='off'){ P.textContent='Включить'; }
+      else if (phase==='ручей'){ P.textContent='Начать '+minutes+'′'; S.classList.remove('hidden'); S.textContent='Выключить'; }
+      else if (phase==='собирание'||phase==='ткань'){ P.textContent='Пауза'; S.classList.remove('hidden'); S.textContent='Завершить'; }
+      else if (phase==='ниточка'){ P.textContent='Продолжить'; S.classList.remove('hidden'); S.textContent='Завершить'; }
+      else if (phase==='рассвет'){ P.textContent='рассвет…'; P.disabled=true; S.classList.remove('hidden'); S.textContent='Выключить'; }
+    }
+
+    $('primary').addEventListener('click', ()=>{
+      const p = engine.phase;
+      if (p==='off') engine.turnOn();
+      else if (p==='ручей') engine.startSession(minutes*60);
+      else if (p==='собирание'||p==='ткань') engine.pause();
+      else if (p==='ниточка') engine.resume();
+    });
+    $('secondary').addEventListener('click', ()=>{
+      const p = engine.phase;
+      if (p==='ручей'||p==='рассвет') engine.turnOff();
+      else engine.endSession();
+    });
+
+    // characters
+    document.querySelectorAll('.chip:not(.soon)').forEach(el=>{
+      el.addEventListener('click', ()=>{
+        document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));
+        el.classList.add('on');
+        const pr = PRESETS[el.dataset.c];
+        $('energy').value=pr.energy; $('masking').value=pr.masking;
+        engine.setChar(pr);
+      });
+    });
+
+    // settings
+    ['energy','masking','volume'].forEach(k=>{
+      $(k).addEventListener('input', ()=>{
+        engine.setChar({ [k]: +$(k).value });
+        document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on')); // ручная правка = сходим с пресета
+      });
+    });
+
+    // basic / premium
+    $('seg').querySelectorAll('button').forEach(b=>{
+      b.addEventListener('click', ()=>{
+        $('seg').querySelectorAll('button').forEach(x=>x.classList.remove('on'));
+        b.classList.add('on'); engine.setTier(b.dataset.t);
+        $('experiments').classList.toggle('hidden', b.dataset.t !== 'premium');
+      });
+    });
+    $('harmony').addEventListener('input', ()=> engine.setHarmony(+$('harmony').value));
+
+    render(null);
+  </script>
+</body>
+</html>

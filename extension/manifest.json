@@ -1,10 +1,11 @@
 {
   "manifest_version": 3,
   "name": "Tide — sound focus timer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Фокус-сессии, где время сделано из звука. Мягкий вход, плато, рассвет вместо будильника. Всё на устройстве.",
   "minimum_chrome_version": "116",
-  "permissions": ["offscreen", "storage"],
+  "permissions": ["sidePanel", "storage"],
   "background": { "service_worker": "background.js" },
-  "action": { "default_popup": "popup.html", "default_title": "Tide" }
+  "action": { "default_title": "Tide — открыть пульт" },
+  "side_panel": { "default_path": "sidepanel.html" }
 }
