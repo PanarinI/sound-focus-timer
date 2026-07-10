@@ -207,7 +207,7 @@
         if (el >= plateauEnd) { this.phase = 'рассвет'; this.phaseStart = t; }
       } else if (this.phase === 'рассвет') {
         const p = clamp((t - this.phaseStart) / this.DAWN, 0, 1);
-        this.cur.master = 0.5;
+        this.cur.master = 0.5 * (1 - easeInOut(p));   // звук истончается синхронно со сдуванием орба
         this.cur.depth = lerp(0.9, 0.4, easeInOut(p));
         this.cur.brightness = lerp(tod * 0.9, Math.min(1.15, tod + 0.35), easeInOut(p));
         if (p >= 1) { this.phase = 'ручей'; this.phaseStart = t; this._apply(); this._emit({ justEnded: true }); return; }
