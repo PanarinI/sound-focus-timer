@@ -1,15 +1,17 @@
 // orb.js — Фаза 1: ДУША. Орб-присутствие. Формо-независимо (тот же орб поедет во floating).
 // Движок engine.js — как есть. Метафора: УГОЛЁК костра.
 // Модель (вычищена): один объект — орб+кольцо, без кнопок, без надписей-ярлыков.
-//   • крути кольцо → заводишь (призрак-дуга + эфемерное число, Time Timer)
+//   • тап орба БЕЗ завода → дефолт 25 (спросовый ключ «25 minute timer»); порог входа снят
+//   • крути кольцо → заводишь СВОЁ время (призрак-дуга + эфемерное число, Time Timer); тап стартует его
 //   • тап орба — контекстный toggle: покой → старт · фокус → завершить
 //   • завершение = мягкий РАССВЕТ, в котором орб ОПАДАЕТ в уголёк → тишина между сессиями
+//   • ГРОМКОСТЬ — единственный видимый орган кроме орба (боль Tide «no volume control» → на поверхности)
 // Паузы пока нет (в идеи: вернём отдельным модулем). Никаких резких границ.
 
 const $ = (id) => document.getElementById(id);
 const ORB_MIN = 14, ORB_MAX = 84;
 const RING_C = 2 * Math.PI * 90;          // длина кольца (r=90) для дуги завода
-let dialMin = 30;                          // заведённое (в стенде трактуем как СЕКУНДЫ демо)
+let dialMin = 25;                          // дефолт спроса (тап без завода); в стенде — СЕКУНДЫ демо
 let sessionSec = 0;
 let twisting = false, orbDown = false;
 
@@ -88,10 +90,15 @@ window.addEventListener('pointerup', () => {
   else if (orbDown) { orbDown = false; orbTap(); }
 });
 
+// --- ГРОМКОСТЬ на поверхности (продуктовый орган, не дев) — заливка «по жару» до уголька-ручки ---
+function paintVol(v) { const p = (v * 100).toFixed(0); $('volume').style.background = `linear-gradient(90deg, #e8b25c 0%, #b9702a ${p}%, #2a2119 ${p}%)`; }
+$('volume').addEventListener('input', () => { const v = +$('volume').value; engine.setChar({ volume: v }); paintVol(v); });
+paintVol(+$('volume').value);
+
 // --- дев-подвал стенда (щупать звук; в проде этого нет) ---
 function applyFast() { if ($('fast').checked) { engine.GATHER = 3; engine.DAWN = 4; } else { engine.GATHER = 60; engine.DAWN = 120; } }
 $('fast').addEventListener('change', applyFast); applyFast();
-['energy', 'masking', 'volume'].forEach((k) => $(k).addEventListener('input', () => engine.setChar({ [k]: +$(k).value })));
+['energy', 'masking'].forEach((k) => $(k).addEventListener('input', () => engine.setChar({ [k]: +$(k).value })));
 $('premium').addEventListener('change', () => engine.setTier($('premium').checked ? 'premium' : 'basic'));
 $('harmony').addEventListener('input', () => engine.setHarmony(+$('harmony').value));
 

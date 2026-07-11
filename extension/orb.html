@@ -18,10 +18,17 @@
     .num { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; font-weight: 300;
       color: #f0d8b0; opacity: 0; transition: opacity .3s; pointer-events: none; font-variant-numeric: tabular-nums; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
     .hint { font-size: 12px; color: #5c5145; text-align: center; max-width: 320px; }
+    /* громкость — единственный видимый орган кроме орба (боль Tide «no volume control») */
+    .vol { display: flex; align-items: center; gap: 11px; color: #b9863f; margin-top: -4px; }
+    .vol svg { flex: none; width: 17px; height: 17px; opacity: .8; }
+    .vol input[type=range] { -webkit-appearance: none; appearance: none; width: 186px; height: 5px;
+      border-radius: 4px; background: #2a2119; cursor: pointer; outline: none; }
+    .vol input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px;
+      border-radius: 50%; background: #e8b25c; box-shadow: 0 0 9px rgba(232,178,92,.55); cursor: pointer; }
     .dev { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; max-width: 540px;
       border-top: 1px solid #201a14; padding-top: 16px; opacity: .55; font-size: 11px; }
     .dev label { display: flex; align-items: center; gap: 6px; color: #6b5f50; }
-    input[type=range] { width: 108px; }
+    .dev input[type=range] { width: 108px; }
   </style>
 </head>
 <body>
@@ -36,14 +43,20 @@
     </svg>
     <div class="num" id="num"></div>
   </div>
-  <div class="hint">крути кольцо — выставишь время (дуга застынет) · тронь орб — старт, ещё раз — стоп<br>уголёк тлеет и ждёт · разгорается в фокусе · опадает в рассвет · звук — его голос</div>
+  <div class="vol" title="громкость">
+    <svg viewBox="0 0 24 24" width="17" height="17">
+      <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/>
+      <path d="M15.5 8.8a4 4 0 0 1 0 6.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+  </div>
+  <div class="hint">тронь орб — старт на 25 минут, ещё раз — стоп · крути кольцо — выставишь своё время (дуга застынет)<br>уголёк тлеет и ждёт · разгорается в фокусе · опадает в рассвет · звук — его голос</div>
 
   <div class="dev">
     <label><input type="checkbox" id="fast" checked> быстрый (секунды вместо минут)</label>
     <label><input type="checkbox" id="premium"> премиум-слой</label>
     <label>энергия <input type="range" id="energy" min="0" max="1" step="0.02" value="0.4"></label>
     <label>стена <input type="range" id="masking" min="0" max="1" step="0.02" value="0.45"></label>
-    <label>громкость <input type="range" id="volume" min="0" max="1" step="0.02" value="0.5"></label>
     <label>гармонизация <input type="range" id="harmony" min="0" max="1" step="0.02" value="0.7"></label>
   </div>
 
