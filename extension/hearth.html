@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Очаг — стенд MECHANICS v1.1</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-user-select: none; user-select: none; }
+    /* тёплая дымка вместо чёрной пустоты — «очаг в тёмной комнате», не dev-void (портреты Ми/Лу) */
+    body { background: radial-gradient(ellipse 70% 60% at 50% 42%, #1a1109 0%, #120c07 55%, #0b0805 100%);
+      color: #c9bdae; font: 13px/1.5 -apple-system, 'Segoe UI', sans-serif;
+      min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; padding: 28px; }
+    .tick { stroke: #5a4530; stroke-width: 2; stroke-linecap: round; opacity: .5; }
+    .tickbig { stroke: #6f553a; stroke-width: 2.7; stroke-linecap: round; opacity: .78; }
+    .inf { fill: #6f553a; opacity: .68; font-size: 16px; }
+    #home { display: flex; flex-direction: column; align-items: center; }
+    .stage { position: relative; width: 250px; height: 285px; touch-action: none; cursor: pointer; }
+    .stage svg { width: 100%; height: 100%; display: block; }
+    .ring { fill: none; stroke: #2a2119; stroke-width: 3; }
+    /* видимая хваталка завода — уголёк на кольце (её видно → её тянут) */
+    #knob { fill: #e8b25c; stroke: #100b07; stroke-width: 2; cursor: grab;
+      filter: drop-shadow(0 0 6px rgba(232,178,92,.7)); transition: opacity .3s; }
+    #orb { transition: fill .8s ease, r .5s linear, filter .8s ease;
+      transform-box: fill-box; transform-origin: center; animation: breathe 10s ease-in-out infinite; }
+    @keyframes breathe { 0%, 100% { transform: scale(.97); } 50% { transform: scale(1.03); } }
+    #setarc { transition: stroke-dashoffset .12s linear, opacity .3s ease; }
+    .ember { fill: #a35c28; opacity: .85; filter: drop-shadow(0 0 4px rgba(220,120,50,.45)); }
+    #ash { stroke: #4a3826; stroke-width: 2.5; stroke-linecap: round; opacity: .35; transition: all .5s; }
+    .num { position: absolute; top: 44%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; font-weight: 300;
+      color: #f0d8b0; opacity: 0; transition: opacity .3s; pointer-events: none; font-variant-numeric: tabular-nums; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
+    .hint { font-size: 12px; color: #5c5145; text-align: center; max-width: 340px; }
+    .vol { display: flex; align-items: center; gap: 11px; color: #b9863f; }
+    .vol svg { flex: none; width: 17px; height: 17px; opacity: .8; }
+    .vol input[type=range] { -webkit-appearance: none; appearance: none; width: 186px; height: 5px;
+      border-radius: 4px; background: #2a2119; cursor: pointer; outline: none; }
+    .vol input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px;
+      border-radius: 50%; background: #e8b25c; box-shadow: 0 0 9px rgba(232,178,92,.55); cursor: pointer; }
+    .pipbtn { background: none; border: 1px solid #3a2d1f; color: #b9863f; border-radius: 8px;
+      padding: 7px 16px; font: inherit; font-size: 12px; cursor: pointer; transition: border-color .3s; }
+    /* «☀ завершить» — живёт ТОЛЬКО в паузе (сценарий S5/S6), тихая, поверх wrap */
+    .finbtn { position: absolute; left: 50%; top: 63%; transform: translateX(-50%); z-index: 3;
+      background: rgba(20,15,10,.55); border: 1px solid #3a2d1f; color: #caa25a; border-radius: 8px;
+      padding: 5px 13px; font: inherit; font-size: 12px; cursor: pointer; transition: border-color .3s, opacity .3s; }
+    .finbtn:hover { border-color: #caa25a; }
+    .pipbtn:hover { border-color: #b9863f; }
+    .pipbtn:disabled { opacity: .4; cursor: default; }
+    /* прод-настройки очага: тёплая мини-панель за тихим триггером */
+    .settoggle { background: none; border: none; color: #6b5f50; cursor: pointer; font: inherit; font-size: 12px;
+      display: flex; align-items: center; gap: 7px; opacity: .7; transition: opacity .3s, color .3s; padding: 4px; }
+    .settoggle:hover { opacity: 1; color: #b9863f; }
+    .settoggle svg { width: 15px; height: 15px; }
+    .settings { display: flex; flex-direction: column; gap: 15px; width: 232px; padding: 2px 0 4px; }
+    .settings[hidden] { display: none; }
+    .setrow { display: flex; align-items: center; gap: 11px; }
+    .setrow .ico { flex: none; width: 18px; height: 18px; color: #b9863f; opacity: .82; }
+    .setrow .lab { font-size: 12px; color: #9a7c4f; width: 50px; flex: none; }
+    .setrow input[type=range] { -webkit-appearance: none; appearance: none; flex: 1; height: 5px;
+      border-radius: 4px; background: #2a2119; cursor: pointer; outline: none; }
+    .setrow input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 15px; height: 15px;
+      border-radius: 50%; background: #e8b25c; box-shadow: 0 0 8px rgba(232,178,92,.5); cursor: pointer; }
+    /* вспышка «звук пошёл» (07-18): отклик на действие, а не предупреждение — гаснет сама */
+    /* .stage .sndhint — специфичнее правила `.stage svg{width:100%}`, иначе иконка растянется на всю сцену */
+    .stage .sndhint { position: absolute; top: 30%; left: 50%; transform: translateX(-50%);
+      width: 21px; height: 21px; color: #caa25a;
+      opacity: 0; transition: opacity .6s ease; pointer-events: none; }
+    .glowbtn { flex: 1; background: none; border: 1px solid #3a2d1f; color: #9a7c4f; border-radius: 7px;
+      padding: 4px 0; font: inherit; font-size: 11.5px; cursor: pointer; transition: border-color .3s, color .3s; }
+    .glowbtn:hover { border-color: #b9863f; color: #caa25a; }
+    .glowbtn.on { border-color: #7a5a2e; color: #e8b25c; }
+    /* онбординг убран 07-17 (автор): курсор-pointer на орбе — достаточная подсказка */
+    /* ПОЛКА — не в прод-UI (премиум-эксперименты + дев); код жив, глаз юзера не видит */
+    .shelf { display: none; }
+  </style>
+</head>
+<body>
+  <div id="home">
+    <div class="stage" id="stage">
+      <svg viewBox="0 0 220 250">
+        <circle class="ring" cx="110" cy="110" r="90"/>
+        <!-- ШКАЛА ЗАВОДА (07-18): деления каждые 5 мин, крупные каждые 15 — живая часть 5..90 мин = 15°..270°.
+             Сектор 270°..360° делений НЕ несёт: это «после последней отметки — до бесконечности», там стоит ∞.
+             Прежние 3 отсечки «часов» врали (стояли на 10/20/30 мин, читались как 1·2·3 часа). -->
+        <g class="tickbig">
+          <line x1="173.6" y1="46.4" x2="165.9" y2="54.1"/>
+          <line x1="200.0" y1="110.0" x2="189.0" y2="110.0"/>
+          <line x1="173.6" y1="173.6" x2="165.9" y2="165.9"/>
+          <line x1="110.0" y1="200.0" x2="110.0" y2="189.0"/>
+          <line x1="46.4" y1="173.6" x2="54.1" y2="165.9"/>
+          <line x1="20.0" y1="110.0" x2="31.0" y2="110.0"/>
+        </g>
+        <g class="tick">
+          <line x1="133.3" y1="23.1" x2="132.1" y2="27.4"/>
+          <line x1="155.0" y1="32.1" x2="152.8" y2="36.0"/>
+          <line x1="187.9" y1="65.0" x2="184.0" y2="67.2"/>
+          <line x1="196.9" y1="86.7" x2="192.6" y2="87.9"/>
+          <line x1="196.9" y1="133.3" x2="192.6" y2="132.1"/>
+          <line x1="187.9" y1="155.0" x2="184.0" y2="152.7"/>
+          <line x1="155.0" y1="187.9" x2="152.8" y2="184.0"/>
+          <line x1="133.3" y1="196.9" x2="132.1" y2="192.6"/>
+          <line x1="86.7" y1="196.9" x2="87.9" y2="192.6"/>
+          <line x1="65.0" y1="187.9" x2="67.2" y2="184.0"/>
+          <line x1="32.1" y1="155.0" x2="36.0" y2="152.8"/>
+          <line x1="23.1" y1="133.3" x2="27.4" y2="132.1"/>
+        </g>
+        <text class="inf" x="57.7" y="57.7" text-anchor="middle" dominant-baseline="central">∞</text>
+        <circle id="setarc" cx="110" cy="110" r="90" fill="none" stroke="#e8b25c" stroke-width="3"
+          stroke-linecap="round" stroke-dasharray="565.5" stroke-dashoffset="565.5"
+          transform="rotate(-90 110 110)" opacity="0"/>
+        <circle id="orb" cx="110" cy="110" r="14" fill="rgb(120,66,38)"/>
+        <circle id="knob" cx="110" cy="20" r="7.5"/>
+        <g id="wrapzone"></g>
+        <line id="ash" x1="110" y1="248" x2="110" y2="248"/>
+        <g id="embers"></g>
+      </svg>
+      <div class="num" id="num"></div>
+      <div id="wrap" style="position:absolute;inset:0;touch-action:none;"></div>
+      <button id="finish" class="finbtn" hidden>☀ завершить</button>
+      <svg class="sndhint" id="sndhint" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/>
+        <path id="sndwave" d="M15.5 8.8a4 4 0 0 1 0 6.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        <line id="sndmute" x1="15.6" y1="9.2" x2="20.8" y2="14.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" style="display:none"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="vol" title="громкость">
+    <svg viewBox="0 0 24 24" width="17" height="17">
+      <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/>
+      <path d="M15.5 8.8a4 4 0 0 1 0 6.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+  </div>
+
+  <button class="settoggle" id="settoggle" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+      <line x1="5" y1="8" x2="19" y2="8"/><circle cx="9" cy="8" r="2.4" fill="#120c07"/>
+      <line x1="5" y1="16" x2="19" y2="16"/><circle cx="15" cy="16" r="2.4" fill="#120c07"/>
+    </svg>настройки очага</button>
+
+  <div class="settings" id="settings" hidden>
+    <div class="setrow" title="сколько звук даёт топлива вниманию — от спокойного до бодрого">
+      <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L5 14h5l-1 8 8-12h-5l1-8z"/></svg>
+      <span class="lab">энергия</span>
+      <input type="range" id="energy" min="0" max="1" step="0.02" value="0.4">
+    </div>
+    <!-- отблеск: живёт только в расширении, права спрашиваются здесь — по клику, когда уже понятно зачем -->
+    <div class="setrow" id="glowrow" hidden title="тихий свет внизу страниц, пока очаг горит без дома">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+        <line x1="4" y1="9.5" x2="20" y2="9.5"/><path d="M7 14h10M9.5 18h5" opacity=".55"/>
+      </svg>
+      <span class="lab">отблеск</span>
+      <button class="glowbtn" id="glowtoggle">включить</button>
+    </div>
+    <div class="setrow" title="толщина укрытия от внешних звуков — чем толще, тем плотнее кокон">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+        <ellipse cx="12" cy="12" rx="6" ry="8.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/></svg>
+      <span class="lab">кокон</span>
+      <input type="range" id="masking" min="0" max="1" step="0.02" value="0.45">
+    </div>
+  </div>
+
+  <button class="pipbtn" id="pip" hidden>вынести жар</button>
+
+  <div class="shelf" id="shelf">
+    <label><input type="checkbox" id="fast"> быстрый (дев)</label>
+    <label><input type="checkbox" id="premium"> премиум-слой</label>
+    <label>гармонизация <input type="range" id="harmony" min="0" max="1" step="0.02" value="0.7"></label>
+  </div>
+
+  <script src="engine.js?b=9"></script>
+  <script src="remote.js?b=9"></script>
+  <script src="hearth.js?b=9"></script>
+</body>
+</html>

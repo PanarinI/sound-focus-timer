@@ -1,0 +1,35 @@
+<svg viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, Segoe UI, sans-serif">
+  <title>Очаг фокуса — слои: что ядро, что дополнение (2026-07-16)</title>
+  <desc>Разбор после доразведки 07-16: ядро = одна функция (сессия телесного времени), след = завершение её петли, дом и мир = дополнения по очереди, цифры-статистика = не MVP. Контекст: автор спросил, является ли экран-хранилище угольков базовым компонентом или дополнением; данные (перепись CWS + SERP) разложили слои.</desc>
+  <rect x="0" y="0" width="680" height="500" fill="#FAF7F2"/>
+  <text x="16" y="30" font-size="17" font-weight="600" fill="#292524">Очаг фокуса — что ядро, а что дополнение</text>
+  <text x="16" y="50" font-size="11" fill="#78716C">разбор 07-16 · по данным переписи CWS и SERP · вопрос автора: «экран с угольками — базовый компонент или дополнение?»</text>
+
+  <!-- ЯДРО -->
+  <rect x="16" y="66" width="648" height="118" rx="10" fill="#FDE68A" stroke="#B45309" stroke-width="2"/>
+  <text x="32" y="92" font-size="14" font-weight="600" fill="#7C2D12">ЯДРО · MVP — одна функция: сессия телесного времени</text>
+  <text x="32" y="114" font-size="12" fill="#44403C">тап → уголёк разгорается, звук вводит (вход → плато → рассвет) · жар и звук И ЕСТЬ оставшееся время</text>
+  <text x="32" y="134" font-size="12" fill="#44403C">виден краем глаза: PiP-вынос поверх работы · страница-очаг как хост (без new-tab-override)</text>
+  <text x="32" y="160" font-size="11" fill="#7C2D12">✅ механики валидированы: Time Timer-диск (visual timer 14.8k, +164%) · brown-маскировка · мягкие границы (Otto: «no punishments»)</text>
+
+  <!-- СЛЕД -->
+  <rect x="16" y="196" width="648" height="84" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="32" y="222" font-size="14" font-weight="600" fill="#92400E">СЛЕД · тоже MVP — завершение петли, НЕ вторая функция</text>
+  <text x="32" y="244" font-size="12" fill="#44403C">после рассвета уголёк ложится в ряд тлеющих точек дня — рядом с орбом, без цифр и вины (whiteboard-ритуал автора)</text>
+  <text x="32" y="264" font-size="11" fill="#92400E">✅ Forest доказал: накопление-как-мир держит ядро крупнейшего wellness-бренда · 🔶 поэтика уголька — наша ставка</text>
+
+  <!-- ДОМ -->
+  <rect x="16" y="292" width="648" height="74" rx="10" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="32" y="318" font-size="14" font-weight="600" fill="#1E3A8A">ДОМ · v1.x — опция «очаг новой вкладкой» + тепло недели</text>
+  <text x="32" y="340" font-size="12" fill="#44403C">override = трение установки («changes your new tab page») и мёртвая дверь (aesthetic new tab 20/мес) → опцией/спутником после</text>
+  <text x="32" y="358" font-size="11" fill="#1E3A8A">✅ new-tab как красота валидирован (Momentum 2M · Tabliss) — но как дом ТАЙМЕРА не валидирован никем (макс. Kaizen 1000)</text>
+
+  <!-- МИР -->
+  <rect x="16" y="378" width="648" height="56" rx="10" fill="none" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="32" y="402" font-size="14" font-weight="600" fill="#1E3A8A">МИР · v2 — метаморфоза после запуска</text>
+  <text x="32" y="422" font-size="12" fill="#44403C">таверна-мир · характеры угольков · премиум-опыт (подписка продаёт глубину, не настройки)</text>
+
+  <!-- НЕ MVP -->
+  <text x="16" y="462" font-size="12" fill="#B91C1C">✗ цифры / графики / стрики — table-stakes-вкладка у всех крупных (Focus To-Do · Otto · Momentum Plus), НЕ дифференциатор → v2, в MVP не рисуем</text>
+  <text x="16" y="486" font-size="10" fill="#A8A29E">капсула sound-focus-timer · данные: app-studio/research/focus_timer_format_probe_2026-07-16.md + newtab_census.csv · сменяет product-essence-2026-07-04 в части слоёв</text>
+</svg>

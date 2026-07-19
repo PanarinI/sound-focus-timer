@@ -1,0 +1,63 @@
+<svg viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, Segoe UI, sans-serif">
+  <title>Жизненный цикл жара — механика v1.1 (2026-07-16, все развилки закрыты автором)</title>
+  <desc>Автомат из четырёх состояний: покой → клик → вход ~90 секунд → плато (жар созревает; клик = пауза, в паузе кнопка «завершить») → рассвет 2-3 минуты (клик = ничего) → уголь-слепок ложится → покой с приглашениями. Кручение только в покое: завод 5-90, до упора = бесконечность; в сессии скролл не перехватывается. Перерыв не фаза, а поведение покоя. Сценарии S1-S6 = закон. Полная спека — MECHANICS.md.</desc>
+  <rect x="0" y="0" width="680" height="440" fill="#1C1917"/>
+  <text x="16" y="30" font-size="16" font-weight="600" fill="#FDE68A">Цикл жара v1.1 — четыре состояния, время созревает</text>
+  <text x="16" y="50" font-size="11" fill="#A8A29E">сценарии S1–S6 = закон (юзер-тесты №4–5) · клик-25 · кручение только в покое · спека: MECHANICS.md</text>
+
+  <!-- ПОКОЙ -->
+  <circle cx="70" cy="160" r="14" fill="#92400E"/>
+  <rect x="50" y="184" width="8" height="4" rx="2" fill="#B45309"/>
+  <rect x="63" y="184" width="12" height="5" rx="2.5" fill="#B45309"/>
+  <rect x="81" y="184" width="6" height="3.5" rx="1.75" fill="#7C2D12"/>
+  <text x="70" y="212" font-size="12" fill="#FDE68A" text-anchor="middle">покой + угли</text>
+  <text x="70" y="228" font-size="10" fill="#A8A29E" text-anchor="middle">приглашения живут тут</text>
+  <path d="M96 160 L128 160" stroke="#D97706" stroke-width="2" marker-end="url(#a)"/>
+  <text x="112" y="148" font-size="10" fill="#FBBF24" text-anchor="middle">клик</text>
+
+  <!-- ВХОД -->
+  <circle cx="170" cy="160" r="22" fill="#B45309"/>
+  <text x="170" y="212" font-size="12" fill="#FDE68A" text-anchor="middle">вход ~90 с</text>
+  <text x="170" y="228" font-size="10" fill="#A8A29E" text-anchor="middle">звук втягивает</text>
+  <path d="M204 160 L240 160" stroke="#D97706" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- ПЛАТО -->
+  <circle cx="302" cy="160" r="40" fill="#D97706"/>
+  <text x="302" y="230" font-size="12" fill="#FDE68A" text-anchor="middle">плато — жар зреет</text>
+  <text x="302" y="246" font-size="10" fill="#A8A29E" text-anchor="middle">меняется меньше всего · клик = пауза</text>
+  <path d="M354 160 L392 160" stroke="#D97706" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- РАССВЕТ -->
+  <circle cx="456" cy="160" r="50" fill="#F59E0B"/>
+  <circle cx="456" cy="160" r="50" fill="none" stroke="#FDE68A" stroke-width="1.5" opacity="0.7"/>
+  <text x="456" y="240" font-size="12" fill="#FDE68A" text-anchor="middle">рассвет 2–3 мин · клик = ничего</text>
+  <text x="456" y="256" font-size="10" fill="#A8A29E" text-anchor="middle">тембр светлеет · без звонка</text>
+  <!-- to ember -->
+  <path d="M514 160 L552 160" stroke="#D97706" stroke-width="2" marker-end="url(#a)"/>
+  <text x="533" y="148" font-size="10" fill="#FBBF24" text-anchor="middle">уголь</text>
+
+  <!-- УГОЛЬ-СЛЕПОК -->
+  <circle cx="592" cy="160" r="12" fill="#B45309"/>
+  <circle cx="614" cy="166" r="6" fill="#92400E"/>
+  <circle cx="626" cy="169" r="2.5" fill="#7C2D12"/>
+  <text x="608" y="212" font-size="12" fill="#FDE68A" text-anchor="middle">слепки жара</text>
+  <text x="608" y="228" font-size="10" fill="#A8A29E" text-anchor="middle">диаметр = длительность</text>
+
+  <!-- return to rest -->
+  <path d="M600 240 C 590 300, 140 300, 78 190" stroke="#78350F" stroke-width="1.5" fill="none" stroke-dasharray="5 5" marker-end="url(#a)"/>
+  <text x="340" y="312" font-size="10.5" fill="#FBBF24" text-anchor="middle">→ покой · через 5 мин первое приглашение (эхо помодоро), дальше каждые ~15 · стартует только клик</text>
+
+  <text x="16" y="348" font-size="11.5" fill="#FDE68A">кручение — только в покое: завод 5–90 · до упора = ∞ · в сессии скролл не перехватывается</text>
+  <text x="16" y="368" font-size="11.5" fill="#FDE68A">пауза: клик на плато (тишина сразу) · в паузе — кнопка «☀ завершить» · 10 мин без возврата → очаг засыпает, уголь честный</text>
+  <text x="16" y="394" font-size="11" fill="#F87171">заслоны: без тикания · цифры по ховеру · без красного · без стриков · без автостарта · без блокера · жар без топлива (не костёр)</text>
+  <text x="16" y="420" font-size="10" fill="#78716C">капсула sound-focus-timer · MECHANICS.md v1.1 · критерий образа: «честная и по-настоящему, а не декоративно тёплая» (автор)</text>
+
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 Z" fill="#D97706"/>
+    </marker>
+    <marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 Z" fill="#FBBF24"/>
+    </marker>
+  </defs>
+</svg>

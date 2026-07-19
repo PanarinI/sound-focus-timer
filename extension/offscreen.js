@@ -1,17 +1,46 @@
-// offscreen.js — обёртка движка для расширения: команды из background → движок, состояние → обратно.
+// offscreen.js — ДОМ ЗВУКА. Невидимый документ, который держит WebAudio, пока идёт сессия.
+// Благодаря ему очаг не гаснет, когда пользователь закрывает боковую панель: дом свернулся — огонь горит.
+// Панель общается с ним через remote.js (тот же контракт, что у локального AudioEngine).
+
+let lastState = null;
+
 const engine = new AudioEngine((state) => {
-  chrome.runtime.sendMessage({ target: 'bg', type: 'state', state }).catch(() => {});
+  lastState = state;
+  // панель может быть закрыта — тогда слушать некому, и это нормально
+  chrome.runtime.sendMessage({ target: 'panel', type: 'state', state, mirror: snapshot() }).catch(() => {});
 });
 
-chrome.runtime.onMessage.addListener((msg) => {
+// «сколько прошло», а не метки времени: performance.now() в панели имеет свой отсчёт (см. remote.js)
+function snapshot() {
+  const now = performance.now() / 1000;
+  return {
+    phase: engine.phase,
+    elapsed: engine.phase === 'ниточка'
+      ? (engine.pausedAt || 0)
+      : (engine.sessionStart ? now - engine.sessionStart : 0),
+    phaseElapsed: engine.phaseStart ? now - engine.phaseStart : 0,
+    pausedAt: engine.pausedAt || 0,
+    sessionDur: engine.sessionDur || 0,
+    extDur: engine._extDur || 1
+  };
+}
+
+chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   if (!msg || msg.target !== 'offscreen') return;
   switch (msg.type) {
     case 'turnOn': engine.turnOn(); break;
+    case 'turnOff': engine.turnOff(); break;
     case 'startSession': engine.startSession(msg.duration); break;
     case 'pause': engine.pause(); break;
     case 'resume': engine.resume(); break;
     case 'endSession': engine.endSession(); break;
-    case 'turnOff': engine.turnOff(); break;
+    case 'extinguish': engine.extinguish(msg.dur); break;
     case 'setChar': engine.setChar(msg.char); break;
+    case 'setTier': engine.setTier(msg.tier); break;
+    case 'setHarmony': engine.setHarmony(msg.value); break;
+    case 'setLengths': engine.GATHER = msg.gather; engine.DAWN = msg.dawn; break;
+    case 'sync': break;                       // просто отдать снимок — панель догоняет очаг
   }
+  reply({ mirror: snapshot(), state: lastState });
+  return true;
 });

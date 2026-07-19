@@ -6,6 +6,12 @@
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "5177", "--directory", "extension"],
       "port": 5177
+    },
+    {
+      "name": "welcome",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "5178", "--directory", "welcome"],
+      "port": 5178
     }
   ]
 }

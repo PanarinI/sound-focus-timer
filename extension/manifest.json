@@ -1,11 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Tide — sound focus timer",
-  "version": "0.2.0",
-  "description": "Фокус-сессии, где время сделано из звука. Мягкий вход, плато, рассвет вместо будильника. Всё на устройстве.",
+  "name": "Ember — warm focus timer",
+  "version": "0.1.0",
+  "description": "A focus timer where time is made of sound. Warm entry, steady plateau, a sunrise instead of an alarm. On-device.",
   "minimum_chrome_version": "116",
-  "permissions": ["sidePanel", "storage"],
+  "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "permissions": ["sidePanel", "storage", "offscreen", "scripting"],
+  "optional_host_permissions": ["<all_urls>"],
   "background": { "service_worker": "background.js" },
-  "action": { "default_title": "Tide — открыть пульт" },
-  "side_panel": { "default_path": "sidepanel.html" }
+  "action": {},
+  "side_panel": { "default_path": "hearth.html" }
 }
