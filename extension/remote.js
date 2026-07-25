@@ -14,7 +14,7 @@ class RemoteEngine {
     this.sessionStart = 0; this.phaseStart = 0; this.pausedAt = 0; this.sessionDur = 0;
     this._extDur = 1;
     this._gather = 90; this._dawn = 40;
-    this._ready = null;
+    this._chain = null;                   // очередь команд: строгий порядок, без гонки пересоздания дома
 
     chrome.runtime.onMessage.addListener((msg) => {
       if (!msg || msg.target !== 'panel') return;
@@ -41,17 +41,30 @@ class RemoteEngine {
   }
 
   _ensure() {
-    if (!this._ready) this._ready = chrome.runtime.sendMessage({ target: 'bg', type: 'ensureOffscreen' });
-    return this._ready;
+    // Всегда спрашиваем фон — СОЗДАВАТЬ решает он (hasDocument). НЕ кэшируем «дом поднят»:
+    // Chrome закрывает offscreen после тишины, кэш давал ложное «есть» → команда в пустоту
+    // (баг 07-22; рецидив: на СТАРТЕ летят две команды разом — turnOn+startSession — и кэш+ретрай гонялись).
+    return chrome.runtime.sendMessage({ target: 'bg', type: 'ensureOffscreen' }).then((r) => {
+      if (!r || !r.ok) throw new Error((r && r.error) || 'offscreen не поднялся');
+    });
   }
 
-  async _send(type, extra) {
+  // Команды идут СТРОГО по очереди: turnOn обязан отработать раньше startSession, и никакие
+  // две команды не пересоздают дом звука одновременно (та самая гонка — корень рецидива).
+  _send(type, extra) {
+    this._chain = (this._chain || Promise.resolve()).then(() => this._run(type, extra)).catch(() => {});
+    return this._chain;
+  }
+
+  async _run(type, extra, retried) {
     try {
       await this._ensure();
       const reply = await chrome.runtime.sendMessage(Object.assign({ target: 'offscreen', type }, extra || {}));
       if (reply) { this._absorb(reply.mirror); if (reply.state) this.onState(reply.state); }
     } catch (e) {
-      this._ready = null;     // дом звука не поднялся (или уснул SW) — поднимем на следующем жесте
+      // Дом звука мог закрыться между ensure и командой — пересоздать (ensure это сделает) и повторить РАЗ.
+      if (!retried) return this._run(type, extra, true);
+      console.warn('[ember] команда звука не прошла:', type, String(e));
     }
   }
 

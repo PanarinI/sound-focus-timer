@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Доза воздуха — уголёк в янтарной атмосфере (07-25)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-user-select: none; user-select: none; }
+  body { background: #0a0806; color: #c9bdae; font: 13px/1.5 -apple-system, 'Segoe UI', sans-serif;
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 24px 20px 42px; }
+  h1 { font-size: 15px; font-weight: 600; color: #e0b070; }
+  .sub { font-size: 12px; color: #7a7266; max-width: 680px; text-align: center; }
+  .row { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
+  .panel { width: 260px; border-radius: 14px; overflow: hidden; border: 1px solid #2a231a; }
+  .cap { text-align: center; font-size: 12.5px; font-weight: 600; color: #e0b070; padding: 10px 0 7px; background: #150d07; }
+  .scene { width: 260px; height: 268px; position: relative; overflow: hidden;
+    background: radial-gradient(ellipse 78% 64% at 50% 48%, #1a1109 0%, #120c07 60%, #0b0805 100%); }
+  .tag { font-size: 11px; color: #8a8276; text-align: center; padding: 8px 12px 13px; min-height: 40px; }
+
+  /* ENVELOPE — тёплая янтарная среда вокруг ядра (радиально, вне времени) */
+  .envelope { position: absolute; inset: 0; pointer-events: none; z-index: 0;
+    background: radial-gradient(circle at 50% 47%,
+      rgba(255,186,96,.92) 0%, rgba(232,142,66,.5) 20%, rgba(150,82,40,.24) 44%, rgba(20,12,7,0) 70%);
+    opacity: calc(.12 + var(--p,0)*.5); transition: opacity .5s ease;
+    transform-box: fill-box; transform-origin: 50% 47%; animation: env-breathe 7.5s ease-in-out infinite; }
+  /* второй слой — «тело» света, слегка смещён, дрейфует (марево дёшево, без feTurbulence) */
+  .envelope.body2 { background: radial-gradient(circle at 54% 52%,
+      rgba(230,150,80,.5) 0%, rgba(160,88,44,.2) 40%, rgba(20,12,7,0) 66%);
+    opacity: calc(.08 + var(--p,0)*.34); animation: env-drift 13s ease-in-out infinite; }
+  @keyframes env-breathe { 0%,100%{transform:scale(1)} 50%{transform:scale(1.07)} }
+  @keyframes env-drift { 0%,100%{transform:translate(-4px,3px) scale(1.02)} 50%{transform:translate(5px,-4px) scale(1.06)} }
+
+  /* ВЗВЕСЬ — редкие тусклые янтарные пылинки, конвекция (служат ядру, не рассыпаются) */
+  .mote { position: absolute; border-radius: 50%; filter: blur(2px); z-index: 2; pointer-events: none;
+    background: radial-gradient(circle, rgba(255,224,158,.9), rgba(255,200,120,0));
+    opacity: calc(var(--p,0)*.75); transition: opacity .6s ease; }
+
+  /* УГОЛЁК — то же ядро, что в панели (resolved amber, приглушённый) */
+  .ember { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 1; width: 220px; height: 220px; }
+  .e-body { transition: filter .4s ease; filter: brightness(calc(.7 + var(--p,0)*.5)) saturate(calc(.9 + var(--p,0)*.35)); }
+  .e-halo, .e-pool { transition: opacity .4s ease; }
+  .e-halo { opacity: calc(.08 + var(--p,0)*.34); transform-box: fill-box; transform-origin: center; animation: e-breathe 6.5s ease-in-out infinite; }
+  .e-pool { opacity: calc(.05 + var(--p,0)*.3); }
+  .e-ashg { transition: opacity .4s ease; opacity: calc(.6 - var(--p,0)*.4); }
+  .e-cg { transition: opacity .4s ease; }
+  .e-cg.early { opacity: calc(.5 + var(--p,0)*.5); }
+  .e-cg.mid { opacity: calc(max(0,(var(--p,0)-.32)*3)); }
+  .e-cg.late { opacity: calc(max(0,(var(--p,0)-.64)*3)); }
+  .e-crack { filter: drop-shadow(0 0 3px rgba(255,150,60,.45)); animation: e-flick 3.4s ease-in-out infinite; }
+  .e-cg:nth-child(2) .e-crack{animation-delay:1.1s}.e-cg:nth-child(3) .e-crack{animation-delay:.5s}
+  .e-cg:nth-child(4) .e-crack{animation-delay:1.8s}.e-cg:nth-child(5) .e-crack{animation-delay:.9s}.e-cg:nth-child(6) .e-crack{animation-delay:2.3s}
+  .e-drift { mix-blend-mode: screen; animation: e-cdrift 7s ease-in-out infinite; }
+  @keyframes e-breathe{0%,100%{transform:scale(.97)}42%{transform:scale(1.05)}}
+  @keyframes e-flick{0%,100%{opacity:.6}50%{opacity:1}}
+  @keyframes e-cdrift{0%,100%{transform:translate(-5px,5px)}50%{transform:translate(6px,-7px)}}
+
+  @media (prefers-reduced-motion: reduce){ .envelope,.mote,.e-halo,.e-crack,.e-drift{animation:none!important} }
+
+  .controls { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px; }
+  .slab { display: flex; align-items: center; gap: 12px; font-size: 12px; color: #9a8b70; }
+  input[type=range]{-webkit-appearance:none;appearance:none;width:340px;height:5px;border-radius:4px;background:#26201a;cursor:pointer;outline:none}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:#e8b25c;box-shadow:0 0 9px rgba(232,178,92,.6);cursor:pointer}
+  .btn{background:none;border:1px solid #3a2d1f;color:#cbb27a;border-radius:8px;padding:7px 16px;font:inherit;font-size:12px;cursor:pointer;transition:border-color .3s}
+  .btn:hover{border-color:#cbb27a}
+  .pval{color:#cbb27a;width:120px}
+  .note{font-size:11px;color:#6b625a;max-width:600px;text-align:center}
+</style>
+</head>
+<body>
+  <h1>Доза воздуха — уголёк в янтарной атмосфере</h1>
+  <div class="sub">Вердикт проработки: уголёк ДЕРЖИМ, воздух приходит средой (envelope), не отдельным небом.
+    Вне времени суток, один янтарный тон. Осталось выбрать ДОЗУ воздуха — почувствуй три и скажи, какая твоя.</div>
+
+  <div class="row">
+    <div class="panel"><div class="cap">A · уголёк-соло</div><div class="scene" data-dose="solo"></div>
+      <div class="tag">как сейчас · чётко, остро · но точка света в пустоте (звук обволакивает — тут нет)</div></div>
+    <div class="panel"><div class="cap">B · + envelope</div><div class="scene" data-dose="env"></div>
+      <div class="tag">уголь + дышащая янтарная среда вокруг · ты ВНУТРИ тепла (рекоменд. минимум)</div></div>
+    <div class="panel"><div class="cap">C · + взвесь</div><div class="scene" data-dose="full"></div>
+      <div class="tag">envelope + редкие медленные пылинки-конвекция · макс обволакивание/подвешенность</div></div>
+  </div>
+
+  <div class="controls">
+    <div class="slab"><span>покой</span><input type="range" id="p" min="0" max="100" value="10"><span>разгар</span><span class="pval" id="pv">сессия 10%</span></div>
+    <div class="slab"><button class="btn" id="live">▶ прожить сессию (все)</button>
+      <span class="note">воздух ВСЕГДА подчинён углю · пылинки медленно всплывают (не выстрел искр — искры=костёр=огонь, у нас нет)</span></div>
+  </div>
+
+<script>
+function emberSVG() { return `
+  <svg class="ember" viewBox="0 0 200 224" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="eh-${Math.random().toString(36).slice(2,7)}" cx="46%" cy="45%" r="63%"></radialGradient>
+    </defs>
+    <circle class="e-halo" cx="100" cy="112" r="82" fill="url(#eHalo)"/>
+    <ellipse class="e-pool" cx="100" cy="170" rx="70" ry="13" fill="url(#ePool)"/>
+    <path class="e-body" d="M50 110 C48 82 72 66 102 68 C134 70 150 84 152 112 C154 140 132 160 100 159 C68 158 52 138 50 110 Z" fill="url(#eHot)"/>
+    <g class="e-ashg" fill="#4a3a2c">
+      <path d="M64 90 C80 80 98 86 90 100 C83 110 62 108 64 90 Z"/>
+      <path d="M128 122 C142 114 150 128 138 138 C127 146 120 130 128 122 Z"/>
+      <path d="M86 134 C100 128 110 140 98 147 C86 152 78 140 86 134 Z"/>
+    </g>
+    <g fill="none" stroke-linecap="round">
+      <g class="e-cg early"><path class="e-crack" d="M84 84 Q98 110 90 142" stroke="#ffd488" stroke-width="2.1"/></g>
+      <g class="e-cg early"><path class="e-crack" d="M110 82 Q116 108 130 128" stroke="#ffca7a" stroke-width="1.6"/></g>
+      <g class="e-cg mid"><path class="e-crack" d="M58 108 Q78 116 94 108" stroke="#f2b86a" stroke-width="1.4"/></g>
+      <g class="e-cg mid"><path class="e-crack" d="M118 94 Q130 112 136 132" stroke="#ffc878" stroke-width="1.4"/></g>
+      <g class="e-cg late"><path class="e-crack" d="M74 122 Q88 130 98 122" stroke="#ffdc94" stroke-width="1.2"/></g>
+      <g class="e-cg late"><path class="e-crack" d="M100 150 Q108 132 100 110" stroke="#ffd084" stroke-width="1.2"/></g>
+    </g>
+    <circle class="e-drift" cx="100" cy="108" r="10" fill="url(#eDrift)"/>
+  </svg>`;
+}
+// общие градиенты (один defs на страницу)
+const defs = `<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <radialGradient id="eHot" cx="46%" cy="45%" r="63%"><stop offset="0%" stop-color="#f4bd72"/><stop offset="36%" stop-color="#c9752f"/><stop offset="74%" stop-color="#6e3d1e"/><stop offset="100%" stop-color="#28190f"/></radialGradient>
+  <radialGradient id="eHalo" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(226,132,58,.32)"/><stop offset="100%" stop-color="rgba(226,132,58,0)"/></radialGradient>
+  <radialGradient id="ePool" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(226,120,54,.4)"/><stop offset="100%" stop-color="rgba(226,120,54,0)"/></radialGradient>
+  <radialGradient id="eDrift" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(255,236,190,.8)"/><stop offset="100%" stop-color="rgba(255,220,160,0)"/></radialGradient>
+</defs></svg>`;
+document.body.insertAdjacentHTML('afterbegin', defs);
+
+function motesHTML(n) {
+  let s = '';
+  for (let i = 0; i < n; i++) {
+    const sz = 4 + Math.random()*5, left = 20 + Math.random()*60, bottom = 20 + Math.random()*45;
+    const dur = 9 + Math.random()*9, del = -Math.random()*10, dx = (Math.random()*2-1)*16;
+    s += `<div class="mote" style="width:${sz.toFixed(1)}px;height:${sz.toFixed(1)}px;left:${left.toFixed(0)}%;bottom:${bottom.toFixed(0)}%;animation:mote-rise ${dur.toFixed(1)}s ease-in-out ${del.toFixed(1)}s infinite;--dx:${dx.toFixed(0)}px"></div>`;
+  }
+  return s;
+}
+// кейфрейм всплытия пылинок (конвекция вверх-в-сторону, НЕ выстрел)
+const st = document.createElement('style');
+st.textContent = '@keyframes mote-rise{0%{transform:translate(0,0);opacity:0}20%{opacity:1}80%{opacity:.8}100%{transform:translate(var(--dx),-46px);opacity:0}}';
+document.head.appendChild(st);
+
+document.querySelectorAll('.scene').forEach(sc => {
+  const dose = sc.dataset.dose;
+  let html = '';
+  if (dose === 'env' || dose === 'full') html += '<div class="envelope"></div><div class="envelope body2"></div>';
+  html += emberSVG();
+  if (dose === 'full') html += motesHTML(9);
+  sc.innerHTML = html;
+});
+
+const slider = document.getElementById('p'), pv = document.getElementById('pv');
+const panels = document.querySelectorAll('.scene');
+function setP(v){ panels.forEach(p=>p.style.setProperty('--p',(v/100).toFixed(3))); pv.textContent='сессия '+Math.round(v)+'%'; }
+slider.addEventListener('input',()=>setP(+slider.value));
+setP(+slider.value);
+
+let raf=0,t0=0;
+document.getElementById('live').addEventListener('click',()=>{
+  cancelAnimationFrame(raf); t0=0; const DUR=12000,TAU=.35;
+  function step(ts){ if(!t0)t0=ts; const el=(ts-t0)/DUR;
+    let m = el<0.84 ? 1-Math.exp(-el/TAU) : (1-Math.exp(-0.84/TAU))*(1-(el-0.84)/0.3);
+    const v=Math.max(8,Math.min(100,m*100)); slider.value=v; setP(v);
+    if(el<1.15) raf=requestAnimationFrame(step);
+  } raf=requestAnimationFrame(step);
+});
+</script>
+</body>
+</html>

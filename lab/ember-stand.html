@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Уголёк — два полюса тепла (стенд выбора, 07-24)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-user-select: none; user-select: none; }
+  body { background: radial-gradient(ellipse 80% 65% at 50% 40%, #17100a 0%, #100b07 55%, #0a0705 100%);
+    color: #c9bdae; font: 13px/1.5 -apple-system, 'Segoe UI', sans-serif; min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 26px 20px 40px; }
+  h1 { font-size: 15px; font-weight: 600; color: #e8b25c; letter-spacing: .2px; }
+  .sub { font-size: 12px; color: #8a7660; max-width: 640px; text-align: center; }
+  .row { display: flex; gap: 26px; flex-wrap: wrap; justify-content: center; }
+  .panel { width: 300px; background: #150d07; border: 1px solid #3a2d1f; border-radius: 14px;
+    padding: 14px 14px 18px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .panel.b { background: #110b06; border-color: #4a3826; }
+  .ptitle { font-size: 13px; font-weight: 600; color: #e8b25c; }
+  .panel.b .ptitle { color: #c9a06a; }
+  .ptag { font-size: 11px; color: #7a6a55; text-align: center; min-height: 30px; }
+  .ember { width: 240px; height: 250px; display: block; }
+  /* ЖАР — тело */
+  .body { transition: filter .4s ease; filter: brightness(calc(.72 + var(--p, 0) * .55)) saturate(calc(.85 + var(--p, 0) * .4)); }
+  .halo, .pool { transition: opacity .4s ease; }
+  .halo { opacity: calc(.10 + var(--p, 0) * .5); }
+  .pool { opacity: calc(.08 + var(--p, 0) * .42); }
+  .ashg { transition: opacity .4s ease; opacity: calc(.62 - var(--p, 0) * .4); }   /* окна пепла раскрываются с ростом */
+  /* прожилки загораются постадийно (рост ВНУТРЬ, не в размер) */
+  .cg { transition: opacity .4s ease; }
+  .cg.early { opacity: calc(.5 + var(--p, 0) * .5); }
+  .cg.mid   { opacity: calc(max(0, (var(--p, 0) - .32) * 3)); }
+  .cg.late  { opacity: calc(max(0, (var(--p, 0) - .64) * 3)); }
+  .crack { filter: drop-shadow(0 0 3px rgba(255,150,60,.5)); }
+  /* ЖИВОСТЬ — always-on, не зависит от роста */
+  .halo { transform-box: fill-box; transform-origin: center; }
+  .a .halo   { animation: breatheA 6.5s ease-in-out infinite; }        /* А: дыхание как у организма (асимметрично) */
+  .b .halo   { animation: breatheB 9s ease-in-out infinite; }          /* Б: сдержаннее */
+  @keyframes breatheA { 0%,100% { transform: scale(.97); } 42% { transform: scale(1.06); } }
+  @keyframes breatheB { 0%,100% { transform: scale(.99); } 50% { transform: scale(1.03); } }
+  .crack { animation: flick 3.4s ease-in-out infinite; }
+  .cg:nth-child(2) .crack { animation-delay: 1.1s; }
+  .cg:nth-child(3) .crack { animation-delay: .5s; }
+  .cg:nth-child(4) .crack { animation-delay: 1.8s; }
+  .cg:nth-child(5) .crack { animation-delay: .9s; }
+  .cg:nth-child(6) .crack { animation-delay: 2.3s; }
+  @keyframes flick { 0%,100% { opacity: .6; } 50% { opacity: 1; } }
+  /* дрейф жара (конвекция) — самый живой штрих */
+  .drift { mix-blend-mode: screen; }
+  .a .drift { animation: driftA 7s ease-in-out infinite; }
+  .b .drift { animation: driftB 8.5s linear infinite; }
+  @keyframes driftA { 0%,100% { transform: translate(-6px, 6px); } 50% { transform: translate(6px, -8px); } }
+  @keyframes driftB { 0% { transform: translate(-14px, 10px); } 33% { transform: translate(10px, -6px); } 66% { transform: translate(6px, 14px); } 100% { transform: translate(-14px, 10px); } }
+  .ember .svg-breath { transform-box: fill-box; transform-origin: 100px 112px; }
+  .a .svg-breath { animation: glowA 6.5s ease-in-out infinite; }
+  @keyframes glowA { 0%,100% { filter: brightness(.97); } 42% { filter: brightness(1.07); } }
+  /* controls */
+  .controls { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 4px; }
+  .slab { display: flex; align-items: center; gap: 12px; font-size: 12px; color: #9a7c4f; }
+  input[type=range] { -webkit-appearance: none; appearance: none; width: 320px; height: 5px; border-radius: 4px;
+    background: #2a2119; cursor: pointer; outline: none; }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%;
+    background: #e8b25c; box-shadow: 0 0 9px rgba(232,178,92,.6); cursor: pointer; }
+  .btn { background: none; border: 1px solid #3a2d1f; color: #caa25a; border-radius: 8px; padding: 7px 16px;
+    font: inherit; font-size: 12px; cursor: pointer; transition: border-color .3s; }
+  .btn:hover { border-color: #caa25a; }
+  .pval { color: #caa25a; width: 128px; }
+  .note { font-size: 11px; color: #6b5f50; max-width: 560px; text-align: center; }
+  @media (prefers-reduced-motion: reduce) {
+    .halo, .crack, .drift, .svg-breath { animation: none !important; }
+  }
+</style>
+</head>
+<body>
+  <h1>Уголёк — два полюса тепла</h1>
+  <div class="sub">Форма решена проработкой: жар сквозь корку пепла (не гладкий орб). Осталось выбрать РЕГИСТР тепла.
+    Оба живы всегда (дыхание · мерцание трещин · дрейф жара). Ползунок = рост ВНУТРЬ (тепло цвета + новые прожилки + окна пепла), не в размер.</div>
+
+  <div class="row" id="row"></div>
+
+  <div class="controls">
+    <div class="slab">
+      <span>покой</span>
+      <input type="range" id="p" min="0" max="100" value="8">
+      <span>разгар</span>
+      <span class="pval" id="pv">прогресс 8%</span>
+    </div>
+    <div class="slab">
+      <button class="btn" id="live">▶ прожить сессию</button>
+      <span class="note">арка: разгорается (фронт-загружено) → плато → загнетание (уголь берегут, не тушат)</span>
+    </div>
+  </div>
+
+<script>
+function emberSVG(pole) {
+  return `<svg class="ember ${pole}" viewBox="0 0 200 224" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="hot-${pole}" cx="46%" cy="45%" r="63%">
+        ${pole === 'a'
+          ? '<stop offset="0%" stop-color="#ffe7b0"/><stop offset="38%" stop-color="#f2a83f"/><stop offset="76%" stop-color="#c25f21"/><stop offset="100%" stop-color="#7c3b18"/>'
+          : '<stop offset="0%" stop-color="#e8933f"/><stop offset="34%" stop-color="#8a4a22"/><stop offset="72%" stop-color="#452a19"/><stop offset="100%" stop-color="#241610"/>'}
+      </radialGradient>
+      <radialGradient id="halo-${pole}" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="${pole === 'a' ? 'rgba(255,165,72,.45)' : 'rgba(210,120,55,.22)'}"/>
+        <stop offset="100%" stop-color="rgba(255,150,60,0)"/>
+      </radialGradient>
+      <radialGradient id="pool-${pole}" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="${pole === 'a' ? 'rgba(255,150,64,.55)' : 'rgba(200,100,45,.3)'}"/>
+        <stop offset="100%" stop-color="rgba(255,150,64,0)"/>
+      </radialGradient>
+      <radialGradient id="drift-${pole}" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="${pole === 'a' ? 'rgba(255,240,200,.85)' : 'rgba(255,200,130,.7)'}"/>
+        <stop offset="100%" stop-color="rgba(255,220,160,0)"/>
+      </radialGradient>
+    </defs>
+    <g class="svg-breath">
+      <circle class="halo" cx="100" cy="112" r="86" fill="url(#halo-${pole})"/>
+      <ellipse class="pool" cx="100" cy="170" rx="74" ry="15" fill="url(#pool-${pole})"/>
+      <path class="body" d="M50 110 C48 82 72 66 102 68 C134 70 150 84 152 112 C154 140 132 160 100 159 C68 158 52 138 50 110 Z" fill="url(#hot-${pole})"/>
+      <g class="ashg" fill="${pole === 'a' ? '#5a4a3a' : '#33261c'}">
+        <path d="M64 90 C80 80 98 86 90 100 C83 110 62 108 64 90 Z"/>
+        <path d="M128 122 C142 114 150 128 138 138 C127 146 120 130 128 122 Z"/>
+        <path d="M86 134 C100 128 110 140 98 147 C86 152 78 140 86 134 Z"/>
+      </g>
+      <g class="cracks" fill="none" stroke-linecap="round">
+        <g class="cg early"><path class="crack" d="M84 84 Q98 110 90 142" stroke="${pole === 'a' ? '#ffe09a' : '#ff9a3c'}" stroke-width="2.2"/></g>
+        <g class="cg early"><path class="crack" d="M110 82 Q116 108 130 128" stroke="${pole === 'a' ? '#ffd488' : '#ffab52'}" stroke-width="1.7"/></g>
+        <g class="cg mid"><path class="crack" d="M58 108 Q78 116 94 108" stroke="${pole === 'a' ? '#ffcf7a' : '#e0803a'}" stroke-width="1.5"/></g>
+        <g class="cg mid"><path class="crack" d="M118 94 Q130 112 136 132" stroke="${pole === 'a' ? '#ffd888' : '#ff9640'}" stroke-width="1.5"/></g>
+        <g class="cg late"><path class="crack" d="M74 122 Q88 130 98 122" stroke="${pole === 'a' ? '#ffe6a8' : '#ffb060'}" stroke-width="1.3"/></g>
+        <g class="cg late"><path class="crack" d="M100 150 Q108 132 100 110" stroke="${pole === 'a' ? '#ffdd94' : '#ff9c46'}" stroke-width="1.3"/></g>
+      </g>
+      <circle class="drift" cx="100" cy="108" r="11" fill="url(#drift-${pole})"/>
+    </g>
+  </svg>`;
+}
+
+const row = document.getElementById('row');
+row.innerHTML =
+  `<div class="panel a"><div class="ptitle">Полюс А — тёплая масса</div>${emberSVG('a')}<div class="ptag">дышит · обволакивает · светит в комнату — «ты не один»</div></div>` +
+  `<div class="panel b"><div class="ptitle">Полюс Б — тёмное тело + живая грань</div>${emberSVG('b')}<div class="ptag">жар в трещинах · движение = физика · «явление, не существо»</div></div>`;
+
+const slider = document.getElementById('p'), pv = document.getElementById('pv');
+function setP(v) {
+  document.querySelectorAll('.ember').forEach(e => e.style.setProperty('--p', (v / 100).toFixed(3)));
+  pv.textContent = 'прогресс ' + Math.round(v) + '%';
+}
+slider.addEventListener('input', () => setP(+slider.value));
+setP(+slider.value);
+
+// «прожить сессию»: фронт-загруженный рост → плато → лёгкое загнетание (не тушение)
+let raf = 0, t0 = 0;
+document.getElementById('live').addEventListener('click', () => {
+  cancelAnimationFrame(raf); t0 = 0;
+  const DUR = 11000, TAU = 0.35;
+  function step(ts) {
+    if (!t0) t0 = ts;
+    const el = (ts - t0) / DUR;             // 0..1 доля «сессии»
+    let m;
+    if (el < 0.86) m = 1 - Math.exp(-el / TAU);            // фронт-загруженная арка к плато
+    else m = (1 - Math.exp(-0.86 / TAU)) * (1 - (el - 0.86) / 0.3);  // загнетание — жар отступает, но не в ноль
+    const v = Math.max(6, Math.min(100, m * 100));
+    slider.value = v; setP(v);
+    if (el < 1.15) raf = requestAnimationFrame(step);
+  }
+  raf = requestAnimationFrame(step);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>glow-stand — язычок-закладка v2 (верстак)</title>
+<style>
+  body { margin:0; font:17px/1.65 Georgia, 'Times New Roman', serif; color:#242220; background:#faf9f6; }
+  .page { max-width:700px; margin:0 auto; padding:46px 24px 120px; }
+  h1 { font-size:27px; margin:0 0 18px; }
+  p { margin:0 0 14px; }
+  .mut { color:#8a857d; font-size:13px; }
+  .bar { position:fixed; left:12px; bottom:12px; display:flex; gap:8px; font:13px -apple-system,'Segoe UI',sans-serif; }
+  button { padding:6px 11px; border:1px solid #d5d0c8; border-radius:8px; background:#fff; cursor:pointer; }
+  button:hover { background:#f3efe8; }
+</style>
+<div class="page">
+  <h1>Про тёплый шум и время</h1>
+  <p class="mut">стенд: обычная страница-хозяин; язычок должен жить у правой кромки, не мешая ей</p>
+  <p>Когда работа глубока, время перестаёт ощущаться. Это и дар, и беда: дар — потому что поток,
+  беда — потому что созвон в четыре, а ты поднял голову в половине шестого. Внешняя опора нужна
+  не для того, чтобы подгонять, а чтобы мягко держать берег в поле зрения.</p>
+  <p>Таймеры со звонком решают задачу силой: они рвут. Рваная ткань внимания срастается долго —
+  десять минут на возвращение контекста, если повезёт. Мягкая опора работает иначе: она рядом,
+  она дышит, она не требует взгляда — и потому не выдёргивает.</p>
+  <p>Шум без записи, сотканный на месте, никогда не повторяется и потому не надоедает так, как
+  надоедает луп. Он тёплый — низы греют, верхов ровно столько, чтобы воздух не звенел. Он не
+  обещает нейронауки. Он просто рядом, пока ты работаешь.</p>
+  <p>Если панель закрыта, очаг всё равно горит — звук это честно говорит. А у правой кромки
+  страницы живёт маленькая тёплая закладка: дверь домой. Она выехала, когда сессия началась,
+  дышит вместе с жаром и откроет очаг одним кликом.</p>
+</div>
+<div class="bar">
+  <button onclick="push(.15,false)">старт (жар .15)</button>
+  <button onclick="push(.9,false)">жар .9</button>
+  <button onclick="push(.6,true)">пауза</button>
+  <button onclick="off()">off (уезд)</button>
+  <button onclick="location.reload()">пересоздать</button>
+</div>
+<script>
+  const listeners = [];
+  window.chrome = {
+    runtime: {
+      sendMessage: () => Promise.resolve({ ok: false, error: 'стенд: панели нет' }),
+      onMessage: { addListener: (fn) => listeners.push(fn) }
+    },
+    storage: { local: { set: (v) => console.log('стенд: storage.set', v) } }
+  };
+  function push(heat, paused) { listeners.forEach(f => f({ target:'glow', type:'state', heat, paused })); }
+  function off() { listeners.forEach(f => f({ target:'glow', type:'off' })); }
+</script>
+<script src="../extension/glow.js"></script>

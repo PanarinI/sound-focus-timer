@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Уголёк vs Рассвет — сравнение метафор (07-25)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-user-select: none; user-select: none; }
+  body { background: #0a0a0c; color: #c9bdae; font: 13px/1.5 -apple-system, 'Segoe UI', sans-serif;
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 24px 20px 40px; }
+  h1 { font-size: 15px; font-weight: 600; color: #d8c8a8; }
+  .sub { font-size: 12px; color: #7a7266; max-width: 660px; text-align: center; }
+  .row { display: flex; gap: 26px; flex-wrap: wrap; justify-content: center; }
+  .panel { width: 300px; border-radius: 16px; overflow: hidden; border: 1px solid #2a2a30;
+    display: flex; flex-direction: column; align-items: center; }
+  .cap { width: 100%; text-align: center; font-size: 13px; font-weight: 600; padding: 11px 0 8px; }
+  .scene { width: 300px; height: 300px; position: relative; overflow: hidden; }
+  .tag { font-size: 11px; color: #8a8276; text-align: center; padding: 8px 14px 14px; min-height: 42px; }
+
+  /* ================= УГОЛЁК (жар сквозь пепел, финал: тёплый но приглушённый) ================= */
+  .emberwrap { background: radial-gradient(ellipse 75% 62% at 50% 46%, #1a1109 0%, #120c07 60%, #0b0805 100%); }
+  .emberwrap .cap { color: #e0b070; background: #150d07; }
+  .ember { width: 240px; height: 240px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); }
+  .e-body { transition: filter .4s ease; filter: brightness(calc(.7 + var(--p,0)*.5)) saturate(calc(.9 + var(--p,0)*.35)); }
+  .e-halo, .e-pool { transition: opacity .4s ease; }
+  .e-halo { opacity: calc(.08 + var(--p,0)*.38); transform-box: fill-box; transform-origin: center; animation: e-breathe 6.5s ease-in-out infinite; }
+  .e-pool { opacity: calc(.06 + var(--p,0)*.34); }
+  .e-ashg { transition: opacity .4s ease; opacity: calc(.6 - var(--p,0)*.4); }
+  .e-cg { transition: opacity .4s ease; }
+  .e-cg.early { opacity: calc(.5 + var(--p,0)*.5); }
+  .e-cg.mid   { opacity: calc(max(0,(var(--p,0)-.32)*3)); }
+  .e-cg.late  { opacity: calc(max(0,(var(--p,0)-.64)*3)); }
+  .e-crack { filter: drop-shadow(0 0 3px rgba(255,150,60,.45)); animation: e-flick 3.4s ease-in-out infinite; }
+  .e-cg:nth-child(2) .e-crack { animation-delay: 1.1s; } .e-cg:nth-child(3) .e-crack { animation-delay: .5s; }
+  .e-cg:nth-child(4) .e-crack { animation-delay: 1.8s; } .e-cg:nth-child(5) .e-crack { animation-delay: .9s; }
+  .e-cg:nth-child(6) .e-crack { animation-delay: 2.3s; }
+  .e-drift { mix-blend-mode: screen; animation: e-drift 7s ease-in-out infinite; }
+  @keyframes e-breathe { 0%,100%{transform:scale(.97)} 42%{transform:scale(1.05)} }
+  @keyframes e-flick { 0%,100%{opacity:.6} 50%{opacity:1} }
+  @keyframes e-drift { 0%,100%{transform:translate(-5px,5px)} 50%{transform:translate(6px,-7px)} }
+
+  /* ================= РАССВЕТ (небо тепла) ================= */
+  .sky { background: linear-gradient(#0c1030 0%, #141a44 48%, #26265a 100%); }
+  .skywrap .cap { color: #e8b47a; background: #0c1030; }
+  /* тёплая заря поднимается от горизонта, крепнет с прогрессом */
+  .dawn { position: absolute; inset: 0; transition: opacity .5s ease;
+    opacity: calc(.12 + var(--p,0)*.88);
+    background: linear-gradient(to top,
+      #f6ad5a 0%, #e88f5e 14%, #b06a86 34%, #4a4a80 56%, rgba(40,40,90,0) 74%); }
+  .clouds { position: absolute; inset: 0; }
+  .cloud { position: absolute; border-radius: 50%; filter: blur(11px);
+    background: rgba(230,190,190,.16); transition: background .5s ease; }
+  .c1 { width: 190px; height: 34px; left: -40px; bottom: 78px; animation: drift1 26s linear infinite; }
+  .c2 { width: 150px; height: 26px; right: -30px; bottom: 120px; animation: drift2 34s linear infinite; }
+  .c3 { width: 210px; height: 30px; left: -20px; bottom: 52px; animation: drift1 30s linear infinite; opacity:.7; }
+  @keyframes drift1 { 0%{transform:translateX(-14px)} 100%{transform:translateX(60px)} }
+  @keyframes drift2 { 0%{transform:translateX(14px)} 100%{transform:translateX(-60px)} }
+  /* СВЕТ — одно тёплое присутствие, низко у горизонта; поднимается и теплеет с прогрессом */
+  .sun { position: absolute; left: 50%; transform: translateX(-50%);
+    bottom: calc(30% + var(--p,0)*14%); width: 116px; height: 116px; border-radius: 50%;
+    transition: bottom .5s ease, opacity .5s ease, background .5s ease;
+    opacity: calc(.5 + var(--p,0)*.5);
+    background: radial-gradient(circle,
+      rgba(255,231,176,.98) 0%, rgba(247,170,74,.7) 34%, rgba(216,120,90,.32) 60%, rgba(216,120,90,0) 75%);
+    animation: sun-breathe 6.5s ease-in-out infinite; }
+  @keyframes sun-breathe { 0%,100%{transform:translateX(-50%) scale(.97); filter:brightness(.97)} 46%{transform:translateX(-50%) scale(1.05); filter:brightness(1.08)} }
+  /* линия горизонта-света крепнет к рассвету */
+  .horizon { position: absolute; left: 8%; right: 8%; bottom: 30%; height: 2px; border-radius: 2px;
+    background: linear-gradient(90deg, transparent, #ffd79a, transparent);
+    opacity: calc(.15 + var(--p,0)*.6); transition: opacity .5s ease; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .e-halo,.e-crack,.e-drift,.cloud,.sun { animation: none !important; }
+  }
+
+  /* controls */
+  .controls { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px; }
+  .slab { display: flex; align-items: center; gap: 12px; font-size: 12px; color: #9a9384; }
+  input[type=range] { -webkit-appearance: none; appearance: none; width: 340px; height: 5px; border-radius: 4px;
+    background: #26262c; cursor: pointer; outline: none; }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%;
+    background: #d8b06a; box-shadow: 0 0 9px rgba(216,176,106,.6); cursor: pointer; }
+  .btn { background: none; border: 1px solid #3a3a42; color: #cbb27a; border-radius: 8px; padding: 7px 16px;
+    font: inherit; font-size: 12px; cursor: pointer; transition: border-color .3s; }
+  .btn:hover { border-color: #cbb27a; }
+  .pval { color: #cbb27a; width: 138px; }
+  .note { font-size: 11px; color: #6b675e; max-width: 620px; text-align: center; }
+</style>
+</head>
+<body>
+  <h1>Уголёк vs Рассвет — две кожи, один звук</h1>
+  <div class="sub">Форма и звук те же, метафора разная. Пощупай обе на одной сессии. В прод пойдёт ОДНА.
+    Ползунок = ход сессии (покой → разгар → рассвет). Обе живут всегда (дыхание · дрейф).</div>
+
+  <div class="row">
+    <div class="panel emberwrap" id="pEmber">
+      <div class="cap">Уголёк — жар сквозь пепел</div>
+      <div class="scene" id="emberScene"></div>
+      <div class="tag">тёплый, но приглушённый (между А и Б) · рост ВНУТРЬ: цвет + прожилки, не размер</div>
+    </div>
+    <div class="panel skywrap" id="pSky">
+      <div class="cap">Рассвет — небо тепла</div>
+      <div class="scene sky" id="skyScene">
+        <div class="dawn"></div>
+        <div class="clouds"><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div></div>
+        <div class="horizon"></div>
+        <div class="sun"></div>
+      </div>
+      <div class="tag">небо, под которым работаешь · свет-присутствие крепнет и теплеет · финал = рассвет</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="slab"><span>покой</span>
+      <input type="range" id="p" min="0" max="100" value="8">
+      <span>рассвет</span><span class="pval" id="pv">сессия 8%</span></div>
+    <div class="slab"><button class="btn" id="live">▶ прожить сессию (обе)</button>
+      <span class="note">разгар фронт-загружен → плато → рассвет (загнетание/раскрытие), не будильник</span></div>
+  </div>
+
+<script>
+document.getElementById('emberScene').innerHTML = `
+  <svg class="ember" viewBox="0 0 200 224" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="e-hot" cx="46%" cy="45%" r="63%">
+        <stop offset="0%" stop-color="#f4bd72"/><stop offset="36%" stop-color="#c9752f"/>
+        <stop offset="74%" stop-color="#6e3d1e"/><stop offset="100%" stop-color="#28190f"/>
+      </radialGradient>
+      <radialGradient id="e-halo" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="rgba(226,132,58,.34)"/><stop offset="100%" stop-color="rgba(226,132,58,0)"/>
+      </radialGradient>
+      <radialGradient id="e-poolg" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="rgba(226,120,54,.42)"/><stop offset="100%" stop-color="rgba(226,120,54,0)"/>
+      </radialGradient>
+      <radialGradient id="e-driftg" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="rgba(255,236,190,.8)"/><stop offset="100%" stop-color="rgba(255,220,160,0)"/>
+      </radialGradient>
+    </defs>
+    <circle class="e-halo" cx="100" cy="112" r="84" fill="url(#e-halo)"/>
+    <ellipse class="e-pool" cx="100" cy="170" rx="72" ry="14" fill="url(#e-poolg)"/>
+    <path class="e-body" d="M50 110 C48 82 72 66 102 68 C134 70 150 84 152 112 C154 140 132 160 100 159 C68 158 52 138 50 110 Z" fill="url(#e-hot)"/>
+    <g class="e-ashg" fill="#4a3a2c">
+      <path d="M64 90 C80 80 98 86 90 100 C83 110 62 108 64 90 Z"/>
+      <path d="M128 122 C142 114 150 128 138 138 C127 146 120 130 128 122 Z"/>
+      <path d="M86 134 C100 128 110 140 98 147 C86 152 78 140 86 134 Z"/>
+    </g>
+    <g fill="none" stroke-linecap="round">
+      <g class="e-cg early"><path class="e-crack" d="M84 84 Q98 110 90 142" stroke="#ffd488" stroke-width="2.1"/></g>
+      <g class="e-cg early"><path class="e-crack" d="M110 82 Q116 108 130 128" stroke="#ffca7a" stroke-width="1.6"/></g>
+      <g class="e-cg mid"><path class="e-crack" d="M58 108 Q78 116 94 108" stroke="#f2b86a" stroke-width="1.4"/></g>
+      <g class="e-cg mid"><path class="e-crack" d="M118 94 Q130 112 136 132" stroke="#ffc878" stroke-width="1.4"/></g>
+      <g class="e-cg late"><path class="e-crack" d="M74 122 Q88 130 98 122" stroke="#ffdc94" stroke-width="1.2"/></g>
+      <g class="e-cg late"><path class="e-crack" d="M100 150 Q108 132 100 110" stroke="#ffd084" stroke-width="1.2"/></g>
+    </g>
+    <circle class="e-drift" cx="100" cy="108" r="10" fill="url(#e-driftg)"/>
+  </svg>`;
+
+const slider = document.getElementById('p'), pv = document.getElementById('pv');
+const roots = [document.getElementById('pEmber'), document.getElementById('pSky')];
+function setP(v) {
+  roots.forEach(r => r.style.setProperty('--p', (v/100).toFixed(3)));
+  pv.textContent = 'сессия ' + Math.round(v) + '%';
+}
+slider.addEventListener('input', () => setP(+slider.value));
+setP(+slider.value);
+
+let raf = 0, t0 = 0;
+document.getElementById('live').addEventListener('click', () => {
+  cancelAnimationFrame(raf); t0 = 0;
+  const DUR = 12000, TAU = 0.35;
+  function step(ts) {
+    if (!t0) t0 = ts;
+    const el = (ts - t0) / DUR;
+    let m;
+    if (el < 0.82) m = 1 - Math.exp(-el/TAU);
+    else m = Math.min(1, (1 - Math.exp(-0.82/TAU)) + (el-0.82)/0.18 * (1-(1-Math.exp(-0.82/TAU))));  // финал раскрывается в рассвет
+    const v = Math.max(6, Math.min(100, m*100));
+    slider.value = v; setP(v);
+    if (el < 1.05) raf = requestAnimationFrame(step);
+  }
+  raf = requestAnimationFrame(step);
+});
+</script>
+</body>
+</html>

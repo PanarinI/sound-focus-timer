@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Полёт к звезде — тёплый воздух-космос (07-25)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-user-select: none; user-select: none; }
+  body { background: #08060a; color: #b8b0c0; font: 13px/1.5 -apple-system, 'Segoe UI', sans-serif;
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 24px 20px 40px; }
+  h1 { font-size: 15px; font-weight: 600; color: #e8c07a; }
+  .sub { font-size: 12px; color: #7a7488; max-width: 640px; text-align: center; }
+
+  .panel { width: 320px; border-radius: 16px; overflow: hidden; border: 1px solid #201a2a; }
+  .cap { text-align: center; font-size: 12.5px; font-weight: 600; color: #e8c07a; padding: 10px 0 7px; background: #0c0a12; }
+  /* ПОЛЕ — тёмное ТЁПЛОЕ воздушно-космическое пространство (не сине-холодное, вне времени суток) */
+  .scene { width: 320px; height: 360px; position: relative; overflow: hidden;
+    background: radial-gradient(circle at 50% 48%, #1c1510 0%, #120d12 45%, #0a070c 100%); }
+  /* дальняя тёплая дымка = свет звезды, добивающий до нас; крепнет с приближением */
+  .veil { position: absolute; inset: 0; pointer-events: none; transition: opacity .6s ease;
+    opacity: calc(.05 + var(--p,0)*.4);
+    background: radial-gradient(circle at 50% 48%, rgba(255,176,92,.5) 0%, rgba(200,120,60,.16) 30%, rgba(20,12,7,0) 62%); }
+  /* ЗВЕЗДА — одна тёплая точка по курсу; близится (размер+свет) с прогрессом, дышит */
+  .star { position: absolute; left: 50%; top: 48%; transform: translate(-50%,-50%);
+    width: calc(10px + var(--p,0)*104px); height: calc(10px + var(--p,0)*104px); border-radius: 50%;
+    transition: width .6s ease, height .6s ease, opacity .6s ease;
+    opacity: calc(.55 + var(--p,0)*.45);
+    background: radial-gradient(circle, #fff2d6 0%, #ffd98f 24%, #f2a955 50%, rgba(214,120,70,.28) 74%, rgba(214,120,70,0) 100%);
+    animation: star-breathe 6.5s ease-in-out infinite; will-change: transform; }
+  @keyframes star-breathe { 0%,100%{transform:translate(-50%,-50%) scale(.97)} 46%{transform:translate(-50%,-50%) scale(1.05)} }
+
+  /* ПОЛЁТ — редкие тёплые искры сносит от центра НАРУЖУ (летим вперёд), медленно и спокойно */
+  .streaks { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+  .spark { position: absolute; left: 50%; top: 48%; width: 3px; height: 3px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,226,168,.95), rgba(255,200,120,0));
+    opacity: 0; will-change: transform, opacity; }
+  @media (prefers-reduced-motion: reduce) { .star, .spark { animation: none !important; } .spark { display:none } }
+
+  .controls { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 8px; }
+  .slab { display: flex; align-items: center; gap: 12px; font-size: 12px; color: #8a84a0; }
+  input[type=range]{-webkit-appearance:none;appearance:none;width:340px;height:5px;border-radius:4px;background:#221c2c;cursor:pointer;outline:none}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:#e8c07a;box-shadow:0 0 9px rgba(232,192,122,.6);cursor:pointer}
+  .btn{background:none;border:1px solid #322a40;color:#d8b87a;border-radius:8px;padding:7px 16px;font:inherit;font-size:12px;cursor:pointer;transition:border-color .3s}
+  .btn:hover{border-color:#d8b87a}
+  .pval{color:#d8b87a;width:130px}
+  .note{font-size:11px;color:#655e72;max-width:600px;text-align:center}
+</style>
+</head>
+<body>
+  <h1>Полёт к звезде — тёплый воздух-космос</h1>
+  <div class="sub">Минимально. Летим вперёд сквозь тёплый воздух; звезда по курсу медленно близится. Рост = приближение,
+    не раздувание. Вне времени суток. Кольца-таймера нет — время = близость звезды.</div>
+
+  <div class="panel">
+    <div class="cap">Полёт к звезде</div>
+    <div class="scene" id="scene">
+      <div class="veil"></div>
+      <div class="streaks" id="streaks"></div>
+      <div class="star"></div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="slab"><span>старт (далеко)</span><input type="range" id="p" min="0" max="100" value="12"><span>прибытие</span><span class="pval" id="pv">путь 12%</span></div>
+    <div class="slab"><button class="btn" id="live">▶ прожить сессию</button>
+      <span class="note">искры сносит медленно (фокус, не аркада) · финал = звезда расцветает мягко, не будильник</span></div>
+  </div>
+
+<script>
+// искры полёта: спавн у центра, медленно сносит НАРУЖУ по случайному лучу, растут и гаснут (пролетают мимо)
+const streaks = document.getElementById('streaks');
+const st = document.createElement('style');
+let rules = '';
+const N = 12;
+for (let i = 0; i < N; i++) {
+  const ang = Math.random() * Math.PI * 2;
+  const dist = 150 + Math.random() * 90;
+  const dx = Math.cos(ang) * dist, dy = Math.sin(ang) * dist;
+  const dur = 11 + Math.random() * 9, del = -Math.random() * 18, sc = 1.6 + Math.random() * 2.2;
+  rules += `@keyframes fly${i}{0%{transform:translate(-50%,-50%) scale(.4);opacity:0}12%{opacity:.9}85%{opacity:.5}100%{transform:translate(calc(-50% + ${dx.toFixed(0)}px),calc(-50% + ${dy.toFixed(0)}px)) scale(${sc.toFixed(1)});opacity:0}}`;
+  const sp = document.createElement('div');
+  sp.className = 'spark';
+  sp.style.animation = `fly${i} ${dur.toFixed(1)}s linear ${del.toFixed(1)}s infinite`;
+  streaks.appendChild(sp);
+}
+st.textContent = rules; document.head.appendChild(st);
+
+const slider = document.getElementById('p'), pv = document.getElementById('pv'), scene = document.getElementById('scene');
+function setP(v){ scene.style.setProperty('--p',(v/100).toFixed(3)); pv.textContent='путь '+Math.round(v)+'%'; }
+slider.addEventListener('input',()=>setP(+slider.value));
+setP(+slider.value);
+
+let raf=0,t0=0;
+document.getElementById('live').addEventListener('click',()=>{
+  cancelAnimationFrame(raf); t0=0; const DUR=13000,TAU=.4;
+  function step(ts){ if(!t0)t0=ts; const el=(ts-t0)/DUR;
+    // приближение фронт-загружено, но финал ДОБИРАЕТ до полного «прибытия» (звезда близко)
+    let m = el<0.8 ? (1-Math.exp(-el/TAU)) : (1-Math.exp(-0.8/TAU)) + (el-0.8)/0.2*(1-(1-Math.exp(-0.8/TAU)));
+    const v=Math.max(10,Math.min(100,m*100)); slider.value=v; setP(v);
+    if(el<1.05) raf=requestAnimationFrame(step);
+  } raf=requestAnimationFrame(step);
+});
+</script>
+</body>
+</html>

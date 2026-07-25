@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" font-family="-apple-system,'Segoe UI',sans-serif">
+  <defs>
+    <linearGradient id="ember" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2a24a"/><stop offset="1" stop-color="#c4703a"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="700" fill="#1a1614"/>
+  <text x="30" y="40" fill="#e8e2da" font-size="21" font-weight="700">Виток 2026-07-22 · осмотр по новой карте</text>
+  <text x="30" y="62" fill="#8a827a" font-size="12.5">сектор промерен телескопом v3 + перепись ~35 игроков → где наша точка и куда вектор</text>
+
+  <!-- ПАНЕЛЬ 1: путь -->
+  <text x="30" y="100" fill="#e2a24a" font-size="14" font-weight="700">ПУТЬ: каждый виток упрощал к сути</text>
+  <g font-size="12" fill="#cfc8bf">
+    <text x="30" y="124">07-04 · отпочкован из студии — гейты измерены, а не влюблённость</text>
+    <text x="30" y="146">07-05 · материал: тёплый шум, не дрон · ядро: ADHD-взрослые</text>
+    <text x="30" y="168">07-11 · фокус восстановлен: ТАЙМЕР-центр, звук — тело (не шум-генератор)</text>
+    <text x="30" y="190">07-12→17 · форма кругами: floating→new-tab→очаг→PiP→side-panel</text>
+    <text x="46" y="208" fill="#8a827a" font-size="11">…круги закрыл факт «формат ⊥ дверь»: поверхность не ищут — выбрал сценарий</text>
+    <text x="30" y="230">07-16 · онтология ЖАР·УГЛИ·ОЧАГ + механика 6 юзер-тестами (два конца)</text>
+    <text x="30" y="252">07-22 · экст работает: side-panel дом · offscreen-звук · рассвет спасён</text>
+  </g>
+  <text x="30" y="282" fill="#7cb87c" font-size="12.5" font-weight="600">свойство пути: петли не раздували — сжимали; механику несёт образ</text>
+  <text x="30" y="300" fill="#cfc8bf" font-size="12">дрейфа сути НЕТ: сегодня продукт = формула 07-04 минус лишнее</text>
+
+  <!-- ПАНЕЛЬ 2: лестница -->
+  <text x="520" y="100" fill="#e2a24a" font-size="14" font-weight="700">КАРТА: лестница «звук ↔ время» (рынок, 07-22)</text>
+  <g font-size="12">
+    <rect x="520" y="112" width="410" height="24" rx="5" fill="#242019"/>
+    <text x="530" y="128" fill="#8a827a">1 · вечный фон — стримы · миксеры · Calm</text>
+    <rect x="520" y="140" width="410" height="24" rx="5" fill="#242019"/>
+    <text x="530" y="156" fill="#8a827a">2 · луп + бип конца — pomofocus · Focus To-Do · Forest (норма рынка)</text>
+    <rect x="520" y="168" width="410" height="24" rx="5" fill="#2a241c"/>
+    <text x="530" y="184" fill="#a89d90">3 · мягкий выход — Brain.fm «gently fades out» · Noisli</text>
+    <rect x="520" y="196" width="410" height="24" rx="5" fill="#2f2820"/>
+    <text x="530" y="212" fill="#c0b4a4">4 · фазы = разные лупы — Session · Focus Keeper · Momentum</text>
+    <rect x="520" y="224" width="410" height="24" rx="5" fill="#352c22"/>
+    <text x="530" y="240" fill="#d4c6b2">5 · фазы под длину таймера — Endel Scenarios (побочная фича)</text>
+    <rect x="520" y="252" width="410" height="34" rx="6" fill="none" stroke="url(#ember)" stroke-width="2" stroke-dasharray="7 4"/>
+    <circle cx="543" cy="269" r="9" fill="url(#ember)"/>
+    <text x="560" y="266" fill="#e8e2da" font-weight="700">6 · ПУСТО: вход-нарастание → плато → зов → рассвет</text>
+    <text x="560" y="280" fill="#e2a24a" font-size="11.5">как СУТЬ таймера-вещи — не делает никто из ~35. Наша ступень.</text>
+  </g>
+  <text x="520" y="308" fill="#d97b6c" font-size="12">⚠ рынок ползёт вверх по лестнице (3→5 уже заняты) → окно живо, но не вечно</text>
+
+  <!-- ПАНЕЛЬ 3: оценка -->
+  <line x1="30" y1="330" x2="930" y2="330" stroke="#2c2620"/>
+  <text x="30" y="358" fill="#e2a24a" font-size="14" font-weight="700">ОЦЕНКА ТОЧКИ</text>
+
+  <text x="30" y="384" fill="#7cb87c" font-size="13" font-weight="700">за нас — теперь данными, не верой</text>
+  <g font-size="12" fill="#cfc8bf">
+    <text x="30" y="406">✅ клин пуст: перепись ~35 игроков (был 🔶-гипотезой)</text>
+    <text x="30" y="426">✅ гнездо дверей цело: aesthetic×2 + cute + focus timer ≈ 9.5k/мес,</text>
+    <text x="46" y="442" fill="#8a827a" font-size="11.5">CWS почти свободен (держатели 41–6000 юз, неоптимизированы)</text>
+    <text x="30" y="462">✅ ADHD-язык растёт: visual timer adhd ×37 · adhd music 0→5.4k;</text>
+    <text x="46" y="478" fill="#8a827a" font-size="11.5">brain.fm сам бьёт в ADHD (поз.4 · Nature: эффект сильнее при ADHD)</text>
+    <text x="30" y="498">✅ деньги-прецеденты всех моделей: $60–120/год · $5–9/мес · one-time $7</text>
+    <text x="30" y="518">✅ гибрид рождается: «25 minute timer with music» ×7.3, KD0</text>
+  </g>
+
+  <text x="500" y="384" fill="#d97b6c" font-size="13" font-weight="700">трезвость — что карта поправила</text>
+  <g font-size="12" fill="#cfc8bf">
+    <text x="500" y="406">⚠ стор-поиск НЕ мотор: «опт-но-пуст» по всей области</text>
+    <text x="516" y="422" fill="#8a827a" font-size="11.5">(спрос 110k у «25 Minute Timer» → 110 юзеров у держателя)</text>
+    <text x="500" y="442">⚠ ADHD-двери = двери СТАТЕЙ (софт-❌) → рост после вехи 1 =</text>
+    <text x="516" y="458" fill="#8a827a" font-size="11.5">контент-воронка + веб-пара (visualtimer.com в топе доказывает вход)</text>
+    <text x="500" y="478">⚠ бесплатный пол огромен (ОС-встройки · лофи) → ценность</text>
+    <text x="516" y="494" fill="#8a827a" font-size="11.5">только в драматургии+вещи; «просто шум» = не продукт (решено 07-11 ✅)</text>
+    <text x="500" y="514">⚠ «наука» как клейм — не наша игра (у Brain.fm патенты+Nature);</text>
+    <text x="516" y="530" fill="#8a827a" font-size="11.5">свободна честная позиция «тёплый шум без нейро-обещаний»</text>
+  </g>
+
+  <rect x="30" y="556" width="900" height="108" rx="10" fill="#221c17" stroke="#3a3128"/>
+  <text x="50" y="584" fill="#e8e2da" font-size="14" font-weight="700">ВЕКТОР: точка верная — дело в скорости</text>
+  <g font-size="12.5" fill="#cfc8bf">
+    <text x="50" y="608">→ веха 1 гвоздём: графика · имя+бронь · листинг (в листинге — слова гнезда: focus timer · aesthetic · cute · brown noise)</text>
+    <text x="50" y="628">→ язычок: план Б (дверь = иконка · язычок = присутствие + пауза) — обход user-gesture не копать до живых пользователей</text>
+    <text x="50" y="648">→ после выпуска вес на КАНАЛ: ADHD-контент-воронка + веб-двойник (дверь «timer with music» ждёт раннего жильца)</text>
+  </g>
+  <text x="700" y="690" fill="#5c554d" font-size="10.5">капсула sound-focus-timer · схема витка для автора · 2026-07-22</text>
+</svg>
