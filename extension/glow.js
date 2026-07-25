@@ -27,36 +27,42 @@
   const root = host.attachShadow({ mode: 'closed' });
   root.innerHTML = `
     <style>
+      /* НИТЬ СВЕТА ПОЛЁТА у кромки (07-25: развернула «жар-плашку» эры угля, когерентно рейсу к звезде).
+         Тонкая, тает к концам (лучевее — не брусок), ярче в середине; свет ПОЛЁТА леплется из-за кромки. */
       .tongue {
         position: fixed; right: 0; top: 50%;
-        width: 13px; height: 72px;
-        border-radius: 8px 0 0 8px;
-        background: linear-gradient(180deg, #f2c377 0%, #e8912c 48%, #b06526 100%);
+        width: 8px; height: 116px;
+        border-radius: 4px 0 0 4px;
+        /* НАСЫЩЕННОЕ непрозрачное ядро (видно на БЕЛОЙ странице) + тающие концы (нить, не брусок). */
+        background: linear-gradient(180deg,
+          rgba(242,195,119,0) 0%, rgba(238,158,66,.94) 15%,
+          #e8912c 50%,
+          rgba(198,108,48,.94) 85%, rgba(176,101,60,0) 100%);
         box-shadow:
-          inset 2px 0 3px rgba(255,235,200,.35),
-          -4px 0 14px rgba(255,150,60, .28);
+          -9px 0 24px rgba(255,150,60,.45),              /* тёплое свечение — видно на ТЁМНОЙ странице */
+          -1px 0 3px rgba(45,22,8,.55);                  /* тёмная кромка — отрыв от БЕЛОЙ страницы */
         pointer-events: auto; cursor: pointer;
-        transform: translate(115%, -50%);                /* спит ЗА кромкой — не «прозрачный ноль» */
-        transition: transform .55s cubic-bezier(.22,.9,.3,1.12), box-shadow .8s ease, filter .5s ease;
+        transform: translate(120%, -50%);                /* спит ЗА кромкой — не «прозрачный ноль» */
+        transition: transform .55s cubic-bezier(.22,.9,.3,1.12), box-shadow .8s ease, filter .5s ease, width .4s ease;
       }
-      .tongue::after {                                   /* жила света внутри — её и кормит жар */
-        content: ''; position: absolute; inset: 3px 4px 3px 3px;
-        border-radius: 6px 0 0 6px;
-        background: linear-gradient(180deg, rgba(255,240,205,.95), rgba(255,170,80,.55) 60%, rgba(180,90,40,.25));
-        opacity: var(--lit, .55);
+      .tongue::after {                                   /* яркая жила-сердцевина нити — её кормит жар */
+        content: ''; position: absolute; inset: 9px 1px 9px 1px;
+        border-radius: 2px;
+        background: linear-gradient(180deg, rgba(255,242,210,0), rgba(255,244,214,.95) 50%, rgba(255,226,170,0));
+        opacity: var(--lit, .5);
         animation: breathe 6s ease-in-out infinite;
       }
       .tongue.on    { transform: translate(0, -50%); }
-      .tongue:hover { transform: translate(-4px, -50%);
-                      box-shadow: inset 2px 0 3px rgba(255,235,200,.4), -7px 0 22px rgba(255,165,70,.55); }
-      .tongue:active { transform: translate(1px, -50%) scale(.97); }
-      .tongue.paused { filter: saturate(.45) brightness(.68); }
+      .tongue:hover { transform: translate(-4px, -50%); width: 11px;
+                      box-shadow: -13px 0 34px rgba(255,178,84,.62), -1px 0 3px rgba(45,22,8,.55); }
+      .tongue:active { transform: translate(1px, -50%) scaleY(.97); }
+      .tongue.paused { filter: saturate(.5) brightness(.72); }
       .tongue.paused::after { animation-duration: 12s; }
       .tongue.deny  { animation: deny .5s ease; }
-      /* крестик-выключатель: живёт над язычком, показывается на ховере; прячется с задержкой,
+      /* крестик-выключатель: живёт над нитью, показывается на ховере; прячется с задержкой,
          чтобы пережить перелёт курсора через зазор */
       .quit {
-        position: fixed; right: 3px; top: calc(50% - 58px);
+        position: fixed; right: 4px; top: calc(50% - 78px);
         width: 17px; height: 17px; border-radius: 50%;
         background: rgba(28,19,12,.92); border: 1px solid rgba(150,110,70,.5);
         color: #c9a06a; font: 11px/15px -apple-system, sans-serif; text-align: center;
@@ -67,15 +73,15 @@
         opacity: 1; pointer-events: auto; transition-delay: 0s;
       }
       .quit:hover { color: #f0d0a0; border-color: rgba(220,170,110,.8); }
-      @keyframes breathe { 0%,100% { opacity: var(--lit, .55); } 50% { opacity: calc(var(--lit, .55) + .22); } }
+      @keyframes breathe { 0%,100% { opacity: var(--lit, .5); } 50% { opacity: calc(var(--lit, .5) + .25); } }
       @keyframes deny { 0%,100% { transform: translate(0,-50%); } 30% { transform: translate(-3px, -50%) rotate(-1.6deg); } 65% { transform: translate(-1px, -50%) rotate(1.2deg); } }
       @media (prefers-reduced-motion: reduce) {
         .tongue { transition: none; }
         .tongue::after { animation: none; }
       }
     </style>
-    <div class="tongue" part="tongue" title="Очаг: открыть / закрыть"></div>
-    <div class="quit" part="quit" title="Убрать язычок (вернуть: настройки очага в панели)">✕</div>`;
+    <div class="tongue" part="tongue" title="Open / close"></div>
+    <div class="quit" part="quit" title="Hide (bring back in panel settings)">✕</div>`;
 
   const tongue = root.querySelector('.tongue');
   const quit = root.querySelector('.quit');
@@ -142,10 +148,11 @@
       const heat = Math.max(0, Math.min(1, msg.heat || 0));
       // жар кормит СВЕТ жилы и ореол; габарит и место не двигаются.
       // покой (heat 0) = тлеет тускло (дверь на месте, но очаг ещё не разожжён); сессия разгорается ярче.
-      tongue.style.setProperty('--lit', (0.3 + heat * 0.6).toFixed(2));
+      tongue.style.setProperty('--lit', (0.5 + heat * 0.45).toFixed(2));   // выше базовая яркость в покое — нить заметна
       if (!tongue.matches(':hover')) {
+        // ореол нити растёт с жаром рейса — свет полёта просачивается дальше за кромку
         tongue.style.boxShadow =
-          `inset 2px 0 3px rgba(255,235,200,.35), -${(4 + heat * 5).toFixed(0)}px 0 ${(13 + heat * 12).toFixed(0)}px rgba(255,150,60,${(0.22 + heat * 0.3).toFixed(2)})`;
+          `-${(9 + heat * 8).toFixed(0)}px 0 ${(24 + heat * 20).toFixed(0)}px rgba(255,170,76,${(0.42 + heat * 0.3).toFixed(2)}), -1px 0 3px rgba(45,22,8,.55)`;
       }
       tongue.classList.toggle('paused', !!msg.paused);
       slideIn();

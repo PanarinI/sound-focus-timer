@@ -1,91 +1,97 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Очаг — стенд MECHANICS v1.1</title>
+  <title>Focus timer — panel</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; -webkit-user-select: none; user-select: none; }
-    /* тёплая дымка вместо чёрной пустоты — «очаг в тёмной комнате», не dev-void (портреты Ми/Лу) */
-    body { background: radial-gradient(ellipse 70% 60% at 50% 42%, #1a1109 0%, #120c07 55%, #0b0805 100%);
-      color: #c9bdae; font: 13px/1.5 -apple-system, 'Segoe UI', sans-serif;
-      min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; padding: 28px; }
-    /* ENVELOPE — тёплая ЯНТАРНАЯ среда вокруг уголька (вариант Б, 07-25): воздух приходит СРЕДОЙ, не небом.
-       Радиально из центра (изотропно, без горизонта → вне времени суток). Яркость/плотность кормит жар
-       (opacity ставит render), медленное дыхание. Позади содержимого. Покой = тлеющая дымка, сессия = среда крепнет.
-       (Эволюция «живого света комнаты» 07-24 → янтарный envelope по вердикту проработки «уголёк в атмосфере».) */
-    #room { position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .06;
-      background: radial-gradient(ellipse 64% 50% at 50% 42%, rgba(255,172,86,.92) 0%, rgba(198,112,52,.4) 36%, rgba(150,80,40,.16) 55%, rgba(20,12,7,0) 74%);
-      transform-origin: 50% 40%; transition: opacity 1.2s ease;
-      animation: roombreathe 9s ease-in-out infinite; }
-    @keyframes roombreathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    /* Тёплый тёмный космос во ВЕСЬ сайдбар (07-25: небо перестало быть «квадратом, врезанным в интерфейс уголька»).
+       Фон подкрашивает calcLife (едва теплеет с прожитым). Не синий сай-фай — тёплая янтарная ночь (капсула). */
+    html, body { height: 100%; }
+    body { background: radial-gradient(ellipse 90% 70% at 50% 40%, #1a1109 0%, #120c07 55%, #0b0805 100%);
+      color: #c9bdae; font: 13px/1.5 -apple-system, 'Segoe UI', sans-serif; overflow: hidden; position: relative; }
+
+    /* НЕБО — звёздное поле на весь сайдбар. Покой: звёзды висят и дышат. Полёт: несутся от звезды-цели
+       наружу, скорость = энергия. Всё рисует canvas (rAF) — смена скорости без скачка (баг CSS-duration мёртв). */
+    /* width/height ОБЯЗАТЕЛЬНЫ: canvas — заменяемый элемент, inset:0 его не растягивает (взял бы
+       интринсик 300×150 и зациклил буфер). Явные 100% → поле = весь сайдбар. */
+    #sky { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; display: block; }
+
+    /* ENVELOPE — тёплая аура вокруг звезды-цели (курс тёплый). Кормится жаром сессии (opacity ← render),
+       медленно дышит. Растянута на весь экран, центр совпадает с точкой схода звёзд. */
+    #room { position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: .06;
+      background: radial-gradient(ellipse 58% 42% at 50% 40%, rgba(255,172,86,.9) 0%, rgba(198,112,52,.34) 34%, rgba(150,80,40,.12) 55%, rgba(20,12,7,0) 74%);
+      transform-origin: 50% 40%; transition: opacity 1.2s ease; animation: roombreathe 9s ease-in-out infinite; }
+    @keyframes roombreathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
     @media (prefers-reduced-motion: reduce) { #room { animation: none; } }
-    .tick { stroke: #5a4530; stroke-width: 2; stroke-linecap: round; opacity: .5; }
-    .tickbig { stroke: #6f553a; stroke-width: 2.7; stroke-linecap: round; opacity: .78; }
-    .inf { fill: #6f553a; opacity: .68; font-size: 16px; }
-    /* деления циферблата неорганичны при работе (реш. автора 07-24): у горящего очага риски и ∞ уходят,
-       остаётся живой центр + дуга-остаток. Плавно. Циферблат-деления живут только в покое (завод). */
-    .tick, .tickbig, .inf { transition: opacity .8s ease; }
-    .stage.insession .tick, .stage.insession .tickbig, .stage.insession .inf { opacity: 0; }
-    #home { display: flex; flex-direction: column; align-items: center; }
-    .stage { position: relative; width: 250px; height: 285px; touch-action: none; cursor: pointer; }
-    .stage svg { width: 100%; height: 100%; display: block; }
-    .ring { fill: none; stroke: #2a2119; stroke-width: 3; }
-    /* видимая хваталка завода — уголёк на кольце (её видно → её тянут) */
-    #knob { fill: #e8b25c; stroke: #100b07; stroke-width: 2; cursor: grab;
-      filter: drop-shadow(0 0 6px rgba(232,178,92,.7)); transition: opacity .3s; }
-    /* УГОЛЁК — жар сквозь корку пепла (вариант Б, 07-25): заменил гладкий орб. Рост идёт ВНУТРЬ
-       (--g кормит прожилки/окна пепла), тепло (--heat) греет тело/ореол; силуэт ~фиксирован (дышит),
-       не раздувается. Живёт всегда: дыхание · мерцание прожилок · дрейф жара. */
-    #ember { transform-box: fill-box; transform-origin: center; animation: emberbreathe 6.5s ease-in-out infinite; }
-    @keyframes emberbreathe { 0%,100% { transform: scale(.985); } 46% { transform: scale(1.03); } }
-    #ebody { transition: filter .8s ease; filter: brightness(calc(.62 + var(--heat,0)*.72)) saturate(calc(.85 + var(--heat,0)*.4)); }
-    .e-halo { opacity: calc(.06 + var(--heat,0)*.4); transition: opacity .6s ease; }
-    .e-pool { opacity: calc(.04 + var(--heat,0)*.3); transition: opacity .6s ease; }
-    .e-ashg { opacity: calc(.6 - var(--g,0)*.38); transition: opacity .5s ease; }
-    .e-cg { transition: opacity .5s ease; }
-    .e-cg.early { opacity: calc(.4 + var(--g,0)*.6); }
-    .e-cg.mid { opacity: calc(max(0, (var(--g,0) - .32)*3)); }
-    .e-cg.late { opacity: calc(max(0, (var(--g,0) - .64)*3)); }
-    .e-crack { filter: drop-shadow(0 0 3px rgba(255,150,60,.4)); animation: e-flick 3.4s ease-in-out infinite; }
-    .cracks .e-cg:nth-child(2) .e-crack { animation-delay: 1.1s; }
-    .cracks .e-cg:nth-child(3) .e-crack { animation-delay: .5s; }
-    .cracks .e-cg:nth-child(4) .e-crack { animation-delay: 1.8s; }
-    .cracks .e-cg:nth-child(5) .e-crack { animation-delay: .9s; }
-    .cracks .e-cg:nth-child(6) .e-crack { animation-delay: 2.3s; }
-    .e-drift { mix-blend-mode: screen; animation: e-cdrift 7s ease-in-out infinite; }
-    @keyframes e-flick { 0%,100% { opacity: .6; } 50% { opacity: 1; } }
-    @keyframes e-cdrift { 0%,100% { transform: translate(-5px,5px); } 50% { transform: translate(6px,-7px); } }
-    @media (prefers-reduced-motion: reduce) { #ember, .e-crack, .e-drift { animation: none !important; } }
-    #setarc { transition: stroke-dashoffset .12s linear, opacity .3s ease; }
-    .ember { fill: #a35c28; opacity: .85; filter: drop-shadow(0 0 4px rgba(220,120,50,.45)); }
-    #ash { stroke: #4a3826; stroke-width: 2.5; stroke-linecap: round; opacity: .35; transition: all .5s; }
-    /* осадок прожитого — самый нижний и тихий слой золы (ТЕПЛО ОЧАГА, реш. автора 07-23) */
-    #ashlife { stroke: #3a2c1d; stroke-width: 2.6; stroke-linecap: round; opacity: 0; transition: all .5s; }
-    .num { position: absolute; top: 44%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; font-weight: 300;
-      color: #f0d8b0; opacity: 0; transition: opacity .3s; pointer-events: none; font-variant-numeric: tabular-nums; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
+
+    /* СЦЕНА — прозрачный слой на весь сайдбар: держит CSS-переменные, звезду-цель и клик по небу.
+       Тап в любом месте неба = взлёт / пауза (провалился в космос — весь он и есть кнопка). */
+    .stage { position: fixed; inset: 0; z-index: 2; pointer-events: none; touch-action: none; }
+    #wrap { position: fixed; inset: 0; pointer-events: auto; cursor: pointer; touch-action: none; }
+
+    /* ЗВЕЗДА-ЦЕЛЬ — одно тёплое присутствие по курсу. Близится по прогрессу (--p): рост = приближение,
+       не раздувание («закипеть» невозможно by design). Дышит. Точка схода звёздного потока — здесь. */
+    #star { position: fixed; left: 50%; top: 40%; transform: translate(-50%,-50%); pointer-events: none;
+      width: calc(13px + var(--p,0)*104px); height: calc(13px + var(--p,0)*104px); border-radius: 50%;
+      transition: width .6s ease, height .6s ease, opacity .6s ease; opacity: calc(.62 + var(--p,0)*.38);
+      background: radial-gradient(circle, #fff2d6 0%, #ffd98f 24%, #f2a955 50%, rgba(214,120,70,.26) 74%, rgba(214,120,70,0) 100%);
+      animation: star-breathe 6.5s ease-in-out infinite; will-change: transform; }
+    @keyframes star-breathe { 0%,100% { transform: translate(-50%,-50%) scale(.97); } 46% { transform: translate(-50%,-50%) scale(1.05); } }
+    @media (prefers-reduced-motion: reduce) { #star { animation: none; } }
+
+    .num { position: fixed; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; font-weight: 300;
+      color: #f0d8b0; opacity: 0; transition: opacity .3s; pointer-events: none; z-index: 3;
+      font-variant-numeric: tabular-nums; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
+
+    /* «☀ завершить» — посадка сейчас; живёт всю рабочую сессию, тихо под звездой */
+    .finbtn { position: fixed; left: 50%; top: 55%; transform: translateX(-50%); z-index: 4; pointer-events: auto;
+      background: rgba(20,15,10,.55); border: 1px solid #3a2d1f; color: #caa25a; border-radius: 8px;
+      padding: 5px 13px; font: inherit; font-size: 12px; cursor: pointer; transition: border-color .3s, opacity .3s; }
+    .finbtn:hover { border-color: #caa25a; }
+
+    /* вспышка «звук пошёл» — отклик на действие, гаснет сама */
+    .sndhint { position: fixed; top: calc(40% - 74px); left: 50%; transform: translateX(-50%);
+      width: 21px; height: 21px; color: #caa25a; z-index: 3;
+      opacity: 0; transition: opacity .6s ease; pointer-events: none; }
+
+    /* ДОК — управление внизу, поверх неба. Мягкая тёмная подложка снизу, чтобы контролы читались на звёздах.
+       Сам док кликов не ловит (pointer-events none) — тап между контролами проваливается в небо (взлёт). */
+    .dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 5; pointer-events: none;
+      display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 26px 20px 24px;
+      background: linear-gradient(to top, rgba(11,8,5,.92) 0%, rgba(11,8,5,.7) 46%, rgba(11,8,5,0) 100%); }
+    .dock > * { pointer-events: auto; }
+
+    /* ПОЛЗУНОК ВРЕМЕНИ — длина рейса, прилипает к 5·15·25·45·90·∞ */
+    .timerow { display: flex; flex-direction: column; align-items: center; gap: 5px; width: 100%; max-width: 264px; }
+    .timerow.busy { opacity: .35; pointer-events: none; transition: opacity .4s ease; }
+    #timeslider { -webkit-appearance: none; appearance: none; width: 100%; height: 5px; border-radius: 4px;
+      background: #2a2119; cursor: pointer; outline: none; }
+    #timeslider::-webkit-slider-thumb { -webkit-appearance: none; width: 17px; height: 17px; border-radius: 50%;
+      background: #e8c07a; box-shadow: 0 0 9px rgba(232,192,122,.6); cursor: pointer; }
+    .ticks { display: flex; justify-content: space-between; width: 100%; font-size: 10.5px; color: #6b5f50; }
+    .ticks span.on { color: #e8c07a; }
+
+    .num, .hint { pointer-events: none; }
     .hint { font-size: 12px; color: #5c5145; text-align: center; max-width: 340px; }
-    .vol { display: flex; align-items: center; gap: 11px; color: #b9863f; }
+    .vol { display: flex; align-items: center; gap: 11px; color: #b9863f; width: 100%; max-width: 264px; justify-content: center; }
     .vol svg { flex: none; width: 17px; height: 17px; opacity: .8; }
-    .vol input[type=range] { -webkit-appearance: none; appearance: none; width: 186px; height: 5px;
+    .vol input[type=range] { -webkit-appearance: none; appearance: none; flex: 1; height: 5px;
       border-radius: 4px; background: #2a2119; cursor: pointer; outline: none; }
     .vol input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px;
       border-radius: 50%; background: #e8b25c; box-shadow: 0 0 9px rgba(232,178,92,.55); cursor: pointer; }
     .pipbtn { background: none; border: 1px solid #3a2d1f; color: #b9863f; border-radius: 8px;
       padding: 7px 16px; font: inherit; font-size: 12px; cursor: pointer; transition: border-color .3s; }
-    /* «☀ завершить» — живёт ТОЛЬКО в паузе (сценарий S5/S6), тихая, поверх wrap */
-    .finbtn { position: absolute; left: 50%; top: 63%; transform: translateX(-50%); z-index: 3;
-      background: rgba(20,15,10,.55); border: 1px solid #3a2d1f; color: #caa25a; border-radius: 8px;
-      padding: 5px 13px; font: inherit; font-size: 12px; cursor: pointer; transition: border-color .3s, opacity .3s; }
-    .finbtn:hover { border-color: #caa25a; }
     .pipbtn:hover { border-color: #b9863f; }
     .pipbtn:disabled { opacity: .4; cursor: default; }
-    /* прод-настройки очага: тёплая мини-панель за тихим триггером */
+
+    /* прод-настройки: тёплая мини-панель за тихим триггером */
     .settoggle { background: none; border: none; color: #6b5f50; cursor: pointer; font: inherit; font-size: 12px;
       display: flex; align-items: center; gap: 7px; opacity: .7; transition: opacity .3s, color .3s; padding: 4px; }
     .settoggle:hover { opacity: 1; color: #b9863f; }
     .settoggle svg { width: 15px; height: 15px; }
-    .settings { display: flex; flex-direction: column; gap: 15px; width: 232px; padding: 2px 0 4px; }
+    .settings { display: flex; flex-direction: column; gap: 15px; width: 100%; max-width: 264px; padding: 2px 0 2px; }
     .settings[hidden] { display: none; }
     .setdiv { height: 1px; background: #2a2119; margin: 1px 6px; }
     .setrow { display: flex; align-items: center; gap: 11px; }
@@ -95,19 +101,16 @@
       border-radius: 4px; background: #2a2119; cursor: pointer; outline: none; }
     .setrow input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 15px; height: 15px;
       border-radius: 50%; background: #e8b25c; box-shadow: 0 0 8px rgba(232,178,92,.5); cursor: pointer; }
-    /* просьба об оценке — со 2-го угля, тихо, только в покое (паттерн ExportGPT: ≥4★ → стор, 1–3★ → форма) */
+
+    /* просьба об оценке — со 2-й сессии, тихо, только в покое */
     .ratebar { display: flex; align-items: center; gap: 10px; font-size: 12px; color: #6b5f50; }
     .ratebar[hidden] { display: none; }
     .ratebar .rlab { color: #9a7c4f; }
     .rstar { width: 19px; height: 19px; cursor: pointer; color: #4a3826; transition: color .2s, transform .2s; }
     .rstar:hover { transform: scale(1.15); }
     .rstar.lit { color: #e8b25c; }
-    /* вспышка «звук пошёл» (07-18): отклик на действие, а не предупреждение — гаснет сама */
-    /* .stage .sndhint — специфичнее правила `.stage svg{width:100%}`, иначе иконка растянется на всю сцену */
-    .stage .sndhint { position: absolute; top: 30%; left: 50%; transform: translateX(-50%);
-      width: 21px; height: 21px; color: #caa25a;
-      opacity: 0; transition: opacity .6s ease; pointer-events: none; }
-    /* тумблер язычка — первая переключалка настроек очага (реш. автора 07-22) */
+
+    /* тумблер язычка — переключалка настроек */
     .swt { position: relative; width: 34px; height: 19px; border-radius: 10px; background: #2a2119;
       border: 1px solid #3a2d1f; cursor: pointer; flex: none; transition: background .3s, border-color .3s; }
     .swt::after { content: ''; position: absolute; top: 2px; left: 2px; width: 13px; height: 13px;
@@ -115,145 +118,84 @@
     .swt:hover { border-color: #7a5a2e; }
     .swt.on { background: #3a2a16; border-color: #7a5a2e; }
     .swt.on::after { left: 17px; background: #e8b25c; box-shadow: 0 0 8px rgba(232,178,92,.6); }
-    /* онбординг убран 07-17 (автор): курсор-pointer на орбе — достаточная подсказка */
+
     /* ПОЛКА — не в прод-UI (премиум-эксперименты + дев); код жив, глаз юзера не видит */
     .shelf { display: none; }
   </style>
 </head>
 <body>
   <div id="room"></div>
-  <div id="home">
-    <div class="stage" id="stage">
-      <svg viewBox="0 0 220 250">
-        <defs>
-          <radialGradient id="eHot" cx="46%" cy="45%" r="63%">
-            <stop offset="0%" stop-color="#f4bd72"/><stop offset="36%" stop-color="#c9752f"/>
-            <stop offset="74%" stop-color="#6e3d1e"/><stop offset="100%" stop-color="#28190f"/>
-          </radialGradient>
-          <radialGradient id="eHalo" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(226,132,58,.32)"/><stop offset="100%" stop-color="rgba(226,132,58,0)"/></radialGradient>
-          <radialGradient id="ePool" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(226,120,54,.4)"/><stop offset="100%" stop-color="rgba(226,120,54,0)"/></radialGradient>
-          <radialGradient id="eDrift" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(255,236,190,.8)"/><stop offset="100%" stop-color="rgba(255,220,160,0)"/></radialGradient>
-        </defs>
-        <circle class="ring" cx="110" cy="110" r="90"/>
-        <!-- ШКАЛА ЗАВОДА (07-18): деления каждые 5 мин, крупные каждые 15 — живая часть 5..90 мин = 15°..270°.
-             Сектор 270°..360° делений НЕ несёт: это «после последней отметки — до бесконечности», там стоит ∞.
-             Прежние 3 отсечки «часов» врали (стояли на 10/20/30 мин, читались как 1·2·3 часа). -->
-        <g class="tickbig">
-          <line x1="173.6" y1="46.4" x2="165.9" y2="54.1"/>
-          <line x1="200.0" y1="110.0" x2="189.0" y2="110.0"/>
-          <line x1="173.6" y1="173.6" x2="165.9" y2="165.9"/>
-          <line x1="110.0" y1="200.0" x2="110.0" y2="189.0"/>
-          <line x1="46.4" y1="173.6" x2="54.1" y2="165.9"/>
-          <line x1="20.0" y1="110.0" x2="31.0" y2="110.0"/>
-        </g>
-        <g class="tick">
-          <line x1="133.3" y1="23.1" x2="132.1" y2="27.4"/>
-          <line x1="155.0" y1="32.1" x2="152.8" y2="36.0"/>
-          <line x1="187.9" y1="65.0" x2="184.0" y2="67.2"/>
-          <line x1="196.9" y1="86.7" x2="192.6" y2="87.9"/>
-          <line x1="196.9" y1="133.3" x2="192.6" y2="132.1"/>
-          <line x1="187.9" y1="155.0" x2="184.0" y2="152.7"/>
-          <line x1="155.0" y1="187.9" x2="152.8" y2="184.0"/>
-          <line x1="133.3" y1="196.9" x2="132.1" y2="192.6"/>
-          <line x1="86.7" y1="196.9" x2="87.9" y2="192.6"/>
-          <line x1="65.0" y1="187.9" x2="67.2" y2="184.0"/>
-          <line x1="32.1" y1="155.0" x2="36.0" y2="152.8"/>
-          <line x1="23.1" y1="133.3" x2="27.4" y2="132.1"/>
-        </g>
-        <text class="inf" x="57.7" y="57.7" text-anchor="middle" dominant-baseline="central">∞</text>
-        <circle id="setarc" cx="110" cy="110" r="90" fill="none" stroke="#e8b25c" stroke-width="3"
-          stroke-linecap="round" stroke-dasharray="565.5" stroke-dashoffset="565.5"
-          transform="rotate(-90 110 110)" opacity="0"/>
-        <g id="ember">
-          <circle class="e-halo" cx="110" cy="112" r="80" fill="url(#eHalo)"/>
-          <ellipse class="e-pool" cx="110" cy="166" rx="70" ry="13" fill="url(#ePool)"/>
-          <path id="ebody" d="M62 108 C60 82 82 66 110 68 C140 70 158 84 160 110 C162 138 140 158 110 157 C80 156 64 134 62 108 Z" fill="url(#eHot)"/>
-          <g class="e-ashg" fill="#4a3a2c">
-            <path d="M78 90 C92 82 108 88 100 100 C93 108 76 106 78 90 Z"/>
-            <path d="M138 120 C150 114 158 126 148 136 C138 143 132 128 138 120 Z"/>
-            <path d="M98 132 C110 128 118 138 108 145 C98 150 90 138 98 132 Z"/>
-          </g>
-          <g class="cracks" fill="none" stroke-linecap="round">
-            <g class="e-cg early"><path class="e-crack" d="M96 84 Q110 110 102 140" stroke="#ffd488" stroke-width="2.1"/></g>
-            <g class="e-cg early"><path class="e-crack" d="M120 82 Q126 108 140 126" stroke="#ffca7a" stroke-width="1.6"/></g>
-            <g class="e-cg mid"><path class="e-crack" d="M70 106 Q90 114 106 106" stroke="#f2b86a" stroke-width="1.4"/></g>
-            <g class="e-cg mid"><path class="e-crack" d="M128 94 Q140 110 146 130" stroke="#ffc878" stroke-width="1.4"/></g>
-            <g class="e-cg late"><path class="e-crack" d="M86 120 Q100 128 110 120" stroke="#ffdc94" stroke-width="1.2"/></g>
-            <g class="e-cg late"><path class="e-crack" d="M112 148 Q118 130 110 108" stroke="#ffd084" stroke-width="1.2"/></g>
-          </g>
-          <circle class="e-drift" cx="110" cy="106" r="10" fill="url(#eDrift)"/>
-        </g>
-        <circle id="knob" cx="110" cy="20" r="7.5"/>
-        <g id="wrapzone"></g>
-        <line id="ashlife" x1="110" y1="249" x2="110" y2="249"/>
-        <line id="ash" x1="110" y1="248" x2="110" y2="248"/>
-        <g id="embers"></g>
-      </svg>
-      <div class="num" id="num"></div>
-      <div id="wrap" style="position:absolute;inset:0;touch-action:none;"></div>
-      <button id="finish" class="finbtn" hidden>☀ завершить</button>
-      <svg class="sndhint" id="sndhint" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/>
-        <path id="sndwave" d="M15.5 8.8a4 4 0 0 1 0 6.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-        <line id="sndmute" x1="15.6" y1="9.2" x2="20.8" y2="14.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" style="display:none"/>
-      </svg>
-    </div>
-  </div>
+  <canvas id="sky"></canvas>
 
-  <div class="vol" title="громкость">
-    <svg viewBox="0 0 24 24" width="17" height="17">
+  <div class="stage" id="stage">
+    <div id="star"></div>
+    <div class="num" id="num"></div>
+    <div id="wrap"></div>
+    <button id="finish" class="finbtn" hidden>☀ Finish</button>
+    <svg class="sndhint" id="sndhint" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/>
-      <path d="M15.5 8.8a4 4 0 0 1 0 6.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      <path id="sndwave" d="M15.5 8.8a4 4 0 0 1 0 6.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <line id="sndmute" x1="15.6" y1="9.2" x2="20.8" y2="14.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" style="display:none"/>
     </svg>
-    <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
   </div>
 
-  <button class="settoggle" id="settoggle" aria-expanded="false">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
-      <line x1="5" y1="8" x2="19" y2="8"/><circle cx="9" cy="8" r="2.4" fill="#120c07"/>
-      <line x1="5" y1="16" x2="19" y2="16"/><circle cx="15" cy="16" r="2.4" fill="#120c07"/>
-    </svg>настройки очага</button>
+  <div class="dock">
+    <div class="timerow" id="timerow" title="trip length — grab and drag">
+      <input type="range" id="timeslider" min="0" max="5" step="1" value="2" aria-label="trip length">
+      <div class="ticks" id="ticks"><span>5</span><span>15</span><span>25</span><span>45</span><span>90</span><span>∞</span></div>
+    </div>
 
-  <div class="settings" id="settings" hidden>
-    <div class="setrow" title="сколько звук даёт топлива вниманию — от спокойного до бодрого">
-      <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L5 14h5l-1 8 8-12h-5l1-8z"/></svg>
-      <span class="lab">энергия</span>
-      <input type="range" id="energy" min="0" max="1" step="0.02" value="0.4">
-    </div>
-    <div class="setrow" title="толщина укрытия от внешних звуков — чем толще, тем плотнее кокон">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-        <ellipse cx="12" cy="12" rx="6" ry="8.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/></svg>
-      <span class="lab">кокон</span>
-      <input type="range" id="masking" min="0" max="1" step="0.02" value="0.45">
-    </div>
-    <!-- ниже разделителя — НЕ звук (реш. автора 07-22: «отделить настройки звука и всего остального») -->
-    <div class="setdiv" role="separator"></div>
-    <!-- язычок: живёт только в расширении; права спрашиваются при ВКЛЮЧЕНИИ — по клику, когда понятно зачем.
-         Крестик на самом язычке (первые ~3 ховера) выключает; этот тумблер возвращает (реш. автора 07-22) -->
-    <div class="setrow" id="glowrow" hidden title="тёплая закладка у правой кромки страниц — дверь к очагу; крестик на ней убирает, этот тумблер возвращает">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
-        <line x1="4" y1="9.5" x2="20" y2="9.5"/><path d="M7 14h10M9.5 18h5" opacity=".55"/>
+    <div class="vol" title="volume">
+      <svg viewBox="0 0 24 24" width="17" height="17">
+        <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/>
+        <path d="M15.5 8.8a4 4 0 0 1 0 6.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
       </svg>
-      <span class="lab">язычок</span>
-      <div class="swt" id="glowtoggle" role="switch" aria-checked="false" tabindex="0"></div>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
     </div>
-  </div>
 
-  <div class="ratebar" id="ratebar" hidden title="если очаг греет — оценка помогает другим его найти">
-    <span class="rlab">очаг греет?</span>
-    <span id="rstars"></span>
-  </div>
+    <button class="settoggle" id="settoggle" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+        <line x1="5" y1="8" x2="19" y2="8"/><circle cx="9" cy="8" r="2.4" fill="#120c07"/>
+        <line x1="5" y1="16" x2="19" y2="16"/><circle cx="15" cy="16" r="2.4" fill="#120c07"/>
+      </svg>Settings</button>
 
-  <button class="pipbtn" id="pip" hidden>вынести жар</button>
+    <div class="settings" id="settings" hidden>
+      <div class="setrow" title="how much fuel the sound gives your attention — from calm to lively; and how fast you drift">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L5 14h5l-1 8 8-12h-5l1-8z"/></svg>
+        <span class="lab">Energy</span>
+        <input type="range" id="energy" min="0" max="1" step="0.02" value="0.4">
+      </div>
+      <div class="setrow" title="how thick the shelter from outside sound is — thicker means a tighter cocoon">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+          <ellipse cx="12" cy="12" rx="6" ry="8.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/></svg>
+        <span class="lab">Cocoon</span>
+        <input type="range" id="masking" min="0" max="1" step="0.02" value="0.45">
+      </div>
+      <div class="setdiv" role="separator"></div>
+      <div class="setrow" id="glowrow" hidden title="a warm thread at the right edge of pages — a door back to the flight; the ✕ on it hides it, this toggle brings it back">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+          <line x1="4" y1="9.5" x2="20" y2="9.5"/><path d="M7 14h10M9.5 18h5" opacity=".55"/>
+        </svg>
+        <span class="lab">Edge tab</span>
+        <div class="swt" id="glowtoggle" role="switch" aria-checked="false" tabindex="0"></div>
+      </div>
+    </div>
+
+    <div class="ratebar" id="ratebar" hidden title="a rating helps others find the flight">
+      <span id="rstars"></span>
+    </div>
+
+    <button class="pipbtn" id="pip" hidden>Pop out</button>
+  </div>
 
   <div class="shelf" id="shelf">
-    <label><input type="checkbox" id="fast"> быстрый (дев)</label>
-    <label><input type="checkbox" id="premium"> премиум-слой</label>
-    <label>гармонизация <input type="range" id="harmony" min="0" max="1" step="0.02" value="0.7"></label>
+    <label><input type="checkbox" id="fast"> fast (dev)</label>
+    <label><input type="checkbox" id="premium"> premium layer</label>
+    <label>harmony <input type="range" id="harmony" min="0" max="1" step="0.02" value="0.7"></label>
   </div>
 
-  <script src="engine.js?b=16"></script>
-  <script src="remote.js?b=16"></script>
-  <script src="hearth.js?b=16"></script>
+  <script src="engine.js?b=23"></script>
+  <script src="remote.js?b=23"></script>
+  <script src="hearth.js?b=23"></script>
 </body>
 </html>

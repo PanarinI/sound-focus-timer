@@ -7,7 +7,7 @@
 //   кручение = ТОЛЬКО завод в покое; в сессии скролл не перехватывается.
 
 const el = {};
-['room', 'ember', 'setarc', 'num', 'wrap', 'stage', 'embers', 'ash', 'ashlife', 'home', 'pip', 'volume', 'fast', 'premium', 'energy', 'masking', 'harmony', 'finish', 'knob', 'settoggle', 'settings', 'sndhint', 'sndwave', 'sndmute', 'glowrow', 'glowtoggle', 'ratebar', 'rstars']
+['room', 'star', 'sparks', 'timeslider', 'timerow', 'ticks', 'num', 'wrap', 'stage', 'home', 'pip', 'volume', 'fast', 'premium', 'energy', 'masking', 'harmony', 'finish', 'settoggle', 'settings', 'sndhint', 'sndwave', 'sndmute', 'glowrow', 'glowtoggle', 'ratebar', 'rstars']
   .forEach((id) => { el[id] = document.getElementById(id); });
 
 const RING_C = 2 * Math.PI * 90;
@@ -46,6 +46,8 @@ function dropEmber(focusSec) {
   renderEmbers();
 }
 function renderEmbers() {
+  calcLife();                                  // жизнь-тепло считаем всегда; визуал накопления запаркован (рейс-к-звезде)
+  if (!el.embers) return;                       // угли-ряд не в UI звезды — данные копятся, картинка позже (журнал рейсов)
   const doc = el.embers.ownerDocument;
   el.embers.innerHTML = '';
   const day = embers.filter(e => new Date(e.ts).toDateString() === today());
@@ -67,7 +69,7 @@ function renderEmbers() {
   const tot = day.reduce((s, e) => s + e.min, 0);
   const parts = [];
   if (day.length) parts.push(`${day.length} ${plural(day.length)} · ${fmt(tot)}`);
-  if (lifeMin >= 60) parts.push(`прожито очагом ${fmt(lifeMin)}`);   // тихая честность за ховером, не витрина
+  if (lifeMin >= 60) parts.push(`focused ${fmt(lifeMin)} so far`);   // тихая честность за ховером, не витрина
   el.stage.title = parts.join(' — ');
 }
 
@@ -83,14 +85,16 @@ function calcLife() {
   const r = Math.round(26 + 13 * lifeHeat), g = Math.round(17 + 7 * lifeHeat), b = Math.round(9 + lifeHeat);
   document.body.style.background =
     `radial-gradient(ellipse 70% 60% at 50% 42%, rgb(${r},${g},${b}) 0%, #120c07 55%, #0b0805 100%)`;
-  // осадок прожитого — под золой вчера: ширина и плотность растут от суммы, хронологии нет
-  const half = 96 * (1 - Math.exp(-lifeMin / 2400));
-  el.ashlife.setAttribute('x1', (110 - half).toFixed(1));
-  el.ashlife.setAttribute('x2', (110 + half).toFixed(1));
-  el.ashlife.style.opacity = lifeMin ? (0.10 + 0.15 * lifeHeat).toFixed(2) : 0;
+  // осадок прожитого — под золой вчера (запаркован в рейс-UI; данные живут, картинка позже)
+  if (el.ashlife) {
+    const half = 96 * (1 - Math.exp(-lifeMin / 2400));
+    el.ashlife.setAttribute('x1', (110 - half).toFixed(1));
+    el.ashlife.setAttribute('x2', (110 + half).toFixed(1));
+    el.ashlife.style.opacity = lifeMin ? (0.10 + 0.15 * lifeHeat).toFixed(2) : 0;
+  }
 }
-function plural(n) { return n % 10 === 1 && n % 100 !== 11 ? 'сессия' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'сессии' : 'сессий'); }
-function fmt(min) { const h = Math.floor(min / 60), m = Math.round(min % 60); return h ? `${h} ч ${m} м` : `${m} м`; }
+function plural(n) { return n === 1 ? 'session' : 'sessions'; }
+function fmt(min) { const h = Math.floor(min / 60), m = Math.round(min % 60); return h ? `${h}h ${m}m` : `${m}m`; }
 
 // ---------- ПРОСЬБА ОБ ОЦЕНКЕ (реш. автора 07-22; паттерн ExportGPT, канон методики) ----------
 // Появляется СО 2-й завершённой сессии, только в покое, до первой оценки.
@@ -159,32 +163,32 @@ function render(st) {
     const p = Math.min(1, (nowS() - engine.phaseStart) / (engine._extDur || 1));
     grown = grownAtExt * (1 - p);                              // тело оседает синхронно с выдохом
   }
-  // (силуэт уголька фиксирован — рост идёт ВНУТРЬ через --g ниже, размер не трогаем; «закипать» нельзя)
+  el.finish.hidden = !inSession(phase);                        // «завершить» (посадка сейчас) — всю рабочую сессию
 
-  // дуга-остаток: видна в рабочей сессии (не ∞); гаснет в угасаниях и покое
-  if (inSession(phase) && !infinite) {
-    const frac = Math.max(0, Math.min(1, (st && st.remaining || 0) / Math.max(1, engine.sessionDur)));
-    el.setarc.style.opacity = 0.42;                            // дуга-остаток важна автору (07-24) — чуть заметнее
-    el.setarc.style.strokeDashoffset = (RING_C * (1 - frac)).toFixed(1);
-  } else if (phase === 'off' || fading(phase)) {
-    el.setarc.style.opacity = 0;
-  }
-
-  el.finish.hidden = !inSession(phase);                        // «завершить» — всю рабочую сессию (S5, всегда под рукой)
-  placeKnob();                                                 // хваталка завода: видна в покое, спрятана в сессии
-  el.stage.classList.toggle('insession', on);                  // горит очаг → деления циферблата уходят (07-24), дуга-остаток остаётся
-
-  const dim = phase === 'ниточка' ? 0.5 : 1;                   // пауза = глуше жар
-  // покой: уголёк чуть теплее у пожившего очага (ТЕПЛО ОЧАГА — монотонно, не остывает)
+  const dim = phase === 'ниточка' ? 0.5 : 1;                   // пауза = глуше
   const heat = on ? Math.min(1, (0.22 + grown * 0.55 + depth * 0.3)) * dim : 0.1 + 0.05 * lifeHeat;
 
-  // УГОЛЁК (вариант Б): рост ВНУТРЬ (прожилки/окна пепла ← --g) + тепло тела/ореола (← --heat).
-  // Силуэт фиксирован, дышит (CSS). Вся визуальная логика — в CSS по этим двум переменным.
-  el.ember.style.setProperty('--g', grown.toFixed(3));
-  el.ember.style.setProperty('--heat', heat.toFixed(3));
+  // РЕЙС К ЗВЕЗДЕ: звезда БЛИЗИТСЯ по прогрессу сессии (--p); тепло среды = --heat. Кольца/дуги нет.
+  // финит — прибывает к концу (p→1); ∞ — крейсер (близится к «плато пути», не «прибывает»).
+  let prog = 0;
+  if (inSession(phase) || fading(phase)) {
+    prog = infinite
+      ? Math.min(0.6, 1 - Math.exp(-elapsedS() / (el.fast.checked ? 60 : 1800)))
+      : Math.min(1, elapsedS() / Math.max(1, engine.sessionDur));
+  }
+  el.stage.style.setProperty('--p', prog.toFixed(3));
+  el.stage.style.setProperty('--heat', heat.toFixed(3));
+  SKY.progress(prog);
+  if (el.room) el.room.style.opacity = (0.05 + heat * 0.5).toFixed(3);   // тёплое космос-поле крепнет с рейсом
 
-  // ENVELOPE (#room): тёплая ЯНТАРНАЯ среда вокруг уголька крепнет с жаром — сажает юзера ВНУТРЬ звука.
-  if (el.room) el.room.style.opacity = (0.05 + heat * 0.5).toFixed(3);
+  // ДВИЖЕНИЕ — только когда ЛЕТИМ. Покой=небо стоит (левитирует) · ПАУЗА=поток ЗАМИРАЕТ (реш. автора 07-25:
+  // «на паузе не должно быть эмиссии») → 0, звёзды возвращаются к левитации · рассвет/выдох=мягко оседает.
+  const flying = (phase === 'собирание' || phase === 'ткань') ? 1 : (phase === 'ниточка' ? 0 : fading(phase) ? 0.4 : 0);
+  el.stage.style.setProperty('--flying', flying);
+  SKY.flying(flying);
+
+  // завод задаётся ДО взлёта — в рейсе ползунок притушен
+  if (el.timerow) el.timerow.classList.toggle('busy', !(phase === 'off' || phase === 'ручей'));
 }
 
 // ---------- ДОРИСОВКА УГАСАНИЯ ----------
@@ -196,12 +200,10 @@ function startFadePaint() {
   cancelAnimationFrame(fadeRAF);
   const step = () => {
     if (!fading(engine.phase)) return;            // угасание кончилось — дорисовка больше не нужна
-    if (engine.phase === 'угасание') {            // жар оседает синхронно с выдохом — ВНУТРЬ (прожилки гаснут), не в размер
-      const grown = grownAtExt * (1 - Math.min(1, (nowS() - engine.phaseStart) / fadeDur()));
-      el.ember.style.setProperty('--g', grown.toFixed(3));
-      el.ember.style.setProperty('--heat', (0.1 + grown * 0.6).toFixed(3));   // тело остывает с прожилками (загнетание, не тушение)
+    if (engine.phase === 'угасание') {            // ручная посадка: тепло среды оседает (звезда прибыла, не тушится резко)
+      const k = 1 - Math.min(1, (nowS() - engine.phaseStart) / fadeDur());
+      el.stage.style.setProperty('--heat', (0.1 + grownAtExt * 0.6 * k).toFixed(3));
     }
-    placeKnob();
     fadeRAF = requestAnimationFrame(step);
   };
   fadeRAF = requestAnimationFrame(step);
@@ -214,42 +216,23 @@ function flashNum(text) {
   flashNum._t = setTimeout(() => { el.num.style.opacity = 0; }, 1100);
 }
 
-// ---------- ЗАВОД (покой) ----------
-const KNOB_BACK = 0.6;      // доля угасания, после которой завод уже под рукой (звук ещё истаивает)
+// ---------- ЗАВОД (покой) — ползунок под сценой, вместо кольца (реш. автора 07-25) ----------
 const fadeDur = () => Math.max(0.1, engine.phase === 'рассвет' ? engine.DAWN : (engine._extDur || 1));
+const SCALE = [5, 15, 25, 45, 90, Infinity];                    // градации длины рейса (реш. автора 07-25)
 
-function placeKnob() {                                          // видимая хваталка на позиции завода; в сессии прячется
-  const p = engine.phase;
-  if (inSession(p)) { el.knob.style.opacity = 0; return; }      // в работе завод убран
-  if (fading(p)) {
-    // Ручка возвращается ЗАРАНЕЕ — раньше, чем звук уйдёт совсем (реш. автора 07-18):
-    // рука уже может завести следующий круг, пока очаг договаривает.
-    const prog = Math.min(1, (nowS() - engine.phaseStart) / fadeDur());
-    if (prog < KNOB_BACK) { el.knob.style.opacity = 0; return; }
-  }
-  el.knob.style.opacity = 1;
-  const m = infinite ? 105 : dialMin;                          // ∞ → середина сектора «после последней отметки» (315°), не впритык к 12
-  const th = (m / 120) * 2 * Math.PI;
-  el.knob.setAttribute('cx', (110 + 90 * Math.sin(th)).toFixed(1));
-  el.knob.setAttribute('cy', (110 - 90 * Math.cos(th)).toFixed(1));
+function paintTicks(i) {
+  if (!el.ticks) return;
+  [...el.ticks.children].forEach((s, k) => s.classList.toggle('on', k === i));
 }
-function showDial() {
-  flashNum(infinite ? '∞' : dialMin + '′');
-  el.setarc.style.opacity = 0.55;
-  el.setarc.style.strokeDashoffset = infinite ? 0 : (RING_C * (1 - dialMin / 120)).toFixed(1);
-  placeKnob();
-}
-function setDial(min) {
-  infinite = min > 90;
-  dialMin = infinite ? Infinity : Math.max(5, Math.min(90, Math.round(min / 5) * 5));
+function showDial() { flashNum(infinite ? '∞' : dialMin + '′'); }   // мелькнуть выбранное время (мельком, не давит)
+function setDialIndex(i) {
+  i = Math.max(0, Math.min(SCALE.length - 1, i | 0));
+  const v = SCALE[i];
+  infinite = !isFinite(v);
+  dialMin = infinite ? Infinity : v;
   localStorage.setItem('hearth.dial', infinite ? 'Infinity' : dialMin);
+  paintTicks(i);
   showDial();
-}
-function geo(e) {
-  const box = el.wrap.getBoundingClientRect();
-  const dx = e.clientX - (box.left + box.width / 2), dy = e.clientY - (box.top + box.width / 2);
-  let ang = Math.atan2(dx, -dy) * 180 / Math.PI; if (ang < 0) ang += 360;
-  return { dist: Math.hypot(dx, dy) / (box.width / 220), ang };
 }
 
 // ---------- СТОП: быстрый выдох + мгновенный уголь+тишина ----------
@@ -278,9 +261,8 @@ function flashSound() {
   flashSound.t = setTimeout(() => { el.sndhint.style.opacity = 0; }, muted ? 3000 : 1500);
 }
 
-function start() {
+function start() {                                             // тап по звезде = ВЗЛЁТ (старт рейса + звук)
   flashSound();
-  el.setarc.style.opacity = 0;
   engine.turnOn();
   engine.startSession(infinite ? 9e7 : dialMin * unit() + engine.DAWN);
 }
@@ -298,27 +280,115 @@ function hearthClick() {
   else if (fading(p)) killNow();                              // рассвет/выдох + клик = оборвать сейчас (отклик всегда есть)
 }
 
-// жесты самодостаточны на wrap (едут в PiP; el.* — живые ссылки в любом документе)
-el.wrap.addEventListener('pointerdown', (e) => {
-  const g = geo(e);
-  if (g.dist > 55 && !inSession(engine.phase) && !fading(engine.phase)) { twisting = true; el.wrap.setPointerCapture(e.pointerId); setDial(g.ang / 360 * 120); }
-  else if (g.dist <= 55) downAt = performance.now();
-});
-el.wrap.addEventListener('pointermove', (e) => { if (twisting) setDial(geo(e).ang / 360 * 120); });
-el.wrap.addEventListener('pointerup', () => {
-  if (twisting) twisting = false;
-  else if (downAt) { downAt = 0; hearthClick(); }
-});
-// колесо: ТОЛЬКО завод в покое. В сессии/угасании скролл не перехватывается (юзер-тест №4).
-el.wrap.addEventListener('wheel', (e) => {
-  if (inSession(engine.phase) || fading(engine.phase)) return;
-  e.preventDefault();
-  wheelAcc += e.deltaY;
-  let steps = 0;
-  while (wheelAcc <= -WHEEL_STEP_PX) { steps++; wheelAcc += WHEEL_STEP_PX; }
-  while (wheelAcc >= WHEEL_STEP_PX) { steps--; wheelAcc -= WHEEL_STEP_PX; }
-  if (steps) setDial((infinite ? 95 : dialMin) + steps * 5);
-}, { passive: false });
+// тап по сцене (звезде) = взлёт / пауза (жест самодостаточен на wrap; едет в PiP). Кручения/колеса нет — время задаёт ползунок.
+el.wrap.addEventListener('pointerdown', () => { downAt = performance.now(); });
+el.wrap.addEventListener('pointerup', () => { if (downAt) { downAt = 0; hearthClick(); } });
+
+// ---------- ПОЛЗУНОК ВРЕМЕНИ (реш. автора 07-25): под сценой, прилипает к 5·15·25·45·90·∞ ----------
+if (el.timeslider) {
+  let idx = infinite ? SCALE.length - 1 : SCALE.findIndex((v) => v >= dialMin);
+  if (idx < 0) idx = 2;                                        // старое значение вне шкалы → 25
+  el.timeslider.value = idx;
+  setDialIndex(idx);                                           // синхронизировать dialMin со шкалой + подсветить деление
+  el.timeslider.addEventListener('input', () => setDialIndex(+el.timeslider.value));
+}
+
+// ---------- НЕБО (canvas) — звёздное поле во ВЕСЬ сайдбар (реш. автора 07-25) ----------
+// Покой: звёзды рассыпаны по всему полю, висят и ДЫШАТ (мерцание). Полёт: несутся от звезды-цели наружу
+// (warp), скорость потока = ЭНЕРГИЯ. Всё рисует rAF — скорость это множитель кадра, а не CSS-duration:
+// её смена плавная, без скачка (баг «прокрутки звёзд при движении ползунка» мёртв by design).
+// Точка схода потока = позиция звезды-цели (cx, cy) → двойное чтение хранится: летим К звезде ↔ шар искр.
+const SKY = (() => {
+  const cv = document.getElementById('sky');
+  if (!cv || !cv.getContext) return { flying(){}, speed(){}, progress(){} };
+  const ctx = cv.getContext('2d');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const PALETTE = ['#fff2d6', '#ffe7b8', '#ffd98f', '#f2bd72', '#e8a24c'];   // тёплые, не бело-голубые (капсула)
+  let W = 0, H = 0, cx = 0, cy = 0, maxR = 1, dpr = 1, seeded = false;
+  let fly = 0, flyTarget = 0, spd = 1, prog = 0, t = 0, last = 0;
+  const stars = [];
+  const N = reduce ? 40 : 60;                                 // ещё меньше звёзд (−37%) — не рябит, глубже, спокойнее
+
+  function resize() {
+    const nw = cv.clientWidth || window.innerWidth || 0;
+    const nh = cv.clientHeight || window.innerHeight || 0;
+    if (nw < 2 || nh < 2) return;                             // side panel ещё БЕЗ размера — ждём (иначе небо схлопнется в полосу)
+    dpr = Math.min(2, window.devicePixelRatio || 1);
+    W = nw; H = nh;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    cx = W * 0.5; cy = H * 0.40;                               // точка схода = звезда-цель (#star top:40%)
+    maxR = Math.hypot(Math.max(cx, W - cx), Math.max(cy, H - cy)) + 48;
+    if (!seeded) { for (let i = 0; i < N; i++) { const s = {}; seed(s, false); stars.push(s); } seeded = true; }  // сеем ТОЛЬКО с реальным размером
+  }
+  function seed(s, atCenter) {
+    if (atCenter) {                                           // респавн В ПОЛЁТЕ — у звезды-цели (поток бьёт из центра)
+      s.ang = Math.random() * Math.PI * 2;
+      s.r = Math.random() * Math.min(W, H) * 0.05;
+    } else {                                                  // ПОКОЙ — ровно по ВСЕМУ сайдбару. Не по диску: диск втрое
+      const x = (Math.random() * 1.2 - 0.1) * W;             // больше окна, звёзды копятся в углах за экраном и панель
+      const y = (Math.random() * 1.2 - 0.1) * H;             // пустеет. Раздаём по прямоугольнику → небо заполнено всё.
+      s.ang = Math.atan2(y - cy, x - cx); s.r = Math.hypot(x - cx, y - cy);
+    }
+    s.z = 0.28 + Math.random() * 0.72;                        // глубина-параллакс (шире разброс = глубже, дальние почти стоят)
+    s.size = 0.5 + s.z * 1.5;
+    s.col = PALETTE[(Math.random() * PALETTE.length) | 0];
+    s.base = 0.32 + Math.random() * 0.5;                      // базовая яркость
+    s.tw = 0.3 + Math.random() * 0.8;                         // скорость дыхания — медленнее (меньше ряби)
+    s.ph = Math.random() * Math.PI * 2;                       // фаза дыхания
+    s.la = 2.5 + Math.random() * 4;                           // ЛЕВИТАЦИЯ: амплитуда покачивания в покое (px)
+    s.fa = 0.10 + Math.random() * 0.22;                       // частоты покачивания — медленные
+    s.fb = 0.10 + Math.random() * 0.22;
+    s.pa = Math.random() * 6.283; s.pb = Math.random() * 6.283;
+  }
+  resize();                                                   // засеет сразу, если размер уже готов (стенд/вкладка)
+
+  function frame(dt) {
+    t += dt;
+    fly += (flyTarget - fly) * Math.min(1, dt * 1.1);         // мягкий разгон/торможение — спокойно поплыли, без рывка
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = 'lighter';                 // тёплое сложение свечения
+    const warp = reduce ? 0 : fly;
+    for (const s of stars) {
+      const dx = Math.cos(s.ang), dy = Math.sin(s.ang);
+      if (warp > 0.002) s.r += dt * (2 + s.z * 24) * spd * warp;   // ПОЛЁТ: очень тихо плывём СКВОЗЬ небо (ещё −33%; глубина=скорость)
+      // ПОКОЙ: r не растёт — небо СТОИТ с первого кадра; звёзды лишь левитируют (ниже). Никакого дрейфа-фонтана.
+      const lev = reduce ? 0 : (1 - 0.55 * warp);             // левитация чуть гаснет в полёте
+      const lx = Math.sin(t * s.fa + s.pa) * s.la * lev;
+      const ly = Math.cos(t * s.fb + s.pb) * s.la * lev;
+      const x = cx + dx * s.r + lx, y = cy + dy * s.r + ly;
+      if (warp > 0.002 && (x < -40 || x > W + 40 || y < -40 || y > H + 40)) { seed(s, true); continue; }  // улетела за край → респавн у центра
+      const tw = 0.70 + 0.30 * Math.sin(t * s.tw + s.ph);     // дыхание/мерцание — мягче (не рябит)
+      const edge = Math.min(1, s.r / maxR);
+      ctx.globalAlpha = Math.min(1, s.base * tw * (0.5 + edge * 0.6));
+      const trail = warp * s.z * spd * (3 + edge * 9);        // короткий мягкий штрих в полёте, точка в покое
+      if (trail > 2) {
+        ctx.strokeStyle = s.col; ctx.lineWidth = s.size; ctx.lineCap = 'round';
+        ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x - dx * trail, y - dy * trail); ctx.stroke();
+      } else {
+        ctx.fillStyle = s.col;
+        ctx.beginPath(); ctx.arc(x, y, s.size, 0, 6.283); ctx.fill();
+      }
+    }
+    ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+  }
+  function loop(now) {
+    const dt = last ? Math.min(0.05, (now - last) / 1000) : 0.016;
+    last = now;
+    if (seeded && W > 1) frame(dt);                           // рисуем ТОЛЬКО когда есть реальный размер и звёзды
+    requestAnimationFrame(loop);
+  }
+  // ResizeObserver — ловит ПЕРВЫЙ ненулевой размер side panel (window 'resize' там не приходит) + любые изменения
+  if (window.ResizeObserver) { try { new ResizeObserver(resize).observe(cv); } catch (e) {} }
+  window.addEventListener('resize', resize);
+  requestAnimationFrame(loop);
+
+  return {
+    flying(v) { flyTarget = Math.max(0, Math.min(1, v)); },
+    speed(v) { spd = Math.max(0.1, v); },
+    progress(v) { prog = v; },                                 // задел: центр-сход может слегка «подтягиваться» к звезде
+  };
+})();
 
 // «завершить» (S5/S6): всегда под рукой в сессии; клики не протекают в wrap
 ['pointerdown', 'pointerup'].forEach((t) => el.finish.addEventListener(t, (e) => e.stopPropagation()));
@@ -330,7 +400,7 @@ el.volume.addEventListener('input', () => { const v = +el.volume.value; engine.s
 paintVol(+el.volume.value);
 
 // ---------- PiP-ВЫНОС ----------
-if (!('documentPictureInPicture' in window)) { el.pip.textContent = 'PiP недоступен в этом браузере'; el.pip.disabled = true; }
+if (!('documentPictureInPicture' in window)) { el.pip.textContent = 'PiP not available in this browser'; el.pip.disabled = true; }
 el.pip.addEventListener('click', async () => {
   if (window.__pipWin) { window.__pipWin.close(); return; }
   try {
@@ -340,18 +410,22 @@ el.pip.addEventListener('click', async () => {
     document.querySelectorAll('style').forEach(s => pip.document.head.appendChild(s.cloneNode(true)));
     pip.document.body.style.cssText = 'margin:0;background:#0e0b08;display:flex;align-items:center;justify-content:center;overflow:hidden;';
     pip.document.body.appendChild(el.stage);
-    el.pip.textContent = 'вернуть жар';
+    el.pip.textContent = 'Return';
     pip.addEventListener('resize', () => { localStorage.setItem('hearth.pipW', pip.innerWidth); localStorage.setItem('hearth.pipH', pip.innerHeight); });
-    pip.addEventListener('pagehide', () => { el.home.appendChild(el.stage); window.__pipWin = null; el.pip.textContent = 'вынести жар'; });
+    pip.addEventListener('pagehide', () => { el.home.appendChild(el.stage); window.__pipWin = null; el.pip.textContent = 'Pop out'; });
   } catch (err) { el.pip.textContent = 'PiP: ' + err.message; console.error('PiP:', err); }
 });
 
-// ---------- НАСТРОЙКИ ОЧАГА (прод: энергия + кокон, тёплые) ----------
+// ---------- НАСТРОЙКИ (прод: энергия + кокон) ----------
 function paintRange(r) { const p = (+r.value * 100).toFixed(0); r.style.background = `linear-gradient(90deg, #e8b25c 0%, #b9702a ${p}%, #2a2119 ${p}%)`; }
+// ЭНЕРГИЯ = СКОРОСТЬ ПОЛЁТА (реш. автора 07-25): больше энергии → искры несутся быстрее (слабо, но заметно).
+// Кокон (маскировка) — только звук, без визуализации (реш. автора: «герметичность» визуально менять нечем).
+function setFlySpeed(v) { const s = 0.7 + v * 0.9; el.stage.style.setProperty('--speed', s.toFixed(2)); SKY.speed(s); }   // 0.7 … 1.6; canvas меняет скорость плавно, без скачка
 ['energy', 'masking'].forEach((k) => {
   paintRange(el[k]);
-  el[k].addEventListener('input', () => { engine.setChar({ [k]: +el[k].value }); paintRange(el[k]); });
+  el[k].addEventListener('input', () => { engine.setChar({ [k]: +el[k].value }); paintRange(el[k]); if (k === 'energy') setFlySpeed(+el[k].value); });
 });
+setFlySpeed(+el.energy.value);
 el.settoggle.addEventListener('click', () => {
   const open = el.settings.hidden;
   el.settings.hidden = !open;
@@ -365,7 +439,7 @@ el.fast.addEventListener('change', applyFast); applyFast();
 el.premium.addEventListener('change', () => engine.setTier(el.premium.checked ? 'premium' : 'basic'));
 el.harmony.addEventListener('input', () => engine.setHarmony(+el.harmony.value));
 
-renderEmbers();
+calcLife();          // жизнь-тепло к первому кадру (визуал накопления запаркован в рейс-UI)
 render(null);
 
 // ---------- ОТБЛЕСК (только в расширении) ----------
