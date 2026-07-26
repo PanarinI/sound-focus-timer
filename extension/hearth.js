@@ -14,7 +14,7 @@ const RING_C = 2 * Math.PI * 90;
 const GROW_K = 2.4;                       // фронт-загрузка роста жара (см. render: рост СЕССИЯ-ОТНОСИТЕЛЬНЫЙ к плато)
 const SLEEP_AFTER = 10 * 60;             // забытая пауза → очаг засыпает (сек; fast делит на 20)
 const WHEEL_STEP_PX = 60;                // порог аккумулятора завода (свайп ≠ шквал)
-const QUENCH = () => (el.fast.checked ? 1.5 : 4);   // быстрый выдох ручного «завершить»
+const QUENCH = () => 0.4;   // ручное «завершить» → почти мгновенный выдох (сам нажал — в плавности нет смысла; не 0, иначе щелчок; engine клампит min 0.3)
 
 let dialMin = +(localStorage.getItem('hearth.dial') || 15);   // дефолт 15 (реш. автора 07-18): ADHD-канон 15/5 · шанс дожить до «рассвета» в первом сеансе
 let infinite = localStorage.getItem('hearth.dial') === 'Infinity';
@@ -81,10 +81,10 @@ let lifeMin = 0, lifeHeat = 0;
 function calcLife() {
   lifeMin = embers.reduce((s, e) => s + e.min, 0);
   lifeHeat = 1 - Math.exp(-lifeMin / TAU_LIFE);
-  // тон комнаты: центр дымки едва теплеет с прожитым (свежий очаг = исходный #1a1109)
-  const r = Math.round(26 + 13 * lifeHeat), g = Math.round(17 + 7 * lifeHeat), b = Math.round(9 + lifeHeat);
+  // тон поля: центр космоса едва теплеет с прожитым (свежее поле = очень глубокий синий, почти чёрный)
+  const r = Math.round(14 + 16 * lifeHeat), g = Math.round(22 + 12 * lifeHeat), b = Math.round(54 + 8 * lifeHeat);
   document.body.style.background =
-    `radial-gradient(ellipse 70% 60% at 50% 42%, rgb(${r},${g},${b}) 0%, #120c07 55%, #0b0805 100%)`;
+    `radial-gradient(ellipse 70% 60% at 50% 42%, rgb(${r},${g},${b}) 0%, #090d22 55%, #05060f 100%)`;
   // осадок прожитого — под золой вчера (запаркован в рейс-UI; данные живут, картинка позже)
   if (el.ashlife) {
     const half = 96 * (1 - Math.exp(-lifeMin / 2400));

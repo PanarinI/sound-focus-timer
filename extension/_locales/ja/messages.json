@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "ポモドーロタイマー - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "集中と勉強のためのシンプルなポモドーロタイマー。温かいブラウンノイズと静かな音で、心地よく集中を続けられます。",
+    "description": "Short description (<=132 chars)"
+  }
+}

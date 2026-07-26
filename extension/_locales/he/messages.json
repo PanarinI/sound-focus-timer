@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "טיימר פומודורו - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "טיימר פומודורו מינימליסטי לריכוז וללימודים, עם רעש חום חמים וצלילים רכים למיקוד.",
+    "description": "Short description (<=132 chars)"
+  }
+}

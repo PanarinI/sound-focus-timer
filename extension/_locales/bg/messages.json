@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Помодоро таймер - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "Минималистичен Помодоро таймер за фокус и учене, с топъл кафяв шум и меки звуци.",
+    "description": "Short description (<=132 chars)"
+  }
+}

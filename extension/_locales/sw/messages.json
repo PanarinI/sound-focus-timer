@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Pomodoro Timer - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "Kipima muda cha Pomodoro rahisi kwa umakini na masomo, chenye brown noise ya joto na sauti laini.",
+    "description": "Short description (<=132 chars)"
+  }
+}

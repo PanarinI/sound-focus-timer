@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Pomodoro Timer - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "ตัวจับเวลา Pomodoro มินิมอลเพื่อสมาธิและการเรียน พร้อมบราวน์นอยส์อุ่นๆ และเสียงนุ่มนวลช่วยโฟกัส",
+    "description": "Short description (<=132 chars)"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "تایمر پومودورو - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "تایمر پومودورو مینیمال برای تمرکز و مطالعه، با نویز قهوه‌ای گرم و صداهای ملایم.",
+    "description": "Short description (<=132 chars)"
+  }
+}

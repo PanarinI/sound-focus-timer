@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "مؤقت بومودورو - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "مؤقت بومودورو بسيط للتركيز والدراسة، مع ضوضاء بنية دافئة وأصوات هادئة تساعدك على التركيز.",
+    "description": "Short description (<=132 chars)"
+  }
+}

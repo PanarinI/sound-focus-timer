@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "पोमोडोरो टाइमर - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "फोकस और पढ़ाई के लिए मिनिमल पोमोडोरो टाइमर, गर्म ब्राउन नॉइज़ और कोमल ध्वनियों के साथ।",
+    "description": "Short description (<=132 chars)"
+  }
+}

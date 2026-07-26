@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  html,body{margin:0;padding:0}
+  .b{width:1280px;height:800px;position:relative;overflow:hidden;font-family:'SF Pro Display',system-ui,sans-serif;background:#07060f}
+  canvas{position:absolute;inset:0}
+  .txt{position:absolute;top:78px;left:100px;z-index:5}
+  .t1{color:#FFF6E6;font-size:62px;font-weight:700;letter-spacing:-1px;line-height:1.02}
+  .t2{color:#FFC978;font-size:26px;font-weight:600;margin-top:16px;letter-spacing:.3px}
+</style></head><body>
+<div class="b">
+  <canvas id="c" width="1280" height="800"></canvas>
+  <div class="txt"><div class="t1">Made of<br>warm sound</div><div class="t2">brown noise · a gentle focus timer</div></div>
+</div>
+<script>
+const x=document.getElementById('c').getContext('2d'), W=1280,H=800;
+// фон-космос
+let bg=x.createRadialGradient(880,400,40,760,400,900);
+bg.addColorStop(0,'#241a12');bg.addColorStop(.5,'#100b1c');bg.addColorStop(1,'#07060f');
+x.fillStyle=bg;x.fillRect(0,0,W,H);
+// звёзды
+const sd=[[140,110],[300,600],[1050,120],[1180,540],[520,90],[420,700],[1150,320],[90,430],[700,660],[980,640],[240,260],[1220,200]];
+x.fillStyle='#FFE7B0';for(const[sx,sy]of sd){x.globalAlpha=.35+((sx*sy)%40)/100;x.beginPath();x.arc(sx,sy,1.4,0,7);x.fill();}
+x.globalAlpha=1;
+const starX=880,starY=400;
+// waveform — гладкие волны, амплитуда затухает к звезде (полёт-фокус в звезду)
+for(let L=0;L<5;L++){
+  x.beginPath();
+  for(let px=0;px<=starX;px+=2){
+    const t=px/starX, decay=(1-t)*(1-t), amp=88*decay*(0.55+L*0.16);
+    const y=starY+Math.sin(px*0.016+L*1.25)*amp*(L%2?-1:1);
+    px?x.lineTo(px,y):x.moveTo(px,y);
+  }
+  const g=x.createLinearGradient(0,0,starX,0);
+  g.addColorStop(0,'rgba(255,150,40,0)');g.addColorStop(.55,'rgba(255,180,70,.45)');g.addColorStop(1,'rgba(255,236,190,.95)');
+  x.strokeStyle=g;x.lineWidth=3-L*0.4;x.lineJoin='round';x.stroke();
+}
+// звезда-цель — свечение + ядро
+let gl=x.createRadialGradient(starX,starY,0,starX,starY,150);
+gl.addColorStop(0,'rgba(255,180,70,.55)');gl.addColorStop(.4,'rgba(255,150,40,.14)');gl.addColorStop(1,'rgba(255,150,40,0)');
+x.fillStyle=gl;x.beginPath();x.arc(starX,starY,150,0,7);x.fill();
+let core=x.createRadialGradient(starX,starY-4,0,starX,starY,26);
+core.addColorStop(0,'#FFEFC2');core.addColorStop(.55,'#FFC061');core.addColorStop(1,'#F2941F');
+x.fillStyle=core;x.beginPath();x.arc(starX,starY,26,0,7);x.fill();
+</script>
+</body></html>

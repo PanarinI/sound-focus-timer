@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "番茄钟 - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "简约番茄钟，专注与学习两相宜。温暖的棕噪音与柔和声音，助你静心专注。",
+    "description": "Short description (<=132 chars)"
+  }
+}

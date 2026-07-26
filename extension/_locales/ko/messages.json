@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "뽀모도로 타이머 - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "집중과 공부를 위한 미니멀 뽀모도로 타이머. 따뜻한 브라운 노이즈와 부드러운 소리로 편안하게 집중하세요.",
+    "description": "Short description (<=132 chars)"
+  }
+}

@@ -1,0 +1,42 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  html,body{margin:0;padding:0}
+  .b{width:1280px;height:800px;position:relative;overflow:hidden;font-family:'SF Pro Display',system-ui,sans-serif;background:#07060f}
+  canvas{position:absolute;inset:0}
+  .txt{position:absolute;top:70px;left:0;right:0;text-align:center;z-index:5}
+  .t1{color:#FFF6E6;font-size:58px;font-weight:700;letter-spacing:-1px}
+  .t2{color:#FFC978;font-size:25px;font-weight:600;margin-top:14px;letter-spacing:.3px}
+</style></head><body>
+<div class="b">
+  <canvas id="c" width="1280" height="800"></canvas>
+  <div class="txt"><div class="t1">Focus, wrapped in warm sound</div><div class="t2">brown noise around you</div></div>
+</div>
+<script>
+const x=document.getElementById('c').getContext('2d'), W=1280,H=800, cx=640, cy=430;
+let bg=x.createRadialGradient(cx,cy,40,cx,cy,760);
+bg.addColorStop(0,'#241a12');bg.addColorStop(.5,'#100b1c');bg.addColorStop(1,'#07060f');
+x.fillStyle=bg;x.fillRect(0,0,W,H);
+// концентрические звук-волны = brown noise обволакивает (кокон), лёгкая органика
+for(let i=1;i<=9;i++){
+  const r=i*72;
+  x.beginPath();
+  for(let a=0;a<=360;a+=3){
+    const rad=r+Math.sin(a*0.045+i*1.1)*7;
+    const px=cx+Math.cos(a*Math.PI/180)*rad;
+    const py=cy+Math.sin(a*Math.PI/180)*rad*0.82;
+    a?x.lineTo(px,py):x.moveTo(px,py);
+  }
+  x.closePath();
+  x.strokeStyle='rgba(255,184,77,'+(0.5/i+0.03)+')';x.lineWidth=2.2;x.stroke();
+}
+// искры полёта, дрейфующие сквозь поле
+const sp=[[360,300],[900,520],[500,610],[820,250],[260,470],[1000,380],[640,180],[430,180],[760,650]];
+for(const[sx,sy]of sp){let g=x.createRadialGradient(sx,sy,0,sx,sy,6);g.addColorStop(0,'#FFEFC2');g.addColorStop(1,'rgba(255,200,120,0)');x.fillStyle=g;x.beginPath();x.arc(sx,sy,6,0,7);x.fill();}
+// звезда центр — свечение + ядро
+let gl=x.createRadialGradient(cx,cy,0,cx,cy,130);
+gl.addColorStop(0,'rgba(255,180,70,.6)');gl.addColorStop(.4,'rgba(255,150,40,.15)');gl.addColorStop(1,'rgba(255,150,40,0)');
+x.fillStyle=gl;x.beginPath();x.arc(cx,cy,130,0,7);x.fill();
+let core=x.createRadialGradient(cx,cy-3,0,cx,cy,24);
+core.addColorStop(0,'#FFEFC2');core.addColorStop(.55,'#FFC061');core.addColorStop(1,'#F2941F');
+x.fillStyle=core;x.beginPath();x.arc(cx,cy,24,0,7);x.fill();
+</script>
+</body></html>

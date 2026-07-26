@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Timer Pomodoro - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "Timer Pomodoro minimalis untuk fokus dan belajar, dengan brown noise hangat dan suara lembut untuk berkonsentrasi.",
+    "description": "Short description (<=132 chars)"
+  }
+}

@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  html,body{margin:0;padding:0}
+  .b{width:1280px;height:800px;position:relative;overflow:hidden;font-family:'SF Pro Display',system-ui,sans-serif;background:#05060f}
+  canvas{position:absolute;inset:0}
+  .txt{position:absolute;top:120px;left:110px;z-index:5}
+  .t1{color:#FFF6E6;font-size:60px;font-weight:700;letter-spacing:-1px;line-height:1.04}
+  .t2{color:#FFC978;font-size:26px;font-weight:600;margin-top:16px;letter-spacing:.3px}
+</style></head><body>
+<div class="b">
+  <canvas id="c" width="1280" height="800"></canvas>
+  <div class="txt"><div class="t1">Made of<br>warm sound</div><div class="t2">brown noise · a gentle focus timer</div></div>
+</div>
+<script>
+const x=document.getElementById('c').getContext('2d'), W=1280,H=800, sx=880, sy=440;
+// глубокий синий космос (та же палитра, что панель)
+let bg=x.createRadialGradient(sx,sy,40,sx-120,sy,900);
+bg.addColorStop(0,'#141d3e');bg.addColorStop(.5,'#090d22');bg.addColorStop(1,'#05060f');
+x.fillStyle=bg;x.fillRect(0,0,W,H);
+function rnd(a,b){return a+Math.random()*(b-a);}
+// warp-полёт: звёзды сносит от звезды-цели наружу (летим В звезду сквозь поле)
+for(let i=0;i<70;i++){
+  const ang=rnd(0,Math.PI*2), d0=rnd(70,240), len=d0*rnd(.35,.9);
+  const x1=sx+Math.cos(ang)*d0, y1=sy+Math.sin(ang)*d0*.9;
+  const x2=sx+Math.cos(ang)*(d0+len), y2=sy+Math.sin(ang)*(d0+len)*.9;
+  const g=x.createLinearGradient(x1,y1,x2,y2);
+  g.addColorStop(0,'rgba(255,214,150,0)');g.addColorStop(1,'rgba(255,225,170,'+rnd(.18,.5).toFixed(2)+')');
+  x.strokeStyle=g;x.lineWidth=rnd(1,2.1);x.lineCap='round';x.beginPath();x.moveTo(x1,y1);x.lineTo(x2,y2);x.stroke();
+}
+// тёплые дальние звёзды-точки
+for(let i=0;i<34;i++){const px=rnd(0,W),py=rnd(0,H);x.globalAlpha=rnd(.25,.7);x.fillStyle=Math.random()<.3?'#ffd98f':'#ffe7b8';x.beginPath();x.arc(px,py,rnd(.8,1.8),0,7);x.fill();}
+x.globalAlpha=1;
+// звезда-цель: аура + ядро (тёплая, ближе=крупнее)
+let gl=x.createRadialGradient(sx,sy,0,sx,sy,175);
+gl.addColorStop(0,'rgba(255,180,75,.5)');gl.addColorStop(.38,'rgba(255,150,45,.13)');gl.addColorStop(1,'rgba(255,150,45,0)');
+x.fillStyle=gl;x.beginPath();x.arc(sx,sy,175,0,7);x.fill();
+let core=x.createRadialGradient(sx,sy-4,0,sx,sy,30);
+core.addColorStop(0,'#fff2d6');core.addColorStop(.24,'#ffd98f');core.addColorStop(.5,'#f2a955');core.addColorStop(1,'rgba(214,120,70,0)');
+x.fillStyle=core;x.beginPath();x.arc(sx,sy,30,0,7);x.fill();
+</script>
+</body></html>

@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Timer Pomodoro - Minimalist Timer",
+    "description": "Extension name (CWS listing title / SEO door)"
+  },
+  "shortDesc": {
+    "message": "Timer Pomodoro minimalist pentru concentrare și studiu, cu brown noise cald și sunete blânde.",
+    "description": "Short description (<=132 chars)"
+  }
+}
