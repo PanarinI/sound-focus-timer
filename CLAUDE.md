@@ -48,7 +48,7 @@
 - `MECHANICS.md` — спека механики MVP (автомат состояний · жесты · пороги чести · звук по фазам · заслоны · микро-развилки ⚖).
   ⚠ ОБРАЗ-слой (жар-кино/угли) РАЗВЁРНУТ 07-25 в «рейс к звезде»: механика (фазы, два конца) валидна, визуал-онтология — в STATE/DECISIONS. Рожд. 07-16.
 - `schemas/` — схемы сущности для автора (product-essence · audience-portrait · якорь «одна функция»). Правило «визуализируй сущности».
-- `lab/` — верстак: стенд звука (`taste.html`) + дизайн-стенды (`star-stand`·`compare-stand`·`dose-stand`·`ember-stand`·`glow-stand`) + **ЛИСТИНГ CWS (07-26)**: `meta-keywords.md` (ключи) · `listing-draft.md` (EN имя+краткое+полное — ФИНАЛ) · `turgenev-paste.txt` · `permissions.md` (обоснование прав 3.6) · **`translations.md`** (досье переводов: дверь локалей=pomodoro, выверка DFS/Wordstat) · **`locales-data.json`+`build-locales.py`** (воспроизводимый пайплайн 53 локалей NAME+SHORT → `_locales/`) · **`full/`** (FULL-описания per-язык, 8 топ готовы) · `graphics/` (иконка-искра + баннеры). Рожд. 07-05. *(Материалы LAUNCH.md зреют здесь.)*
+- `lab/` — верстак: стенд звука (`taste.html`) + дизайн-стенды (`star-stand`·`compare-stand`·`dose-stand`·`ember-stand`·`glow-stand`) + **ЛИСТИНГ CWS (07-26)**: `meta-keywords.md` (ключи) · `listing-draft.md` (EN имя+краткое+полное — ФИНАЛ) · `turgenev-paste.txt` · `permissions.md` (обоснование прав 3.6) · **`translations.md`** (досье переводов: дверь локалей=pomodoro, выверка DFS/Wordstat) · **`locales-data.json`+`build-locales.py`** (воспроизводимый пайплайн 53 локалей NAME+SHORT → `_locales/`) · **`full/`** (FULL per-язык: 44 нативных + `en.md`; транслит-8 на EN-fallback) · **`cws-upload-full.js`** (скрипт массовой загрузки FULL в CWS, канон 3.6) · `graphics/` (иконка-искра + баннеры). Рожд. 07-05.
 - `extension/` — сам продукт (MV3, **СОБРАН и работает вживую 07-22**). `engine.js` — движок (**Brown-ядро** +
   дирижёр фаз + arousal + tier basic/premium + гармонизация + `extinguish`). **`hearth.html`/`hearth.js` — ПАНЕЛЬ
   = РЕЙС К ЗВЕЗДЕ** (звезда·полёт·ползунок; развернула образ жар·угли·очаг 07-25; `?b=18`). **Звук переживает закрытие панели:** `offscreen.js` (дом
@@ -58,7 +58,7 @@
   `PanarinI/focus-pages` (код продукта остаётся приватным). **Локализация (07-26):** манифест `name/description`=`__MSG__`+`default_locale:en`; `_locales/<code>/messages.json` × 53 языка (генерятся из `lab/locales-data.json`).
 - `SOUND.md` — **язык звукового дизайна**: слуховой разбор фазных прецедентов (Endel/Session/Brain.fm/Noisli)
   + 8 калибровочных уроков для входа/плато/рассвета (тетрадь узла «дрейф»). Рожд. 07-22 из дознания.
-Гипотезы будущих органов (НЕ созданы, ждут нужды): LAUNCH.md — путь публикации CWS, ближе к вехе 1.
+- `LAUNCH.md` — **путь публикации CWS** (чеклист выкладки, готовые тексты, скрипт загрузки). **Рождён 07-27** на вехе 1. Живёт до аппрува; после публикации → архив (метаморфоза в продукт-ДНК).
 Досье ниши живёт в студии: `app-studio/research/sound_focus_timer_niche_report.{md,html}` (+ IDEAS.md).
 
 ## 3. Протокол роста — дыхание организма

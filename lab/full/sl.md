@@ -1,0 +1,66 @@
+Minimalist Timer je nevsiljiv časovnik za fokus v vašem brskalniku. Ena tiha zvezda, prazno polje in topel generativni zvok, ki vas ponese skozi delovno sejo — nato pa vam pusti, da mehko pristanete, namesto da vas prestraši z alarmom. Brez navlake, brez računov, brez sledenja. Če se vam fokus običajno zdi hladen ali mehaničen, je ta zasnovan tako, da deluje umirjeno.
+
+Nastavite si čas, pritisnite start in ostanite v zanosu.
+
+🌟 Zakaj ta minimalistični časovnik
+- ➤ Čist, minimalističen dizajn — en umirjen prizor, nič vam ne vleče pozornosti
+- ➤ Vgrajen topel brown noise in nežni zvoki za fokus — vaš čas je dobesedno stkan iz zvoka
+- ➤ Mehak začetek in mehak pristanek — brez rezkega alarma, ko se seja konča
+- ➤ Prilagodljive seje: 5, 15, 25, 45, 90 minut ali brez omejitve
+- ➤ Tiho teče v stranski plošči, medtem ko delate — zvok se predvaja naprej po vseh zavihkih
+- ➤ V celoti v napravi: zaseben že po zasnovi, deluje brez povezave, brez registracije
+
+🔊 Zvok, ki drži vaš fokus
+Tiha odštevanja so pravilo. Ta vašo sejo ovije v topel brown noise — mehak, nizek, generativni zvok (in ne kratko zanko), ki prekrije motnje v ozadju in vam pomaga, da se umirite. Imate raje tihe zvoke za fokus kot pesmi? Ta ostaja bolj umirjen kot glasba za fokus in nežnejši kot oster white noise. Naj gre za brown noise za učenje, ambientalne zvoke za fokus, deep work ali zgolj za pomiritev razburkanega uma — zvok počasi lebdi in se nikoli ne ponovi.
+
+🎯 Časovnik za fokus in učenje v enem
+Naj potrebujete časovnik za fokus za deep work, časovnik za učenje za dolge seje ali umirjen delovni časovnik za pisarno — vmesnik vam ne stoji na poti:
+1. Minimalističen časovnik za fokus, za zbranost in zanos
+2. Minimalističen časovnik za učenje — za branje, pisanje in ponavljanje
+3. Umirjen časovnik za produktivnost in zbranost za vaše naloge
+4. Estetski pomodoro časovnik za tiste, ki želijo občutek brez togih ciklov 25/5
+
+🎨 Estetski in minimalen
+Če imate radi estetski časovnik ali ljubek časovnik na zaslonu, ta minimalistični odštevalni časovnik ohranja vse lepo in preprosto: topla zvezda, ki se s potekom seje približuje, znotraj tihega, odprtega prostora. Nobenih številk, ki bi vpile na vas, nobenega pritiska — le čist, estetski minimalistični časovnik, ki ga je prijetno gledati.
+
+🧠 Nežen do vaše pozornosti
+Zasnovan je tako, da je prijazen do tega, kako pozornost dejansko deluje. Če se spopadate z izgubo občutka za čas ali želite vizualni časovnik, ki naredi čas otipljiv brez stresa, vam zvezda daje nežen občutek napredka. Odlično deluje kot umirjena alternativa časovniku za ADHD — taka, ki vas v fokus popelje in iz njega spet izpelje, namesto da vas kaznuje. Kliče vas nazaj; ne zapira vas v kletko.
+
+💡 Brez računov, brez oglasov in brez podatkov, ki bi kdaj zapustili vašo napravo — le umirjen, zaseben prostor za fokus, kakor koli že delujejo vaši možgani.
+
+🖥 Kako deluje
+1️⃣ Odprite minimalistični časovnik iz orodne vrstice
+2️⃣ Povlecite drsnik in nastavite čas — od 5 do 90 minut ali ∞
+3️⃣ Tapnite zvezdo — topel zvok se začne in vi zdrsnete v fokus
+4️⃣ Ko čas poteče, seja mehko pristane, brez alarma
+5️⃣ Ploščo lahko kadar koli zaprete — zvok teče naprej
+
+Kot lahka pomodoro razširitev za Chrome in namizni časovnik ostane točno tam, kjer delate — brez dodatnega okna, brez prevzema novega zavihka, brez motenj.
+
+📌 Odličen za
+- ▸ Deep work, pisanje, programiranje in branje
+- ▸ Študente, ki želijo estetski časovnik za učenje umirjenega videza
+- ▸ Vse, ki se jim navadna odštevanja zdijo hladna, glasna ali stresna
+- ▸ Ljudi, ki se bolje zberejo ob toplem zvoku v ozadju
+
+❓ Pogosta vprašanja
+
+🧐 Ali moram plačati ali se registrirati?
+➤ Ne — vse je na voljo že od začetka, brez računa in brez registracije.
+
+🧐 Po čem se zvok razlikuje od drugih časovnikov?
+➤ Namesto tihega odštevanja je vaš čas stkan iz toplega brown noise in nežnih zvokov za fokus, ki prekrijejo motnje in vam pomagajo ostati v zanosu.
+
+🧐 Ali deluje brez povezave?
+➤ Da. Vse teče v napravi, zato ta minimalistični časovnik deluje brez povezave in vam nikoli ne sledi.
+
+🧐 Ali ga lahko uporabljam za pomodoro?
+➤ Nastavite lahko klasične dolžine fokusa, a ni vsiljenih odmorov — to je nežnejši, minimalistični pomodoro časovnik, zgrajen okoli zanosa in ne okoli togih ciklov.
+
+🧐 Je dober za fokus in učenje?
+➤ Da — zasnovan je kot umirjen časovnik za fokus in učenje, s toplim zvokom in nežno vizualno podobo, ki vam pomagata, da se zberete in zaščitite deep work.
+
+🧐 Ali se zvok ustavi, če zamenjam zavihek?
+➤ Ne — zvoki za fokus se predvajajo naprej po vseh zavihkih, dokler teče vaša seja.
+
+Nastavite si čas, pritisnite start in pustite, da minimalistični časovnik nosi vaš fokus. ⭐

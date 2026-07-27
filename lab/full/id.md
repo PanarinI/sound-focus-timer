@@ -1,5 +1,3 @@
-⭐ Timer Pomodoro - Minimalist Timer — timer yang bersih dan tenang untuk fokus dan belajar, yang waktunya terbuat dari suara hangat.
-
 Minimalist Timer adalah timer fokus minim gangguan untuk browser-mu. Sebuah bintang yang tenang, ruang kosong, dan suara generatif hangat yang membawamu melewati sesi kerja — lalu membiarkanmu mendarat lembut, bukan mengagetkanmu dengan alarm. Tanpa kekacauan, tanpa akun, tanpa pelacakan. Jika fokus biasanya terasa dingin atau mekanis, yang ini dibuat agar terasa tenang.
 
 Atur waktumu, tekan mulai, dan tetap dalam flow.

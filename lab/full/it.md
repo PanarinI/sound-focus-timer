@@ -1,5 +1,3 @@
-⭐ Timer Pomodoro - Minimalist Timer — un timer pulito e tranquillo per concentrazione e studio, dove il tuo tempo è fatto di suono caldo.
-
 Minimalist Timer è un timer per la concentrazione a bassa distrazione per il tuo browser. Una stella tranquilla, un campo vuoto e un suono generativo caldo che ti accompagna attraverso una sessione di lavoro — e poi ti fa atterrare dolcemente invece di spaventarti con una sveglia. Niente disordine, niente account, niente tracciamento. Se concentrarsi di solito sembra freddo o meccanico, questo è pensato per sembrare calmo.
 
 Imposta il tempo, premi avvia e resta nel flow.

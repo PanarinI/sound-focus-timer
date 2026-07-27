@@ -1,5 +1,3 @@
-⭐ Pomodoro Timer - Minimalist Timer — ein klarer, ruhiger Timer für Fokus und Lernen, dessen Zeit aus warmem Klang besteht.
-
 Minimalist Timer ist ein ablenkungsarmer Fokus-Timer für deinen Browser. Ein ruhiger Stern, ein leeres Feld und ein warmer, generativer Klang tragen dich durch eine Arbeitssitzung – und lassen dich sanft landen, statt dich mit einem Alarm zu erschrecken. Kein Ballast, keine Konten, kein Tracking. Wenn sich Fokus sonst kalt oder mechanisch anfühlt, ist dieser hier darauf ausgelegt, sich ruhig anzufühlen.
 
 Zeit einstellen, Start drücken und im Flow bleiben.

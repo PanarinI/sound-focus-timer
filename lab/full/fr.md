@@ -1,5 +1,3 @@
-⭐ Timer Pomodoro - Minimalist Timer — un minuteur clair et calme pour la concentration et les études, dont le temps est fait de son chaleureux.
-
 Minimalist Timer est un minuteur de concentration peu distrayant pour ton navigateur. Une étoile paisible, un champ vide et un son génératif chaleureux qui te porte à travers une session de travail — puis te laisse atterrir en douceur au lieu de te réveiller en sursaut avec une alarme. Pas d'encombrement, pas de comptes, pas de suivi. Si la concentration te semble d'habitude froide ou mécanique, celui-ci est conçu pour être apaisant.
 
 Règle ton temps, appuie sur démarrer et reste dans le flow.
