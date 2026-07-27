@@ -7,9 +7,8 @@
 //    поколения (его chrome.runtime мёртв). Прежний guard «уже висит — выходим» не давал новому
 //    скрипту занять место → «неактивный рудимент» (баг автора). Теперь: старый host сносим, ставим свой.
 //  • ping: живой язычок отвечает фону «я тут» — фон не вливает скрипт повторно (без дублей-слушателей).
-//  • КРЕСТИК на ховере (реш. автора): выключает язычок совсем — пишет glowEnabled=false в storage
-//    (единая труба-истина; фон погасит остальные вкладки, тумблер в настройках очага включит обратно).
 // Законы прежние: узкий, у кромки; свечение кликов не перехватывает; габарит стабилен; closed shadow DOM.
+// (Крестик-выключатель убран 07-27: единственный переключатель язычка — тумблер «Edge tab» в настройках очага.)
 
 (() => {
   const ID = '__ember_glow_host';
@@ -59,20 +58,6 @@
       .tongue.paused { filter: saturate(.5) brightness(.72); }
       .tongue.paused::after { animation-duration: 12s; }
       .tongue.deny  { animation: deny .5s ease; }
-      /* крестик-выключатель: живёт над нитью, показывается на ховере; прячется с задержкой,
-         чтобы пережить перелёт курсора через зазор */
-      .quit {
-        position: fixed; right: 4px; top: calc(50% - 78px);
-        width: 17px; height: 17px; border-radius: 50%;
-        background: rgba(28,19,12,.92); border: 1px solid rgba(150,110,70,.5);
-        color: #c9a06a; font: 11px/15px -apple-system, sans-serif; text-align: center;
-        opacity: 0; pointer-events: none; cursor: pointer;
-        transition: opacity .25s ease .45s;
-      }
-      .tongue:hover ~ .quit, .quit:hover {
-        opacity: 1; pointer-events: auto; transition-delay: 0s;
-      }
-      .quit:hover { color: #f0d0a0; border-color: rgba(220,170,110,.8); }
       @keyframes breathe { 0%,100% { opacity: var(--lit, .5); } 50% { opacity: calc(var(--lit, .5) + .25); } }
       @keyframes deny { 0%,100% { transform: translate(0,-50%); } 30% { transform: translate(-3px, -50%) rotate(-1.6deg); } 65% { transform: translate(-1px, -50%) rotate(1.2deg); } }
       @media (prefers-reduced-motion: reduce) {
@@ -80,29 +65,10 @@
         .tongue::after { animation: none; }
       }
     </style>
-    <div class="tongue" part="tongue" title="Open / close"></div>
-    <div class="quit" part="quit" title="Hide (bring back in panel settings)">✕</div>`;
+    <div class="tongue" part="tongue" title="Open / close"></div>`;
 
   const tongue = root.querySelector('.tongue');
-  const quit = root.querySelector('.quit');
   (document.body || document.documentElement).appendChild(host);
-
-  // Крестик — обучающий, не вечный (реш. автора 07-22: «раздражал бы каждый раз, если я язычок ДЕРЖУ»):
-  // показывается на ховере только первые ~3 раза (счёт в storage), дальше выключение живёт в настройках очага.
-  let quitSeen = 99;
-  quit.style.display = 'none';
-  try {
-    chrome.storage.local.get({ glowQuitSeen: 0 }).then((v) => {
-      quitSeen = v.glowQuitSeen || 0;
-      if (quitSeen < 3) quit.style.display = '';
-    });
-  } catch (e) {}
-  let counted = false;
-  tongue.addEventListener('mouseenter', () => {
-    if (counted || quitSeen >= 3) return;
-    counted = true;                                        // один засчитанный показ на вливание
-    try { chrome.storage.local.set({ glowQuitSeen: quitSeen + 1 }); } catch (e) {}
-  });
 
   // Появление = ВЫЕЗД (не проявление): предмет приехал, периферия это ловит.
   // В фоновой вкладке rAF заморожен → там без анимации, просто быть на месте:
@@ -131,13 +97,6 @@
         console.warn('[ember] дверь не открылась:', r && r.error);
       })
       .catch(() => {});
-  });
-
-  // Крестик = «убрать язычок совсем» (труба-истина storage; фон погасит остальные вкладки,
-  // включение обратно — тумблер в настройках очага). Здесь гасим сразу, не дожидаясь рассылки.
-  quit.addEventListener('click', () => {
-    slideOut(true);
-    try { chrome.storage.local.set({ glowEnabled: false }); } catch (e) {}
   });
 
   const onMsg = (msg, sender, sendResponse) => {

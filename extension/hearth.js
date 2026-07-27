@@ -459,7 +459,7 @@ if (IN_EXT) {
   el.glowrow.hidden = false;
 
   // Тумблер язычка — первая переключалка настроек очага (реш. автора 07-22).
-  // ТРУБА-ИСТИНА = storage.glowEnabled (фон слушает onChanged; крестик на язычке пишет туда же).
+  // ТРУБА-ИСТИНА = storage.glowEnabled (фон слушает onChanged; этот тумблер — единственный переключатель язычка).
   // Права НЕ трогаем при выключении (выданные остаются — включение обратно без системного окна);
   // при включении без прав — запрашиваем (жест жив), отказ = тумблер остаётся выкл.
   async function glowState() {
@@ -485,7 +485,7 @@ if (IN_EXT) {
     paintGlowSwitch();
   });
   chrome.storage.onChanged.addListener((ch, area) => {
-    if (area === 'local' && ch.glowEnabled) paintGlowSwitch();   // крестик на странице щёлкнул — тумблер узнал
+    if (area === 'local' && ch.glowEnabled) paintGlowSwitch();   // glowEnabled сменился где-то ещё — тумблер узнал
   });
   paintGlowSwitch();
 }
