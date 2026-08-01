@@ -167,7 +167,15 @@
       const present = 1 - depth * 0.15;
       // затухание в тишину (пауза/выкл) — быстрое (~0.4с тау): жест должен отвечать сразу; всё остальное — мягкие 1.2с
       const tau = (this.phase === 'ниточка' || this.phase === 'off') ? 0.4 : 1.2;
-      this.master.gain.setTargetAtTime(this.cur.master * 2 * vol * (0.8 + masking * 0.35) * present, t, tau);
+      let g = this.cur.master * 2 * vol * (0.8 + masking * 0.35) * present;
+      // KEEP-ALIVE ДОМА ЗВУКА (крит-баг прода 07-30, корень 07-22 доказан симптомом автора):
+      // offscreen-документ живёт с reason AUDIO_PLAYBACK — Chrome закрывает его, как только выход
+      // умолкает НАСОВСЕМ. Громкость в 0 (или пауза) = полная тишина → Chrome убивает дом вместе с
+      // фазой сессии; возврат громкости поднимает ПУСТОЙ дом (phase='off') и звук уже не воскресает.
+      // Пока рейс идёт (phase ≠ off), держим неслышимый пол ~0.0015 (выход ≈ −80 дБ, ниже 16-бит кванта —
+      // ухом не поймать), но для Chrome дом «играет» и не выгружается. В покое (off) пол снят — тишина честная.
+      if (this.phase !== 'off') g = Math.max(g, 0.0015);
+      this.master.gain.setTargetAtTime(g, t, tau);
     }
 
     _remaining() {
@@ -212,7 +220,9 @@
         this.cur.master = 0.5 * (1 - easeInOut(p));   // звук истончается синхронно со сдуванием орба
         this.cur.depth = lerp(0.9, 0.4, easeInOut(p));
         this.cur.brightness = lerp(tod * 0.9, Math.min(1.15, tod + 0.35), easeInOut(p));
-        if (p >= 1) { this.phase = 'ручей'; this.phaseStart = t; this._apply(); this._emit({ justEnded: true }); return; }
+        // конец рассвета: движок ГАСИТ САМ (не ждёт панель). justEnded — панели (уголь+счёт), если открыта;
+        // turnOff — тишина+стоп даже при свёрнутой панели (иначе звук застревал играть в «ручье», крит 07-30).
+        if (p >= 1) { this._emit({ justEnded: true }); this.turnOff(); return; }
       } else if (this.phase === 'ниточка') {
         this.cur.master = 0; this.cur.depth = 0.05; this.cur.brightness = tod; // пауза = тишина (юзер-тест 07-16: «нажал — затихло», жест отвечает сразу)
       } else if (this.phase === 'угасание') {
@@ -221,7 +231,9 @@
         this.cur.master = this._extFrom * (1 - easeInOut(p));
         this.cur.depth = lerp(this.cur.depth, 0.15, 0.08);
         this.cur.brightness = tod;
-        if (p >= 1) { this.phase = 'off'; this.cur.master = 0; this._apply(); this._emit({ justEnded: true }); return; }
+        // конец ручного «завершить»: тоже гасим САМ (turnOff останавливает тики и глушит,
+        // раньше tickTimer крутился в 'off' до панельного turnOff, а при свёрнутой панели — вечно).
+        if (p >= 1) { this._emit({ justEnded: true }); this.turnOff(); return; }
       }
       this._apply();
       this._emit();

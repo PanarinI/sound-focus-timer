@@ -108,22 +108,26 @@ async function syncGlow() {
   // Язычок = ПОСТОЯННАЯ дверь: виден, пока включён тумблером (glowEnabled) и даны права,
   // НЕЗАВИСИМО от сессии и панели. Покой = тлеет (heat 0), сессия = разгорается (pushGlowState кормит жар).
   const shouldShow = glowEnabled;
-  if (shouldShow === glowLit) {                      // состояние не сменилось — только освежим яркость
-    if (glowLit) pushGlowState();
+  if (!shouldShow) {
+    // ВЫКЛЮЧЕНИЕ — всегда обходим вкладки, НЕ доверяя кэшу glowLit. Почему (крит-узел 07-30):
+    // service worker в MV3 умирает через ~30с и перезапускается со сбросом glowLit→false, а язычок
+    // в DOM страницы смерть воркера ПЕРЕЖИВАЕТ. Прежний ранний return при «shouldShow===glowLit»
+    // (false===false) считал «уже выключено» и оставлял сироту → тумблер «срабатывал со 2-й попытки».
+    // ensureGlowInTab при glowLit=false сам шлёт 'off' живому и сносит скриптом-уборщиком сироту.
+    glowLit = false;
+    await eachTab((t) => ensureGlowInTab(t.id));
     return;
   }
-  if (shouldShow && !(await glowAllowed())) { glowLit = false; return; }
-  glowLit = shouldShow;
-  if (shouldShow) {
-    await eachTab((t) => ensureGlowInTab(t.id));     // пинг-сначала: живой не переливаем (без дублей)
-  } else {
-    await eachTab((t) => chrome.tabs.sendMessage(t.id, { target: 'glow', type: 'off' }).catch(() => {}));
-  }
+  if (!(await glowAllowed())) { glowLit = false; return; }
+  if (glowLit) { pushGlowState(); return; }           // уже показан — только освежим яркость
+  glowLit = true;
+  await eachTab((t) => ensureGlowInTab(t.id));         // пинг-сначала: живой не переливаем (без дублей)
 }
 
 function pushGlowState() {
   const paused = sound.phase === 'ниточка';
-  eachTab((t) => chrome.tabs.sendMessage(t.id, { target: 'glow', type: 'state', heat: sound.heat, paused }));
+  const active = sound.phase !== 'off';              // идёт ли рейс — язычок в покое должен ПОТУХНУТЬ (жалоба автора 07-30)
+  eachTab((t) => chrome.tabs.sendMessage(t.id, { target: 'glow', type: 'state', heat: sound.heat, paused, active }));
 }
 
 // Довести язычок в ОДНОЙ вкладке до правды текущего состояния.

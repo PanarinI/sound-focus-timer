@@ -57,6 +57,8 @@
       .tongue:active { transform: translate(1px, -50%) scaleY(.97); }
       .tongue.paused { filter: saturate(.5) brightness(.72); }
       .tongue.paused::after { animation-duration: 12s; }
+      .tongue.idle { filter: saturate(.62) brightness(.58); }   /* покой (таймер выключен) — язычок потухший */
+      .tongue.idle::after { animation-duration: 10s; }          /* и дышит медленнее, еле-еле */
       .tongue.deny  { animation: deny .5s ease; }
       @keyframes breathe { 0%,100% { opacity: var(--lit, .5); } 50% { opacity: calc(var(--lit, .5) + .25); } }
       @keyframes deny { 0%,100% { transform: translate(0,-50%); } 30% { transform: translate(-3px, -50%) rotate(-1.6deg); } 65% { transform: translate(-1px, -50%) rotate(1.2deg); } }
@@ -105,13 +107,17 @@
     if (msg.type === 'off') { slideOut(true); return; }
     if (msg.type === 'state') {
       const heat = Math.max(0, Math.min(1, msg.heat || 0));
+      const active = msg.active !== false;             // рейс идёт? покой (false) → ПОТУХШИЙ; undefined (старый фон) → как активный
       // жар кормит СВЕТ жилы и ореол; габарит и место не двигаются.
-      // покой (heat 0) = тлеет тускло (дверь на месте, но очаг ещё не разожжён); сессия разгорается ярче.
-      tongue.style.setProperty('--lit', (0.5 + heat * 0.45).toFixed(2));   // выше базовая яркость в покое — нить заметна
+      // покой = дверь на месте, но ПОТУХШАЯ (очаг не разожжён, жалоба автора 07-30); рейс разгорается жаром.
+      tongue.style.setProperty('--lit', active ? (0.5 + heat * 0.45).toFixed(2) : '0.16');
+      tongue.classList.toggle('idle', !active);
       if (!tongue.matches(':hover')) {
-        // ореол нити растёт с жаром рейса — свет полёта просачивается дальше за кромку
-        tongue.style.boxShadow =
-          `-${(9 + heat * 8).toFixed(0)}px 0 ${(24 + heat * 20).toFixed(0)}px rgba(255,170,76,${(0.42 + heat * 0.3).toFixed(2)}), -1px 0 3px rgba(45,22,8,.55)`;
+        const glow = active ? heat : -0.7;             // в покое ореол почти гаснет
+        const spread = Math.max(4, 9 + glow * 9).toFixed(0);
+        const blur = Math.max(8, 24 + glow * 22).toFixed(0);
+        const alpha = Math.max(0.10, 0.42 + glow * 0.34).toFixed(2);
+        tongue.style.boxShadow = `-${spread}px 0 ${blur}px rgba(255,170,76,${alpha}), -1px 0 3px rgba(45,22,8,.55)`;
       }
       tongue.classList.toggle('paused', !!msg.paused);
       slideIn();
