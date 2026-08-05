@@ -99,7 +99,7 @@ function fmt(min) { const h = Math.floor(min / 60), m = Math.round(min % 60); re
 // ---------- ПРОСЬБА ОБ ОЦЕНКЕ (реш. автора 07-22; паттерн ExportGPT, канон методики) ----------
 // Появляется СО 2-й завершённой сессии, только в покое, до первой оценки.
 // ≥4★ → отзывы CWS · 1–3★ → форма фидбека (боль ловим себе, не в стор).
-const RATE_URL = 'https://chromewebstore.google.com/detail/minimalist-timer/miknhphoakphfhgjajhkalmpdnadkeic/reviews';   // вписан на аппруве (07-30): ≥4★ → отзывы CWS, 1–3★ → форма
+const RATE_URL = 'https://chromewebstore.google.com/detail/minimalist-timer/miknhphoakphfhgjajhkalmpdnadkeic/reviews';   // вписан на аппруве (08-01): ≥4★ → отзывы CWS, 1–3★ → форма
 const FEEDBACK_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfTyBVwYzmT3Pvhj0xsmcgE3OzKnR5qCjEeR6HOLIU5msrwkg/viewform';  // форма автора (07-22)
 const rateReady = () =>
   (RATE_URL || FEEDBACK_URL) && !localStorage.getItem('hearth.rated') &&
@@ -178,7 +178,7 @@ function render(st) {
     lastProg = prog;
   } else if (fading(phase)) {
     // рейс окончен → звезда мягко СДУВАЕТСЯ за время ухода (рассвет/выдох), синхронно со звуком
-    // (жалоба автора 07-30: «по завершении звезда должна сдуваться»). От достигнутого размера к 0.
+    // (жалоба автора 08-01: «по завершении звезда должна сдуваться»). От достигнутого размера к 0.
     const fdur = phase === 'рассвет' ? engine.DAWN : (engine._extDur || 1);
     const k = 1 - Math.min(1, (nowS() - engine.phaseStart) / Math.max(0.1, fdur));
     prog = lastProg * k;
@@ -404,7 +404,7 @@ const SKY = (() => {
 el.finish.addEventListener('click', quench);
 
 // ---------- ГРОМКОСТЬ ----------
-// ПЕРСИСТ (крит-узел 07-30): раньше громкость нигде не хранилась — при перезагрузке панели (разворот
+// ПЕРСИСТ (крит-узел 08-01): раньше громкость нигде не хранилась — при перезагрузке панели (разворот
 // после сворачивания) ползунок прыгал в HTML-дефолт 0.5, а звук в offscreen оставался на реальном уровне
 // → UI и звук расходились. Теперь localStorage = единый источник: восстанавливаем ползунок И движок.
 function paintVol(v) { const p = (v * 100).toFixed(0); el.volume.style.background = `linear-gradient(90deg, #e8b25c 0%, #b9702a ${p}%, #2a2119 ${p}%)`; }
@@ -468,12 +468,12 @@ if (IN_EXT) {
   engine.sync();                                   // панель могла открыться поверх уже горящего очага
   // Side panel при сворачивании язычком/крестиком МОЖЕТ сохранять DOM (не перезагружаться) — тогда при
   // развороте она показывает УСТАРЕВШЕЕ состояние (кнопка finish от давно завершённого рейса, старая звезда).
-  // Досинхронизируемся с домом звука КАЖДЫЙ раз, когда панель снова видима (крит-узел 07-30).
+  // Досинхронизируемся с домом звука КАЖДЫЙ раз, когда панель снова видима (крит-узел 08-01).
   document.addEventListener('visibilitychange', () => { if (!document.hidden) engine.sync(); });
   // ЗЕРКАЛО язычка (реш. автора 07-22): клик по язычку при открытой панели = закрыть её.
   // API закрыть панель не умеет — но страница панели может закрыть СЕБЯ.
   // Порт РВЁТСЯ при перезапуске service worker (MV3) — тогда фон думает «панель закрыта» и зеркало
-  // «в каком-то сценарии не закрывает» (жалоба автора 07-30). Переподключаемся при обрыве, пока панель жива.
+  // «в каком-то сценарии не закрывает» (жалоба автора 08-01). Переподключаемся при обрыве, пока панель жива.
   let panelPort = null;
   function connectPanel() {
     panelPort = chrome.runtime.connect({ name: 'panel' });

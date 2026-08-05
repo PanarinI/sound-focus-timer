@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  html,body{margin:0;padding:0;background:#05060f}
+  .stage{position:relative;width:1280px;height:800px;overflow:hidden;
+    font-family:'SF Pro Display','Inter',system-ui,-apple-system,sans-serif;
+    background:radial-gradient(ellipse 80% 90% at 78% 45%, #131c40 0%, #090d22 52%, #05060f 100%);}
+  .txt{position:absolute;left:92px;top:190px;width:520px;z-index:6}
+  h1{color:#FFF6E6;font-size:66px;font-weight:700;line-height:1.04;letter-spacing:-1.8px;margin:0}
+  h1 em{color:#FFC978;font-style:normal;font-size:1.16em;letter-spacing:-2px}
+  .sub{color:#9FAAC9;font-size:27px;font-weight:500;line-height:1.42;margin-top:28px}
+  .sub b{color:#FFD79A;font-weight:600}
+  .frame{position:absolute;left:838px;top:40px;width:360px;height:720px;border-radius:16px;overflow:hidden;
+    border:1px solid rgba(255,255,255,.10);box-shadow:0 40px 120px rgba(0,0,0,.6),0 0 0 12px rgba(255,255,255,.018);z-index:3}
+  .frame iframe{width:400px;height:800px;border:0;transform:scale(0.9);transform-origin:0 0;display:block}
+  .tab{position:absolute;left:838px;top:778px;width:360px;text-align:center;color:#6F7797;
+    font-size:15px;font-weight:600;letter-spacing:1.6px;z-index:4}
+  /* пара кадров «минута 1 → минута 24» — единственная выноска во всём наборе */
+  .cell{position:absolute;z-index:6;border-radius:14px;border:1px solid rgba(255,255,255,.09);background:#070a18;
+    background-repeat:no-repeat;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+  .clab{position:absolute;z-index:6;color:#9FAAC9;font-size:19px;font-weight:600;text-align:center}
+  .arrow{position:absolute;z-index:6;color:#FFC978;font-size:34px;font-weight:700}
+</style></head><body>
+<div class="stage">
+  <div class="txt"><h1>Time you<br>don't count</h1><div class="sub">The star draws closer as the session runs. One glance and you know where you are.</div></div>
+  <div class="frame"><iframe src="../../../extension/hearth.html"></iframe></div>
+  <div class="tab"></div>
+  <div class="cell" style="left:92px;top:500px;width:150px;height:150px;background-image:url(panel-idle.png);background-position:-125.0px -245.0px"></div><div class="clab" style="left:92px;top:662px;width:150px">minute 1</div><div class="arrow" style="left:262px;top:555px">→</div><div class="cell" style="left:312px;top:500px;width:150px;height:150px;background-image:url(panel-late.png);background-position:-125.0px -245.0px"></div><div class="clab" style="left:312px;top:662px;width:150px">minute 24</div>
+</div>
+<script>
+  const WAIT = 21, DIAL = 2;
+  for (const fr of document.querySelectorAll('iframe')) {
+    fr.addEventListener('load', () => {
+      const d = fr.contentDocument;
+      try {
+        d.getElementById('fast').checked = true;                 // dev: 1 мин = 1 с
+        const ts = d.getElementById('timeslider');
+        if (ts) { ts.value = DIAL; ts.dispatchEvent(new Event('input', {bubbles:true})); }
+        if (WAIT > 0 && !fr.dataset.idle) {
+          const w = d.getElementById('wrap');
+          w.dispatchEvent(new Event('pointerdown'));
+          w.dispatchEvent(new Event('pointerup'));
+        }
+      } catch (e) { document.title = 'ERR ' + e.message; }
+    });
+  }
+</script>
+</body></html>

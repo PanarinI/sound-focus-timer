@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Стенд ВОЗДУХА — три воздуха одного рейса</title>
+<!--
+  Стенд рождён 2026-08-04 по развилке «второй воздух рейса».
+  ЗАКОН СТЕНДА — «инструмент = явь»: здесь НЕТ отдельного стендового звука.
+  Грузится НАСТОЯЩИЙ ../extension/engine.js и дёргается настоящими ручками
+  (setChar / setTier) — что слышишь, то и в расширении.
+
+  Три воздуха = три точки на уже существующих крутилках, а не новый код:
+    ТЁПЛЫЙ  energy .40 · masking .45 · basic    — нынешний дефолт продукта
+    СВЕТЛЕЕ energy .85 · masking .32 · basic    — срез brownLP вверх + розовый воздух слышнее
+    С ТОНОМ energy .35 · masking .50 · PREMIUM  — включён написанный слой гармонизации
+                                                  (C-пентатоника, редкие мягкие тоны, без ритма)
+  Переключение — на лету, рейс не прерывается: это и есть проверка «слышно ли разницу телом».
+
+  Правка 08-04 (автор: «не запускается звук»): клик по ЛЮБОЙ карточке воздуха теперь сам поднимает
+  рейс — раньше карточки меняли параметры молчащего движка и стенд выглядел сломанным.
+  Плюс живой индикатор уровня: если полоска дышит, а в ушах тихо — дело в выводе звука, не в стенде.
+-->
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; min-height:100vh; background:#080b14; color:#dfe6f5;
+         font:15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         display:flex; flex-direction:column; align-items:center; gap:20px; padding:34px 20px 60px; }
+  h1 { font-size:17px; font-weight:600; letter-spacing:.02em; margin:0; color:#f0f4ff; }
+  .sub { font-size:13px; color:#7c88a6; margin:-12px 0 0; text-align:center; max-width:580px; }
+  .airs { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+  .air { width:184px; padding:16px 14px; border-radius:14px; cursor:pointer; text-align:left;
+         background:#0e1424; border:1px solid #1e2841; transition:border-color .25s, background .25s, transform .15s; }
+  .air:hover { transform:translateY(-2px); border-color:#33436b; }
+  .air.on { border-color:#7fa8ff; background:#141d33; }
+  .air b { display:block; font-size:15px; margin-bottom:6px; color:#eaf0ff; }
+  .air span { font-size:12px; color:#8492b0; display:block; }
+  .air code { font-size:11px; color:#5f6d8c; display:block; margin-top:8px; font-family:ui-monospace, monospace; }
+  .row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center; }
+  button { background:#16203a; color:#dfe6f5; border:1px solid #26314f; border-radius:9px;
+           padding:9px 16px; font-size:14px; cursor:pointer; }
+  button:hover { background:#1d2947; }
+  button.primary { background:#2c4c8f; border-color:#4a72c4; font-weight:600; padding:11px 22px; }
+  label { font-size:12px; color:#8492b0; display:flex; align-items:center; gap:9px; }
+  input[type=range] { width:180px; accent-color:#7fa8ff; }
+  .state { font-size:13px; color:#93a2c4; min-height:20px; text-align:center; }
+  .state.silent { color:#c98b6a; }
+  .meterwrap { display:flex; align-items:center; gap:10px; font-size:11px; color:#5f6d8c; }
+  .meter { width:220px; height:8px; border-radius:5px; background:#141c2f; overflow:hidden; border:1px solid #1e2841; }
+  .meter i { display:block; height:100%; width:0; background:linear-gradient(90deg,#3d6fd0,#8fb6ff); transition:width .08s linear; }
+  .note { max-width:600px; font-size:12.5px; color:#6f7d9c; border-top:1px solid #18213a; padding-top:16px; }
+  .note b { color:#9fb0d4; font-weight:600; }
+</style>
+
+<h1>Стенд воздуха — три воздуха одного рейса</h1>
+<p class="sub">Настоящий движок расширения. Нажми любой воздух — рейс поднимется сам. Переключай на лету, посреди полёта: разницу решает тело, не глаз.</p>
+
+<div class="airs" id="airs"></div>
+
+<div class="row">
+  <button class="primary" id="go">▶ Взлёт — сразу в плато</button>
+  <button id="full">Полный вход (минута собирания)</button>
+  <button id="stop">Стоп</button>
+</div>
+
+<div class="row">
+  <label>громкость <input type="range" id="vol" min="0" max="1" step="0.01" value="0.5"></label>
+  <label>тон (в «с тоном») <input type="range" id="harm" min="0" max="1" step="0.01" value="0.7"></label>
+</div>
+
+<div class="state silent" id="state">тишина — нажми воздух или «Взлёт»</div>
+
+<div class="meterwrap">
+  <span>уровень на выходе</span>
+  <div class="meter"><i id="bar"></i></div>
+  <span id="db">—</span>
+</div>
+
+<p class="note">
+  <b>Если полоска дышит, а в ушах тихо</b> — звук уходит не в те наушники (проверь вывод в системе)
+  или вкладка приглушена. Стенд в этом случае исправен.
+  <br><br>
+  <b>Что слушать.</b> Не «нравится ли звук» — на это ответ всегда «нравится». Слушать: <b>уходит ли он из внимания</b>
+  через минуту-две. Воздух рейса не должен быть интересным; он должен становиться незаметным и держать.
+  Если ловишь себя на том, что <i>слушаешь</i> его — это событие, а событие = отвлечение (закон движка).
+  <br><br>
+  <b>Про «с тоном».</b> Это ближайшее к тому ambient, ради которого затевалась развилка: медленно, консонансно,
+  без ритма и слов, никогда не повторяется. Слой уже был написан в движке и молчал за <code>tier: 'premium'</code>.
+  Проверить надо ровно одно: он <i>гармонизирует среду</i> — или всё-таки <i>играет музыку</i>. Второе для фокус-таймера — брак.
+</p>
+
+<script src="../extension/engine.js"></script>
+<script>
+  const AIRS = [
+    { key:'warm',  name:'Тёплый',  desc:'нынешний дефолт продукта — низкий тёплый рокот',
+      code:'energy .40 · masking .45 · basic',   char:{ energy:0.40, masking:0.45 }, tier:'basic' },
+    { key:'light', name:'Светлее', desc:'срез вверх, розовый воздух слышнее — ближе к pink/white',
+      code:'energy .85 · masking .32 · basic',   char:{ energy:0.85, masking:0.32 }, tier:'basic' },
+    { key:'tone',  name:'С тоном', desc:'+ слой гармонизации: редкие мягкие консонансы',
+      code:'energy .35 · masking .50 · premium', char:{ energy:0.35, masking:0.50 }, tier:'premium' },
+  ];
+
+  const stateEl = document.getElementById('state');
+  const eng = new AudioEngine(s => {
+    const flying = s.phase && s.phase !== 'off';
+    stateEl.classList.toggle('silent', !flying);
+    stateEl.textContent = flying
+      ? `фаза: ${s.phase}   ·   воздух: ${current.name}` + (s.remaining ? `   ·   осталось ${Math.round(s.remaining)}с` : '')
+      : 'тишина — нажми воздух или «Взлёт»';
+  });
+
+  let current = AIRS[0];
+
+  const box = document.getElementById('airs');
+  AIRS.forEach(a => {
+    const el = document.createElement('div');
+    el.className = 'air' + (a === current ? ' on' : '');
+    el.innerHTML = `<b>${a.name}</b><span>${a.desc}</span><code>${a.code}</code>`;
+    // клик по воздуху = и выбор, и взлёт (правка 08-04): молчащий стенд читался как сломанный
+    el.onclick = () => { if (eng.phase === 'off') liftOff(); apply(a); };
+    a.el = el; box.appendChild(el);
+  });
+
+  function apply(a) {
+    current = a;
+    AIRS.forEach(x => x.el.classList.toggle('on', x === a));
+    eng.setTier(a.tier);                                  // гармонизация вкл/выкл — плавно, 1.5с
+    eng.setChar({ ...a.char, volume: +vol.value });       // остальное — через штатный setChar
+    if (a.tier === 'premium') eng.setHarmony(+harm.value);
+  }
+
+  function liftOff() {
+    eng.turnOn();
+    eng.startSession(3600);
+    // стендовая привилегия: сдвигаем ЛИНИЮ ВРЕМЕНИ на минуту назад, а не подменяем состояние —
+    // автомат сам переведёт «собирание» → «ткань» на ближайшем тике. Фазы настоящие.
+    eng.phaseStart -= eng.GATHER + 1;
+    eng.sessionStart -= eng.GATHER + 1;
+    eng._tick();
+    startMeter();
+  }
+
+  document.getElementById('go').onclick   = () => { liftOff(); apply(current); };
+  document.getElementById('full').onclick = () => { eng.turnOn(); apply(current); startMeter(); };
+  document.getElementById('stop').onclick = () => eng.turnOff();
+  vol.oninput  = () => eng.setChar({ volume: +vol.value });
+  harm.oninput = () => eng.setHarmony(+harm.value);
+
+  // --- индикатор уровня: снимаем РЕАЛЬНЫЙ выход мастера ---
+  let analyser = null, meterBuf = null;
+  function startMeter() {
+    if (analyser || !eng.AC) return;
+    analyser = eng.AC.createAnalyser(); analyser.fftSize = 2048;
+    eng.master.connect(analyser);
+    meterBuf = new Float32Array(analyser.fftSize);
+    requestAnimationFrame(drawMeter);
+  }
+  function drawMeter() {
+    if (!analyser) return;
+    analyser.getFloatTimeDomainData(meterBuf);
+    let s = 0; for (const v of meterBuf) s += v * v;
+    const rms = Math.sqrt(s / meterBuf.length);
+    bar.style.width = Math.min(100, rms * 420) + '%';
+    db.textContent = rms > 0.00002 ? (20 * Math.log10(rms)).toFixed(0) + ' dB' : 'тишина';
+    requestAnimationFrame(drawMeter);
+  }
+</script>

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Тон-стенд v2 — живой пласт (уход и возвращение голосов)</title>
+<!--
+  v1 (08-04): пласт вместо искр — аккорд стоит непрерывно, голоса дышат.
+  v2 (08-04, по слуху автора): «в целом нравится, но не хватает разнообразия; Искры вообще не слышны;
+      Стекло приятнее всех; у Aphex есть нечастые приятные мелодии и трансформации — вроде и не следишь,
+      а что-то приятное услышал».
+
+  ── ПОЧЕМУ «ИСКРЫ» НЕ СЛЫШНЫ (не вкус, а физика; замерено 08-04) ────────────────────────────
+  В engine.js пик ноты 0.13–0.23 × ползунок × сухой тракт 0.4 ≈ 0.03 против подушки на ~0.4 → −22 dB.
+  Плюс HARMONY_FREQS = 131–262 Гц — ровно полоса, где у brown-шума вся энергия (срез 430–900 Гц).
+  Слой не «тихий» — он СПЕКТРАЛЬНО ЗАМАСКИРОВАН. Отсюда закон стенда: тон живёт ВЫШЕ энергии подушки.
+  Он же объясняет, почему «Стекло» (196–523 Гц, срез 2600) автору слышнее прочих.
+
+  ── ЧТО ВЗЯТО ИЗ РАЗБОРА AphEX ТЕХНИЧЕСКИ (источники в конце файла) ─────────────────────────
+  1. «Уход и возвращение голосов» (разбор Rhubarb, Scott Morrison): пять голосов в РАЗНЫХ регистрах
+     входят и пропадают, сам материал не меняется. Ощущение перемены даёт ПЕРЕСБОРКА состава,
+     а не новый материал. Несколько независимых циклов идут одновременно.
+     → отсюда главный механизм v2: пул голосов, у каждого свой несоизмеримый цикл присутствия.
+     Это и есть «разнообразие без событий»: ничего не начинается — просто состав другой.
+  2. «Голоса вечно нисходят» — на смене аккорда предпочитаем ближайший тон СНИЗУ.
+  3. Гармония диатоническая и триадическая, «как колыбельная», петля без разрешения (7:44 одной
+     последовательности). Терции у него ЕСТЬ — отсутствует не терция, а КАДЕНЦИЯ. Отсюда вторая
+     палитра «триады» рядом с нашей бестерцовой пентатоникой — проверить на слух, что держит лучше.
+  4. Широкий разброс регистров + много пространства = воздух; тембры «как орган», мягкие.
+
+  ── ЧЕСТНОСТЬ ──────────────────────────────────────────────────────────────────────────────
+  Шумовая подушка — настоящая, из ../extension/engine.js. Слой тона — ЛАБОРАТОРНЫЙ КОД,
+  в продукте его нет. Путь taste2.html: наслушать в лабе, в движок переносить вердикт.
+-->
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; min-height:100vh; background:#070a12; color:#dfe6f5;
+         font:15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         display:flex; flex-direction:column; align-items:center; gap:16px; padding:30px 20px 60px; }
+  h1 { font-size:17px; font-weight:600; margin:0; color:#f0f4ff; }
+  .sub { font-size:13px; color:#7c88a6; margin:-8px 0 0; text-align:center; max-width:640px; }
+  .chars { display:flex; gap:11px; flex-wrap:wrap; justify-content:center; max-width:860px; }
+  .ch { width:190px; padding:14px 13px; border-radius:14px; cursor:pointer; text-align:left;
+        background:#0d1322; border:1px solid #1c2540; transition:.22s; }
+  .ch:hover { transform:translateY(-2px); border-color:#33436b; }
+  .ch.on { border-color:#8fb6ff; background:#151f38; }
+  .ch b { display:block; font-size:14.5px; margin-bottom:5px; color:#eaf0ff; }
+  .ch span { font-size:12px; color:#8492b0; display:block; }
+  .ch code { font-size:10.5px; color:#5c6a89; display:block; margin-top:6px; font-family:ui-monospace,monospace; }
+  .row { display:flex; gap:14px; align-items:center; flex-wrap:wrap; justify-content:center; max-width:820px; }
+  button { background:#151e35; color:#dfe6f5; border:1px solid #26314f; border-radius:9px;
+           padding:9px 16px; font-size:14px; cursor:pointer; }
+  button:hover { background:#1c2745; }
+  button.primary { background:#2c4c8f; border-color:#4a72c4; font-weight:600; padding:11px 24px; }
+  label { font-size:12px; color:#8492b0; display:flex; align-items:center; gap:8px; }
+  label b { color:#c3d0ea; font-weight:600; font-variant-numeric:tabular-nums; min-width:28px; }
+  input[type=range] { width:150px; accent-color:#8fb6ff; }
+  .big input[type=range] { width:290px; height:22px; }
+  .big { font-size:13px; color:#c3d0ea; }
+  .state { font-size:13px; color:#93a2c4; min-height:20px; }
+  .state.silent { color:#c98b6a; }
+  .voices { display:flex; gap:4px; height:26px; align-items:flex-end; }
+  .voices i { width:9px; background:#2b4477; border-radius:2px 2px 0 0; transition:height .3s linear, background .3s; }
+  .meterwrap { display:flex; align-items:center; gap:10px; font-size:11px; color:#5f6d8c; }
+  .meter { width:230px; height:8px; border-radius:5px; background:#121a2c; overflow:hidden; border:1px solid #1c2540; }
+  .meter i { display:block; height:100%; width:0; background:linear-gradient(90deg,#3d6fd0,#9dc0ff); transition:width .08s linear; }
+  .note { max-width:650px; font-size:12.5px; color:#6f7d9c; border-top:1px solid #161f36; padding-top:16px; }
+  .note b { color:#9fb0d4; font-weight:600; }
+</style>
+
+<h1>Тон-стенд v2 — живой пласт</h1>
+<p class="sub">Голоса теперь <b>уходят и возвращаются</b>, каждый по своему циклу. Материал не меняется — меняется состав. Полоски внизу показывают, кто сейчас звучит.</p>
+
+<div class="chars" id="chars"></div>
+
+<div class="row">
+  <button class="primary" id="go">▶ Взлёт</button>
+  <button id="stop">Стоп</button>
+  <button id="solo">Шум прочь — только тон</button>
+  <button id="melNow" title="проиграть мотив сейчас, не дожидаясь расписания">♪ Мотив сейчас</button>
+  <button id="beep" title="явный громкий тон — проверить, что звук из этой страницы вообще доходит">🔔 Проверка звука</button>
+</div>
+<div class="row"><span id="diag" style="font-size:11.5px;color:#5f6d8c">аудио-контекст: не создан</span></div>
+
+<div class="row big" style="flex-direction:column;gap:6px">
+  <label style="font-size:14px;color:#eaf0ff">ШУМ ⟷ ТОН &nbsp; <input type="range" id="mix" min="0" max="1" step="0.01" value="0.45"><b id="mixV">0.45</b></label>
+  <div id="mixWhat" style="font-size:11.5px;color:#6f7d9c">сегодняшний продукт</div>
+  <label style="font-size:11.5px;color:#5f6d8c;margin-top:4px"><input type="checkbox" id="devMode"> показать все ручки (режим верстака)</label>
+</div>
+
+<div class="row big dev" hidden>
+  <label>СКОЛЬКО ТОНА <input type="range" id="tone" min="0" max="1" step="0.01" value="0.5"><b id="toneV">0.50</b></label>
+</div>
+<div class="row dev" hidden>
+  <label>шум <input type="range" id="noise" min="0" max="1" step="0.01" value="0.5"><b id="noiseV">0.50</b></label>
+  <label>плотность голосов <input type="range" id="dens" min="0.15" max="1" step="0.01" value="0.5"><b id="densV">0.50</b></label>
+  <label>частота смен <input type="range" id="churn" min="0.2" max="2.5" step="0.05" value="1"><b id="churnV">1.0</b></label>
+</div>
+<div class="row dev" hidden>
+  <label>регистр <input type="range" id="reg" min="-12" max="12" step="1" value="0"><b id="regV">0</b></label>
+  <label>расстройка <input type="range" id="det" min="0" max="30" step="0.5" value="8"><b id="detV">8</b></label>
+  <label>палитра
+    <select id="pal" style="background:#151e35;color:#dfe6f5;border:1px solid #26314f;border-radius:7px;padding:5px 8px">
+      <option value="penta">пентатоника (без терций)</option>
+      <option value="triad">триады (по-Rhubarb'овски)</option>
+    </select>
+  </label>
+  <label><input type="checkbox" id="mel" checked> мелодия</label>
+  <label>сколько мелодии <input type="range" id="melAmt" min="0" max="1" step="0.01" value="0.5"><b id="melAmtV">0.50</b></label>
+  <label><input type="checkbox" id="sus" checked> задержания</label>
+</div>
+<div class="row dev" hidden>
+  <label><input type="checkbox" id="comp" checked> второй путник</label>
+  <label>сколько его <input type="range" id="compAmt" min="0" max="1" step="0.01" value="0.55"><b id="compAmtV">0.55</b></label>
+</div>
+<div class="row dev" hidden>
+  <label><input type="checkbox" id="puls" checked> пульс (ход)</label>
+  <label>частота <input type="range" id="pulsRate" min="0.2" max="1.6" step="0.02" value="0.62"><b id="pulsRateV">0.62</b></label>
+  <label>сколько <input type="range" id="pulsAmt" min="0" max="1" step="0.01" value="0.5"><b id="pulsAmtV">0.50</b></label>
+  <label>тепло <input type="range" id="warm" min="0" max="1" step="0.01" value="0.35"><b id="warmV">0.35</b></label>
+</div>
+
+<div class="state silent" id="state">тишина — нажми характер или «Взлёт»</div>
+<div class="voices" id="voices"></div>
+
+<div class="meterwrap">
+  <span>уровень</span><div class="meter"><i id="bar"></i></div><span id="db">—</span>
+</div>
+
+<p class="note">
+  <b>Как устроено присутствие.</b> Уровень каждого голоса ведут две непрерывные волны с периодами 41–146 секунд,
+  разведёнными золотым сечением: их отношение иррационально, поэтому рисунок состава не повторяется никогда
+  и все голоса не могут замереть одновременно — это исключено построением, а не подобрано.
+  Два нижних голоса — ядро, они не пропадают совсем, только дышат; остальные приходят и уходят.
+  Кривая входа — мягкий выпрямитель без единого угла, поэтому появление голоса физически не может
+  прозвучать как событие. Аккорд при этом переселяется не разом: у каждого голоса своё время перехода.
+  <br><br>
+  <b>«Редкая мелодия»</b> — раз в 1.5–4 минуты сверху появляется голос и очень медленно проговаривает
+  три-четыре ноты, потом пропадает надолго. Атака 6–10 секунд: это не событие, это то самое
+  «вроде и не следишь, а что-то приятное услышал». Выключается галочкой — сравни с ней и без.
+  <br><br>
+  <b>Палитра.</b> Наша пентатоника принципиально без терций. Но разбор Rhubarb показал: у него гармония
+  как раз триадическая, почти колыбельная — отсутствует не терция, а <i>каденция</i>: петля не разрешается никогда.
+  Переключи и послушай, что держит тебя дольше. Это развилка вкуса, и она твоя.
+</p>
+
+<script src="../extension/engine.js"></script>
+<script>
+// ── СТЕНД ОБЯЗАН ПАДАТЬ ГРОМКО ──────────────────────────────────────────────
+// Если ../extension/engine.js не загрузился (браузер режет локальные файлы при file://),
+// то дальше падает первая же строка, ВСЕ обработчики кнопок не навешиваются, и страница
+// выглядит рабочей, но мертва. Именно это съело у автора полчаса 08-04. Теперь — баннер.
+function fatal(msg, hint) {
+  document.body.insertAdjacentHTML('afterbegin',
+    '<div style="background:#3a1520;border:1px solid #a04a5e;border-radius:12px;padding:16px 18px;' +
+    'max-width:660px;color:#ffd9e0;font-size:14px;line-height:1.5">' +
+    '<b style="display:block;margin-bottom:6px;font-size:15px">Стенд не запустился</b>' + msg +
+    (hint ? '<div style="margin-top:10px;color:#ffb3c1">' + hint + '</div>' : '') + '</div>');
+}
+window.onerror = (m, src, line) => fatal('Ошибка в коде стенда: <code>' + m + '</code> (строка ' + line + ')');
+if (typeof AudioEngine === 'undefined') {
+  fatal('Не загрузился движок <code>../extension/engine.js</code> — без него играть нечем.',
+        'Почти наверняка страница открыта как <code>file://</code>, а браузер запрещает подтягивать ' +
+        'локальные файлы из соседних папок. Открой стенд через локальный сервер: ' +
+        '<code>http://localhost:8785/lab/tone-stand.html</code>');
+  throw new Error('engine.js not loaded');
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// ПАЛИТРЫ. Хранятся классами высот (полутоны от C), регистр подбирается на слот.
+// penta — C D E G A: нет ведущих тонов → нет тяготения → не за чем следить.
+// triad — диатоника с терциями, петля из 5 трезвучий, которая не разрешается (по разбору Rhubarb).
+// ═══════════════════════════════════════════════════════════════════════════
+const PALETTES = {
+  penta: [ [0,7,2], [0,9,4], [2,7,4], [9,4,2], [0,7,9] ],
+  triad: [ [2,6,9], [6,9,1], [9,1,4], [4,8,11], [2,6,9] ],   // D · F#m · A · E · D
+};
+
+const CHARS = [
+  { key:'glass', name:'Стекло+', desc:'твой фаворит, теперь с уходами и возвращениями',
+    code:'centers 196…880 · triangle · рв 6с · тёплый срез',
+    centers:[196,262,330,392,523,659,784,880], wave:'triangle',
+    // 08-04 по слуху автора «остро и холодно»: срез 2800 → 1500 (у треугольника верхние
+    // призвуки и дают стеклянность), верхний голос 1245 → 880, реверб длиннее и мягче
+    cutoff:1500, hp:150, rvSec:6.0, rvDecay:2.5, send:0.6, rvGain:0.9, dry:0.5, moveEvery:65, glide:12 },
+
+  { key:'pad', name:'Пласт', desc:'средний регистр, плотнее и теплее',
+    code:'centers 131…784 · sine · рв 4с',
+    centers:[131,175,196,262,330,392,523,784], wave:'sine',
+    cutoff:1600, hp:110, rvSec:4.0, rvDecay:2.4, send:0.55, rvGain:0.9, dry:0.55, moveEvery:70, glide:14 },
+
+  { key:'cathedral', name:'Собор', desc:'ниже и в огромном пространстве',
+    code:'centers 98…523 · sine · рв 9с',
+    centers:[98,131,165,196,262,330,392,523], wave:'sine',
+    cutoff:1100, hp:70, rvSec:9.0, rvDecay:3.1, send:0.8, rvGain:1.15, dry:0.4, moveEvery:95, glide:22 },
+
+  { key:'sparks', name:'Искры (движок)', pad:false, desc:'родной слой engine.js — для сравнения',
+    code:'tier:premium · маскируется подушкой' },
+];
+
+const stateEl = document.getElementById('state');
+let current = CHARS[0];            // Стекло+ — по слуху автора
+let pad = null, meterBus = null;
+
+const eng = new AudioEngine(s => {
+  const flying = s.phase && s.phase !== 'off';
+  stateEl.classList.toggle('silent', !flying);
+  stateEl.textContent = flying ? `фаза: ${s.phase}   ·   характер: ${current.name}`
+                               : 'тишина — нажми характер или «Взлёт»';
+});
+
+const box = document.getElementById('chars');
+CHARS.forEach(c => {
+  const el = document.createElement('div');
+  el.className = 'ch' + (c === current ? ' on' : '');
+  el.innerHTML = `<b>${c.name}</b><span>${c.desc}</span><code>${c.code}</code>`;
+  el.onclick = () => { if (eng.phase === 'off') liftOff(); applyChar(c); };
+  c.el = el; box.appendChild(el);
+});
+
+// ── помощники ───────────────────────────────────────────────────────────────
+const rnd = (a, b) => a + Math.random() * (b - a);
+function makeReverb(AC, sec, decay) {
+  const len = Math.floor(AC.sampleRate * sec), ir = AC.createBuffer(2, len, AC.sampleRate);
+  for (let ch = 0; ch < 2; ch++) { const d = ir.getChannelData(ch);
+    for (let i = 0; i < len; i++) d[i] = (Math.random()*2-1) * Math.pow(1 - i/len, decay); }
+  const cv = AC.createConvolver(); cv.buffer = ir; return cv;
+}
+function drift(AC, rate, depth, param) {
+  const o = AC.createOscillator(), g = AC.createGain();
+  o.frequency.value = rate; g.gain.value = depth; o.connect(g); g.connect(param); o.start();
+}
+// ближайшая к центру частота для класса высоты — и есть автоматическое голосоведение
+function pcNear(pc, center, preferDown) {
+  const midiCenter = 69 + 12 * Math.log2(center / 440);
+  let best = null, bestD = 1e9;
+  for (let oct = 0; oct <= 9; oct++) {
+    const midi = pc + 12 * oct;
+    let d = Math.abs(midi - midiCenter);
+    if (preferDown && midi > midiCenter) d += 0.6;      // «голоса вечно нисходят»
+    if (d < bestD) { bestD = d; best = midi; }
+  }
+  return 440 * Math.pow(2, (best - 69) / 12);
+}
+const regShift = () => Math.pow(2, (+reg.value) / 12);
+
+// ── СЛОЙ ТОНА: пул голосов с независимыми циклами присутствия ───────────────
+function buildPad(cfg) {
+  const AC = eng.AC;
+  const bus = AC.createGain(); bus.gain.value = 0;
+  const hp = AC.createBiquadFilter(); hp.type='highpass'; hp.frequency.value = cfg.hp; // не лезем под подушку
+  const lp = AC.createBiquadFilter(); lp.type='lowpass'; lp.Q.value = 0.4; lp.frequency.value = cfg.cutoff;
+  bus.connect(hp); hp.connect(lp);
+
+  const out = AC.createGain(); out.gain.value = 1; out.connect(AC.destination);
+  if (meterBus) out.connect(meterBus);
+  const dry = AC.createGain(); dry.gain.value = cfg.dry; lp.connect(dry); dry.connect(out);
+  const rv = makeReverb(AC, cfg.rvSec, cfg.rvDecay);
+  const send = AC.createGain(); send.gain.value = cfg.send; lp.connect(send); send.connect(rv);
+  const rvg = AC.createGain(); rvg.gain.value = cfg.rvGain; rv.connect(rvg); rvg.connect(out);
+
+  // тихий сток для анализаторов: они должны «прокачиваться», но в динамики не идти
+  const zero = AC.createGain(); zero.gain.value = 0; zero.connect(AC.destination);
+  // медленный непрерывный дрейф среза — даже в самый тонкий момент ткань всё равно ползёт
+  drift(AC, 0.0083, cfg.cutoff * 0.22, lp.frequency);
+
+  const lfos = [];
+  const voices = cfg.centers.map((c, i) => {
+    const vg = AC.createGain(); vg.gain.value = 0;                 // уровень задаёт ТОЛЬКО модуляция
+    const pan = AC.createStereoPanner ? AC.createStereoPanner() : null;
+    if (pan) { pan.pan.value = rnd(-0.75, 0.75); vg.connect(pan); pan.connect(bus); } else vg.connect(bus);
+    const peak = 0.30 / Math.sqrt(i + 1);                          // верхние тише — иначе каша
+
+    const oscs = [-1, 1].map(s => {
+      const o = AC.createOscillator(); o.type = cfg.wave;
+      o.frequency.value = c * regShift(); o.detune.value = s * (+det.value);
+      drift(AC, 0.017 + i * 0.0029, 6, o.detune);                  // «плёночная качка»
+      o.connect(vg); o.start(); return o;
+    });
+
+    // ── ПРИСУТСТВИЕ ГОЛОСА: не таймеры, а две непрерывные волны с несоизмеримыми периодами.
+    // Периоды разведены золотым сечением — их отношение иррационально, значит рисунок присутствия
+    // не повторяется НИКОГДА и совпасть в общей неподвижности они не могут по построению.
+    // Раньше это делали случайные setTimeout — и они умели случайно выстроиться в тишину.
+    const PHI = 1.6180339887;
+    const base = 41 + i * 7;                                        // 41…90 с
+    const sum = AC.createGain(); sum.gain.value = 1;                // сумматор волн
+    [[base, 0.62], [base * PHI, 0.38]].forEach(([per, amp], k) => {
+      const l = AC.createOscillator(); l.type = 'sine'; l.frequency.value = 1 / per;
+      const g = AC.createGain(); g.gain.value = amp;
+      l.connect(g); g.connect(sum); l.start(AC.currentTime + i * 1.7 + k * 3.1);   // фазы вразнобой
+      lfos.push({ osc: l, per });
+    });
+    // порог присутствия: постоянная составляющая двигает волну вверх/вниз → «плотность голосов»
+    const dc = AC.createConstantSource(); dc.offset.value = densToDC(+dens.value, i);
+    dc.connect(sum); dc.start();
+    // мягкий выпрямитель: ниже нуля — тишина, выше — плавный подъём (никаких углов = никаких событий)
+    const shaper = AC.createWaveShaper(); shaper.curve = softRectifier(); shaper.oversample = 'none';
+    const depth = AC.createGain(); depth.gain.value = peak;
+    sum.connect(shaper); shaper.connect(depth); depth.connect(vg.gain);
+
+    // замер уровня голоса — для полосок: модуляция не отражается в .value, её видно только на слух и в анализаторе
+    const an = AC.createAnalyser(); an.fftSize = 256; vg.connect(an); an.connect(zero);
+    const abuf = new Float32Array(an.fftSize);
+
+    return { vg, oscs, center: c, peak, idx: i, dc, depth, an, abuf };
+  });
+
+  const p = { bus, out, lp, hp, voices, cfg, lfos, zero, rv, motifs: makeMotifs(),
+              step: 0, moveTimer: null, melTimer: null, susTimers: [], comp: null, compTimer: null, pulseTimer: null };
+  p.comp = buildCompanion(p);
+  return p;
+}
+
+// ── ВТОРОЙ ПУТНИК ──────────────────────────────────────────────────────────
+// Не второй пласт и не «ансамбль песни и пляски», а другой ХАРАКТЕР в той же панораме:
+// один голос (не хор), свой тембр, свой регистр, своя походка. Идёт по той же дороге —
+// общий реверб, то есть общее пространство, — но своим шагом: присутствие ведёт отдельная
+// пара волн с ДРУГИМИ периодами (127 с и 127·φ против 41–90 у пласта). Поэтому путники
+// то сходятся, то расходятся сами собой, и встреча получается редкой без всякого расписания.
+function buildCompanion(p) {
+  const AC = eng.AC, cfg = p.cfg;
+  const mid = cfg.centers[Math.floor(cfg.centers.length / 2)];
+  const center = mid * 0.5;                               // под серединой пласта — два разнесённых присутствия
+  const gain = AC.createGain(); gain.gain.value = 0;
+  // полосовой с резонансом: голос выходит полым, дудочным — ни на что в пласте не похож
+  const bp = AC.createBiquadFilter(); bp.type = 'bandpass'; bp.Q.value = 2.6;   // было 5.5 — резонанс резал ухо
+  bp.frequency.value = center * 2.2;
+  drift(AC, 0.0061, center * 0.5, bp.frequency);          // тембр сам медленно дышит
+  // и сверху крышка: пила без неё жужжит и лезет вперёд пласта
+  const tame = AC.createBiquadFilter(); tame.type = 'lowpass'; tame.frequency.value = 1250; tame.Q.value = 0.5;
+  gain.connect(bp); bp.connect(tame);
+  let src = tame;
+  if (AC.createStereoPanner) { const pn = AC.createStereoPanner(); pn.pan.value = -0.42; tame.connect(pn); src = pn; }
+  const dry = AC.createGain(); dry.gain.value = 0.75; src.connect(dry); dry.connect(p.out);
+  const snd = AC.createGain(); snd.gain.value = 0.70; src.connect(snd); snd.connect(p.rv);
+
+  const wave = cfg.wave === 'sine' ? 'triangle' : 'sawtooth';   // тембр нарочно другой, чем у пласта
+  const oscs = [-1, 1].map(s => {
+    const o = AC.createOscillator(); o.type = wave;
+    o.frequency.value = center; o.detune.value = s * 6;
+    drift(AC, 0.013, 8, o.detune);
+    o.connect(gain); o.start(); return o;
+  });
+
+  const PHI = 1.6180339887, base = 127;
+  const sum = AC.createGain(); sum.gain.value = 1;
+  const lfos = [];
+  [[base, 0.66], [base * PHI, 0.34]].forEach(([per, amp]) => {
+    const l = AC.createOscillator(); l.type = 'sine'; l.frequency.value = 1 / per;
+    const g = AC.createGain(); g.gain.value = amp; l.connect(g); g.connect(sum); l.start();
+    lfos.push({ osc: l, per });
+  });
+  // 08-04: было −0.10 — путник пропадал большую часть времени и автор его не различал. Теперь чаще на дороге.
+  const dc = AC.createConstantSource(); dc.offset.value = 0.06; dc.connect(sum); dc.start();
+  const shaper = AC.createWaveShaper(); shaper.curve = softRectifier();
+  const depth = AC.createGain(); depth.gain.value = comp.checked ? +compAmt.value * 0.55 : 0;
+  sum.connect(shaper); shaper.connect(depth); depth.connect(gain.gain);
+
+  const an = AC.createAnalyser(); an.fftSize = 256; gain.connect(an); an.connect(p.zero);
+  return { gain, bp, oscs, dc, depth, lfos, center, an, abuf: new Float32Array(256), idx: 0 };
+}
+
+// походка: раз в 18–45 с путник ПЕРЕХОДИТ на соседнюю ступень лада — не прыжком, а портаменто
+// за 2.5–5.5 с. Слышно, как он идёт, а не как его переключили. Шаги мелкие: это ход, не мелодия.
+// ПРАВКА 08-04 по слуху автора: «питч слегка инородный и слишком бросается в уши».
+// Диагноз: скольжение высоты у ЛОКАЛИЗОВАННОГО резонансного голоса — самое заметное движение
+// во всей ткани, а шаг делался каждые 18–45 с. Лечение то же, что и для голосов пласта:
+// ШАГ ТОЛЬКО В ТИШИНЕ. Пока путник слышен — переход откладывается; он уходит, переступает
+// беззвучно и возвращается уже на другой ступени. Слышна перемена, но не переход.
+function wanderCompanion() {
+  if (!pad || !pad.comp) return;
+  clearTimeout(pad.compTimer);
+  const c = pad.comp;
+  c.an.getFloatTimeDomainData(c.abuf);
+  let s = 0; for (const x of c.abuf) s += x * x;
+  if (Math.sqrt(s / c.abuf.length) < 0.006) {                 // слышен → не трогаем
+    const step = Math.random() < 0.8 ? 1 : 2;                 // шаги мелкие: ход, а не скачок
+    c.idx += (Math.random() < 0.5 ? -step : step);
+    const f = scaleFreq(paletteScale(), c.idx, c.center * regShift());
+    c.oscs.forEach(o => o.frequency.setTargetAtTime(f, eng.AC.currentTime, rnd(6, 12)));
+  }
+  pad.compTimer = setTimeout(wanderCompanion, rnd(20, 50) * 1000 / (+churn.value));
+}
+
+// ── ПУЛЬС (ход) ────────────────────────────────────────────────────────────
+// РЕВИЗИЯ решения 07-05 («пульс отвергнут — рябит в голове»). Отвергалась модуляция ШУМОВОЙ СТЕНЫ:
+// мерцание широкополосного полотна действительно рябит. Здесь другое — отдельные мягкие удары
+// высоты в тоновом слое. Закон ADHD при этом не нарушен: внимание хватается за НЕПРЕДСКАЗУЕМОЕ,
+// а ровный ход предсказуем и становится несущей — как стук колёс, которого перестаёшь слышать.
+// Атака 60 мс: слышно как удар, но транзиента-щелчка нет. Лёгкое рубато (±6 %) — поезд, а не метроном.
+// И у пульса тоже есть присутствие: он приходит и уходит по паре несоизмеримых волн, а не идёт вечно.
+function pulseTick() {
+  if (!pad) return;
+  clearTimeout(pad.pulseTimer);
+  if (puls.checked) playPulse();
+  const period = 1 / (+pulsRate.value);
+  pad.pulseTimer = setTimeout(pulseTick, period * 1000 * rnd(0.94, 1.06));
+}
+function playPulse() {
+  const AC = eng.AC, t = AC.currentTime;
+  // дыхание пульса: две волны с периодами 89 и 89·φ; ниже нуля — пульса просто нет
+  const w = Math.sin(2 * Math.PI * t / 89) * 0.6 + Math.sin(2 * Math.PI * t / (89 * 1.6180339887)) * 0.4;
+  const pres = Math.max(0, w);
+  if (pres < 0.04) return;
+  const chord = PALETTES[pal.value][pad.step % PALETTES[pal.value].length];
+  const pc = Math.random() < 0.7 ? chord[0] : chord[(Math.random() * chord.length) | 0];  // чаще опора
+  // РЕГИСТР ПУЛЬСА — правка 08-04: стоял на centers[0]·0.5 (≈98 Гц) и тонул в brown-шуме,
+  // то есть я нарушил собственный урок 9 про маскировку. Поднят в середину пласта, над энергией подушки.
+  const f = pcNear(pc, pad.cfg.centers[1] * regShift(), true);
+  const peak = (0.05 + (+pulsAmt.value) * 0.26) * pres;
+  [-1, 1].forEach(s => {
+    const o = AC.createOscillator(); o.type = 'triangle';
+    o.frequency.value = f; o.detune.value = s * 4;
+    const g = AC.createGain(); g.gain.value = 0;
+    o.connect(g); g.connect(pad.bus); o.start(t);
+    const atk = 0.06, rel = rnd(0.55, 1.15);
+    g.gain.setValueAtTime(0, t);
+    g.gain.linearRampToValueAtTime(peak * (s < 0 ? 1 : 0.55), t + atk);
+    g.gain.setTargetAtTime(0, t + atk, rel / 3);
+    o.stop(t + atk + rel + 1.5);
+  });
+}
+
+// цикл присутствия одного голоса: пришёл за 12–25с, постоял, ушёл. Периоды несоизмеримы —
+// состав пересобирается бесконечно и никогда не повторяется. Это и есть «разнообразие без событий».
+// мягкий выпрямитель для кривой присутствия: ниже нуля — ровно тишина, выше — плавный подъём.
+// Углов нет нигде, значит вход и уход голоса физически не могут прозвучать как щелчок или событие.
+function softRectifier() {
+  const N = 1024, c = new Float32Array(N);
+  for (let i = 0; i < N; i++) {
+    const x = -1 + 2 * i / (N - 1);
+    c[i] = x <= 0 ? 0 : x * x * (3 - 2 * x);      // smoothstep
+  }
+  return c;
+}
+
+// порог присутствия. Голоса 0–1 — ЯДРО: их порог всегда положительный, они не пропадают совсем,
+// только дышат. Остальные ходят через ноль — приходят и уходят. Так гарантирован пол:
+// пласт не может опустеть целиком, сколько бы ни крутились волны.
+function densToDC(d, i) {
+  return i < 2 ? (0.34 + d * 0.36)      // 0.39 … 0.70 — всегда над нулём
+               : (-0.56 + d * 1.02);    // −0.41 … +0.46 — то есть, то нет
+}
+
+// смена аккорда: каждый слот берёт ближайший тон нового аккорда, с предпочтением вниз.
+// Переход — глиссандо в 11–22 секунды, то есть не слышен как момент.
+function moveChord() {
+  if (!pad) return;
+  clearTimeout(pad.moveTimer);        // иначе смена палитры/регистра плодит таймеры и аккорд начинает частить
+  const chord = PALETTES[pal.value][pad.step % PALETTES[pal.value].length]; pad.step++;
+  const t = eng.AC.currentTime, sh = regShift();
+  // ── ЗАДЕРЖАНИЕ (suspension) — барочный приём, из-за которого, по слуху автора, «местами пронзительно».
+  // Один голос НЕ уходит вместе со всеми: он держит старую ноту, пока гармония под ним сменилась.
+  // Возникает диссонанс — и через 9–20 секунд голос разрешается в свою новую ноту.
+  // По закону движка это чисто: голос уже звучал, атаки нет, меняется только окружение вокруг него.
+  // Задерживаем только СЛЫШНЫЙ сейчас голос — иначе приём пропадёт впустую.
+  let susIdx = -1;
+  if (sus.checked && pad.step > 1) {
+    const audible = pad.voices.filter(v => {
+      v.an.getFloatTimeDomainData(v.abuf);
+      let s = 0; for (const x of v.abuf) s += x * x;
+      return Math.sqrt(s / v.abuf.length) > v.peak * 0.25;
+    });
+    if (audible.length) susIdx = audible[(Math.random() * audible.length) | 0].idx;
+  }
+
+  pad.voices.forEach(v => {
+    const pc = chord[v.idx % chord.length];
+    const f = pcNear(pc, v.center, true) * sh;
+    // у каждого голоса СВОЁ время перехода (±45 %) — аккорд не «сменяется» в один момент,
+    // а переселяется голос за голосом. Именно это и есть «одно переходит в другое»
+    const gl = pad.cfg.glide * rnd(0.55, 1.45);
+    if (v.idx === susIdx) {
+      const late = rnd(9, 20);
+      pad.susTimers.push(setTimeout(() => {
+        if (!pad) return;
+        // разрешение — медленнее обычного перехода: не «поправился», а «отпустил»
+        v.oscs.forEach(o => o.frequency.setTargetAtTime(f, eng.AC.currentTime, (gl * 1.5) / 3));
+      }, late * 1000));
+    } else {
+      v.oscs.forEach(o => o.frequency.setTargetAtTime(f, t, gl / 3));
+    }
+  });
+  pad.moveTimer = setTimeout(moveChord, pad.cfg.moveEvery * 1000 / (+churn.value));
+}
+
+// РЕДКАЯ МЕЛОДИЯ: раз в 1.5–4 минуты сверху появляется голос и медленно проговаривает 3–4 ноты.
+// Атака 6–10с — по устройству не событие: не «началось», а «проступило».
+// ── МЕЛОДИЧЕСКИЙ ГОЛОС ──────────────────────────────────────────────────────
+// Прошлая версия роняла СЛУЧАЙНЫЕ ноты аккорда раз в 9–16 с — ухо не связывает такое в линию,
+// это отдельные вздохи. Мелодия рождается из МОТИВА: фигуры из нескольких шагов, которая
+// возвращается изменённой (обращение, обратный ход, другая ступень старта). Так работает и
+// контрапункт: материал один, облик каждый раз новый.
+// Лад берём как объединение всех высот палитры — в пентатонике это C D E G A, в триадной петле — ля мажор.
+function paletteScale() {
+  const s = new Set();
+  PALETTES[pal.value].forEach(ch => ch.forEach(pc => s.add(pc)));
+  return [...s].sort((a, b) => a - b);
+}
+// ступень лада → частота: idx может выходить за октаву в обе стороны
+function scaleFreq(scale, idx, ref) {
+  const len = scale.length;
+  const oct = Math.floor(idx / len);
+  const pc = scale[((idx % len) + len) % len];
+  return pcNear(pc, ref, false) * Math.pow(2, oct);
+}
+// мотивы: шаги ПО СТУПЕНЯМ лада, с уклоном вниз (у Aphex голосоведения нисходят)
+function makeMotifs() {
+  const steps = [-2, -1, -1, 1, 2, 3];
+  return [0, 1, 2].map(() => {
+    const n = 4 + ((Math.random() * 3) | 0);
+    return Array.from({ length: n }, () => steps[(Math.random() * steps.length) | 0]);
+  });
+}
+
+// расписание появлений — иррациональное вращение: фаза шагает золотым сечением по модулю 1.
+// Такая последовательность равномерна и не повторяется никогда, и в ритм не складывается тоже.
+let melPhase = Math.random();
+function nextMelGap() {
+  melPhase = (melPhase + 1.6180339887) % 1;
+  return (40 + melPhase * 110) / (+churn.value);      // 40…150 с
+}
+function scheduleMelody() {
+  if (!pad) return;
+  clearTimeout(pad.melTimer);
+  if (!mel.checked) return;
+  pad.melTimer = setTimeout(() => {
+    if (pad && mel.checked) playMelody();
+    scheduleMelody();
+  }, nextMelGap() * 1000);
+}
+
+function playMelody() {
+  const AC = eng.AC, scale = paletteScale();
+  const top = pad.cfg.centers[pad.cfg.centers.length - 1] * regShift();
+  let motif = pad.motifs[(Math.random() * pad.motifs.length) | 0].slice();
+  if (Math.random() < 0.35) motif = motif.map(s => -s);      // обращение
+  if (Math.random() < 0.30) motif.reverse();                 // обратный ход
+  const chord = PALETTES[pal.value][pad.step % PALETTES[pal.value].length];
+  // старт — с ноты текущего аккорда, чтобы фраза не висела в воздухе
+  let idx = scale.indexOf(chord[(Math.random() * chord.length) | 0]);
+  if (idx < 0) idx = 0;
+  const peak = 0.06 + (+melAmt.value) * 0.26;
+  let t = AC.currentTime + 1.5;
+
+  motif.forEach((step, k) => {
+    idx += step;
+    const f = scaleFreq(scale, idx, top * rnd(0.9, 1.1));
+    // пара расстроенных осцилляторов — нота живая, а не приборная
+    [-1, 1].forEach(s => {
+      const o = AC.createOscillator(); o.type = pad.cfg.wave;
+      o.frequency.value = f; o.detune.value = s * 5;
+      const g = AC.createGain(); g.gain.value = 0;
+      o.connect(g); g.connect(pad.bus); o.start(t);
+      // атака 0.5–1.2 с: слышно как НОТА, но без транзиента — щелчка нет, значит и события нет
+      const atk = rnd(0.5, 1.2), hold = rnd(1.1, 2.4), rel = rnd(2.5, 5);
+      g.gain.setValueAtTime(0, t);
+      g.gain.linearRampToValueAtTime(peak * (s < 0 ? 1 : 0.6), t + atk);
+      g.gain.setTargetAtTime(0, t + atk + hold, rel / 3);
+      o.stop(t + atk + hold + rel + 3);
+      if (s > 0) t += atk + hold * rnd(0.55, 1.0);          // ноты слегка накладываются — линия, не точки
+    });
+  });
+}
+
+function killPad() {
+  if (!pad) return;
+  clearTimeout(pad.moveTimer); clearTimeout(pad.melTimer); clearTimeout(pad.compTimer); clearTimeout(pad.pulseTimer);
+  pad.susTimers.forEach(clearTimeout);
+  const t = eng.AC.currentTime;
+  pad.bus.gain.setTargetAtTime(0, t, 0.6);
+  const old = pad; pad = null;
+  setTimeout(() => {
+    try {
+      old.voices.forEach(v => { v.oscs.forEach(o => o.stop()); v.dc.stop(); });
+      old.lfos.forEach(l => l.osc.stop());
+      if (old.comp) { old.comp.oscs.forEach(o => o.stop()); old.comp.dc.stop(); old.comp.lfos.forEach(l => l.osc.stop()); }
+      old.out.disconnect(); old.zero.disconnect();
+    } catch (e) {}
+  }, 3500);
+}
+
+function applyChar(c) {
+  current = c;
+  CHARS.forEach(x => x.el.classList.toggle('on', x === c));
+  killPad();
+  if (c.pad === false) { eng.setTier('premium'); eng.setHarmony(+tone.value); return; }
+  eng.setTier('basic');
+  pad = buildPad(c);
+  pad.bus.gain.setTargetAtTime(+tone.value, eng.AC.currentTime, 2.5);
+  moveChord(); scheduleMelody(); wanderCompanion(); pulseTick();
+  applyMix(); warm.oninput();
+}
+
+// ── рейс ────────────────────────────────────────────────────────────────────
+function liftOff() {
+  eng.turnOn(); eng.startSession(3600);
+  eng.phaseStart -= eng.GATHER + 1; eng.sessionStart -= eng.GATHER + 1; eng._tick();
+  eng.setChar({ volume: +noise.value });
+  startMeter();
+}
+document.getElementById('go').onclick = () => { liftOff(); applyChar(current); };
+document.getElementById('stop').onclick = () => { killPad(); eng.turnOff(); };
+document.getElementById('solo').onclick = () => { noise.value = 0; noise.oninput(); };
+
+// ── ПРОВЕРКА ЗВУКА: нарочито громкий и явный тон мимо всей нашей механики.
+// Отвечает на единственный вопрос — доходит ли звук С ЭТОЙ СТРАНИЦЫ до ушей вообще.
+// Слышно → дело в наших уровнях/маскировке. Не слышно → звук уходит в другое устройство.
+let beepCtx = null, diagHold = 0;
+document.getElementById('beep').onclick = () => {
+  try {
+    if (eng.AC && eng.AC.state === 'closed') { location.reload(); return; }
+    const AC = (eng.AC && eng.AC.state !== 'closed') ? eng.AC
+             : (beepCtx = beepCtx || new (window.AudioContext || window.webkitAudioContext)());
+    if (AC.state === 'suspended') AC.resume();
+    const t = AC.currentTime;
+    [440, 660].forEach((f, i) => {
+      const o = AC.createOscillator(); o.type = 'sine'; o.frequency.value = f;
+      const g = AC.createGain(); g.gain.value = 0;
+      o.connect(g); g.connect(AC.destination); o.start(t);
+      g.gain.setValueAtTime(0, t);
+      g.gain.linearRampToValueAtTime(i ? 0.12 : 0.20, t + 0.05);
+      g.gain.setTargetAtTime(0, t + 0.9, 0.15);
+      o.stop(t + 2.0);
+    });
+    diagHold = Date.now() + 5000;
+    diag.textContent = `проверочный тон отправлен (контекст: ${AC.state}, ${AC.sampleRate} Гц). Не слышно — звук уходит не в эти наушники.`;
+  } catch (e) {
+    diagHold = Date.now() + 8000;
+    diag.textContent = 'ошибка запуска звука: ' + e.name + ' — ' + e.message;
+  }
+};
+// строка состояния: закрытый контекст оживить нельзя, нужен перезапуск страницы — это надо ВИДЕТЬ
+setInterval(() => {
+  if (Date.now() < diagHold) return;
+  let st; try { st = eng.AC ? eng.AC.state : 'не создан'; } catch (e) { st = 'закрыт'; }
+  diag.textContent = 'аудио-контекст: ' + st +
+    (st === 'closed' ? ' — оживить нельзя, перезагрузи страницу (⌘R)' : '') +
+    (st === 'suspended' ? ' — ждёт клика' : '');
+}, 1200);
+
+tone.oninput = () => { toneV.textContent = (+tone.value).toFixed(2);
+  if (!eng.AC) return;
+  if (pad) pad.bus.gain.setTargetAtTime(+tone.value, eng.AC.currentTime, 1.2); else eng.setHarmony(+tone.value); };
+noise.oninput = () => { noiseV.textContent = (+noise.value).toFixed(2); eng.setChar({ volume: +noise.value }); };
+dens.oninput  = () => { densV.textContent = (+dens.value).toFixed(2);
+  if (pad) pad.voices.forEach(v => v.dc.offset.setTargetAtTime(densToDC(+dens.value, v.idx), eng.AC.currentTime, 4)); };
+churn.oninput = () => { churnV.textContent = (+churn.value).toFixed(1);
+  // ускоряем/замедляем сами волны присутствия — рисунок остаётся несоизмеримым, меняется только темп
+  if (pad) pad.lfos.forEach(l => l.osc.frequency.setTargetAtTime((1 / l.per) * (+churn.value), eng.AC.currentTime, 3)); };
+det.oninput   = () => { detV.textContent = det.value;
+  if (pad) pad.voices.forEach(v => v.oscs.forEach((o, k) => o.detune.setTargetAtTime((k ? 1 : -1) * (+det.value), eng.AC.currentTime, 1.5))); };
+reg.oninput   = () => { regV.textContent = reg.value; if (pad) moveChord(); };
+pal.onchange  = () => { if (pad) { pad.step = 0; moveChord(); } };
+mel.onchange  = scheduleMelody;
+melAmt.oninput = () => melAmtV.textContent = (+melAmt.value).toFixed(2);
+const compApply = () => {
+  compAmtV.textContent = (+compAmt.value).toFixed(2);
+  if (pad && pad.comp) pad.comp.depth.gain.setTargetAtTime(
+    comp.checked ? +compAmt.value * 0.55 : 0, eng.AC.currentTime, 2.5);
+};
+comp.onchange = compApply; compAmt.oninput = compApply;
+pulsRate.oninput = () => { pulsRateV.textContent = (+pulsRate.value).toFixed(2); };
+// «тепло» — срез пласта: у треугольника именно верхние призвуки дают стеклянность и холод
+warm.oninput = () => { warmV.textContent = (+warm.value).toFixed(2);
+  if (pad) pad.lp.frequency.setTargetAtTime(pad.cfg.cutoff * (0.45 + 1.1 * (+warm.value)), eng.AC.currentTime, 1.5); };
+pulsAmt.oninput  = () => { pulsAmtV.textContent = (+pulsAmt.value).toFixed(2); };
+puls.onchange = () => { if (pad) pulseTick(); };
+
+// ── ПРОДУКТОВАЯ РУЧКА ──────────────────────────────────────────────────────
+// Одна видимая ручка тянет несколько скрытых, и это НЕ «баланс двух громкостей».
+// (1) Кривая РАВНОМОЩНАЯ (cos/sin): при линейном кроссфейде середина проседает по громкости.
+// (2) Шум не просто тише — он УТОНЧАЕТСЯ (masking вниз), иначе стена забивает тон и выходит каша.
+// (3) Шум никогда не уходит в ноль: дорога остаётся, тон — попутчик, а не замена.
+// (4) Слои включаются ЛЕСЕНКОЙ: пласт с самого начала, пульс с 0.30, путник с 0.45, мелодия с 0.55 —
+//     чтобы на малых значениях это был всё ещё сегодняшний продукт, только теплее.
+function applyMix() {
+  const m = +mix.value, a = m * Math.PI / 2;
+  const toneG  = Math.sin(a);                      // 0 → 1
+  const noiseG = 0.34 + 0.66 * Math.cos(a);        // 1 → 0.34, но не в ноль
+  const mask   = 0.45 - 0.16 * m;                  // стена утончается, освобождая место тону
+  const stair  = (lo, hi) => Math.max(0, Math.min(1, (m - lo) / (hi - lo)));
+
+  noise.value = noiseG.toFixed(3); noiseV.textContent = noiseG.toFixed(2);
+  if (eng.AC) eng.setChar({ volume: noiseG, masking: mask });
+  tone.value = (toneG * 0.9).toFixed(3); toneV.textContent = (toneG * 0.9).toFixed(2);
+  if (pad) pad.bus.gain.setTargetAtTime(toneG * 0.9, eng.AC.currentTime, 1.5);
+
+  // ЛЕСЕНКА — правка 08-04: пороги стояли 0.30/0.45/0.55, и на дефолтном 0.45 путник выходил
+  // ровно в НОЛЬ, а мелодия молчала. Автор жал галочку — и ничего не менялось, потому что
+  // множитель уже был нулевым. Пороги опущены, наклон круче: слои должны быть слышны, а не «начинаться».
+  pulsAmt.value = stair(0.10, 0.45).toFixed(2); pulsAmtV.textContent = pulsAmt.value;
+  compAmt.value = stair(0.18, 0.55).toFixed(2);  compApply();
+  melAmt.value  = stair(0.30, 0.70).toFixed(2);  melAmtV.textContent = melAmt.value;
+
+  mixV.textContent = m.toFixed(2);
+  mixWhat.textContent =
+    m < 0.06 ? 'сегодняшний продукт — чистый тёплый шум' :
+    m < 0.18 ? 'шум + пласт тона под ним' :
+    m < 0.30 ? 'пласт + ход' :
+    m < 0.45 ? 'пласт + ход + второй путник' :
+               'всё вместе: пласт · ход · путник · мотивы';
+}
+mix.oninput = applyMix;
+devMode.onchange = () => document.querySelectorAll('.dev').forEach(r => r.hidden = !devMode.checked);
+// послушать мотив сейчас, не дожидаясь расписания — иначе развилку не проверить
+document.getElementById('melNow').onclick = () => { if (pad) playMelody(); };
+
+// ── индикаторы ──────────────────────────────────────────────────────────────
+const vbox = document.getElementById('voices');
+let analyser = null, mbuf = null;
+function startMeter() {
+  if (analyser || !eng.AC) return;
+  const AC = eng.AC;
+  meterBus = AC.createGain(); meterBus.gain.value = 1; eng.master.connect(meterBus);
+  analyser = AC.createAnalyser(); analyser.fftSize = 2048; meterBus.connect(analyser);
+  const sink = AC.createGain(); sink.gain.value = 0; analyser.connect(sink); sink.connect(AC.destination);
+  mbuf = new Float32Array(analyser.fftSize);
+  setInterval(draw, 120);   // таймер, а не rAF: rAF замирает в фоновой вкладке, а стенд для фона и сделан
+}
+function draw() {
+  if (analyser) {
+    analyser.getFloatTimeDomainData(mbuf);
+    let s = 0; for (const v of mbuf) s += v * v;
+    const rms = Math.sqrt(s / mbuf.length);
+    bar.style.width = Math.min(100, rms * 420) + '%';
+    db.textContent = rms > 0.00002 ? (20 * Math.log10(rms)).toFixed(0) + ' dB' : 'тишина';
+  }
+  if (pad) {
+    if (vbox.children.length !== pad.voices.length) {
+      vbox.innerHTML = ''; pad.voices.forEach(() => vbox.appendChild(document.createElement('i')));
+    }
+    // уровень голоса берём АНАЛИЗАТОРОМ: присутствие теперь модуляция, а её в .value не видно
+    pad.voices.forEach((v, i) => {
+      v.an.getFloatTimeDomainData(v.abuf);
+      let s = 0; for (const x of v.abuf) s += x * x;
+      const rel = Math.min(1, Math.sqrt(s / v.abuf.length) / (v.peak * 0.72));
+      const el = vbox.children[i];
+      el.style.height = Math.min(26, 3 + rel * 23) + 'px';
+      el.style.background = rel > 0.5 ? '#7fa8ff' : (rel > 0.15 ? '#40619e' : '#1e2a45');
+    });
+  } else vbox.innerHTML = '';
+}
+
+/* ИСТОЧНИКИ РАЗБОРА
+   · Scott Morrison, «A Brief Analysis of Rhubarb» (spamzine.co.uk) — уход и возвращение голосов,
+     нисходящие голосоведения, петля без разрешения, диатоника и триады, «как колыбельная».
+   · Hooktheory theorytab «Rhubarb / #3» — тональность, септаккорды и обращения, 84 BPM.
+   · Wikipedia, Selected Ambient Works Volume II — бесритмовый двойник 1994, метод осознанных
+     сновидений как исходник материала (это про происхождение, не про технику).
+   · Inverted Audio, разбор SAW II — расстроенные пилы/квадраты, хорус на «Blue Calx»;
+     точный сетап RDJ публично не задокументирован — не выдаём догадки за факт.            */
+</script>

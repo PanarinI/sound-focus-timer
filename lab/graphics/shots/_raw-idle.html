@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#05060f}iframe{width:400px;height:800px;border:0;display:block}</style>
+</head><body><iframe src="../../../extension/hearth.html"></iframe>
+<script>
+  const WAIT = 0, DIAL = 2;
+  for (const fr of document.querySelectorAll('iframe')) {
+    fr.addEventListener('load', () => {
+      const d = fr.contentDocument;
+      try {
+        d.getElementById('fast').checked = true;                 // dev: 1 мин = 1 с
+        const ts = d.getElementById('timeslider');
+        if (ts) { ts.value = DIAL; ts.dispatchEvent(new Event('input', {bubbles:true})); }
+        if (WAIT > 0 && !fr.dataset.idle) {
+          const w = d.getElementById('wrap');
+          w.dispatchEvent(new Event('pointerdown'));
+          w.dispatchEvent(new Event('pointerup'));
+        }
+      } catch (e) { document.title = 'ERR ' + e.message; }
+    });
+  }
+</script></body></html>

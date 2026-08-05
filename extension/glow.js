@@ -109,7 +109,7 @@
       const heat = Math.max(0, Math.min(1, msg.heat || 0));
       const active = msg.active !== false;             // рейс идёт? покой (false) → ПОТУХШИЙ; undefined (старый фон) → как активный
       // жар кормит СВЕТ жилы и ореол; габарит и место не двигаются.
-      // покой = дверь на месте, но ПОТУХШАЯ (очаг не разожжён, жалоба автора 07-30); рейс разгорается жаром.
+      // покой = дверь на месте, но ПОТУХШАЯ (очаг не разожжён, жалоба автора 08-01); рейс разгорается жаром.
       tongue.style.setProperty('--lit', active ? (0.5 + heat * 0.45).toFixed(2) : '0.16');
       tongue.classList.toggle('idle', !active);
       if (!tongue.matches(':hover')) {

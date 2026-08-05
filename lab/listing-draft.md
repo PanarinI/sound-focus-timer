@@ -9,6 +9,11 @@ Minimalist Timer
 ## SHORT DESCRIPTION (132 макс) — вариант C, 115 симв
 A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer.
 
+**Вариант D — добор 08-04, с болью «no ads» (129 симв, за автором):**
+`A clean minimalist timer for focus and study — warm brown noise and focus sounds, on your device, with no ads and no tabs.`
+⚠️ Перед заменой прогнать через Тургенев (2.1.6-2.1.9): вариант D теряет ключ `pomodoro timer`, но берёт `no ads`.
+Развилка вкуса — за автором.
+
 ## FULL DESCRIPTION (~4500 симв)
 
 ⭐ Minimalist Timer — a clean, calm timer for focus and study, where your time is made of warm sound.
@@ -20,6 +25,7 @@ Set your time, press start, and stay in flow.
 🌟 Why this minimalist timer
 - ➤ Clean, minimalist design — one calm scene, nothing pulling at your attention
 - ➤ Warm brown noise and gentle focus sounds built in — your time is literally made of sound
+- ➤ Brown noise with no ads and no video tab — nothing cuts into your session halfway through
 - ➤ A soft start and a soft landing — no jarring alarm when your session ends
 - ➤ Flexible sessions: 5, 15, 25, 45, 90 minutes, or open-ended
 - ➤ Runs quietly in your side panel while you work — the sound keeps playing across tabs
@@ -27,6 +33,8 @@ Set your time, press start, and stay in flow.
 
 🔊 Sound that holds your focus
 Silent countdowns are the norm. This one wraps your session in warm brown noise — a soft, low, generative sound (not a short loop) that masks background distractions and helps you settle in. Prefer quiet focus sounds over songs? This stays calmer than focus music and gentler than harsh white noise for focus. Whether it's brown noise for studying, ambient sounds for focus, deep work, or just calming a busy mind, the sound drifts slowly and never repeats.
+
+Most people get their brown noise from a streaming tab — and pay for it with ads in the middle of a session, a black screen video left running, and one more tab to babysit. Here the deep brown noise is generated on your own machine: brown noise with no ads, no buffering, no black-screen tab, no account. It starts the moment you do and stops when you land.
 
 🎯 A focus and study timer in one
 Whether you need a focus timer for deep work, a study timer for long sessions, or a calm work timer for the office, it keeps the interface out of your way:
@@ -77,6 +85,9 @@ As a lightweight pomodoro chrome extension and desktop timer, it stays right whe
 
 🧐 Does the sound stop if I switch tabs?
 ➤ No — the focus sounds keep playing across tabs while your session runs.
+
+🧐 Why not just play brown noise in a streaming tab?
+➤ Because a stream brings ads into the middle of your focus, a black screen video you have to leave running, and a tab you can close by accident. This is brown noise with no ads, generated on your device — nothing to load, nothing to interrupt.
 
 Set your time, press start, and let a minimalist timer carry your focus. ⭐
 

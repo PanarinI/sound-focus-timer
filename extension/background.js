@@ -109,7 +109,7 @@ async function syncGlow() {
   // НЕЗАВИСИМО от сессии и панели. Покой = тлеет (heat 0), сессия = разгорается (pushGlowState кормит жар).
   const shouldShow = glowEnabled;
   if (!shouldShow) {
-    // ВЫКЛЮЧЕНИЕ — всегда обходим вкладки, НЕ доверяя кэшу glowLit. Почему (крит-узел 07-30):
+    // ВЫКЛЮЧЕНИЕ — всегда обходим вкладки, НЕ доверяя кэшу glowLit. Почему (крит-узел 08-01):
     // service worker в MV3 умирает через ~30с и перезапускается со сбросом glowLit→false, а язычок
     // в DOM страницы смерть воркера ПЕРЕЖИВАЕТ. Прежний ранний return при «shouldShow===glowLit»
     // (false===false) считал «уже выключено» и оставлял сироту → тумблер «срабатывал со 2-й попытки».
@@ -126,7 +126,7 @@ async function syncGlow() {
 
 function pushGlowState() {
   const paused = sound.phase === 'ниточка';
-  const active = sound.phase !== 'off';              // идёт ли рейс — язычок в покое должен ПОТУХНУТЬ (жалоба автора 07-30)
+  const active = sound.phase !== 'off';              // идёт ли рейс — язычок в покое должен ПОТУХНУТЬ (жалоба автора 08-01)
   eachTab((t) => chrome.tabs.sendMessage(t.id, { target: 'glow', type: 'state', heat: sound.heat, paused, active }));
 }
 

@@ -39,7 +39,7 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
     case 'setTier': engine.setTier(msg.tier); break;
     case 'setHarmony': engine.setHarmony(msg.value); break;
     case 'setLengths': engine.GATHER = msg.gather; engine.DAWN = msg.dawn; break;
-    case 'sync': engine._emit(); break;       // отдать снимок + СВЕЖИЙ state, чтобы панель точно перерисовалась (визибилити-пересинхрон 07-30)
+    case 'sync': engine._emit(); break;       // отдать снимок + СВЕЖИЙ state, чтобы панель точно перерисовалась (визибилити-пересинхрон 08-01)
   }
   reply({ mirror: snapshot(), state: lastState });
   return true;

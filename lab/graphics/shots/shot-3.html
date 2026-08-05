@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  html,body{margin:0;padding:0;background:#05060f}
+  .stage{position:relative;width:1280px;height:800px;overflow:hidden;
+    font-family:'SF Pro Display','Inter',system-ui,-apple-system,sans-serif;
+    background:radial-gradient(ellipse 80% 90% at 78% 45%, #131c40 0%, #090d22 52%, #05060f 100%);}
+  .txt{position:absolute;left:92px;top:270px;width:640px;z-index:6}
+  h1{color:#FFF6E6;font-size:64px;font-weight:700;line-height:1.04;letter-spacing:-1.8px;margin:0}
+  h1 em{color:#FFC978;font-style:normal;font-size:1.16em;letter-spacing:-2px}
+  .sub{color:#9FAAC9;font-size:27px;font-weight:500;line-height:1.42;margin-top:28px}
+  .sub b{color:#FFD79A;font-weight:600}
+  .frame{position:absolute;left:838px;top:40px;width:360px;height:720px;border-radius:16px;overflow:hidden;
+    border:1px solid rgba(255,255,255,.10);box-shadow:0 40px 120px rgba(0,0,0,.6),0 0 0 12px rgba(255,255,255,.018);z-index:3}
+  .frame iframe{width:400px;height:800px;border:0;transform:scale(0.9);transform-origin:0 0;display:block}
+  .tab{position:absolute;left:838px;top:778px;width:360px;text-align:center;color:#6F7797;
+    font-size:15px;font-weight:600;letter-spacing:1.6px;z-index:4}
+  /* пара кадров «минута 1 → минута 24» — единственная выноска во всём наборе */
+  .cell{position:absolute;z-index:6;border-radius:14px;border:1px solid rgba(255,255,255,.09);background:#070a18;
+    background-repeat:no-repeat;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+  .clab{position:absolute;z-index:6;color:#9FAAC9;font-size:19px;font-weight:600;text-align:center}
+  .arrow{position:absolute;z-index:6;color:#FFC978;font-size:34px;font-weight:700}
+</style></head><body>
+<div class="stage">
+  <div class="txt"><h1>Nothing is blocked.<br>Nothing is punished.</h1><div class="sub">No sites locked, no streak to break. The sound simply holds the session together.</div></div>
+  <div class="frame"><iframe src="../../../extension/hearth.html"></iframe></div>
+  <div class="tab"></div>
+  
+</div>
+<script>
+  const WAIT = 16, DIAL = 2;
+  for (const fr of document.querySelectorAll('iframe')) {
+    fr.addEventListener('load', () => {
+      const d = fr.contentDocument;
+      try {
+        d.getElementById('fast').checked = true;                 // dev: 1 мин = 1 с
+        const ts = d.getElementById('timeslider');
+        if (ts) { ts.value = DIAL; ts.dispatchEvent(new Event('input', {bubbles:true})); }
+        if (WAIT > 0 && !fr.dataset.idle) {
+          const w = d.getElementById('wrap');
+          w.dispatchEvent(new Event('pointerdown'));
+          w.dispatchEvent(new Event('pointerup'));
+        }
+      } catch (e) { document.title = 'ERR ' + e.message; }
+    });
+  }
+</script>
+</body></html>
