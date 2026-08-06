@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Стенд иконки-таймера</title>
+<!--
+  Рождён 2026-08-06. Показывает иконку расширения на разных стадиях рейса.
+  Грузит НАСТОЯЩИЙ ../extension/icon.js — тот же файл, что подключает service worker
+  через importScripts. Что здесь видно, то и будет в панели браузера («инструмент = явь»).
+  Открывать через сервер: http://localhost:8785/lab/icon-stand.html
+-->
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0b0d12; color:#dfe6f5; padding:34px 24px 60px;
+         font:15px/1.6 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  h1 { font-size:17px; margin:0 0 4px; color:#f0f4ff; }
+  .sub { color:#7c88a6; font-size:13px; margin:0 0 26px; max-width:640px; }
+  h2 { font-size:13px; color:#8492b0; font-weight:600; margin:30px 0 12px; letter-spacing:.03em; }
+  .strip { display:flex; gap:26px; flex-wrap:wrap; align-items:flex-end; }
+  .cell { text-align:center; }
+  .cell canvas { image-rendering:pixelated; display:block; margin:0 auto 7px; }
+  .cell span { font-size:11px; color:#6f7d9c; font-family:ui-monospace,monospace; }
+  .bar { display:inline-flex; align-items:center; gap:9px; background:#20242c; border-radius:9px;
+         padding:7px 12px; border:1px solid #2c313c; }
+  .bar canvas { image-rendering:pixelated; display:block; }
+  .bar .dots { width:9px; height:9px; border-radius:50%; background:#3a4150; }
+  .note { max-width:640px; font-size:12.5px; color:#6f7d9c; border-top:1px solid #161f36;
+          padding-top:16px; margin-top:34px; }
+  .note b { color:#9fb0d4; }
+</style>
+
+<h1>Иконка-таймер</h1>
+<p class="sub">Постоянное присутствие времени без впрыска в чужие страницы. Показывает <b>оставшийся путь</b>, а не утекающее время: без цифр, без красного, без ускорения к финалу.</p>
+
+<h2>В панели браузера — настоящий размер</h2>
+<div class="strip" id="real"></div>
+
+<h2>Крупно — как это устроено</h2>
+<div class="strip" id="big"></div>
+
+<h2>Пауза (фаза «ниточка»)</h2>
+<div class="strip" id="paused"></div>
+
+<p class="note">
+  <b>Зачем бледное кольцо позади дуги.</b> Без него глаз видит «сколько-то», но не «сколько из скольки» —
+  доля не читается без меры. Кольцо и есть весь маршрут, дуга — оставшаяся его часть.
+  <br><br>
+  <b>Почему не обратный отсчёт.</b> Постоянно видимое утекающее время давит, а у нас в сути записано
+  «сопровождает, не наказывает». Оставшееся расстояние и утекающее время — это разные вещи на глаз,
+  хотя число за ними одно.
+</p>
+
+<script src="../extension/icon.js"></script>
+<script>
+  const STAGES = [
+    { f: 1.00, label: 'старт' },
+    { f: 0.75, label: '¾ пути' },
+    { f: 0.50, label: 'половина' },
+    { f: 0.25, label: 'четверть' },
+    { f: 0.06, label: 'рассвет' },
+  ];
+
+  function put(el, size, frac, paused, scale, label) {
+    const data = drawTimerIcon(size, frac, paused);
+    const off = new OffscreenCanvas(size, size);
+    off.getContext('2d').putImageData(data, 0, 0);
+    const c = document.createElement('canvas');
+    c.width = size * scale; c.height = size * scale;
+    const x = c.getContext('2d');
+    x.imageSmoothingEnabled = false;
+    x.drawImage(off, 0, 0, size * scale, size * scale);
+    const cell = document.createElement('div');
+    cell.className = 'cell';
+    cell.appendChild(c);
+    if (label) { const s = document.createElement('span'); s.textContent = label; cell.appendChild(s); }
+    el.appendChild(cell);
+  }
+
+  // настоящий размер — в имитации тулбара, чтобы было видно, как это читается вживую
+  const real = document.getElementById('real');
+  STAGES.forEach(s => {
+    const wrap = document.createElement('div'); wrap.className = 'cell';
+    const bar = document.createElement('div'); bar.className = 'bar';
+    const d1 = document.createElement('div'); d1.className = 'dots';
+    const data = drawTimerIcon(32, s.f, false);
+    const off = new OffscreenCanvas(32, 32); off.getContext('2d').putImageData(data, 0, 0);
+    const c = document.createElement('canvas'); c.width = 32; c.height = 32;
+    c.getContext('2d').drawImage(off, 0, 0);
+    const d2 = document.createElement('div'); d2.className = 'dots';
+    bar.append(d1, c, d2);
+    wrap.appendChild(bar);
+    const lab = document.createElement('span'); lab.textContent = s.label; wrap.appendChild(lab);
+    real.appendChild(wrap);
+  });
+
+  const big = document.getElementById('big');
+  STAGES.forEach(s => put(big, 32, s.f, false, 4, s.label));
+
+  const pausedEl = document.getElementById('paused');
+  [1.0, 0.5].forEach(f => put(pausedEl, 32, f, true, 4, 'пауза ' + Math.round(f * 100) + '%'));
+</script>

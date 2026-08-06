@@ -1,6 +1,14 @@
 // background.js — клик по иконке-угольку открывает дом-очаг (side panel = hearth.html).
 // Лестница присутствия (STATE ⚑): тулбар-иконка → нативная Chrome Side Panel.
 // Звук живёт в offscreen-документе (offscreen.js) и переживает закрытие панели: дом свернулся — очаг горит.
+
+// рисование иконки-таймера — общий файл с лабораторным стендом (lab/icon-stand.html),
+// чтобы автор видел на стенде ровно то, что уедет в продукт («инструмент = явь»).
+// ⚠️ zip собирается РУКАМИ по списку файлов: если icon.js забыть, непойманный importScripts
+// уронит весь service worker, а с ним и всё расширение. Поэтому — под try: без файла
+// продукт просто останется без иконки-таймера, а рейс и звук будут работать как раньше.
+try { importScripts('icon.js'); } catch (e) { console.warn('icon.js не загружен — иконка-таймер отключена', e); }
+
 chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => {});
 
 // Прощальная страница (канон 3.2:51 — причины удаления собираем формой; паттерн ExportGPT).
@@ -95,7 +103,44 @@ chrome.runtime.onMessage.addListener((msg) => {
   if (!msg || msg.target !== 'panel' || !msg.state) return;
   sound = { phase: msg.state.phase, heat: Math.max(0, Math.min(1, msg.state.depth || 0)) };
   syncGlow();
+  paintAction(msg.state);
 });
+
+// ─────────────────────────────────────────────────────────────────────────
+// ИКОНКА-ТАЙМЕР. Присутствие времени без единого впрыска в чужие страницы:
+// рисуем дугу прямо на иконке расширения. Видно всегда, на любой вкладке,
+// даже когда панель свёрнута и открыто вообще всё что угодно.
+//
+// ЗАКОН (тот же, что у звука): показываем ОСТАВШИЙСЯ ПУТЬ, а не утекающее время.
+// Никаких цифр, никакого красного, никакого ускорения к финалу — «сопровождает,
+// не наказывает». Постоянно видимый обратный отсчёт давит, дуга остатка — нет.
+// ─────────────────────────────────────────────────────────────────────────
+const ICON_PATH = { 16: 'icons/16.png', 32: 'icons/32.png', 48: 'icons/48.png', 128: 'icons/128.png' };
+let iconTotal = 0;      // длина рейса: берём максимум виденного остатка (он же и есть старт)
+let iconLast = -1;      // последняя отрисованная сотая доля — чтобы не перерисовывать зря
+
+function paintAction(state) {
+  try {
+    if (typeof drawTimerIcon !== 'function') return;   // icon.js не доехал — молча живём без иконки
+    const phase = state.phase;
+    if (!phase || phase === 'off') {                  // покой — возвращаем родную иконку
+      iconTotal = 0; iconLast = -1;
+      chrome.action.setIcon({ path: ICON_PATH }).catch(() => {});
+      return;
+    }
+    const rem = Math.max(0, +state.remaining || 0);
+    if (rem <= 0) return;                             // «ручей» без сессии — рисовать нечего
+    if (rem > iconTotal) iconTotal = rem;             // старт рейса или «ещё пять минуток»
+    const frac = Math.max(0, Math.min(1, rem / iconTotal));
+    const step = Math.round(frac * 100);
+    if (step === iconLast) return;                    // ничего не изменилось на глаз — не дёргаем
+    iconLast = step;
+    chrome.action.setIcon({
+      imageData: { 16: drawTimerIcon(16, frac, phase === 'ниточка'),
+                   32: drawTimerIcon(32, frac, phase === 'ниточка') },
+    }).catch(() => {});
+  } catch (e) { /* иконка — украшение: её падение не должно ронять рейс */ }
+}
 
 const glowAllowed = () => chrome.permissions.contains({ origins: ['<all_urls>'] });
 
