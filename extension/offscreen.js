@@ -38,6 +38,7 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
     case 'setChar': engine.setChar(msg.char); break;
     case 'setTier': engine.setTier(msg.tier); break;
     case 'setHarmony': engine.setHarmony(msg.value); break;
+    case 'setMix': engine.setMix(msg.value); break;      // ручка «шум ⟷ тон»
     case 'setLengths': engine.GATHER = msg.gather; engine.DAWN = msg.dawn; break;
     case 'sync': engine._emit(); break;       // отдать снимок + СВЕЖИЙ state, чтобы панель точно перерисовалась (визибилити-пересинхрон 08-01)
   }

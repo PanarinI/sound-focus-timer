@@ -7,7 +7,8 @@
 //   кручение = ТОЛЬКО завод в покое; в сессии скролл не перехватывается.
 
 const el = {};
-['room', 'star', 'sparks', 'timeslider', 'timerow', 'ticks', 'num', 'wrap', 'stage', 'home', 'pip', 'volume', 'fast', 'premium', 'energy', 'masking', 'harmony', 'finish', 'settoggle', 'settings', 'sndhint', 'sndwave', 'sndmute', 'glowrow', 'glowtoggle', 'ratebar', 'rstars']
+['room', 'star', 'sparks', 'timeslider', 'timerow', 'ticks', 'num', 'wrap', 'stage', 'home', 'pip', 'volknob', 'volarc', 'voldot', 'fast', 'premium', 'harmony', 'finish', 'settoggle', 'settings', 'sndhint', 'sndwave', 'sndmute', 'glowrow', 'glowtoggle', 'ratebar', 'rstars',
+ 'mixknob', 'mixarc', 'mixdot', 'energyknob', 'energyarc', 'energydot', 'maskknob', 'maskarc', 'maskdot']
   .forEach((id) => { el[id] = document.getElementById(id); });
 
 const RING_C = 2 * Math.PI * 90;
@@ -262,7 +263,7 @@ function killNow() {                                          // клик во �
 // Системный мьют/громкость ОС браузеру недоступны (нет API) — честно показываем только то,
 // что знаем наверняка: свой ползунок. На нуле — перечёркнутый динамик и держим дольше.
 function flashSound() {
-  const muted = +el.volume.value === 0;
+  const muted = volKnob.get() < 0.005;
   el.sndwave.style.display = muted ? 'none' : '';
   el.sndmute.style.display = muted ? '' : 'none';
   el.sndhint.style.opacity = muted ? 0.95 : 0.7;
@@ -403,16 +404,96 @@ const SKY = (() => {
 ['pointerdown', 'pointerup'].forEach((t) => el.finish.addEventListener(t, (e) => e.stopPropagation()));
 el.finish.addEventListener('click', quench);
 
+// ---------- КРУТИЛКА ----------
+// Вертикальное перетаскивание + колесо + стрелки (реш. автора 08-06). Не ползунок: в узком
+// сайдбаре у ползунка ход короткий и точность плохая, а вести крутилку можно сколько угодно.
+// Цифр нет — как и везде в продукте: слушаем, а не считаем.
+const KNOB_R = 17, KNOB_C = 2 * Math.PI * KNOB_R, KNOB_SPAN = 0.75;   // дуга 270°, разрыв внизу
+function makeKnob(node, arc, dot, value, onInput) {
+  let v = Math.max(0, Math.min(1, value));
+  arc.style.strokeDasharray = `0 ${KNOB_C}`;
+  node.querySelector('.ktrack').setAttribute('transform', 'rotate(135 23 23)');
+  node.querySelector('.ktrack').style.strokeDasharray = `${KNOB_SPAN * KNOB_C} ${KNOB_C}`;
+  arc.setAttribute('transform', 'rotate(135 23 23)');
+
+  function paint() {
+    arc.style.strokeDasharray = `${(v * KNOB_SPAN * KNOB_C).toFixed(2)} ${KNOB_C}`;
+    const th = (135 + v * 270) * Math.PI / 180;
+    dot.setAttribute('cx', (23 + KNOB_R * Math.cos(th)).toFixed(2));
+    dot.setAttribute('cy', (23 + KNOB_R * Math.sin(th)).toFixed(2));
+    node.setAttribute('aria-valuenow', Math.round(v * 100));
+  }
+  function set(nv, silent) {
+    const c = Math.max(0, Math.min(1, nv));
+    if (c === v && !silent) return;
+    v = c; paint(); if (!silent) onInput(v);
+  }
+  paint();
+
+  let dragFrom = 0, valFrom = 0;
+  node.addEventListener('pointerdown', (e) => {
+    e.stopPropagation();                       // клик по ручке — не тап по небу (иначе взлёт)
+    node.setPointerCapture(e.pointerId); dragFrom = e.clientY; valFrom = v; node.focus();
+  });
+  node.addEventListener('pointermove', (e) => {
+    if (!node.hasPointerCapture(e.pointerId)) return;
+    set(valFrom + (dragFrom - e.clientY) / 150);   // 150 px = весь ход
+  });
+  ['pointerup', 'pointercancel'].forEach((t) => node.addEventListener(t, (e) => {
+    e.stopPropagation();
+    if (node.hasPointerCapture(e.pointerId)) node.releasePointerCapture(e.pointerId);
+  }));
+  node.addEventListener('wheel', (e) => { e.preventDefault(); set(v - Math.sign(e.deltaY) * 0.04); }, { passive: false });
+  node.addEventListener('keydown', (e) => {
+    const k = e.key;
+    if (k === 'ArrowUp' || k === 'ArrowRight') set(v + 0.02);
+    else if (k === 'ArrowDown' || k === 'ArrowLeft') set(v - 0.02);
+    else if (k === 'Home') set(0); else if (k === 'End') set(1);
+    else return;
+    e.preventDefault();
+  });
+  return { get: () => v, set: (nv) => set(nv, true) };
+}
+
 // ---------- ГРОМКОСТЬ ----------
 // ПЕРСИСТ (крит-узел 08-01): раньше громкость нигде не хранилась — при перезагрузке панели (разворот
 // после сворачивания) ползунок прыгал в HTML-дефолт 0.5, а звук в offscreen оставался на реальном уровне
 // → UI и звук расходились. Теперь localStorage = единый источник: восстанавливаем ползунок И движок.
-function paintVol(v) { const p = (v * 100).toFixed(0); el.volume.style.background = `linear-gradient(90deg, #e8b25c 0%, #b9702a ${p}%, #2a2119 ${p}%)`; }
+// Громкость — тоже крутилка (08-07): полоса осталась только у времени, где длина пути и читается
+// как расстояние. Ползунок громкости под ползунком времени был эклектикой — две одинаковые полосы
+// про совершенно разное.
 const savedVol = localStorage.getItem('hearth.vol');
-if (savedVol !== null) el.volume.value = savedVol;
-el.volume.addEventListener('input', () => { const v = +el.volume.value; localStorage.setItem('hearth.vol', v); engine.setChar({ volume: v }); paintVol(v); });
-engine.setChar({ volume: +el.volume.value });     // движок ← восстановленная громкость (совпасть с ползунком)
-paintVol(+el.volume.value);
+const vol0 = savedVol === null ? 0.5 : +savedVol;
+const volKnob = makeKnob(el.volknob, el.volarc, el.voldot, vol0, (v) => {
+  localStorage.setItem('hearth.vol', v);
+  engine.setChar({ volume: v });
+});
+engine.setChar({ volume: vol0 });                 // движок ← восстановленная громкость (совпасть с ручкой)
+
+// ---------- ВОЗДУХ: ручка «шум ⟷ тон» (08-06, дефолт пересмотрен 08-07) ----------
+// ДЕФОЛТ — НОЛЬ ДЛЯ ВСЕХ (решение автора 08-07). Продукт с первой секунды звучит ровно тем, за чем
+// человек пришёл: весь листинг продаёт тёплый шум, и главный боль-ключ — «brown noise no ads».
+// Тон — то, что находят, а не то, что выдают вместо обещанного. Прежняя развилка «новым по центру,
+// старым ноль» вместе с определением старожила снята: делить пользователей стало не на что.
+const MIX_KEY = 'hearth.mix';
+// storage.local, НЕ sync: у sync квота 120 записей в минуту, крутилка при перетаскивании её убьёт
+const store = {
+  get(k, d) {
+    return new Promise((res) => {
+      try { chrome.storage.local.get(k, (o) => res(o && o[k] != null ? o[k] : d)); }
+      catch (e) { const s = localStorage.getItem(k); res(s === null ? d : +s); }
+    });
+  },
+  set(k, v) { try { chrome.storage.local.set({ [k]: v }); } catch (e) { localStorage.setItem(k, v); } },
+};
+
+let mixSaveTimer = 0;
+const mixKnob = makeKnob(el.mixknob, el.mixarc, el.mixdot, 0, (v) => {
+  engine.setMix(v);
+  clearTimeout(mixSaveTimer);                    // тащат ручку — пишем не каждый кадр, а по остановке
+  mixSaveTimer = setTimeout(() => store.set(MIX_KEY, v), 300);
+});
+store.get(MIX_KEY, 0).then((v) => { mixKnob.set(v); engine.setMix(v); });
 
 // ---------- PiP-ВЫНОС ----------
 if (!('documentPictureInPicture' in window)) { el.pip.textContent = 'PiP not available in this browser'; el.pip.disabled = true; }
@@ -432,18 +513,22 @@ el.pip.addEventListener('click', async () => {
 });
 
 // ---------- НАСТРОЙКИ (прод: энергия + кокон) ----------
-function paintRange(r) { const p = (+r.value * 100).toFixed(0); r.style.background = `linear-gradient(90deg, #e8b25c 0%, #b9702a ${p}%, #2a2119 ${p}%)`; }
 // ЭНЕРГИЯ = СКОРОСТЬ ПОЛЁТА (реш. автора 07-25): больше энергии → искры несутся быстрее (слабо, но заметно).
 // Кокон (маскировка) — только звук, без визуализации (реш. автора: «герметичность» визуально менять нечем).
+// Обе — крутилки, как и «воздух» (08-06): один идиом на все ручки звука, ползунок остался у громкости.
 function setFlySpeed(v) { const s = 0.7 + v * 0.9; el.stage.style.setProperty('--speed', s.toFixed(2)); SKY.speed(s); }   // 0.7 … 1.6; canvas меняет скорость плавно, без скачка
-['energy', 'masking'].forEach((k) => {
+[['energy', 'energyknob', 'energyarc', 'energydot', 0.4],
+ ['masking', 'maskknob', 'maskarc', 'maskdot', 0.45]].forEach(([k, node, arc, dot, def]) => {
   const saved = localStorage.getItem('hearth.' + k);      // персист (как громкость) — не сбрасываться в дефолт при развороте
-  if (saved !== null) el[k].value = saved;
-  paintRange(el[k]);
-  engine.setChar({ [k]: +el[k].value });                  // движок ← восстановленное
-  el[k].addEventListener('input', () => { localStorage.setItem('hearth.' + k, el[k].value); engine.setChar({ [k]: +el[k].value }); paintRange(el[k]); if (k === 'energy') setFlySpeed(+el[k].value); });
+  const v0 = saved === null ? def : +saved;
+  makeKnob(el[node], el[arc], el[dot], v0, (v) => {
+    localStorage.setItem('hearth.' + k, v);
+    engine.setChar({ [k]: v });
+    if (k === 'energy') setFlySpeed(v);
+  });
+  engine.setChar({ [k]: v0 });                            // движок ← восстановленное
+  if (k === 'energy') setFlySpeed(v0);
 });
-setFlySpeed(+el.energy.value);
 el.settoggle.addEventListener('click', () => {
   const open = el.settings.hidden;
   el.settings.hidden = !open;

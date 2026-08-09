@@ -57,6 +57,25 @@
       this.pausedAt = 0;
       this.GATHER = GATHER; // dev-стенд может переопределить для быстрой демонстрации
       this.DAWN = DAWN;
+      // ТОНОВЫЙ СЛОЙ (08-06). Ручка «шум ⟷ тон» тянет и его громкость, и утончение шумовой стены:
+      // прибавили тона — стена уходит вниз, освобождая место, но никогда не в ноль (дорога остаётся).
+      this.noiseTrim = 1;   // множитель шумового тракта: 1 = чистый шум, 0.34 = максимум тона
+      this.wallThin = 1;    // насколько стена утончилась, освобождая место тону
+      this._tonePhase = 'off';
+      // слой необязателен: без tone.js продукт остаётся сегодняшним, только без ручки
+      try { this.tone = (typeof ToneLayer === 'function') ? new ToneLayer(this) : null; }
+      catch (e) { this.tone = null; console.warn('[ember] тоновый слой не поднялся', e); }
+    }
+
+    // ручка «шум ⟷ тон». Значение живёт в панели (chrome.storage.local), сюда приходит командой.
+    setMix(m) { this.mix = clamp(+m || 0, 0, 1); try { if (this.tone) this.tone.setMix(this.mix); } catch (e) {} }
+
+    // движок — единственный, кто знает фазу рейса; слой обязан её слышать, иначе он бесконечность
+    // без прибытия (входит в собирании, стоит в ткани, разрешается на рассвете)
+    _notifyTone() {
+      if (!this.tone || this.phase === this._tonePhase) return;
+      this._tonePhase = this.phase;
+      try { this.tone.phaseChanged(this.phase); } catch (e) { console.warn('[ember] тон и фаза', e); }
     }
 
     // --- аудио-хелперы (замкнуты на this.AC) ---
@@ -157,11 +176,15 @@
       const cutoff = (430 + arousal * 470) * (1 - depth * 0.30) * (0.92 + tod * 0.12);
       this.brownLP.frequency.setTargetAtTime(clamp(cutoff, 200, 1000), t, 2.0);
 
-      // МАСКИРОВКА = ТОЛЩИНА стены (плотность+уровень), НЕ яркость — стена растёт вниз, не в «воду по железу»
-      this.brownGain.gain.setTargetAtTime(0.5 + masking * 0.5, t, 2.0);
+      // МАСКИРОВКА = ТОЛЩИНА стены (плотность+уровень), НЕ яркость — стена растёт вниз, не в «воду по железу».
+      // Ручка тона утончает стену (wallThin) и подрезает весь шумовой тракт (noiseTrim) — иначе стена
+      // забивает тон и выходит каша. Пол 0.34 держит дорогу: шум не исчезает никогда.
+      const trim = clamp(this.noiseTrim, 0.3, 1);
+      const thin = clamp(this.wallThin, 0.5, 1);
+      this.brownGain.gain.setTargetAtTime((0.5 + masking * 0.5 * thin) * trim, t, 2.0);
 
       // воздух еле дышит и УБИРАЕТСЯ на толстой стене (чтобы верх не резал)
-      this.pinkGain.gain.setTargetAtTime((0.02 + arousal * 0.03) * (1 - masking * 0.6), t, 2.5);
+      this.pinkGain.gain.setTargetAtTime((0.02 + arousal * 0.03) * (1 - masking * 0.6) * trim, t, 2.5);
 
       // громкость: фаза (cur.master, пик 0.5) → норма ×2 × громкость × толщина стены; в потоке чуть тише
       const present = 1 - depth * 0.15;
@@ -236,6 +259,7 @@
         if (p >= 1) { this._emit({ justEnded: true }); this.turnOff(); return; }
       }
       this._apply();
+      this._notifyTone();
       this._emit();
     }
 
@@ -291,6 +315,7 @@
     turnOff() {
       this.phase = 'off';
       if (this.AC) { this.cur.master = 0; this._apply(); }
+      this._notifyTone();                 // рейс кончился — слой снимается, узлы освобождаются
       this._emit();
       if (this.tickTimer) { clearInterval(this.tickTimer); this.tickTimer = null; }
       clearTimeout(this._harmonyTimer); this._harmonyTimer = null;

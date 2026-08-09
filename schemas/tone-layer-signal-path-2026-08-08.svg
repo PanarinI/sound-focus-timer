@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" style="max-width:100%;height:auto" role="img">
+<title>How the tone is generated</title>
+<desc>Signal flow of the tone layer in a focus timer. One voice is two detuned triangle oscillators through a gain; that gain is moved by two slow waves of 55 and 89 seconds, drawn here as measured curves, so the voice fades in and out on its own and never repeats. Eight such voices, plus a pulse, a wandering companion and occasional motifs, pass through a highpass at 150 Hz, a drifting lowpass around 1.2 kHz, a dry path and a six-second reverb, into the engine master where the brown noise already is.</desc>
+<style>
+:root{--bg:#fff;--ink:#1C1917;--dim:#57534E;--faint:#A8A29E;--line:#A8A29E;--pad:#0F6E56;--padf:#E1F5EE;--mod:#5B4BC4;--modf:#EAE6FA;--warm:#B45309;--warmf:#FBEAD2}
+@media (prefers-color-scheme:dark){:root{--bg:#1C1917;--ink:#E7E5E4;--dim:#A8A29E;--faint:#78716C;--line:#78716C;--pad:#5DCAA5;--padf:#0C4A3A;--mod:#A99BF0;--modf:#2E2560;--warm:#FBBF6E;--warmf:#5C2D0C}}
+text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;fill:var(--ink)}
+.t{font-size:17px;font-weight:600} .s{font-size:12px;fill:var(--dim)}
+.n{font-size:12.5px;font-weight:600} .u{font-size:11px;fill:var(--dim)}
+.cap{font-size:10.5px;font-weight:600;letter-spacing:1.1px;fill:var(--dim)}
+.box{fill:none;stroke:var(--line);stroke-width:1.5}
+.src{fill:var(--padf);stroke:var(--pad);stroke-width:1.5}
+.dst{fill:var(--warmf);stroke:var(--warm);stroke-width:1.5}
+.pan{fill:var(--modf);fill-opacity:.4;stroke:var(--mod);stroke-width:1.4}
+.w{fill:none;stroke:var(--line);stroke-width:1.6}
+.gl{fill:none;stroke:var(--pad);stroke-width:1.6}
+.mod{fill:none;stroke:var(--mod);stroke-width:1.6;stroke-dasharray:5 4}
+.sine{fill:none;stroke:var(--mod);stroke-width:1.5;opacity:.85}
+.sine2{fill:none;stroke:var(--mod);stroke-width:1.4;stroke-dasharray:6 4;opacity:.6}
+.env{fill:var(--mod);fill-opacity:.35;stroke:var(--mod);stroke-width:1.4}
+.head{fill:var(--line)}
+</style>
+<rect x="0" y="0" width="1000" height="500" fill="var(--bg)"/>
+
+<text class="t" x="40" y="34">How the tone is generated</text>
+<text class="s" x="40" y="54">Nothing is played back. Every voice is computed live, on the device.</text>
+
+<!-- ── ОДИН ГОЛОС ── -->
+<text class="cap" x="40" y="88">ONE VOICE</text>
+
+<rect class="src" x="40" y="100" width="190" height="52" rx="7"/>
+<text class="n" x="56" y="122" fill="var(--pad)">2 oscillators</text>
+<text class="u" x="56" y="139">triangle, ±8 cents apart</text>
+<path class="gl" d="M186 132 l7 -12 7 24 7 -24 7 12" opacity=".7"/>
+
+<path class="w" d="M230 126 H252"/><path class="head" d="M252 122 l9 4 -9 4 z"/>
+
+<rect class="box" x="262" y="100" width="104" height="52" rx="7"/>
+<text class="n" x="278" y="122">volume</text>
+<text class="u" x="278" y="139">shaped, never set</text>
+
+<path class="w" d="M366 126 H392"/><path class="head" d="M392 122 l9 4 -9 4 z"/>
+<text class="u" x="406" y="130">into the layer, eight times over</text>
+
+<!-- врезка: что двигает громкость -->
+<path class="mod" d="M314 178 V158"/><path d="M310 158 l4 -9 4 9 z" fill="var(--mod)"/>
+<rect class="pan" x="40" y="178" width="912" height="104" rx="8"/>
+<text class="n" x="58" y="202" fill="var(--mod)">what moves it</text>
+<text class="u" x="58" y="219">two slow waves,</text>
+<text class="u" x="58" y="234">55 s and 89 s</text>
+<text class="u" x="58" y="258">their sum, cut</text>
+<text class="u" x="58" y="273">below zero</text>
+<path class="sine" d="M300 200.0 L303 200.0 L306 200.0 L310 199.6 L313 197.6 L316 195.6 L319 193.6 L322 191.8 L326 190.2 L329 188.7 L332 187.5 L335 186.5 L338 185.7 L342 185.2 L345 185.0 L348 185.1 L351 185.4 L354 186.1 L358 187.0 L361 188.1 L364 189.5 L367 191.1 L370 192.8 L374 194.7 L377 196.7 L380 198.7 L383 200.8 L386 202.8 L389 204.8 L393 206.7 L396 208.5 L399 210.1 L402 211.6 L405 212.8 L409 213.7 L412 214.4 L415 214.9 L418 215.0 L421 214.9 L425 214.4 L428 213.8 L431 212.8 L434 211.6 L437 210.2 L441 208.6 L444 206.8 L447 204.9 L450 202.9 L453 200.9 L457 198.8 L460 196.8 L463 194.8 L466 192.9 L469 191.2 L473 189.6 L476 188.2 L479 187.0 L482 186.1 L485 185.5 L489 185.1 L492 185.0 L495 185.2 L498 185.7 L501 186.4 L505 187.4 L508 188.7 L511 190.1 L514 191.8 L517 193.6 L521 195.5 L524 197.5 L527 199.5 L530 201.6 L533 203.6 L537 205.6 L540 207.5 L543 209.2 L546 210.7 L549 212.1 L552 213.2 L556 214.0 L559 214.6 L562 214.9 L565 215.0 L568 214.7 L572 214.2 L575 213.4 L578 212.4 L581 211.1 L584 209.6 L588 207.9 L591 206.1 L594 204.1 L597 202.1 L600 200.1 L604 198.0 L607 196.0 L610 194.0 L613 192.2 L616 190.5 L620 189.0 L623 187.7 L626 186.6 L629 185.8 L632 185.3 L636 185.0 L639 185.0 L642 185.4 L645 185.9 L648 186.8 L652 187.9 L655 189.2 L658 190.7 L661 192.4 L664 194.3 L668 196.3 L671 198.3 L674 200.4 L677 202.4 L680 204.4 L684 206.3 L687 208.2 L690 209.8 L693 211.3 L696 212.5 L699 213.5 L703 214.3 L706 214.8 L709 215.0 L712 214.9 L715 214.6 L719 213.9 L722 213.0 L725 211.9 L728 210.5 L731 208.9 L735 207.2 L738 205.3 L741 203.3 L744 201.3 L747 199.2 L751 197.2 L754 195.2 L757 193.3 L760 191.5 L763 189.9 L767 188.5 L770 187.3 L773 186.3 L776 185.6 L779 185.2 L783 185.0 L786 185.1 L789 185.5 L792 186.2 L795 187.2 L799 188.4 L802 189.8 L805 191.4 L808 193.2 L811 195.1 L815 197.1 L818 199.1 L821 201.2 L824 203.2 L827 205.2 L831 207.1 L834 208.8 L837 210.4 L840 211.8 L843 213.0 L847 213.9 L850 214.5 L853 214.9 L856 215.0 L859 214.8 L862 214.3 L866 213.6 L869 212.6 L872 211.4 L875 209.9 L878 208.3 L882 206.5 L885 204.5 L888 202.5 L891 200.5 L894 198.4 L898 196.4 L901 194.4 L904 192.6 L907 190.8 L910 189.3 L914 188.0 L917 186.8 L920 186.0 L923 185.4 L926 185.1 L930 185.0 L933 185.3 L936 185.8"/>
+<path class="sine2" d="M300 200.0 L303 200.0 L306 200.0 L310 200.0 L313 200.0 L316 200.0 L319 199.2 L322 197.9 L326 196.7 L329 195.5 L332 194.3 L335 193.1 L338 192.0 L342 190.9 L345 190.0 L348 189.0 L351 188.2 L354 187.5 L358 186.8 L361 186.3 L364 185.8 L367 185.4 L370 185.2 L374 185.0 L377 185.0 L380 185.1 L383 185.3 L386 185.5 L389 185.9 L393 186.4 L396 187.0 L399 187.7 L402 188.5 L405 189.3 L409 190.3 L412 191.3 L415 192.4 L418 193.5 L421 194.6 L425 195.9 L428 197.1 L431 198.4 L434 199.6 L437 200.9 L441 202.2 L444 203.4 L447 204.7 L450 205.9 L453 207.0 L457 208.1 L460 209.2 L463 210.1 L466 211.0 L469 211.9 L473 212.6 L476 213.2 L479 213.8 L482 214.2 L485 214.6 L489 214.8 L492 215.0 L495 215.0 L498 214.9 L501 214.7 L505 214.4 L508 214.0 L511 213.5 L514 212.9 L517 212.2 L521 211.4 L524 210.6 L527 209.6 L530 208.6 L533 207.5 L537 206.4 L540 205.2 L543 204.0 L546 202.8 L549 201.5 L552 200.2 L556 199.0 L559 197.7 L562 196.4 L565 195.2 L568 194.0 L572 192.9 L575 191.8 L578 190.7 L581 189.8 L584 188.9 L588 188.1 L591 187.3 L594 186.7 L597 186.1 L600 185.7 L604 185.4 L607 185.1 L610 185.0 L613 185.0 L616 185.1 L620 185.3 L623 185.6 L626 186.0 L629 186.5 L632 187.2 L636 187.9 L639 188.7 L642 189.5 L645 190.5 L648 191.5 L652 192.6 L655 193.7 L658 194.9 L661 196.1 L664 197.4 L668 198.6 L671 199.9 L674 201.2 L677 202.4 L680 203.7 L684 204.9 L687 206.1 L690 207.3 L693 208.3 L696 209.4 L699 210.3 L703 211.2 L706 212.0 L709 212.7 L712 213.4 L715 213.9 L719 214.3 L722 214.7 L725 214.9 L728 215.0 L731 215.0 L735 214.9 L738 214.7 L741 214.3 L744 213.9 L747 213.4 L751 212.8 L754 212.1 L757 211.3 L760 210.4 L763 209.4 L767 208.4 L770 207.3 L773 206.2 L776 205.0 L779 203.8 L783 202.5 L786 201.2 L789 200.0 L792 198.7 L795 197.4 L799 196.2 L802 195.0 L805 193.8 L808 192.6 L811 191.5 L815 190.5 L818 189.6 L821 188.7 L824 187.9 L827 187.2 L831 186.6 L834 186.0 L837 185.6 L840 185.3 L843 185.1 L847 185.0 L850 185.0 L853 185.1 L856 185.4 L859 185.7 L862 186.1 L866 186.7 L869 187.3 L872 188.0 L875 188.8 L878 189.7 L882 190.7 L885 191.7 L888 192.8 L891 194.0 L894 195.2 L898 196.4 L901 197.6 L904 198.9 L907 200.2 L910 201.5 L914 202.7 L917 204.0 L920 205.2 L923 206.4 L926 207.5 L930 208.6 L933 209.6 L936 210.5"/>
+<path class="env" d="M300 262 L300 262.0 L303 262.0 L306 262.0 L310 262.0 L313 261.7 L316 260.3 L319 257.3 L322 252.9 L326 248.1 L329 243.4 L332 239.3 L335 236.0 L338 233.5 L342 231.8 L345 230.8 L348 230.2 L351 230.1 L354 230.3 L358 230.9 L361 231.9 L364 233.6 L367 235.9 L370 238.9 L374 242.6 L377 246.7 L380 250.9 L383 255.0 L386 258.5 L389 260.9 L393 262.0 L396 262.0 L399 262.0 L402 262.0 L405 262.0 L409 262.0 L412 262.0 L415 262.0 L418 262.0 L421 262.0 L425 262.0 L428 262.0 L431 262.0 L434 262.0 L437 262.0 L441 262.0 L444 262.0 L447 262.0 L450 262.0 L453 262.0 L457 262.0 L460 262.0 L463 262.0 L466 262.0 L469 262.0 L473 261.6 L476 261.0 L479 260.3 L482 259.6 L485 259.1 L489 258.8 L492 258.8 L495 259.0 L498 259.5 L501 260.2 L505 261.0 L508 261.6 L511 262.0 L514 262.0 L517 262.0 L521 262.0 L524 262.0 L527 262.0 L530 262.0 L533 262.0 L537 262.0 L540 262.0 L543 262.0 L546 262.0 L549 262.0 L552 262.0 L556 262.0 L559 262.0 L562 262.0 L565 262.0 L568 262.0 L572 262.0 L575 262.0 L578 262.0 L581 262.0 L584 262.0 L588 262.0 L591 262.0 L594 260.7 L597 258.0 L600 254.2 L604 249.9 L607 245.4 L610 241.1 L613 237.5 L616 234.5 L620 232.3 L623 230.8 L626 229.9 L629 229.4 L632 229.3 L636 229.4 L639 229.9 L642 230.9 L645 232.5 L648 234.8 L652 238.1 L655 242.2 L658 246.9 L661 251.9 L664 256.6 L668 260.2 L671 261.9 L674 262.0 L677 262.0 L680 262.0 L684 262.0 L687 262.0 L690 262.0 L693 262.0 L696 262.0 L699 262.0 L703 262.0 L706 262.0 L709 262.0 L712 262.0 L715 262.0 L719 262.0 L722 262.0 L725 262.0 L728 262.0 L731 262.0 L735 262.0 L738 262.0 L741 262.0 L744 262.0 L747 262.0 L751 262.0 L754 262.0 L757 262.0 L760 261.9 L763 260.4 L767 258.0 L770 255.0 L773 251.9 L776 249.1 L779 246.6 L783 244.7 L786 243.3 L789 242.5 L792 242.3 L795 242.7 L799 243.6 L802 245.0 L805 246.9 L808 249.1 L811 251.6 L815 254.1 L818 256.6 L821 258.8 L824 260.6 L827 261.6 L831 262.0 L834 262.0 L837 262.0 L840 262.0 L843 262.0 L847 262.0 L850 262.0 L853 262.0 L856 262.0 L859 262.0 L862 262.0 L866 262.0 L869 262.0 L872 262.0 L875 262.0 L878 262.0 L882 262.0 L885 262.0 L888 261.9 L891 261.3 L894 260.2 L898 258.8 L901 257.0 L904 255.3 L907 253.6 L910 252.2 L914 251.1 L917 250.4 L920 250.1 L923 250.4 L926 251.1 L930 252.3 L933 253.9 L936 255.9 L936 262 Z"/>
+
+<text class="s" x="40" y="304">89 = 55 × 1.618 — the two never line up again, so the voice keeps fading in and out and the pad never loops. No switch is ever thrown, so nothing ever clicks.</text>
+
+<!-- ── ВЕСЬ СЛОЙ ── -->
+<text class="cap" x="40" y="344">THE WHOLE LAYER</text>
+
+<rect class="src" x="40" y="356" width="188" height="38" rx="7"/>
+<text class="n" x="56" y="380" fill="var(--pad)">the 8 voices</text>
+
+<rect class="src" x="40" y="402" width="188" height="38" rx="7"/>
+<text class="u" x="56" y="426" fill="var(--pad)">pulse · wanderer · motifs</text>
+
+<path class="w" d="M228 375 H244 M228 421 H244 M244 375 V421 M244 398 H268"/>
+<path class="head" d="M268 394 l9 4 -9 4 z"/>
+
+<rect class="box" x="278" y="372" width="104" height="52" rx="7"/>
+<text class="n" x="294" y="394">HP 150 Hz</text>
+<path class="w" d="M294 412 q11 0 17 -9 t17 -9" opacity=".6"/>
+
+<path class="w" d="M382 398 H404"/><path class="head" d="M404 394 l9 4 -9 4 z"/>
+
+<rect class="box" x="414" y="372" width="112" height="52" rx="7"/>
+<text class="n" x="430" y="394">LP ~1.2 kHz</text>
+<text class="u" x="430" y="412">slowly drifting</text>
+
+<path class="w" d="M526 398 H556"/>
+<circle cx="556" cy="398" r="3.5" fill="var(--line)"/>
+<path class="w" d="M556 398 H742"/><path class="head" d="M742 394 l9 4 -9 4 z"/>
+<text class="u" x="620" y="390">dry 0.5</text>
+
+<path class="w" d="M556 398 V444 H572"/><path class="head" d="M572 440 l9 4 -9 4 z"/>
+<rect class="box" x="582" y="424" width="108" height="38" rx="7"/>
+<text class="n" x="598" y="448">reverb 6 s</text>
+<path class="w" d="M690 444 H716 V402"/>
+<text class="u" x="708" y="418" text-anchor="end">×0.9</text>
+
+<rect class="dst" x="752" y="368" width="200" height="60" rx="8"/>
+<text class="n" x="768" y="392" fill="var(--warm)">engine.master</text>
+<text class="u" x="768" y="411">the brown noise is already here</text>
+</svg>

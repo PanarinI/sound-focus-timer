@@ -79,5 +79,6 @@ class RemoteEngine {
   setChar(char) { this._send('setChar', { char }); }
   setTier(tier) { this._send('setTier', { tier }); }
   setHarmony(v) { this._send('setHarmony', { value: v }); }
+  setMix(v) { this._send('setMix', { value: v }); }      // ручка «шум ⟷ тон» — живёт в панели, звучит в доме
   sync() { this._send('sync'); }        // панель открылась заново — догнать очаг, который горел без неё
 }

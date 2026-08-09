@@ -107,6 +107,22 @@
     .setrow input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 15px; height: 15px;
       border-radius: 50%; background: #e8b25c; box-shadow: 0 0 8px rgba(232,178,92,.5); cursor: pointer; }
 
+    /* КРУТИЛКА (08-06) — вертикальное перетаскивание, колесо, стрелки. Не ползунок: у ползунка
+       в узком сайдбаре ход короткий и точность плохая, а крутилку можно вести сколько угодно.
+       Дуга показывает положение; цифр нет — как и везде, слушаем, а не считаем. */
+    .knobs { display: flex; justify-content: center; align-items: flex-start; gap: 40px; }
+    .knobcell { display: flex; flex-direction: column; align-items: center; gap: 7px; }
+    .knobcell .kname { font-size: 12px; color: #9a7c4f; }
+    .knobcell .ico { width: 17px; height: 17px; color: #b9863f; opacity: .8; }
+    .knob { width: 46px; height: 46px; flex: none; cursor: ns-resize; touch-action: none; outline: none;
+      border-radius: 50%; transition: box-shadow .25s; }
+    .knob:hover, .knob:focus-visible { box-shadow: 0 0 0 1px #4a3826, 0 0 14px rgba(232,178,92,.16); }
+    .knob svg { display: block; width: 46px; height: 46px; overflow: visible; }
+    .knob .ktrack { fill: none; stroke: #2a2119; stroke-width: 4; stroke-linecap: round; }
+    .knob .karc { fill: none; stroke: #e8b25c; stroke-width: 4; stroke-linecap: round;
+      filter: drop-shadow(0 0 5px rgba(232,178,92,.45)); transition: stroke .3s; }
+    .knob .kdot { fill: #f0d8b0; }
+
     /* просьба об оценке — со 2-й сессии, тихо, только в покое */
     .ratebar { display: flex; align-items: center; gap: 10px; font-size: 12px; color: #6b5f50; }
     .ratebar[hidden] { display: none; }
@@ -150,12 +166,31 @@
       <div class="ticks" id="ticks"><span>5</span><span>15</span><span>25</span><span>45</span><span>90</span><span>∞</span></div>
     </div>
 
-    <div class="vol" title="volume">
-      <svg viewBox="0 0 24 24" width="17" height="17">
-        <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/>
-        <path d="M15.5 8.8a4 4 0 0 1 0 6.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-      </svg>
-      <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+    <!-- ДВЕ ГЛАВНЫЕ РУЧКИ: сколько звука и из чего он сделан. Полоса осталась только у времени —
+         там она и уместна: длина пути читается как расстояние, а не как поворот. -->
+    <div class="knobs">
+      <div class="knobcell">
+        <div class="knob" id="volknob" role="slider" tabindex="0" aria-label="volume"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <svg viewBox="0 0 46 46" aria-hidden="true">
+            <circle class="ktrack" cx="23" cy="23" r="17"/>
+            <circle class="karc" cx="23" cy="23" r="17" id="volarc"/>
+            <circle class="kdot" cx="23" cy="23" r="2" id="voldot"/>
+          </svg>
+        </div>
+        <span class="kname">Volume</span>
+      </div>
+      <div class="knobcell" title="from pure noise to noise with a tone in it">
+        <div class="knob" id="mixknob" role="slider" tabindex="0" aria-label="tone"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <svg viewBox="0 0 46 46" aria-hidden="true">
+            <circle class="ktrack" cx="23" cy="23" r="17"/>
+            <circle class="karc" cx="23" cy="23" r="17" id="mixarc"/>
+            <circle class="kdot" cx="23" cy="23" r="2" id="mixdot"/>
+          </svg>
+        </div>
+        <span class="kname">Tone</span>
+      </div>
     </div>
 
     <button class="settoggle" id="settoggle" aria-expanded="false">
@@ -165,16 +200,32 @@
       </svg>Settings</button>
 
     <div class="settings" id="settings" hidden>
-      <div class="setrow" title="how much fuel the sound gives your attention — from calm to lively; and how fast you drift">
-        <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L5 14h5l-1 8 8-12h-5l1-8z"/></svg>
-        <span class="lab">Energy</span>
-        <input type="range" id="energy" min="0" max="1" step="0.02" value="0.4">
-      </div>
-      <div class="setrow" title="how thick the shelter from outside sound is — thicker means a tighter cocoon">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-          <ellipse cx="12" cy="12" rx="6" ry="8.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/></svg>
-        <span class="lab">Cocoon</span>
-        <input type="range" id="masking" min="0" max="1" step="0.02" value="0.45">
+      <!-- Зеркало верхнего ряда: две ручки в линию, только символы. Слова тут лишние —
+           смысл несут значок и ховер, а подпись под каждой ручкой утроила бы текст в панели. -->
+      <div class="knobs">
+        <div class="knobcell" title="calm or lively — and how fast you fly">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L5 14h5l-1 8 8-12h-5l1-8z"/></svg>
+          <div class="knob" id="energyknob" role="slider" tabindex="0" aria-label="energy"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+            <svg viewBox="0 0 46 46" aria-hidden="true">
+              <circle class="ktrack" cx="23" cy="23" r="17"/>
+              <circle class="karc" cx="23" cy="23" r="17" id="energyarc"/>
+              <circle class="kdot" cx="23" cy="23" r="2" id="energydot"/>
+            </svg>
+          </div>
+        </div>
+        <div class="knobcell" title="how thick the shelter from outside sound is">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <ellipse cx="12" cy="12" rx="6" ry="8.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/></svg>
+          <div class="knob" id="maskknob" role="slider" tabindex="0" aria-label="cocoon"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="45">
+            <svg viewBox="0 0 46 46" aria-hidden="true">
+              <circle class="ktrack" cx="23" cy="23" r="17"/>
+              <circle class="karc" cx="23" cy="23" r="17" id="maskarc"/>
+              <circle class="kdot" cx="23" cy="23" r="2" id="maskdot"/>
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="setdiv" role="separator"></div>
       <div class="setrow" id="glowrow" hidden title="a warm thread at the right edge of pages — a door back to the flight; this toggle shows or hides it">
@@ -200,8 +251,9 @@
     <label>harmony <input type="range" id="harmony" min="0" max="1" step="0.02" value="0.7"></label>
   </div>
 
-  <script src="engine.js?b=24"></script>
-  <script src="remote.js?b=24"></script>
-  <script src="hearth.js?b=24"></script>
+  <script src="engine.js?b=34"></script>
+  <script src="tone.js?b=34"></script>
+  <script src="remote.js?b=34"></script>
+  <script src="hearth.js?b=34"></script>
 </body>
 </html>

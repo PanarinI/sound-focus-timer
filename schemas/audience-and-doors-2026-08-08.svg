@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="940" viewBox="0 0 1200 940" style="max-width:100%;height:auto" role="img">
+<title>Who it is for — three needs, one core, and the words they arrive with</title>
+<desc>Euler diagram of the focus timer's audience. Three overlapping needs: sound is the tool, the hard edge hurts, and the instrument has to be lovely. Their common core is the sound-first focuser, with ADHD adults as the beachhead. Inside each region are the actual search phrases that segment uses, with monthly volumes measured in DataForSEO. Below, kept separate, is the category door: the timer queries everyone arrives through whichever circle they sit in.</desc>
+<style>
+:root{--bg:#fff;--ink:#1C1917;--dim:#57534E;--faint:#A8A29E;--a:#0F6E56;--b:#B45309;--c:#5B4BC4}
+@media (prefers-color-scheme:dark){:root{--bg:#1C1917;--ink:#E7E5E4;--dim:#A8A29E;--faint:#78716C;--a:#5DCAA5;--b:#FBBF6E;--c:#A99BF0}}
+text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;fill:var(--ink)}
+.h{font-size:18px;font-weight:600} .sub{font-size:12px;fill:var(--dim)}
+.seg{font-size:12.5px;font-weight:700;letter-spacing:.4px}
+.segsub{font-size:10.5px;fill:var(--dim)}
+.k{font-size:11px} .v{font-weight:700}
+.cap{font-size:10.5px;font-weight:600;letter-spacing:1.1px;fill:var(--dim)}
+.note{font-size:10.5px;fill:var(--faint)}
+.cA{fill:var(--a);fill-opacity:.12;stroke:var(--a);stroke-width:1.6}
+.cB{fill:var(--b);fill-opacity:.12;stroke:var(--b);stroke-width:1.6}
+.cC{fill:var(--c);fill-opacity:.12;stroke:var(--c);stroke-width:1.6}
+.door{fill:none;stroke:var(--faint);stroke-width:1.4;stroke-dasharray:6 5}
+.arw{stroke:var(--faint);stroke-width:1.4;fill:none}
+</style>
+<rect x="0" y="0" width="1200" height="940" fill="var(--bg)"/>
+
+<text class="h" x="60" y="40">Who it is for — and the words they arrive with</text>
+<text class="sub" x="60" y="62">Three needs overlap; the product lives where all three do. Numbers are monthly searches — DataForSEO, US · en, Jul–Aug 2026.</text>
+
+<circle class="cA" cx="470" cy="330" r="215"/>
+<circle class="cB" cx="730" cy="330" r="215"/>
+<circle class="cC" cx="600" cy="555" r="215"/>
+
+<!-- ── A only ── -->
+<text class="seg" x="395" y="232" text-anchor="middle" fill="var(--a)">SOUND IS THE TOOL</text>
+<text class="segsub" x="395" y="249" text-anchor="middle">silence is where work stops</text>
+<text class="k" x="395" y="277" text-anchor="middle">brown noise <tspan class="v">90.5k</tspan></text>
+<text class="k" x="395" y="295" text-anchor="middle">focus music <tspan class="v">18.1k</tspan></text>
+<text class="k" x="395" y="313" text-anchor="middle">focus sounds <tspan class="v">720</tspan></text>
+
+<!-- ── B only ── -->
+<text class="seg" x="805" y="232" text-anchor="middle" fill="var(--b)">THE HARD EDGE HURTS</text>
+<text class="segsub" x="805" y="249" text-anchor="middle">a bell does not end a thought</text>
+<text class="k" x="805" y="277" text-anchor="middle">visual timer <tspan class="v">22.2k</tspan></text>
+<text class="k" x="805" y="295" text-anchor="middle">time blindness <tspan class="v">12.1k</tspan></text>
+<text class="k" x="805" y="313" text-anchor="middle">adhd timer <tspan class="v">1.0k</tspan></text>
+
+<!-- ── A ∩ B ── -->
+<text class="segsub" x="600" y="272" text-anchor="middle">brown noise, but:</text>
+<text class="k" x="600" y="294" text-anchor="middle">no ads <tspan class="v">2.9k</tspan></text>
+<text class="k" x="600" y="312" text-anchor="middle">black screen <tspan class="v">2.4k</tspan></text>
+<text class="k" x="600" y="330" text-anchor="middle">for adhd <tspan class="v">590</tspan></text>
+
+<!-- ── core ── -->
+<text class="seg" x="600" y="392" text-anchor="middle">THE CORE</text>
+<text class="k" x="600" y="414" text-anchor="middle">silence is hard —</text>
+<text class="k" x="600" y="432" text-anchor="middle">and the bell cuts</text>
+<text class="segsub" x="600" y="454" text-anchor="middle">◆ ADHD adults</text>
+
+<!-- ── A ∩ C ── -->
+<text class="note" x="465" y="482" text-anchor="middle">no search language</text>
+<text class="note" x="465" y="497" text-anchor="middle">of its own found here</text>
+
+<!-- ── B ∩ C ── -->
+<text class="k" x="735" y="482" text-anchor="middle">minimalist countdown</text>
+<text class="k" x="735" y="500" text-anchor="middle">timer <tspan class="v">170</tspan></text>
+
+<!-- ── C only ── -->
+<text class="seg" x="600" y="640" text-anchor="middle" fill="var(--c)">IT HAS TO BE LOVELY</text>
+<text class="segsub" x="600" y="657" text-anchor="middle">the instrument sits on the desk all day</text>
+<text class="k" x="600" y="685" text-anchor="middle">aesthetic timer <tspan class="v">2.9k</tspan></text>
+<text class="k" x="600" y="703" text-anchor="middle">cute timer <tspan class="v">2.4k</tspan></text>
+<text class="k" x="600" y="721" text-anchor="middle">study timer aesthetic <tspan class="v">390</tspan></text>
+
+<!-- ── дверь категории ── -->
+<path class="arw" d="M600 806 V778"/><path d="M596 778 l4 -9 4 9 z" fill="var(--faint)"/>
+<rect class="door" x="100" y="808" width="1000" height="98" rx="10"/>
+<text class="cap" x="124" y="834">THE CATEGORY DOOR — everyone comes through it, whichever circle they sit in</text>
+<text class="k" x="124" y="858">study timer <tspan class="v">5.4k</tspan>  ·  focus timer <tspan class="v">4.4k</tspan>  ·  work timer <tspan class="v">1.9k</tspan>  ·  productivity timer <tspan class="v">1.3k</tspan>  ·  concentration timer <tspan class="v">390</tspan></text>
+<text class="k" x="124" y="878">minimalist timer <tspan class="v">480</tspan>, difficulty <tspan class="v">1</tspan> — the product is named after its own door</text>
+<text class="k" x="124" y="896">pomodoro opens the localised stores, not the English one</text>
+
+<text class="note" x="1076" y="878" text-anchor="end">the noun is how they find it</text>
+<text class="note" x="1076" y="896" text-anchor="end">the circles are why they stay</text>
+</svg>

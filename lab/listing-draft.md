@@ -86,9 +86,6 @@ As a lightweight pomodoro chrome extension and desktop timer, it stays right whe
 🧐 Does the sound stop if I switch tabs?
 ➤ No — the focus sounds keep playing across tabs while your session runs.
 
-🧐 Why not just play brown noise in a streaming tab?
-➤ Because a stream brings ads into the middle of your focus, a black screen video you have to leave running, and a tab you can close by accident. This is brown noise with no ads, generated on your device — nothing to load, nothing to interrupt.
-
 Set your time, press start, and let a minimalist timer carry your focus. ⭐
 
 ## Метрики (заполняются скриптом ниже)
