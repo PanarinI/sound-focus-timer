@@ -52,7 +52,7 @@ env_path = f"M{PX0} {EY} " + " ".join(f"L{x:.0f} {y:.1f}" for x, y in zip(xs, en
 
 SVG = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" style="max-width:100%;height:auto" role="img">
 <title>How the tone is generated</title>
-<desc>Signal flow of the tone layer in a focus timer. One voice is two detuned triangle oscillators through a gain; that gain is moved by two slow waves of {P1:.0f} and {P2:.0f} seconds, drawn here as measured curves, so the voice fades in and out on its own and never repeats. Eight such voices, plus a pulse, a wandering companion and occasional motifs, pass through a highpass at 150 Hz, a drifting lowpass around 1.2 kHz, a dry path and a six-second reverb, into the engine master where the brown noise already is.</desc>
+<desc>How the tone of a focus timer is made. One voice is two oscillators, slightly out of tune with each other, and its loudness is not a setting: it is moved by two slow waves of {P1:.0f} and {P2:.0f} seconds, drawn here as measured curves, so the voice fades in and out on its own and never repeats. The pad is eight such voices on different notes, joined by a soft beat, a drifting voice and short phrases; everything is cut below 150 Hz and above 1.2 kHz, sent both direct and through a six-second echo, into the mix where the brown noise already is.</desc>
 <style>
 :root{{--bg:#fff;--ink:#1C1917;--dim:#57534E;--faint:#A8A29E;--line:#A8A29E;--pad:#0F6E56;--padf:#E1F5EE;--mod:#5B4BC4;--modf:#EAE6FA;--warm:#B45309;--warmf:#FBEAD2}}
 @media (prefers-color-scheme:dark){{:root{{--bg:#1C1917;--ink:#E7E5E4;--dim:#A8A29E;--faint:#78716C;--line:#78716C;--pad:#5DCAA5;--padf:#0C4A3A;--mod:#A99BF0;--modf:#2E2560;--warm:#FBBF6E;--warmf:#5C2D0C}}}}
@@ -74,25 +74,21 @@ text{{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;fill:var(--ink)}
 </style>
 <rect x="0" y="0" width="{W}" height="{H}" fill="var(--bg)"/>
 
-<text class="t" x="40" y="34">How the tone is generated</text>
-<text class="s" x="40" y="54">Nothing is played back. Every voice is computed live, on the device.</text>
-
 <!-- ── ОДИН ГОЛОС ── -->
 <text class="cap" x="40" y="88">ONE VOICE</text>
 
 <rect class="src" x="40" y="100" width="190" height="52" rx="7"/>
 <text class="n" x="56" y="122" fill="var(--pad)">2 oscillators</text>
-<text class="u" x="56" y="139">triangle, ±8 cents apart</text>
-<path class="gl" d="M186 132 l7 -12 7 24 7 -24 7 12" opacity=".7"/>
+<text class="u" x="56" y="139">two of them, slightly out of tune</text>
 
 <path class="w" d="M230 126 H252"/><path class="head" d="M252 122 l9 4 -9 4 z"/>
 
 <rect class="box" x="262" y="100" width="104" height="52" rx="7"/>
-<text class="n" x="278" y="122">volume</text>
-<text class="u" x="278" y="139">shaped, never set</text>
+<text class="n" x="278" y="122">loudness</text>
+<text class="u" x="278" y="139">of this one voice</text>
 
 <path class="w" d="M366 126 H392"/><path class="head" d="M392 122 l9 4 -9 4 z"/>
-<text class="u" x="406" y="130">into the layer, eight times over</text>
+<text class="u" x="406" y="130">one voice of eight — the pad is eight of these, on different notes</text>
 
 <!-- врезка: что двигает громкость -->
 <path class="mod" d="M314 178 V158"/><path d="M310 158 l4 -9 4 9 z" fill="var(--mod)"/>
@@ -100,8 +96,8 @@ text{{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;fill:var(--ink)}
 <text class="n" x="58" y="202" fill="var(--mod)">what moves it</text>
 <text class="u" x="58" y="219">two slow waves,</text>
 <text class="u" x="58" y="234">{P1:.0f} s and {P2:.0f} s</text>
-<text class="u" x="58" y="258">their sum, cut</text>
-<text class="u" x="58" y="273">below zero</text>
+<text class="u" x="58" y="258">their sum; below</text>
+<text class="u" x="58" y="273">the line — silence</text>
 <path class="sine" d="{sine_a}"/>
 <path class="sine2" d="{sine_b}"/>
 <path class="env" d="{env_path}"/>
@@ -112,38 +108,40 @@ text{{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;fill:var(--ink)}
 <text class="cap" x="40" y="344">THE WHOLE LAYER</text>
 
 <rect class="src" x="40" y="356" width="188" height="38" rx="7"/>
-<text class="n" x="56" y="380" fill="var(--pad)">the 8 voices</text>
+<text class="n" x="56" y="380" fill="var(--pad)">the eight voices</text>
 
-<rect class="src" x="40" y="402" width="188" height="38" rx="7"/>
-<text class="u" x="56" y="426" fill="var(--pad)">pulse · wanderer · motifs</text>
+<rect class="src" x="40" y="398" width="188" height="48" rx="7"/>
+<text class="u" x="56" y="418" fill="var(--pad)">a soft beat · a drifting voice</text>
+<text class="u" x="56" y="434" fill="var(--pad)">· short phrases</text>
 
 <path class="w" d="M228 375 H244 M228 421 H244 M244 375 V421 M244 398 H268"/>
 <path class="head" d="M268 394 l9 4 -9 4 z"/>
 
 <rect class="box" x="278" y="372" width="104" height="52" rx="7"/>
-<text class="n" x="294" y="394">HP 150 Hz</text>
-<path class="w" d="M294 412 q11 0 17 -9 t17 -9" opacity=".6"/>
+<text class="n" x="294" y="392">cut below</text>
+<text class="n" x="294" y="410">150 Hz</text>
 
 <path class="w" d="M382 398 H404"/><path class="head" d="M404 394 l9 4 -9 4 z"/>
 
 <rect class="box" x="414" y="372" width="112" height="52" rx="7"/>
-<text class="n" x="430" y="394">LP ~1.2 kHz</text>
-<text class="u" x="430" y="412">slowly drifting</text>
+<text class="n" x="430" y="392">cut above</text>
+<text class="n" x="430" y="410">1.2 kHz</text>
+<text class="u" x="430" y="426">slowly drifting</text>
 
 <path class="w" d="M526 398 H556"/>
 <circle cx="556" cy="398" r="3.5" fill="var(--line)"/>
 <path class="w" d="M556 398 H742"/><path class="head" d="M742 394 l9 4 -9 4 z"/>
-<text class="u" x="620" y="390">dry 0.5</text>
+<text class="u" x="620" y="390">direct</text>
 
 <path class="w" d="M556 398 V444 H572"/><path class="head" d="M572 440 l9 4 -9 4 z"/>
 <rect class="box" x="582" y="424" width="108" height="38" rx="7"/>
-<text class="n" x="598" y="448">reverb 6 s</text>
+<text class="n" x="598" y="448">echo, 6 s</text>
 <path class="w" d="M690 444 H716 V402"/>
-<text class="u" x="708" y="418" text-anchor="end">×0.9</text>
+
 
 <rect class="dst" x="752" y="368" width="200" height="60" rx="8"/>
-<text class="n" x="768" y="392" fill="var(--warm)">engine.master</text>
-<text class="u" x="768" y="411">the brown noise is already here</text>
+<text class="n" x="768" y="392" fill="var(--warm)">the mix</text>
+<text class="u" x="768" y="411">where the brown noise already is</text>
 </svg>
 """
 

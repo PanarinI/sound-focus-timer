@@ -64,11 +64,27 @@ def render(path, scale, dark):
     os.unlink(tmp)
     return out
 
+def write_svg(path, dark, outdir):
+    """SVG с ЗАФИКСИРОВАННОЙ темой. Нужен для страниц хаба: они всегда тёмные, а
+    SVG, вставленный через <img>, слушает системную тему читателя, а не страницу —
+    и у человека со светлой системой схема встала бы белым пятном на тёмной странице."""
+    svg = theme(open(path, encoding="utf-8").read(), dark)
+    os.makedirs(outdir, exist_ok=True)
+    base = os.path.splitext(os.path.basename(path))[0]
+    out = os.path.join(outdir, f"{base}{'-dark' if dark else '-light'}.svg")
+    open(out, "w", encoding="utf-8").write(svg)
+    return out
+
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     scale = next((int(a[3]) for a in sys.argv[1:] if re.fullmatch(r"--x\d", a)), 2)
     dark = "--dark" in sys.argv
+    outdir = next((a.split("=", 1)[1] for a in sys.argv[1:] if a.startswith("--out=")), OUTDIR)
     if not args: sys.exit(__doc__)
+    if "--svg" in sys.argv:
+        for p in args:
+            print(write_svg(p, dark, outdir))
+        sys.exit(0)
     for p in args:
         out = render(p, scale, dark)
         dim = subprocess.run(["sips", "-g", "pixelWidth", "-g", "pixelHeight", out],
