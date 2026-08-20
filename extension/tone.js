@@ -30,7 +30,7 @@
   const CFG = {
     centers: [196, 262, 330, 392, 523, 659, 784, 880], wave: 'triangle',
     cutoff: 1500, hp: 150, rvSec: 6.0, rvDecay: 2.5,
-    send: 0.6, rvGain: 0.9, dry: 0.5, moveEvery: 65, glide: 12,
+    send: 0.6, rvGain: 0.9, dry: 0.5, moveEvery: 65,   // glide убран: голоса не глиссандируют (08-20)
   };
   // застывшие крутилки стенда
   const DENS = 0.5, DETUNE = 8, WARM = 0.35, PULSE_RATE = 0.62;
@@ -63,10 +63,20 @@
     return 440 * Math.pow(2, (best - 69) / 12);
   }
   const SCALE = (() => { const s = new Set(); PALETTE.forEach((ch) => ch.forEach((pc) => s.add(pc))); return [...s].sort((a, b) => a - b); })();
+  // ступень лада → частота. Лестница опирается на ОДНО «до» под опорной нотой и дальше идёт ровно:
+  // шаг idx = соседняя ступень (2–3 полутона), шаг через ступень — терция, и так далее.
+  // БЫЛО: октаву считали дважды — множитель 2^oct поверх ноты, которую pcNear и так выбирал
+  // ближайшей к ref. На каждом пятом шаге высота прыгала на октаву с лишним (замер 08-20: до
+  // 20 полутонов вверх и 15 обратно, верх мотива улетал на 2637 Гц). Это и был резкий питч.
   function scaleFreq(idx, ref) {
-    const len = SCALE.length, oct = Math.floor(idx / len);
-    return pcNear(SCALE[((idx % len) + len) % len], ref, false) * Math.pow(2, oct);
+    const len = SCALE.length;
+    const root = 12 * Math.floor((69 + 12 * Math.log2(ref / 440)) / 12);   // «до» на опоре или под ней
+    const midi = root + SCALE[((idx % len) + len) % len] + 12 * Math.floor(idx / len);
+    return 440 * Math.pow(2, (midi - 69) / 12);
   }
+  // фигура держится своего регистра: упёрлись в край — шаг в другую сторону. Мелодия поворачивает,
+  // а не залипает на краю и не уезжает октавами вверх.
+  function stepIn(idx, step, lo, hi) { const n = idx + step; return Math.max(lo, Math.min(hi, (n > hi || n < lo) ? idx - step : n)); }
 
   class ToneLayer {
     constructor(engine) {
@@ -135,7 +145,9 @@
     }
 
     // РАЗРЕШЕНИЕ НА РАССВЕТЕ. Мотивы, ход и путник прекращаются — сверху больше ничего не приходит.
-    // Аккорд возвращается на первое созвучие палитры длинным глиссандо: не «выключили», а «пришли».
+    // Аккорд возвращается на первое созвучие палитры — тем же законом, что и всякая смена: голос
+    // берёт домашнюю ноту в своей тишине (глиссандо не осталось нигде). Верхние голоса при этом
+    // уходят совсем, так что домой они приходят по дороге к молчанию.
     // Сам уровень гасит master движка синхронно с рассветом, поэтому тут мы его не трогаем.
     _resolve() {
       this._stopTimers();
@@ -143,11 +155,11 @@
       const AC = this.eng.AC, t = AC.currentTime;
       const chord = PALETTE[0];
       this.pad.voices.forEach((v) => {
-        const f = pcNear(chord[v.idx % chord.length], v.center, true);
-        v.oscs.forEach((o) => o.frequency.setTargetAtTime(f, t, Math.max(4, this.eng.DAWN * 0.25)));
-        // ядро остаётся, верхние голоса уходят: к прибытию ткань редеет
-        if (v.idx >= 2) v.dc.offset.setTargetAtTime(-0.9, t, Math.max(3, this.eng.DAWN * 0.3));
+        if (v.idx < 2) return;                       // педаль стоит: она и есть дом
+        v.want = pcNear(chord[v.idx % chord.length], v.center, true);
+        v.dc.offset.setTargetAtTime(-0.9, t, Math.max(3, this.eng.DAWN * 0.3));   // ткань редеет к прибытию
       });
+      this._settleTick();
       if (this.pad.comp) this.pad.comp.depth.gain.setTargetAtTime(0, t, 4);
     }
 
@@ -173,8 +185,8 @@
     _stopTimers() {
       const p = this.pad; if (!p) return;
       clearTimeout(p.moveTimer); clearTimeout(p.melTimer); clearTimeout(p.compTimer); clearTimeout(p.pulseTimer);
-      p.moveTimer = p.melTimer = p.compTimer = p.pulseTimer = null;
-      p.susTimers.forEach(clearTimeout); p.susTimers.length = 0;
+      clearTimeout(p.settleTimer);
+      p.moveTimer = p.melTimer = p.compTimer = p.pulseTimer = p.settleTimer = null;
     }
 
     _kill() {
@@ -243,11 +255,11 @@
 
         // замер уровня голоса: модуляция не видна в .value — только на слух и в анализаторе
         const an = AC.createAnalyser(); an.fftSize = 256; vg.connect(an); an.connect(zero);
-        return { vg, oscs, center: c, peak, idx: i, dc, an, abuf: new Float32Array(an.fftSize) };
+        return { vg, oscs, center: c, peak, idx: i, dc, an, abuf: new Float32Array(an.fftSize), want: null };
       });
 
       this.pad = { bus, out, lp, voices, lfos, zero, rv, motifs: this._makeMotifs(),
-                   step: 0, moveTimer: null, melTimer: null, susTimers: [], comp: null, compTimer: null, pulseTimer: null };
+                   step: 0, moveTimer: null, melTimer: null, settleTimer: null, comp: null, compTimer: null, pulseTimer: null };
       this.pad.comp = this._buildCompanion();
     }
 
@@ -302,10 +314,11 @@
       c.an.getFloatTimeDomainData(c.abuf);
       let s = 0; for (const x of c.abuf) s += x * x;
       if (Math.sqrt(s / c.abuf.length) < 0.006) {
-        const step = Math.random() < 0.8 ? 1 : 2;
-        c.idx += (Math.random() < 0.5 ? -step : step);
+        const step = (Math.random() < 0.8 ? 1 : 2) * (Math.random() < 0.5 ? -1 : 1);
+        c.idx = stepIn(c.idx, step, -2, 4);                  // своя улица: ~октава вокруг опоры, без ухода
         const f = scaleFreq(c.idx, c.center);
-        c.oscs.forEach((o) => o.frequency.setTargetAtTime(f, this.eng.AC.currentTime, rnd(6, 12)));
+        c.oscs.forEach((o) => o.frequency.setValueAtTime(f, this.eng.AC.currentTime));   // разом, пока молчит:
+        // портаменто 6–12 с не успевало закончиться в тишине — хвост глиссандо звучал уже вслух
       }
       p.compTimer = setTimeout(() => this._wander(), rnd(20, 50) * 1000);
     }
@@ -345,41 +358,45 @@
       });
     }
 
-    // ── СМЕНА АККОРДА + ЗАДЕРЖАНИЕ ────────────────────────────────────────────
-    // Каждый слот берёт ближайший тон нового созвучия, с предпочтением вниз; у каждого голоса СВОЁ
-    // время перехода (±45 %) — аккорд не «сменяется» в момент, а переселяется голос за голосом.
-    // ЗАДЕРЖАНИЕ — барочный приём, из-за которого «местами пронзительно» (урок 11): один слышный
-    // голос держит старую ноту, пока гармония под ним сменилась, и разрешается через 9–20 с.
+    // ── СМЕНА АККОРДА: ТОЛЬКО В ТИШИНЕ ────────────────────────────────────────
+    // ЗАКОН СЛОЯ (правка по слуху автора 08-20): звучащий голос НИКОГДА не едет по высоте.
+    // Было: аккорд «переселялся» глиссандо (тау 2–6 с), а задержание глиссандировало ровно тот
+    // голос, который СЛЫШЕН, — это и звучало как «питч выкрутили вверх-вниз за пару секунд».
+    // Стало: смена аккорда только НАЗНАЧАЕТ каждому голосу новую ноту, а берёт он её в свою
+    // ближайшую тишину — уходит на старой, возвращается на новой. Тот же закон, что у путника
+    // с 08-04: слышна перемена, но не переход.
+    // ЗАДЕРЖАНИЕ НЕ ПОТЕРЯНО, а стало правилом: голос, который сейчас слышен, честно держит старую
+    // ноту под уже сменившейся гармонией, пока сам не смолкнет. Диссонанс есть, глиссандо нет.
     _moveChord() {
       const p = this.pad; if (!p) return;
       clearTimeout(p.moveTimer);
       const chord = PALETTE[p.step % PALETTE.length]; p.step++;
-      const t = this.eng.AC.currentTime;
-
-      let susIdx = -1;
-      if (p.step > 1) {
-        const audible = p.voices.filter((v) => {
-          v.an.getFloatTimeDomainData(v.abuf);
-          let s = 0; for (const x of v.abuf) s += x * x;
-          return Math.sqrt(s / v.abuf.length) > v.peak * 0.25;
-        });
-        if (audible.length) susIdx = audible[(Math.random() * audible.length) | 0].idx;
-      }
-
       p.voices.forEach((v) => {
-        const f = pcNear(chord[v.idx % chord.length], v.center, true);
-        const gl = CFG.glide * rnd(0.55, 1.45);
-        if (v.idx === susIdx) {
-          p.susTimers.push(setTimeout(() => {
-            if (this.pad !== p) return;
-            // разрешение медленнее обычного перехода: не «поправился», а «отпустил»
-            v.oscs.forEach((o) => o.frequency.setTargetAtTime(f, this.eng.AC.currentTime, (gl * 1.5) / 3));
-          }, rnd(9, 20) * 1000));
-        } else {
-          v.oscs.forEach((o) => o.frequency.setTargetAtTime(f, t, gl / 3));
-        }
+        // ПЕДАЛЬ: два нижних голоса — ядро, они по построению не смолкают, значит переселить их
+        // беззвучно нечем. В пентатонике педаль консонансна любому созвучию палитры, потому стоят.
+        if (v.idx < 2) return;
+        v.want = pcNear(chord[v.idx % chord.length], v.center, true);
       });
+      this._settleTick();
       p.moveTimer = setTimeout(() => this._moveChord(), CFG.moveEvery * 1000);
+    }
+
+    // ПЕРЕСЕЛЕНИЕ. Раз в 700 мс смотрим уровень каждого назначенного голоса; кто сейчас молчит —
+    // тому ставим ноту разом. У молчащего голоса высота не слышна ни как скачок, ни как щелчок:
+    // громкость ведёт отдельная кривая, и она в этот момент на нуле.
+    _settleTick() {
+      const p = this.pad; if (!p) return;
+      clearTimeout(p.settleTimer);
+      const t = this.eng.AC.currentTime;
+      p.voices.forEach((v) => {
+        if (v.want == null) return;
+        v.an.getFloatTimeDomainData(v.abuf);
+        let s = 0; for (const x of v.abuf) s += x * x;
+        if (Math.sqrt(s / v.abuf.length) > v.peak * 0.04) return;   // ещё слышен — держит старую ноту
+        v.oscs.forEach((o) => o.frequency.setValueAtTime(v.want, t));
+        v.want = null;
+      });
+      p.settleTimer = setTimeout(() => this._settleTick(), 700);
     }
 
     // ── МОТИВЫ ────────────────────────────────────────────────────────────────
@@ -416,8 +433,8 @@
       let t = AC.currentTime + 1.5;
 
       motif.forEach((step) => {
-        idx += step;
-        const f = scaleFreq(idx, top * rnd(0.9, 1.1));
+        idx = stepIn(idx, step, -1, 7);              // регистр мотива: 440…1320 Гц, поверх пласта
+        const f = scaleFreq(idx, top);                // опора не дрожит: ±10 % опрокидывали октаву
         [-1, 1].forEach((s) => {
           const o = AC.createOscillator(); o.type = CFG.wave;
           o.frequency.value = f; o.detune.value = s * 5;

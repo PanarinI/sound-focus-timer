@@ -104,7 +104,7 @@
   </label>
   <label><input type="checkbox" id="mel" checked> мелодия</label>
   <label>сколько мелодии <input type="range" id="melAmt" min="0" max="1" step="0.01" value="0.5"><b id="melAmtV">0.50</b></label>
-  <label><input type="checkbox" id="sus" checked> задержания</label>
+  <label><input type="checkbox" id="sus" checked> переселение в тишине <span style="opacity:.55">(снять — старое глиссандо)</span></label>
 </div>
 <div class="row dev" hidden>
   <label><input type="checkbox" id="comp" checked> второй путник</label>
@@ -300,11 +300,11 @@ function buildPad(cfg) {
     const an = AC.createAnalyser(); an.fftSize = 256; vg.connect(an); an.connect(zero);
     const abuf = new Float32Array(an.fftSize);
 
-    return { vg, oscs, center: c, peak, idx: i, dc, depth, an, abuf };
+    return { vg, oscs, center: c, peak, idx: i, dc, depth, an, abuf, want: null };
   });
 
   const p = { bus, out, lp, hp, voices, cfg, lfos, zero, rv, motifs: makeMotifs(),
-              step: 0, moveTimer: null, melTimer: null, susTimers: [], comp: null, compTimer: null, pulseTimer: null };
+              step: 0, moveTimer: null, melTimer: null, susTimers: [], settleTimer: null, comp: null, compTimer: null, pulseTimer: null };
   p.comp = buildCompanion(p);
   return p;
 }
@@ -372,10 +372,11 @@ function wanderCompanion() {
   c.an.getFloatTimeDomainData(c.abuf);
   let s = 0; for (const x of c.abuf) s += x * x;
   if (Math.sqrt(s / c.abuf.length) < 0.006) {                 // слышен → не трогаем
-    const step = Math.random() < 0.8 ? 1 : 2;                 // шаги мелкие: ход, а не скачок
-    c.idx += (Math.random() < 0.5 ? -step : step);
+    const step = (Math.random() < 0.8 ? 1 : 2) * (Math.random() < 0.5 ? -1 : 1);   // шаги мелкие: ход, а не скачок
+    c.idx = stepIn(c.idx, step, -2, 4);                       // своя улица: ~октава вокруг опоры
     const f = scaleFreq(paletteScale(), c.idx, c.center * regShift());
-    c.oscs.forEach(o => o.frequency.setTargetAtTime(f, eng.AC.currentTime, rnd(6, 12)));
+    if (sus.checked) c.oscs.forEach(o => o.frequency.setValueAtTime(f, eng.AC.currentTime));   // разом, пока молчит
+    else c.oscs.forEach(o => o.frequency.setTargetAtTime(f, eng.AC.currentTime, rnd(6, 12)));   // старое портаменто
   }
   pad.compTimer = setTimeout(wanderCompanion, rnd(20, 50) * 1000 / (+churn.value));
 }
@@ -462,6 +463,20 @@ function moveChord() {
     if (audible.length) susIdx = audible[(Math.random() * audible.length) | 0].idx;
   }
 
+  // ЗАКОН 08-20: звучащий голос НЕ едет по высоте. Смена аккорда только НАЗНАЧАЕТ ноту, а берёт
+  // её голос в своей ближайшей тишине. Задержание при этом не пропало, а стало правилом: слышный
+  // голос честно держит старую ноту под сменившейся гармонией, пока сам не смолкнет. Снять галочку —
+  // вернётся старое глиссандо (тау 2–6 с), то самое «питч выкрутили вверх-вниз».
+  if (sus.checked) {
+    pad.voices.forEach(v => {
+      if (v.idx < 2) return;                    // педаль: ядро не смолкает, беззвучно его не переселить
+      v.want = pcNear(chord[v.idx % chord.length], v.center, true) * sh;
+    });
+    settleTick();
+    pad.moveTimer = setTimeout(moveChord, pad.cfg.moveEvery * 1000 / (+churn.value));
+    return;
+  }
+
   pad.voices.forEach(v => {
     const pc = chord[v.idx % chord.length];
     const f = pcNear(pc, v.center, true) * sh;
@@ -482,6 +497,23 @@ function moveChord() {
   pad.moveTimer = setTimeout(moveChord, pad.cfg.moveEvery * 1000 / (+churn.value));
 }
 
+// ПЕРЕСЕЛЕНИЕ: раз в 700 мс смотрим уровень назначенных голосов; кто молчит — тому ставим ноту разом.
+// У молчащего высота не слышна ни как скачок, ни как щелчок: громкость ведёт отдельная кривая, и она на нуле.
+function settleTick() {
+  if (!pad) return;
+  clearTimeout(pad.settleTimer);
+  const t = eng.AC.currentTime;
+  pad.voices.forEach(v => {
+    if (v.want == null) return;
+    v.an.getFloatTimeDomainData(v.abuf);
+    let s = 0; for (const x of v.abuf) s += x * x;
+    if (Math.sqrt(s / v.abuf.length) > v.peak * 0.04) return;    // ещё слышен — держит старую ноту
+    v.oscs.forEach(o => o.frequency.setValueAtTime(v.want, t));
+    v.want = null;
+  });
+  pad.settleTimer = setTimeout(settleTick, 700);
+}
+
 // РЕДКАЯ МЕЛОДИЯ: раз в 1.5–4 минуты сверху появляется голос и медленно проговаривает 3–4 ноты.
 // Атака 6–10с — по устройству не событие: не «началось», а «проступило».
 // ── МЕЛОДИЧЕСКИЙ ГОЛОС ──────────────────────────────────────────────────────
@@ -495,13 +527,18 @@ function paletteScale() {
   PALETTES[pal.value].forEach(ch => ch.forEach(pc => s.add(pc)));
   return [...s].sort((a, b) => a - b);
 }
-// ступень лада → частота: idx может выходить за октаву в обе стороны
+// ступень лада → частота. Лестница опирается на ОДНО «до» под опорной нотой и дальше идёт ровно:
+// шаг idx = соседняя ступень (2–3 полутона). БЫЛО: октаву считали дважды — множитель 2^oct поверх
+// ноты, которую pcNear и так выбирал ближайшей к ref, — и на каждом пятом шаге высота прыгала на
+// октаву с лишним (замер 08-20: до 20 полутонов вверх и 15 обратно). Это и был резкий питч.
 function scaleFreq(scale, idx, ref) {
   const len = scale.length;
-  const oct = Math.floor(idx / len);
-  const pc = scale[((idx % len) + len) % len];
-  return pcNear(pc, ref, false) * Math.pow(2, oct);
+  const root = 12 * Math.floor((69 + 12 * Math.log2(ref / 440)) / 12);   // «до» на опоре или под ней
+  const midi = root + scale[((idx % len) + len) % len] + 12 * Math.floor(idx / len);
+  return 440 * Math.pow(2, (midi - 69) / 12);
 }
+// фигура держится своего регистра: упёрлись в край — шаг в другую сторону (поворот, а не прыжок)
+function stepIn(idx, step, lo, hi) { const n = idx + step; return Math.max(lo, Math.min(hi, (n > hi || n < lo) ? idx - step : n)); }
 // мотивы: шаги ПО СТУПЕНЯМ лада, с уклоном вниз (у Aphex голосоведения нисходят)
 function makeMotifs() {
   const steps = [-2, -1, -1, 1, 2, 3];
@@ -542,8 +579,8 @@ function playMelody() {
   let t = AC.currentTime + 1.5;
 
   motif.forEach((step, k) => {
-    idx += step;
-    const f = scaleFreq(scale, idx, top * rnd(0.9, 1.1));
+    idx = stepIn(idx, step, -1, 7);                 // регистр мотива: ~440…1320 Гц, поверх пласта
+    const f = scaleFreq(scale, idx, top);           // опора не дрожит: ±10 % опрокидывали октаву
     // пара расстроенных осцилляторов — нота живая, а не приборная
     [-1, 1].forEach(s => {
       const o = AC.createOscillator(); o.type = pad.cfg.wave;
@@ -564,6 +601,7 @@ function playMelody() {
 function killPad() {
   if (!pad) return;
   clearTimeout(pad.moveTimer); clearTimeout(pad.melTimer); clearTimeout(pad.compTimer); clearTimeout(pad.pulseTimer);
+  clearTimeout(pad.settleTimer);
   pad.susTimers.forEach(clearTimeout);
   const t = eng.AC.currentTime;
   pad.bus.gain.setTargetAtTime(0, t, 0.6);

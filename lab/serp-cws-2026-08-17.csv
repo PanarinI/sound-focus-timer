@@ -1,0 +1,20 @@
+query,locale,our_position,results_total,note
+minimalist timer,en,3,10,наша дверь (KD1) — работает
+minimalist timer,ru,3,10,в RU-интерфейсе имя рендерится как «Помодоро таймер - Minimalist Timer»
+brown noise no ads,en,1,10,главный боль-ключ (2900/мес)
+brown noise timer,en,2,10,
+aesthetic timer,en,4,10,
+minimalist pomodoro timer,en,4,10,
+brown noise,en,7,10,широкий ключ
+коричневый шум,ru,3,5,запрос узкий — стор отдал всего 5 карточек
+минималистичный таймер,ru,8,10,
+focus timer,en,,10,вне десятки; все 10 несут focus timer/pomodoro В ИМЕНИ
+timer for focus,en,,10,вне десятки
+beautiful timer,en,,10,вне десятки; слова beautiful в листинге нет (есть aesthetic)
+timer for study,en,,10,вне десятки
+study timer,en,,10,вне десятки
+pomodoro timer,en,,10,вне десятки
+focus sounds,en,,10,вне десятки
+таймер,ru,,10,вне десятки
+помодоро таймер,ru,,10,вне десятки — хотя RU-имя буквально начинается с «Помодоро таймер»
+таймер для фокуса,ru,,10,вне десятки — хотя RU-краткое несёт «для фокуса и учёбы»
