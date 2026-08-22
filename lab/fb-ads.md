@@ -21,32 +21,65 @@ FB-тест на **$30–50 / 3–5 дней** в рамку влезает; э�
 **95 ₽ ≈ $1.19**, то есть в 12–40 раз дороже. Проверяем, даст ли FB дешёвый объём.
 ⚠️ Часть разрыва — не канал, а конверсия листинга 11.3 % при норме 15–30 %. Она ударит и по FB.
 
-## Тексты (канон `4.3:44-52`)
+## Тексты — переписаны 08-22 (после первого живого голоса)
 
-В FB инициатива у НАС: человек продукт не искал. ✅ «о SEO НЕ думаем» — только чтобы заметили,
-поняли и захотели поставить. Чем банальнее, тем лучше. Язык — английский (целимся в дешёвые страны,
-где английский — рабочий язык ленты). 🔶 RU-вариант имеет смысл, только если отдельно целиться в СНГ.
+**Почему переписаны.** Первая версия шла по канону буквально: `4.3:34` — «headline — просто название
+продукта», `4.3:35` — «Простой &lt;название&gt;. Работает в 2 клика прямо в браузере». Автор возразил:
+`Minimalist Timer` — это наш SEO-КЛЮЧ, а не суть своими словами. Возражение верное, и вот почему
+канон тут не работает буквально: правило выведено на продуктах, где **имя и есть функция** — Dark Mode ·
+JSON Formatter · Extract Text · BPM Finder · Convert HEIC to JPG (`4.1`, `4.3`). У них ценность
+действительно в скорости доступа, отсюда «2 клика». У нас имя — дверь поиска (`minimalist timer`, KD1),
+а ценность не в скорости открытия. Условие правила у нас не выполняется.
+✅ Что из канона остаётся в силе и соблюдено: банальное описание сути > креатив · ≤2 строк primary,
+≤1 строки headline и description · о SEO не думаем · суть + одно преимущество.
 
-**headline** (≤1 строки, ✅ канон: «просто название продукта»)
+**Откуда язык.** Из `ГОЛОСА.md` (голос 1, 08-22): «легче формулировать мысли, как будто сама себя не
+перебиваю» · «быстрее ловлю себя на том, что тупо скроллю инстаграм». Человек описал НЕ функции —
+он описал, что с ним происходит. Реклама в ленте должна говорить этим языком; листинг остаётся на
+языке поиска и не меняется.
+
+### Вариант A — «что это» (плоский, максимально канонный)
+- **headline:** `Focus timer with warm brown noise`
+- **primary text:**
+  ```
+  Set your time and press start — warm brown noise carries the whole session.
+  When it ends, the sound fades out gently instead of an alarm.
+  ```
+- **description:** `Minimalist Timer — no ads, no account, no extra tab.`
+
+### Вариант B — «узнавание себя» (из голоса) ⭐ рекомендация
+- **headline:** `A focus timer that doesn't interrupt you`
+- **primary text:**
+  ```
+  You sit down to work, and ten minutes later you're somewhere else.
+  This one holds the session with warm brown noise, then lands you gently at the end.
+  ```
+- **description:** `Minimalist Timer — runs on your device. No ads, no account.`
+
+B несёт суть («несёт сессию» + «мягко высаживает» = наш якорь) и при этом в первом же слове называет
+категорию — человек понимает, что это таймер, до всякой поэзии. Имя продукта уехало в `description`,
+чтобы объявление и карточка в сторе назывались одинаково (клик → узнавание).
+
+⚠️ Клеймов про внимание не даём: голос — не выборка (🔶 один человек). Пишем, что продукт ДЕЛАЕТ,
+эффект оставляем человеку.
+
+## Как три текста складываются в объявлении
+
 ```
-Minimalist Timer
+[аватарка] Имя Страницы · Sponsored
+PRIMARY TEXT              ← читается первым, ДО картинки
+┌──────────────────────┐
+│ КАРТИНКА             │  ← её надпись впечатана внутрь
+└──────────────────────┘
+chromewebstore.google.com
+HEADLINE                  ← жирная строка под картинкой
+description               ← мелкая серая, в части плейсментов НЕ показывается
+[ кнопка ]
 ```
 
-**primary text** (≤2 строк — суть + одно преимущество; ✅ канонная формула «Простой &lt;название&gt;.
-Работает в 2 клика прямо в браузере»)
-```
-A simple focus timer with warm brown noise.
-Works in 2 clicks, right in your browser.
-```
-
-**description** (≤1 строки)
-```
-No ads, no account, no extra tab.
-```
-
-⚠️ Следим, чтобы не обрезалось в предпросмотре FB.
-🔶 Слово `free` намеренно не взято: канон запрещает его для Google-модерации (`4.3:70`), для FB запрета
-нет, но смысл «бесплатно» и так несёт `No ads, no account`.
+Ничто не связывает их автоматически: человек читает подряд три куска. Значит писать их надо как одну
+фразу в трёх частях, а не как три самостоятельных лозунга. И вес держат **primary + картинка +
+headline** — description может не показаться вовсе, класть в него единственное важное нельзя.
 
 ## Креативы (канон `4.3:54-58`)
 
@@ -55,8 +88,13 @@ No ads, no account, no extra tab.
 | файл | размер | что это |
 |---|---|---|
 | `graphics/banner-final.png` | **1280×800** | прямоугольник — уже был, тот же, что в CWS |
-| `graphics/fb-square-2048.png` | **2048×2048** | квадрат с текстом — основной вариант |
+| `graphics/fb-square-2048.png` | **2048×2048** | квадрат — основной вариант |
 | `graphics/fb-square-2048-clean.png` | **2048×2048** | тот же квадрат без текста — вариант B |
+
+**Надпись на квадрате переписана 08-22.** Было `Made of warm sound` крупно — красиво, но человек в
+ленте по ней не понимает, что это. Стало: крупно **`A focus timer made of sound`** (сначала категория,
+потом отличие), мелко `warm brown noise · no ads · no account`. То же правило, что и в текстах:
+картинку часто ловят глазом раньше слов, значит она обязана назвать вещь.
 
 Исходник квадрата — `graphics/banner-square.html` (`?clean=1` — версия без текста), рендер:
 `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --window-size=2048,2048 --screenshot=... file://...`
@@ -142,3 +180,59 @@ No ads, no account, no extra tab.
 - **какой креатив** — по `utm_content` (square / rect).
 
 Установки видны только глазами в дашборде CWS: программного доступа у стора нет (`STATE.md`).
+
+---
+
+# Страница Facebook — готовый комплект (08-22)
+
+Канон `4.3:12-18`: Page нужна только чтобы от её имени крутить рекламу; на саму страницу из объявлений
+почти не переходят, наполнять её не надо. Но **имя и аватарка видны в каждом объявлении** — они
+работают как ещё одна строка рекламы.
+
+**Имя:** `Minimalist Timer`
+🔶 Развилка (за автором): можно завести страницу бренда `Fanarlabs` и крутить с неё все будущие
+продукты. Взято имя продукта, потому что имя Страницы стоит прямо над объявлением и читается как его
+часть: незнакомый бренд там не работает, название продукта — работает. Страницу бренда никто не мешает
+завести позже.
+
+**Категория:** `Software` 🔶 (если в списке FB найдётся `App Page` — тоже верно; точная таксономия
+меняется, брать ближайшее по смыслу, это ни на что не влияет).
+
+**Описание Страницы** (≈230 символов):
+```
+Minimalist Timer is a calm focus timer for Chrome. Set your time, press start, and warm brown noise
+carries the session — then fades out gently instead of an alarm. It runs on your device: no ads,
+no account, no extra tab.
+```
+
+**Аватарка:** `graphics/fb-avatar-1024.png` (1024×1024 — искра продукта на глубоком синем).
+FB кадрирует аватарку **в круг**, поэтому фон во весь квадрат, искра внутри вписанной окружности.
+
+**Обложка:** `graphics/fb-cover-1640x624.png` (та же сцена, размер под обложку FB).
+
+### Пост 1 — что это
+```
+Minimalist Timer is out on the Chrome Web Store.
+
+It's a focus timer whose time is made of sound: set your session, press start, and warm brown noise
+carries you through it. When the time is up, the sound fades out gently — no alarm, no jolt.
+
+Everything runs on your device. No ads, no account, no extra tab.
+
+https://chromewebstore.google.com/detail/minimalist-timer/miknhphoakphfhgjajhkalmpdnadkeic?hl=en
+```
+
+### Пост 2 — почему звук
+```
+Why brown noise?
+
+Most people get it from a streaming tab — and pay for it with ads in the middle of a session, a black
+video screen, and one more tab to keep an eye on.
+
+Here the sound is generated on your own machine while the timer runs. It never repeats, never buffers,
+and never cuts in.
+
+https://chromewebstore.google.com/detail/minimalist-timer/miknhphoakphfhgjajhkalmpdnadkeic?hl=en
+```
+
+✅ Канон: посты нужны, чтобы модерация FB не увидела пустышку — не для чтения. Два коротких хватает.

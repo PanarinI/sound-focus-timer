@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Focus timer — panel</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-user-select: none; user-select: none; }
+    /* Тёплый тёмный космос во ВЕСЬ сайдбар (07-25: небо перестало быть «квадратом, врезанным в интерфейс уголька»).
+       Фон подкрашивает calcLife (едва теплеет с прожитым). Не синий сай-фай — тёплая янтарная ночь (капсула). */
+    html, body { height: 100%; }
+    body { background: radial-gradient(ellipse 90% 70% at 50% 40%, #0e1638 0%, #090d22 55%, #05060f 100%);
+      color: #c9bdae; font: 13px/1.5 -apple-system, 'Segoe UI', sans-serif; overflow: hidden; position: relative; }
+
+    /* НЕБО — звёздное поле на весь сайдбар. Покой: звёзды висят и дышат. Полёт: несутся от звезды-цели
+       наружу, скорость = энергия. Всё рисует canvas (rAF) — смена скорости без скачка (баг CSS-duration мёртв). */
+    /* width/height ОБЯЗАТЕЛЬНЫ: canvas — заменяемый элемент, inset:0 его не растягивает (взял бы
+       интринсик 300×150 и зациклил буфер). Явные 100% → поле = весь сайдбар. */
+    #sky { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; display: block; }
+
+    /* ENVELOPE — тёплая аура вокруг звезды-цели (курс тёплый). Кормится жаром сессии (opacity ← render),
+       медленно дышит. Растянута на весь экран, центр совпадает с точкой схода звёзд. */
+    #room { position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: .06;
+      background: radial-gradient(ellipse 58% 42% at 50% 40%, rgba(255,172,86,.9) 0%, rgba(198,112,52,.34) 34%, rgba(150,80,40,.12) 55%, rgba(20,12,7,0) 74%);
+      transform-origin: 50% 40%; transition: opacity 1.2s ease; animation: roombreathe 9s ease-in-out infinite; }
+    @keyframes roombreathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+    @media (prefers-reduced-motion: reduce) { #room { animation: none; } }
+
+    /* СЦЕНА — прозрачный слой на весь сайдбар: держит CSS-переменные, звезду-цель и клик по небу.
+       Тап в любом месте неба = взлёт / пауза (провалился в космос — весь он и есть кнопка). */
+    .stage { position: fixed; inset: 0; z-index: 2; pointer-events: none; touch-action: none; }
+    #wrap { position: fixed; inset: 0; pointer-events: auto; cursor: pointer; touch-action: none; }
+
+    /* ЗВЕЗДА-ЦЕЛЬ — одно тёплое присутствие по курсу. Близится по прогрессу (--p): рост = приближение,
+       не раздувание («закипеть» невозможно by design). Дышит. Точка схода звёздного потока — здесь. */
+    #star { position: fixed; left: 50%; top: 40%; transform: translate(-50%,-50%); pointer-events: none;
+      /* размер = приближение: ЛИНЕЙНО по --p (вкус автора 08-01), финиш ≈ 166px.
+         По завершении времени звезда СДУВАЕТСЯ плавно (--p убывает за рассвет/выдох — см. render). */
+      width: calc(16px + var(--p,0)*150px); height: calc(16px + var(--p,0)*150px); border-radius: 50%;
+      /* плавный подход к максимуму и мягкий выход (08-01): ease-out, длиннее — без рывка на концах */
+      transition: width 1.2s cubic-bezier(.25,.8,.35,1), height 1.2s cubic-bezier(.25,.8,.35,1), opacity 1s ease; opacity: calc(.62 + var(--p,0)*.38);
+      background: radial-gradient(circle, #fff2d6 0%, #ffd98f 24%, #f2a955 50%, rgba(214,120,70,.26) 74%, rgba(214,120,70,0) 100%);
+      /* дыхание СПОКОЙНОЕ и постоянное, мягкая амплитуда (08-01: ускорение к концу читалось как
+         «глубоко работающее сердце» — убрано; дыхание не должно частить у большой звезды) */
+      animation: star-breathe 7s ease-in-out infinite; will-change: transform; }
+    @keyframes star-breathe { 0%,100% { transform: translate(-50%,-50%) scale(.985); } 50% { transform: translate(-50%,-50%) scale(1.028); } }
+    @media (prefers-reduced-motion: reduce) { #star { animation: none; } }
+
+    .num { position: fixed; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; font-weight: 300;
+      color: #f0d8b0; opacity: 0; transition: opacity .3s; pointer-events: none; z-index: 3;
+      font-variant-numeric: tabular-nums; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
+
+    /* «☀ завершить» — посадка сейчас; живёт всю рабочую сессию, тихо под звездой */
+    .finbtn { position: fixed; left: 50%; top: 55%; transform: translateX(-50%); z-index: 4; pointer-events: auto;
+      background: rgba(20,15,10,.55); border: 1px solid #3a2d1f; color: #caa25a; border-radius: 8px;
+      padding: 5px 13px; font: inherit; font-size: 12px; cursor: pointer; transition: border-color .3s, opacity .3s; }
+    .finbtn:hover { border-color: #caa25a; }
+
+    /* вспышка «звук пошёл» — отклик на действие, гаснет сама */
+    .sndhint { position: fixed; top: calc(40% - 74px); left: 50%; transform: translateX(-50%);
+      width: 21px; height: 21px; color: #caa25a; z-index: 3;
+      opacity: 0; transition: opacity .6s ease; pointer-events: none; }
+
+    /* ДОК — управление внизу, поверх неба. Мягкая тёмная подложка снизу, чтобы контролы читались на звёздах.
+       Сам док кликов не ловит (pointer-events none) — тап между контролами проваливается в небо (взлёт). */
+    .dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 5; pointer-events: none;
+      display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 26px 20px 24px;
+      background: linear-gradient(to top, rgba(11,8,5,.92) 0%, rgba(11,8,5,.7) 46%, rgba(11,8,5,0) 100%); }
+    .dock > * { pointer-events: auto; }
+
+    /* ПОЛЗУНОК ВРЕМЕНИ — длина рейса, прилипает к 5·15·25·45·90·∞ */
+    .timerow { display: flex; flex-direction: column; align-items: center; gap: 5px; width: 100%; max-width: 264px; }
+    .timerow.busy { opacity: .35; pointer-events: none; transition: opacity .4s ease; }
+    #timeslider { -webkit-appearance: none; appearance: none; width: 100%; height: 5px; border-radius: 4px;
+      background: #2a2119; cursor: pointer; outline: none; }
+    #timeslider::-webkit-slider-thumb { -webkit-appearance: none; width: 17px; height: 17px; border-radius: 50%;
+      background: #e8c07a; box-shadow: 0 0 9px rgba(232,192,122,.6); cursor: pointer; }
+    .ticks { display: flex; justify-content: space-between; width: 100%; font-size: 10.5px; color: #6b5f50; }
+    .ticks span.on { color: #e8c07a; }
+
+    .num, .hint { pointer-events: none; }
+    .hint { font-size: 12px; color: #5c5145; text-align: center; max-width: 340px; }
+    .vol { display: flex; align-items: center; gap: 11px; color: #b9863f; width: 100%; max-width: 264px; justify-content: center; }
+    .vol svg { flex: none; width: 17px; height: 17px; opacity: .8; }
+    .vol input[type=range] { -webkit-appearance: none; appearance: none; flex: 1; height: 5px;
+      border-radius: 4px; background: #2a2119; cursor: pointer; outline: none; }
+    .vol input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px;
+      border-radius: 50%; background: #e8b25c; box-shadow: 0 0 9px rgba(232,178,92,.55); cursor: pointer; }
+    .pipbtn { background: none; border: 1px solid #3a2d1f; color: #b9863f; border-radius: 8px;
+      padding: 7px 16px; font: inherit; font-size: 12px; cursor: pointer; transition: border-color .3s; }
+    .pipbtn:hover { border-color: #b9863f; }
+    .pipbtn:disabled { opacity: .4; cursor: default; }
+
+    /* прод-настройки: тёплая мини-панель за тихим триггером */
+    .settoggle { background: none; border: none; color: #6b5f50; cursor: pointer; font: inherit; font-size: 12px;
+      display: flex; align-items: center; gap: 7px; opacity: .7; transition: opacity .3s, color .3s; padding: 4px; }
+    .settoggle:hover { opacity: 1; color: #b9863f; }
+    .settoggle svg { width: 15px; height: 15px; }
+    .settings { display: flex; flex-direction: column; gap: 15px; width: 100%; max-width: 264px; padding: 2px 0 2px; }
+    .settings[hidden] { display: none; }
+    .setdiv { height: 1px; background: #2a2119; margin: 1px 6px; }
+    .setrow { display: flex; align-items: center; gap: 11px; }
+    .setrow .ico { flex: none; width: 18px; height: 18px; color: #b9863f; opacity: .82; }
+    .setrow .lab { font-size: 12px; color: #9a7c4f; width: 50px; flex: none; }
+    .setrow input[type=range] { -webkit-appearance: none; appearance: none; flex: 1; height: 5px;
+      border-radius: 4px; background: #2a2119; cursor: pointer; outline: none; }
+    .setrow input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 15px; height: 15px;
+      border-radius: 50%; background: #e8b25c; box-shadow: 0 0 8px rgba(232,178,92,.5); cursor: pointer; }
+
+    /* КРУТИЛКА (08-06) — вертикальное перетаскивание, колесо, стрелки. Не ползунок: у ползунка
+       в узком сайдбаре ход короткий и точность плохая, а крутилку можно вести сколько угодно.
+       Дуга показывает положение; цифр нет — как и везде, слушаем, а не считаем. */
+    .knobs { display: flex; justify-content: center; align-items: flex-start; gap: 40px; }
+    .knobcell { display: flex; flex-direction: column; align-items: center; gap: 7px; }
+    .knobcell .kname { font-size: 12px; color: #9a7c4f; }
+    .knobcell .ico { width: 17px; height: 17px; color: #b9863f; opacity: .8; }
+    .knob { width: 46px; height: 46px; flex: none; cursor: ns-resize; touch-action: none; outline: none;
+      border-radius: 50%; transition: box-shadow .25s; }
+    .knob:hover, .knob:focus-visible { box-shadow: 0 0 0 1px #4a3826, 0 0 14px rgba(232,178,92,.16); }
+    .knob svg { display: block; width: 46px; height: 46px; overflow: visible; }
+    .knob .ktrack { fill: none; stroke: #2a2119; stroke-width: 4; stroke-linecap: round; }
+    .knob .karc { fill: none; stroke: #e8b25c; stroke-width: 4; stroke-linecap: round;
+      filter: drop-shadow(0 0 5px rgba(232,178,92,.45)); transition: stroke .3s; }
+    .knob .kdot { fill: #f0d8b0; }
+
+    /* ПЛАШКА ОЦЕНКИ — тихая дверь для того, кто сам захотел (реш. автора 08-10): под закрытым Settings,
+       в правом нижнем углу, неброско. Видна СРАЗУ, с первого открытия панели; живёт только в покое,
+       уступает карточке (одна просьба на экране). Приглушена и оживает под курсором — в поле зрения
+       работающего человека она не должна тянуть на себя взгляд. */
+    .ratebar { align-self: flex-end; margin: -6px -4px -8px 0;
+      display: flex; align-items: center; gap: 7px; font-size: 10.5px; color: #6b5f50;
+      opacity: .62; transition: opacity .3s; }
+    .ratebar:hover { opacity: 1; }
+    .ratebar[hidden] { display: none; }
+    .ratebar .rlab { color: #7d6647; }
+    .rstar { width: 15px; height: 15px; cursor: pointer; color: #46351f; transition: color .2s, transform .2s; }
+    .rstar:hover { transform: scale(1.15); }
+    .rstar.lit { color: #e8b25c; }
+    /* в карточке те же звёзды, но это главный жест — там они крупные и в полную силу (см. .askcard) */
+
+    /* КАРТОЧКА ОЦЕНКИ ПОВЕРХ ЗВЕЗДЫ (1.1.1, паттерн ExportGPT) — по прибытии, начиная с 3-го рейса.
+       Ловушка кликов лежит НАД небом (z 3), но НИЖЕ дока (z 5): взлететь до ответа нельзя,
+       а громкость, время и настройки остаются в руках — мы просим, а не запираем.
+       Строится из JS (`hearth.js`), в разметке её нет — публичный стенд не ломается. */
+    #askveil { position: fixed; inset: 0; z-index: 3; cursor: default; }
+    .askcard { position: fixed; left: 50%; top: 40%; transform: translate(-50%,-50%); z-index: 6;
+      display: flex; flex-direction: column; align-items: center; gap: 10px; width: 214px;
+      padding: 15px 16px 11px; border-radius: 14px; text-align: center;
+      background: rgba(18,13,8,.86); border: 1px solid #3a2d1f;
+      box-shadow: 0 10px 30px rgba(0,0,0,.5); animation: askin .5s ease both; }
+    @keyframes askin { from { opacity: 0; transform: translate(-50%,-44%); } to { opacity: 1; transform: translate(-50%,-50%); } }
+    @media (prefers-reduced-motion: reduce) { .askcard { animation: none; } }
+    .askcard .alab { font-size: 12.5px; color: #c9a86a; }
+    .askcard .astars { display: flex; gap: 5px; }
+    .askcard .rstar { width: 25px; height: 25px; color: #4a3826; }   /* главный жест — крупнее и светлее плашки */
+    .askcard .later { font-size: 11px; color: #5c5145; cursor: pointer; padding: 3px 8px; transition: color .25s; }
+    .askcard .later:hover { color: #9a7c4f; }
+
+    /* тумблер язычка — переключалка настроек */
+    .swt { position: relative; width: 34px; height: 19px; border-radius: 10px; background: #2a2119;
+      border: 1px solid #3a2d1f; cursor: pointer; flex: none; transition: background .3s, border-color .3s; }
+    .swt::after { content: ''; position: absolute; top: 2px; left: 2px; width: 13px; height: 13px;
+      border-radius: 50%; background: #6b5f50; transition: left .25s, background .25s, box-shadow .25s; }
+    .swt:hover { border-color: #7a5a2e; }
+    .swt.on { background: #3a2a16; border-color: #7a5a2e; }
+    .swt.on::after { left: 17px; background: #e8b25c; box-shadow: 0 0 8px rgba(232,178,92,.6); }
+
+    /* ПОЛКА — не в прод-UI (премиум-эксперименты + дев); код жив, глаз юзера не видит */
+    .shelf { display: none; }
+  </style>
+</head>
+<body>
+  <div id="room"></div>
+  <canvas id="sky"></canvas>
+
+  <div class="stage" id="stage">
+    <div id="star"></div>
+    <div class="num" id="num"></div>
+    <div id="wrap"></div>
+    <button id="finish" class="finbtn" hidden>☀ Finish</button>
+    <svg class="sndhint" id="sndhint" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/>
+      <path id="sndwave" d="M15.5 8.8a4 4 0 0 1 0 6.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <line id="sndmute" x1="15.6" y1="9.2" x2="20.8" y2="14.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" style="display:none"/>
+    </svg>
+  </div>
+
+  <div class="dock">
+    <div class="timerow" id="timerow" title="trip length — grab and drag">
+      <input type="range" id="timeslider" min="0" max="5" step="1" value="2" aria-label="trip length">
+      <div class="ticks" id="ticks"><span>5</span><span>15</span><span>25</span><span>45</span><span>90</span><span>∞</span></div>
+    </div>
+
+    <!-- ДВЕ ГЛАВНЫЕ РУЧКИ: сколько звука и из чего он сделан. Полоса осталась только у времени —
+         там она и уместна: длина пути читается как расстояние, а не как поворот. -->
+    <div class="knobs">
+      <div class="knobcell">
+        <div class="knob" id="volknob" role="slider" tabindex="0" aria-label="volume"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <svg viewBox="0 0 46 46" aria-hidden="true">
+            <circle class="ktrack" cx="23" cy="23" r="17"/>
+            <circle class="karc" cx="23" cy="23" r="17" id="volarc"/>
+            <circle class="kdot" cx="23" cy="23" r="2" id="voldot"/>
+          </svg>
+        </div>
+        <span class="kname">Volume</span>
+      </div>
+      <div class="knobcell" title="from pure noise to noise with a tone in it">
+        <div class="knob" id="mixknob" role="slider" tabindex="0" aria-label="tone"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <svg viewBox="0 0 46 46" aria-hidden="true">
+            <circle class="ktrack" cx="23" cy="23" r="17"/>
+            <circle class="karc" cx="23" cy="23" r="17" id="mixarc"/>
+            <circle class="kdot" cx="23" cy="23" r="2" id="mixdot"/>
+          </svg>
+        </div>
+        <span class="kname">Tone</span>
+      </div>
+    </div>
+
+    <button class="settoggle" id="settoggle" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+        <line x1="5" y1="8" x2="19" y2="8"/><circle cx="9" cy="8" r="2.4" fill="#120c07"/>
+        <line x1="5" y1="16" x2="19" y2="16"/><circle cx="15" cy="16" r="2.4" fill="#120c07"/>
+      </svg>Settings</button>
+
+    <div class="settings" id="settings" hidden>
+      <!-- Зеркало верхнего ряда: две ручки в линию, только символы. Слова тут лишние —
+           смысл несут значок и ховер, а подпись под каждой ручкой утроила бы текст в панели. -->
+      <div class="knobs">
+        <div class="knobcell" title="calm or lively — and how fast you fly">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L5 14h5l-1 8 8-12h-5l1-8z"/></svg>
+          <div class="knob" id="energyknob" role="slider" tabindex="0" aria-label="energy"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+            <svg viewBox="0 0 46 46" aria-hidden="true">
+              <circle class="ktrack" cx="23" cy="23" r="17"/>
+              <circle class="karc" cx="23" cy="23" r="17" id="energyarc"/>
+              <circle class="kdot" cx="23" cy="23" r="2" id="energydot"/>
+            </svg>
+          </div>
+        </div>
+        <div class="knobcell" title="how thick the shelter from outside sound is">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <ellipse cx="12" cy="12" rx="6" ry="8.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/></svg>
+          <div class="knob" id="maskknob" role="slider" tabindex="0" aria-label="cocoon"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="45">
+            <svg viewBox="0 0 46 46" aria-hidden="true">
+              <circle class="ktrack" cx="23" cy="23" r="17"/>
+              <circle class="karc" cx="23" cy="23" r="17" id="maskarc"/>
+              <circle class="kdot" cx="23" cy="23" r="2" id="maskdot"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="setdiv" role="separator"></div>
+      <div class="setrow" id="glowrow" hidden title="a warm thread at the right edge of pages — a door back to the flight; this toggle shows or hides it">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+          <line x1="4" y1="9.5" x2="20" y2="9.5"/><path d="M7 14h10M9.5 18h5" opacity=".55"/>
+        </svg>
+        <span class="lab">Edge tab</span>
+        <div class="swt" id="glowtoggle" role="switch" aria-checked="false" tabindex="0"></div>
+      </div>
+    </div>
+
+    <div class="ratebar" id="ratebar" hidden title="a rating helps others find the flight">
+      <span class="rlab" id="rlab">Rate us</span>
+      <span id="rstars"></span>
+    </div>
+
+    <button class="pipbtn" id="pip" hidden>Pop out</button>
+  </div>
+
+  <div class="shelf" id="shelf">
+    <label><input type="checkbox" id="fast"> fast (dev)</label>
+    <label><input type="checkbox" id="premium"> premium layer</label>
+    <label>harmony <input type="range" id="harmony" min="0" max="1" step="0.02" value="0.7"></label>
+  </div>
+
+  <script src="engine.js?b=38"></script>
+  <script src="tone.js?b=38"></script>
+  <script src="remote.js?b=38"></script>
+  <script src="hearth.js?b=38"></script>
+</body>
+</html>

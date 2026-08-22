@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  html,body{margin:0;padding:0;background:#05060f}
+  .b{width:1640px;height:624px;position:relative;overflow:hidden;font-family:'SF Pro Display',system-ui,sans-serif;background:#05060f}
+  canvas{position:absolute;inset:0}
+  /* центр обложки FB режет по-разному на десктопе и телефоне — текст держим в средней трети */
+  .txt{position:absolute;top:232px;left:150px;z-index:5}
+  .t1{color:#FFF6E6;font-size:62px;font-weight:700;letter-spacing:-1px;line-height:1.05}
+  .t2{color:#FFC978;font-size:27px;font-weight:600;margin-top:16px}
+</style></head><body>
+<div class="b">
+  <canvas id="c" width="1640" height="624"></canvas>
+  <div class="txt"><div class="t1">A focus timer made of sound</div><div class="t2">warm brown noise · on your device · no ads</div></div>
+</div>
+<script>
+const x=document.getElementById('c').getContext('2d'), W=1640,H=624, sx=1230, sy=312;
+let bg=x.createRadialGradient(sx,sy,40,sx-160,sy,1100);
+bg.addColorStop(0,'#141d3e');bg.addColorStop(.5,'#090d22');bg.addColorStop(1,'#05060f');
+x.fillStyle=bg;x.fillRect(0,0,W,H);
+function rnd(a,b){return a+Math.random()*(b-a);}
+for(let i=0;i<80;i++){
+  const ang=rnd(0,Math.PI*2), d0=rnd(70,250), len=d0*rnd(.35,.9);
+  const x1=sx+Math.cos(ang)*d0, y1=sy+Math.sin(ang)*d0*.9;
+  const x2=sx+Math.cos(ang)*(d0+len), y2=sy+Math.sin(ang)*(d0+len)*.9;
+  const g=x.createLinearGradient(x1,y1,x2,y2);
+  g.addColorStop(0,'rgba(255,214,150,0)');g.addColorStop(1,'rgba(255,225,170,'+rnd(.18,.5).toFixed(2)+')');
+  x.strokeStyle=g;x.lineWidth=rnd(1,2.2);x.lineCap='round';x.beginPath();x.moveTo(x1,y1);x.lineTo(x2,y2);x.stroke();
+}
+for(let i=0;i<40;i++){const px=rnd(0,W),py=rnd(0,H);x.globalAlpha=rnd(.25,.7);x.fillStyle=Math.random()<.3?'#ffd98f':'#ffe7b8';x.beginPath();x.arc(px,py,rnd(.9,2),0,7);x.fill();}
+x.globalAlpha=1;
+let gl=x.createRadialGradient(sx,sy,0,sx,sy,190);
+gl.addColorStop(0,'rgba(255,180,75,.5)');gl.addColorStop(.38,'rgba(255,150,45,.13)');gl.addColorStop(1,'rgba(255,150,45,0)');
+x.fillStyle=gl;x.beginPath();x.arc(sx,sy,190,0,7);x.fill();
+let core=x.createRadialGradient(sx,sy-4,0,sx,sy,32);
+core.addColorStop(0,'#fff2d6');core.addColorStop(.24,'#ffd98f');core.addColorStop(.5,'#f2a955');core.addColorStop(1,'rgba(214,120,70,0)');
+x.fillStyle=core;x.beginPath();x.arc(sx,sy,32,0,7);x.fill();
+</script>
+</body></html>
