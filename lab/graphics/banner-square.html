@@ -1,0 +1,45 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  html,body{margin:0;padding:0;background:#05060f}
+  .b{width:2048px;height:2048px;position:relative;overflow:hidden;font-family:'SF Pro Display',system-ui,sans-serif;background:#05060f}
+  canvas{position:absolute;inset:0}
+  .txt{position:absolute;top:250px;left:180px;z-index:5}
+  .t1{color:#FFF6E6;font-size:132px;font-weight:700;letter-spacing:-2px;line-height:1.04}
+  .t2{color:#FFC978;font-size:54px;font-weight:600;margin-top:34px;letter-spacing:.4px}
+  .clean .txt{display:none}
+</style></head><body>
+<div class="b" id="b">
+  <canvas id="c" width="2048" height="2048"></canvas>
+  <div class="txt"><div class="t1">Made of<br>warm sound</div><div class="t2">brown noise · a gentle focus timer</div></div>
+</div>
+<script>
+// квадрат 2048×2048 для FB — та же сцена, что и в CWS-баннере 1280×800 (одна кожа продукта),
+// пересобранная под квадрат. ?clean=1 — без текста (канон 4.3: FB хуже показывает рекламу с текстом)
+const clean = new URLSearchParams(location.search).has('clean');
+if (clean) document.getElementById('b').classList.add('clean');
+const x=document.getElementById('c').getContext('2d'), W=2048,H=2048;
+const sx = clean ? 1024 : 1280, sy = clean ? 1024 : 1290;   // без текста — звезда в центре
+let bg=x.createRadialGradient(sx,sy,60,sx-190,sy,1440);
+bg.addColorStop(0,'#141d3e');bg.addColorStop(.5,'#090d22');bg.addColorStop(1,'#05060f');
+x.fillStyle=bg;x.fillRect(0,0,W,H);
+function rnd(a,b){return a+Math.random()*(b-a);}
+// warp-полёт: звёзды сносит от звезды-цели наружу
+for(let i=0;i<110;i++){
+  const ang=rnd(0,Math.PI*2), d0=rnd(115,395), len=d0*rnd(.35,.9);
+  const x1=sx+Math.cos(ang)*d0, y1=sy+Math.sin(ang)*d0*.9;
+  const x2=sx+Math.cos(ang)*(d0+len), y2=sy+Math.sin(ang)*(d0+len)*.9;
+  const g=x.createLinearGradient(x1,y1,x2,y2);
+  g.addColorStop(0,'rgba(255,214,150,0)');g.addColorStop(1,'rgba(255,225,170,'+rnd(.18,.5).toFixed(2)+')');
+  x.strokeStyle=g;x.lineWidth=rnd(1.6,3.4);x.lineCap='round';x.beginPath();x.moveTo(x1,y1);x.lineTo(x2,y2);x.stroke();
+}
+// тёплые дальние звёзды-точки
+for(let i=0;i<90;i++){const px=rnd(0,W),py=rnd(0,H);x.globalAlpha=rnd(.25,.7);x.fillStyle=Math.random()<.3?'#ffd98f':'#ffe7b8';x.beginPath();x.arc(px,py,rnd(1.3,3),0,7);x.fill();}
+x.globalAlpha=1;
+// звезда-цель: аура + ядро
+let gl=x.createRadialGradient(sx,sy,0,sx,sy,288);
+gl.addColorStop(0,'rgba(255,180,75,.5)');gl.addColorStop(.38,'rgba(255,150,45,.13)');gl.addColorStop(1,'rgba(255,150,45,0)');
+x.fillStyle=gl;x.beginPath();x.arc(sx,sy,288,0,7);x.fill();
+let core=x.createRadialGradient(sx,sy-7,0,sx,sy,49);
+core.addColorStop(0,'#fff2d6');core.addColorStop(.24,'#ffd98f');core.addColorStop(.5,'#f2a955');core.addColorStop(1,'rgba(214,120,70,0)');
+x.fillStyle=core;x.beginPath();x.arc(sx,sy,49,0,7);x.fill();
+</script>
+</body></html>
