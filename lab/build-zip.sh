@@ -2,7 +2,7 @@
 # build-zip.sh — сборка билда для Chrome Web Store.
 #
 # ЗАЧЕМ. До 08-06 zip собирался руками по памяти, и это ровно тот шов, где теряются НОВЫЕ файлы:
-# `icon.js` и `tone.js` подключены так, что их отсутствие не роняет расширение — оно просто молча
+# `tone.js` подключён так, что его отсутствие не роняет расширение — оно просто молча
 # едет без иконки-таймера и без тона. Забытый файл прошёл бы модерацию и приехал юзерам.
 # Поэтому список файлов теперь ЗДЕСЬ, и сборка падает, если хоть одного из них нет на диске.
 #
@@ -42,7 +42,6 @@ FILES=(
   engine.js
   remote.js
   tone.js           # тоновый слой (08-06) — без него ручка «Air» есть, а тона за ней нет
-  icon.js           # иконка-таймер (08-06) — без него в тулбаре нет дуги остатка
   offscreen.js
   offscreen.html
   hearth.html
@@ -107,7 +106,7 @@ rm -f "$ZIP"                       # zip -r ДОПИСЫВАЕТ в сущест
 LIST=$(unzip -Z1 "$ZIP")
 IN_ZIP=$(printf '%s\n' "$LIST" | wc -l | tr -d ' ')
 LOCALES=$(printf '%s\n' "$LIST" | grep -c '_locales/.*/messages.json' || true)
-for must in tone.js icon.js manifest.json hearth.js; do
+for must in tone.js manifest.json hearth.js; do
   printf '%s\n' "$LIST" | grep -qx "$must" || { echo "✗ в архиве НЕТ $must"; exit 1; }
 done
 VNAME=$(unzip -p "$ZIP" manifest.json | python3 -c 'import json,sys;print(json.load(sys.stdin).get("version_name",""))')

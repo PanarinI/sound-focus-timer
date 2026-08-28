@@ -1,0 +1,194 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<title>Формы звезды на макетах панели — нажми и лети</title>
+<style>
+  /* Стенд рождён 2026-08-27: выбрать форму звезды НЕ по кружку на белом, а в бою — в макете панели,
+     в полёте, рядом друг с другом. Пять кандидатов (шар как есть остался в `star-form-stand.html`).
+     ЗВУКА ЗДЕСЬ НЕТ НАМЕРЕННО: пять панелей — пять движков, каша; форму судим глазом, звук уже принят.
+     Рейс сжат: 45 секунд на всё — собирание, ткань, рассвет, — чтобы дугу было видно целиком. */
+  html,body{margin:0;padding:0;background:#05060f;color:#c3d0ea;
+    font-family:'SF Pro Display','Inter',system-ui,sans-serif}
+  h1{font-size:18px;font-weight:700;color:#eaf0ff;margin:20px 0 3px;text-align:center}
+  .lead{text-align:center;font-size:12.5px;color:#8492b0;margin-bottom:14px}
+  .bar{display:flex;gap:14px;align-items:center;justify-content:center;padding:0 0 16px;flex-wrap:wrap}
+  .btn{background:#1a2340;border:1px solid #2b3a63;color:#dfe6f5;border-radius:9px;
+    padding:8px 16px;font:inherit;font-size:13px;cursor:pointer}
+  .btn:hover{border-color:#4a5f96}
+  .btn.on{background:#33406b}
+  .row{display:flex;gap:16px;justify-content:center;padding:0 16px 26px;flex-wrap:wrap}
+  .col{text-align:center}
+  .panel{position:relative;width:300px;height:600px;border-radius:14px;overflow:hidden;cursor:pointer;
+    background:#05060f;border:1px solid #1b2444}
+  .panel canvas{position:absolute;inset:0}
+  .dock{position:absolute;left:0;right:0;bottom:0;padding:16px 18px 18px;
+    background:linear-gradient(to top,rgba(11,8,5,.92) 0%,rgba(11,8,5,.66) 46%,rgba(11,8,5,0) 100%)}
+  .num{position:absolute;left:0;right:0;top:calc(40% + 40px);text-align:center;color:#f0d8b0;
+    font-size:24px;font-weight:300;font-variant-numeric:tabular-nums;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+  .slider{height:4px;border-radius:3px;background:#2a2119;position:relative;margin:0 4px}
+  .knob{position:absolute;top:-6px;left:38%;width:15px;height:15px;border-radius:50%;background:#e8c07a;
+    box-shadow:0 0 9px rgba(232,192,122,.6)}
+  .ticks{display:flex;justify-content:space-between;margin:7px 6px 0;font-size:10px;color:#5f5347}
+  .ticks b{color:#e8c07a;font-weight:700}
+  .name{margin-top:9px;font-size:13px;font-weight:600;color:#dfe6f5}
+  .phase{font-size:11.5px;color:#7d8aa8;margin-top:2px;min-height:15px}
+</style></head><body>
+<h1>Формы звезды на макетах — нажми и лети</h1>
+<div class="lead">Клик по панели — взлёт этой одной. Кнопка ниже поднимает все разом: так формы сравнимы в одной фазе. Звука здесь нет намеренно.</div>
+
+<div class="bar">
+  <button class="btn" id="all">▶ поднять все</button>
+  <button class="btn" id="stop">стоп</button>
+  <label style="font-size:12.5px;color:#8492b0">рейс <input type="range" id="dur" min="20" max="120" value="45" style="width:150px"><b id="durv" style="color:#c3d0ea">45 с</b></label>
+</div>
+
+<div class="row" id="row"></div>
+
+<script>
+const PHI = 1.6180339887;
+function core(x, cx, cy, r, a = 1) {
+  const g = x.createRadialGradient(cx, cy - r * .06, 0, cx, cy, r);
+  g.addColorStop(0, `rgba(255,242,214,${a})`); g.addColorStop(.24, `rgba(255,217,143,${a})`);
+  g.addColorStop(.5, `rgba(242,169,85,${a * .92})`); g.addColorStop(1, 'rgba(214,120,70,0)');
+  x.fillStyle = g; x.beginPath(); x.arc(cx, cy, r, 0, 7); x.fill();
+}
+function halo(x, cx, cy, r, k = 3.2, a = .34) {
+  const g = x.createRadialGradient(cx, cy, 0, cx, cy, r * k);
+  g.addColorStop(0, `rgba(255,180,75,${a})`); g.addColorStop(.38, 'rgba(255,150,45,.10)');
+  g.addColorStop(1, 'rgba(255,150,45,0)');
+  x.fillStyle = g; x.beginPath(); x.arc(cx, cy, r * k, 0, 7); x.fill();
+}
+
+// Пять кандидатов — те же функции, что на `star-form-stand.html`, чтобы стенды не разошлись.
+const FORMS = [
+  { id: 2, name: 'искра', draw(x, cx, cy, r, t) {
+      halo(x, cx, cy, r, 3.4, .30);
+      const R = r * 3.1, w = r * .62;
+      x.save(); x.translate(cx, cy); x.rotate(Math.sin(t / 47) * .05);
+      const g = x.createRadialGradient(0, 0, 0, 0, 0, R);
+      g.addColorStop(0, 'rgba(255,239,194,.95)'); g.addColorStop(.5, 'rgba(255,192,97,.55)');
+      g.addColorStop(1, 'rgba(242,148,31,0)'); x.fillStyle = g;
+      x.beginPath(); x.moveTo(0, -R);
+      x.bezierCurveTo(w * .35, -w, w, -w * .35, R, 0); x.bezierCurveTo(w, w * .35, w * .35, w, 0, R);
+      x.bezierCurveTo(-w * .35, w, -w, w * .35, -R, 0); x.bezierCurveTo(-w, -w * .35, -w * .35, -w, 0, -R);
+      x.fill(); x.restore(); core(x, cx, cy, r * .74);
+    } },
+  { id: 3, name: 'дифракция', draw(x, cx, cy, r, t) {
+      halo(x, cx, cy, r);
+      x.save(); x.translate(cx, cy); x.globalCompositeOperation = 'lighter';
+      [0, Math.PI / 2].forEach((a0, i) => {
+        const L = r * (i ? 4.4 : 6.2) * (1 + .05 * Math.sin(t / (31 + i * 13)));
+        const g = x.createLinearGradient(-L, 0, L, 0);
+        g.addColorStop(0, 'rgba(255,214,150,0)'); g.addColorStop(.5, 'rgba(255,231,184,.42)');
+        g.addColorStop(1, 'rgba(255,214,150,0)');
+        x.save(); x.rotate(a0); x.fillStyle = g; x.beginPath();
+        x.moveTo(-L, 0); x.lineTo(0, -r * .13); x.lineTo(L, 0); x.lineTo(0, r * .13);
+        x.closePath(); x.fill(); x.restore();
+      });
+      x.restore(); core(x, cx, cy, r);
+    } },
+  { id: 4, name: 'кайма живая', draw(x, cx, cy, r, t) {
+      halo(x, cx, cy, r); x.beginPath();
+      for (let i = 0; i <= 120; i++) {
+        const a = i / 120 * Math.PI * 2;
+        const k = 1 + .045 * Math.sin(a * 2 + t / 9) + .028 * Math.sin(a * 3 + t / (9 * PHI));
+        const px = cx + Math.cos(a) * r * k, py = cy + Math.sin(a) * r * k;
+        i ? x.lineTo(px, py) : x.moveTo(px, py);
+      }
+      x.closePath();
+      const g = x.createRadialGradient(cx, cy - r * .06, 0, cx, cy, r * 1.06);
+      g.addColorStop(0, 'rgba(255,242,214,1)'); g.addColorStop(.26, 'rgba(255,217,143,1)');
+      g.addColorStop(.55, 'rgba(242,169,85,.9)'); g.addColorStop(1, 'rgba(214,120,70,0)');
+      x.fillStyle = g; x.fill();
+    } },
+  { id: 5, name: 'корона', draw(x, cx, cy, r, t) {
+      x.save(); x.globalCompositeOperation = 'lighter';
+      for (let i = 0; i < 22; i++) {
+        const a = i / 22 * Math.PI * 2 + t / 210;
+        const len = r * (1.5 + 1.5 * (.5 + .5 * Math.sin(a * 3 + t / 17 + i)));
+        const g = x.createRadialGradient(cx, cy, r * .5, cx, cy, len);
+        g.addColorStop(0, 'rgba(255,190,95,.10)'); g.addColorStop(1, 'rgba(255,150,45,0)');
+        x.fillStyle = g; x.beginPath(); x.moveTo(cx, cy); x.arc(cx, cy, len, a - .22, a + .22);
+        x.closePath(); x.fill();
+      }
+      x.restore(); halo(x, cx, cy, r, 2.4, .18); core(x, cx, cy, r);
+    } },
+  { id: 6, name: 'ядро в кольце', draw(x, cx, cy, r, t) {
+      halo(x, cx, cy, r);
+      const rr = r * (2.15 + .06 * Math.sin(t / 23));
+      x.strokeStyle = 'rgba(255,201,120,.16)'; x.lineWidth = Math.max(1, r * .055);
+      x.beginPath(); x.arc(cx, cy, rr, 0, 7); x.stroke();
+      core(x, cx, cy, r);
+    } },
+];
+
+const W = 300, H = 600, CY = H * 0.40;
+const dur = document.getElementById('dur'), durv = document.getElementById('durv');
+dur.oninput = () => durv.textContent = dur.value + ' с';
+
+const panels = FORMS.map((f) => {
+  const col = document.createElement('div'); col.className = 'col';
+  const p = document.createElement('div'); p.className = 'panel';
+  const cv = document.createElement('canvas'); cv.width = W; cv.height = H; p.appendChild(cv);
+  const num = document.createElement('div'); num.className = 'num'; num.textContent = '25′'; p.appendChild(num);
+  p.insertAdjacentHTML('beforeend',
+    '<div class="dock"><div class="slider"><div class="knob"></div></div>' +
+    '<div class="ticks"><span>5</span><span>15</span><b>25</b><span>45</span><span>90</span><span>∞</span></div></div>');
+  col.appendChild(p);
+  const nm = document.createElement('div'); nm.className = 'name'; nm.textContent = f.id + ' · ' + f.name; col.appendChild(nm);
+  const ph = document.createElement('div'); ph.className = 'phase'; col.appendChild(ph);
+  document.getElementById('row').appendChild(col);
+
+  // звёздное поле: точки сносит от центра — тот же образ полёта, что в панели
+  const dots = Array.from({ length: 90 }, () => ({
+    a: Math.random() * Math.PI * 2, d: 20 + Math.random() * 300, s: .2 + Math.random() * .9,
+    r: .5 + Math.random() * 1.4,
+  }));
+  const st = { f, x: cv.getContext('2d'), num, ph, dots, t0: null };
+  p.onclick = () => { st.t0 = st.t0 ? null : performance.now() / 1000; };
+  return st;
+});
+
+document.getElementById('all').onclick = () => {
+  const now = performance.now() / 1000; panels.forEach((p) => p.t0 = now);
+};
+document.getElementById('stop').onclick = () => panels.forEach((p) => p.t0 = null);
+
+function phaseOf(u) {                       // те же доли, что у движка: собирание · ткань · рассвет
+  if (u < 0.18) return ['собирание', u / 0.18 * 0.34];
+  if (u < 0.78) return ['ткань', 0.34 + (u - 0.18) / 0.60 * 0.56];
+  return ['рассвет', 0.90 + (u - 0.78) / 0.22 * 0.10];
+}
+
+function frame(ms) {
+  const t = ms / 1000, D = +dur.value;
+  panels.forEach((p) => {
+    const x = p.x;
+    let prog = 0, label = '';
+    if (p.t0 != null) {
+      const u = Math.min(1, (t - p.t0) / D);
+      const [name, g] = phaseOf(u);
+      prog = g; label = name + ' · ' + Math.round(u * 100) + '%';
+      if (u >= 1) { p.t0 = null; label = 'прибытие'; }
+    }
+    x.clearRect(0, 0, W, H);
+    const bg = x.createRadialGradient(W / 2, CY, 10, W / 2, CY, H * .9);
+    bg.addColorStop(0, '#141d3e'); bg.addColorStop(.5, '#090d22'); bg.addColorStop(1, '#05060f');
+    x.fillStyle = bg; x.fillRect(0, 0, W, H);
+    // поле: в полёте точки сносит наружу, в покое почти стоят
+    p.dots.forEach((d) => {
+      d.d += (p.t0 != null ? d.s * 1.6 : d.s * 0.06);
+      if (d.d > 420) { d.d = 14; d.a = Math.random() * Math.PI * 2; }
+      x.globalAlpha = Math.min(.75, d.d / 260);
+      x.fillStyle = '#ffe7b8'; x.beginPath();
+      x.arc(W / 2 + Math.cos(d.a) * d.d, CY + Math.sin(d.a) * d.d * .92, d.r, 0, 7); x.fill();
+    });
+    x.globalAlpha = 1;
+    const breath = 1 + .021 * Math.sin(t * 2 * Math.PI / 7);
+    p.f.draw(x, W / 2, CY, (8 + prog * 66) * breath, t);
+    p.num.style.opacity = p.t0 == null ? 1 : 0;
+    p.ph.textContent = label;
+  });
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body></html>

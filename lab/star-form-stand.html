@@ -1,0 +1,163 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<title>Стенд формы звезды — чем она может быть, кроме шара</title>
+<style>
+  /* Стенд рождён 2026-08-27 по слову автора: «не нравится идеально ровный шар — даже форма на
+     маленьком баннере притягательнее лысого шара». Задача: предложить чуть менее минималистичное,
+     но не барочное. Все варианты живут по одному закону продукта: ОДНО тёплое присутствие, дышит,
+     НЕ персонаж; рост = приближение. Никаких резких событий — всё движется гладко. */
+  html,body{margin:0;padding:0;background:#05060f;color:#c3d0ea;
+    font-family:'SF Pro Display','Inter',system-ui,sans-serif}
+  h1{font-size:19px;font-weight:700;color:#eaf0ff;margin:22px 0 4px;text-align:center}
+  .lead{text-align:center;font-size:13px;color:#8492b0;margin-bottom:18px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:0 18px 22px;max-width:1180px;margin:0 auto}
+  .cell{background:radial-gradient(ellipse 90% 90% at 50% 42%,#131c40 0%,#090d22 58%,#05060f 100%);
+    border:1px solid #1b2444;border-radius:14px;padding:10px 10px 12px;text-align:center}
+  canvas{display:block;margin:0 auto;border-radius:10px}
+  .name{font-size:13px;font-weight:600;color:#dfe6f5;margin-top:8px}
+  .note{font-size:11.5px;color:#7d8aa8;margin-top:3px;line-height:1.35;min-height:30px}
+  .bar{display:flex;gap:16px;align-items:center;justify-content:center;padding:14px;flex-wrap:wrap}
+  label{font-size:12.5px;color:#8492b0;display:flex;align-items:center;gap:8px}
+  input[type=range]{width:190px}
+  b{color:#c3d0ea;font-variant-numeric:tabular-nums;min-width:34px;display:inline-block}
+</style></head><body>
+<h1>Форма звезды — шесть вариантов</h1>
+<div class="lead">Один и тот же закон: одно тёплое присутствие, дышит, растёт = приближается. Разница только в том, чем оно кроме шара.</div>
+
+<div class="bar">
+  <label>приближение <input type="range" id="p" min="0" max="100" value="30"><b id="pv">30%</b></label>
+  <label><input type="checkbox" id="breathe" checked> дыхание</label>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<script>
+const PHI = 1.6180339887;
+// ── общее ядро: та же палитра, что в панели (#fff2d6 → #ffd98f → #f2a955) ─────────────────
+function core(x, cx, cy, r, a = 1) {
+  const g = x.createRadialGradient(cx, cy - r * 0.06, 0, cx, cy, r);
+  g.addColorStop(0, `rgba(255,242,214,${a})`);
+  g.addColorStop(.24, `rgba(255,217,143,${a})`);
+  g.addColorStop(.5, `rgba(242,169,85,${a * .92})`);
+  g.addColorStop(1, 'rgba(214,120,70,0)');
+  x.fillStyle = g; x.beginPath(); x.arc(cx, cy, r, 0, 7); x.fill();
+}
+function halo(x, cx, cy, r, k = 3.2, a = .34) {
+  const g = x.createRadialGradient(cx, cy, 0, cx, cy, r * k);
+  g.addColorStop(0, `rgba(255,180,75,${a})`);
+  g.addColorStop(.38, 'rgba(255,150,45,.10)');
+  g.addColorStop(1, 'rgba(255,150,45,0)');
+  x.fillStyle = g; x.beginPath(); x.arc(cx, cy, r * k, 0, 7); x.fill();
+}
+
+const VARIANTS = [
+  { name: '1 · шар (как сейчас)', note: 'То, что стоит в панели. Ровный круг с ореолом.',
+    draw(x, cx, cy, r) { halo(x, cx, cy, r); core(x, cx, cy, r); } },
+
+  { name: '2 · искра', note: 'Форма с плитки и иконки: четыре луча из того же тела. Одна кожа у продукта везде.',
+    draw(x, cx, cy, r, t) {
+      halo(x, cx, cy, r, 3.4, .30);
+      const R = r * 3.1, w = r * 0.62;
+      x.save(); x.translate(cx, cy); x.rotate(Math.sin(t / 47) * 0.05);
+      // градиент строится ПОСЛЕ сдвига, в локальных координатах: иначе его центр уезжает вдвое
+      // дальше и лучи выходят прозрачными (поймано на первом рендере стенда)
+      const g = x.createRadialGradient(0, 0, 0, 0, 0, R);
+      g.addColorStop(0, 'rgba(255,239,194,.95)'); g.addColorStop(.5, 'rgba(255,192,97,.55)');
+      g.addColorStop(1, 'rgba(242,148,31,0)');
+      x.fillStyle = g;
+      x.beginPath();
+      x.moveTo(0, -R); x.bezierCurveTo(w * .35, -w, w, -w * .35, R, 0);
+      x.bezierCurveTo(w, w * .35, w * .35, w, 0, R);
+      x.bezierCurveTo(-w * .35, w, -w, w * .35, -R, 0);
+      x.bezierCurveTo(-w, -w * .35, -w * .35, -w, 0, -R);
+      x.fill(); x.restore();
+      core(x, cx, cy, r * .74);
+    } },
+
+  { name: '3 · дифракция', note: 'Ядро как есть, плюс четыре тонких длинных луча — так звезда выглядит в объективе.',
+    draw(x, cx, cy, r, t) {
+      halo(x, cx, cy, r);
+      x.save(); x.translate(cx, cy); x.globalCompositeOperation = 'lighter';
+      [0, Math.PI / 2].forEach((a0, i) => {
+        const L = r * (i ? 4.4 : 6.2) * (1 + 0.05 * Math.sin(t / (31 + i * 13)));
+        const g = x.createLinearGradient(-L, 0, L, 0);
+        g.addColorStop(0, 'rgba(255,214,150,0)'); g.addColorStop(.5, 'rgba(255,231,184,.42)');
+        g.addColorStop(1, 'rgba(255,214,150,0)');
+        x.save(); x.rotate(a0); x.fillStyle = g;
+        x.beginPath(); x.moveTo(-L, 0); x.lineTo(0, -r * .13); x.lineTo(L, 0); x.lineTo(0, r * .13);
+        x.closePath(); x.fill(); x.restore();
+      });
+      x.restore(); core(x, cx, cy, r);
+    } },
+
+  { name: '4 · кайма живая', note: 'Тот же шар, но край не циркульный: медленно гуляет несоизмеримыми волнами — как дрейф звука.',
+    draw(x, cx, cy, r, t) {
+      halo(x, cx, cy, r);
+      x.beginPath();
+      for (let i = 0; i <= 120; i++) {
+        const a = i / 120 * Math.PI * 2;
+        const k = 1 + 0.045 * Math.sin(a * 2 + t / 9) + 0.028 * Math.sin(a * 3 + t / (9 * PHI));
+        const px = cx + Math.cos(a) * r * k, py = cy + Math.sin(a) * r * k;
+        i ? x.lineTo(px, py) : x.moveTo(px, py);
+      }
+      x.closePath();
+      const g = x.createRadialGradient(cx, cy - r * .06, 0, cx, cy, r * 1.06);
+      g.addColorStop(0, 'rgba(255,242,214,1)'); g.addColorStop(.26, 'rgba(255,217,143,1)');
+      g.addColorStop(.55, 'rgba(242,169,85,.9)'); g.addColorStop(1, 'rgba(214,120,70,0)');
+      x.fillStyle = g; x.fill();
+    } },
+
+  { name: '5 · корона', note: 'Ядро плотное, вокруг неровная дышащая атмосфера — звезда, а не шарик.',
+    draw(x, cx, cy, r, t) {
+      x.save(); x.globalCompositeOperation = 'lighter';
+      for (let i = 0; i < 22; i++) {
+        const a = i / 22 * Math.PI * 2 + t / 210;
+        const len = r * (1.5 + 1.5 * (0.5 + 0.5 * Math.sin(a * 3 + t / 17 + i)));
+        const g = x.createRadialGradient(cx, cy, r * .5, cx, cy, len);
+        g.addColorStop(0, 'rgba(255,190,95,.10)'); g.addColorStop(1, 'rgba(255,150,45,0)');
+        x.fillStyle = g;
+        x.beginPath(); x.moveTo(cx, cy);
+        x.arc(cx, cy, len, a - .22, a + .22); x.closePath(); x.fill();
+      }
+      x.restore(); halo(x, cx, cy, r, 2.4, .18); core(x, cx, cy, r);
+    } },
+
+  { name: '6 · ядро в кольце', note: 'Плотное ядро и одно очень тихое кольцо поодаль — глубина без украшательства.',
+    draw(x, cx, cy, r, t) {
+      halo(x, cx, cy, r);
+      const rr = r * (2.15 + 0.06 * Math.sin(t / 23));
+      x.strokeStyle = 'rgba(255,201,120,.16)'; x.lineWidth = Math.max(1, r * .055);
+      x.beginPath(); x.arc(cx, cy, rr, 0, 7); x.stroke();
+      core(x, cx, cy, r);
+    } },
+];
+
+const W = 352, H = 300;
+const cells = VARIANTS.map((v) => {
+  const cell = document.createElement('div'); cell.className = 'cell';
+  const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+  cell.appendChild(cv);
+  const n = document.createElement('div'); n.className = 'name'; n.textContent = v.name; cell.appendChild(n);
+  const nt = document.createElement('div'); nt.className = 'note'; nt.textContent = v.note; cell.appendChild(nt);
+  document.getElementById('grid').appendChild(cell);
+  return { v, x: cv.getContext('2d') };
+});
+
+const p = document.getElementById('p'), pv = document.getElementById('pv'), br = document.getElementById('breathe');
+p.oninput = () => pv.textContent = p.value + '%';
+
+function frame(ms) {
+  const t = ms / 1000;
+  const prog = +p.value / 100;
+  // размер = приближение (как в панели: 16px … ~166px), дыхание — та же амплитуда, что в продукте
+  const base = 8 + prog * 75;
+  const breath = br.checked ? 1 + 0.021 * Math.sin(t * 2 * Math.PI / 7) : 1;
+  const r = base * breath;
+  cells.forEach(({ v, x }) => {
+    x.clearRect(0, 0, W, H);
+    v.draw(x, W / 2, H / 2, r, t);
+  });
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body></html>
