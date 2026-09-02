@@ -1,0 +1,41 @@
+<!doctype html><meta charset="utf-8"><!-- ЗАПУСК: сервер sft-root (корень проекта) → /lab/colour-check.html -->
+<title>проверка цветов шума</title>
+<body style="background:#12100c;color:#c79a58;font:13px/1.6 ui-monospace,monospace;padding:20px">
+<p style="color:#7d6a4a;margin:0 0 14px">Стенд движка. Запуск: Browser pane → сервер <b>sft-root</b> (корень проекта, порт 8785) → <code>/lab/colour-check.html</code>. Считает в OfflineAudioContext — ничего не звучит.</p>
+<pre id="out">измеряю…</pre>
+<script>
+// OfflineAudioContext — ничего не звучит и звук нигде не остаётся играть.
+window.__oc = null; window.AudioContext = function () { return window.__oc; };
+</script>
+<script src="../extension/engine.js"></script>
+<script>
+(async () => {
+  const L = ['цвет · молния → яркость (переходов через ноль в секунду) и RMS', ''];
+  const COL = { brown: { b: 1, p: 0, w: 0 }, pink: { b: .20, p: .42, w: 0 }, white: { b: .14, p: .16, w: .26 } };
+  for (const c of ['brown', 'pink', 'white']) {
+    const row = [];
+    for (const energy of [0, 0.4, 1]) {
+      const oc = window.__oc = new OfflineAudioContext(1, 44100 * 2, 44100);
+      const e = new AudioEngine(() => {}); e._build();
+      e.char.energy = energy; e.colour = c;
+      // повторяем формулу дирижёра напрямую: в offline-контексте тикер не идёт
+      const arousal = energy, shape = 0.98;
+      e.brownLP.frequency.value = Math.max(150, Math.min(1000, (430 + arousal * 470) * shape));
+      e.pinkLP.frequency.value  = Math.max(900, Math.min(7000, (2600 + arousal * 3600) * shape));
+      e.whiteLP.frequency.value = Math.max(1400, Math.min(11000, (4200 + arousal * 5300) * shape));
+      e.master.gain.value = 1;
+      const m = COL[c];
+      e.brownGain.gain.value = 0.75 * m.b; e.pinkBody.gain.value = 0.75 * m.p; e.whiteBody.gain.value = 0.75 * m.w;
+      const d = (await oc.startRendering()).getChannelData(0);
+      let rms = 0, zc = 0;
+      for (let i = 1; i < d.length; i++) { rms += d[i] * d[i]; if ((d[i] >= 0) !== (d[i - 1] >= 0)) zc++; }
+      row.push(`молния ${energy.toFixed(1)}: ${String(Math.round(zc / 2)).padStart(5)}  rms ${Math.sqrt(rms / d.length).toFixed(3)}`);
+    }
+    L.push(c.padEnd(6) + row.join('   |   '));
+  }
+  const oc2 = window.__oc = new OfflineAudioContext(1, 44100, 44100);
+  const e2 = new AudioEngine(() => {}); e2._build();
+  L.push('', `контроль дефолта: colour=${e2.colour} · pinkBody=${e2.pinkBody.gain.value} · whiteBody=${e2.whiteBody.gain.value}`);
+  document.getElementById('out').textContent = L.join('\n');
+})().catch((e) => document.getElementById('out').textContent = 'ОШИБКА: ' + e.message + '\n' + e.stack);
+</script>

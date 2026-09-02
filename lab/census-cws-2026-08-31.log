@@ -1,0 +1,556 @@
+# Сырой вывод census_run.py --check (критерий v3), 2026-08-31
+# инструмент: app-studio/research/lib/sky/census_run.py · дискавери = внутренний поиск CWS (hl=en-US&gl=US)
+
+
+=== 'minimalist timer' → OCCUPIED-WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟠 Minimalist Timer · 53 яз · 4783 симв · 110 юз
+  класс  langs desc   users     опт  title
+  NO     ?     1848   1,000     нет  Minimalist Focus Timer
+  EQUAL  53    4783   110       да   Minimalist Timer
+  NO     ?     6304   36        да   Pomo — Minimalist Pomodoro Timer
+  NO     ?     1849   179       нет  Simple Timer
+  NO     ?     1578   9         нет  Minimalist Countdown Timer
+  NO     ?     2880   2,000     нет  Sidebar Clock
+  NO     ?     1785   ?         нет  Simple Timer
+  NO     ?     2848   4         нет  FocusZero: Minimalist New Tab & Focus Timer
+  NO     ?     4226   397       да   Countdown Timer - A Simple Count Down Timer 
+  NO     51    2569   6,000     да   Timer — Efficient, Simple & Reliable Countdo
+
+=== 'calm timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     2889   3         нет  Calm Countdown Timer
+  NO     ?     2004   10        нет  Breathing Timer — Calm & Focus
+  NO     53    4783   110       да   Minimalist Timer
+  NO     ?     2029   34        нет  Break Now - Simple Meditation Timer to relie
+  NO     ?     2210   ?         нет  CasaLoop: Calm New Tab, Focus Timer & To-Do 
+  NO     ?     3210   6         да   Capy: Study Timer, Notes, Flashcards & Site 
+  NO     ?     2787   33        нет  Sage: Pomodoro Focus & Study Timer, Website 
+  NO     52    5279   263       да   30 Minute Timer — Visual Countdown Timer
+  NO     52    4922   92        да   Visual Timer for Kids
+  NO     4     4511   394       да   New Tab: Pomodoro Timer & Site Blocker for C
+
+=== 'clean timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     17    4917   70,000    да   Call Timer for Meet
+  NO     53    4783   110       да   Minimalist Timer
+  NO     ?     3462   31        да   Timer
+  NO     ?     2537   57        нет  Pomodoro Timer: Fullscreen & Widget
+  NO     ?     2372   25        нет  Tibia Timer Pro
+  NO     52    5635   1,000     да   Break Timer
+  NO     ?     2650   17        нет  Focus Tide Timer
+  NO     55    2751   16        да   Multi-function timer
+  NO     53    4390   897       да   Pomodoro Technique Timer
+  NO     51    2569   6,000     да   Timer — Efficient, Simple & Reliable Countdo
+
+=== 'cute timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     3127   469       да   Tiny Timer
+  NO     52    4590   6,000     да   Study Timer
+  NO     30    3758   500,000   да   Focus To-Do: Pomodoro Timer & To Do List
+  NO     52    4735   379       да   Pomodoro Timer
+  NO     ?     2105   44        нет  Cute Countdown Timer
+  NO     ?     2805   20,000    нет  Visual Timer
+  NO     43    4765   50,000    да   Timer for Google Chrome™
+  NO     ?     4655   60,000    да   Otto: Pomodoro timer & Website Blocker. Bloc
+  NO     ?     2140   20        нет  Cute Countdown Timer
+  NO     53    4783   110       да   Minimalist Timer
+
+=== 'aesthetic timer' → OCCUPIED-WEAK  (стор-поиск: 9 расширений, 9 проверено) ===
+🟠 Aesthetic Timer · 52 яз · 4244 симв · 388 юз
+  класс  langs desc   users     опт  title
+  NO     ?     1392   47        нет  Aesthetic Pomodoro Timer
+  NO     52    4735   379       да   Pomodoro Timer
+  EQUAL  52    4244   388       да   Aesthetic Timer
+  NO     53    4783   110       да   Minimalist Timer
+  NO     5     4633   50,000    да   Ghiblify
+  NO     18    2951   15        нет  ZoraTime — Pomodoro, Timer & Site Blocker
+  NO     ?     3180   7         да   Magicly - Productivity & Aesthetic New Tab
+  NO     52    5279   263       да   30 Minute Timer — Visual Countdown Timer
+  NO     ?     2558   5         нет  Pomodoro Timer
+
+=== 'concentration timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     52    4590   6,000     да   Study Timer
+  NO     56    2955   5,000     да   Pomodoro Timer
+  NO     52    3888   497       да   Pomofocus: Pomodoro Timer & Site Blocker for
+  NO     ?     2805   20,000    нет  Visual Timer
+  NO     ?     3964   513       да   Tomato Timeout - ADHD Focus Timer + Site Blo
+  NO     ?     1912   1,000     нет  Pomodoro Timer
+  NO     ?     2658   ?         нет  Task Pomodoro Timer
+  NO     48    10114  1,000     да   PomodoTree: Pomodoro Timer & Site Blocker
+  NO     53    4783   110       да   Minimalist Timer
+  NO     4     2411   61        нет  Pomodoro Focus Timer
+
+=== 'flow timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Flow Timer - Pomodoro · ? яз · 2427 симв · 6 юз
+  класс  langs desc   users     опт  title
+  NO     ?     2005   8,000     нет  FlowTime
+  EQUAL  ?     1509   ?         нет  Flow Timer
+  NO     ?     1905   1,000     нет  Kaizen Flow - Pomodoro Timer (new tab)
+  NO     ?     2690   4         нет  Focus Flow — Pomodoro Timer
+  NO     ?     2770   3         нет  Flow - Strict Focus Timer
+  START  ?     2427   6         нет  Flow Timer - Pomodoro
+  NO     ?     1951   8         нет  Time Flow
+  NO     ?     1911   26        нет  Rhythm + Flow: Structured Focus Timer
+  NO     ?     2585   ?         нет  Focus Flow - Pomodoro Timer & Site Blocker
+  NO     10    4285   150       да   Flow: Website Blocker & Focus Timer — Screen
+
+=== 'desktop timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     43    4765   50,000    да   Timer for Google Chrome™
+  NO     12    1934   80,000    нет  Alarm, Timer and Stopwatch
+  NO     ?     2192   49        нет  Countdown timer For PC,Windows and Mac (Upda
+  NO     52    4590   6,000     да   Study Timer
+  NO     ?     2152   14        нет  Simple Countdown Timer
+  NO     51    2569   6,000     да   Timer — Efficient, Simple & Reliable Countdo
+  NO     ?     2364   130       нет  Quick Countdown Timer
+  NO     2     4714   10,000    да   Talking Clock
+  NO     ?     2399   12        нет  Quick Timer
+  NO     ?     2038   93        нет  Screen Timer
+
+=== 'floating timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Floating Timer · ? яз · 1949 симв · 8000 юз
+  класс  langs desc   users     опт  title
+  EQUAL  ?     1949   8,000     нет  Floating Timer
+  EQUAL  ?     1522   2,000     нет  Floating Timer
+  NO     ?     2190   360       нет  Floating Countdown Timer
+  NO     ?     2645   354       нет  Floating Clock - Always Visible Time, Stopwa
+  NO     ?     1763   15        нет  Floating Stopwatch Timer
+  NO     ?     2412   4,000     нет  Tab Countdown Timer
+  NO     ?     1360   354       нет  PopClock - Floating Time & Timer
+  NO     ?     1661   7,000     нет  CountDown Timer
+  MID    ?     2860   31        нет  Stopwatch — Floating Timer for Every Tab
+  EQUAL  ?     2604   18        нет  Floating Timer
+
+=== 'gentle timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     53    4783   110       да   Minimalist Timer
+  NO     ?     2483   ?         нет  Sprint — Gentle Focus Timer
+  NO     6     3727   14        да   SlimeForge — Pomodoro Timer & Focus Pet
+  NO     14    2362   6         нет  Easy Exam Timer
+  NO     3     5159   3,000     да   Yellow Tomato — Pomodoro Focus Timer & Websi
+  NO     ?     3395   13        да   Visual Timer
+  NO     ?     3718   7         да   ChibiFocus: Focus Timer with Cute Companions
+  NO     ?     3195   7         да   慢吞吞 - Snail Timer
+  NO     ?     2360   18        нет  Drift: Focus Timer & Pomodoro
+  NO     ?     2321   11        нет  A Gentle Reminder
+
+=== 'adhd timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 ADHD Timer · ? яз · 1732 симв · 8 юз
+  класс  langs desc   users     опт  title
+  NO     ?     1559   35        нет  Timer for ADHD
+  NO     ?     3964   513       да   Tomato Timeout - ADHD Focus Timer + Site Blo
+  NO     ?     3711   317       да   Focus AI | AI Website Blocker, Pomodoro Time
+  NO     ?     4758   10        да   Dopamodoro - ADHD Pomodoro Timer & AI Focus 
+  NO     ?     2716   72        нет  Monora: ADHD Focus Timer & Distraction Block
+  NO     ?     2246   3,000     нет  Meowdoro Tracker - Pomodoro Work Timer & Pro
+  NO     ?     3220   62        да   Do One Thing - ADHD Focus Timer & Task Manag
+  NO     55    2749   29        да   Pomodoro Focus Timer & ADHD Study Tool by Lo
+  EQUAL  ?     1732   8         нет  ADHD Timer
+  NO     4     4511   394       да   New Tab: Pomodoro Timer & Site Blocker for C
+
+=== 'visual timer' → OCCUPIED-WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟠 Visual Timer · 54 яз · 2373 симв · 883 юз
+  класс  langs desc   users     опт  title
+  EQUAL  ?     2805   20,000    нет  Visual Timer
+  START  52    4922   92        да   Visual Timer for Kids
+  NO     7     4457   100,000   да   Slides Timer
+  NO     52    5279   263       да   30 Minute Timer — Visual Countdown Timer
+  EQUAL  54    2373   883       да   Visual Timer
+  NO     ?     2372   1,000     нет  TimeDay - Focus Pomodoro Timer and Countdown
+  EQUAL  ?     2811   61        нет  Visual Timer
+  START  ?     1788   212       нет  Visual Timer by Lesson Shuffle
+  EQUAL  ?     3395   13        да   Visual Timer
+  NO     2     3937   53        да   One Day Planning - Visual Daily Scheduler & 
+
+=== 'aesthetic pomodoro timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Aesthetic Pomodoro Timer · ? яз · 1392 симв · 47 юз
+  класс  langs desc   users     опт  title
+  EQUAL  ?     1392   47        нет  Aesthetic Pomodoro Timer
+  NO     52    4735   379       да   Pomodoro Timer
+  NO     53    4783   110       да   Minimalist Timer
+  NO     18    2951   15        нет  ZoraTime — Pomodoro, Timer & Site Blocker
+  NO     ?     3801   10        да   Memento Focus: Pomodoro Timer & Site Blocker
+  NO     ?     3180   7         да   Magicly - Productivity & Aesthetic New Tab
+  NO     52    5279   263       да   30 Minute Timer — Visual Countdown Timer
+  NO     ?     3043   30        да   Revelation: Aesthetic New Tab
+  NO     5     4633   50,000    да   Ghiblify
+  NO     ?     2251   330       нет  Cozy Pomodoro
+
+=== 'focus timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Focus Timer · 10 яз · 2144 симв · 6000 юз
+  класс  langs desc   users     опт  title
+  NO     30    3758   500,000   да   Focus To-Do: Pomodoro Timer & To Do List
+  EQUAL  10    2144   6,000     нет  Focus Timer
+  NO     ?     4655   60,000    да   Otto: Pomodoro timer & Website Blocker. Bloc
+  NO     56    2955   5,000     да   Pomodoro Timer
+  NO     ?     0      1,000     нет  Purrfect Pomodoro Timer: Productivity, Time 
+  NO     ?     2372   1,000     нет  TimeDay - Focus Pomodoro Timer and Countdown
+  NO     53    4390   897       да   Pomodoro Technique Timer
+  NO     ?     1952   1,000     нет  Pomodoro Timer for Google Calendar
+  NO     52    3888   497       да   Pomofocus: Pomodoro Timer & Site Blocker for
+  MID    ?     2108   390       нет  Pomodoro Focus Timer
+
+=== 'study timer' → OCCUPIED  (стор-поиск: 10 расширений, 10 проверено) ===
+🔴 Study Timer · 52 яз · 4590 симв · 6000 юз
+  класс  langs desc   users     опт  title
+  NO     30    3758   500,000   да   Focus To-Do: Pomodoro Timer & To Do List
+  EQUAL  52    4590   6,000     да   Study Timer
+  NO     3     1927   6,000     нет  Pomodoro Timer PRO
+  NO     ?     4655   60,000    да   Otto: Pomodoro timer & Website Blocker. Bloc
+  NO     53    4390   897       да   Pomodoro Technique Timer
+  NO     10    2144   6,000     нет  Focus Timer
+  NO     52    3888   497       да   Pomofocus: Pomodoro Timer & Site Blocker for
+  MID    ?     2787   33        нет  Sage: Pomodoro Focus & Study Timer, Website 
+  NO     ?     0      1,000     нет  Purrfect Pomodoro Timer: Productivity, Time 
+  NO     ?     1433   50,000    нет  Pomodoro Chrome Extension
+
+=== dry-run: 15 двери · дискавери $0 (стор-поиск) · keys.csv НЕ тронут ===
+
+=== 'brown noise timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     53    4783   110       да   Minimalist Timer
+  NO     ?     1746   27        нет  FocusRoom — New Tab Lo-Fi, Rain & Brown Nois
+  NO     ?     4160   10        да   Pomodoro Timer by Habi
+  NO     7     4925   20        да   Focus Timer Pro - Pomodoro Assistant
+  NO     ?     2549   3         нет  ProTab – Pomodoro Timer & Productivity
+  NO     ?     3452   3         да   Website Blocker & Focus Timer — Focusr
+  NO     ?     3868   2         да   LeetNoise
+  NO     ?     3528   10        да   Flowtime Timer by Habi
+  NO     ?     2115   48        нет  TAKT
+  NO     ?     3518   54        да   White Noise Studio – Nature Sounds
+
+=== 'brown noise' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10 · MID: FocusRoom — New Tab Lo-Fi, Rai
+  класс  langs desc   users     опт  title
+  NO     ?     1482   398       нет  Noise Generator
+  MID    ?     1746   27        нет  FocusRoom — New Tab Lo-Fi, Rain & Brown Nois
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     51    2617   1,000     да   Nature Sounds and White Noise
+  NO     ?     1957   114       нет  Noise Level Monitor
+  NO     52    4647   13        да   Noise Maker
+  NO     ?     3518   54        да   White Noise Studio – Nature Sounds
+  NO     ?     1742   ?         нет  Focus Sounds – Ambient Noise
+  NO     ?     4999   12        да   Neurorite - White Noise Generator
+  NO     ?     1354   44        нет  Smartnoise - Visual
+
+=== 'focus sounds' → WEAK  (стор-поиск: 9 расширений, 9 проверено) ===
+🟡 Focus Sounds · ? яз · 1335 симв · 16 юз
+  класс  langs desc   users     опт  title
+  EQUAL  ?     1335   16        нет  Focus Sounds
+  START  ?     1742   ?         нет  Focus Sounds – Ambient Noise
+  NO     52    4524   3,000     да   Ambient sound
+  NO     4     6239   200,000   да   Wallsflow New Tab: Live Wallpapers, Widgets 
+  NO     5     2110   369       нет  ABF (Audio Brain Focus)
+  NO     55    3554   40,000    да   Noise Cancelling App
+  NO     12    2341   7         нет  Kanso - New Tab with Focus Timer & Ambient S
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     2302   32        нет  Focus Waves - Pomodoro Timer with Custom Amb
+
+=== 'calm focus' → FREE  (стор-поиск: 9 расширений, 9 проверено) ===
+🟢 держателей 0 · кандидатов 9 · MID: Breathing Timer — Calm & Focus
+  класс  langs desc   users     опт  title
+  MID    ?     2004   10        нет  Breathing Timer — Calm & Focus
+  NO     4     6239   200,000   да   Wallsflow New Tab: Live Wallpapers, Widgets 
+  MID    ?     2167   32        нет  ADHD Helper: Calm & Focus
+  NO     ?     2039   381       нет  Study Music Player
+  NO     64    4590   100,000   да   UnTrap for YouTube — Block Shorts, Remove Re
+  MID    ?     1731   ?         нет  Breathing Exercises – Calm Focus
+  NO     ?     2210   ?         нет  CasaLoop: Calm New Tab, Focus Timer & To-Do 
+  NO     ?     2080   46        нет  Drifty: Calm Bubble Fidget for Focus
+  NO     ?     1115   ?         нет  Hourly Focus (Calm)
+
+=== 'simple timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Simple Timer · ? яз · 1849 симв · 179 юз
+  класс  langs desc   users     опт  title
+  EQUAL  ?     1849   179       нет  Simple Timer
+  EQUAL  ?     1785   ?         нет  Simple Timer
+  NO     43    4765   50,000    да   Timer for Google Chrome™
+  NO     ?     4226   397       да   Countdown Timer - A Simple Count Down Timer 
+  NO     ?     2152   14        нет  Simple Countdown Timer
+  NO     ?     1970   8,000     нет  Simple Time Tracker
+  NO     51    2569   6,000     да   Timer — Efficient, Simple & Reliable Countdo
+  NO     ?     2589   362       нет  Simple Interval/Timer
+  NO     ?     2168   30        нет  Simple Countdown Timer
+  NO     ?     1661   7,000     нет  CountDown Timer
+
+=== 'quiet timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     53    4783   110       да   Minimalist Timer
+  NO     ?     2063   6         нет  Quiet Focus — Floating Timer
+  NO     53    4390   897       да   Pomodoro Technique Timer
+  NO     ?     2344   ?         нет  Minimal Pomodoro: Quiet Focus Timer
+  NO     ?     2029   34        нет  Break Now - Simple Meditation Timer to relie
+  NO     ?     4549   12        да   Ember — Pomodoro Timer
+  NO     ?     2964   7         нет  QuietDock — Focus Timer & Website Blocker
+  NO     52    4732   14        да   Classroom Timer
+  NO     ?     2787   33        нет  Sage: Pomodoro Focus & Study Timer, Website 
+  NO     52    4922   92        да   Visual Timer for Kids
+
+=== 'soft timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     30    3758   500,000   да   Focus To-Do: Pomodoro Timer & To Do List
+  NO     ?     2889   3         нет  Calm Countdown Timer
+  NO     53    4783   110       да   Minimalist Timer
+  NO     52    4735   379       да   Pomodoro Timer
+  NO     ?     2067   6         нет  Lofi Timer — Minimal Pomodoro Clock
+  NO     ?     2664   4         нет  Focus Alarm Timer
+  NO     ?     2483   ?         нет  Sprint — Gentle Focus Timer
+  NO     ?     2896   15        нет  FlowState - Pomodoro Timer & Todo List
+  NO     52    4922   92        да   Visual Timer for Kids
+  NO     ?     2456   8         нет  Quick Timer
+
+=== 'zen timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Zen Timer Focus · ? яз · 1382 симв · 13 юз
+  класс  langs desc   users     опт  title
+  START  ?     1382   13        нет  Zen Timer Focus
+  EQUAL  ?     1052   7         нет  Zen Timer
+  NO     31    2364   212       да   Classroom Zen — Incense Timer · Random Picke
+  NO     53    3326   20,000    да   Timer app
+  NO     ?     3554   ?         да   ChronoZen - Smart Alarm Clock & Focus Timer
+  NO     ?     3095   313       да   Zen New Tab
+  NO     ?     3429   ?         да   Zen Task
+  NO     ?     2358   8         нет  Blokrly - Block Websites, Focus Timer & Goal
+  NO     3     2313   10        нет  Zen Lock
+  NO     ?     1815   21        нет  Pomodoro Timer
+
+=== 'ambient timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     12    2341   7         нет  Kanso - New Tab with Focus Timer & Ambient S
+  NO     ?     3310   185       да   FocusBox: Pomodoro & Focus Timers Online
+  NO     ?     3140   6         да   Pace — A Pomodoro Timer for Building Your Wo
+  NO     5     3702   4         да   Timeframe — Ambient Border Clock
+  NO     ?     2636   24        нет  Pomodoro Timer with Music & Tasks
+  NO     ?     2846   6         нет  Layn — Focus Timer
+  NO     ?     5205   12        да   MINTRA - Focus Timer
+  NO     55    2991   4,000     да   Focus Mode Pro - Website Blocker with Timers
+  NO     ?     3001   3         да   PomoPro — Focus Timer & Tasks
+  NO     ?     2302   32        нет  Focus Waves - Pomodoro Timer with Custom Amb
+
+=== 'sound timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     12    1934   80,000    нет  Alarm, Timer and Stopwatch
+  NO     43    4765   50,000    да   Timer for Google Chrome™
+  NO     ?     3791   8,000     да   Meeting Timer - for Google Meet
+  NO     17    4917   70,000    да   Call Timer for Meet
+  NO     3     1927   6,000     нет  Pomodoro Timer PRO
+  NO     52    5635   1,000     да   Break Timer
+  NO     ?     4730   19        да   Green Stripe Timer
+  NO     53    4783   110       да   Minimalist Timer
+  NO     ?     2161   29        нет  Countdown timer by Michal
+  NO     51    2569   6,000     да   Timer — Efficient, Simple & Reliable Countdo
+
+=== 'mindful timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Mindful Timer · ? яз · 1932 симв · 5 юз
+  класс  langs desc   users     опт  title
+  NO     ?     2398   27        нет  Mindful Browsing Timer
+  EQUAL  ?     1932   5         нет  Mindful Timer
+  NO     2     3981   ?         да   Mindful Break - Healthy Pause & Wellness Tim
+  NO     ?     4354   100       да   ZenBlock: Mindful Web Blocker & Focus Timer
+  NO     10    2784   ?         нет  Relax Blocker — Mindful Break Timer
+  NO     ?     2714   6         нет  Mindful Site Timer
+  NO     ?     3017   21        да   Mindlessly: Focus Timer & Mindful Browsing
+  NO     3     3476   7         да   FlowTab – Focus Timer, To-Do & Mindful New T
+  NO     53    3326   20,000    да   Timer app
+  NO     ?     2489   266       нет  White Rabbit: Tab Timer
+
+=== 'cozy timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     8     3063   20        да   Cozy Browser - LoFi New Tab & Focus Timer
+  NO     ?     1314   3         нет  Mountain Focus Timer & Cozy Climb
+  NO     ?     2576   4         нет  Brûlée Focus: Cozy Focus Timer
+  NO     ?     2024   170       нет  PixFocus: Gamified, Cozy Visual Focus Timers
+  NO     ?     2318   58        нет  Cat Pomodoro Timer — Pawmodoro Focus & Produ
+  NO     ?     3718   7         да   ChibiFocus: Focus Timer with Cute Companions
+  NO     ?     2251   330       нет  Cozy Pomodoro
+  NO     ?     3096   ?         да   Pomodoro Timer & Website Blocker
+  NO     ?     1747   90        нет  Cozy FM - Podcast Player
+  NO     5     4633   50,000    да   Ghiblify
+
+=== 'deep work timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Deep Work Timer Pro · ? яз · 1579 симв · 4 юз
+  класс  langs desc   users     опт  title
+  NO     ?     3532   171       да   Deep Work Zone
+  START  ?     1579   4         нет  Deep Work Timer Pro
+  MID    ?     1705   4         нет  Focus Flow - Deep Work Timer
+  NO     ?     2537   30        нет  Focus Timer Pro: Task & Productivity Tracker
+  NO     52    3888   497       да   Pomofocus: Pomodoro Timer & Site Blocker for
+  NO     56    2955   5,000     да   Pomodoro Timer
+  NO     ?     2246   3,000     нет  Meowdoro Tracker - Pomodoro Work Timer & Pro
+  NO     ?     9042   29        да   OneTabFocus — Focus Mode, Pomodoro Timer & T
+  MID    ?     1375   ?         нет  Aswati Focus — Deep Work Timer
+  NO     41    5801   19        да   Pomodoro Timer Focus Productivity
+
+=== 'brown noise generator' → FREE  (стор-поиск: 9 расширений, 9 проверено) ===
+🟢 держателей 0 · кандидатов 9
+  класс  langs desc   users     опт  title
+  NO     ?     1482   398       нет  Noise Generator
+  NO     52    4647   13        да   Noise Maker
+  NO     ?     4999   12        да   Neurorite - White Noise Generator
+  NO     ?     2859   20        нет  Custom Noise Generator
+  NO     ?     1746   27        нет  FocusRoom — New Tab Lo-Fi, Rain & Brown Nois
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     51    2617   1,000     да   Nature Sounds and White Noise
+  NO     ?     4544   76        да   Binaural Extension
+  NO     ?     2189   ?         нет  Audiomultitool
+
+=== 'noise generator' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Noise Generator · ? яз · 1482 симв · 398 юз · сосед: White Noise Generator (1,000 юз, свой ключ)
+  класс  langs desc   users     опт  title
+  EQUAL  ?     1482   398       нет  Noise Generator
+  MID    ?     2859   20        нет  Custom Noise Generator
+  MID    ?     4999   12        да   Neurorite - White Noise Generator
+  MID    52    4318   1,000     да   White Noise Generator
+  NO     52    4647   13        да   Noise Maker
+  NO     51    2617   1,000     да   Nature Sounds and White Noise
+  NO     41    2280   2,000     да   White Noise for Google Chrome™
+  NO     52    4524   3,000     да   Ambient sound
+  NO     40    2733   44        да   White Noise Sound App
+  NO     ?     1746   27        нет  FocusRoom — New Tab Lo-Fi, Rain & Brown Nois
+
+=== dry-run: 15 двери · дискавери $0 (стор-поиск) · keys.csv НЕ тронут ===
+
+=== 'visual timer adhd' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     3964   513       да   Tomato Timeout - ADHD Focus Timer + Site Blo
+  NO     52    4922   92        да   Visual Timer for Kids
+  NO     ?     2716   72        нет  Monora: ADHD Focus Timer & Distraction Block
+  NO     ?     4758   10        да   Dopamodoro - ADHD Pomodoro Timer & AI Focus 
+  NO     53    4783   110       да   Minimalist Timer
+  NO     4     4511   394       да   New Tab: Pomodoro Timer & Site Blocker for C
+  NO     4     2057   5         нет  ADHD Task Starter
+  NO     ?     4366   27        да   Snackbar
+  NO     ?     1880   7         нет  My Focus Timer
+  NO     2     4220   14        да   ADHD Website Blocker
+
+=== 'adhd timer for adults' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     1559   35        нет  Timer for ADHD
+  NO     ?     3964   513       да   Tomato Timeout - ADHD Focus Timer + Site Blo
+  NO     ?     4758   10        да   Dopamodoro - ADHD Pomodoro Timer & AI Focus 
+  NO     ?     3711   317       да   Focus AI | AI Website Blocker, Pomodoro Time
+  NO     ?     2716   72        нет  Monora: ADHD Focus Timer & Distraction Block
+  NO     ?     2246   3,000     нет  Meowdoro Tracker - Pomodoro Work Timer & Pro
+  NO     53    4783   110       да   Minimalist Timer
+  NO     4     4511   394       да   New Tab: Pomodoro Timer & Site Blocker for C
+  NO     ?     3220   62        да   Do One Thing - ADHD Focus Timer & Task Manag
+  NO     55    2749   29        да   Pomodoro Focus Timer & ADHD Study Tool by Lo
+
+=== 'focus music' → OCCUPIED-WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟠 Focus Music · 52 яз · 4316 симв · 291 юз
+  класс  langs desc   users     опт  title
+  NO     ?     2039   381       нет  Study Music Player
+  MID    4     6239   200,000   да   Wallsflow New Tab: Live Wallpapers, Widgets 
+  EQUAL  52    4316   291       да   Focus Music
+  NO     ?     1495   26        нет  Music for focus and work - Flow Music
+  MID    ?     1723   26        нет  Haze — Focus Music
+  MID    ?     2751   5         нет  NeonStream – Lo-Fi & Focus Music Radio
+  NO     ?     2277   142       нет  Music Mode for YouTube™ - Ad-Free Audio & Fo
+  NO     ?     1291   3         нет  YouTube Music Auto Like on Focus
+  NO     ?     2117   122       нет  Music Non Stop
+  NO     ?     2068   364       нет  ZenRadio.com - Music to help sleep, study, m
+
+=== 'pomodoro chrome extension' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Pomodoro Chrome Extension · ? яз · 1433 симв · 50000 юз
+  класс  langs desc   users     опт  title
+  EQUAL  ?     1433   50,000    нет  Pomodoro Chrome Extension
+  NO     30    3758   500,000   да   Focus To-Do: Pomodoro Timer & To Do List
+  NO     ?     4655   60,000    да   Otto: Pomodoro timer & Website Blocker. Bloc
+  NO     ?     1952   1,000     нет  Pomodoro Timer for Google Calendar
+  NO     41    4923   4,000     да   Pomodoro Timer for Google Chrome™
+  NO     3     1927   6,000     нет  Pomodoro Timer PRO
+  NO     ?     2442   ?         нет  Pomodoro Grande: Advanced Productivity Timer
+  NO     ?     0      1,000     нет  Purrfect Pomodoro Timer: Productivity, Time 
+  NO     ?     2372   1,000     нет  TimeDay - Focus Pomodoro Timer and Countdown
+  NO     ?     2880   10,000    нет  Habitica Pomodoro SiteKeeper
+
+=== 'minimal timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     1848   1,000     нет  Minimalist Focus Timer
+  NO     53    4783   110       да   Minimalist Timer
+  NO     ?     1661   7,000     нет  CountDown Timer
+  NO     ?     2067   6         нет  Lofi Timer — Minimal Pomodoro Clock
+  NO     ?     2168   30        нет  Simple Countdown Timer
+  NO     ?     2880   2,000     нет  Sidebar Clock
+  NO     ?     6304   36        да   Pomo — Minimalist Pomodoro Timer
+  NO     ?     2555   31        нет  Mini Countdown Timer
+  NO     ?     2265   273       нет  Countdown Timer Popup
+  NO     ?     3471   439       да   New Countdown Timer
+
+=== 'silent timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     12    1934   80,000    нет  Alarm, Timer and Stopwatch
+  NO     43    4765   50,000    да   Timer for Google Chrome™
+  NO     53    4390   897       да   Pomodoro Technique Timer
+  NO     30    3758   500,000   да   Focus To-Do: Pomodoro Timer & To Do List
+  NO     53    4783   110       да   Minimalist Timer
+  NO     ?     1910   30,000    нет  Timer, Alarm & Stopwatch
+  NO     ?     2442   ?         нет  Pomodoro Grande: Advanced Productivity Timer
+  NO     52    4732   14        да   Classroom Timer
+  NO     52    3888   497       да   Pomofocus: Pomodoro Timer & Site Blocker for
+  NO     ?     3127   469       да   Tiny Timer
+
+=== 'calm pomodoro timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     52    4735   379       да   Pomodoro Timer
+  NO     53    4783   110       да   Minimalist Timer
+  NO     ?     3227   12        да   Focus Flow - Pomodoro Timer & Guided Meditat
+  NO     4     4511   394       да   New Tab: Pomodoro Timer & Site Blocker for C
+  NO     ?     2318   58        нет  Cat Pomodoro Timer — Pawmodoro Focus & Produ
+  NO     ?     2210   ?         нет  CasaLoop: Calm New Tab, Focus Timer & To-Do 
+  NO     ?     6600   19        да   Grove – Pomodoro Timer & Website Blocker
+  NO     ?     3801   10        да   Memento Focus: Pomodoro Timer & Site Blocker
+  NO     ?     2658   9         нет  Pomodoro Buddy
+  NO     ?     1581   17        нет  Lofi Pomodoro
+
+=== 'aesthetic focus timer' → FREE  (стор-поиск: 9 расширений, 9 проверено) ===
+🟢 держателей 0 · кандидатов 9
+  класс  langs desc   users     опт  title
+  NO     52    4735   379       да   Pomodoro Timer
+  NO     53    4783   110       да   Minimalist Timer
+  NO     18    2951   15        нет  ZoraTime — Pomodoro, Timer & Site Blocker
+  NO     52    4244   388       да   Aesthetic Timer
+  NO     ?     3801   10        да   Memento Focus: Pomodoro Timer & Site Blocker
+  NO     ?     3180   7         да   Magicly - Productivity & Aesthetic New Tab
+  NO     ?     2164   30,000    нет  Focus by MDS
+  NO     ?     3175   51        да   Simple Focus Mode
+  NO     52    5279   263       да   30 Minute Timer — Visual Countdown Timer
+
+=== 'brown noise app' → FREE  (стор-поиск: 3 расширений, 3 проверено) ===
+🟢 держателей 0 · кандидатов 3
+  класс  langs desc   users     опт  title
+  NO     52    4647   13        да   Noise Maker
+  NO     ?     4999   12        да   Neurorite - White Noise Generator
+  NO     52    4318   1,000     да   White Noise Generator
+
+=== 'focus sound' → WEAK  (стор-поиск: 9 расширений, 9 проверено) ===
+🟡 Focus Sounds · ? яз · 1335 симв · 16 юз
+  класс  langs desc   users     опт  title
+  EQUAL  ?     1335   16        нет  Focus Sounds
+  NO     52    4524   3,000     да   Ambient sound
+  NO     5     2110   369       нет  ABF (Audio Brain Focus)
+  NO     55    3554   40,000    да   Noise Cancelling App
+  NO     ?     2192   1,000     нет  Chrome Sound Effects
+  NO     4     6239   200,000   да   Wallsflow New Tab: Live Wallpapers, Widgets 
+  NO     ?     2202   190       нет  Chimely - Gentle Sound Reminder for Focus & 
+  NO     6     6523   15        да   FocusSpark – Smart Focus Sessions
+  NO     ?     2302   32        нет  Focus Waves - Pomodoro Timer with Custom Amb
+
+=== dry-run: 10 двери · дискавери $0 (стор-поиск) · keys.csv НЕ тронут ===

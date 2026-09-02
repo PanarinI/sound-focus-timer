@@ -1,0 +1,124 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<title>Стенд: где живёт выбор цвета шума</title>
+<style>
+  /* Стенд рождён 2026-08-31 по слову автора: «три-кнопка сбоку припёка, рушит баланс. Дай эскизы».
+     Композиция дока воспроизведена как в панели: ползунок времени → ряд ручек → Settings.
+     Палитра и размеры взяты из hearth.html один в один, иначе о балансе судить нельзя. */
+  html,body{margin:0;padding:0;background:#0a0a12;color:#c3d0ea;
+    font-family:'SF Pro Display','Inter',system-ui,sans-serif}
+  h1{font-size:19px;font-weight:700;color:#eaf0ff;margin:22px 0 4px;text-align:center}
+  .lead{text-align:center;font-size:13px;color:#8492b0;margin-bottom:20px;padding:0 20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px;
+    padding:0 18px 30px;max-width:1180px;margin:0 auto}
+  .card{background:#0d0a07;border:1px solid #1e1710;border-radius:14px;overflow:hidden}
+  .name{font-size:13px;font-weight:600;color:#dfe6f5;padding:11px 14px 0}
+  .note{font-size:11.5px;color:#7d8aa8;padding:3px 14px 10px;line-height:1.4;min-height:46px}
+
+  /* ── док как в панели ─────────────────────────────────────────────── */
+  .panel{position:relative;height:210px;background:
+    radial-gradient(ellipse 120% 80% at 50% 8%,#141d42 0%,#090d22 55%,#05060f 100%)}
+  .dock{position:absolute;left:0;right:0;bottom:0;display:flex;flex-direction:column;
+    align-items:center;gap:16px;padding:26px 20px 18px;
+    background:linear-gradient(to top,rgba(11,8,5,.92) 0%,rgba(11,8,5,.7) 46%,rgba(11,8,5,0) 100%)}
+  .timerow{display:flex;flex-direction:column;align-items:center;gap:5px;width:100%;max-width:264px}
+  .track{width:100%;height:5px;border-radius:4px;background:#2a2119;position:relative}
+  .thumb{position:absolute;top:-6px;left:33%;width:17px;height:17px;border-radius:50%;
+    background:#e8b25c;box-shadow:0 0 10px rgba(232,178,92,.6)}
+  .ticks{display:flex;justify-content:space-between;width:100%;font-size:11px;color:#6b5f50}
+  .ticks b{color:#e8b25c;font-weight:600}
+  .knobs{position:relative;display:flex;justify-content:center;align-items:flex-start;gap:40px}
+  .knobcell{display:flex;flex-direction:column;align-items:center;gap:7px}
+  .kname{font-size:12px;color:#9a7c4f}
+  .knob{width:46px;height:46px;flex:none;border-radius:50%}
+  .knob svg{display:block;width:46px;height:46px;overflow:visible}
+  .ktrack{fill:none;stroke:#2a2119;stroke-width:4;stroke-linecap:round}
+  .karc{fill:none;stroke:#e8b25c;stroke-width:4;stroke-linecap:round;
+    filter:drop-shadow(0 0 5px rgba(232,178,92,.45))}
+  .kdot{fill:#f0d8b0}
+  .settoggle{background:none;border:none;color:#6b5f50;font:inherit;font-size:12px;
+    display:flex;align-items:center;gap:7px;opacity:.7;padding:2px}
+
+  /* ── кружки цвета: общая кожа, размещение у каждого варианта своё ──── */
+  .cdot{width:14px;height:14px;padding:0;border-radius:50%;border:1px solid #4a3a26;opacity:.78}
+  .cdot.on{opacity:1;border-color:#e8b25c;box-shadow:0 0 0 2px rgba(232,178,92,.22),0 0 9px rgba(232,178,92,.5)}
+  .cdot.brown{background:#8b5a2b} .cdot.pink{background:#e79ab5} .cdot.white{background:#f4f1ea}
+
+  .v1 .colours{position:absolute;left:calc(50% + 88px);top:0;height:46px;
+    display:flex;flex-direction:column;justify-content:space-between}
+  .v2 .colours{display:flex;gap:13px;align-items:center}
+  .v3 .colours{display:flex;gap:13px;align-items:center}
+  .v4 .colours{display:flex;flex-direction:column;align-items:center;gap:7px}
+  .v4 .kname{font-size:12px;color:#9a7c4f}
+  .v5 .colours{display:flex;gap:10px;align-items:center;padding:6px 11px;
+    border:1px solid #2a2119;border-radius:20px;background:rgba(42,33,25,.35)}
+  .v6 .colours{display:flex;gap:9px;align-items:center}
+  .v6 .clab{font-size:12px;color:#9a7c4f;margin-right:2px}
+</style></head><body>
+
+<h1>Где живёт выбор цвета шума — шесть размещений</h1>
+<div class="lead">Док воспроизведён как в панели: ползунок времени · ряд ручек · Settings. Палитра и размеры один в один — иначе о балансе не судить.</div>
+
+<div class="grid" id="grid"></div>
+
+<script>
+const KNOB = (arc, name) => `
+  <div class="knobcell">
+    <div class="knob"><svg viewBox="0 0 46 46">
+      <circle class="ktrack" cx="23" cy="23" r="17"/>
+      <circle class="karc" cx="23" cy="23" r="17" stroke-dasharray="${arc} 200" transform="rotate(135 23 23)"/>
+      <circle class="kdot" cx="23" cy="6" r="2"/>
+    </svg></div>
+    <span class="kname">${name}</span>
+  </div>`;
+
+const DOTS = (extra = '') => `
+  <div class="colours"${extra}>
+    <button class="cdot brown on" title="brown"></button>
+    <button class="cdot pink" title="pink"></button>
+    <button class="cdot white" title="white"></button>
+  </div>`;
+
+const TIME = `
+  <div class="timerow">
+    <div class="track"><div class="thumb"></div></div>
+    <div class="ticks"><span>5</span><b>15</b><span>25</span><span>45</span><span>90</span><span>∞</span></div>
+  </div>`;
+
+const SET = `<button class="settoggle">⚙ Settings</button>`;
+
+const V = [
+{ cls: 'v1', name: '1 · как сейчас — столбик сбоку',
+  note: 'Кружки абсолютом справа от Tone. Ручки остались по центру, но столбик висит в пустоте и тянет глаз вправо.',
+  dock: TIME + `<div class="knobs">${KNOB(54,'Volume')}${KNOB(20,'Tone')}${DOTS()}</div>` + SET },
+
+{ cls: 'v2', name: '2 · строкой под ручками',
+  note: 'Отдельная строка по центру, между ручками и Settings. Симметрия дока не тронута; цвет читается как отдельный вопрос, а не довесок к тону.',
+  dock: TIME + `<div class="knobs">${KNOB(54,'Volume')}${KNOB(20,'Tone')}</div>` + DOTS() + SET },
+
+{ cls: 'v3', name: '3 · строкой над ручками',
+  note: 'Сразу под шкалой времени, до ручек. Читается как «из чего сделан звук» — до того, как крутить сколько и с чем.',
+  dock: TIME + DOTS() + `<div class="knobs">${KNOB(54,'Volume')}${KNOB(20,'Tone')}</div>` + SET },
+
+{ cls: 'v4', name: '4 · третья ячейка ряда, с подписью',
+  note: 'Кружки становятся полноправной третьей «ручкой» и ряд снова центрируется целиком. Ровный ряд, но столбик рядом с двумя кругами разнороден.',
+  dock: TIME + `<div class="knobs">${KNOB(54,'Volume')}${KNOB(20,'Tone')}
+    <div class="knobcell">${DOTS()}<span class="kname">Noise</span></div></div>` + SET },
+
+{ cls: 'v5', name: '5 · капсулой под ручками',
+  note: 'То же место, что во втором, но кружки собраны в тихую капсулу — видно, что это один орган с тремя положениями, а не три отдельные точки.',
+  dock: TIME + `<div class="knobs">${KNOB(54,'Volume')}${KNOB(20,'Tone')}</div>` + DOTS() + SET },
+
+{ cls: 'v6', name: '6 · строкой с подписью Noise',
+  note: 'Как второй, но со словом слева. Дороже по вниманию (ещё одна надпись в панели, где слов почти нет), зато без догадок.',
+  dock: TIME + `<div class="knobs">${KNOB(54,'Volume')}${KNOB(20,'Tone')}</div>
+    <div style="display:flex;align-items:center;gap:9px"><span class="clab">Noise</span>${DOTS()}</div>` + SET },
+];
+
+document.getElementById('grid').innerHTML = V.map((v) => `
+  <div class="card">
+    <div class="panel ${v.cls}"><div class="dock">${v.dock}</div></div>
+    <div class="name">${v.name}</div>
+    <div class="note">${v.note}</div>
+  </div>`).join('');
+</script>
+</body></html>

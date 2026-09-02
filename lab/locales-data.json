@@ -1,59 +1,216 @@
 {
   "_comment": "Листинг i18n. appName=NAME (SEO-дверь), shortDesc=SHORT (<=132). EN=дверь minimalist (KD1); локали=pomodoro (выверено DFS/Wordstat 07-26). Волна 1 (ядро CWS-аудитории). build-locales.py раскладывает в extension/_locales/<code>/messages.json. FULL грузится в CWS отдельно.",
-  "en":    { "appName": "Minimalist Timer", "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer." },
-  "de":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Schlichter Pomodoro Timer für Fokus & Lernen – mit warmem Brown Noise und sanften Klängen zum Konzentrieren." },
-  "fr":    { "appName": "Timer Pomodoro - Minimalist Timer", "shortDesc": "Timer Pomodoro minimaliste pour la concentration et les études, avec un brown noise chaud et des sons doux." },
-  "es":    { "appName": "Temporizador Pomodoro - Minimalist Timer", "shortDesc": "Temporizador Pomodoro minimalista para concentración y estudio, con brown noise cálido y sonidos suaves." },
-  "it":    { "appName": "Timer Pomodoro - Minimalist Timer", "shortDesc": "Timer Pomodoro minimalista per concentrazione e studio, con brown noise caldo e suoni delicati per concentrarti." },
-  "pt_BR": { "appName": "Timer Pomodoro - Minimalist Timer", "shortDesc": "Timer Pomodoro minimalista para foco e estudo, com brown noise quentinho e sons suaves para se concentrar." },
-  "nl":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistische Pomodoro Timer voor focus en studie, met warme brown noise en zachte geluiden om te concentreren." },
-  "sv":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistisk Pomodoro Timer för fokus och studier, med varmt brusljud och mjuka ljud för koncentration." },
-  "da":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistisk Pomodoro Timer til fokus og studie, med varm brown noise og bløde lyde til koncentration." },
-  "no":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistisk Pomodoro Timer for fokus og studier, med varm brown noise og myke lyder for konsentrasjon." },
-  "fi":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistinen Pomodoro-ajastin keskittymiseen ja opiskeluun, lämpimällä brown noisella ja pehmeillä äänillä." },
-  "pl":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistyczny Pomodoro Timer do skupienia i nauki, z ciepłym brown noise i delikatnymi dźwiękami." },
-  "cs":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistický Pomodoro Timer pro soustředění a studium, s teplým brown noise a jemnými zvuky." },
-  "tr":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Odaklanma ve çalışma için sade Pomodoro Timer; sıcak brown noise ve yumuşak seslerle konsantre olun." },
-  "ru":    { "appName": "Помодоро таймер - Minimalist Timer", "shortDesc": "Минималистичный помодоро таймер для фокуса и учёбы, с тёплым коричневым шумом и мягкими звуками для концентрации." },
-  "uk":    { "appName": "Помодоро таймер - Minimalist Timer", "shortDesc": "Мінімалістичний помодоро таймер для фокусу та навчання, з теплим коричневим шумом і м'якими звуками." },
-  "ja":    { "appName": "ポモドーロタイマー - Minimalist Timer", "shortDesc": "集中と勉強のためのシンプルなポモドーロタイマー。温かいブラウンノイズと静かな音で、心地よく集中を続けられます。" },
-  "ko":    { "appName": "뽀모도로 타이머 - Minimalist Timer", "shortDesc": "집중과 공부를 위한 미니멀 뽀모도로 타이머. 따뜻한 브라운 노이즈와 부드러운 소리로 편안하게 집중하세요." },
-  "zh_CN": { "appName": "番茄钟 - Minimalist Timer", "shortDesc": "简约番茄钟，专注与学习两相宜。温暖的棕噪音与柔和声音，助你静心专注。" },
-  "zh_TW": { "appName": "番茄鐘 - Minimalist Timer", "shortDesc": "簡約番茄鐘，專注與學習兼顧。溫暖的棕噪音與柔和聲音，助你靜心專注。" },
-  "id":    { "appName": "Timer Pomodoro - Minimalist Timer", "shortDesc": "Timer Pomodoro minimalis untuk fokus dan belajar, dengan brown noise hangat dan suara lembut untuk berkonsentrasi." },
-  "vi":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Timer Pomodoro tối giản cho tập trung và học tập, với brown noise ấm áp và âm thanh nhẹ nhàng." },
-  "th":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "ตัวจับเวลา Pomodoro มินิมอลเพื่อสมาธิและการเรียน พร้อมบราวน์นอยส์อุ่นๆ และเสียงนุ่มนวลช่วยโฟกัส" },
-  "ar":    { "appName": "مؤقت بومودورو - Minimalist Timer", "shortDesc": "مؤقت بومودورو بسيط للتركيز والدراسة، مع ضوضاء بنية دافئة وأصوات هادئة تساعدك على التركيز." },
-
-  "es_419": { "appName": "Temporizador Pomodoro - Minimalist Timer", "shortDesc": "Temporizador Pomodoro minimalista para concentración y estudio, con brown noise cálido y sonidos suaves." },
-  "pt_PT": { "appName": "Timer Pomodoro - Minimalist Timer", "shortDesc": "Timer Pomodoro minimalista para foco e estudo, com brown noise quente e sons suaves para te concentrares." },
-  "en_GB": { "appName": "Minimalist Timer", "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer." },
-  "he":    { "appName": "טיימר פומודורו - Minimalist Timer", "shortDesc": "טיימר פומודורו מינימליסטי לריכוז וללימודים, עם רעש חום חמים וצלילים רכים למיקוד." },
-  "fa":    { "appName": "تایمر پومودورو - Minimalist Timer", "shortDesc": "تایمر پومودورو مینیمال برای تمرکز و مطالعه، با نویز قهوه‌ای گرم و صداهای ملایم." },
-  "hi":    { "appName": "पोमोडोरो टाइमर - Minimalist Timer", "shortDesc": "फोकस और पढ़ाई के लिए मिनिमल पोमोडोरो टाइमर, गर्म ब्राउन नॉइज़ और कोमल ध्वनियों के साथ।" },
-  "el":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Μινιμαλιστικό Pomodoro Timer για συγκέντρωση και μελέτη, με ζεστό brown noise και απαλούς ήχους." },
-  "ro":    { "appName": "Timer Pomodoro - Minimalist Timer", "shortDesc": "Timer Pomodoro minimalist pentru concentrare și studiu, cu brown noise cald și sunete blânde." },
-  "hu":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalista Pomodoro Timer fókuszhoz és tanuláshoz, meleg brown noise-szal és lágy hangokkal." },
-  "sk":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistický Pomodoro Timer na sústredenie a štúdium, s teplým brown noise a jemnými zvukmi." },
-  "sl":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalističen Pomodoro Timer za fokus in učenje, s toplim brown noise in nežnimi zvoki." },
-  "hr":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistički Pomodoro Timer za fokus i učenje, s toplim brown noise i nježnim zvukovima." },
-  "sr":    { "appName": "Pomodoro tajmer - Minimalist Timer", "shortDesc": "Minimalistički Pomodoro tajmer za fokus i učenje, sa toplim šumom i nežnim zvucima." },
-  "bg":    { "appName": "Помодоро таймер - Minimalist Timer", "shortDesc": "Минималистичен Помодоро таймер за фокус и учене, с топъл кафяв шум и меки звуци." },
-  "et":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistlik Pomodoro taimer keskendumiseks ja õppimiseks, sooja pruuni müra ja pehmete helidega." },
-  "lt":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalistinis Pomodoro laikmatis susikaupimui ir mokymuisi su šiltu rudu triukšmu ir švelniais garsais." },
-  "lv":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimālistisks Pomodoro taimeris fokusam un mācībām ar siltu brūno troksni un maigām skaņām." },
-  "fil":   { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Minimalist na Pomodoro Timer para sa focus at pag-aaral, may mainit na brown noise at malambot na tunog." },
-  "ms":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Pemasa Pomodoro minimalis untuk fokus dan belajar, dengan brown noise hangat dan bunyi lembut." },
-  "ca":    { "appName": "Temporitzador Pomodoro - Minimalist Timer", "shortDesc": "Temporitzador Pomodoro minimalista per a concentració i estudi, amb brown noise càlid i sons suaus." },
-  "sw":    { "appName": "Pomodoro Timer - Minimalist Timer", "shortDesc": "Kipima muda cha Pomodoro rahisi kwa umakini na masomo, chenye brown noise ya joto na sauti laini." },
-
+  "en": {
+    "appName": "Minimalist Timer",
+    "shortDesc": "A calm minimalist timer with a brown noise generator built in, plus pink and white noise — focus sounds for study and deep work."
+  },
+  "de": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Schlichter Pomodoro Timer für Fokus & Lernen – mit warmem Brown Noise und sanften Klängen zum Konzentrieren."
+  },
+  "fr": {
+    "appName": "Timer Pomodoro - Minimalist Timer",
+    "shortDesc": "Timer Pomodoro minimaliste pour la concentration et les études, avec un brown noise chaud et des sons doux."
+  },
+  "es": {
+    "appName": "Temporizador Pomodoro - Minimalist Timer",
+    "shortDesc": "Temporizador Pomodoro minimalista para concentración y estudio, con brown noise cálido y sonidos suaves."
+  },
+  "it": {
+    "appName": "Timer Pomodoro - Minimalist Timer",
+    "shortDesc": "Timer Pomodoro minimalista per concentrazione e studio, con brown noise caldo e suoni delicati per concentrarti."
+  },
+  "pt_BR": {
+    "appName": "Timer Pomodoro - Minimalist Timer",
+    "shortDesc": "Timer Pomodoro minimalista para foco e estudo, com brown noise quentinho e sons suaves para se concentrar."
+  },
+  "nl": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistische Pomodoro Timer voor focus en studie, met warme brown noise en zachte geluiden om te concentreren."
+  },
+  "sv": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistisk Pomodoro Timer för fokus och studier, med varmt brusljud och mjuka ljud för koncentration."
+  },
+  "da": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistisk Pomodoro Timer til fokus og studie, med varm brown noise og bløde lyde til koncentration."
+  },
+  "no": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistisk Pomodoro Timer for fokus og studier, med varm brown noise og myke lyder for konsentrasjon."
+  },
+  "fi": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistinen Pomodoro-ajastin keskittymiseen ja opiskeluun, lämpimällä brown noisella ja pehmeillä äänillä."
+  },
+  "pl": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistyczny Pomodoro Timer do skupienia i nauki, z ciepłym brown noise i delikatnymi dźwiękami."
+  },
+  "cs": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistický Pomodoro Timer pro soustředění a studium, s teplým brown noise a jemnými zvuky."
+  },
+  "tr": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Odaklanma ve çalışma için sade Pomodoro Timer; sıcak brown noise ve yumuşak seslerle konsantre olun."
+  },
+  "ru": {
+    "appName": "Помодоро таймер - Minimalist Timer",
+    "shortDesc": "Минималистичный помодоро таймер для фокуса и учёбы, с тёплым коричневым шумом и мягкими звуками для концентрации."
+  },
+  "uk": {
+    "appName": "Помодоро таймер - Minimalist Timer",
+    "shortDesc": "Мінімалістичний помодоро таймер для фокусу та навчання, з теплим коричневим шумом і м'якими звуками."
+  },
+  "ja": {
+    "appName": "ポモドーロタイマー - Minimalist Timer",
+    "shortDesc": "集中と勉強のためのシンプルなポモドーロタイマー。温かいブラウンノイズと静かな音で、心地よく集中を続けられます。"
+  },
+  "ko": {
+    "appName": "뽀모도로 타이머 - Minimalist Timer",
+    "shortDesc": "집중과 공부를 위한 미니멀 뽀모도로 타이머. 따뜻한 브라운 노이즈와 부드러운 소리로 편안하게 집중하세요."
+  },
+  "zh_CN": {
+    "appName": "番茄钟 - Minimalist Timer",
+    "shortDesc": "简约番茄钟，专注与学习两相宜。温暖的棕噪音与柔和声音，助你静心专注。"
+  },
+  "zh_TW": {
+    "appName": "番茄鐘 - Minimalist Timer",
+    "shortDesc": "簡約番茄鐘，專注與學習兼顧。溫暖的棕噪音與柔和聲音，助你靜心專注。"
+  },
+  "id": {
+    "appName": "Timer Pomodoro - Minimalist Timer",
+    "shortDesc": "Timer Pomodoro minimalis untuk fokus dan belajar, dengan brown noise hangat dan suara lembut untuk berkonsentrasi."
+  },
+  "vi": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Timer Pomodoro tối giản cho tập trung và học tập, với brown noise ấm áp và âm thanh nhẹ nhàng."
+  },
+  "th": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "ตัวจับเวลา Pomodoro มินิมอลเพื่อสมาธิและการเรียน พร้อมบราวน์นอยส์อุ่นๆ และเสียงนุ่มนวลช่วยโฟกัส"
+  },
+  "ar": {
+    "appName": "مؤقت بومودورو - Minimalist Timer",
+    "shortDesc": "مؤقت بومودورو بسيط للتركيز والدراسة، مع ضوضاء بنية دافئة وأصوات هادئة تساعدك على التركيز."
+  },
+  "es_419": {
+    "appName": "Temporizador Pomodoro - Minimalist Timer",
+    "shortDesc": "Temporizador Pomodoro minimalista para concentración y estudio, con brown noise cálido y sonidos suaves."
+  },
+  "pt_PT": {
+    "appName": "Timer Pomodoro - Minimalist Timer",
+    "shortDesc": "Timer Pomodoro minimalista para foco e estudo, com brown noise quente e sons suaves para te concentrares."
+  },
+  "en_GB": {
+    "appName": "Minimalist Timer",
+    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+  },
+  "he": {
+    "appName": "טיימר פומודורו - Minimalist Timer",
+    "shortDesc": "טיימר פומודורו מינימליסטי לריכוז וללימודים, עם רעש חום חמים וצלילים רכים למיקוד."
+  },
+  "fa": {
+    "appName": "تایمر پومودورو - Minimalist Timer",
+    "shortDesc": "تایمر پومودورو مینیمال برای تمرکز و مطالعه، با نویز قهوه‌ای گرم و صداهای ملایم."
+  },
+  "hi": {
+    "appName": "पोमोडोरो टाइमर - Minimalist Timer",
+    "shortDesc": "फोकस और पढ़ाई के लिए मिनिमल पोमोडोरो टाइमर, गर्म ब्राउन नॉइज़ और कोमल ध्वनियों के साथ।"
+  },
+  "el": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Μινιμαλιστικό Pomodoro Timer για συγκέντρωση και μελέτη, με ζεστό brown noise και απαλούς ήχους."
+  },
+  "ro": {
+    "appName": "Timer Pomodoro - Minimalist Timer",
+    "shortDesc": "Timer Pomodoro minimalist pentru concentrare și studiu, cu brown noise cald și sunete blânde."
+  },
+  "hu": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalista Pomodoro Timer fókuszhoz és tanuláshoz, meleg brown noise-szal és lágy hangokkal."
+  },
+  "sk": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistický Pomodoro Timer na sústredenie a štúdium, s teplým brown noise a jemnými zvukmi."
+  },
+  "sl": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalističen Pomodoro Timer za fokus in učenje, s toplim brown noise in nežnimi zvoki."
+  },
+  "hr": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistički Pomodoro Timer za fokus i učenje, s toplim brown noise i nježnim zvukovima."
+  },
+  "sr": {
+    "appName": "Pomodoro tajmer - Minimalist Timer",
+    "shortDesc": "Minimalistički Pomodoro tajmer za fokus i učenje, sa toplim šumom i nežnim zvucima."
+  },
+  "bg": {
+    "appName": "Помодоро таймер - Minimalist Timer",
+    "shortDesc": "Минималистичен Помодоро таймер за фокус и учене, с топъл кафяв шум и меки звуци."
+  },
+  "et": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistlik Pomodoro taimer keskendumiseks ja õppimiseks, sooja pruuni müra ja pehmete helidega."
+  },
+  "lt": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalistinis Pomodoro laikmatis susikaupimui ir mokymuisi su šiltu rudu triukšmu ir švelniais garsais."
+  },
+  "lv": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimālistisks Pomodoro taimeris fokusam un mācībām ar siltu brūno troksni un maigām skaņām."
+  },
+  "fil": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Minimalist na Pomodoro Timer para sa focus at pag-aaral, may mainit na brown noise at malambot na tunog."
+  },
+  "ms": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Pemasa Pomodoro minimalis untuk fokus dan belajar, dengan brown noise hangat dan bunyi lembut."
+  },
+  "ca": {
+    "appName": "Temporitzador Pomodoro - Minimalist Timer",
+    "shortDesc": "Temporitzador Pomodoro minimalista per a concentració i estudi, amb brown noise càlid i sons suaus."
+  },
+  "sw": {
+    "appName": "Pomodoro Timer - Minimalist Timer",
+    "shortDesc": "Kipima muda cha Pomodoro rahisi kwa umakini na masomo, chenye brown noise ya joto na sauti laini."
+  },
   "_comment_wave3": "Волна 3 (8 сложных скриптов): appName=локальное имя-дверь (транслит pomodoro, ⚠ на вычитку носителем) + shortDesc=EN (честный fallback, не кривой перевод). Цель — засчитать язык в счётчике CWS (+8 → 53) без вранья в описании.",
-  "bn":    { "appName": "পোমোডোরো টাইমার - Minimalist Timer", "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer." },
-  "ta":    { "appName": "பொமடோரோ டைமர் - Minimalist Timer", "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer." },
-  "te":    { "appName": "పోమోడోరో టైమర్ - Minimalist Timer", "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer." },
-  "gu":    { "appName": "પોમોડોરો ટાઈમર - Minimalist Timer", "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer." },
-  "kn":    { "appName": "ಪೊಮೊಡೊರೊ ಟೈಮರ್ - Minimalist Timer", "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer." },
-  "ml":    { "appName": "പോമോഡോറോ ടൈമർ - Minimalist Timer", "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer." },
-  "mr":    { "appName": "पोमोडोरो टायमर - Minimalist Timer", "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer." },
-  "am":    { "appName": "ፖሞዶሮ ታይመር - Minimalist Timer", "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer." }
+  "bn": {
+    "appName": "পোমোডোরো টাইমার - Minimalist Timer",
+    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+  },
+  "ta": {
+    "appName": "பொமடோரோ டைமர் - Minimalist Timer",
+    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+  },
+  "te": {
+    "appName": "పోమోడోరో టైమర్ - Minimalist Timer",
+    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+  },
+  "gu": {
+    "appName": "પોમોડોરો ટાઈમર - Minimalist Timer",
+    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+  },
+  "kn": {
+    "appName": "ಪೊಮೊಡೊರೊ ಟೈಮರ್ - Minimalist Timer",
+    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+  },
+  "ml": {
+    "appName": "പോമോഡോറോ ടൈമർ - Minimalist Timer",
+    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+  },
+  "mr": {
+    "appName": "पोमोडोरो टायमर - Minimalist Timer",
+    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+  },
+  "am": {
+    "appName": "ፖሞዶሮ ታይመር - Minimalist Timer",
+    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+  }
 }

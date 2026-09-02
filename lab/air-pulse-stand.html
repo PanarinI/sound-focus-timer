@@ -1,0 +1,127 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<!-- ЗАПУСК: открывается двойным кликом, самодостаточен. -->
+<title>Стенд: как сцена отвечает на смену цвета — движением</title>
+<style>
+  /* Рождён 2026-09-01. Путь до сюда (чтобы не переоткрывать):
+     автор спросил — красить ли ЗВЕЗДУ под цвет шума. Отклонено: звезда = единственное тёплое
+     присутствие и ЦЕЛЬ полёта (ДНК), а звук = ВОЗДУХ, сквозь который летишь.
+     Стенд №1 (`air-tint-stand.html`) наклонял статикой — дымку, кайму звезды, пыль поля.
+     Замер и глаз автора сошлись: «в статике не вижу вообще никаких отличий».
+     Вывод: отклик должен быть ДВИЖЕНИЕМ. Цвет живёт секунду и уходит — сцена отвечает на жест,
+     но остаётся тёплой. Здесь четыре способа ответить. */
+  html,body{margin:0;padding:0;background:#07070e;color:#c3d0ea;
+    font-family:'SF Pro Display','Inter',system-ui,sans-serif}
+  h1{font-size:19px;font-weight:700;color:#eaf0ff;margin:20px 0 4px;text-align:center}
+  .lead{text-align:center;font-size:13px;color:#8492b0;margin-bottom:4px;padding:0 20px;line-height:1.5}
+  .bar{display:flex;gap:18px;align-items:center;justify-content:center;padding:14px;flex-wrap:wrap;font-size:12.5px;color:#8492b0}
+  .bar button{font:inherit;font-size:12px;padding:6px 13px;border-radius:8px;cursor:pointer;
+    background:#2a2119;border:1px solid #4a3a26;color:#c79a58}
+  .bar button:hover{border-color:#7a5a2e}
+  .bar button.on{background:#3a2a16;border-color:#e8b25c;color:#e8b25c}
+  .swatch{width:15px;height:15px;border-radius:50%;border:1px solid #4a3a26;display:inline-block;vertical-align:-2px;margin-right:7px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:16px;
+    padding:0 18px 34px;max-width:1080px;margin:0 auto}
+  .card{background:#0b0a12;border:1px solid #1a1a28;border-radius:14px;overflow:hidden;cursor:pointer}
+  .name{font-size:13px;font-weight:600;color:#dfe6f5;padding:11px 14px 0}
+  .note{font-size:11.5px;color:#7d8aa8;padding:3px 14px 11px;line-height:1.4;min-height:46px}
+
+  .scene{position:relative;height:196px;overflow:hidden;
+    background:radial-gradient(ellipse 130% 92% at 50% 16%,#131c40 0%,#090d22 58%,#05060f 100%)}
+  .room{position:absolute;inset:0;opacity:.16;transform-origin:50% 44%;animation:breathe 9s ease-in-out infinite;
+    background:radial-gradient(ellipse 62% 46% at 50% 44%,rgba(255,172,86,.9) 0%,rgba(198,112,52,.34) 34%,rgba(150,80,40,.12) 55%,rgba(20,12,7,0) 74%)}
+  @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+  .star{position:absolute;left:50%;top:44%;width:62px;height:62px;border-radius:50%;
+    transform:translate(-50%,-50%);animation:sb 7s ease-in-out infinite;
+    background:radial-gradient(circle,#fff2d6 0%,#ffd98f 24%,#f2a955 50%,rgba(214,120,70,.26) 74%,rgba(214,120,70,0) 100%)}
+  @keyframes sb{0%,100%{transform:translate(-50%,-50%) scale(.985)}50%{transform:translate(-50%,-50%) scale(1.028)}}
+  .dust{position:absolute;inset:0}
+  .dust i{position:absolute;width:2.5px;height:2.5px;border-radius:50%;background:#cdd6ee;
+    transition:background .25s, box-shadow .25s}
+
+  /* ── 1 · КОЛЬЦО ОТ ЗВЕЗДЫ ──────────────────────────────────────────── */
+  .ring{position:absolute;left:50%;top:44%;width:62px;height:62px;border-radius:50%;
+    transform:translate(-50%,-50%) scale(1);opacity:0;border:2px solid var(--c);
+    box-shadow:0 0 18px var(--c)}
+  .go .ring{animation:ringout 1100ms cubic-bezier(.2,.7,.3,1) forwards}
+  @keyframes ringout{0%{opacity:.85;transform:translate(-50%,-50%) scale(1)}
+                     100%{opacity:0;transform:translate(-50%,-50%) scale(6.2)}}
+
+  /* ── 2 · ВОЛНА ПО ВСЕМУ ПОЛЮ ───────────────────────────────────────── */
+  .wash{position:absolute;inset:0;opacity:0;
+    background:radial-gradient(ellipse 70% 54% at 50% 44%,var(--c) 0%,transparent 72%)}
+  .go .wash{animation:washio 1400ms ease-in-out forwards}
+  @keyframes washio{0%{opacity:0}28%{opacity:.34}100%{opacity:0}}
+
+  /* ── 3 · ВСПЫШКА ПЫЛИ ──────────────────────────────────────────────── */
+  .go.p3 .dust i{background:var(--c);box-shadow:0 0 7px var(--c)}
+
+  /* ── 4 · КАЙМА ЗВЕЗДЫ ВДЫХАЕТ ЦВЕТ ─────────────────────────────────── */
+  .halo{position:absolute;left:50%;top:44%;width:62px;height:62px;border-radius:50%;opacity:0;
+    transform:translate(-50%,-50%) scale(1.6);
+    background:radial-gradient(circle,transparent 38%,var(--c) 62%,transparent 84%)}
+  .go .halo{animation:halob 1300ms ease-in-out forwards}
+  @keyframes halob{0%{opacity:0;transform:translate(-50%,-50%) scale(1.25)}
+                   30%{opacity:.62;transform:translate(-50%,-50%) scale(1.7)}
+                   100%{opacity:0;transform:translate(-50%,-50%) scale(2.1)}}
+</style></head><body>
+
+<h1>Сцена отвечает движением, а не краской</h1>
+<div class="lead">Цвет живёт секунду и уходит — жест получает ответ, а сцена остаётся тёплой.<br>
+Клик по карточке — проиграть ещё раз.</div>
+
+<div class="bar">
+  <span>цвет:</span>
+  <button data-c="pink" class="on"><i class="swatch" style="background:#e79ab5"></i>pink</button>
+  <button data-c="white"><i class="swatch" style="background:#f4f1ea"></i>white</button>
+  <button data-c="brown"><i class="swatch" style="background:#8b5a2b"></i>brown</button>
+  <button id="all">проиграть все</button>
+  <label><input type="checkbox" id="loop" checked> сами по кругу</label>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<script>
+const HEX = { brown: '#c98a4e', pink: '#e79ab5', white: '#dfe6f5' };
+const DUST = Array.from({ length: 22 }, (_, i) => {
+  const a = i * 2.399, r = 24 + (i % 6) * 15;
+  return `<i style="left:${50 + Math.cos(a) * r * .62}%;top:${44 + Math.sin(a) * r * .54}%;opacity:${(.3 + (i % 4) * .14).toFixed(2)}"></i>`;
+}).join('');
+
+const V = [
+  { cls: 'p1', name: '1 · кольцо от звезды', dur: 1100,
+    note: 'От цели наружу уходит одно тонкое кольцо — как будто сменился воздух и волна пошла по нему.' },
+  { cls: 'p2', name: '2 · волна по всему полю', dur: 1400,
+    note: 'Всё поле мягко вдыхает цвет и отпускает. Самый заметный, ближе всего к «сменилась среда».' },
+  { cls: 'p3', name: '3 · вспышка пыли', dur: 900,
+    note: 'Звёзды, мимо которых летишь, коротко берут цвет. Трогает именно среду, звезду не касается вовсе.' },
+  { cls: 'p4', name: '4 · кайма звезды вдыхает', dur: 1300,
+    note: 'Цвет проходит по внешней кайме и гаснет. Ядро не меняется — но глаз смотрит туда, где он и так.' },
+];
+
+document.getElementById('grid').innerHTML = V.map((v) => `
+  <div class="card">
+    <div class="scene ${v.cls}" data-dur="${v.dur}">
+      <div class="room"></div><div class="dust">${DUST}</div>
+      <div class="wash"></div><div class="ring"></div><div class="star"></div><div class="halo"></div>
+    </div>
+    <div class="name">${v.name}</div><div class="note">${v.note}</div>
+  </div>`).join('');
+
+let colour = 'pink';
+const scenes = [...document.querySelectorAll('.scene')];
+function fire(sc) {
+  sc.style.setProperty('--c', HEX[colour]);
+  sc.classList.remove('go'); void sc.offsetWidth; sc.classList.add('go');
+  setTimeout(() => sc.classList.remove('go'), +sc.dataset.dur + 60);
+}
+const all = () => scenes.forEach(fire);
+document.querySelectorAll('.bar button[data-c]').forEach((b) => b.addEventListener('click', () => {
+  document.querySelectorAll('.bar button[data-c]').forEach((x) => x.classList.toggle('on', x === b));
+  colour = b.dataset.c; all();
+}));
+document.getElementById('all').addEventListener('click', all);
+document.querySelectorAll('.card').forEach((c, i) => c.addEventListener('click', () => fire(scenes[i])));
+setInterval(() => { if (document.getElementById('loop').checked) all(); }, 3200);
+all();
+</script>
+</body></html>

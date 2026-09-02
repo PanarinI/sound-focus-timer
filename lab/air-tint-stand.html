@@ -1,0 +1,94 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<!-- ЗАПУСК: открывается двойным кликом, самодостаточен. -->
+<title>Стенд: чем сцена отвечает на цвет шума</title>
+<style>
+  /* Рождён 2026-09-01. Вопрос автора: «перевести выбор цвета в цвет свечения звезды?»
+     ЯДРО ЗВЕЗДЫ НЕ ТРОГАЕМ — оно единственное тёплое присутствие и ЦЕЛЬ полёта (ДНК), а звук =
+     ВОЗДУХ, сквозь который летишь.
+     Первая версия стенда наклоняла `#room` (тёплую ауру) — и провалилась: при рабочей прозрачности
+     .06–.18 наклон не виден вовсе, все клетки выходили одинаковыми. Вывод сохранён: дымка как орган
+     отклика не годится. Здесь три механизма, которые видно. */
+  html,body{margin:0;padding:0;background:#07070e;color:#c3d0ea;
+    font-family:'SF Pro Display','Inter',system-ui,sans-serif}
+  h1{font-size:19px;font-weight:700;color:#eaf0ff;margin:20px 0 4px;text-align:center}
+  .lead{text-align:center;font-size:13px;color:#8492b0;margin-bottom:6px;padding:0 20px;line-height:1.5}
+  .bar{display:flex;gap:20px;align-items:center;justify-content:center;padding:12px;flex-wrap:wrap;font-size:12.5px;color:#8492b0}
+  .bar label{display:flex;align-items:center;gap:9px}
+  input[type=range]{width:230px}
+  b{color:#e8b25c;font-variant-numeric:tabular-nums;min-width:34px;display:inline-block}
+  table{border-collapse:separate;border-spacing:11px;margin:0 auto 30px}
+  th.col{font-size:12.5px;font-weight:600;color:#9a7c4f;padding-bottom:2px}
+  th.row{text-align:right;vertical-align:middle;width:150px;font-weight:600;font-size:12.5px;color:#dfe6f5}
+  th.row div{font-weight:400;font-size:11.5px;color:#7d8aa8;line-height:1.4;margin-top:3px}
+  .cell{position:relative;width:184px;height:150px;border-radius:12px;overflow:hidden;
+    border:1px solid #1a1a28;background:radial-gradient(ellipse 130% 90% at 50% 20%,#131c40 0%,#090d22 58%,#05060f 100%)}
+  .room{position:absolute;inset:0;opacity:.16;transform-origin:50% 42%;animation:breathe 9s ease-in-out infinite}
+  @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+  .star{position:absolute;left:50%;top:42%;width:56px;height:56px;border-radius:50%;
+    transform:translate(-50%,-50%);animation:sb 7s ease-in-out infinite}
+  @keyframes sb{0%,100%{transform:translate(-50%,-50%) scale(.985)}50%{transform:translate(-50%,-50%) scale(1.028)}}
+  .dust{position:absolute;inset:0}
+  .dust i{position:absolute;width:2.5px;height:2.5px;border-radius:50%}
+</style></head><body>
+
+<h1>Чем сцена отвечает на смену цвета</h1>
+<div class="lead">Ядро звезды одинаково везде и остаётся тёплым — это условие.<br>
+Ряды — три органа, которыми можно ответить. Ползунок — сила отклика.</div>
+
+<div class="bar"><label>сила <input type="range" id="k" min="0" max="100" value="55"><b id="kv">55%</b></label></div>
+
+<table id="t"></table>
+
+<script>
+const BASE = {                                  // тёплая палитра панели
+  room:  [[255,172,86,.9],[198,112,52,.34],[150,80,40,.12]],
+  rim:   [214,120,70],                          // кайма звезды: внешние 26 % её же градиента
+  dust:  [205,214,238],                         // пыль звёздного поля
+};
+const TARGET = {
+  brown: { room: BASE.room, rim: BASE.rim, dust: BASE.dust },
+  pink:  { room: [[255,150,182,.9],[214,104,134,.34],[168,68,100,.12]], rim: [226,110,150], dust: [240,180,205] },
+  white: { room: [[226,232,248,.9],[150,168,205,.34],[96,112,150,.12]], rim: [170,190,225], dust: [235,242,255] },
+};
+const mixArr = (a, b, k) => a.map((v, i) => Math.round(v + (b[i] - v) * k));
+const mixRoom = (a, b, k) => a.map((c, i) => c.map((v, j) => j === 3 ? v : Math.round(v + (b[i][j] - v) * k)));
+const roomCss = ([s0, s1, s2]) => `radial-gradient(ellipse 62% 46% at 50% 42%,
+  rgba(${s0[0]},${s0[1]},${s0[2]},${s0[3]}) 0%, rgba(${s1[0]},${s1[1]},${s1[2]},${s1[3]}) 34%,
+  rgba(${s2[0]},${s2[1]},${s2[2]},${s2[3]}) 55%, rgba(20,12,7,0) 74%)`;
+const starCss = (rim) => `radial-gradient(circle, #fff2d6 0%, #ffd98f 24%, #f2a955 50%,
+  rgba(${rim[0]},${rim[1]},${rim[2]},.34) 74%, rgba(${rim[0]},${rim[1]},${rim[2]},0) 100%)`;
+
+const DUST = Array.from({ length: 20 }, (_, i) => {
+  const a = i * 2.399, r = 26 + (i % 6) * 15;
+  return `<i style="left:${50 + Math.cos(a) * r * .58}%;top:${42 + Math.sin(a) * r * .52}%;opacity:${(.32 + (i % 4) * .13).toFixed(2)}"></i>`;
+}).join('');
+
+const ROWS = [
+  { id: 'room', name: 'дымка вокруг', note: 'та самая аура #room. Проверено: при рабочей прозрачности почти не читается' },
+  { id: 'rim',  name: 'кайма звезды', note: 'внешние 26 % её же градиента — воздух вплотную к цели. Ядро не тронуто' },
+  { id: 'dust', name: 'пыль поля',    note: 'звёзды, мимо которых летишь. Буквально среда, а не цель' },
+];
+const COLS = ['brown', 'pink', 'white'];
+
+document.getElementById('t').innerHTML =
+  '<tr><th></th>' + COLS.map(c => `<th class="col">${c}</th>`).join('') + '</tr>' +
+  ROWS.map(r => `<tr><th class="row">${r.name}<div>${r.note}</div></th>` + COLS.map(c => `
+    <td><div class="cell" data-row="${r.id}" data-col="${c}">
+      <div class="room"></div><div class="dust">${DUST}</div><div class="star"></div>
+    </div></td>`).join('') + '</tr>').join('');
+
+const kEl = document.getElementById('k'), kv = document.getElementById('kv');
+function paint() {
+  const k = +kEl.value / 100; kv.textContent = kEl.value + '%';
+  document.querySelectorAll('.cell').forEach((cell) => {
+    const row = cell.dataset.row, col = cell.dataset.col, T = TARGET[col];
+    const on = (id) => id === row ? k : 0;             // в каждой строке наклоняется ТОЛЬКО её орган
+    cell.querySelector('.room').style.background = roomCss(mixRoom(BASE.room, T.room, on('room')));
+    cell.querySelector('.star').style.background = starCss(mixArr(BASE.rim, T.rim, on('rim')));
+    const d = mixArr(BASE.dust, T.dust, on('dust'));
+    cell.querySelectorAll('.dust i').forEach((i) => { i.style.background = `rgb(${d[0]},${d[1]},${d[2]})`; });
+  });
+}
+kEl.oninput = paint; paint();
+</script>
+</body></html>
