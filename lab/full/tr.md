@@ -1,4 +1,4 @@
-Minimalist Timer, tarayıcın için dikkat dağıtmayan, sade bir odaklanma zamanlayıcısı. Sakin bir yıldız, boş bir alan ve sıcak, sürekli üretilen bir ses seni bir çalışma seansı boyunca taşır — ve bir alarmla irkiltmek yerine usulca yere inmeni sağlar. Karmaşa yok, hesap yok, takip yok. Odaklanmak sana genelde soğuk ya da mekanik geliyorsa, bu zamanlayıcı sakin hissettirmek için tasarlandı.
+Minimalist Timer, tarayıcın için dikkat dağıtmayan, sade bir odaklanma zamanlayıcısı. Sakin bir yıldız, boş bir alan ve sıcak, sürekli üretilen bir ses seni bir çalışma seansı boyunca taşır — ve bir alarmla irkiltmek yerine usulca yere inmeni sağlar. Karmaşa yok, hesap yok. Odaklanmak sana genelde soğuk ya da mekanik geliyorsa, bu zamanlayıcı sakin hissettirmek için tasarlandı.
 
 Süreni ayarla, başlat'a bas ve akışta kal.
 
@@ -52,7 +52,7 @@ Hafif bir pomodoro Chrome uzantısı ve masaüstü zamanlayıcısı olarak tam d
 ➤ Sessiz bir geri sayım yerine zamanın, dikkat dağıtıcıları maskeleyen ve akışta kalmana yardım eden sıcak brown noise ve yumuşak odak seslerinden oluşur.
 
 🧐 Çevrimdışı çalışır mı?
-➤ Evet. Her şey cihazında çalışır; yani bu minimalist zamanlayıcı bağlantı olmadan da çalışır ve seni asla takip etmez.
+➤ Evet. Her şey cihazında çalışır; yani bu minimalist zamanlayıcı bağlantı olmadan da çalışır.
 
 🧐 Pomodoro için kullanabilir miyim?
 ➤ Klasik odak sürelerini ayarlayabilirsin ama zorunlu molalar yok — bu, katı döngüler yerine akış etrafında kurulmuş, daha yumuşak ve minimalist bir pomodoro zamanlayıcısı.

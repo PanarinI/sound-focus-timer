@@ -1,0 +1,127 @@
+// glow.js — ЯЗЫЧОК-ЗАКЛАДКА у правой кромки страницы (v3, решения автора 07-22).
+// Роль ОДНА: ДВЕРЬ к очагу — клик открывает панель; при открытой панели тот же клик закрывает (зеркало).
+// Присутствие (дышит жаром сессии) — свойство двери, не отдельная функция.
+//
+// v3 добавляет:
+//  • УСЫНОВЛЕНИЕ СИРОТ: после перезагрузки экста в старых вкладках остаётся язычок мёртвого
+//    поколения (его chrome.runtime мёртв). Прежний guard «уже висит — выходим» не давал новому
+//    скрипту занять место → «неактивный рудимент» (баг автора). Теперь: старый host сносим, ставим свой.
+//  • ping: живой язычок отвечает фону «я тут» — фон не вливает скрипт повторно (без дублей-слушателей).
+// Законы прежние: узкий, у кромки; свечение кликов не перехватывает; габарит стабилен; closed shadow DOM.
+// (Крестик-выключатель убран 07-27: единственный переключатель язычка — тумблер «Edge tab» в настройках очага.)
+
+(() => {
+  const ID = '__ember_glow_host';
+  const orphan = document.getElementById(ID);
+  if (orphan) orphan.remove();                             // сирота прошлого поколения — усыновляем место
+
+  const host = document.createElement('div');
+  host.id = ID;
+  host.style.cssText = [
+    'position:fixed', 'right:0', 'top:50%', 'transform:translateY(-50%)',
+    'width:0', 'height:0', 'margin:0', 'padding:0', 'border:0',
+    'pointer-events:none', 'z-index:2147483647'
+  ].join(';');
+
+  const root = host.attachShadow({ mode: 'closed' });
+  root.innerHTML = `
+    <style>
+      /* НИТЬ СВЕТА ПОЛЁТА у кромки (07-25: развернула «жар-плашку» эры угля, когерентно рейсу к звезде).
+         Тонкая, тает к концам (лучевее — не брусок), ярче в середине; свет ПОЛЁТА леплется из-за кромки. */
+      .tongue {
+        position: fixed; right: 0; top: 50%;
+        width: 8px; height: 116px;
+        border-radius: 4px 0 0 4px;
+        /* НАСЫЩЕННОЕ непрозрачное ядро (видно на БЕЛОЙ странице) + тающие концы (нить, не брусок). */
+        background: linear-gradient(180deg,
+          rgba(242,195,119,0) 0%, rgba(238,158,66,.94) 15%,
+          #e8912c 50%,
+          rgba(198,108,48,.94) 85%, rgba(176,101,60,0) 100%);
+        box-shadow:
+          -9px 0 24px rgba(255,150,60,.45),              /* тёплое свечение — видно на ТЁМНОЙ странице */
+          -1px 0 3px rgba(45,22,8,.55);                  /* тёмная кромка — отрыв от БЕЛОЙ страницы */
+        pointer-events: auto; cursor: pointer;
+        transform: translate(120%, -50%);                /* спит ЗА кромкой — не «прозрачный ноль» */
+        transition: transform .55s cubic-bezier(.22,.9,.3,1.12), box-shadow .8s ease, filter .5s ease, width .4s ease;
+      }
+      .tongue::after {                                   /* яркая жила-сердцевина нити — её кормит жар */
+        content: ''; position: absolute; inset: 9px 1px 9px 1px;
+        border-radius: 2px;
+        background: linear-gradient(180deg, rgba(255,242,210,0), rgba(255,244,214,.95) 50%, rgba(255,226,170,0));
+        opacity: var(--lit, .5);
+        animation: breathe 6s ease-in-out infinite;
+      }
+      .tongue.on    { transform: translate(0, -50%); }
+      .tongue:hover { transform: translate(-4px, -50%); width: 11px;
+                      box-shadow: -13px 0 34px rgba(255,178,84,.62), -1px 0 3px rgba(45,22,8,.55); }
+      .tongue:active { transform: translate(1px, -50%) scaleY(.97); }
+      .tongue.paused { filter: saturate(.5) brightness(.72); }
+      .tongue.paused::after { animation-duration: 12s; }
+      .tongue.idle { filter: saturate(.62) brightness(.58); }   /* покой (таймер выключен) — язычок потухший */
+      .tongue.idle::after { animation-duration: 10s; }          /* и дышит медленнее, еле-еле */
+      .tongue.deny  { animation: deny .5s ease; }
+      @keyframes breathe { 0%,100% { opacity: var(--lit, .5); } 50% { opacity: calc(var(--lit, .5) + .25); } }
+      @keyframes deny { 0%,100% { transform: translate(0,-50%); } 30% { transform: translate(-3px, -50%) rotate(-1.6deg); } 65% { transform: translate(-1px, -50%) rotate(1.2deg); } }
+      @media (prefers-reduced-motion: reduce) {
+        .tongue { transition: none; }
+        .tongue::after { animation: none; }
+      }
+    </style>
+    <div class="tongue" part="tongue" title="Open / close"></div>`;
+
+  const tongue = root.querySelector('.tongue');
+  (document.body || document.documentElement).appendChild(host);
+
+  // Появление = ВЫЕЗД (не проявление): предмет приехал, периферия это ловит.
+  // В фоновой вкладке rAF заморожен → там без анимации, просто быть на месте:
+  // выезд — событие момента старта, на чужой вкладке язычок должен просто СТОЯТЬ.
+  function slideIn() {
+    if (document.hidden) { tongue.classList.add('on'); return; }
+    requestAnimationFrame(() => requestAnimationFrame(() => tongue.classList.add('on')));
+  }
+
+  // Смерть = снять слушателя СРАЗУ (иначе зомби: host снят, а слушатель отвечает фону на ping
+  // «я жив» → при включении обратно скрипт не вливается и язычок не возвращается — баг автора 07-22).
+  function slideOut(kill) {
+    tongue.classList.remove('on');
+    if (kill) {
+      try { chrome.runtime.onMessage.removeListener(onMsg); } catch (e) {}
+      setTimeout(() => host.remove(), 700);
+    }
+  }
+
+  tongue.addEventListener('click', () => {
+    chrome.runtime.sendMessage({ target: 'bg', type: 'openHome' })
+      .then((r) => {
+        if (r && r.ok) return;
+        // Дверь не открылась — честный видимый отказ + точная причина в консоли страницы.
+        tongue.classList.remove('deny'); void tongue.offsetWidth; tongue.classList.add('deny');
+        console.warn('[ember] дверь не открылась:', r && r.error);
+      })
+      .catch(() => {});
+  });
+
+  const onMsg = (msg, sender, sendResponse) => {
+    if (!msg || msg.target !== 'glow') return;
+    if (msg.type === 'ping') { sendResponse({ alive: host.isConnected }); return; }
+    if (msg.type === 'off') { slideOut(true); return; }
+    if (msg.type === 'state') {
+      const heat = Math.max(0, Math.min(1, msg.heat || 0));
+      const active = msg.active !== false;             // рейс идёт? покой (false) → ПОТУХШИЙ; undefined (старый фон) → как активный
+      // жар кормит СВЕТ жилы и ореол; габарит и место не двигаются.
+      // покой = дверь на месте, но ПОТУХШАЯ (очаг не разожжён, жалоба автора 08-01); рейс разгорается жаром.
+      tongue.style.setProperty('--lit', active ? (0.5 + heat * 0.45).toFixed(2) : '0.16');
+      tongue.classList.toggle('idle', !active);
+      if (!tongue.matches(':hover')) {
+        const glow = active ? heat : -0.7;             // в покое ореол почти гаснет
+        const spread = Math.max(4, 9 + glow * 9).toFixed(0);
+        const blur = Math.max(8, 24 + glow * 22).toFixed(0);
+        const alpha = Math.max(0.10, 0.42 + glow * 0.34).toFixed(2);
+        tongue.style.boxShadow = `-${spread}px 0 ${blur}px rgba(255,170,76,${alpha}), -1px 0 3px rgba(45,22,8,.55)`;
+      }
+      tongue.classList.toggle('paused', !!msg.paused);
+      slideIn();
+    }
+  };
+  chrome.runtime.onMessage.addListener(onMsg);
+})();

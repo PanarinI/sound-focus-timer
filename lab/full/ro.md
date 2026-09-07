@@ -1,4 +1,4 @@
-Minimalist Timer este un timer de concentrare, aproape fără distrageri, pentru browserul tău. O stea liniștită, un câmp gol și un sunet generativ cald care te poartă printr-o sesiune de lucru — apoi te lasă să aterizezi lin, în loc să te sperie cu o alarmă. Fără dezordine, fără conturi, fără urmărire. Dacă de obicei concentrarea ți se pare rece sau mecanică, acesta e gândit să transmită calm.
+Minimalist Timer este un timer de concentrare, aproape fără distrageri, pentru browserul tău. O stea liniștită, un câmp gol și un sunet generativ cald care te poartă printr-o sesiune de lucru — apoi te lasă să aterizezi lin, în loc să te sperie cu o alarmă. Fără dezordine, fără conturi. Dacă de obicei concentrarea ți se pare rece sau mecanică, acesta e gândit să transmită calm.
 
 Setează-ți timpul, apasă start și rămâi în flow.
 
@@ -52,7 +52,7 @@ Ca o extensie Pomodoro ușoară pentru Chrome și timer de desktop, rămâne exa
 ➤ În loc de o numărătoare inversă silențioasă, timpul tău e făcut din brown noise cald și sunete blânde pentru concentrare, care maschează distragerile și te ajută să rămâi în flow.
 
 🧐 Funcționează offline?
-➤ Da. Totul rulează pe dispozitiv, așa că acest timer minimalist funcționează fără conexiune și nu te urmărește niciodată.
+➤ Da. Totul rulează pe dispozitiv, așa că acest timer minimalist funcționează fără conexiune.
 
 🧐 Îl pot folosi pentru Pomodoro?
 ➤ Poți seta durate clasice de concentrare, dar nu există pauze forțate — e un timer Pomodoro minimalist, mai blând, construit în jurul flow-ului, nu al ciclurilor rigide.

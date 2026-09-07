@@ -1,4 +1,4 @@
-Minimalist Timer ialah pemasa fokus minim gangguan untuk pelayar anda. Satu bintang tenang, sebuah ruang lapang, dan bunyi generatif hangat membawa anda menempuh satu sesi kerja — kemudian membiarkan anda mendarat dengan lembut, bukannya mengejutkan anda dengan penggera. Tiada kekusutan, tiada akaun, tiada penjejakan. Jika fokus biasanya terasa sejuk atau mekanikal, yang ini direka supaya terasa tenang.
+Minimalist Timer ialah pemasa fokus minim gangguan untuk pelayar anda. Satu bintang tenang, sebuah ruang lapang, dan bunyi generatif hangat membawa anda menempuh satu sesi kerja — kemudian membiarkan anda mendarat dengan lembut, bukannya mengejutkan anda dengan penggera. Tiada kekusutan, tiada akaun. Jika fokus biasanya terasa sejuk atau mekanikal, yang ini direka supaya terasa tenang.
 
 Tetapkan masa anda, tekan mula, dan kekal dalam aliran.
 

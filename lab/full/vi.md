@@ -1,4 +1,4 @@
-Minimalist Timer là bộ hẹn giờ tập trung ít gây xao nhãng dành cho trình duyệt của bạn. Một ngôi sao tĩnh lặng, một khoảng không trống trải, và một âm thanh sinh tạo ấm áp đưa bạn đi suốt cả phiên làm việc — rồi để bạn hạ cánh nhẹ nhàng thay vì giật mình vì tiếng chuông báo. Không rườm rà, không tài khoản, không theo dõi. Nếu sự tập trung thường khiến bạn thấy lạnh lẽo hay máy móc, bộ hẹn giờ này được tạo ra để mang lại cảm giác tĩnh lặng.
+Minimalist Timer là bộ hẹn giờ tập trung ít gây xao nhãng dành cho trình duyệt của bạn. Một ngôi sao tĩnh lặng, một khoảng không trống trải, và một âm thanh sinh tạo ấm áp đưa bạn đi suốt cả phiên làm việc — rồi để bạn hạ cánh nhẹ nhàng thay vì giật mình vì tiếng chuông báo. Không rườm rà, không tài khoản. Nếu sự tập trung thường khiến bạn thấy lạnh lẽo hay máy móc, bộ hẹn giờ này được tạo ra để mang lại cảm giác tĩnh lặng.
 
 Đặt thời gian, nhấn bắt đầu, và ở lại trong dòng chảy.
 
@@ -52,7 +52,7 @@ Là một tiện ích Pomodoro nhẹ nhàng cho Chrome kiêm bộ hẹn giờ de
 ➤ Thay vì một màn đếm ngược im lặng, thời gian của bạn được tạo nên từ brown noise ấm áp và âm thanh tập trung dịu nhẹ, giúp che đi xao nhãng và giữ bạn trong dòng chảy.
 
 🧐 Nó có hoạt động ngoại tuyến không?
-➤ Có. Mọi thứ chạy trên thiết bị, nên bộ hẹn giờ tối giản này hoạt động mà không cần kết nối và không bao giờ theo dõi bạn.
+➤ Có. Mọi thứ chạy trên thiết bị, nên bộ hẹn giờ tối giản này hoạt động mà không cần kết nối.
 
 🧐 Tôi có thể dùng nó cho Pomodoro không?
 ➤ Bạn có thể đặt các khoảng tập trung cổ điển, nhưng không có giờ nghỉ bắt buộc — đây là một bộ hẹn giờ Pomodoro tối giản dịu dàng hơn, xây quanh dòng chảy chứ không phải những chu kỳ cứng nhắc.

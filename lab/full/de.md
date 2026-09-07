@@ -1,4 +1,4 @@
-Minimalist Timer ist ein ablenkungsarmer Fokus-Timer für deinen Browser. Ein ruhiger Stern, ein leeres Feld und ein warmer, generativer Klang tragen dich durch eine Arbeitssitzung – und lassen dich sanft landen, statt dich mit einem Alarm zu erschrecken. Kein Ballast, keine Konten, kein Tracking. Wenn sich Fokus sonst kalt oder mechanisch anfühlt, ist dieser hier darauf ausgelegt, sich ruhig anzufühlen.
+Minimalist Timer ist ein ablenkungsarmer Fokus-Timer für deinen Browser. Ein ruhiger Stern, ein leeres Feld und ein warmer, generativer Klang tragen dich durch eine Arbeitssitzung – und lassen dich sanft landen, statt dich mit einem Alarm zu erschrecken. Kein Ballast, keine Konten. Wenn sich Fokus sonst kalt oder mechanisch anfühlt, ist dieser hier darauf ausgelegt, sich ruhig anzufühlen.
 
 Zeit einstellen, Start drücken und im Flow bleiben.
 
@@ -52,7 +52,7 @@ Als leichtgewichtige Pomodoro Chrome-Erweiterung und Desktop-Timer bleibt er gen
 ➤ Statt eines stillen Countdowns besteht deine Zeit aus warmem Brown Noise und sanften Fokus-Klängen, die Ablenkungen maskieren und dir helfen, im Flow zu bleiben.
 
 🧐 Funktioniert es offline?
-➤ Ja. Alles läuft auf dem Gerät, also funktioniert dieser minimalistische Timer ohne Verbindung und trackt dich nie.
+➤ Ja. Alles läuft auf dem Gerät, also funktioniert dieser minimalistische Timer ohne Verbindung.
 
 🧐 Kann ich ihn für Pomodoro nutzen?
 ➤ Du kannst klassische Fokus-Längen einstellen, aber es gibt keine erzwungenen Pausen – es ist ein sanfterer, minimalistischer Pomodoro Timer rund um den Flow, nicht um starre Zyklen.

@@ -1,4 +1,4 @@
-Minimalist Timer je timer za fokus s malo ometanja, u vašem pregledniku. Jedna tiha zvijezda, prazno polje i topao generativni zvuk koji vas nosi kroz radnu sesiju — a zatim vam dopušta da meko sletite umjesto da vas trgne alarm. Bez nereda, bez računa, bez praćenja. Ako vam se fokus obično čini hladnim ili mehaničkim, ovaj je stvoren da se osjeća smireno.
+Minimalist Timer je timer za fokus s malo ometanja, u vašem pregledniku. Jedna tiha zvijezda, prazno polje i topao generativni zvuk koji vas nosi kroz radnu sesiju — a zatim vam dopušta da meko sletite umjesto da vas trgne alarm. Bez nereda, bez računa. Ako vam se fokus obično čini hladnim ili mehaničkim, ovaj je stvoren da se osjeća smireno.
 
 Postavite vrijeme, pritisnite start i ostanite u flowu.
 

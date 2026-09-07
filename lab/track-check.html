@@ -1,0 +1,53 @@
+<!doctype html><meta charset="utf-8"><title>Проверка шины событий</title>
+<body style="background:#0d0a12;color:#c3d0ea;font:12.5px/1.6 ui-monospace,monospace;padding:20px">
+<pre id="out">гоняю…</pre>
+<script>
+// Шим Chrome-API + перехват fetch: наружу ничего не уходит, проверяем СОСТАВ запроса.
+const sent = [];
+window.__realFetch = window.fetch.bind(window);
+window.fetch = (url, opt) => { sent.push({url, body: JSON.parse(opt.body)}); return Promise.resolve({ok:true}); };
+const store = {};
+window.chrome = {
+  runtime: { getManifest: () => ({ version_name: window.__DEV ? '1.1.6-dev' : undefined }) },
+  storage: { local: { get:(k,cb)=>cb({[k]:store[k]}), set:(o)=>Object.assign(store,o) } }
+};
+</script>
+<script>window.__DEV = true;</script>
+<script src="../extension/track.js"></script>
+<script>
+(async () => {
+  const L = [];
+  await track('flight_end', { how: 'arrived', min: 15.0, len: 15 });
+  L.push(`ДЕВ-сборка: запросов ушло ${sent.length}  ${sent.length === 0 ? '✓ молчит, как задумано' : '⚠ ГОВОРИТ!'}`);
+
+  // перезагружаем модуль в «прод»-режиме
+  window.__DEV = false; delete window.track;
+  const src = await (await (window.__realFetch || globalThis.fetch.__orig || fetch)('../extension/track.js')).text();
+  eval(src.replace("const API_SECRET = '';", "const API_SECRET = 'TEST_SECRET';"));
+
+  await track('panel_open', { first: true });
+  await track('flight_start', { len: 25 });
+  await track('flight_end', { how: 'arrived', min: 24.8, len: 25 });
+  await track('setting_changed', { what: 'colour', to: 'pink' });
+
+  L.push(`ПРОД-сборка: запросов ушло ${sent.length}`);
+  L.push('');
+  for (const s of sent) {
+    const e = s.body.events[0];
+    L.push(`  → ${String(s.url).split('?')[0]}`);
+    L.push(`    name=${e.name} · params=${JSON.stringify(e.params)}`);
+  }
+  const cids = new Set(sent.map(s => s.body.client_id));
+  L.push('');
+  L.push(`  cid одинаковый во всех событиях: ${cids.size === 1 ? '✓ да (' + [...cids][0] + ')' : '⚠ нет: ' + [...cids]}`);
+  // Явный белый список полей — грубый regex давал ложную тревогу на собственном названии продукта
+  const ALLOWED = new Set(['client_id','events']);
+  const bad = new Set();
+  for (const s of sent) for (const k of Object.keys(s.body)) if (!ALLOWED.has(k)) bad.add(k);
+  L.push(`  полей вне белого списка: ${bad.size ? '⚠ ' + [...bad] : '✓ нет'}`);
+  L.push(`  что уходит: ${[...new Set(sent.flatMap(s => Object.keys(s.body)))].join(', ')}`);
+  L.push(`  в params: ${[...new Set(sent.flatMap(s => Object.keys(s.body.events[0].params)))].join(', ')}`);
+  document.getElementById('out').textContent = L.join('\n');
+})().catch(e => document.getElementById('out').textContent = 'ОШИБКА: ' + e.message + '\n' + e.stack);
+</script>
+</body>

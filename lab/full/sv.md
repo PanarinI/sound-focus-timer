@@ -1,4 +1,4 @@
-Minimalist Timer är en fokustimer med få distraktioner för din webbläsare. En stilla stjärna, ett tomt fält och ett varmt, generativt ljud bär dig genom ett arbetspass – och låter dig landa mjukt i stället för att skrämma dig med ett larm. Inget stök, inga konton, ingen spårning. Om fokus annars känns kallt eller mekaniskt är den här byggd för att kännas lugn.
+Minimalist Timer är en fokustimer med få distraktioner för din webbläsare. En stilla stjärna, ett tomt fält och ett varmt, generativt ljud bär dig genom ett arbetspass – och låter dig landa mjukt i stället för att skrämma dig med ett larm. Inget stök, inga konton. Om fokus annars känns kallt eller mekaniskt är den här byggd för att kännas lugn.
 
 Ställ in din tid, tryck på start och stanna i flowet.
 

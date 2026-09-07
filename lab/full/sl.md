@@ -1,4 +1,4 @@
-Minimalist Timer je nevsiljiv časovnik za fokus v vašem brskalniku. Ena tiha zvezda, prazno polje in topel generativni zvok, ki vas ponese skozi delovno sejo — nato pa vam pusti, da mehko pristanete, namesto da vas prestraši z alarmom. Brez navlake, brez računov, brez sledenja. Če se vam fokus običajno zdi hladen ali mehaničen, je ta zasnovan tako, da deluje umirjeno.
+Minimalist Timer je nevsiljiv časovnik za fokus v vašem brskalniku. Ena tiha zvezda, prazno polje in topel generativni zvok, ki vas ponese skozi delovno sejo — nato pa vam pusti, da mehko pristanete, namesto da vas prestraši z alarmom. Brez navlake, brez računov. Če se vam fokus običajno zdi hladen ali mehaničen, je ta zasnovan tako, da deluje umirjeno.
 
 Nastavite si čas, pritisnite start in ostanite v zanosu.
 

@@ -1,11 +1,11 @@
-=== КРАТКОЕ ОПИСАНИЕ (short description, 128 симв.) ===
+=== КРАТКОЕ ОПИСАНИЕ (128 симв.) ===
 
 A calm minimalist timer with a brown noise generator built in, plus pink and white noise — focus sounds for study and deep work.
 
 
-=== ПОЛНОЕ ОПИСАНИЕ (full description, 5893 симв.) ===
+=== ПОЛНОЕ ОПИСАНИЕ (5929 симв.) ===
 
-Minimalist Timer is a distraction-light focus timer for your browser, with a warm brown noise generator built in. One quiet star, an empty field, and a generative sound that carries you through a work session — then lets you land gently instead of shocking you with an alarm. No clutter, no accounts, no tracking. If focus usually feels cold or mechanical, this minimal timer is built to feel calm.
+Minimalist Timer is a distraction-light focus timer for your browser, with a warm brown noise generator built in. One quiet star, an empty field, and a generative sound that carries you through a work session — then lets you land gently instead of shocking you with an alarm. No clutter, no accounts, no ads. If focus usually feels cold or mechanical, this minimal timer is built to feel calm.
 
 Set your time, press start, and stay in flow.
 
@@ -41,7 +41,7 @@ If you like an aesthetic timer or a cute timer on your screen, this minimal coun
 🧠 Gentle with your attention
 It is built to be kind to how attention actually works. If you struggle with time blindness or want a visual timer that makes time feel real without stress, the star gives you a soft sense of progress. It works well as a calm adhd timer alternative — one that guides you in and out of focus instead of punishing you. It calls you back; it does not cage you.
 
-💡 No accounts, no ads, and no data ever leaves your device — just a quiet, private space to focus, however your brain works.
+💡 No accounts, no ads, and nothing you write or listen to ever leaves your device — just a quiet, private space to focus, however your brain works.
 
 🖥 How it works
 1️⃣ Open the minimalist timer from your toolbar — a lightweight chrome extension, not a new tab takeover
@@ -70,7 +70,7 @@ As a lightweight pomodoro chrome extension and desktop timer, it stays right whe
 ➤ Yes. Three coloured dots sit beside the tone knob: brown by default, then pink, then white. White is the brightest, brown the deepest — pick whichever holds your attention.
 
 🧐 Does it work offline?
-➤ Yes. Everything runs on-device, so this minimalist timer works without a connection and never tracks you.
+➤ Yes. The timer and its sound run entirely on your device, so this minimalist timer keeps working with no connection at all.
 
 🧐 Can I use it for pomodoro?
 ➤ You can set classic focus lengths, but there are no forced breaks — it is a gentler, minimalist pomodoro timer built around flow, not rigid cycles.

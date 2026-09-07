@@ -1,4 +1,4 @@
-Minimalist Timer on vähese segajaga keskendumistaimer sinu brauseri jaoks. Üks vaikne täht, tühi väli ja soe generatiivne heli, mis kannab sind läbi tööseansi ning laseb siis pehmelt maanduda, selle asemel et sind signaaliga ehmatada. Ei mingit segadust, kontosid ega jälgimist. Kui keskendumine tundub tavaliselt külm või mehaaniline, siis see on loodud tunduma rahulik.
+Minimalist Timer on vähese segajaga keskendumistaimer sinu brauseri jaoks. Üks vaikne täht, tühi väli ja soe generatiivne heli, mis kannab sind läbi tööseansi ning laseb siis pehmelt maanduda, selle asemel et sind signaaliga ehmatada. Ei mingit segadust ega kontosid. Kui keskendumine tundub tavaliselt külm või mehaaniline, siis see on loodud tunduma rahulik.
 
 Sea aeg, vajuta start ja püsi voos.
 
@@ -52,7 +52,7 @@ Kerge Pomodoro Chrome'i laiendusena ja töölauataimerina püsib see just seal, 
 ➤ Vaikse pöördloenduse asemel on sinu aeg tehtud soojast brown noise'ist ja õrnadest keskendumishelidest, mis varjavad segajad ja aitavad voos püsida.
 
 🧐 Kas see töötab võrguühenduseta?
-➤ Jah. Kõik toimub sinu seadmes, seega see minimalistlik taimer töötab ilma ühenduseta ega jälgi sind kunagi.
+➤ Jah. Kõik toimub sinu seadmes, seega see minimalistlik taimer töötab ilma ühenduseta.
 
 🧐 Kas saan seda kasutada Pomodoro jaoks?
 ➤ Saad seada klassikalisi keskendumispikkusi, kuid sundpause pole – see on õrnem, minimalistlik Pomodoro taimer, mis on ehitatud voo, mitte jäikade tsüklite ümber.

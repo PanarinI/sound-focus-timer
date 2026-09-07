@@ -1,4 +1,4 @@
-Minimalist Timer é um timer de foco com poucas distrações para o seu navegador. Uma estrela tranquila, um campo vazio e um som generativo quente que te conduz por uma sessão de trabalho — e depois te deixa pousar suavemente, em vez de te assustar com um alarme. Sem bagunça, sem contas, sem rastreamento. Se focar costuma parecer frio ou mecânico, este foi feito para parecer calmo.
+Minimalist Timer é um timer de foco com poucas distrações para o seu navegador. Uma estrela tranquila, um campo vazio e um som generativo quente que te conduz por uma sessão de trabalho — e depois te deixa pousar suavemente, em vez de te assustar com um alarme. Sem bagunça, sem contas. Se focar costuma parecer frio ou mecânico, este foi feito para parecer calmo.
 
 Defina seu tempo, aperte iniciar e permaneça no fluxo.
 
@@ -52,7 +52,7 @@ Como uma leve extensão Pomodoro para Chrome e timer de desktop, ele fica bem on
 ➤ Em vez de uma contagem regressiva silenciosa, seu tempo é feito de brown noise quente e sons suaves de foco que mascaram distrações e ajudam você a manter o fluxo.
 
 🧐 Funciona offline?
-➤ Sim. Tudo roda no dispositivo, então este timer minimalista funciona sem conexão e nunca te rastreia.
+➤ Sim. Tudo roda no dispositivo, então este timer minimalista funciona sem conexão.
 
 🧐 Posso usar para Pomodoro?
 ➤ Você pode definir durações de foco clássicas, mas não há pausas forçadas — é um timer Pomodoro minimalista mais gentil, construído em torno do fluxo, não de ciclos rígidos.

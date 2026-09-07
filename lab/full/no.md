@@ -1,4 +1,4 @@
-Minimalist Timer er en fokustimer med få forstyrrelser for nettleseren din. En stille stjerne, et tomt felt og en varm, generativ lyd bærer deg gjennom en arbeidsøkt – og lar deg lande mykt i stedet for å skremme deg med en alarm. Ingen rot, ingen kontoer, ingen sporing. Hvis fokus ellers føles kaldt eller mekanisk, er denne laget for å føles rolig.
+Minimalist Timer er en fokustimer med få forstyrrelser for nettleseren din. En stille stjerne, et tomt felt og en varm, generativ lyd bærer deg gjennom en arbeidsøkt – og lar deg lande mykt i stedet for å skremme deg med en alarm. Ingen rot, ingen kontoer. Hvis fokus ellers føles kaldt eller mekanisk, er denne laget for å føles rolig.
 
 Still inn tiden, trykk start, og bli værende i flyten.
 

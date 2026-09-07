@@ -1,4 +1,4 @@
-Minimalist Timer is a distraction-light focus timer for your browser. One quiet star, an empty field, and a warm generative sound that carries you through a work session — then lets you land gently instead of shocking you with an alarm. No clutter, no accounts, no tracking. If focus usually feels cold or mechanical, this one is built to feel calm.
+Minimalist Timer is a distraction-light focus timer for your browser. One quiet star, an empty field, and a warm generative sound that carries you through a work session — then lets you land gently instead of shocking you with an alarm. No clutter, no accounts. If focus usually feels cold or mechanical, this one is built to feel calm.
 
 Set your time, press start, and stay in flow.
 
@@ -52,7 +52,7 @@ As a lightweight pomodoro chrome extension and desktop timer, it stays right whe
 ➤ Instead of a silent countdown, your time is made of warm brown noise and soft focus sounds that mask distractions and help you stay in flow.
 
 🧐 Does it work offline?
-➤ Yes. Everything runs on-device, so this minimalist timer works without a connection and never tracks you.
+➤ Yes. Everything runs on-device, so this minimalist timer works without a connection.
 
 🧐 Can I use it for pomodoro?
 ➤ You can set classic focus lengths, but there are no forced breaks — it's a gentler, minimalist pomodoro timer built around flow, not rigid cycles.

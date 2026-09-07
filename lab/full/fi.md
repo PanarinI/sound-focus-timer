@@ -1,4 +1,4 @@
-Minimalist Timer on rauhallinen, lähes häiriötön keskittymisajastin selaimeesi. Yksi hiljainen tähti, tyhjä kenttä ja lämmin generatiivinen ääni, joka kantaa sinut työjakson läpi – ja antaa sinun laskeutua pehmeästi sen sijaan, että säikäyttäisi sinut hälytyksellä. Ei sekavuutta, ei tilejä, ei seurantaa. Jos keskittyminen tuntuu yleensä kylmältä tai mekaaniselta, tämä on rakennettu tuntumaan rauhalliselta.
+Minimalist Timer on rauhallinen, lähes häiriötön keskittymisajastin selaimeesi. Yksi hiljainen tähti, tyhjä kenttä ja lämmin generatiivinen ääni, joka kantaa sinut työjakson läpi – ja antaa sinun laskeutua pehmeästi sen sijaan, että säikäyttäisi sinut hälytyksellä. Ei sekavuutta, ei tilejä. Jos keskittyminen tuntuu yleensä kylmältä tai mekaaniselta, tämä on rakennettu tuntumaan rauhalliselta.
 
 Aseta aika, paina käynnistä ja pysy flow-tilassa.
 
@@ -52,7 +52,7 @@ Kevyenä pomodoro-Chrome-laajennuksena ja työpöytäajastimena se pysyy juuri s
 ➤ Äänettömän lähtölaskennan sijaan aikasi on tehty lämpimästä brown noisesta ja pehmeistä keskittymisäänistä, jotka peittävät häiriöt ja auttavat pysymään flow-tilassa.
 
 🧐 Toimiiko se offline-tilassa?
-➤ Kyllä. Kaikki toimii laitteella, joten tämä minimalistinen ajastin toimii ilman verkkoyhteyttä eikä koskaan seuraa sinua.
+➤ Kyllä. Kaikki toimii laitteella, joten tämä minimalistinen ajastin toimii ilman verkkoyhteyttä.
 
 🧐 Voinko käyttää sitä pomodoroon?
 ➤ Voit asettaa klassisia keskittymisaikoja, mutta pakotettuja taukoja ei ole – tämä on hellävaraisempi, minimalistinen pomodoro-ajastin, joka on rakennettu flow-tilan ympärille, ei jäykkien syklien varaan.

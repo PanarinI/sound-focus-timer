@@ -1,4 +1,4 @@
-Minimalist Timer – beveik neblaškantis susikaupimo laikmatis tavo naršyklei. Viena tyli žvaigždė, tuščias laukas ir šiltas generatyvus garsas, kuris perneša tave per visą darbo sesiją, o pabaigoje leidžia švelniai nusileisti, užuot išgąsdinęs signalu. Jokios sumaišties, jokių paskyrų, jokio sekimo. Jei susikaupimas paprastai atrodo šaltas ar mechaniškas, šis sukurtas taip, kad jaustųsi ramus.
+Minimalist Timer – beveik neblaškantis susikaupimo laikmatis tavo naršyklei. Viena tyli žvaigždė, tuščias laukas ir šiltas generatyvus garsas, kuris perneša tave per visą darbo sesiją, o pabaigoje leidžia švelniai nusileisti, užuot išgąsdinęs signalu. Jokios sumaišties, jokių paskyrų. Jei susikaupimas paprastai atrodo šaltas ar mechaniškas, šis sukurtas taip, kad jaustųsi ramus.
 
 Nustatyk laiką, paspausk start ir išlik sraute.
 

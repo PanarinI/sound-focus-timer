@@ -46,6 +46,7 @@ FILES=(
   offscreen.html
   hearth.html
   hearth.js
+  track.js          # шина событий (09-02) — тоже подключена мягко: нет файла → нет счётчиков
   glow.js
 )
 DIRS=( icons _locales )
@@ -106,7 +107,7 @@ rm -f "$ZIP"                       # zip -r ДОПИСЫВАЕТ в сущест
 LIST=$(unzip -Z1 "$ZIP")
 IN_ZIP=$(printf '%s\n' "$LIST" | wc -l | tr -d ' ')
 LOCALES=$(printf '%s\n' "$LIST" | grep -c '_locales/.*/messages.json' || true)
-for must in tone.js manifest.json hearth.js; do
+for must in tone.js track.js manifest.json hearth.js; do
   printf '%s\n' "$LIST" | grep -qx "$must" || { echo "✗ в архиве НЕТ $must"; exit 1; }
 done
 VNAME=$(unzip -p "$ZIP" manifest.json | python3 -c 'import json,sys;print(json.load(sys.stdin).get("version_name",""))')

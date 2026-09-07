@@ -1,4 +1,4 @@
-Minimalist Timer és un temporitzador de concentració amb poques distraccions per al teu navegador. Un estel tranquil, un camp buit i un so generatiu càlid que t'acompanya al llarg d'una sessió de treball, i després et deixa aterrar suaument en comptes de sobresaltar-te amb una alarma. Sense desordre, sense comptes, sense seguiment. Si concentrar-te sol semblar-te fred o mecànic, aquest està fet per semblar tranquil.
+Minimalist Timer és un temporitzador de concentració amb poques distraccions per al teu navegador. Un estel tranquil, un camp buit i un so generatiu càlid que t'acompanya al llarg d'una sessió de treball, i després et deixa aterrar suaument en comptes de sobresaltar-te amb una alarma. Sense desordre, sense comptes. Si concentrar-te sol semblar-te fred o mecànic, aquest està fet per semblar tranquil.
 
 Configura el teu temps, prem inicia i mantén-te en flow.
 
@@ -52,7 +52,7 @@ Com a extensió Pomodoro lleugera per a Chrome i temporitzador d'escriptori, es 
 ➤ En lloc d'un compte enrere silenciós, el teu temps està fet de brown noise càlid i sons suaus de concentració que emmascaren les distraccions i t'ajuden a mantenir-te en flow.
 
 🧐 Funciona sense connexió?
-➤ Sí. Tot funciona al dispositiu, així que aquest temporitzador minimalista funciona sense connexió i no et rastreja mai.
+➤ Sí. Tot funciona al dispositiu, així que aquest temporitzador minimalista funciona sense connexió.
 
 🧐 El puc fer servir per a Pomodoro?
 ➤ Pots configurar durades de concentració clàssiques, però no hi ha pauses forçades: és un temporitzador Pomodoro minimalista més amable, construït al voltant del flow, no de cicles rígids.

@@ -1,4 +1,4 @@
-A Minimalist Timer egy zavaró elemektől mentes fókuszidőzítő a böngésződhöz. Egyetlen csendes csillag, egy üres mező és egy meleg, generatív hang, amely végigvisz egy munkameneten – majd hagyja, hogy lágyan érkezz meg, ahelyett, hogy riasztással ijesztene meg. Semmi felesleg, semmi fiók, semmi követés. Ha a fókusz általában hidegnek vagy gépiesnek hat, ezt arra építették, hogy nyugodtnak érződjön.
+A Minimalist Timer egy zavaró elemektől mentes fókuszidőzítő a böngésződhöz. Egyetlen csendes csillag, egy üres mező és egy meleg, generatív hang, amely végigvisz egy munkameneten – majd hagyja, hogy lágyan érkezz meg, ahelyett, hogy riasztással ijesztene meg. Semmi felesleg, semmi fiók. Ha a fókusz általában hidegnek vagy gépiesnek hat, ezt arra építették, hogy nyugodtnak érződjön.
 
 Állítsd be az időt, nyomd meg a startot, és maradj flow-ban.
 

@@ -1,4 +1,4 @@
-Minimalist Timer ir fokusēšanās taimeris tavai pārlūkprogrammai, kas gandrīz nenovērš uzmanību. Viena klusa zvaigzne, tukšs lauks un silta ģeneratīva skaņa, kas nes tevi cauri darba sesijai un beigās ļauj maigi piezemēties, nevis pārbiedē ar signālu. Nekāda jucekļa, nekādu kontu, nekādas izsekošanas. Ja fokusēšanās parasti šķiet auksta vai mehāniska, šis ir veidots tā, lai justos mierīgs.
+Minimalist Timer ir fokusēšanās taimeris tavai pārlūkprogrammai, kas gandrīz nenovērš uzmanību. Viena klusa zvaigzne, tukšs lauks un silta ģeneratīva skaņa, kas nes tevi cauri darba sesijai un beigās ļauj maigi piezemēties, nevis pārbiedē ar signālu. Nekāda jucekļa, nekādu kontu. Ja fokusēšanās parasti šķiet auksta vai mehāniska, šis ir veidots tā, lai justos mierīgs.
 
 Iestati laiku, nospied start un paliec plūsmā.
 

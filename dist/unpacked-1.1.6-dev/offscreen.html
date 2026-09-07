@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta charset="UTF-8"></head>
+<body>
+  <!-- Невидимый документ: держит непрерывный звук независимо от вкладок. -->
+  <!-- tone.js — ДО offscreen.js: движок ищет ToneLayer в момент своего создания -->
+  <!-- Кэш-бустер обязателен и здесь: offscreen — настоящий дом звука, и без метки он мог играть
+       закэшированный движок, пока панель уже грузила новый (поймано автором 08-24: первая посадка
+       после пересборки прозвучала по-старому). Метку `?b=` бампать вместе с hearth.html. -->
+  <script src="track.js?b=49"></script>
+  <script src="engine.js?b=49"></script>
+  <script src="tone.js?b=49"></script>
+  <script src="offscreen.js?b=49"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-Minimalist Timer is een afleidingsarme focustimer voor je browser. Eén rustige ster, een leeg veld en een warme, generatieve klank die je door een werksessie draagt – en je daarna zacht laat landen in plaats van je op te schrikken met een alarm. Geen rommel, geen accounts, geen tracking. Als focus normaal koud of mechanisch aanvoelt, is deze gemaakt om juist rustig aan te voelen.
+Minimalist Timer is een afleidingsarme focustimer voor je browser. Eén rustige ster, een leeg veld en een warme, generatieve klank die je door een werksessie draagt – en je daarna zacht laat landen in plaats van je op te schrikken met een alarm. Geen rommel, geen accounts. Als focus normaal koud of mechanisch aanvoelt, is deze gemaakt om juist rustig aan te voelen.
 
 Stel je tijd in, druk op start en blijf in je flow.
 

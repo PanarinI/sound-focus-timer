@@ -1,4 +1,4 @@
-Minimalist Timer to timer do skupienia dla Twojej przeglądarki, który nie rozprasza. Jedna cicha gwiazda, puste pole i ciepły, generatywny dźwięk, który przeprowadza Cię przez sesję pracy – a potem pozwala Ci miękko wylądować, zamiast wyrywać Cię alarmem. Żadnego bałaganu, żadnych kont, żadnego śledzenia. Jeśli skupienie zwykle wydaje Ci się zimne albo mechaniczne, ten timer zaprojektowano tak, by dawał poczucie spokoju.
+Minimalist Timer to timer do skupienia dla Twojej przeglądarki, który nie rozprasza. Jedna cicha gwiazda, puste pole i ciepły, generatywny dźwięk, który przeprowadza Cię przez sesję pracy – a potem pozwala Ci miękko wylądować, zamiast wyrywać Cię alarmem. Żadnego bałaganu, żadnych kont. Jeśli skupienie zwykle wydaje Ci się zimne albo mechaniczne, ten timer zaprojektowano tak, by dawał poczucie spokoju.
 
 Ustaw czas, wciśnij start i pozostań w flow.
 
@@ -52,7 +52,7 @@ Jako lekkie rozszerzenie pomodoro do Chrome i timer na komputer zostaje dokładn
 ➤ Zamiast cichego odliczania Twój czas składa się z ciepłego brown noise i delikatnych dźwięków do skupienia, które maskują rozpraszacze i pomagają Ci pozostać w flow.
 
 🧐 Czy działa offline?
-➤ Tak. Wszystko działa na urządzeniu, więc ten minimalistyczny timer działa bez połączenia i nigdy Cię nie śledzi.
+➤ Tak. Wszystko działa na urządzeniu, więc ten minimalistyczny timer działa bez połączenia.
 
 🧐 Czy mogę używać go do pomodoro?
 ➤ Możesz ustawić klasyczne długości skupienia, ale nie ma wymuszonych przerw – to łagodniejszy, minimalistyczny timer pomodoro zbudowany wokół flow, a nie sztywnych cykli.

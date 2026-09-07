@@ -1,4 +1,4 @@
-Minimalist Timer je nenápadný časovač pro soustředění do tvého prohlížeče. Jedna tichá hvězda, prázdné pole a hřejivý generativní zvuk, který tě provede pracovním blokem – a pak tě nechá měkce přistát, místo aby tě vylekal budíkem. Žádný nepořádek, žádné účty, žádné sledování. Pokud ti soustředění obvykle připadá chladné nebo mechanické, tenhle je navržený tak, aby působil klidně.
+Minimalist Timer je nenápadný časovač pro soustředění do tvého prohlížeče. Jedna tichá hvězda, prázdné pole a hřejivý generativní zvuk, který tě provede pracovním blokem – a pak tě nechá měkce přistát, místo aby tě vylekal budíkem. Žádný nepořádek, žádné účty. Pokud ti soustředění obvykle připadá chladné nebo mechanické, tenhle je navržený tak, aby působil klidně.
 
 Nastav si čas, zmáčkni start a zůstaň ve flow.
 

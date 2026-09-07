@@ -1,4 +1,4 @@
-Minimalist Timer ni kipima muda cha umakini chenye vikengeushi vichache kwa kivinjari chako. Nyota moja tulivu, uwanja tupu, na sauti ya joto inayojizalisha inayokubeba katika kipindi chote cha kazi — kisha inakuruhusu kutua taratibu badala ya kukushtua kwa king'ora. Hakuna msongamano, hakuna akaunti, hakuna ufuatiliaji. Iwapo umakini huwa unahisi baridi au wa kimitambo, kipima muda hiki kimeundwa kuleta utulivu.
+Minimalist Timer ni kipima muda cha umakini chenye vikengeushi vichache kwa kivinjari chako. Nyota moja tulivu, uwanja tupu, na sauti ya joto inayojizalisha inayokubeba katika kipindi chote cha kazi — kisha inakuruhusu kutua taratibu badala ya kukushtua kwa king'ora. Hakuna msongamano, hakuna akaunti. Iwapo umakini huwa unahisi baridi au wa kimitambo, kipima muda hiki kimeundwa kuleta utulivu.
 
 Weka muda wako, bonyeza anza, na ubaki katika mtiririko.
 

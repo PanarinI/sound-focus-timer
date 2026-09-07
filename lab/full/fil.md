@@ -1,4 +1,4 @@
-Ang Minimalist Timer ay focus timer na halos walang distraction sa browser mo. Tahimik na bituin, walang-lamang espasyo, at mainit na generative na tunog ang magdadala sa iyo sa work session — pagkatapos ay hahayaan kang marahang dumapo sa halip na gulatin ng alarma. Walang kalat, walang account, walang tracking. Kung karaniwang malamig o mekanikal ang pakiramdam ng pag-focus, ginawa ito para maging kalmado.
+Ang Minimalist Timer ay focus timer na halos walang distraction sa browser mo. Tahimik na bituin, walang-lamang espasyo, at mainit na generative na tunog ang magdadala sa iyo sa work session — pagkatapos ay hahayaan kang marahang dumapo sa halip na gulatin ng alarma. Walang kalat, walang account. Kung karaniwang malamig o mekanikal ang pakiramdam ng pag-focus, ginawa ito para maging kalmado.
 
 Itakda ang oras mo, pindutin ang start, at manatili sa flow.
 
@@ -52,7 +52,7 @@ Bilang magaan na pomodoro chrome extension at desktop timer, nananatili ito sa l
 ➤ Sa halip na tahimik na countdown, gawa ang oras mo sa mainit na brown noise at malambot na focus sounds na tumatakip sa distraction at tumutulong sa iyong manatili sa flow.
 
 🧐 Gumagana ba ito offline?
-➤ Oo. Lahat ay tumatakbo sa device, kaya gumagana ito kahit walang koneksyon at hindi ka tine-track.
+➤ Oo. Lahat ay tumatakbo sa device, kaya gumagana ito kahit walang koneksyon.
 
 🧐 Puwede ko ba itong gamitin para sa pomodoro?
 ➤ Puwede kang magtakda ng klasikong haba ng focus, pero walang sapilitang pahinga — mas banayad na minimalist pomodoro timer na nakaikot sa flow, hindi sa matigas na cycle.
