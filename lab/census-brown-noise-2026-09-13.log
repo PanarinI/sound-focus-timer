@@ -1,0 +1,116 @@
+# app-studio/research/lib/sky/census_run.py --check (критерий v3) · 2026-09-13
+# дискавери: внутренний поиск CWS (hl=en-US, gl=US), $0 · keys.csv не тронут
+# вопрос автора: «есть ли brown noise в сторе? занято?» — голова + 8 запросов семьи
+
+=== 'brown noise' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10 · MID: FocusRoom — New Tab Lo-Fi, Rai
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  MID    ?     1746   25        нет  FocusRoom — New Tab Lo-Fi, Rain & Brown Nois
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     1962   131       нет  Noise Level Monitor
+  NO     ?     4969   13        да   Neurorite - White Noise Generator
+  NO     52    4648   40        да   Noise Maker
+  NO     ?     1332   47        нет  Smartnoise - Visual
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     ?     3783   5         да   Tinnirelief — Tinnitus Sound Masking
+
+=== 'brown noise generator' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     4969   13        да   Neurorite - White Noise Generator
+  NO     52    4648   40        да   Noise Maker
+  NO     ?     2859   19        нет  Custom Noise Generator
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     ?     1746   25        нет  FocusRoom — New Tab Lo-Fi, Rain & Brown Nois
+  NO     ?     2316   ?         нет  HealthCheck – Tinnitus Sound Relief
+  NO     53    6896   115       да   Minimalist Timer
+  NO     ?     4636   80        да   Binaural Extension
+
+=== 'brown noise player' → FREE  (стор-поиск: 3 расширений, 3 проверено) ===
+🟢 держателей 0 · кандидатов 3
+  класс  langs desc   users     опт  title
+  NO     ?     4969   13        да   Neurorite - White Noise Generator
+  NO     ?     2124   18        нет  Tiny Tones
+  NO     ?     2590   4         нет  My Chrome Home
+
+=== 'brown noise app' → FREE  (стор-поиск: 4 расширений, 4 проверено) ===
+🟢 держателей 0 · кандидатов 4
+  класс  langs desc   users     опт  title
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     52    4648   40        да   Noise Maker
+  NO     ?     4969   13        да   Neurorite - White Noise Generator
+  NO     53    6896   115       да   Minimalist Timer
+
+=== 'brown noise extension' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     52    4648   40        да   Noise Maker
+  NO     ?     2859   19        нет  Custom Noise Generator
+  NO     ?     4969   13        да   Neurorite - White Noise Generator
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     ?     4636   80        да   Binaural Extension
+  NO     ?     1737   30        нет  Noice Noise
+  NO     ?     1332   47        нет  Smartnoise - Visual
+  NO     ?     2104   41        нет  TAKT
+
+=== 'brown noise for focus' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     ?     1423   411       нет  Noise Generator
+  NO     6     2685   22        нет  ADHD Relief - Focus & Relaxation
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     53    3704   1,000     да   Focus Mode
+  NO     ?     3526   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     ?     4969   13        да   Neurorite - White Noise Generator
+  NO     53    6896   115       да   Minimalist Timer
+  NO     ?     1410   25        нет  Music for focus and work - Flow Music
+  NO     6     6523   14        да   FocusSpark – Smart Focus Sessions
+
+=== 'brown noise for studying' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     4969   13        да   Neurorite - White Noise Generator
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     52    4648   40        да   Noise Maker
+  NO     53    6896   115       да   Minimalist Timer
+  NO     ?     1718   7         нет  Youtube white noise autoplayer
+  NO     6     2685   22        нет  ADHD Relief - Focus & Relaxation
+  NO     ?     3526   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     52    3891   9         да   Rain sounds
+  NO     ?     2488   26        нет  Ambiens — Ambient Sound Mixer
+  NO     ?     2585   10        нет  Ambient Sounds Pro
+
+=== 'brown noise for sleep' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     52    4648   40        да   Noise Maker
+  NO     2     3574   12        да   Uykucu — Sleep Sounds, White Noise & Relaxat
+  NO     ?     3783   5         да   Tinnirelief — Tinnitus Sound Masking
+  NO     ?     3526   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     52    3891   9         да   Rain sounds
+  NO     ?     2351   9         нет  Somnia
+  NO     ?     4446   4         да   StudyShield - Stay Productive, Stay Safe
+  NO     ?     3563   58        да   White Noise Studio – Nature Sounds
+
+=== 'brown noise machine' → FREE  (стор-поиск: 8 расширений, 8 проверено) ===
+🟢 держателей 0 · кандидатов 8
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     52    4648   40        да   Noise Maker
+  NO     ?     4969   13        да   Neurorite - White Noise Generator
+  NO     ?     2859   19        нет  Custom Noise Generator
+  NO     ?     2316   ?         нет  HealthCheck – Tinnitus Sound Relief
+  NO     53    6896   115       да   Minimalist Timer
+  NO     52    3891   9         да   Rain sounds
+
+=== dry-run: 9 двери · дискавери $0 (стор-поиск) · keys.csv НЕ тронут ===
