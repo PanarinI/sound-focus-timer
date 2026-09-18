@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Тон-стенд: шершавый и аналоговый</title>
+<!--
+  09-16. Автор: «тон звучит как синус, плавный. Хочу шершавее, аналоговее. Дай стенд с настройками».
+
+  ── ПОЧЕМУ СЕЙЧАС «СИНУС» (слух верный, проверено по коду tone.js) ─────────────────────────────
+  Пласт — треугольник через лоупас ~1250 Гц. У треугольника призвуки слабые с рождения (третий в 9 раз
+  тише основного, пятый в 25), а срез снимает и эти. У голосов выше 420 Гц над срезом остаётся почти
+  одна основная — то есть синус. 6-секундный реверб с посылом 0.6 размывает остальное.
+
+  ── УСТРОЙСТВО СТЕНДА ────────────────────────────────────────────────────────────────────────────
+  · Шумовая подушка — настоящая, ../extension/engine.js: цвета, громкость и ручка Tone ведут себя как в продукте.
+  · Слой тона — копия extension/tone.js (1.1.7): пласт, ход, путник, мотивы, смена аккорда только в
+    тишине голоса. Отличие одно: каждый голос звучит сразу ДВУМЯ тембрами. A — как в сторе, B — с ручками.
+    Присутствие голосов и высоты у A и B общие, поэтому кнопка A/B меняет ТОЛЬКО тембр — те же ноты
+    в тот же момент.
+  · Громкость B подравнивается под A по K-взвешенному уровню (как в LUFS), чтобы сравнивать характер,
+    а не «громче — значит лучше».
+  · Пресет «B = A» — ноль прибора: при нём переключатель не должен давать разницы.
+  В продукт отсюда ничего не уходит само: вердикт автора → правка tone.js → дев-сборка → его слово.
+
+  Открывать через локальный сервер (конфигурация sft-root): http://localhost:8785/lab/tone-analog-stand.html
+-->
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; min-height:100vh; background:#070a12; color:#dfe6f5;
+         font:15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         display:flex; flex-direction:column; align-items:center; gap:14px; padding:26px 16px 60px; }
+  h1 { font-size:17px; font-weight:600; margin:0; color:#f0f4ff; }
+  .sub { font-size:13px; color:#7c88a6; margin:-6px 0 0; text-align:center; max-width:680px; }
+  .row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center; max-width:900px; }
+  button { background:#151e35; color:#dfe6f5; border:1px solid #26314f; border-radius:9px;
+           padding:8px 14px; font-size:14px; cursor:pointer; font-family:inherit; }
+  button:hover { background:#1c2745; }
+  button.primary { background:#2c4c8f; border-color:#4a72c4; font-weight:600; padding:10px 22px; }
+  button.on { border-color:#8fb6ff; background:#1d2b4f; color:#fff; }
+  .diag { font-size:11.5px; color:#5f6d8c; }
+
+  /* A/B */
+  .ab { display:flex; gap:0; border:1px solid #26314f; border-radius:14px; overflow:hidden; }
+  .ab button { border:0; border-radius:0; padding:14px 26px; font-size:15px; background:#0d1322; min-width:230px; text-align:left; }
+  .ab button b { display:block; font-size:16px; }
+  .ab button span { display:block; font-size:11.5px; color:#8492b0; }
+  .ab button.on.a { background:#16305e; } .ab button.on.b { background:#4a2f14; }
+  .ab button.on span { color:#d5dcf0; }
+  .loud { font-size:12px; color:#8492b0; font-variant-numeric:tabular-nums; }
+  .loud b { color:#c3d0ea; font-weight:600; }
+
+  label.sl { font-size:12.5px; color:#8492b0; display:flex; align-items:center; gap:8px; }
+  label.sl b { color:#c3d0ea; font-weight:600; font-variant-numeric:tabular-nums; min-width:34px; }
+  input[type=range] { accent-color:#8fb6ff; }
+  .big input[type=range] { width:280px; }
+  .what { font-size:11.5px; color:#6f7d9c; }
+
+  .presets button { font-size:13px; padding:7px 12px; }
+  .presets button small { color:#7c88a6; font-size:11px; margin-left:4px; }
+
+  .groups { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:12px; width:100%; max-width:980px; }
+  @media (max-width: 860px) { .groups { grid-template-columns:1fr; } }
+  .grp { background:#0b1120; border:1px solid #182240; border-radius:14px; padding:12px 14px 6px; }
+  .grp h3 { margin:0 0 2px; font-size:13.5px; color:#eaf0ff; font-weight:600; }
+  .grp .gsub { font-size:11.5px; color:#65728f; margin:0 0 8px; }
+  .k { margin:0 0 10px; }
+  .k .top { display:flex; justify-content:space-between; align-items:baseline; gap:8px; font-size:13px; color:#c9d4ec; }
+  .k .top b { font-weight:600; font-variant-numeric:tabular-nums; color:#e8eeff; font-size:12.5px; }
+  .k input[type=range] { width:100%; margin:2px 0 0; }
+  .k select { width:100%; background:#151e35; color:#dfe6f5; border:1px solid #26314f; border-radius:7px; padding:5px 6px; font-size:13px; margin-top:3px; }
+  .k .hint { font-size:11px; color:#5f6d8c; line-height:1.35; }
+  .k .hint.warn { color:#b98a5e; }
+
+  .mine { font-size:12.5px; color:#8492b0; }
+  .chip { display:inline-flex; align-items:center; gap:2px; background:#121a2e; border:1px solid #26314f; border-radius:20px; padding:0 0 0 12px; }
+  .chip button { border:0; background:transparent; padding:5px 8px; font-size:12.5px; }
+  .chip button.x { color:#6f7d9c; padding:5px 10px 5px 4px; }
+  .chip.on { border-color:#d6a060; }
+
+  .state { font-size:13px; color:#93a2c4; min-height:20px; }
+  .state.silent { color:#c98b6a; }
+  .voices { display:flex; gap:4px; height:26px; align-items:flex-end; }
+  .voices i { width:9px; background:#2b4477; border-radius:2px 2px 0 0; transition:height .3s linear, background .3s; }
+  .meter { width:200px; height:8px; border-radius:5px; background:#121a2c; overflow:hidden; border:1px solid #1c2540; }
+  .meter i { display:block; height:100%; width:0; background:linear-gradient(90deg,#3d6fd0,#9dc0ff); }
+
+  .spec { width:100%; max-width:980px; }
+  .spec canvas { width:100%; height:210px; display:block; background:#0a0f1c; border:1px solid #182240; border-radius:12px; }
+  .legend { font-size:11.5px; color:#6f7d9c; margin-top:5px; display:flex; gap:16px; flex-wrap:wrap; }
+  .legend i { display:inline-block; width:18px; height:3px; vertical-align:middle; margin-right:5px; border-radius:2px; }
+
+  .note { max-width:760px; font-size:12.5px; color:#6f7d9c; border-top:1px solid #161f36; padding-top:14px; }
+  .note b { color:#9fb0d4; font-weight:600; }
+</style>
+
+<h1>Тон-стенд: шершавый и аналоговый</h1>
+<p class="sub">Шум — настоящий, из продукта. Музыка тона — та же, что в сторе. Каждая нота звучит сразу двумя тембрами:
+  <b>A</b> — как сейчас, <b>B</b> — как выставишь ручками. Кнопка A/B меняет только тембр, ноты те же.</p>
+
+<div class="row">
+  <button class="primary" id="go">▶ Взлёт</button>
+  <button id="stop">■ Стоп</button>
+  <button id="melNow" title="проиграть мотив сейчас, не дожидаясь расписания">♪ Мотив сейчас</button>
+  <button id="beep" title="громкий явный тон мимо всей механики — доходит ли звук со страницы вообще">🔔 Проверка звука</button>
+</div>
+<div class="row"><span class="diag" id="diag">аудио-контекст: не создан</span></div>
+
+<div class="ab" id="ab">
+  <button class="a" data-side="A"><b>A · как сейчас</b><span>тембр из стора 1.1.7 · клавиша A</span></button>
+  <button class="b" data-side="B"><b>B · шершавый</b><span>ручки ниже · клавиша B</span></button>
+</div>
+<div class="row loud">
+  <span id="loud">громкость A и B: появится после взлёта</span>
+  <label class="sl"><input type="checkbox" id="match" checked> уравнивать громкость B по A</label>
+</div>
+
+<div class="row big">
+  <label class="sl" style="color:#eaf0ff">ШУМ ⟷ ТОН <input type="range" id="mix" min="0" max="1" step="0.01" value="0.55"><b id="mixV">0.55</b></label>
+  <label class="sl">громкость <input type="range" id="vol" min="0" max="1" step="0.01" value="0.5" style="width:130px"><b id="volV">0.50</b></label>
+</div>
+<div class="row">
+  <span class="what" id="mixWhat"></span>
+  <span class="what">· шум:</span>
+  <button data-colour="brown" class="on">brown</button><button data-colour="pink">pink</button><button data-colour="white">white</button>
+</div>
+
+<div class="row presets" id="presets"></div>
+
+<div class="groups" id="groups"></div>
+
+<div class="row mine">
+  <span>Мои варианты:</span>
+  <span id="saved" class="row" style="gap:6px"></span>
+  <button id="save">＋ запомнить B</button>
+  <button id="copy" title="скопировать настройки B, чтобы вставить в чат">📋 скопировать B</button>
+</div>
+
+<div class="state silent" id="state">тишина — нажми «Взлёт»</div>
+<div class="row">
+  <div class="voices" id="voices"></div>
+  <span class="diag">уровень</span><div class="meter"><i id="bar"></i></div><span class="diag" id="db">—</span>
+</div>
+
+<div class="spec">
+  <canvas id="spec" width="1960" height="420"></canvas>
+  <div class="legend">
+    <span><i style="background:#3a4560"></i>шум (подушка)</span>
+    <span><i id="legTone" style="background:#d6a060"></i><span id="legToneTxt">тон, который сейчас слышен</span></span>
+    <span>Синус — редкие одинокие пики. Шершавое — гребёнка призвуков и «пух» между ними.</span>
+  </div>
+</div>
+
+<p class="note">
+  <b>Почему сейчас гладко.</b> В продукте нота — треугольная волна. Призвуки у неё слабые, а фильтр на ~1250 Гц
+  срезает и их, поэтому верхние голоса звучат почти как чистый синус. Длинный реверб сглаживает то, что осталось.
+  <br><br>
+  <b>Что делает звук аналоговым.</b> Три разных места, и они не заменяют друг друга.
+  <b>Сама нота</b> — форма волны с призвуками, нестабильная высота, воздух внутри звука.
+  <b>Шершавость</b> — зерно (шорох громкости внутри ноты) и насыщение (ноты густеют и цепляются друг за друга, как на плёнке «в красную»).
+  <b>Носитель</b> — лента: качка и дрожь, хор, сухость или простор.
+  <br><br>
+  <b>Закон, который стоит помнить.</b> Урок 13: движение высоты ухо ловит сразу. Качка ленты и нестабильность —
+  тоже движение высоты, только маленькое. Послушай их отдельно: где они перестают быть «плёнкой» и становятся «плывёт».
+  Треска пластинки здесь нет нарочно: щелчок — это резкая атака, а атака — событие (урок 7).
+</p>
+
+<script src="../extension/engine.js"></script>
+<script>
+// ── СТЕНД ОБЯЗАН ПАДАТЬ ГРОМКО (урок tone-stand 08-04: мёртвая страница выглядела живой) ──────
+function fatal(msg, hint) {
+  document.body.insertAdjacentHTML('afterbegin',
+    '<div style="background:#3a1520;border:1px solid #a04a5e;border-radius:12px;padding:16px 18px;' +
+    'max-width:660px;color:#ffd9e0;font-size:14px;line-height:1.5">' +
+    '<b style="display:block;margin-bottom:6px;font-size:15px">Стенд не запустился</b>' + msg +
+    (hint ? '<div style="margin-top:10px;color:#ffb3c1">' + hint + '</div>' : '') + '</div>');
+}
+window.onerror = (m, src, line) => fatal('Ошибка в коде стенда: <code>' + m + '</code> (строка ' + line + ')');
+if (typeof AudioEngine === 'undefined') {
+  fatal('Не загрузился движок <code>../extension/engine.js</code> — без него нет шумовой подушки.',
+        'Открой стенд через локальный сервер: <code>http://localhost:8785/lab/tone-analog-stand.html</code>');
+  throw new Error('engine.js not loaded');
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════════════════
+// МУЗЫКА — копия extension/tone.js (1.1.7). Менять здесь нельзя: A обязан звучать как в сторе.
+// ═══════════════════════════════════════════════════════════════════════════════════════════
+const PALETTE = [[0, 7, 2], [0, 9, 4], [2, 7, 4], [9, 4, 2], [0, 7, 9]];
+const CFG = {
+  centers: [196, 262, 330, 392, 523, 659, 784, 880],
+  cutoff: 1500, hp: 150, rvSec: 6.0, rvDecay: 2.5,
+  send: 0.6, rvGain: 0.9, dry: 0.5, moveEvery: 65,
+};
+const DENS = 0.5, DETUNE = 8, WARM = 0.35, PULSE_RATE = 0.62;
+const PHI = 1.6180339887;
+const A_CUTOFF = CFG.cutoff * (0.45 + 1.1 * WARM);          // 1252.5 Гц — срез пласта в продукте
+const CUT_DRIFT = (CFG.cutoff * 0.22) / A_CUTOFF;           // глубина дрейфа среза как доля самого среза
+
+const rnd = (a, b) => a + Math.random() * (b - a);
+const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+const clamp01 = (x) => clamp(x, 0, 1);
+
+function softRectifier() {
+  const N = 1024, c = new Float32Array(N);
+  for (let i = 0; i < N; i++) { const x = -1 + 2 * i / (N - 1); c[i] = x <= 0 ? 0 : x * x * (3 - 2 * x); }
+  return c;
+}
+const densToDC = (d, i) => (i < 2 ? 0.34 + d * 0.36 : -0.56 + d * 1.02);
+function pcNear(pc, center, preferDown) {
+  const midiCenter = 69 + 12 * Math.log2(center / 440);
+  let best = null, bestD = 1e9;
+  for (let oct = 0; oct <= 9; oct++) {
+    const midi = pc + 12 * oct;
+    let d = Math.abs(midi - midiCenter);
+    if (preferDown && midi > midiCenter) d += 0.6;
+    if (d < bestD) { bestD = d; best = midi; }
+  }
+  return 440 * Math.pow(2, (best - 69) / 12);
+}
+const SCALE = (() => { const s = new Set(); PALETTE.forEach((ch) => ch.forEach((pc) => s.add(pc))); return [...s].sort((a, b) => a - b); })();
+function scaleFreq(idx, ref) {
+  const len = SCALE.length;
+  const root = 12 * Math.floor((69 + 12 * Math.log2(ref / 440)) / 12);
+  const midi = root + SCALE[((idx % len) + len) % len] + 12 * Math.floor(idx / len);
+  return 440 * Math.pow(2, (midi - 69) / 12);
+}
+function stepIn(idx, step, lo, hi) { const n = idx + step; return Math.max(lo, Math.min(hi, (n > hi || n < lo) ? idx - step : n)); }
+
+// ═══════════════════════════════════════════════════════════════════════════════════════════
+// ТЕМБР B — ручки. Значения по умолчанию = A (ноль прибора).
+// ═══════════════════════════════════════════════════════════════════════════════════════════
+const WANDER_CENTS = 14;     // «нестабильность» на максимуме: высота гуляет в пределах ±14 центов
+const B_ZERO = {
+  form: 'triangle', spread: DETUNE, wander: 0,
+  breath: 0, breathQ: 18,
+  grain: 0, grainRate: 40,
+  drive: 0, asym: 0, cutoff: A_CUTOFF, reso: 0.4,
+  wow: 0, flutter: 0, chorus: 0, space: 0.6,
+};
+const B = Object.assign({}, B_ZERO);
+
+// Стартовые точки, а не вывод: значения подобраны по устройству звука, решает ухо автора.
+const PRESETS = [
+  { key: 'zero', name: 'B = A', note: 'ноль прибора', b: {} },
+  { key: 'tape', name: 'Плёнка', note: 'тепло и зерно',
+    b: { form: 'sawtooth', spread: 10, wander: 0.25, breath: 0.1, grain: 0.1, grainRate: 30,
+         drive: 0.45, asym: 0.3, cutoff: 1400, reso: 0.7, wow: 0.2, flutter: 0.2, chorus: 0.15, space: 0.45 } },
+  { key: 'juno', name: 'Аналоговый пэд', note: 'пила и хор',
+    b: { form: 'sawtooth', spread: 6, wander: 0.3, drive: 0.2, asym: 0.1, cutoff: 1800, reso: 1.8,
+         chorus: 0.6, space: 0.5 } },
+  { key: 'air', name: 'Воздух', note: 'нота из шума',
+    b: { form: 'triangle', spread: 5, wander: 0.1, breath: 0.85, breathQ: 22, grain: 0.1, grainRate: 25,
+         drive: 0.1, cutoff: 2400, reso: 0.5, chorus: 0.1, space: 0.55 } },
+  { key: 'reed', name: 'Фисгармония', note: 'язычок, гнусаво',
+    b: { form: 'square', spread: 4, wander: 0.1, breath: 0.25, breathQ: 10, grain: 0.3, grainRate: 60,
+         drive: 0.35, asym: 0.2, cutoff: 1600, reso: 0.6, space: 0.4 } },
+  { key: 'cassette', name: 'Кассета', note: 'качка и густота',
+    b: { form: 'triangle', spread: 8, wander: 0.35, breath: 0.15, grain: 0.12, grainRate: 30,
+         drive: 0.55, asym: 0.4, cutoff: 1000, reso: 0.4, wow: 0.6, flutter: 0.45, space: 0.35 } },
+  { key: 'rough', name: 'Шершавый', note: 'всё сразу, но мягко',
+    b: { form: 'sawtooth', spread: 14, wander: 0.3, breath: 0.35, breathQ: 12, grain: 0.45, grainRate: 45,
+         drive: 0.6, asym: 0.35, cutoff: 1300, reso: 1.0, wow: 0.1, flutter: 0.15, chorus: 0.2, space: 0.35 } },
+];
+
+// ── звуковые помощники ────────────────────────────────────────────────────────────────────
+// форма волны осциллятора; «узкий импульс» — ряд Фурье прямоугольника со скважностью 25 %
+let waveCache = { ac: null, pulse: null };
+function setForm(AC, o, form) {
+  if (form === 'pulse') {
+    if (waveCache.ac !== AC) {
+      const N = 64, re = new Float32Array(N), im = new Float32Array(N);
+      for (let n = 1; n < N; n++) re[n] = (2 / (n * Math.PI)) * Math.sin(n * Math.PI * 0.25);
+      waveCache = { ac: AC, pulse: AC.createPeriodicWave(re, im) };
+    }
+    o.setPeriodicWave(waveCache.pulse);
+  } else o.type = form;
+}
+function makeIR(AC, sec, decay) {
+  const len = Math.floor(AC.sampleRate * sec), ir = AC.createBuffer(2, len, AC.sampleRate);
+  for (let ch = 0; ch < 2; ch++) { const d = ir.getChannelData(ch); for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, decay); }
+  return ir;
+}
+function whiteBuf(AC, sec) {
+  const b = AC.createBuffer(1, Math.floor(AC.sampleRate * sec), AC.sampleRate), d = b.getChannelData(0);
+  for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+  return b;
+}
+// медленный случайный дрейф высоты: сумма 16 синусов со случайными фазами, период 48 с — петля без шва.
+// Частота дискретизации низкая (сигнал медленный), каждый осциллятор читает её со своего места и в своём темпе.
+function wanderBuf(AC) {
+  const SR = 8000, T = 48, K = 16, len = SR * T;
+  const b = AC.createBuffer(1, len, SR), d = b.getChannelData(0);
+  const ph = Array.from({ length: K }, () => Math.random() * 2 * Math.PI);
+  let peak = 0;
+  for (let i = 0; i < len; i++) {
+    const t = i / SR; let s = 0;
+    for (let k = 1; k <= K; k++) s += Math.sin(2 * Math.PI * k * t / T + ph[k - 1]) / Math.sqrt(k);
+    d[i] = s; if (Math.abs(s) > peak) peak = Math.abs(s);
+  }
+  for (let i = 0; i < len; i++) d[i] /= peak;
+  return b;
+}
+// кривая насыщения: tanh со сдвигом рабочей точки. Сдвиг даёт несимметричный срез — чётные призвуки («лампа»).
+function satCurve(bias) {
+  const N = 4097, c = new Float32Array(N), off = Math.tanh(bias);
+  for (let i = 0; i < N; i++) { const u = -1 + 2 * i / (N - 1); c[i] = Math.tanh(12 * u + bias) - off; }
+  return c;
+}
+const sech2 = (x) => 1 - Math.tanh(x) ** 2;
+// громкость «воздуха»: белый шум после двух узких полос тихий — выравниваем его к громкости пары осцилляторов
+function breathComp(AC, f, Q) {
+  const bw = 0.785 * f / Q, nyq = AC.sampleRate / 2;
+  return 0.816 / (0.577 * Math.sqrt(bw / nyq));
+}
+// глубина «зерна»: медленный шум после лоупаса выравниваем так, чтобы ручка значила одно и то же на любой частоте
+function grainComp(AC, rate) {
+  const bw = 1.11 * rate, nyq = AC.sampleRate / 2;
+  return 0.30 / (0.577 * Math.sqrt(bw / nyq));
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════════════════
+// СЛОЙ ТОНА С ДВУМЯ ТЕМБРАМИ. Контракт тот же, что у ToneLayer (setMix · phaseChanged), поэтому
+// движок ведёт его штатно: ручка Tone утончает стену, фазы рейса приходят от дирижёра.
+// ═══════════════════════════════════════════════════════════════════════════════════════════
+class ToneAB {
+  constructor(engine) {
+    this.eng = engine;
+    this.mix = 0; this.pad = null; this.phase = 'off';
+    this.gain = { tone: 0, puls: 0, comp: 0, mel: 0 };
+    this.melPhase = Math.random();
+    this.side = 'B';            // что сейчас слышно
+    this.match = true;          // уравнивать громкость B по A
+    this.loud = { a: 0, b: 0, trim: 1 };
+  }
+
+  // ── ОДНА РУЧКА (копия продукта) ───────────────────────────────────────────────────────
+  setMix(m) {
+    this.mix = clamp01(+m || 0);
+    const a = this.mix * Math.PI / 2;
+    const stair = (lo, hi) => clamp01((this.mix - lo) / (hi - lo));
+    this.gain.tone = Math.sin(a) * 0.9;
+    this.gain.puls = stair(0.10, 0.45);
+    this.gain.comp = stair(0.18, 0.55);
+    this.gain.mel = stair(0.30, 0.70);
+    this.eng.noiseTrim = 0.34 + 0.66 * Math.cos(a);
+    this.eng.wallThin = 1 - 0.35 * this.mix;
+    if (this.eng.AC) this.eng._apply();
+    if (this.mix < 0.005) { this._kill(); return; }
+    if (!this.eng.AC || this.phase === 'off') return;
+    const born = this._ensure();
+    this._level(1.5);
+    if (born && (this.phase === 'собирание' || this.phase === 'ткань')) this._run();
+    else this._applyLayers();
+  }
+
+  // ── ФАЗЫ РЕЙСА (копия продукта) ───────────────────────────────────────────────────────
+  phaseChanged(phase) {
+    const was = this.phase;
+    this.phase = phase;
+    if (phase === 'off') { this._kill(); return; }
+    if (this.mix < 0.005 || !this.eng.AC) return;
+    this._ensure();
+    if (phase === 'собирание') {
+      if (was === 'off' || was === 'ручей') {
+        const t = this.eng.AC.currentTime;
+        this.pad.A.bus.gain.setValueAtTime(0, t); this.pad.B.bus.gain.setValueAtTime(0, t);
+      }
+      this._level(Math.max(4, this.eng.GATHER * 0.55));
+      this._run();
+    } else if (phase === 'ткань') {
+      this._level(3); this._run();
+    } else if (phase === 'ниточка' || phase === 'угасание') {
+      this._stopTimers();
+    } else if (phase === 'рассвет') {
+      this._resolve();
+    }
+  }
+
+  _resolve() {
+    this._stopTimers();
+    if (!this.pad) return;
+    const t = this.eng.AC.currentTime, chord = PALETTE[0];
+    this.pad.voices.forEach((v) => {
+      if (v.idx < 2) return;
+      v.want = pcNear(chord[v.idx % chord.length], v.center, true);
+      v.dc.offset.setTargetAtTime(-0.9, t, Math.max(3, this.eng.DAWN * 0.3));
+    });
+    this._settleTick();
+    if (this.pad.comp) this.pad.comp.depth.gain.setTargetAtTime(0, t, 4);
+  }
+
+  // уровень слоя идёт в оба пути одновременно — иначе A и B разъехались бы по громкости на входе
+  _level(tau) {
+    if (!this.pad) return;
+    const t = this.eng.AC.currentTime, k = Math.max(0.3, tau) / 3;
+    this.pad.A.bus.gain.setTargetAtTime(this.gain.tone, t, k);
+    this.pad.B.bus.gain.setTargetAtTime(this.gain.tone, t, k);
+  }
+  _applyLayers() {
+    if (!this.pad || !this.pad.comp) return;
+    this.pad.comp.depth.gain.setTargetAtTime(this.gain.comp * 0.55, this.eng.AC.currentTime, 2.5);
+  }
+  _ensure() { if (this.pad) return false; this._build(); this._level(0.5); return true; }
+  _run() {
+    if (!this.pad) return;
+    this._applyLayers();
+    this._moveChord(); this._scheduleMelody(); this._wander(); this._pulseTick();
+  }
+  _stopTimers() {
+    const p = this.pad; if (!p) return;
+    clearTimeout(p.moveTimer); clearTimeout(p.melTimer); clearTimeout(p.compTimer); clearTimeout(p.pulseTimer);
+    clearTimeout(p.settleTimer);
+    p.moveTimer = p.melTimer = p.compTimer = p.pulseTimer = p.settleTimer = null;
+  }
+  _kill() {
+    const old = this.pad; if (!old) return;
+    this._stopTimers();
+    this.pad = null;
+    try { old.out.gain.setTargetAtTime(0, this.eng.AC.currentTime, 0.2); } catch (e) {}
+    setTimeout(() => {
+      old.stop.forEach((n) => { try { n.stop(); } catch (e) {} });
+      try { old.out.disconnect(); old.zero.disconnect(); } catch (e) {}
+    }, 2500);
+  }
+
+  // ── ПОСТРОЙКА ─────────────────────────────────────────────────────────────────────────
+  _build() {
+    const AC = this.eng.AC, now = AC.currentTime;
+    const p = { stop: [], step: 0, moveTimer: null, melTimer: null, settleTimer: null, compTimer: null, pulseTimer: null };
+    const gain = (v) => { const g = AC.createGain(); g.gain.value = v; return g; };
+    const filt = (type, f, Q) => { const b = AC.createBiquadFilter(); b.type = type; b.frequency.value = f; if (Q != null) b.Q.value = Q; return b; };
+    const osc = (type, f) => { const o = AC.createOscillator(); o.type = type; o.frequency.value = f; o.start(); p.stop.push(o); return o; };
+    const drift = (rate, depth, param) => { const o = osc('sine', rate), g = gain(depth); o.connect(g); g.connect(param); return g; };
+    const loop = (buf, offset, rate) => { const s = AC.createBufferSource(); s.buffer = buf; s.loop = true; s.playbackRate.value = rate || 1; s.start(now, offset || 0); p.stop.push(s); return s; };
+    const pan = (from, value, to) => { const n = AC.createStereoPanner(); n.pan.value = value; from.connect(n); n.connect(to); };
+    this._h = { gain, filt, osc, drift, loop };
+    this.loud = { a: 0, b: 0, trim: 1 };
+
+    p.out = gain(1); p.out.connect(this.eng.master);
+    p.zero = gain(0); p.zero.connect(this.eng.master);          // сток для анализаторов: тянет, но не звучит
+    const ir = makeIR(AC, CFG.rvSec, CFG.rvDecay);               // ОДИН отпечаток зала на оба пути
+    const kweight = (from) => {                                  // K-взвешивание, как в LUFS: полка +4 дБ и срез низа
+      const sh = filt('highshelf', 1682); sh.gain.value = 4;
+      const hp = filt('highpass', 38, 0.5);
+      const an = AC.createAnalyser(); an.fftSize = 2048;
+      from.connect(sh); sh.connect(hp); hp.connect(an); an.connect(p.zero);
+      return an;
+    };
+
+    // ── ПУТЬ A: ровно как в продукте ──
+    const A = p.A = {};
+    A.bus = gain(0);
+    A.hp = filt('highpass', CFG.hp); A.lp = filt('lowpass', A_CUTOFF, 0.4);
+    A.bus.connect(A.hp); A.hp.connect(A.lp);
+    drift(0.0083, CFG.cutoff * 0.22, A.lp.frequency);
+    A.out = gain(1);
+    const aDry = gain(CFG.dry); A.lp.connect(aDry); aDry.connect(A.out);
+    A.rv = AC.createConvolver(); A.rv.buffer = ir;
+    const aSend = gain(CFG.send); A.lp.connect(aSend); aSend.connect(A.rv);
+    const aRvg = gain(CFG.rvGain); A.rv.connect(aRvg); aRvg.connect(A.out);
+    A.xf = gain(this.side === 'A' ? 1 : 0); A.out.connect(A.xf); A.xf.connect(p.out);
+    A.kw = kweight(A.out);
+
+    // ── ПУТЬ B: фильтр → насыщение → сухо/зал → лента → хор ──
+    const Bp = p.B = {};
+    Bp.bus = gain(0);
+    Bp.hp = filt('highpass', CFG.hp); Bp.lp = filt('lowpass', B.cutoff, B.reso);
+    Bp.bus.connect(Bp.hp); Bp.hp.connect(Bp.lp);
+    Bp.lpDrift = drift(0.0083, B.cutoff * CUT_DRIFT, Bp.lp.frequency);
+    // насыщение: чистая ветка или ветка через кривую; при нуле — честный обход, без единого искажения
+    Bp.clean = gain(1); Bp.pre = gain(1);
+    Bp.shaper = AC.createWaveShaper(); Bp.shaper.oversample = '4x'; Bp.shaper.curve = satCurve(0); Bp.curveBias = 0;
+    Bp.dcb = filt('highpass', 20, 0.7); Bp.post = gain(1); Bp.satOn = gain(0);
+    Bp.pix = gain(1);
+    Bp.lp.connect(Bp.clean); Bp.clean.connect(Bp.pix);
+    Bp.lp.connect(Bp.pre); Bp.pre.connect(Bp.shaper); Bp.shaper.connect(Bp.dcb); Bp.dcb.connect(Bp.post);
+    Bp.post.connect(Bp.satOn); Bp.satOn.connect(Bp.pix);
+    Bp.medium = gain(1);
+    Bp.dry = gain(CFG.dry); Bp.pix.connect(Bp.dry); Bp.dry.connect(Bp.medium);
+    Bp.rv = AC.createConvolver(); Bp.rv.buffer = ir;
+    Bp.send = gain(CFG.send); Bp.pix.connect(Bp.send); Bp.send.connect(Bp.rv);
+    const bRvg = gain(CFG.rvGain); Bp.rv.connect(bRvg); bRvg.connect(Bp.medium);
+    // лента: вся запись целиком (с залом) качается по высоте — модулируем задержку
+    Bp.tape = AC.createDelay(0.05); Bp.tape.delayTime.value = 0.015;
+    Bp.medium.connect(Bp.tape);
+    Bp.wow = gain(0); Bp.wow.connect(Bp.tape.delayTime);
+    [[0.53, 0.62], [0.53 * PHI, 0.38]].forEach(([r, a]) => { const o = osc('sine', r), g = gain(a); o.connect(g); g.connect(Bp.wow); });
+    Bp.flutter = gain(0); Bp.flutter.connect(Bp.tape.delayTime);
+    [[6.8, 0.7], [11.3, 0.3]].forEach(([r, a]) => { const o = osc('sine', r), g = gain(a); o.connect(g); g.connect(Bp.flutter); });
+    // хор: две плывущие задержки по краям панорамы, в противофазе друг к другу
+    Bp.chDry = gain(1); Bp.chWet = gain(0); Bp.sum = gain(1);
+    Bp.tape.connect(Bp.chDry); Bp.chDry.connect(Bp.sum); Bp.chWet.connect(Bp.sum);
+    const chLfo = osc('sine', 0.5), chDepth = gain(0.0018); chLfo.connect(chDepth);
+    [-1, 1].forEach((s) => {
+      const d = AC.createDelay(0.03); d.delayTime.value = 0.0035;
+      const inv = gain(s); chDepth.connect(inv); inv.connect(d.delayTime);
+      Bp.tape.connect(d); pan(d, s * 0.95, Bp.chWet);
+    });
+    Bp.trim = gain(1); Bp.sum.connect(Bp.trim);
+    Bp.xf = gain(this.side === 'B' ? 1 : 0); Bp.trim.connect(Bp.xf); Bp.xf.connect(p.out);
+    Bp.kw = kweight(Bp.sum);                                     // меряем ДО подравнивания — иначе петля
+
+    // спектр того, что сейчас слышно (для картинки)
+    p.spec = AC.createAnalyser(); p.spec.fftSize = 8192; p.spec.smoothingTimeConstant = 0.82;
+    p.out.connect(p.spec); p.spec.connect(p.zero);
+
+    // общие источники для B: белый шум (из него «воздух» и «зерно») и медленная случайная кривая (нестабильность)
+    p.white = whiteBuf(AC, 6);
+    p.noise = loop(p.white, 0, 1);
+    p.wanderBuf = wanderBuf(AC);
+
+    // ── ГОЛОСА ──
+    p.voices = CFG.centers.map((c, i) => {
+      const panV = rnd(-0.75, 0.75);
+      const vgA = gain(0), vgB = gain(0);                        // уровень задаёт ТОЛЬКО модуляция присутствия
+      pan(vgA, panV, A.bus); pan(vgB, panV, Bp.bus);
+      const peak = 0.30 / Math.sqrt(i + 1);
+      const tunes = [];
+
+      // A: пара треугольников ±8 центов с плёночной качкой
+      [-1, 1].forEach((s) => {
+        const o = osc('triangle', c); o.detune.value = s * DETUNE;
+        drift(0.017 + i * 0.0029, 6, o.detune);
+        o.connect(vgA); tunes.push({ param: o.frequency, mul: 1 });
+      });
+
+      // B: та же пара, но форма, расстройка и нестабильность — с ручек
+      const strG = gain(1), brG = gain(0), src = gain(1);
+      const oscB = [-1, 1].map((s) => {
+        const o = osc('triangle', c); setForm(AC, o, B.form); o.detune.value = s * B.spread;
+        drift(0.017 + i * 0.0029, 6, o.detune);
+        const w = loop(p.wanderBuf, rnd(0, 48), rnd(0.8, 1.25)), wg = gain(B.wander * WANDER_CENTS);
+        w.connect(wg); wg.connect(o.detune);
+        o.connect(strG); tunes.push({ param: o.frequency, mul: 1 });
+        return { o, wg };
+      });
+      strG.connect(src);
+      // воздух: белый шум через две узкие полосы на высоте ноты — нота, сделанная из шума
+      const bps = [filt('bandpass', c, B.breathQ), filt('bandpass', c, B.breathQ)];
+      p.noise.connect(bps[0]); bps[0].connect(bps[1]); bps[1].connect(brG); brG.connect(src);
+      bps.forEach((bp) => tunes.push({ param: bp.frequency, mul: 1 }));
+      // зерно: громкость ноты шуршит — медленный шум поверх ровной основы
+      const grainG = gain(1), glp = filt('lowpass', B.grainRate, 0.7), gdep = gain(0);
+      const gsrc = loop(p.white, rnd(0, 5.5), 1);
+      gsrc.connect(glp); glp.connect(gdep); gdep.connect(grainG.gain);
+      src.connect(grainG); grainG.connect(vgB);
+
+      // присутствие — общее для A и B
+      const base = 41 + i * 7;
+      const sum = gain(1);
+      [[base, 0.62], [base * PHI, 0.38]].forEach(([per, amp], k) => {
+        const l = AC.createOscillator(); l.type = 'sine'; l.frequency.value = 1 / per;
+        const g = gain(amp); l.connect(g); g.connect(sum);
+        l.start(now + i * 1.7 + k * 3.1); p.stop.push(l);
+      });
+      const dc = AC.createConstantSource(); dc.offset.value = densToDC(DENS, i); dc.connect(sum); dc.start(); p.stop.push(dc);
+      const shaper = AC.createWaveShaper(); shaper.curve = softRectifier(); shaper.oversample = 'none';
+      const depth = gain(peak);
+      sum.connect(shaper); shaper.connect(depth); depth.connect(vgA.gain); depth.connect(vgB.gain);
+
+      const an = AC.createAnalyser(); an.fftSize = 256; vgA.connect(an); an.connect(p.zero);
+      return { vgA, vgB, center: c, peak, idx: i, dc, an, abuf: new Float32Array(256), want: null,
+               tunes, oscB, strG, brG, bps, grainG, glp, gdep };
+    });
+
+    this.pad = p;
+    p.motifs = this._makeMotifs();
+    p.formNow = B.form;
+    p.comp = this._buildCompanion();
+    this.applyB(0.01);
+  }
+
+  // ── РУЧКИ B → звук. Всё едет через setTargetAtTime: крутишь — меняется плавно, без щелчков ──
+  applyB(tau = 0.25) {
+    const p = this.pad; if (!p) return;
+    const AC = this.eng.AC, t = AC.currentTime, Bp = p.B;
+    const strk = Math.cos(B.breath * Math.PI / 2), brk = Math.sin(B.breath * Math.PI / 2);
+    const formChanged = p.formNow !== B.form; p.formNow = B.form;
+    p.voices.forEach((v) => {
+      v.oscB.forEach(({ o, wg }, k) => {
+        if (formChanged) setForm(AC, o, B.form);
+        o.detune.setTargetAtTime((k ? 1 : -1) * B.spread, t, tau);
+        wg.gain.setTargetAtTime(B.wander * WANDER_CENTS, t, tau);
+      });
+      v.strG.gain.setTargetAtTime(strk, t, tau);
+      v.bps.forEach((bp) => bp.Q.setTargetAtTime(B.breathQ, t, tau));
+      v.brG.gain.setTargetAtTime(brk * breathComp(AC, v.center, B.breathQ), t, tau);
+      v.glp.frequency.setTargetAtTime(B.grainRate, t, tau);
+      v.grainG.gain.setTargetAtTime(1 - B.grain * 0.5, t, tau);
+      v.gdep.gain.setTargetAtTime(B.grain * grainComp(AC, B.grainRate), t, tau);
+    });
+    Bp.lp.frequency.setTargetAtTime(B.cutoff, t, tau);
+    Bp.lp.Q.setTargetAtTime(B.reso, t, tau);
+    Bp.lpDrift.gain.setTargetAtTime(B.cutoff * CUT_DRIFT, t, tau);
+    // насыщение: малый сигнал проходит с тем же уровнем, сжимаются только пики → меняется характер, не громкость
+    const bias = +(B.asym * 0.9).toFixed(3);
+    if (Bp.curveBias !== bias) { Bp.shaper.curve = satCurve(bias); Bp.curveBias = bias; }
+    const D = 1 + 11 * B.drive * B.drive, on = B.drive > 0.004;
+    Bp.pre.gain.setTargetAtTime(D / 12, t, tau);
+    Bp.post.gain.setTargetAtTime(1 / (D * sech2(bias)), t, tau);
+    Bp.clean.gain.setTargetAtTime(on ? 0 : 1, t, 0.03);
+    Bp.satOn.gain.setTargetAtTime(on ? 1 : 0, t, 0.03);
+    // зал: при 0.60 — ровно пропорции продукта (сухо 0.5 · посыл 0.6)
+    Bp.dry.gain.setTargetAtTime(clamp(0.5 + (0.6 - B.space) * 0.5, 0.3, 0.8), t, tau);
+    Bp.send.gain.setTargetAtTime(B.space, t, tau);
+    // лента: качка до ±2.2 мс задержки (до ±15 центов, 0.5–0.9 Гц), дрожь до ±0.1 мс (до ±9 центов, 7–11 Гц)
+    Bp.wow.gain.setTargetAtTime(B.wow * 0.0022, t, tau);
+    Bp.flutter.gain.setTargetAtTime(B.flutter * 0.0001, t, tau);
+    Bp.chWet.gain.setTargetAtTime(B.chorus * 0.8, t, tau);
+    Bp.chDry.gain.setTargetAtTime(1 - B.chorus * 0.35, t, tau);
+  }
+
+  setSide(side) {
+    this.side = side;
+    const p = this.pad; if (!p) return;
+    const t = this.eng.AC.currentTime;
+    p.A.xf.gain.setTargetAtTime(side === 'A' ? 1 : 0, t, 0.06);
+    p.B.xf.gain.setTargetAtTime(side === 'B' ? 1 : 0, t, 0.06);
+  }
+
+  // громкость путей по K-взвешенному уровню, сглажено за ~2 с (голоса дышат медленно)
+  measure() {
+    const p = this.pad; if (!p) return null;
+    const pow = (an) => { if (!an._buf) an._buf = new Float32Array(an.fftSize); an.getFloatTimeDomainData(an._buf); let s = 0; for (const x of an._buf) s += x * x; return s / an._buf.length; };
+    const L = this.loud;
+    L.a = L.a * 0.9 + pow(p.A.kw) * 0.1;
+    L.b = L.b * 0.9 + pow(p.B.kw) * 0.1;
+    if (!this.match) L.trim = 1;
+    else if (L.a > 1e-9 && L.b > 1e-9) L.trim = clamp(Math.sqrt(L.a / L.b), 0.25, 4);
+    p.B.trim.gain.setTargetAtTime(L.trim, this.eng.AC.currentTime, 0.8);
+    return L;
+  }
+
+  // ── ВТОРОЙ ПУТНИК (копия продукта; источник общий, выходы в оба пути) ─────────────────────
+  _buildCompanion() {
+    const AC = this.eng.AC, p = this.pad, { gain, filt, osc, drift } = this._h;
+    const center = CFG.centers[Math.floor(CFG.centers.length / 2)] * 0.5;
+    const g = gain(0);
+    const bp = filt('bandpass', center * 2.2, 2.6);
+    drift(0.0061, center * 0.5, bp.frequency);
+    const tame = filt('lowpass', 1250, 0.5);
+    g.connect(bp); bp.connect(tame);
+    const pn = AC.createStereoPanner(); pn.pan.value = -0.42; tame.connect(pn);
+    // в A — как в продукте (после фильтров пласта); в B — мимо насыщения, но через ленту и хор
+    const dA = gain(0.75), sA = gain(0.70), dB = gain(0.75), sB = gain(0.70);
+    pn.connect(dA); dA.connect(p.A.out); pn.connect(sA); sA.connect(p.A.rv);
+    pn.connect(dB); dB.connect(p.B.medium); pn.connect(sB); sB.connect(p.B.rv);
+    const oscs = [-1, 1].map((s) => {
+      const o = osc('sawtooth', center); o.detune.value = s * 6;
+      drift(0.013, 8, o.detune);
+      o.connect(g); return o;
+    });
+    const sum = gain(1);
+    [[127, 0.66], [127 * PHI, 0.34]].forEach(([per, amp]) => { const l = osc('sine', 1 / per), a = gain(amp); l.connect(a); a.connect(sum); });
+    const dc = AC.createConstantSource(); dc.offset.value = 0.06; dc.connect(sum); dc.start(); p.stop.push(dc);
+    const shaper = AC.createWaveShaper(); shaper.curve = softRectifier();
+    const depth = gain(0);
+    sum.connect(shaper); shaper.connect(depth); depth.connect(g.gain);
+    const an = AC.createAnalyser(); an.fftSize = 256; g.connect(an); an.connect(p.zero);
+    return { gain: g, oscs, dc, depth, center, an, abuf: new Float32Array(256), idx: 0 };
+  }
+
+  _wander() {
+    const p = this.pad; if (!p || !p.comp) return;
+    clearTimeout(p.compTimer);
+    const c = p.comp;
+    c.an.getFloatTimeDomainData(c.abuf);
+    let s = 0; for (const x of c.abuf) s += x * x;
+    if (Math.sqrt(s / c.abuf.length) < 0.006) {
+      const step = (Math.random() < 0.8 ? 1 : 2) * (Math.random() < 0.5 ? -1 : 1);
+      c.idx = stepIn(c.idx, step, -2, 4);
+      const f = scaleFreq(c.idx, c.center);
+      c.oscs.forEach((o) => o.frequency.setValueAtTime(f, this.eng.AC.currentTime));
+    }
+    p.compTimer = setTimeout(() => this._wander(), rnd(20, 50) * 1000);
+  }
+
+  // ── ОДНА НОТА В ДВУХ ТЕМБРАХ: огибающая общая, плоть разная ────────────────────────────────
+  // вход B для ноты — через «зерно», если оно включено
+  _noteB(t, stopAt) {
+    const AC = this.eng.AC, p = this.pad;
+    if (B.grain < 0.001) return p.B.bus;
+    const g = AC.createGain(); g.gain.value = 1 - B.grain * 0.5;
+    const s = AC.createBufferSource(); s.buffer = p.white; s.loop = true;
+    const lp = AC.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = B.grainRate; lp.Q.value = 0.7;
+    const d = AC.createGain(); d.gain.value = B.grain * grainComp(AC, B.grainRate);
+    s.connect(lp); lp.connect(d); d.connect(g.gain); g.connect(p.B.bus);
+    s.start(t, rnd(0, 5.5)); s.stop(stopAt);
+    return g;
+  }
+  _pair(f, det, t, atk, hold, rel, level, stopAt, nb, withBreath) {
+    const AC = this.eng.AC, p = this.pad;
+    const env = (g, peak) => {
+      g.gain.setValueAtTime(0, t);
+      g.gain.linearRampToValueAtTime(peak, t + atk);
+      g.gain.setTargetAtTime(0, t + atk + hold, rel / 3);
+    };
+    const oA = AC.createOscillator(); oA.type = 'triangle'; oA.frequency.value = f; oA.detune.value = det;
+    const gA = AC.createGain(); gA.gain.value = 0; oA.connect(gA); gA.connect(p.A.bus);
+    env(gA, level); oA.start(t); oA.stop(stopAt);
+
+    const strk = Math.cos(B.breath * Math.PI / 2), brk = Math.sin(B.breath * Math.PI / 2);
+    const oB = AC.createOscillator(); setForm(AC, oB, B.form); oB.frequency.value = f; oB.detune.value = det * (B.spread / DETUNE);
+    const gB = AC.createGain(); gB.gain.value = 0; oB.connect(gB); gB.connect(nb);
+    env(gB, level * strk); oB.start(t); oB.stop(stopAt);
+    if (withBreath && brk > 0.001) {
+      const b1 = AC.createBiquadFilter(), b2 = AC.createBiquadFilter();
+      [b1, b2].forEach((b) => { b.type = 'bandpass'; b.frequency.value = f; b.Q.value = B.breathQ; });
+      const gN = AC.createGain(); gN.gain.value = 0;
+      p.noise.connect(b1); b1.connect(b2); b2.connect(gN); gN.connect(nb);
+      env(gN, level * brk * breathComp(AC, f, B.breathQ) * 0.8);
+      const noise = p.noise;
+      setTimeout(() => { try { noise.disconnect(b1); } catch (e) {} }, (stopAt - AC.currentTime + 0.5) * 1000);
+    }
+  }
+
+  // ── ХОД (копия продукта) ──────────────────────────────────────────────────────────────
+  _pulseTick() {
+    const p = this.pad; if (!p) return;
+    clearTimeout(p.pulseTimer);
+    if (this.gain.puls > 0.01) this._playPulse();
+    p.pulseTimer = setTimeout(() => this._pulseTick(), (1 / PULSE_RATE) * 1000 * rnd(0.94, 1.06));
+  }
+  _playPulse() {
+    const AC = this.eng.AC, t = AC.currentTime, p = this.pad;
+    const w = Math.sin(2 * Math.PI * t / 89) * 0.6 + Math.sin(2 * Math.PI * t / (89 * PHI)) * 0.4;
+    const pres = Math.max(0, w);
+    if (pres < 0.04) return;
+    const chord = PALETTE[p.step % PALETTE.length];
+    const pc = Math.random() < 0.7 ? chord[0] : chord[(Math.random() * chord.length) | 0];
+    const f = pcNear(pc, CFG.centers[1], true);
+    const peak = (0.05 + this.gain.puls * 0.26) * pres;
+    const nb = this._noteB(t, t + 0.06 + 1.15 + 1.5);
+    [-1, 1].forEach((s) => {
+      const atk = 0.06, rel = rnd(0.55, 1.15);
+      this._pair(f, s * 4, t, atk, 0, rel, peak * (s < 0 ? 1 : 0.55), t + atk + rel + 1.5, nb, s < 0);
+    });
+  }
+
+  // ── СМЕНА АККОРДА ТОЛЬКО В ТИШИНЕ ГОЛОСА (копия продукта; перестраиваются оба тембра разом) ──
+  _moveChord() {
+    const p = this.pad; if (!p) return;
+    clearTimeout(p.moveTimer);
+    const chord = PALETTE[p.step % PALETTE.length]; p.step++;
+    p.voices.forEach((v) => {
+      if (v.idx < 2) return;
+      v.want = pcNear(chord[v.idx % chord.length], v.center, true);
+    });
+    this._settleTick();
+    p.moveTimer = setTimeout(() => this._moveChord(), CFG.moveEvery * 1000);
+  }
+  _settleTick() {
+    const p = this.pad; if (!p) return;
+    clearTimeout(p.settleTimer);
+    const t = this.eng.AC.currentTime;
+    p.voices.forEach((v) => {
+      if (v.want == null) return;
+      v.an.getFloatTimeDomainData(v.abuf);
+      let s = 0; for (const x of v.abuf) s += x * x;
+      if (Math.sqrt(s / v.abuf.length) > v.peak * 0.04) return;
+      v.tunes.forEach(({ param, mul }) => param.setValueAtTime(v.want * mul, t));
+      v.want = null;
+    });
+    p.settleTimer = setTimeout(() => this._settleTick(), 700);
+  }
+
+  // ── МОТИВЫ (копия продукта) ───────────────────────────────────────────────────────────
+  _makeMotifs() {
+    const steps = [-2, -1, -1, 1, 2, 3];
+    return [0, 1, 2].map(() => {
+      const n = 4 + ((Math.random() * 3) | 0);
+      return Array.from({ length: n }, () => steps[(Math.random() * steps.length) | 0]);
+    });
+  }
+  _nextMelGap() { this.melPhase = (this.melPhase + PHI) % 1; return 40 + this.melPhase * 110; }
+  _scheduleMelody() {
+    const p = this.pad; if (!p) return;
+    clearTimeout(p.melTimer);
+    p.melTimer = setTimeout(() => {
+      if (this.pad === p && this.gain.mel > 0.01) this._playMelody();
+      this._scheduleMelody();
+    }, this._nextMelGap() * 1000);
+  }
+  _playMelody() {
+    const AC = this.eng.AC, p = this.pad; if (!p) return;
+    const top = CFG.centers[CFG.centers.length - 1];
+    let motif = p.motifs[(Math.random() * p.motifs.length) | 0].slice();
+    if (Math.random() < 0.35) motif = motif.map((s) => -s);
+    if (Math.random() < 0.30) motif.reverse();
+    const chord = PALETTE[p.step % PALETTE.length];
+    let idx = SCALE.indexOf(chord[(Math.random() * chord.length) | 0]);
+    if (idx < 0) idx = 0;
+    const peak = 0.06 + this.gain.mel * 0.26;
+    let t = AC.currentTime + 1.5;
+    motif.forEach((step) => {
+      idx = stepIn(idx, step, -1, 7);
+      const f = scaleFreq(idx, top);
+      const nb = this._noteB(t, t + 1.2 + 2.4 + 5 + 3);
+      [-1, 1].forEach((s) => {
+        const atk = rnd(0.5, 1.2), hold = rnd(1.1, 2.4), rel = rnd(2.5, 5);
+        this._pair(f, s * 5, t, atk, hold, rel, peak * (s < 0 ? 1 : 0.6), t + atk + hold + rel + 3, nb, s < 0);
+        if (s > 0) t += atk + hold * rnd(0.55, 1.0);
+      });
+    });
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════════════════
+// СТЕНД: ручки, A/B, индикаторы
+// ═══════════════════════════════════════════════════════════════════════════════════════════
+const $ = (id) => document.getElementById(id);
+const store = {   // память стенда в этом браузере; нет доступа — стенд просто начинает с начала
+  get(k, d) { try { const v = localStorage.getItem('toneAnalog.' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem('toneAnalog.' + k, JSON.stringify(v)); } catch (e) {} },
+};
+
+const eng = new AudioEngine((s) => {
+  const flying = s.phase && s.phase !== 'off';
+  $('state').classList.toggle('silent', !flying);
+  $('state').textContent = flying
+    ? `летим (фаза: ${s.phase}) · слышно: ${layer.side === 'A' ? 'A — как сейчас' : 'B — шершавый'}`
+    : 'тишина — нажми «Взлёт»';
+});
+const layer = new ToneAB(eng);
+eng.tone = layer;             // движок ведёт наш слой штатно, как ToneLayer в продукте
+
+const GROUPS = [
+  { key: 'src',  title: 'Из чего нота', sub: 'звук ещё до всякой обработки' },
+  { key: 'grit', title: 'Шершавость',   sub: 'шорох, густота и сколько призвуков пропускаем' },
+  { key: 'tape', title: 'Лента и зал',  sub: 'носитель: качка, ширина, сухость' },
+];
+const f2 = (v) => (+v).toFixed(2);
+const KNOBS = [
+  { g: 'src', key: 'form', label: 'Форма волны', select: [
+      ['sine', 'синус — одна чистая линия'], ['triangle', 'треугольник — как сейчас'],
+      ['square', 'квадрат — полый, как кларнет'], ['pulse', 'узкий импульс — гнусавый'],
+      ['sawtooth', 'пила — зубастая, как смычок']],
+    hint: 'главный рычаг: сколько призвуков у ноты с рождения' },
+  { g: 'src', key: 'spread', label: 'Расстройка', min: 0, max: 30, step: 0.5, fmt: (v) => (+v).toFixed(1) + ' ¢',
+    hint: 'две копии ноты чуть врозь — медленные биения; сейчас 8' },
+  { g: 'src', key: 'wander', label: 'Нестабильность', min: 0, max: 1, step: 0.01, fmt: (v) => '±' + Math.round(v * WANDER_CENTS) + ' ¢',
+    hint: 'высота сама слегка гуляет, как у старого синтезатора. Это движение высоты — урок 13', warn: true },
+  { g: 'src', key: 'breath', label: 'Струна ⟷ воздух', min: 0, max: 1, step: 0.01, fmt: f2,
+    hint: 'из чего сделана нота: из осциллятора или из шума, собранного в тон' },
+  { g: 'src', key: 'breathQ', label: 'Чистота воздуха', min: 3, max: 80, step: 1, fmt: (v) => 'Q ' + Math.round(v),
+    hint: 'мало — шипит вокруг ноты, много — свистит. Работает, когда «воздух» выше нуля' },
+  { g: 'grit', key: 'grain', label: 'Зерно', min: 0, max: 1, step: 0.01, fmt: f2,
+    hint: 'громкость ноты мелко шуршит изнутри' },
+  { g: 'grit', key: 'grainRate', label: 'Частота зерна', min: 8, max: 120, step: 1, fmt: (v) => Math.round(v) + ' Гц',
+    hint: 'медленно — трепет, быстро — хрип' },
+  { g: 'grit', key: 'drive', label: 'Насыщение', min: 0, max: 1, step: 0.01, fmt: f2,
+    hint: 'как запись «в красную»: ноты густеют и цепляются друг за друга' },
+  { g: 'grit', key: 'asym', label: 'Лампа', min: 0, max: 1, step: 0.01, fmt: f2,
+    hint: 'чётные призвуки — теплее и толще. Работает, когда насыщение выше нуля' },
+  { g: 'grit', key: 'cutoff', label: 'Срез', min: 400, max: 6000, log: true, fmt: (v) => Math.round(v) + ' Гц',
+    hint: 'сколько призвуков пропускаем: ниже — темнее; сейчас 1250' },
+  { g: 'grit', key: 'reso', label: 'Резонанс', min: 0.3, max: 12, step: 0.1, fmt: (v) => (+v).toFixed(1),
+    hint: 'гнусавый пик на срезе, как у старого фильтра' },
+  { g: 'tape', key: 'wow', label: 'Качка ленты', min: 0, max: 1, step: 0.01, fmt: (v) => 'до ±' + Math.round(v * 15) + ' ¢',
+    hint: 'медленное плавание высоты, как у кассеты. Урок 13: движение высоты ухо ловит сразу', warn: true },
+  { g: 'tape', key: 'flutter', label: 'Дрожь ленты', min: 0, max: 1, step: 0.01, fmt: (v) => 'до ±' + Math.round(v * 9) + ' ¢',
+    hint: 'быстрая мелкая дрожь высоты', warn: true },
+  { g: 'tape', key: 'chorus', label: 'Хор', min: 0, max: 1, step: 0.01, fmt: f2,
+    hint: 'ширина и плывучесть, как у Juno' },
+  { g: 'tape', key: 'space', label: 'Пространство', min: 0, max: 1, step: 0.01, fmt: f2,
+    hint: 'сухо и близко ⟷ далеко в зале; сейчас 0.60. Чем суше, тем слышнее шершавость' },
+];
+
+// ── ручки ──────────────────────────────────────────────────────────────────────────────
+const knobEls = {};
+let presetKey = null, savedKey = null;
+const readKnob = (k, input) => k.select ? input.value
+  : k.log ? k.min * Math.pow(k.max / k.min, +input.value / 1000) : +input.value;
+function showKnob(key) {
+  const { k, input, val } = knobEls[key], v = B[key];
+  if (k.select) { input.value = v; return; }
+  input.value = k.log ? Math.round(1000 * Math.log(v / k.min) / Math.log(k.max / k.min)) : v;
+  val.textContent = k.fmt(v);
+}
+const syncKnobs = () => Object.keys(knobEls).forEach(showKnob);
+
+GROUPS.forEach((g) => {
+  const box = document.createElement('div'); box.className = 'grp';
+  box.innerHTML = `<h3>${g.title}</h3><p class="gsub">${g.sub}</p>`;
+  KNOBS.filter((k) => k.g === g.key).forEach((k) => {
+    const el = document.createElement('div'); el.className = 'k';
+    let input;
+    if (k.select) {
+      input = document.createElement('select');
+      k.select.forEach(([v, t]) => { const o = document.createElement('option'); o.value = v; o.textContent = t; input.appendChild(o); });
+    } else {
+      input = document.createElement('input'); input.type = 'range';
+      if (k.log) { input.min = 0; input.max = 1000; input.step = 1; } else { input.min = k.min; input.max = k.max; input.step = k.step; }
+    }
+    const top = document.createElement('div'); top.className = 'top';
+    top.innerHTML = `<span>${k.label}</span><b></b>`;
+    const hint = document.createElement('div'); hint.className = 'hint' + (k.warn ? ' warn' : ''); hint.textContent = k.hint;
+    el.append(top, input, hint); box.appendChild(el);
+    knobEls[k.key] = { k, input, val: top.querySelector('b') };
+    input.addEventListener('input', () => {
+      B[k.key] = readKnob(k, input); showKnob(k.key);
+      presetKey = null; savedKey = null; onB(0.25);
+    });
+  });
+  $('groups').appendChild(box);
+});
+
+function onB(tau) {
+  layer.applyB(tau);
+  store.set('B', B); store.set('preset', presetKey);
+  mark();
+}
+
+// ── пресеты ────────────────────────────────────────────────────────────────────────────
+PRESETS.forEach((pr) => {
+  const b = document.createElement('button'); b.dataset.key = pr.key;
+  b.innerHTML = `${pr.name}<small>${pr.note}</small>`;
+  b.onclick = () => { Object.assign(B, B_ZERO, pr.b); presetKey = pr.key; savedKey = null; syncKnobs(); onB(0.5); };
+  $('presets').appendChild(b);
+});
+
+// ── мои варианты ───────────────────────────────────────────────────────────────────────
+let saved = store.get('saved', []);
+function mark() {
+  document.querySelectorAll('#presets button').forEach((b) => b.classList.toggle('on', b.dataset.key === presetKey));
+  const box = $('saved'); box.innerHTML = '';
+  if (!saved.length) box.innerHTML = '<span class="diag">пока нет</span>';
+  saved.forEach((s, i) => {
+    const chip = document.createElement('span'); chip.className = 'chip' + (savedKey === i ? ' on' : '');
+    const b = document.createElement('button'); b.textContent = s.name; b.title = 'вернуть этот вариант в B';
+    b.onclick = () => { Object.assign(B, B_ZERO, s.b); presetKey = null; savedKey = i; syncKnobs(); onB(0.5); };
+    const x = document.createElement('button'); x.className = 'x'; x.textContent = '×'; x.title = 'удалить вариант';
+    x.onclick = () => {
+      if (!confirm(`Удалить «${s.name}»?`)) return;
+      saved.splice(i, 1);
+      if (savedKey === i) savedKey = null; else if (savedKey > i) savedKey--;
+      store.set('saved', saved); mark();
+    };
+    chip.append(b, x); box.appendChild(chip);
+  });
+}
+const roundB = () => Object.fromEntries(Object.entries(B).map(([k, v]) => [k, typeof v === 'number' ? +v.toFixed(3) : v]));
+$('save').onclick = () => {
+  const d = new Date();
+  saved.push({ name: `вариант ${saved.length + 1} · ${d.getHours()}:${String(d.getMinutes()).padStart(2, '0')}`, b: roundB() });
+  savedKey = saved.length - 1; presetKey = null;
+  store.set('saved', saved); mark();
+};
+let diagHold = 0;
+function flash(msg, ms) { diagHold = Date.now() + (ms || 4000); $('diag').textContent = msg; }
+$('copy').onclick = async () => {
+  const txt = 'Тон-стенд, B: ' + JSON.stringify(roundB());
+  try { await navigator.clipboard.writeText(txt); flash('настройки B скопированы — можно вставить в чат'); }
+  catch (e) { prompt('Скопируй настройки B:', txt); }
+};
+
+// ── A/B ────────────────────────────────────────────────────────────────────────────────
+function setSide(s) {
+  layer.setSide(s); store.set('side', s);
+  document.querySelectorAll('#ab button').forEach((b) => b.classList.toggle('on', b.dataset.side === s));
+  $('legTone').style.background = s === 'A' ? '#7fa8ff' : '#d6a060';
+  $('legToneTxt').textContent = s === 'A' ? 'тон A — как сейчас' : 'тон B — шершавый';
+}
+$('ab').onclick = (e) => { const b = e.target.closest('button'); if (b) setSide(b.dataset.side); };
+document.addEventListener('keydown', (e) => {
+  if (e.metaKey || e.ctrlKey || e.altKey || e.target.tagName === 'SELECT') return;
+  const k = e.key.toLowerCase();
+  if (k === 'a' || k === 'ф') setSide('A');
+  if (k === 'b' || k === 'и') setSide('B');
+});
+$('match').onchange = () => { layer.match = $('match').checked; };
+
+// ── шум и ручка Tone ───────────────────────────────────────────────────────────────────
+function applyMix() {
+  const m = +$('mix').value;
+  $('mixV').textContent = m.toFixed(2);
+  $('mixWhat').textContent =
+    m < 0.005 ? 'только шум — тон выключен, как у пользователя по умолчанию' :
+    m < 0.10 ? 'шум + пласт тона' :
+    m < 0.18 ? 'пласт + ход' :
+    m < 0.30 ? 'пласт + ход + путник' : 'пласт · ход · путник · мотивы';
+  store.set('mix', m);
+  eng.setMix(m);
+}
+$('mix').oninput = applyMix;
+$('vol').oninput = () => { const v = +$('vol').value; $('volV').textContent = v.toFixed(2); store.set('vol', v); eng.setChar({ volume: v }); };
+let colour = store.get('colour', 'brown');
+function setColour(c) {
+  colour = c; store.set('colour', c); eng.setColour(c);
+  document.querySelectorAll('[data-colour]').forEach((b) => b.classList.toggle('on', b.dataset.colour === c));
+}
+document.querySelectorAll('[data-colour]').forEach((b) => { b.onclick = () => setColour(b.dataset.colour); });
+
+// ── рейс ───────────────────────────────────────────────────────────────────────────────
+let taps = null;
+function startTaps() {
+  const AC = eng.AC; if (taps && taps.ac === AC) return;
+  const sink = AC.createGain(); sink.gain.value = 0; sink.connect(AC.destination);
+  const noise = AC.createAnalyser(); noise.fftSize = 8192; noise.smoothingTimeConstant = 0.82;
+  eng.charBus.connect(noise); noise.connect(sink);
+  const master = AC.createAnalyser(); master.fftSize = 2048;
+  eng.master.connect(master); master.connect(sink);
+  taps = { ac: AC, noise, master, nbuf: new Float32Array(4096), tbuf: new Float32Array(4096), mbuf: new Float32Array(2048) };
+}
+function liftOff() {
+  if (eng.AC && eng.AC.state === 'closed') { location.reload(); return; }
+  if (eng.phase !== 'off') return;
+  eng.turnOn();
+  eng.setColour(colour);
+  eng.setChar({ volume: +$('vol').value });
+  eng.setMix(+$('mix').value);
+  eng.startSession(3 * 3600);
+  // «минута до» пропускается: стенд сразу в ткани, как старый тон-стенд
+  eng.phaseStart -= eng.GATHER + 1; eng.sessionStart -= eng.GATHER + 1; eng._tick();
+  layer.setSide(layer.side);
+  startTaps();
+}
+$('go').onclick = liftOff;
+$('stop').onclick = () => { if (eng.phase !== 'off') eng.turnOff(); };
+$('melNow').onclick = () => { if (layer.pad) layer._playMelody(); else flash('сначала «Взлёт»'); };
+window.addEventListener('pagehide', () => { try { if (eng.AC) eng.AC.close(); } catch (e) {} });
+
+// проверка звука — нарочито явный тон мимо всей механики (из tone-stand)
+let beepCtx = null;
+$('beep').onclick = () => {
+  try {
+    const AC = (eng.AC && eng.AC.state !== 'closed') ? eng.AC : (beepCtx = beepCtx || new AudioContext());
+    if (AC.state === 'suspended') AC.resume();
+    const t = AC.currentTime;
+    [440, 660].forEach((f, i) => {
+      const o = AC.createOscillator(); o.type = 'sine'; o.frequency.value = f;
+      const g = AC.createGain(); g.gain.value = 0; o.connect(g); g.connect(AC.destination); o.start(t);
+      g.gain.linearRampToValueAtTime(i ? 0.12 : 0.2, t + 0.05); g.gain.setTargetAtTime(0, t + 0.9, 0.15);
+      o.stop(t + 2);
+    });
+    flash(`проверочный тон отправлен (контекст: ${AC.state}). Не слышно — звук уходит не в эти наушники.`, 5000);
+  } catch (e) { flash('ошибка запуска звука: ' + e.message, 8000); }
+};
+
+// ── индикаторы ─────────────────────────────────────────────────────────────────────────
+const cv = $('spec'), cx = cv.getContext('2d');
+const F_MIN = 60, F_MAX = 10000, DB_MIN = -120, DB_MAX = -20;
+const xOf = (f) => cv.width * Math.log(f / F_MIN) / Math.log(F_MAX / F_MIN);
+const yOf = (db) => cv.height * (1 - (clamp(db, DB_MIN, DB_MAX) - DB_MIN) / (DB_MAX - DB_MIN));
+// по пикселю берём САМЫЙ ВЫСОКИЙ бин — иначе узкие пики синуса сгладились бы в ровную линию
+function columns(buf, binHz) {
+  const W = cv.width, col = new Float32Array(W).fill(NaN);
+  for (let i = 1; i < buf.length; i++) {
+    const f = i * binHz; if (f < F_MIN || f > F_MAX) continue;
+    const x = Math.min(W - 1, Math.floor(xOf(f)));
+    if (isNaN(col[x]) || buf[i] > col[x]) col[x] = buf[i];
+  }
+  let prev = -1;
+  for (let x = 0; x < W; x++) {
+    if (isNaN(col[x])) continue;
+    if (prev >= 0 && x - prev > 1) for (let j = prev + 1; j < x; j++) col[j] = col[prev] + (col[x] - col[prev]) * (j - prev) / (x - prev);
+    prev = x;
+  }
+  for (let x = 0; x < W; x++) if (isNaN(col[x])) col[x] = DB_MIN;
+  return col;
+}
+function drawSpec() {
+  const W = cv.width, H = cv.height;
+  cx.clearRect(0, 0, W, H);
+  cx.lineWidth = 2; cx.strokeStyle = '#131b2e'; cx.fillStyle = '#4a5673'; cx.font = '22px -apple-system, system-ui, sans-serif';
+  [100, 250, 500, 1000, 2000, 4000, 8000].forEach((f) => {
+    const x = xOf(f); cx.beginPath(); cx.moveTo(x, 0); cx.lineTo(x, H); cx.stroke();
+    cx.fillText(f >= 1000 ? (f / 1000) + ' кГц' : f + ' Гц', x + 6, H - 12);
+  });
+  if (!taps || !layer.pad || eng.phase === 'off') return;
+  const binHz = eng.AC.sampleRate / 8192;
+  taps.noise.getFloatFrequencyData(taps.nbuf);
+  const n = columns(taps.nbuf, binHz);
+  cx.beginPath(); cx.moveTo(0, H);
+  for (let x = 0; x < W; x++) cx.lineTo(x, yOf(n[x]));
+  cx.lineTo(W, H); cx.closePath(); cx.fillStyle = '#262f45'; cx.fill();
+  layer.pad.spec.getFloatFrequencyData(taps.tbuf);
+  const t = columns(taps.tbuf, binHz);
+  cx.beginPath();
+  for (let x = 0; x < W; x++) x ? cx.lineTo(x, yOf(t[x])) : cx.moveTo(x, yOf(t[x]));
+  cx.strokeStyle = layer.side === 'A' ? '#7fa8ff' : '#d6a060'; cx.lineWidth = 2.5; cx.stroke();
+}
+const vbox = $('voices');
+setInterval(() => {   // таймер, а не rAF: rAF замирает в фоновой вкладке
+  if (Date.now() > diagHold) {
+    let st; try { st = eng.AC ? eng.AC.state : 'не создан'; } catch (e) { st = 'закрыт'; }
+    $('diag').textContent = 'аудио-контекст: ' + st +
+      (st === 'closed' ? ' — оживить нельзя, перезагрузи страницу' : '') + (st === 'suspended' ? ' — ждёт клика' : '');
+  }
+  const L = layer.measure();
+  if (L && eng.phase !== 'off') {
+    const db = (x) => x > 1e-12 ? (10 * Math.log10(x)).toFixed(1) : '—';
+    $('loud').innerHTML = `уровень A <b>${db(L.a)}</b> · B <b>${db(L.b)}</b> дБ` +
+      (layer.match ? ` · B подправлен на <b>${(20 * Math.log10(L.trim)).toFixed(1)} дБ</b>` : ' · без поправки');
+  }
+  if (taps && eng.phase !== 'off') {
+    taps.master.getFloatTimeDomainData(taps.mbuf);
+    let s = 0; for (const x of taps.mbuf) s += x * x;
+    const rms = Math.sqrt(s / taps.mbuf.length);
+    $('bar').style.width = Math.min(100, rms * 420) + '%';
+    $('db').textContent = rms > 0.00002 ? (20 * Math.log10(rms)).toFixed(0) + ' dB' : 'тишина';
+  } else { $('bar').style.width = '0'; $('db').textContent = '—'; }
+  const p = layer.pad;
+  if (p) {
+    if (vbox.children.length !== p.voices.length) { vbox.innerHTML = ''; p.voices.forEach(() => vbox.appendChild(document.createElement('i'))); }
+    p.voices.forEach((v, i) => {
+      v.an.getFloatTimeDomainData(v.abuf);
+      let s = 0; for (const x of v.abuf) s += x * x;
+      const rel = Math.min(1, Math.sqrt(s / v.abuf.length) / (v.peak * 0.72));
+      const el = vbox.children[i];
+      el.style.height = Math.min(26, 3 + rel * 23) + 'px';
+      el.style.background = rel > 0.5 ? '#7fa8ff' : (rel > 0.15 ? '#40619e' : '#1e2a45');
+    });
+  } else vbox.innerHTML = '';
+  drawSpec();
+}, 200);
+
+// ── старт страницы: вернуть то, что было ───────────────────────────────────────────────
+(() => {
+  const first = PRESETS.find((p) => p.key === 'tape');
+  Object.assign(B, B_ZERO, store.get('B', Object.assign({}, B_ZERO, first.b)));
+  presetKey = store.get('preset', 'tape');
+  $('mix').value = store.get('mix', 0.55);
+  $('vol').value = store.get('vol', 0.5); $('volV').textContent = (+$('vol').value).toFixed(2);
+  syncKnobs(); applyMix(); setColour(colour); setSide(store.get('side', 'B')); mark();
+})();
+</script>
