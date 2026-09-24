@@ -1,0 +1,41 @@
+# Занятость стора по дверям adhd — перепись 2026-09-24, $0 (внутренний поиск CWS)
+# python3 app-studio/research/lib/sky/census_run.py --check "adhd timer|minimalist timer|brown noise for adhd" (+ ранее: visual timer adhd|adhd focus timer|timer for adhd)
+
+=== 'adhd timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 ADHD Timer — Focus Timer & To-Do S · 5 яз · 2618 симв · 10 юз
+  класс  langs desc   users     опт  title
+  START  5     2618   10        нет  ADHD Timer — Focus Timer & To-Do Side Panel
+  NO     ?     1559   36        нет  Timer for ADHD
+  NO     ?     3964   520       да   Tomato Timeout - ADHD Focus Timer + Site Blo
+  NO     ?     4758   9         да   Dopamodoro - ADHD Pomodoro Timer & AI Focus 
+  NO     ?     2716   80        нет  Monora: ADHD Focus Timer & Distraction Block
+  NO     55    2746   29        да   Pomodoro Focus Timer & ADHD Study Tool by Lo
+  NO     ?     2246   3,000     нет  Meowdoro Tracker - Pomodoro Work Timer & Pro
+  NO     ?     3227   63        да   Do One Thing - ADHD Focus Timer & Task Manag
+  NO     4     4511   423       да   New Tab: Pomodoro Timer & Site Blocker for C
+  NO     53    6896   123       да   Minimalist Timer
+
+=== 'minimalist timer' → OCCUPIED-WEAK  (стор-поиск: 9 расширений, 9 проверено) ===
+🟠 Minimalist Timer · 53 яз · 6896 симв · 123 юз
+  класс  langs desc   users     опт  title
+  NO     ?     1848   1,000     нет  Minimalist Focus Timer
+  EQUAL  53    6896   123       да   Minimalist Timer
+  NO     ?     1849   190       нет  Simple Timer
+  NO     ?     1578   8         нет  Minimalist Countdown Timer
+  NO     ?     1347   29        нет  Simple Timer
+  NO     ?     6309   66        да   Pomo — Minimalist Pomodoro Timer
+  NO     ?     5563   65        да   Simple Timer
+  NO     ?     2880   2,000     нет  Sidebar Clock
+  NO     ?     1433   5         нет  Minimalist Task & Timer
+
+=== 'brown noise for adhd' → FREE  (стор-поиск: 6 расширений, 6 проверено) ===
+🟢 держателей 0 · кандидатов 6
+  класс  langs desc   users     опт  title
+  NO     6     2671   22        нет  ADHD Relief - Focus & Relaxation
+  NO     4     2062   6         нет  ADHD Task Starter
+  NO     ?     1737   31        нет  Noice Noise
+  NO     ?     2478   26        нет  Ambiens — Ambient Sound Mixer
+  NO     ?     2586   8         нет  Ambient Sounds Pro
+  NO     ?     7009   13        да   Relax Your Mind
+
+=== dry-run: 3 двери · дискавери $0 (стор-поиск) · keys.csv НЕ тронут ===

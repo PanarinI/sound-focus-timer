@@ -1,0 +1,1232 @@
+[
+ {
+  "keyword": "adhd timer",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=adhd%20timer&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-24 16:36:14 +00:00",
+  "spell": null,
+  "refinement_chips": {
+   "type": "refinement_chips",
+   "xpath": "/html[1]/body[1]/div[3]/div[1]/div[9]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]",
+   "items": [
+    {
+     "type": "refinement_chips_element",
+     "title": "Online",
+     "url": "https://www.google.com/search?q=online+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyCggSEgZPbmxpbmVgAQ&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAF6BAgaEDw",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Free",
+     "url": "https://www.google.com/search?q=free+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyCAgSEgRGcmVlYAE&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAJ6BAgaED0",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Adult",
+     "url": "https://www.google.com/search?q=adult+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyCQgSEgVBZHVsdGAB&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAN6BAgaED4",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Alarm Clocks",
+     "url": "https://www.google.com/search?q=alarm+clocks+adhd+timer&hl=en&gl=US&shoprs=GAkqCmFkaGQgdGltZXIyEAgJEgxBbGFybSBDbG9ja3NgAQ&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAR6BAgaED8",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Stopwatches",
+     "url": "https://www.google.com/search?q=stopwatches+adhd+timer&hl=en&gl=US&shoprs=GAkqCmFkaGQgdGltZXIyDwgJEgtTdG9wd2F0Y2hlc2AB&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAV6BAgaEEA",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "On sale",
+     "url": "https://www.google.com/search?q=adhd+timer+sale&hl=en&gl=US&shoprs=EgRKAhgBGAYqCmFkaGQgdGltZXIyEwgGEgdPbiBzYWxlGAIiBEoCGAFYi7sgYAE&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAZ6BAgaEEE",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Get it fast",
+     "url": "https://www.google.com/search?q=adhd+timer&hl=en&gl=US&shoprs=Eg2aAQoKCBADOAFAB0gBGBQqCmFkaGQgdGltZXIyJAgUEgtHZXQgaXQgZmFzdCINmgEKCggQAzgBQAdIASoEEAEYAWAB&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAd6BAgaEEI",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Music",
+     "url": "https://www.google.com/search?q=music+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyCQgSEgVNdXNpY2AB&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAh6BAgaEEM",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Watches",
+     "url": "https://www.google.com/search?q=watches+adhd+timer&hl=en&gl=US&shoprs=GAkqCmFkaGQgdGltZXIyCwgJEgdXYXRjaGVzYAE&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAl6BAgaEEQ",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Buy",
+     "url": "https://www.google.com/search?q=buy+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyBwgSEgNCdXlgAQ&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAp6BAgaEEU",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Blue",
+     "url": "https://www.google.com/search?q=blue+adhd+timer&hl=en&gl=US&shoprs=GAEqCmFkaGQgdGltZXIyFggBEgRCbHVlOgwI2Iz1ARDmivUBMAtYi7sgYAE&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAt6BAgaEEY",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Reviews",
+     "url": "https://www.google.com/search?q=reviews+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyCwgSEgdSZXZpZXdzYAE&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKAx6BAgaEEc",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "White",
+     "url": "https://www.google.com/search?q=white+adhd+timer&hl=en&gl=US&shoprs=GAEqCmFkaGQgdGltZXIyFwgBEgVXaGl0ZToMCNiM9QEQoYv1ATALWIu7IGAB&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKA16BAgaEEg",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Under $10",
+     "url": "https://www.google.com/search?q=adhd+timer+under+$10&hl=en&gl=US&shoprs=Eg0SCxEAAAAA0BJjQRgBGAUqCmFkaGQgdGltZXIyIggFEglVbmRlciAkMTAYAiINEgsRAAAAANASY0EYASoCGAFYi7sgYAE&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKA56BAgaEEk",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Hourglasses",
+     "url": "https://www.google.com/search?q=hourglasses+adhd+timer&hl=en&gl=US&shoprs=GAkqCmFkaGQgdGltZXIyDwgJEgtIb3VyZ2xhc3Nlc2AB&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKA96BAgaEEo",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Green",
+     "url": "https://www.google.com/search?q=green+adhd+timer&hl=en&gl=US&shoprs=GAEqCmFkaGQgdGltZXIyFwgBEgVHcmVlbjoMCNiM9QEQ6Ir1ATALWIu7IGAB&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKBB6BAgaEEs",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Black",
+     "url": "https://www.google.com/search?q=black+adhd+timer&hl=en&gl=US&shoprs=GAEqCmFkaGQgdGltZXIyFwgBEgVCbGFjazoMCNiM9QEQ5Yr1ATALWIu7IGAB&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKBF6BAgaEEw",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Red",
+     "url": "https://www.google.com/search?q=red+adhd+timer&hl=en&gl=US&shoprs=GAEqCmFkaGQgdGltZXIyFQgBEgNSZWQ6DAjYjPUBEOeK9QEwC1iLuyBgAQ&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKBJ6BAgaEE0",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Woman",
+     "url": "https://www.google.com/search?q=woman+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyCQgSEgVXb21hbmAB&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKBN6BAgaEE4",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Images",
+     "url": "https://www.google.com/search?q=images+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyCggSEgZJbWFnZXNgAQ&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKBR6BAgaEE8",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Girl",
+     "url": "https://www.google.com/search?q=girl+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyCAgSEgRHaXJsYAE&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKBV6BAgaEFA",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Man",
+     "url": "https://www.google.com/search?q=man+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyBwgSEgNNYW5gAQ&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKBZ6BAgaEFE",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Toddler",
+     "url": "https://www.google.com/search?q=toddler+adhd+timer&hl=en&gl=US&shoprs=GBIqCmFkaGQgdGltZXIyCwgSEgdUb2RkbGVyYAE&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKBd6BAgaEFI",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "New",
+     "url": "https://www.google.com/search?q=new+adhd+timer&hl=en&gl=US&shoprs=GAoqCmFkaGQgdGltZXIyBwgKEgNOZXdYi7sgYAE&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKBh6BAgaEFM",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Used",
+     "url": "https://www.google.com/search?q=used+adhd+timer&hl=en&gl=US&shoprs=GAoqCmFkaGQgdGltZXIyCAgKEgRVc2VkWIu7IGAB&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Qip4GKBl6BAgaEFQ",
+     "domain": "www.google.com",
+     "options": null
+    }
+   ]
+  },
+  "item_types": [
+   "organic",
+   "popular_products",
+   "people_also_ask",
+   "images",
+   "related_searches"
+  ],
+  "se_results_count": 129,
+  "pages_count": 1,
+  "items_count": 14,
+  "items": [
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "domain": "www.amazon.com",
+    "title": "Visual Life Timer for Kids, Adults, ADHD, Autism & Dyslexia",
+    "url": "https://www.amazon.com/Visual-Adults-Autism-Teacher-Supplies/dp/B0D9JJ91QF",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.amazon.com › Visual-Adults-Autism-Teache...",
+    "website_name": "Amazon.com",
+    "is_image": true,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_image"
+    ],
+    "description": "TRACK PROGRESS AT A GLANCE | Color cue changes let you see and subconsciously feel your progress in real time—without breaking focus. A quick glance at the ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": [
+     {
+      "type": "images_element",
+      "alt": "adhd timer from www.amazon.com",
+      "url": "https://www.amazon.com/Visual-Adults-Autism-Teacher-Supplies/dp/B0D9JJ91QF",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-cdb178012902:0"
+     }
+    ],
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Color cue changes let you see and subconsciously feel your progress in real time"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.amazon.com/Visual-Adults-Autism-Teacher-Supplies/dp/B0D9JJ91QF#:~:text=TRACK%20PROGRESS%20AT%20A%20GLANCE,A%20quick%20glance%20at%20the",
+      "domain": "www.amazon.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]",
+    "domain": "timetimer-europe.com",
+    "title": "ADHD Timer for Focus & Routine",
+    "url": "https://timetimer-europe.com/collections/adhd-clocks?srsltid=AU7gw4WfIja9piAPaKvE1z4qN0wsRMF27GQugt-fTX52c-WIaRWsBs70",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://timetimer-europe.com › collections › adhd-clocks",
+    "website_name": "Time Timer Europe",
+    "is_image": true,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_image"
+    ],
+    "description": "Support focus and independence with Time Timer ADHD timers. Trusted by pros, perfect for kids and adults. Visualize time and stay on task with ease.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": [
+     {
+      "type": "images_element",
+      "alt": "adhd timer from timetimer-europe.com",
+      "url": "https://timetimer-europe.com/collections/adhd-clocks?srsltid=AU7gw4WfIja9piAPaKvE1z4qN0wsRMF27GQugt-fTX52c-WIaRWsBs70",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-cdb178012902:1"
+     }
+    ],
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Time Timer ADHD timers"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+    "domain": "visualtimer.com",
+    "title": "Visual Timers for ADHD - Free Focus & Time Management ...",
+    "url": "https://visualtimer.com/timers/visual-timers-for-adhd/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://visualtimer.com › timers › visual-timers-for-adhd",
+    "website_name": "Visual Timer",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Free visual timers for ADHD. Combat time blindness and improve focus with visual countdowns. Includes Pomodoro and sensory timers.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Free visual timers for ADHD"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "popular_products",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]",
+    "title": "Popular products",
+    "items": [
+     {
+      "type": "popular_products_element",
+      "title": "ADHD Focus Timer App, Task Paralysis Tool, Visual Timer, Dopamine Menu (Digital Download)",
+      "url": null,
+      "domain": null,
+      "description": "Etsy - Seller\nFree delivery",
+      "more_sellers": false,
+      "seller": "Etsy - Seller",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-cdb178012902:2",
+      "price": {
+       "current": 23.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$23.99"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "2196020670712607319",
+       "data_docid": "6462758666785803122",
+       "gid": null
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Learning Resources Rainbow Visual Timer",
+      "url": null,
+      "domain": null,
+      "description": "Target & more\nFree delivery on $35+",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-cdb178012902:3",
+      "price": {
+       "current": 13.99,
+       "regular": 16,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$13.99 $16"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 3.4,
+       "votes_count": 39,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "9855575344854403868",
+       "data_docid": "9149079100481759140",
+       "gid": "16495221643829242487"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "ADHD Timer Watch Powder Blue Focus Aid fibex15v08",
+      "url": null,
+      "domain": null,
+      "description": "Watchia.com",
+      "more_sellers": false,
+      "seller": "Watchia.com",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-cdb178012902:4",
+      "price": {
+       "current": 29,
+       "regular": 89,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$29.00 $89"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "1214690064477608540",
+       "data_docid": "11426291945996075818",
+       "gid": "15738124242845279890"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Productivity Timer Flip Gravity Sensor Cube Timer Countdown & Countup,Mute & Vibrate & Sound ,Perfect for ADHD,Work,Learning,Kitchen Cooking, Black",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - WSTFashion shop",
+      "more_sellers": false,
+      "seller": "Walmart - WSTFashion shop",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-cdb178012902:5",
+      "price": {
+       "current": 19.9,
+       "regular": 25,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$19.90 $25"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": null,
+       "data_docid": "10221854818978338021",
+       "gid": null
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Learning Resources Time Tracker Visual Timer Clock",
+      "url": null,
+      "domain": null,
+      "description": "Target & more\nFree delivery on $35+",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-cdb178012902:6",
+      "price": {
+       "current": 27.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$27.99"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 3.9,
+       "votes_count": 90,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "6207696786756251362",
+       "data_docid": "8593712304419233276",
+       "gid": "4928886068241371219"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "3-in-1 Visual Timer & Adhd Tool for Kids with Chore Chart & Planning Board",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - Seller & more\nFree delivery",
+      "more_sellers": true,
+      "seller": "Walmart - Seller",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-cdb178012902:7",
+      "price": {
+       "current": 49.98,
+       "regular": 60,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$49.98 $60"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "2837948899973294089",
+       "data_docid": "8154015367648506462",
+       "gid": "8291847220804655074"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Ustop 12 Pack Colorful Sand Timers Durable Plastic Hourglass Timer Set with 6 Different Time Intervals",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - Excellent Value Store",
+      "more_sellers": false,
+      "seller": "Walmart - Excellent Value Store",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-cdb178012902:8",
+      "price": {
+       "current": 10.99,
+       "regular": 23,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$10.99 $23"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "5582509899897576467",
+       "data_docid": "1134560744170632203",
+       "gid": "4011547167372142248"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "ADHD Focus Timer Printable | Neurodivergent Planner | Back to School | Time Management | Digital Download",
+      "url": null,
+      "domain": null,
+      "description": "Etsy - Seller\nFree delivery",
+      "more_sellers": false,
+      "seller": "Etsy - Seller",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-cdb178012902:9",
+      "price": {
+       "current": 4.3,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$4.30"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "647561599575205028",
+       "data_docid": "11969640219208285900",
+       "gid": null
+      }
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "Is a timer good for ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the 10-3 rule for ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the best timer for ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What are some good routines for adults with ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]",
+    "domain": "www.reddit.com",
+    "title": "Need timers for ADHD... do you have anything that ...",
+    "url": "https://www.reddit.com/r/ADHDparenting/comments/1muht1b/need_timers_for_adhd_do_you_have_anything_that/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "20+ comments  ·  1 year ago",
+    "website_name": "Reddit · r/ADHDparenting",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Lately I've been looking at the Goally tablet because it seems more like an ADHD timer that actually guides kids through each step instead of ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Goally tablet"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Timers have changed my life and helped keep me on track ...",
+      "description": null,
+      "url": "https://www.reddit.com/r/ADHD/comments/ly39wz/timers_have_changed_my_life_and_helped_keep_me_on/",
+      "domain": "www.reddit.com"
+     },
+     {
+      "type": "link_element",
+      "title": "Helpful Gear for ADHD'rs via New York magazine - Reddit",
+      "description": null,
+      "url": "https://www.reddit.com/r/TwoXADHD/comments/144fcgg/helpful_gear_for_adhdrs_via_new_york_magazine/",
+      "domain": "www.reddit.com"
+     },
+     {
+      "type": "link_element",
+      "title": "More results from www.reddit.com",
+      "description": null,
+      "url": "https://www.google.com/search?q=adhd+timer+site:www.reddit.com&sca_esv=c9af837ca623c2e6&hl=en&gl=US&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4QrQIoAnoECEIQAw",
+      "domain": "www.google.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]",
+    "domain": "add.org",
+    "title": "Pomodoro Timer - ADDA",
+    "url": "https://add.org/pomodoro-timer/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://add.org › pomodoro-timer",
+    "website_name": "ADDA - Attention Deficit Disorder Association",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Set the timer (traditionally 25 minutes). Use this handy Pomodoro timer. ADHD Pro Tip: Set the timer for shorter work sessions until you build momentum. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "timer",
+     "ADHD"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://add.org/pomodoro-timer/#:~:text=Set%20the%20timer%20(traditionally%2025,sessions%20until%20you%20build%20momentum.",
+      "domain": "add.org"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "popular_products",
+    "rank_group": 2,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[15]/div[1]",
+    "title": "More products",
+    "items": [
+     {
+      "type": "popular_products_element",
+      "title": "Rotating Pomodoro Timer 5/25/10/50, Desk Productivity Flip Timer, Adhd Tool",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - Seller\nFree delivery",
+      "more_sellers": false,
+      "seller": "Walmart - Seller",
+      "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT_NAz8pD53C78r7Z423LQEO-MYOwYonX1db0HFLt_AXseZaZpiVn5xTWeEgoYWUpJlnpfzxZCNOJZnsk8Xz_3Xh1sHiINkLkZim6lbWSadq2VbZVWP7plD",
+      "price": {
+       "current": 28.88,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$28.88"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": null,
+       "data_docid": "12379042751827841836",
+       "gid": null
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "MOD Time Timer",
+      "url": null,
+      "domain": null,
+      "description": "Target & more\nFree delivery on $35+",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv2-mjn5uTk4L_534f2m6e0oaP2Cipd8H8FM0_ONO5_Ijqbm3lxMs5iIUluuUjrKaAjvzAl2ZEDsFc6t7NSFKUaboYxnnR6T2eNxFdU6C5PklBxHsE9W3l",
+      "price": {
+       "current": 26.95,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$26.95"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.6,
+       "votes_count": 102,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "14788393304270788608",
+       "data_docid": "14726412744626661824",
+       "gid": "8810582074494787590"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Tech Timer 60 Desktop Tech Timer",
+      "url": null,
+      "domain": null,
+      "description": "Tech Wellness",
+      "more_sellers": false,
+      "seller": "Tech Wellness",
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR1glyYxQQRNcnEb-FFQ_zDufDG1Z0pxI4WgO70uSEAV4QDE8Xx0l5faw2qdp4E4d__fgJyi_G-yCqzrro24S0UzKSctAAo76nrQ0fzMHvQ0zfzAF-SXPu9",
+      "price": {
+       "current": 29.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$29.99"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "12610000837118139319",
+       "data_docid": "5576300350353332798",
+       "gid": "115161380851344844"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Visual Timer for Kids 60-Minute - Countdown Timer with Optional Alarm, Focus Tool for Adhd & Autism, Time Management for Homework, Chores, Office,",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - tianlu\nFree delivery",
+      "more_sellers": false,
+      "seller": "Walmart - tianlu",
+      "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS0PviiheopTbG8kWwsb9xYJGGcxOHnmGFpaMr7X-75PZCPVpIP8_FwaKTIABDCxQsALPbWt0oBccI5cVS8kaSZBXPFIc1Qv4MxGRjvGqsqxUjeglW1w5BLNQ",
+      "price": {
+       "current": 15.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$15.99"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "5787601717360331260",
+       "data_docid": "16222817638008736004",
+       "gid": null
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Visual Timer for Kids 60-Minute - Countdown Timer with Optional Alarm, Focus Tool for Adhd & Autism, Time Management for Homework, Chores, Office,",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - tianlu\nFree delivery",
+      "more_sellers": false,
+      "seller": "Walmart - tianlu",
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRDPPLGmRFNrpfo88wuVBlHPpDM-lpg_bx0LKCCzB9Hw9CWHz3SqVeFW3IuspLQb-HptUdZ56QFp82XeMQj5NIN0oU-O6Rp9e7EpfG40MTtta1l8mBZu3XrBQ",
+      "price": {
+       "current": 19.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$19.99"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": null,
+       "data_docid": "11952362249772906075",
+       "gid": null
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "ADHD Friendly Focus Timer Digital Download | Pomodoro Timer | Productivity Tool | ADHD Support | Time management",
+      "url": null,
+      "domain": null,
+      "description": "Etsy - Seller\nFree delivery",
+      "more_sellers": false,
+      "seller": "Etsy - Seller",
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTzXDCTbtAK8WNB-6HXNauTc3xoeYhMNVeerPkuGlvX41n4YcoVmPTn6h1iz1MDtNun08ZknX3CIGMpmOX5nfJfpEkzckaspgbsZ6V4d-mu7ezsdE_CXGNX",
+      "price": {
+       "current": 10.72,
+       "regular": 12,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$10.72 $12"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "14781155314624502195",
+       "data_docid": "3218429765027843162",
+       "gid": null
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Rotating Pomodoro Timer,Desk Productivity Flip Timer Adhd Tool Cube Countdown Stopwatch for Work",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - HomeSupply Pro Store",
+      "more_sellers": false,
+      "seller": "Walmart - HomeSupply Pro Store",
+      "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR5efPfh4rPZhL8tWFYbb9-majBDFRmx14XmtVmc83Qmx2wO_6bRe-hiecnPhlpdISwZvDev3396Ph_SM3j6BzkLEZvkSqeJoQbLofA2670edAN8x4VuZWj",
+      "price": {
+       "current": 15.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$15.99"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "17374003113117456049",
+       "data_docid": "7532720586805437346",
+       "gid": "10857887100213577413"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Productivity Timer 1, 5, 10, 30, 60 Minutes Preset, Desk Cube Timer with Gravity Sensor/Mute/Vibration for Adhd, Work, Study, Kitchen, Back to School",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - Seller\nFree delivery",
+      "more_sellers": false,
+      "seller": "Walmart - Seller",
+      "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTTxQ1MjqLi_xFcHhF-7RngXH_Sdya7aSZ2jrpLl3tjmtj7srZBZgKSGF5Hm-sfykfY9ugHqZweE_UtpA3hq9weq5HDL91PuIec9Xn-WS3X",
+      "price": {
+       "current": 32.28,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$32.28"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": null,
+       "data_docid": "16971359682634858776",
+       "gid": null
+      }
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[17]/div[1]/div[1]",
+    "domain": "www.timetimer.com",
+    "title": "Best Time Timer Originals: Visual, Classroom & ADHD ...",
+    "url": "https://www.timetimer.com/collections/time-timer-originals?srsltid=AU7gw4UVM86fShA3Dgt3lbLFSKQcPoqVyWM4NzT8-wPIOK8ta-Sf2rPN",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.timetimer.com › collections › time-timer-ori...",
+    "website_name": "Time Timer",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Discover the best Time Timer Originals – the ultimate visual timers for classrooms, effective ADHD timers, and perfect for all ages.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": {
+     "current": 30,
+     "regular": null,
+     "max_value": 110,
+     "currency": "USD",
+     "is_price_range": true,
+     "displayed_price": "$30 to $110"
+    },
+    "highlighted": [
+     "effective ADHD timers"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "5 Must-Have Tools to Help You “See” Time",
+    "url": "https://www.youtube.com/watch?v=Vzwyl1E-BKQ&vl=en",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "87.4K+ views  ·  1 year ago",
+    "website_name": "YouTube · How to ADHD",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": null,
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": null,
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-05-20 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[20]/div[1]/div[1]",
+    "domain": "www.baptisthealth.com",
+    "title": "ADHD Timers and Time Management | Baptist Health",
+    "url": "https://www.baptisthealth.com/blog/behavioral-health/adhd-timer-what-is-it-and-how-does-it-work",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.baptisthealth.com › blog › behavioral-health",
+    "website_name": "baptisthealth.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jan 8, 2025 — ADHD timers can support focus, planning, and time management. Learn how they work, why time blindness happens and ways to stay on task.",
+    "pre_snippet": "01/08/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADHD timers can support focus, planning, and time management"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Adhd And Time Blindness",
+      "description": null,
+      "url": "https://www.baptisthealth.com/blog/behavioral-health/adhd-timer-what-is-it-and-how-does-it-work#:~:text=ADHD%20and%20Time%20Blindness",
+      "domain": "www.baptisthealth.com"
+     },
+     {
+      "type": "link_element",
+      "title": "Adhd Timers And The Pomodoro...",
+      "description": null,
+      "url": "https://www.baptisthealth.com/blog/behavioral-health/adhd-timer-what-is-it-and-how-does-it-work#:~:text=ADHD%20Timers%20and%20the%20Pomodoro%20Technique,-An%20ADHD%20timer%20is%20a",
+      "domain": "www.baptisthealth.com"
+     },
+     {
+      "type": "link_element",
+      "title": "Benefits Of Adhd Timers",
+      "description": null,
+      "url": "https://www.baptisthealth.com/blog/behavioral-health/adhd-timer-what-is-it-and-how-does-it-work#:~:text=Benefits%20of%20ADHD%20Timers",
+      "domain": "www.baptisthealth.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-01-08 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "images",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[22]/div[1]",
+    "title": "Images",
+    "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=adhd+timer&udm=2&source=univ&fir=m6S5B8O4YtKCyM%252C1wbDo3EEfR8ZvM%252C_%253BGwXD9iIB2rghSM%252CcR-TR060jNohNM%252C_%253Bv3VtaF2o2LlWDM%252CAeQsdSdOY1JojM%252C_%253B9XXOMN2BT9GoFM%252C56z4v1jzTOkKCM%252C_%253Bn2Y3oBn-PCOMGM%252Cgm7Fsth-7cBzYM%252C_%253Bds290iTmw8ktMM%252CkLRR7IM1yO2LgM%252C_%253BoWW3bjn5y9PlIM%252CprPn5NAaGfaJuM%252C_%253BMJPxp83OnZKQaM%252CkLRR7IM1yO2LgM%252C_%253BZEEvSxajQMMcaM%252CprPn5NAaGfaJuM%252C_&usg=AI4_-kRe_2VaawDMzBNTRtoeoOYoIURx6Q&sa=X&ved=2ahUKEwinrIuV04eXAxVlX_EDHTnwIW4Q7Al6BAhkEAU",
+    "items": [
+     {
+      "type": "images_element",
+      "alt": "The Best Timer for ADHD - Fuzzymama",
+      "url": "https://www.fuzzymama.com/the-best-timer-for-adhd/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9gwM4f1ZLi6xNzZXc51Cp4WJa1myX3ADtSybt4fTXbOnvAhMlXzAt25w&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Amazon.com: ADHD Timer- ADHD Tools for Kids Adults, Visual ...",
+      "url": "https://us.amazon.com/Timer-Countdown-Pomodoro-Adjustable-Focused/dp/B0DLH4NF1X",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOUFqjUFZcK5mweR7dDV6VP5q-Wr6ylPzGIFCAs1hMQSDrtFHiChc645s&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "ADHD Timer for Focus & Routine | Time Timer – Time Timer Europe",
+      "url": "https://timetimer-europe.com/collections/adhd-clocks?srsltid=AU7gw4WdHOu6WLJyd7NvPHIx0zD-HcUakKNYuegy4VuZvxJm7_KfdRj0",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt3aI5wEeTJ68Pd5y_NG3yREsKt9JsFaC3OVqFuBeAWOXWTKiCSWoMGko&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Visual Timer for ADHD Kids and Adults | ADHD Timer | Time Timer",
+      "url": "https://www.timetimer.com/pages/adhd?srsltid=AU7gw4Vbtw1Wa_KHsh0HjIkKr4Kqagjq_-QrcWf96OieeoBUjt5KJeSB",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5dm_w4liZCFXELb-MGUvRMLePlvHfxc0_lXrIR4V_5nW7nsLE5P9ZYRE&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Amazon.com: 5 IN 1 Visual Timer for Kids/Adults with Chore ...",
+      "url": "https://www.amazon.com/Pomodoro-Products-Schedule-Supplies-Off-white/dp/B0FDB83T7Z",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqj5bzqKg5EW9ekzZ_0tx9CqU8FMjuwEs4v7-zfFwksjZtwNhEQ4zgVx4&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Comparative Guide: 7 Best Visual Timers for Your Child",
+      "url": "https://www.forbrain.com/adhd-learning/visual-timers-for-adhd/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7k_2GEJ4jdFEwGEq1qt90_d5rlb52esOyGbH25-CfyMMiK_0h_a5QO_4&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "The 26 Best ADHD Timers For Effortless Time Tracking",
+      "url": "https://www.adhdflowstate.com/best-adhd-timers/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbomts9bHRE2rw6ThLDBV3lVhv07Kw5LnsgqAlzuZ6g8iqx7i7GZFUpfQ&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Comparative Guide: 7 Best Visual Timers for Your Child",
+      "url": "https://www.forbrain.com/adhd-learning/visual-timers-for-adhd/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUKflcu8Pp0BvHGyfj6hWI3V4EftdSeNm76ERE8pTzvBqKnJ745UyZPk&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "The 26 Best ADHD Timers For Effortless Time Tracking",
+      "url": "https://www.adhdflowstate.com/best-adhd-timers/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWb3Vephn7lGoTIDv1uJgCoaPYqTPwVNoDZF-f38JlgRLUqiLCjdJVIrw&s"
+     }
+    ],
+    "related_image_searches": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 9,
+    "rank_absolute": 13,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[24]/div[1]/div[1]",
+    "domain": "www.additudemag.com",
+    "title": "How to Beat the Clock with High-Tech Timers",
+    "url": "https://www.additudemag.com/adhd-gadgets-gizmos-timers/?srsltid=AU7gw4VqifLUyliFoKLM3EDonWilDX9uFf8OEGyitGMCb4cGzURN4hbo",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.additudemag.com › adhd-gadgets-gizmos-t...",
+    "website_name": "ADDitude",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "May 8, 2025 — Most adults and children with attention deficit hyperactivity disorder do well using a simple kitchen timer. Decide how much time you need ... Read more",
+    "pre_snippet": "05/08/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "timer"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "For Appointment Reminders",
+      "description": null,
+      "url": "https://www.additudemag.com/adhd-gadgets-gizmos-timers/#for-appointment-reminders",
+      "domain": "www.additudemag.com"
+     },
+     {
+      "type": "link_element",
+      "title": "For Visualizing Time",
+      "description": null,
+      "url": "https://www.additudemag.com/adhd-gadgets-gizmos-timers/#for-visualizing-time",
+      "domain": "www.additudemag.com"
+     },
+     {
+      "type": "link_element",
+      "title": "For Kids",
+      "description": null,
+      "url": "https://www.additudemag.com/adhd-gadgets-gizmos-timers/#for-kids",
+      "domain": "www.additudemag.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-05-08 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 14,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Adhd timer online",
+     "ADHD timer app",
+     "Adhd timer reddit",
+     "Best adhd timer",
+     "ADHD Timer Amazon",
+     "Adhd timer free",
+     "Adhd timer for adults",
+     "ADHD timer cube"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

@@ -1,0 +1,546 @@
+[
+ {
+  "keyword": "adhd music",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=adhd%20music&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-24 16:43:27 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "video",
+   "people_also_ask",
+   "organic",
+   "short_videos",
+   "related_searches"
+  ],
+  "se_results_count": 136,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Quiet Quest - Study Music",
+      "title": "Hyperfocus Music - ADHD Relief Music For Work, Studying and ...",
+      "timestamp": "2025-06-09 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=tV7JrrDsGeg"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Quiet Quest - Study Music",
+      "title": "4 Hours Of Music For Concentration And Memory Retention",
+      "timestamp": "2026-07-06 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=5TOJszWQgWY"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Quiet Quest - Study Music",
+      "title": "ADHD Relief Music, Study Music For Focus And Concentration ...",
+      "timestamp": "2023-08-14 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=yYdC9ieX3SE"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Quiet Quest - Study Music",
+      "title": "Hyperfocus Music For ADHD Relief - Increase Concentration ...",
+      "timestamp": "2026-05-18 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=eEEweW7ZrFo"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What type of music is best for ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What does ADHD fatigue feel like?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the ADHD music called?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Why do people with ADHD struggle to relax?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "ADHD focus music 2026✨ hyperfixation/hyperfocus",
+    "url": "https://open.spotify.com/playlist/6Cf1qYa6QwYB70TVDBIaE3",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › playlist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "ADHD focus music 2026 ✨ … improve concentration and increase brain power ~ be more productive ~binaural beats / isochronic tones",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADHD focus music 2026"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "short_videos",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]",
+    "title": "Short videos",
+    "items": [
+     {
+      "type": "short_videos_element",
+      "title": "ADHD Stimulation Music 2",
+      "url": "https://www.youtube.com/shorts/jmFKIeGnxRM",
+      "domain": "google.com",
+      "source": "ADHDVision"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "ADHD Stimulation music",
+      "url": "https://www.youtube.com/shorts/EGExOzqGjfs",
+      "domain": "google.com",
+      "source": "ADHDVision"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "What did it do to your brain?",
+      "url": "https://www.instagram.com/reel/DdhKRFdjcPQ/",
+      "domain": "google.com",
+      "source": "Nik"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "Ever tried listening to 8D music to quiet your mind? That ...",
+      "url": "https://www.facebook.com/propeladhd/videos/ever-tried-listening-to-8d-music-to-quiet-your-mind-that-immersive-swirling-soun/646474685140615/",
+      "domain": "google.com",
+      "source": "Propel: ADHD Games"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "8D ADHD Music",
+      "url": "https://www.youtube.com/shorts/w9XLit0J_XQ",
+      "domain": "google.com",
+      "source": "ADHDVision"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "ADHD Song (Pt 2 - Morning Routine) Song a day 14!! Thank ...",
+      "url": "https://www.facebook.com/noahmalcolmmusic/videos/adhd-song-pt-2-morning-routine-song-a-day-14-thank-god-for-hyper-focus-songaday-/894332326478128/",
+      "domain": "google.com",
+      "source": "Noah Malcolm"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "ADHD Music",
+      "url": "https://www.youtube.com/watch?v=4D9ZaBVTY8E",
+      "domain": "google.com",
+      "source": "Studying Music - Topic"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "ADHD Focus Music: Binaural Beats for ADHD Relief and Focus",
+      "url": "https://www.youtube.com/shorts/B8uzDRge4rg",
+      "domain": "google.com",
+      "source": "Good Vibes - Binaural Beats"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "ADHD Relief, Music for ADHD Focus, Focus Binaural Beats",
+      "url": "https://www.youtube.com/shorts/erE5OpVM1RM",
+      "domain": "google.com",
+      "source": "Good Vibes - Binaural Beats"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "ADHD Focus Music Playlist",
+      "url": "https://www.youtube.com/watch?v=lnj1BomgAYA",
+      "domain": "google.com",
+      "source": "ADHD Music Therapy - Topic"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]",
+    "domain": "www.psychiatrist.com",
+    "title": "How Music Helps ADHD Minds Focus and Feel",
+    "url": "https://www.psychiatrist.com/news/how-music-helps-adhd-minds-focus-and-feel/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.psychiatrist.com › News",
+    "website_name": "Psychiatrist.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "A new study reveals that young adults with ADHD rely more heavily on music to boost focus and emotional regulation.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "young adults with ADHD rely more heavily on music"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]",
+    "domain": "pmc.ncbi.nlm.nih.gov",
+    "title": "Exploring the Intersection of ADHD and Music - PMC - NIH",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11762814/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://pmc.ncbi.nlm.nih.gov › articles › PMC11762814",
+    "website_name": "National Institutes of Health (NIH) | (.gov)",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "by P Saville · 2025 · Cited by 23 — Music can significantly improve mood in individuals with ADHD. Conversely, silence can increase arousal and decrease positive mood in people with ADHD.",
+    "pre_snippet": "by P Saville · 2025 · Cited by 23",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Music can significantly improve mood in individuals with ADHD"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]",
+    "domain": "www.brain.fm",
+    "title": "Music for ADHD",
+    "url": "https://www.brain.fm/adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.brain.fm › adhd",
+    "website_name": "Brain.fm",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "The First Music Made for ADHD Shown in peer-reviewed studies to increase focus brainwaves by 119% and improve sustained attention tasks in users with ADHD ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "increase focus brainwaves by 119"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "ADHD Relief Music: Studying Music for Better Concentration ...",
+    "url": "https://www.youtube.com/watch?v=RG2IK8oRZNA",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "19.7M+ views  ·  3 years ago",
+    "website_name": "YouTube · Greenred Productions - Relaxing Music",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "ADHD Relief Music : Studying Music for Better Concentration and Focus, you can train your brain to respond to a song in a certain way! ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADHD Relief Music"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2023-01-02 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "www.additudemag.com",
+    "title": "Music Therapy: Sound Medicine for ADHD",
+    "url": "https://www.additudemag.com/music-therapy-for-adhd-how-rhythm-builds-focus/?srsltid=AU7gw4URegkx-J-gGqa52Al1m74ZjLOu6kDHexUodj6GZuHEPgo9B7vr",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.additudemag.com › music-therapy-for-adh...",
+    "website_name": "ADDitude",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Dec 9, 2024 — Listen up: Music therapy can help adults and children with ADHD build their focus, improve social skills, and unwind when symptoms get hard ...",
+    "pre_snippet": "12/09/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Music therapy can help adults and children with ADHD"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-12-09 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "ADHD Sound Therapy (Calming Mood Music for ...",
+    "url": "https://open.spotify.com/album/2Xya6caVCIZTpLFqm2hU0w",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › album",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Listen to ADHD Sound Therapy (Calming Mood Music for Hyperactivity) The Breath of Life (for ADHD) Piano (for ADHD)",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADHD Sound Therapy"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[20]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "ADD and ADHD Music with Binaural Beats",
+    "url": "https://www.youtube.com/playlist?list=PLnOC9rlyvdSnYkzT-ePwj9bBmJQ1n3kuD",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "1.3M+ followers",
+    "website_name": "YouTube · Greenred Productions - Relaxing Music",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "2:24:35 · ADHD Music for Studying - Binaural Beats Focus Music, ADHD, ADD Study Music. Greenred Productions - Relaxing Music. 45K views • 7 years ago. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADHD Music for Studying"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.youtube.com/playlist?list=PLnOC9rlyvdSnYkzT-ePwj9bBmJQ1n3kuD#:~:text=2%3A24%3A35,views%20%E2%80%A2%207%20years%20ago",
+      "domain": "www.youtube.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "ADHD music Download",
+     "Adhd music for kids",
+     "Adhd music free",
+     "Neurodivergent music for ADHD",
+     "ADHD music binaural beats",
+     "ADHD music youtube",
+     "ADHD music playlist",
+     "Best adhd music"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

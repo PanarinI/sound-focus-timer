@@ -1,0 +1,6444 @@
+[
+ {
+  "se_type": "google",
+  "seed_keyword": "adhd timer",
+  "seed_keyword_data": {
+   "se_type": "google",
+   "keyword": "adhd timer",
+   "location_code": 2840,
+   "language_code": "en",
+   "keyword_info": {
+    "se_type": "google",
+    "last_updated_time": "2026-09-16 11:32:20 +00:00",
+    "competition": 0.98,
+    "competition_level": "HIGH",
+    "cpc": 0.84,
+    "search_volume": 1300,
+    "low_top_of_page_bid": 0.35,
+    "high_top_of_page_bid": 1.31,
+    "categories": [
+     10011,
+     10085,
+     10469,
+     11701
+    ],
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 1300
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 1000
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 1000
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 1300
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 1600
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 1300
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 1300
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 1300
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 1600
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 1300
+     },
+     {
+      "year": 2025,
+      "month": 10,
+      "search_volume": 1300
+     },
+     {
+      "year": 2025,
+      "month": 9,
+      "search_volume": 1000
+     }
+    ],
+    "search_volume_trend": {
+     "monthly": 30,
+     "quarterly": 30,
+     "yearly": 30
+    }
+   },
+   "keyword_info_normalized_with_bing": null,
+   "keyword_info_normalized_with_clickstream": null,
+   "clickstream_keyword_info": null,
+   "keyword_properties": {
+    "se_type": "google",
+    "core_keyword": null,
+    "synonym_clustering_algorithm": "text_processing",
+    "keyword_difficulty": 1,
+    "detected_language": "en",
+    "is_another_language": false,
+    "words_count": 2
+   },
+   "serp_info": {
+    "se_type": "google",
+    "check_url": "https://www.google.com/search?q=adhd%20timer&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+    "serp_item_types": [
+     "ai_overview",
+     "organic",
+     "popular_products",
+     "people_also_ask",
+     "images",
+     "related_searches"
+    ],
+    "se_results_count": 135,
+    "last_updated_time": "2026-08-01 07:18:09 +00:00",
+    "previous_updated_time": "2026-05-20 03:26:58 +00:00"
+   },
+   "search_intent_info": {
+    "se_type": "google",
+    "main_intent": "informational",
+    "foreign_intent": [
+     "transactional"
+    ],
+    "last_updated_time": "2026-04-29 03:01:52 +00:00"
+   },
+   "avg_backlinks_info": {
+    "se_type": "google",
+    "backlinks": 9.2,
+    "dofollow": 4.2,
+    "referring_pages": 9.2,
+    "referring_domains": 6.9,
+    "referring_main_domains": 2.3,
+    "rank": 56.1,
+    "main_domain_rank": 555.9,
+    "last_updated_time": "2026-08-01 07:18:09 +00:00"
+   }
+  },
+  "location_code": 2840,
+  "language_code": "en",
+  "total_count": 55,
+  "items_count": 55,
+  "offset": 0,
+  "offset_token": "eyJDdXJyZW50T2Zmc2V0Ijo1NSwiUmVxdWVzdERhdGEiOnsia2V5d29yZCI6ImFkaGQgdGltZXIiLCJpbmNsdWRlX3NlZWRfa2V5d29yZCI6dHJ1ZSwiZnVsbF9tYXRjaCI6ZmFsc2UsImxvYWRfc2VycF9pbmZvIjpmYWxzZSwic2VhcmNoX2FmdGVyX3Rva2VuIjpudWxsLCJpZ25vcmVfc3lub255bXMiOmZhbHNlLCJsYW5ndWFnZSI6ImVuIiwic2VhcmNoX2VuZ2luZSI6Imdvb2dsZSIsImxvY2F0aW9uIjoyODQwLCJ1c2VfbmV3X2NhdGVnb3JpZXMiOnRydWUsIm9yZGVyX2J5Ijp7Im9yZGVyX2ZpZWxkIjoia2V5d29yZF9pbmZvLnNlYXJjaF92b2x1bWUiLCJvcmRlcl90eXBlIjoiRGVzYyIsIm5leHQiOm51bGx9LCJsaW1pdCI6MTAwLCJvZmZzZXQiOjAsImFpZCI6MjA0MjcyLCJ1c2VfY2FjaGUiOnRydWUsInRhc2tfaWQiOiIwOTI0MTYzNC0yMDQyLTAzOTktMDAwMC02ODU4MTEzOWRmM2MiLCJmbGFncyI6bnVsbH0sIlJhd1F1ZXJ5IjpudWxsLCJJZCI6ImJhYWVhNzQwLTYwMTAtNDcxYS05OWQyLTRkMDI2YjUwYzNiMCIsIlNlYXJjaEFmdGVyRGF0YSI6WzAsImJlOGEzODY5LTFhY2MtY2YyOC1hNjIzLTA3MTQxN2FjMTI5YSJdLCJFeGVjdXRvciI6LTkxODQ0MDU5NDA0NDQ1MTc2MzN9",
+  "items": [
+   {
+    "se_type": "google",
+    "keyword": "adhd visual timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 09:13:41 +00:00",
+     "competition": 0.79,
+     "competition_level": "HIGH",
+     "cpc": 0.73,
+     "search_volume": 1900,
+     "low_top_of_page_bid": 0.28,
+     "high_top_of_page_bid": 1.11,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 4400
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 1900
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 1900
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 2400
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 2400
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 1300
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 880
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 1000
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 83,
+      "quarterly": 132,
+      "yearly": 340
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "visual timer for adhd",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 13,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 1267.6,
+     "dofollow": 131.8,
+     "referring_pages": 1226.3,
+     "referring_domains": 62.4,
+     "referring_main_domains": 58.7,
+     "rank": 90.1,
+     "main_domain_rank": 478,
+     "last_updated_time": "2026-03-15 17:39:28 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 05:51:47 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "visual timer for adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 11:44:51 +00:00",
+     "competition": 0.79,
+     "competition_level": "HIGH",
+     "cpc": 0.73,
+     "search_volume": 1900,
+     "low_top_of_page_bid": 0.28,
+     "high_top_of_page_bid": 1.11,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 4400
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 1900
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 1900
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 2400
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 2400
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 1300
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 880
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 1000
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 83,
+      "quarterly": 132,
+      "yearly": 340
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 13,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 1268.6,
+     "dofollow": 132.1,
+     "referring_pages": 1226.7,
+     "referring_domains": 63,
+     "referring_main_domains": 59.3,
+     "rank": 91.9,
+     "main_domain_rank": 564,
+     "last_updated_time": "2026-03-15 08:41:59 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-30 03:40:33 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "visual timer adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-12 05:26:59 +00:00",
+     "competition": 0.79,
+     "competition_level": "HIGH",
+     "cpc": 0.73,
+     "search_volume": 1900,
+     "low_top_of_page_bid": 0.28,
+     "high_top_of_page_bid": 1.11,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 4400
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 1900
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 1900
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 2400
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 2400
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 1300
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 880
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 1000
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 83,
+      "quarterly": 132,
+      "yearly": 340
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "visual timer for adhd",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 11.2,
+     "dofollow": 0.7,
+     "referring_pages": 11.2,
+     "referring_domains": 11.3,
+     "referring_main_domains": 2.3,
+     "rank": 31.8,
+     "main_domain_rank": 587.1,
+     "last_updated_time": "2026-06-30 14:10:22 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-30 00:55:54 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "time timer for adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-12 04:32:36 +00:00",
+     "competition": 0.42,
+     "competition_level": "MEDIUM",
+     "cpc": 0.51,
+     "search_volume": 1300,
+     "low_top_of_page_bid": 0.26,
+     "high_top_of_page_bid": 1.29,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 3600
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 2400
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 1900
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 1300
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 720
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 1000
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 1000
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 720
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 260
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 210
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 1600
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 50,
+      "quarterly": 50,
+      "yearly": 823
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 7.9,
+     "dofollow": 2.9,
+     "referring_pages": 7.9,
+     "referring_domains": 6.7,
+     "referring_main_domains": 2.1,
+     "rank": 45,
+     "main_domain_rank": 580.4,
+     "last_updated_time": "2026-08-01 08:37:26 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 21:42:56 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-16 11:32:20 +00:00",
+     "competition": 0.98,
+     "competition_level": "HIGH",
+     "cpc": 0.84,
+     "search_volume": 1300,
+     "low_top_of_page_bid": 0.35,
+     "high_top_of_page_bid": 1.31,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 1300
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 1000
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 1000
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 1300
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 1600
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 1300
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 1300
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 1300
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 1600
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 1300
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 1300
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 1000
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 30,
+      "quarterly": 30,
+      "yearly": 30
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 1,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 2
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 9.2,
+     "dofollow": 4.2,
+     "referring_pages": 9.2,
+     "referring_domains": 6.9,
+     "referring_main_domains": 2.3,
+     "rank": 56.1,
+     "main_domain_rank": 555.9,
+     "last_updated_time": "2026-08-01 07:18:09 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": [
+      "transactional"
+     ],
+     "last_updated_time": "2026-04-29 03:01:52 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "timer for adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-12 18:30:47 +00:00",
+     "competition": 0.88,
+     "competition_level": "HIGH",
+     "cpc": 0.77,
+     "search_volume": 1000,
+     "low_top_of_page_bid": 0.35,
+     "high_top_of_page_bid": 1.3,
+     "categories": [
+      10011,
+      10011,
+      10085,
+      10085,
+      10469,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 720
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 390
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 390
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 720
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 1300
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 1300
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 1600
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 1900
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 1900
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 1600
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 880
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 1000
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 85,
+      "quarterly": 85,
+      "yearly": -28
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 13.6,
+     "dofollow": 3.3,
+     "referring_pages": 13.6,
+     "referring_domains": 12.3,
+     "referring_main_domains": 3.2,
+     "rank": 47.8,
+     "main_domain_rank": 448,
+     "last_updated_time": "2026-07-31 21:49:50 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 22:30:00 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "timer adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 06:23:00 +00:00",
+     "competition": 0.88,
+     "competition_level": "HIGH",
+     "cpc": 0.77,
+     "search_volume": 1000,
+     "low_top_of_page_bid": 0.35,
+     "high_top_of_page_bid": 1.3,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 720
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 390
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 390
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 720
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 1300
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 1300
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 1600
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 1900
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 1900
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 1600
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 880
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 1000
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 85,
+      "quarterly": 85,
+      "yearly": -28
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 1,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 2
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 323.2,
+     "dofollow": 279.2,
+     "referring_pages": 305,
+     "referring_domains": 59.4,
+     "referring_main_domains": 55.6,
+     "rank": 129.3,
+     "main_domain_rank": 537.7,
+     "last_updated_time": "2026-02-18 16:54:14 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-30 00:57:22 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "pomodoro timer for adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 07:55:34 +00:00",
+     "competition": 0.17,
+     "competition_level": "LOW",
+     "cpc": 5.57,
+     "search_volume": 590,
+     "low_top_of_page_bid": 0.73,
+     "high_top_of_page_bid": 2.59,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 170
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 170
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 320
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 480
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 480
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 720
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 880
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 1600
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 1900
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 110
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 140
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 110
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": -47,
+      "yearly": 89
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer pomodoro",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 9,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 55.9,
+     "dofollow": 35.8,
+     "referring_pages": 53.9,
+     "referring_domains": 33.8,
+     "referring_main_domains": 27.2,
+     "rank": 94.3,
+     "main_domain_rank": 540.3,
+     "last_updated_time": "2026-09-08 00:26:43 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 18:21:01 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd clock timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-12 06:33:21 +00:00",
+     "competition": 0.97,
+     "competition_level": "HIGH",
+     "cpc": 0.79,
+     "search_volume": 90,
+     "low_top_of_page_bid": 0.31,
+     "high_top_of_page_bid": 1.3,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11702,
+      12881
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 140
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 90
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 90
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 70
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 90
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 50
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 56,
+      "quarterly": 180,
+      "yearly": 180
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer clock",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-05-02 06:17:22 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "time timer adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-17 13:58:39 +00:00",
+     "competition": 0.92,
+     "competition_level": "HIGH",
+     "cpc": 0.54,
+     "search_volume": 90,
+     "low_top_of_page_bid": 0.42,
+     "high_top_of_page_bid": 1.33,
+     "categories": [
+      10011,
+      10011,
+      10085,
+      10085,
+      10469,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 140
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 110
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 210
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 170
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 170
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 70
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 70
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 350,
+      "quarterly": 200,
+      "yearly": 29
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "time timer for adhd",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 3.8,
+     "dofollow": 3.3,
+     "referring_pages": 3.3,
+     "referring_domains": 2.1,
+     "referring_main_domains": 2,
+     "rank": 45.9,
+     "main_domain_rank": 590.4,
+     "last_updated_time": "2026-09-18 22:15:47 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 23:55:30 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer for adults",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 19:30:37 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": 1.37,
+     "search_volume": 90,
+     "low_top_of_page_bid": 0.35,
+     "high_top_of_page_bid": 2.36,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 90
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 110
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 70
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 50
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": 29
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 9,
+     "dofollow": 3,
+     "referring_pages": 9,
+     "referring_domains": 7.8,
+     "referring_main_domains": 2.7,
+     "rank": 49.8,
+     "main_domain_rank": 367.1,
+     "last_updated_time": "2026-09-21 04:19:41 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 05:51:46 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer clock",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 03:20:37 +00:00",
+     "competition": 0.97,
+     "competition_level": "HIGH",
+     "cpc": 0.79,
+     "search_volume": 90,
+     "low_top_of_page_bid": 0.31,
+     "high_top_of_page_bid": 1.3,
+     "categories": [
+      10009,
+      10405,
+      11531
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 140
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 90
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 90
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 70
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 90
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 50
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 56,
+      "quarterly": 180,
+      "yearly": 180
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 6,
+     "dofollow": 5.9,
+     "referring_pages": 6,
+     "referring_domains": 3,
+     "referring_main_domains": 2.9,
+     "rank": 62.9,
+     "main_domain_rank": 435.3,
+     "last_updated_time": "2026-09-21 04:19:01 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "transactional",
+     "foreign_intent": [
+      "informational"
+     ],
+     "last_updated_time": "2026-04-29 02:24:01 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd visual timer online",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 02:58:21 +00:00",
+     "competition": 0.12,
+     "competition_level": "LOW",
+     "cpc": 1.11,
+     "search_volume": 70,
+     "low_top_of_page_bid": 0.26,
+     "high_top_of_page_bid": 2.75,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 90
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 50
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 125,
+      "quarterly": 80,
+      "yearly": 80
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": 31,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 483.9,
+     "dofollow": 360,
+     "referring_pages": 435.3,
+     "referring_domains": 134.5,
+     "referring_main_domains": 116.1,
+     "rank": 156,
+     "main_domain_rank": 333.2,
+     "last_updated_time": "2026-08-13 15:47:18 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": [
+      "navigational"
+     ],
+     "last_updated_time": "2026-04-29 05:51:47 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "pomodoro timer adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-13 10:05:20 +00:00",
+     "competition": 0.77,
+     "competition_level": "HIGH",
+     "cpc": 0.46,
+     "search_volume": 70,
+     "low_top_of_page_bid": 0.43,
+     "high_top_of_page_bid": 1.23,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 70
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 70
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 25,
+      "yearly": 25
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer pomodoro",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 7,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 56.3,
+     "dofollow": 31.7,
+     "referring_pages": 54.3,
+     "referring_domains": 34.2,
+     "referring_main_domains": 27.6,
+     "rank": 91.7,
+     "main_domain_rank": 470.6,
+     "last_updated_time": "2026-09-22 20:09:45 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 19:22:17 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer app",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-13 14:21:30 +00:00",
+     "competition": 0.22,
+     "competition_level": "LOW",
+     "cpc": 2.39,
+     "search_volume": 70,
+     "low_top_of_page_bid": 0.82,
+     "high_top_of_page_bid": 3.12,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 90
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 70
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 90
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 70
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 90
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": -22
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 8,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 1329.5,
+     "dofollow": 107.4,
+     "referring_pages": 1279.7,
+     "referring_domains": 55.3,
+     "referring_main_domains": 49,
+     "rank": 90.5,
+     "main_domain_rank": 508.2,
+     "last_updated_time": "2026-07-17 03:56:42 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": [
+      "transactional"
+     ],
+     "last_updated_time": "2026-04-29 00:57:57 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd pomodoro timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-16 03:31:52 +00:00",
+     "competition": 0.39,
+     "competition_level": "MEDIUM",
+     "cpc": 2.4,
+     "search_volume": 50,
+     "low_top_of_page_bid": 0.46,
+     "high_top_of_page_bid": 2.77,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 40
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": -20,
+      "quarterly": 33,
+      "yearly": 33
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer pomodoro",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 4,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 51.3,
+     "dofollow": 33.4,
+     "referring_pages": 49.2,
+     "referring_domains": 31.4,
+     "referring_main_domains": 25.1,
+     "rank": 73.1,
+     "main_domain_rank": 528.6,
+     "last_updated_time": "2026-08-13 15:48:54 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 04:28:03 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer method",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 12:01:56 +00:00",
+     "competition": 0.13,
+     "competition_level": "LOW",
+     "cpc": null,
+     "search_volume": 50,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 40
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": -40
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": 3,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 13.7,
+     "dofollow": 10.8,
+     "referring_pages": 12.1,
+     "referring_domains": 8.6,
+     "referring_main_domains": 8.4,
+     "rank": 75.8,
+     "main_domain_rank": 463.5,
+     "last_updated_time": "2026-08-13 15:48:37 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 04:12:56 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "best visual timer for adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 01:30:06 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": 0.92,
+     "search_volume": 40,
+     "low_top_of_page_bid": 0.4,
+     "high_top_of_page_bid": 1.43,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 90
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 20
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 200,
+      "quarterly": 350,
+      "yearly": 125
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 5
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 2.8,
+     "dofollow": 2.7,
+     "referring_pages": 2.8,
+     "referring_domains": 1.6,
+     "referring_main_domains": 1.5,
+     "rank": 45.6,
+     "main_domain_rank": 448,
+     "last_updated_time": "2026-08-31 21:59:15 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 06:53:28 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "best adhd timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 10:46:25 +00:00",
+     "competition": 0.97,
+     "competition_level": "HIGH",
+     "cpc": 0.79,
+     "search_volume": 40,
+     "low_top_of_page_bid": 0.39,
+     "high_top_of_page_bid": 1.23,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11702,
+      12881
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 20
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": -60,
+      "yearly": -60
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 8.1,
+     "dofollow": 3,
+     "referring_pages": 8.1,
+     "referring_domains": 7,
+     "referring_main_domains": 2.4,
+     "rank": 48.3,
+     "main_domain_rank": 434.4,
+     "last_updated_time": "2026-08-17 17:07:32 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 08:42:13 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer watch",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 16:45:29 +00:00",
+     "competition": 0.64,
+     "competition_level": "MEDIUM",
+     "cpc": 0.88,
+     "search_volume": 40,
+     "low_top_of_page_bid": 0.37,
+     "high_top_of_page_bid": 1.31,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 140
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 600,
+      "quarterly": 100,
+      "yearly": 1300
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 6.1,
+     "dofollow": 5.2,
+     "referring_pages": 6,
+     "referring_domains": 4.6,
+     "referring_main_domains": 4.4,
+     "rank": 55.2,
+     "main_domain_rank": 479.1,
+     "last_updated_time": "2026-09-01 04:17:27 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "transactional",
+     "foreign_intent": [
+      "informational"
+     ],
+     "last_updated_time": "2026-04-29 06:50:43 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd focus timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 07:44:33 +00:00",
+     "competition": 0.79,
+     "competition_level": "HIGH",
+     "cpc": 2.58,
+     "search_volume": 40,
+     "low_top_of_page_bid": 0.81,
+     "high_top_of_page_bid": 5.8,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 30
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 33,
+      "quarterly": 33,
+      "yearly": -20
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 47.6,
+     "dofollow": 27.3,
+     "referring_pages": 47.1,
+     "referring_domains": 30.1,
+     "referring_main_domains": 19.5,
+     "rank": 41.1,
+     "main_domain_rank": 486.3,
+     "last_updated_time": "2026-08-21 17:39:51 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 05:51:45 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "best timer for adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-17 12:29:33 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": 0.98,
+     "search_volume": 40,
+     "low_top_of_page_bid": 0.33,
+     "high_top_of_page_bid": 1.23,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 40
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 25,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "best adhd timer",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 3.3,
+     "dofollow": 2.4,
+     "referring_pages": 2.7,
+     "referring_domains": 1.4,
+     "referring_main_domains": 1.2,
+     "rank": 11.4,
+     "main_domain_rank": 525.2,
+     "last_updated_time": "2025-10-15 02:57:28 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 04:07:49 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd watch timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-16 07:24:45 +00:00",
+     "competition": 0.64,
+     "competition_level": "MEDIUM",
+     "cpc": 0.88,
+     "search_volume": 40,
+     "low_top_of_page_bid": 0.37,
+     "high_top_of_page_bid": 1.31,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 140
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 70
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 50
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 600,
+      "quarterly": 100,
+      "yearly": 1300
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer watch",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 3,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 6,
+     "dofollow": 5.4,
+     "referring_pages": 5.9,
+     "referring_domains": 4.2,
+     "referring_main_domains": 4,
+     "rank": 79.4,
+     "main_domain_rank": 444.6,
+     "last_updated_time": "2026-09-01 04:21:43 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-24 22:49:07 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "timer for adhd adults",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-12 04:03:25 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": 1.09,
+     "search_volume": 30,
+     "low_top_of_page_bid": 0.34,
+     "high_top_of_page_bid": 1.53,
+     "categories": [
+      10011,
+      10011,
+      10085,
+      10085,
+      10469,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 40
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 33,
+      "quarterly": 100,
+      "yearly": 100
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer for adults",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 13.8,
+     "dofollow": 3.5,
+     "referring_pages": 13.8,
+     "referring_domains": 12.4,
+     "referring_main_domains": 3.3,
+     "rank": 49.3,
+     "main_domain_rank": 453,
+     "last_updated_time": "2026-08-26 07:46:11 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 22:28:16 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer online",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-12 02:01:34 +00:00",
+     "competition": 0.07,
+     "competition_level": "LOW",
+     "cpc": 2.64,
+     "search_volume": 30,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 50
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 40
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 40
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": -33
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 34,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 1445.1,
+     "dofollow": 1085.1,
+     "referring_pages": 1345,
+     "referring_domains": 546.3,
+     "referring_main_domains": 497.5,
+     "rank": 168.6,
+     "main_domain_rank": 346.9,
+     "last_updated_time": "2026-09-01 04:17:27 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 05:47:31 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd task timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-16 12:35:40 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": 0.16,
+     "search_volume": 20,
+     "low_top_of_page_bid": 0.5,
+     "high_top_of_page_bid": 1.75,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 20
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": -33,
+      "quarterly": 100,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 00:47:08 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd work timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-12 09:24:34 +00:00",
+     "competition": 0.65,
+     "competition_level": "MEDIUM",
+     "cpc": 0.99,
+     "search_volume": 20,
+     "low_top_of_page_bid": 0.38,
+     "high_top_of_page_bid": 1.64,
+     "categories": [
+      10011,
+      10011,
+      10085,
+      10085,
+      10469,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 200,
+      "quarterly": 200,
+      "yearly": 200
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 06:18:58 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer pomodoro",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-13 05:40:46 +00:00",
+     "competition": 0.64,
+     "competition_level": "MEDIUM",
+     "cpc": null,
+     "search_volume": 20,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 20
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 00:57:57 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "best pomodoro timer for adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 12:02:58 +00:00",
+     "competition": 0.63,
+     "competition_level": "MEDIUM",
+     "cpc": 0.45,
+     "search_volume": 20,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11702,
+      12881
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 20
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 100,
+      "quarterly": 100,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 5
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 00:32:47 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd cube timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-12 13:22:49 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": 1.48,
+     "search_volume": 20,
+     "low_top_of_page_bid": 0.41,
+     "high_top_of_page_bid": 1.22,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": 100
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer cube",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": [
+      "transactional"
+     ],
+     "last_updated_time": "2026-04-29 02:07:09 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd study timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 12:36:04 +00:00",
+     "competition": 0.13,
+     "competition_level": "LOW",
+     "cpc": null,
+     "search_volume": 20,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 30
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 03:52:53 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd visual timer app",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 14:58:28 +00:00",
+     "competition": 0.17,
+     "competition_level": "LOW",
+     "cpc": null,
+     "search_volume": 20,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10007,
+      10878,
+      13378,
+      13381
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 100,
+      "quarterly": 100,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": [
+      "transactional"
+     ],
+     "last_updated_time": "2026-04-29 04:28:03 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer cube",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 08:45:01 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": 1.09,
+     "search_volume": 20,
+     "low_top_of_page_bid": 0.41,
+     "high_top_of_page_bid": 1.23,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 30
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 100,
+      "quarterly": 100,
+      "yearly": 300
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 6.9,
+     "dofollow": 6.8,
+     "referring_pages": 6.9,
+     "referring_domains": 6.4,
+     "referring_main_domains": 2.2,
+     "rank": 29.5,
+     "main_domain_rank": 549.9,
+     "last_updated_time": "2024-03-04 21:37:06 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "transactional",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 13:57:01 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd shower timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-17 22:13:44 +00:00",
+     "competition": 0.83,
+     "competition_level": "HIGH",
+     "cpc": 0.55,
+     "search_volume": 10,
+     "low_top_of_page_bid": 0.26,
+     "high_top_of_page_bid": 1.01,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 100,
+      "quarterly": 100,
+      "yearly": 100
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 00:28:18 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer app free",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 01:22:47 +00:00",
+     "competition": 0.33,
+     "competition_level": "MEDIUM",
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": 0.74,
+     "high_top_of_page_bid": 3.4,
+     "categories": [
+      10007,
+      10878,
+      13378,
+      13381
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 02:14:43 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "timer app for adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 15:56:46 +00:00",
+     "competition": 0.08,
+     "competition_level": "LOW",
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer app",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 8,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 22:58:26 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "pomodoro timer adhd couple",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-16 04:48:18 +00:00",
+     "competition": 0,
+     "competition_level": "LOW",
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 23:05:20 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer amazon",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-16 22:22:31 +00:00",
+     "competition": 0.74,
+     "competition_level": "HIGH",
+     "cpc": 0.36,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      13575,
+      13860
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": -50
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 04:28:03 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd time timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 12:01:18 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": 3.38,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": -50,
+      "quarterly": 0,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "time timer for adhd",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 00:57:57 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd productivity timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 17:16:13 +00:00",
+     "competition": 0.94,
+     "competition_level": "HIGH",
+     "cpc": 0.77,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 30
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 20
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "transactional",
+     "foreign_intent": [
+      "informational"
+     ],
+     "last_updated_time": "2026-04-29 00:50:09 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd timer trick",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 13:01:22 +00:00",
+     "competition": 0,
+     "competition_level": "LOW",
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": null,
+      "quarterly": 0,
+      "yearly": null
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 05:47:31 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd couple timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-13 17:00:37 +00:00",
+     "competition": 0,
+     "competition_level": "LOW",
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11702,
+      12881
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": null,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-05-03 21:14:17 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "timer watch for adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-17 07:18:42 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer watch",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 0,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": [
+      "transactional"
+     ],
+     "last_updated_time": "2026-04-29 22:47:32 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd countdown timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 15:26:53 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": 0.7,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10009,
+      10405,
+      11531
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 100,
+      "quarterly": 100,
+      "yearly": 100
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": [
+      "navigational"
+     ],
+     "last_updated_time": "2026-05-02 13:20:18 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "online adhd timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 08:46:22 +00:00",
+     "competition": 0.18,
+     "competition_level": "LOW",
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 20
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer online",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": 34,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 16:52:28 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "how to adhd timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-13 21:04:00 +00:00",
+     "competition": null,
+     "competition_level": null,
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": -100
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-27 22:45:11 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd friendly timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 02:59:04 +00:00",
+     "competition": 0.93,
+     "competition_level": "HIGH",
+     "cpc": 1.33,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10009,
+      10405,
+      11531
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": -50,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": [
+      "navigational"
+     ],
+     "last_updated_time": "2026-05-03 05:59:37 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "amazon adhd timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-13 07:14:16 +00:00",
+     "competition": 0.42,
+     "competition_level": "MEDIUM",
+     "cpc": 0.35,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      13575,
+      13860
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": null
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd timer amazon",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": [
+      "transactional"
+     ],
+     "last_updated_time": "2026-04-29 04:57:45 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd desk timer",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-17 05:08:04 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11702,
+      12881
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": null
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "navigational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-05-07 22:20:36 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "timer for adhd students",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-16 23:40:17 +00:00",
+     "competition": 0.86,
+     "competition_level": "HIGH",
+     "cpc": 3.38,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10011,
+      10085,
+      10085,
+      10469,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": null,
+      "quarterly": 0,
+      "yearly": 0
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-04-29 22:53:14 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "visual timer for adhd adults",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-12 16:42:38 +00:00",
+     "competition": 1,
+     "competition_level": "HIGH",
+     "cpc": 0.57,
+     "search_volume": 10,
+     "low_top_of_page_bid": 0.34,
+     "high_top_of_page_bid": 2.08,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 40
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 0
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 100,
+      "quarterly": 100,
+      "yearly": null
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "visual timer adhd adult",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 5
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-05-05 20:33:16 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "adhd visual timer online free",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-14 01:28:23 +00:00",
+     "competition": 0.02,
+     "competition_level": "LOW",
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11702,
+      12881
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 0
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": null
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 5
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "commercial",
+     "foreign_intent": null,
+     "last_updated_time": "2026-05-06 06:34:44 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "visual timer adhd adult",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-16 00:48:57 +00:00",
+     "competition": 0.77,
+     "competition_level": "HIGH",
+     "cpc": 0.01,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 20
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 0
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 100,
+      "quarterly": 100,
+      "yearly": null
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 4
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": [
+      "navigational"
+     ],
+     "last_updated_time": "2026-05-07 13:04:42 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "study timer adhd",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-15 22:18:33 +00:00",
+     "competition": 0.14,
+     "competition_level": "LOW",
+     "cpc": null,
+     "search_volume": 10,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11702,
+      12881
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 10
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 10
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 10
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": null,
+      "yearly": null
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": "adhd study timer",
+     "synonym_clustering_algorithm": "text_processing",
+     "keyword_difficulty": null,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 3
+    },
+    "serp_info": null,
+    "avg_backlinks_info": null,
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "informational",
+     "foreign_intent": null,
+     "last_updated_time": "2026-05-06 02:31:15 +00:00"
+    }
+   },
+   {
+    "se_type": "google",
+    "keyword": "vibrating timer for adhd students",
+    "location_code": 2840,
+    "language_code": "en",
+    "keyword_info": {
+     "se_type": "google",
+     "last_updated_time": "2026-09-13 01:58:33 +00:00",
+     "competition": null,
+     "competition_level": null,
+     "cpc": null,
+     "search_volume": 0,
+     "low_top_of_page_bid": null,
+     "high_top_of_page_bid": null,
+     "categories": [
+      10011,
+      10085,
+      10469,
+      11701
+     ],
+     "monthly_searches": [
+      {
+       "year": 2026,
+       "month": 8,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 5,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 4,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 3,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 2,
+       "search_volume": 0
+      },
+      {
+       "year": 2026,
+       "month": 1,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 12,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 11,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 10,
+       "search_volume": 0
+      },
+      {
+       "year": 2025,
+       "month": 9,
+       "search_volume": 0
+      }
+     ],
+     "search_volume_trend": {
+      "monthly": 0,
+      "quarterly": 0,
+      "yearly": -100
+     }
+    },
+    "keyword_info_normalized_with_bing": null,
+    "keyword_info_normalized_with_clickstream": null,
+    "clickstream_keyword_info": null,
+    "keyword_properties": {
+     "se_type": "google",
+     "core_keyword": null,
+     "synonym_clustering_algorithm": null,
+     "keyword_difficulty": 38,
+     "detected_language": "en",
+     "is_another_language": false,
+     "words_count": 5
+    },
+    "serp_info": null,
+    "avg_backlinks_info": {
+     "se_type": "google",
+     "backlinks": 79.7,
+     "dofollow": 40.6,
+     "referring_pages": 70.8,
+     "referring_domains": 28.2,
+     "referring_main_domains": 24.9,
+     "rank": 134.3,
+     "main_domain_rank": 341.4,
+     "last_updated_time": "2023-01-06 00:46:29 +00:00"
+    },
+    "search_intent_info": {
+     "se_type": "google",
+     "main_intent": "commercial",
+     "foreign_intent": null,
+     "last_updated_time": "2026-05-04 22:57:25 +00:00"
+    }
+   }
+  ]
+ }
+]

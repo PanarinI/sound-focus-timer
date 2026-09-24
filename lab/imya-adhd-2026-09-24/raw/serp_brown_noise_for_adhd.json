@@ -1,0 +1,692 @@
+[
+ {
+  "keyword": "brown noise for adhd",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=brown%20noise%20for%20adhd&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-24 16:36:19 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "video",
+   "people_also_ask",
+   "organic",
+   "google_flights",
+   "discussions_and_forums",
+   "short_videos",
+   "related_searches",
+   "knowledge_graph"
+  ],
+  "se_results_count": 105,
+  "pages_count": 1,
+  "items_count": 13,
+  "items": [
+   {
+    "type": "knowledge_graph",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]",
+    "title": "Brown Noise for ADHD",
+    "subtitle": "Album by BrownNoise and Focus Brown Noise ‧ 2023",
+    "description": null,
+    "card_id": null,
+    "url": null,
+    "image_url": null,
+    "logo_url": null,
+    "cid": null,
+    "items": [
+     {
+      "type": "knowledge_graph_row_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+      "title": "Artists",
+      "data_attrid": "kc:/music/album:artist",
+      "text": "Artists : BrownNoise, Focus Brown Noise",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "BrownNoise",
+        "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=BrownNoise&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0Qg94ZGWx4feNfE9ybunQ4F0e1CpBN0PPKh9AawKt47KOhcZWxag09RKJE-iMRBWr8-OTCJQQFN5MAvkqgs4QHHlI_BRr-YnyjrKqwgh8JYFxvtyKJCV357cst431qQG2LBs159RW0VNJX2QUw1m33cMDEvi_BDycDHyeEbTKWvcj0D4VL-E-6ve25TY_zvwVrwub5aW9TDCNkqIm6ffTwN69VT-iZZj9epI5RsIniEOLmLQbEmqW3Tlwg_AgaX6C_hfypQ%3D&sa=X&ved=2ahUKEwiCvcSX04eXAxWOLhAIHaBXAGMQmxN6BAgXEAI",
+        "domain": "www.google.com",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[2]/span[1]/a[1]"
+       },
+       {
+        "type": "link_element",
+        "title": "Focus Brown Noise",
+        "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=Focus+Brown+Noise&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0d3HMLgN2xBsscRHU8_BPN5mjDm023LroJEn4aWikw_uZu-d9gea1zadXqazz0HBjAQw3jVaQng4f6T6jCN7d7yiWf2pZJ5eBlZ8q-eL-JXPop5oF98a7nqhLpu-sHfsjUe8KnNGQSwy_WZyzVsE9a8DlAP2y_SPiLyCJkFSs3-Ed-o6legqTcnxMBSRxWILFGMivmLD5rBTa-q0JByZ1igQ0qMDkGa8w4H9pyA-nUqcxLp8Y3zftlPkl2QT1pg-HhuXx6M%3D&sa=X&ved=2ahUKEwiCvcSX04eXAxWOLhAIHaBXAGMQmxN6BAgXEAM",
+        "domain": "www.google.com",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[2]/span[1]/a[2]"
+       }
+      ],
+      "rectangle": null
+     },
+     {
+      "type": "knowledge_graph_row_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "title": "Label",
+      "data_attrid": "kc:/music/album:label",
+      "text": "Label : Rehegoo USA",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Rehegoo USA",
+        "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=Rehegoo+USA&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0aS7tvsEAkQI-GUQi-1LXaYUrbbhUPAKB9ZWXqVga9uxoQxZYG8_og7rJm5lpDCD_N_qRYWHtrLu-MOBxAbg51MRJES2lF4QHAlEEzKfvMq2v51dU4k9CnGaQ1Y4fQqlSZ4kqQUaFT4C5U-pcYVsMNbk1-UWj366Uk270qIXaNZbYvdj5A%3D%3D&sa=X&ved=2ahUKEwiCvcSX04eXAxWOLhAIHaBXAGMQmxN6BAgdEAI",
+        "domain": "www.google.com",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[2]/span[1]/a[1]"
+       }
+      ],
+      "rectangle": null
+     },
+     {
+      "type": "knowledge_graph_row_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]",
+      "title": "Release date",
+      "data_attrid": "kc:/music/album:release date",
+      "text": "Release date : March 23, 2023",
+      "links": null,
+      "rectangle": null
+     },
+     {
+      "type": "knowledge_graph_row_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]",
+      "title": "Genre",
+      "data_attrid": "kc:/music/album:skos genre",
+      "text": "Genre : Natural sounds",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Natural sounds",
+        "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=brown+noise+for+adhd+natural+sounds&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0W2AXqPl4R19ORGGvPhpBwVF46FFdNSyO0n4lx_ueNLW5BMMKLIUilHoZ7s_4ta6caPlaY-lef13zcBTEzG9ViI5jw3PYTD82l8Qcvvyif7WWCbcPDO_C6UcgcZU1hk90wtHZ3PluWuYxjSggn5BB_sKyx3kwBaN6ajDkZKN-BQBgMtVWpRliTFWUuUCbIhrx2Gn5UJ7VVkozJgi3oTPboqRV9RN&sa=X&ved=2ahUKEwiCvcSX04eXAxWOLhAIHaBXAGMQmxN6BAggEAI",
+        "domain": "www.google.com",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/span[2]/span[1]/a[1]"
+       }
+      ],
+      "rectangle": null
+     },
+     {
+      "type": "knowledge_graph_carousel_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+      "title": "Listen",
+      "data_attrid": "action:listen_album",
+      "link": null,
+      "items": [
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "YouTube Music",
+        "subtitle": null,
+        "url": "https://music.youtube.com/playlist?list=OLAK5uy_mNUldhlgOkXStkw_SzROplggXEpcWNRdM&feature=gws_kp_album&feature=gws_kp_artist",
+        "domain": "music.youtube.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-8d3901522459:0",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "Spotify",
+        "subtitle": null,
+        "url": "https://open.spotify.com/album/734pzI38STYjRaosHGEFnQ?autoplay=true",
+        "domain": "open.spotify.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-8d3901522459:1",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "Apple Music",
+        "subtitle": null,
+        "url": "https://music.apple.com/us/album/brown-noise-for-adhd/1848525839",
+        "domain": "music.apple.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-8d3901522459:2",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "iHeartRadio",
+        "subtitle": null,
+        "url": "https://www.iheart.com/artist/brown-noise-lab-31158489/albums/brown-noise-for-adhd-focus-371645920/?autoplay=true",
+        "domain": "www.iheart.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09241636-2042-0139-0000-8d3901522459:3",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]"
+       }
+      ],
+      "rectangle": null
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Jason Lewis - Mind Amend",
+      "title": "Smoothed Brown Noise | ADHD High Focus Support",
+      "timestamp": "2023-04-12 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=U5kH5VE31Rc"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · ADHD Focus Club 💭",
+      "title": "Cozy Focus  10 HOURS of Smoothed Brown Noise",
+      "timestamp": "2024-10-25 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=NL68jbjINiA"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · ADHD Focus Club 💭",
+      "title": "Cozy Focus 10 HOURS of Smoothed Brown Noise",
+      "timestamp": "2025-06-30 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=H1HtZ8GExBQ"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Mindful Frequencies Lab",
+      "title": "PINK BROWN NOISE | Deep Focus, ADHD Relief & Study ...",
+      "timestamp": "2025-04-13 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=ds9tWsUh7Dw"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "Is brown noise effective for ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Which color of noise is best for ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Do people with ADHD have more thoughts per day?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What noise calms ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+    "domain": "add.org",
+    "title": "What Is Brown Noise and Can It Help People With ADHD?",
+    "url": "https://add.org/brown-noise-adhd/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://add.org › ADDA Library › Focus & Organization",
+    "website_name": "ADDA - Attention Deficit Disorder Association",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "by A Join · 2023 — Brown noise is an ambient sound that is said to help tackle inattention in adults with ADHD. It's currently an unexplored tool for productivity ...",
+    "pre_snippet": "by A Join · 2023",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Brown noise",
+     "ADHD"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "google_flights",
+    "rank_group": 1,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[8]/div[1]",
+    "title": "Songs",
+    "url": null,
+    "items": [
+     {
+      "type": "google_flights_element",
+      "description": "Focus 3:06",
+      "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=focus&stick=H4sIAAAAAAAAAONgFuLVT9c3NCypSDc1LzMxVIJwszPizeIzDHK1RLOTrfRzS4szk_UTc5JKc62K8_PSixexsqblJ5cWAwA5ipkEPwAAAA&sa=X&ved=2ahUKEwiCvcSX04eXAxWOLhAIHaBXAGMQri56BAg2EAQ"
+     },
+     {
+      "type": "google_flights_element",
+      "description": "Stress Relief 3:06",
+      "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=stress+relief&stick=H4sIAAAAAAAAAONgFuLVT9c3NCypSDc1LzMxVIJzLXPNijK0RLOTrfRzS4szk_UTc5JKc62K8_PSixex8haXFKUWFysUpeZkpqYBAI4osghHAAAA&sa=X&ved=2ahUKEwiCvcSX04eXAxWOLhAIHaBXAGMQri56BAg2EAY"
+     },
+     {
+      "type": "google_flights_element",
+      "description": "Soft Noise 3:06",
+      "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=soft+noise&stick=H4sIAAAAAAAAAONgFuLVT9c3NCypSDc1LzMxVIJzDcuzcw21RLOTrfRzS4szk_UTc5JKc62K8_PSixexchXnp5Uo5OVnFqcCAEfwWPREAAAA&sa=X&ved=2ahUKEwiCvcSX04eXAxWOLhAIHaBXAGMQri56BAg2EAg"
+     },
+     {
+      "type": "google_flights_element",
+      "description": "Cosmic Brown Noise 3:07",
+      "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=cosmic+brown+noise&stick=H4sIAAAAAAAAAONgFuLVT9c3NCypSDc1LzMxVIJwi4vNDMoKynO1RLOTrfRzS4szk_UTc5JKc62K8_PSixexCiXnF-dmJiskFeWX5ynk5WcWpwIAgxyXc0wAAAA&sa=X&ved=2ahUKEwiCvcSX04eXAxWOLhAIHaBXAGMQri56BAg2EAo"
+     },
+     {
+      "type": "google_flights_element",
+      "description": "Studying 3:26",
+      "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=studying&stick=H4sIAAAAAAAAAONgFuLVT9c3NCypSDc1LzMxVIJwszPiLSuTDLO0RLOTrfRzS4szk_UTc5JKc62K8_PSixexchSXlKZUZualAwBGDkokQgAAAA&sa=X&ved=2ahUKEwiCvcSX04eXAxWOLhAIHaBXAGMQri56BAg2EAw"
+     },
+     {
+      "type": "google_flights_element",
+      "description": "Deep Brown Noise 3:59",
+      "url": "https://www.google.com/search?sca_esv=c9af837ca623c2e6&hl=en&gl=US&q=deep+brown+noise&stick=H4sIAAAAAAAAAONgFuLVT9c3NCypSDc1LzMxVIJy01Nyk42MsrVEs5Ot9HNLizOT9RNzkkpzrYrz89KLF7EKpKSmFigkFeWX5ynk5WcWpwIA3OZlmUoAAAA&sa=X&ved=2ahUKEwiCvcSX04eXAxWOLhAIHaBXAGMQri56BAg2EA4"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "Brown Noise for ADHD - Compilation by Various Artists",
+    "url": "https://open.spotify.com/album/4bYMbZjRqkiVvGFl4qEDOi",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › album",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Listen to Brown Noise for ADHD on Spotify · Artists 202250 songs, about 2 hr 30 min. My Little Lullabies Deep Brown",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Brown Noise for ADHD on Spotify"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+    "domain": "www.additudemag.com",
+    "title": "Your ADHD Brain (Probably) Loves Brown Noise",
+    "url": "https://www.additudemag.com/brown-noise-adhd-tiktok-trend-improve-focus/?srsltid=AU7gw4XUirEXdBn_433JCDqJSDl85OafDlyPqPOAjh5RhTrZIhAFUUvz",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.additudemag.com › ... › How to Focus",
+    "website_name": "ADDitude",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jul 31, 2023 — Brown noise is a low-frequency background sound that helps people with ADHD focus and feel calm. , with some people saying it promotes calm and ...",
+    "pre_snippet": "07/31/2023 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Brown noise",
+     "ADHD"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2023-07-31 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]",
+    "domain": "www.understood.org",
+    "title": "Brown, white, and pink noise: What they are and how ...",
+    "url": "https://www.understood.org/en/articles/brown-white-and-pink-noise-help-with-adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.understood.org › articles › brown-white-an...",
+    "website_name": "Understood",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Feb 12, 2024 — White, brown, and pink noise may help some people with ADHD with focus and sleep. The different colors have different sounds. Read more",
+    "pre_snippet": "02/12/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "may help some people with ADHD with focus and sleep"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.understood.org/en/articles/brown-white-and-pink-noise-help-with-adhd#:~:text=White%2C%20brown%2C%20and%20pink%20noise,different%20colors%20have%20different%20sounds.",
+      "domain": "www.understood.org"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-02-12 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "www.healthline.com",
+    "title": "Brown Noise for ADHD: Is It Effective for Concentration?",
+    "url": "https://www.healthline.com/health/adhd/brown-noise-adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.healthline.com › health › brown-noise-adhd",
+    "website_name": "Healthline",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "May 25, 2023 — Many people claim that brown noise can help people with ADHD focus and perform better. However, the research is minimal, and no significant ... Read more",
+    "pre_snippet": "05/25/2023 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "brown noise can help people with ADHD focus and perform better"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.healthline.com/health/adhd/brown-noise-adhd#:~:text=Many%20people%20claim%20that%20brown,white%20and%20pink%2C%20for%20ADHD.",
+      "domain": "www.healthline.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2023-05-25 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+    "domain": "www.theladdermethod.com",
+    "title": "Can Brown Noise Help With ADHD Focus And Productivity?",
+    "url": "https://www.theladdermethod.com/blog/can-brown-noise-help-with-adhd-focus-and-productivity",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.theladdermethod.com › blog › can-brown-...",
+    "website_name": "The Ladder Method",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jun 1, 2025 — 1. Enhanced focus and increased productivity: The deep, steady sound of brown noise may help stimulate the ADHD brain and block out ... Read more",
+    "pre_snippet": "06/01/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "may help stimulate the ADHD brain"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.theladdermethod.com/blog/can-brown-noise-help-with-adhd-focus-and-productivity#:~:text=1.%20Enhanced%20focus%20and%20increased,background%20chatter%20or%20sudden%20noises.",
+      "domain": "www.theladdermethod.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-06-01 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "discussions_and_forums",
+    "rank_group": 1,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[20]/div[1]",
+    "title": "Discussions and forums",
+    "items": [
+     {
+      "type": "discussions_and_forums_element",
+      "title": "Brown Noise has fundamentally made my life better",
+      "url": "https://www.reddit.com/r/adhdwomen/comments/1icgzko/brown_noise_has_fundamentally_made_my_life_better/",
+      "domain": "www.reddit.com",
+      "source": "Reddit",
+      "description": null,
+      "timestamp": "2025-09-24 16:36:18 +00:00",
+      "posts_count": 230
+     },
+     {
+      "type": "discussions_and_forums_element",
+      "title": "The use of Brown Noise and soothing the mind... I am speechless",
+      "url": "https://www.reddit.com/r/adhdwomen/comments/v1bsbx/the_use_of_brown_noise_and_soothing_the_mind_i_am/",
+      "domain": "www.reddit.com",
+      "source": "Reddit",
+      "description": null,
+      "timestamp": "2022-09-24 16:36:18 +00:00",
+      "posts_count": 70
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "short_videos",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[22]/div[1]",
+    "title": "Short videos",
+    "items": [
+     {
+      "type": "short_videos_element",
+      "title": "How brown noise could help people with ADHD",
+      "url": "https://www.washingtonpost.com/video/wellbeing/how-brown-noise-could-help-people-with-adhd/2022/12/01/e0f8f3c2-00ad-46de-a2b1-c161ed834882_video.html",
+      "domain": "google.com",
+      "source": null
+     },
+     {
+      "type": "short_videos_element",
+      "title": "brown noise study aid 3 Hours Brown Noise for ADHD Focus",
+      "url": "https://www.youtube.com/shorts/FDPdEes5hHE",
+      "domain": "google.com",
+      "source": "ADHD Sleep Signal"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "Brown Noise for ADHD Focus | Full Track: Animated Focus Visual",
+      "url": "https://www.youtube.com/shorts/ylUsgRTIgmg",
+      "domain": "google.com",
+      "source": "Deep Drift Den"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "Brown noise could help people with ADHD focus",
+      "url": "https://www.facebook.com/CheddarGadgets/videos/brown-noise-could-help-people-with-adhd-focus/1375322153209207/",
+      "domain": "google.com",
+      "source": "Cheddar Gadgets"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "Deep Focus, Concentration & ADHD Relief (8 Hours)",
+      "url": "https://www.youtube.com/shorts/PpdgmZtPwjo",
+      "domain": "google.com",
+      "source": "Fonic Waves"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "brown noise vs anxiety 1 Hour Brown Noise for ADHD Relief",
+      "url": "https://www.youtube.com/shorts/bnmAbkVRFOw",
+      "domain": "google.com",
+      "source": "ADHD Sleep Signal"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 13,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Brown Noise ADHD youtube",
+     "Brown noise for ADHD reddit",
+     "Brown noise for ADHD sleep",
+     "Brown noise for concentration",
+     "Pink noise ADHD",
+     "White noise for ADHD",
+     "ADHD noise for concentration",
+     "What noise is best for ADHD sleep"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]
