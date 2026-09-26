@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<title>Стенд: вид как функция звука</title>
+<!--
+  Стенд дизайна, редакция 3 (26.09.2026). Предыдущий — stend-analog-2026-09-26.html (там были
+  ползунки внешнего вида; автор их отменил).
+  ЗАКОН (слово автора): визуальных настроек не существует — вид выводится из параметров звука.
+  Перевод: цвет → крупность и оттенок зерна · громкость → интенсивность зерна и ореол ·
+  маскировка → второй слой, затягивающий поле · стимуляция → темп жизни зерна и дыхание накала ·
+  тон → редкие искры поверх крупы. Таблица — в dizajn/ZHURNAL.md.
+  На стенде оставлены только КАЛИБРОВОЧНЫЕ множители (сила зерна и ореола) — в продукте их нет.
+  Звук НАСТОЯЩИЙ: движок продукта ../extension/engine.js на тех же четырёх ручках.
+  По «Finish» звук гаснет, по «закрыть звук» контекст закрывается — ничего не остаётся играть.
+-->
+<style>
+  :root{
+    --warm:#ffb055; --warm-soft:#ffd9a0; --field:#0d0c0b; --edge:#272220;
+    --ink:#e8ded2; --ink-dim:#8a8178; --ink-mute:#6f665d;
+    --oreol:.5; --mercanie:1; --dyh:5.5s; --kal-zerno:1; --kal-oreol:1;
+  }
+  body.holod{ --warm:#9fc4ff; --warm-soft:#dfeaff; }
+  body.neutral{ --warm:#cfc6bb; --warm-soft:#efe8df; }
+  *{box-sizing:border-box}
+  body{margin:0;background:#141210;color:var(--ink);font:14px/1.5 Inter,Helvetica,Arial,sans-serif;
+       display:flex;gap:28px;padding:28px;align-items:flex-start;flex-wrap:wrap}
+  h1{font-size:17px;margin:0 0 4px}
+  .sub{color:var(--ink-dim);font-size:12px;margin-bottom:14px;max-width:330px}
+  .pult{width:330px}
+  .pult label{display:flex;justify-content:space-between;align-items:center;gap:10px;
+              padding:7px 0;border-bottom:1px solid #201c1a;color:var(--ink-dim);font-size:12px}
+  .pult input[type=range]{width:130px;accent-color:var(--warm)}
+  .tabl{font-size:11px;color:var(--ink-mute);line-height:1.8;margin-top:14px}
+  .tabl b{color:#c9bfb2;font-weight:500}
+  button.v{background:#1b1815;color:var(--ink-dim);border:1px solid #2e2825;border-radius:8px;
+           padding:5px 10px;font-size:12px;cursor:pointer}
+  button.v.on{background:var(--warm);color:#241a10;border-color:var(--warm)}
+
+  .panel{position:relative;width:360px;height:660px;border-radius:9px;background:var(--field);
+         border:1px solid #1e1a18;overflow:hidden;user-select:none;
+         box-shadow:inset 0 0 90px rgba(255,176,85,calc(var(--oreol)*.10))}
+  canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  canvas{opacity:0;transition:opacity .5s}                       /* в покое зерна нет: рябь утомляет */
+  body.idet canvas.krupa{opacity:var(--kal-zerno);mix-blend-mode:overlay}
+  body.idet canvas.stena{opacity:calc(var(--kal-zerno)*.9);mix-blend-mode:soft-light}
+  body.idet canvas.iskry{opacity:1;mix-blend-mode:screen}
+  svg.ramka{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.5}
+  .bloom{position:absolute;left:50%;top:210px;width:520px;height:520px;transform:translate(-50%,-50%);
+         pointer-events:none;border-radius:50%;
+         background:radial-gradient(circle, color-mix(in srgb, var(--warm) 34%, transparent) 0%, transparent 62%);
+         opacity:calc(var(--oreol)*var(--kal-oreol));filter:blur(22px);transition:opacity .4s}
+  .vinetka{position:absolute;inset:0;pointer-events:none;
+           background:radial-gradient(70% 62% at 50% 34%, transparent 52%, rgba(0,0,0,.66) 100%)}
+  .steklo{position:absolute;inset:0;pointer-events:none;
+          background:linear-gradient(180deg, rgba(255,255,255,.035) 0%, transparent 22%, transparent 78%, rgba(0,0,0,.25) 100%)}
+  .star{position:absolute;left:calc(50% + 3px);top:208px;transform:translate(-50%,-50%);border-radius:50%;
+        background:radial-gradient(circle, var(--warm-soft) 0 11%,
+                   color-mix(in srgb, var(--warm) 62%, transparent) 32%, transparent 70%);
+        transition:width .6s cubic-bezier(.2,.7,.2,1), height .6s cubic-bezier(.2,.7,.2,1), opacity .6s;
+        animation:nakal var(--dyh) ease-in-out infinite}
+  @keyframes nakal{0%,100%{filter:brightness(calc(1 - .07*var(--mercanie)))}
+                   43%{filter:brightness(calc(1 + .09*var(--mercanie)))}
+                   68%{filter:brightness(calc(1 - .04*var(--mercanie)))}}
+  .zvezdy i{position:absolute;width:2px;height:2px;border-radius:50%;background:#efe3d2}
+  .num{position:absolute;left:0;right:0;top:298px;text-align:center;font-size:31px;font-weight:500;letter-spacing:.5px;
+       font-family:Georgia,"Times New Roman",serif}
+  .num small{display:block;font-size:11px;font-weight:400;color:var(--ink-mute);letter-spacing:0}
+  .dial{position:absolute;left:0;right:0;top:250px;height:150px;cursor:ew-resize;transform:rotate(-.25deg)}
+  body.inf-on .dial, body.inf-on .palka-row{display:none}
+  body.inf-on .num{top:322px}
+  body.palka .dial{display:none}
+  .palka-row{position:absolute;left:28px;right:28px;top:352px;display:none;align-items:center;gap:8px}
+  body.palka .palka-row{display:flex}
+  .palka-row input{flex:1;accent-color:var(--warm)}
+  .row{position:absolute;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:14px}
+  .start{top:424px}
+  .start button{background:var(--warm);color:#241a10;border:0;border-radius:6px;padding:11px 26px;
+                font-size:15px;font-weight:600;cursor:pointer;
+                box-shadow:0 0 26px color-mix(in srgb, var(--warm) calc(38% * var(--oreol)), transparent)}
+  body.idet .start button{background:transparent;color:var(--ink);border:1px solid #5a4c3c;box-shadow:none}
+  .start button.inf{width:46px;height:46px;border-radius:6px;border:1px solid #4a423b;background:#15110f;
+       color:var(--ink-dim);font-size:27px;line-height:1;cursor:pointer;display:flex;
+       align-items:center;justify-content:center;padding:0 0 3px;font-family:Georgia,"Times New Roman",serif}
+  .start button.inf.on{border-color:var(--warm);color:var(--warm);background:#0a0807;
+          box-shadow:inset 0 3px 7px rgba(0,0,0,.75), inset 0 -1px 0 rgba(255,255,255,.04);
+          transform:translateY(1px)}
+  .start button.inf.on{border-color:var(--warm);color:var(--warm)}
+  .colors{position:absolute;right:22px;top:22px;display:flex;gap:12px}
+  .colors b{width:19px;height:19px;border-radius:50%;cursor:pointer;display:block}
+  .colors b.on{box-shadow:0 0 0 2px var(--field),0 0 0 4px var(--warm)}
+  .knobs{position:absolute;left:0;right:0;top:534px;display:flex;justify-content:space-around}
+  .knob{width:74px;text-align:center;cursor:ns-resize;position:relative}
+  .knob span{position:absolute;left:-12px;right:-12px;top:50px;color:#c9bfb2;font-size:11px;opacity:0;transition:opacity .18s}
+  .knob em{position:absolute;left:-16px;right:-16px;top:66px;color:var(--ink-mute);font-size:10px;font-style:normal;opacity:0;transition:opacity .18s}
+  .knob:hover span,.knob:hover em{opacity:1}
+  .presets{position:absolute;left:24px;right:24px;top:480px;display:flex;justify-content:center;z-index:5}
+  .dropbtn{background:#141110;color:var(--ink-dim);border:1px solid #2e2825;border-radius:4px;
+           padding:7px 30px 7px 14px;font:12px/1 inherit;cursor:pointer;position:relative;min-width:150px}
+  .dropbtn::after{content:'';position:absolute;right:13px;top:11px;width:5px;height:5px;
+                  border-right:1px solid #6f665d;border-bottom:1px solid #6f665d;transform:rotate(45deg)}
+  .dropbtn:hover{color:var(--ink);border-color:#43392f}
+  .droplist{position:absolute;bottom:34px;margin:0;padding:4px;list-style:none;min-width:150px;
+            background:#100d0c;border:1px solid #2e2825;border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.6)}
+  .droplist li{padding:6px 10px;font-size:12px;color:var(--ink-dim);cursor:pointer;border-radius:3px}
+  .droplist li:hover{background:#1c1714;color:var(--ink)}
+  .droplist li.on{color:var(--warm)}
+</style>
+
+<div class="pult">
+  <h1>Стенд: вид как функция звука</h1>
+  <div class="sub">Настроек внешнего вида нет. Жми Start — пойдёт настоящий звук продукта, и те же четыре ручки ведут и его, и картинку. Ниже только калибровка перевода: множители, которых в продукте не будет.</div>
+  <label>калибровка: сила зерна <input type="range" id="kz" min="0" max="1.6" step="0.05" value="1"></label>
+  <label>калибровка: сила ореола <input type="range" id="ko" min="0" max="1.6" step="0.05" value="1"></label>
+  <label>гамма
+    <span>
+      <button class="v on" data-gamma="">янтарь</button>
+      <button class="v" data-gamma="neutral">нейтр</button>
+      <button class="v" data-gamma="holod">холод</button>
+    </span>
+  </label>
+  <label>шкала времени <button class="v on" data-cls="palka">дайл</button></label>
+  <label>звук <button class="v" id="zakryt">закрыть звук</button></label>
+  <div class="tabl">
+    <b>цвет шума</b> → крупность и оттенок зерна<br>
+    <b>громкость</b> → интенсивность зерна и сила ореола<br>
+    <b>маскировка</b> → второй слой, затягивающий поле<br>
+    <b>стимуляция</b> → темп жизни зерна и дыхание накала<br>
+    <b>тон</b> → редкие искры поверх крупы<br>
+    <span style="color:#5d554d">фазы рейса и пауза — ещё не привязаны</span>
+  </div>
+</div>
+
+<div class="panel" id="panel">
+  <canvas class="krupa" id="krupa"></canvas>
+  <canvas class="stena" id="stena"></canvas>
+  <canvas class="iskry" id="iskry"></canvas>
+  <div class="bloom"></div>
+  <div class="zvezdy" id="zvezdy"></div>
+  <div class="star" id="star" style="width:190px;height:190px;cursor:pointer;pointer-events:auto"></div>
+  <div class="vinetka"></div>
+  <div class="steklo"></div>
+  <svg class="ramka" id="ramka" viewBox="0 0 360 660" preserveAspectRatio="none"></svg>
+
+  <div class="colors" id="colors">
+    <b class="on" data-c="brown" data-w="#ffb055" data-s="#ffd9a0" style="background:#c98a4b" title="brown"></b>
+    <b data-c="pink" data-w="#e8a0b4" data-s="#ffd8e2" style="background:#b98a95" title="pink"></b>
+    <b data-c="white" data-w="#dfe4ea" data-s="#ffffff" style="background:#d9d6d0" title="white"></b>
+  </div>
+
+  <div class="num" id="num">25′<small id="podpis"></small></div>
+
+  <svg class="dial" id="dial" viewBox="0 0 360 150">
+    <path d="M 68 120 A 112 112 0 0 1 292 120" fill="none" stroke="#2b2724" stroke-width="7" stroke-linecap="round"/>
+    <path id="prizrak" d="" fill="none" stroke="var(--warm)" stroke-width="7" stroke-linecap="round" opacity=".16" transform="translate(.8,.6)"/>
+    <path id="duga" d="" fill="none" stroke="var(--warm)" stroke-width="7" stroke-linecap="round" opacity=".92"/>
+    <g id="riski" stroke="#4a423b" stroke-width="2"></g>
+    <g id="podpisi" fill="#6f665d" font-size="10.5" font-family="Georgia, serif" text-anchor="middle"></g>
+    <line id="strelka" x1="180" y1="120" x2="180" y2="30" stroke="var(--warm-soft)" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="180" cy="120" r="4" fill="var(--warm-soft)"/>
+  </svg>
+
+  <div class="palka-row"><input type="range" id="palka" min="0" max="5" step="1" value="2"></div>
+
+  <div class="row start">
+    <button id="start">▶&nbsp; Start</button>
+    <button class="inf" id="inf">∞</button>
+  </div>
+
+  <div class="knobs" id="knobs">
+    <div class="knob" data-v="0.55"><svg viewBox="0 0 96 60"><path d="M 20 46 A 28 28 0 1 1 76 46" fill="none" stroke="#2b2724" stroke-width="5" stroke-linecap="round"/><path class="fill" d="" fill="none" stroke="var(--warm)" stroke-width="5" stroke-linecap="round"/></svg><span>volume</span><em>keep it low</em></div>
+    <div class="knob" data-v="0.8"><svg viewBox="0 0 96 60"><path d="M 20 46 A 28 28 0 1 1 76 46" fill="none" stroke="#2b2724" stroke-width="5" stroke-linecap="round"/><path class="fill" d="" fill="none" stroke="var(--warm)" stroke-width="5" stroke-linecap="round"/></svg><span>masking</span><em>cover voices</em></div>
+    <div class="knob" data-v="0.35"><svg viewBox="0 0 96 60"><path d="M 20 46 A 28 28 0 1 1 76 46" fill="none" stroke="#2b2724" stroke-width="5" stroke-linecap="round"/><path class="fill" d="" fill="none" stroke="var(--warm)" stroke-width="5" stroke-linecap="round"/></svg><span>stimulation</span><em>how much noise</em></div>
+    <div class="knob" data-v="0.25"><svg viewBox="0 0 96 60"><path d="M 20 46 A 28 28 0 1 1 76 46" fill="none" stroke="#2b2724" stroke-width="5" stroke-linecap="round"/><path class="fill" d="" fill="none" stroke="var(--warm)" stroke-width="5" stroke-linecap="round"/></svg><span>tone</span><em>noise ⟷ tone</em></div>
+  </div>
+
+  <div class="presets">
+    <button class="dropbtn" id="dropbtn">open office</button>
+    <ul class="droplist" id="droplist" hidden>
+      <li data-p="office">open office</li><li data-p="dorm">thin walls</li><li data-p="cafe">café</li>
+      <li data-p="reading">deep reading</li><li data-p="thoughts">racing thoughts</li><li data-p="overload">too much</li>
+    </ul>
+  </div>
+</div>
+
+<script src="../extension/engine.js"></script>
+<script src="../extension/tone.js"></script>
+<script>
+const SCALE = [5,15,25,45,90], R = 112, CX = 180, CY = 120, TAU = Math.PI * 2;
+let idx = 2, infinite = false, idet = false, t = 0, tick = null, cvet = 'brown';
+
+const pt = (a) => [CX + R*Math.cos(a), CY + R*Math.sin(a)];
+const ugol = (i) => Math.PI + (i/(SCALE.length-1)) * Math.PI;
+// линия от руки: дугу рисуем короткими отрезками со стабильным (не мигающим) дрожанием радиуса
+const DROZH = Array.from({length: 90}, ()=> (Math.random() - .5) * 0.8);
+const duga = (a0, a1) => {
+  const n = Math.max(6, Math.round(Math.abs(a1 - a0) / Math.PI * 64));
+  let d = '';
+  for (let i = 0; i <= n; i++){
+    const k = i / n, a = a0 + (a1 - a0) * k, r = R + DROZH[i % DROZH.length];
+    d += (i ? ' L ' : 'M ') + (CX + r*Math.cos(a)).toFixed(1) + ' ' + (CY + r*Math.sin(a)).toFixed(1);
+  }
+  return d;
+};
+
+const riski = document.getElementById('riski'), podpisi = document.getElementById('podpisi');
+SCALE.forEach((v,i)=>{ const a = ugol(i), [x,y] = pt(a), [xi,yi] = [CX+(R-11)*Math.cos(a), CY+(R-11)*Math.sin(a)];
+  const j = () => (Math.random() - .5) * 0.9;                      // лёгкая неровность: засечки чуть гуляют
+  riski.insertAdjacentHTML('beforeend', `<line x1="${(x+j()).toFixed(1)}" y1="${(y+j()).toFixed(1)}" x2="${(xi+j()).toFixed(1)}" y2="${(yi+j()).toFixed(1)}" stroke-width="${(1.6+Math.random()*1).toFixed(1)}"/>`);
+  const [xl,yl] = [CX+(R+16)*Math.cos(a), CY+(R+16)*Math.sin(a)];
+  podpisi.insertAdjacentHTML('beforeend', `<text x="${xl.toFixed(1)}" y="${(yl+4).toFixed(1)}">${v}</text>`); });
+
+// нарисованная рамка и редкие царапины — то, чего не бывает у сгенерированного прямоугольника
+(()=>{
+  const R0 = document.getElementById('ramka'); if (!R0) return;
+  const w = 360, h = 660, m = 6, n = 46, drob = (x)=> x + (Math.random()-.5)*0.8;
+  let d = '';
+  for (let i = 0; i <= n; i++){                      // обход по периметру с дрожанием
+    const k = i / n * 4, s1 = Math.floor(k), f = k - s1;
+    const p = [[m + (w-2*m)*f, m], [w-m, m + (h-2*m)*f], [w-m - (w-2*m)*f, h-m], [m, h-m - (h-2*m)*f]][s1 % 4];
+    d += (i ? ' L ' : 'M ') + drob(p[0]).toFixed(1) + ' ' + drob(p[1]).toFixed(1);
+  }
+  let car = '';
+  for (let i = 0; i < 7; i++){                       // царапины на стекле
+    const x = Math.random()*w, y = Math.random()*h, l = 8 + Math.random()*26, a = Math.random()*Math.PI;
+    car += `<line x1="${x.toFixed(0)}" y1="${y.toFixed(0)}" x2="${(x+l*Math.cos(a)).toFixed(0)}" y2="${(y+l*Math.sin(a)).toFixed(0)}" stroke="#efe3d2" stroke-opacity=".05" stroke-width="1"/>`;
+  }
+  R0.innerHTML = `<path d="${d} Z" fill="none" stroke="#3a322c" stroke-width="1"/>` + car;
+})();
+
+const zv = document.getElementById('zvezdy');
+for (let i=0;i<26;i++) zv.insertAdjacentHTML('beforeend',
+  `<i style="left:${(Math.random()*340+10).toFixed(0)}px;top:${(Math.random()*400+20).toFixed(0)}px;opacity:${(Math.random()*.4+.2).toFixed(2)}"></i>`);
+
+// ---------- ВИД = ФУНКЦИЯ ЗВУКА ----------
+// спектр → пространственная частота зерна · амплитуда → интенсивность · время → темп обновления.
+const KRUPA = { brown:[30,56], pink:[84,154], white:[190,348] };
+const TON   = { brown:[1,.80,.56], pink:[1,.86,.90], white:[.94,.96,1] };
+const K = { krupa:document.getElementById('krupa'), stena:document.getElementById('stena'), iskry:document.getElementById('iskry') };
+const C = { krupa:K.krupa.getContext('2d'), stena:K.stena.getContext('2d'), iskry:K.iskry.getContext('2d') };
+let zernoTimer = null;
+const znach = (i) => +document.querySelectorAll('.knob')[i].dataset.v;   // 0 громкость · 1 маскировка · 2 стимуляция · 3 тон
+
+function sloi(ctx, el, w, h, tint, jar, alpha){
+  el.width = w; el.height = h;
+  const img = ctx.createImageData(w, h), d = img.data;
+  for (let i = 0; i < d.length; i += 4){
+    const v = 80 + Math.random() * jar;
+    d[i] = v * tint[0]; d[i+1] = v * tint[1]; d[i+2] = v * tint[2]; d[i+3] = alpha;
+  }
+  ctx.putImageData(img, 0, 0);
+}
+function iskryKadr(ton){
+  const w = 60, h = 110;
+  K.iskry.width = w; K.iskry.height = h;
+  C.iskry.clearRect(0, 0, w, h);
+  const n = Math.round(ton * 9);                       // тон — событие поверх ровного: чем больше, тем чаще искры
+  for (let i = 0; i < n; i++){
+    const x = Math.random() * w | 0, y = Math.random() * h | 0, a = (.35 + Math.random() * .65) * ton;
+    C.iskry.fillStyle = `rgba(255,236,200,${a.toFixed(2)})`;
+    C.iskry.fillRect(x, y, 1, 1);
+    if (Math.random() < .3){                            // редкая искра крупнее — акцент мотива
+      C.iskry.fillStyle = `rgba(255,246,225,${(a * .6).toFixed(2)})`;
+      C.iskry.fillRect(x - 1, y, 3, 1); C.iskry.fillRect(x, y - 1, 1, 3);
+    }
+  }
+}
+function kadr(){
+  const [w,h] = KRUPA[cvet];
+  sloi(C.krupa, K.krupa, w, h, TON[cvet], 160, Math.round(40 + 215 * znach(0)));  // громкость → интенсивность
+  sloi(C.stena, K.stena, 40, 74, TON[cvet], 110, Math.round(210 * znach(1)));     // маскировка → покрытие
+  iskryKadr(znach(3));
+}
+// ---------- ЗВУК: настоящий движок продукта на тех же ручках ----------
+let E = null, gasitel = null;              // gasitel — отложенное выключение после «Finish»
+function zvukVkl(sec){
+  clearTimeout(gasitel); gasitel = null;   // БАГ (найден 26.09): без этого Start, нажатый в течение
+  if (!E) E = new AudioEngine(()=>{});     // 1,4 с после Finish, глушился старым отложенным turnOff
+  E.turnOn(); E.setColour(cvet);
+  E.setChar({ volume: znach(0), masking: znach(1), energy: znach(2) });
+  E.setMix(znach(3));
+  E.startSession(sec);
+}
+function zvukVykl(){ if (!E) return; try { E.extinguish(1.2); } catch(_){}
+  clearTimeout(gasitel);
+  gasitel = setTimeout(()=>{ try { E.turnOff(); } catch(_){} gasitel = null; }, 1400); }
+function zvukZakryt(){ clearTimeout(gasitel); gasitel = null; if (!E) return;
+  try { E.turnOff(); } catch(_){} try { E.AC && E.AC.close(); } catch(_){} E = null; }
+addEventListener('beforeunload', zvukZakryt);
+document.getElementById('zakryt').onclick = ()=>{ zvukZakryt(); idet = false; risui(); };
+
+function perevod(){
+  const gr = znach(0), mask = znach(1), stim = znach(2), st = document.documentElement.style;
+  if (E){ E.setChar({ volume: gr, masking: mask, energy: stim }); E.setMix(znach(3)); }
+  st.setProperty('--oreol', (0.15 + 0.85 * gr * (1 - 0.35 * mask)).toFixed(2));   // громче — ярче, стена глушит
+  st.setProperty('--mercanie', (0.4 + 1.4 * stim).toFixed(2));
+  st.setProperty('--dyh', (8.5 - 5.5 * stim).toFixed(1) + 's');
+  clearInterval(zernoTimer);
+  if (idet) zernoTimer = setInterval(kadr, Math.round(260 - 200 * stim));          // стимуляция → темп
+  kadr();
+}
+
+function risui(){
+  const a = ugol(idx);
+  const d = duga(Math.PI, a);
+  document.getElementById('duga').setAttribute('d', d);
+  document.getElementById('prizrak').setAttribute('d', d);   // призрак: печатный след рядом с линией
+  const [x,y] = [CX+(R-14)*Math.cos(a), CY+(R-14)*Math.sin(a)];
+  const s = document.getElementById('strelka'); s.setAttribute('x2', x.toFixed(1)); s.setAttribute('y2', y.toFixed(1));
+  const num = document.getElementById('num');
+  num.firstChild.textContent = infinite ? '∞' : (idet ? fmt(t) : SCALE[idx] + '′');
+  document.getElementById('podpis').textContent = '';   // подписи под цифрой убраны (слово автора 26.09)
+  document.getElementById('inf').classList.toggle('on', infinite);
+  document.body.classList.toggle('inf-on', infinite);   // ∞ — режим: циферблата нет вовсе
+  document.getElementById('start').innerHTML = idet ? '☀&nbsp; Finish' : '▶&nbsp; Start';
+  document.body.classList.toggle('idet', idet);
+  const st = document.getElementById('star'), k = idet ? 1 : .55;
+  st.style.width = st.style.height = (150 + 140 * k) + 'px';
+  st.style.opacity = idet ? 1 : .8;
+}
+const fmt = (sec) => `${Math.floor(sec/60)}′ ${String(sec%60).padStart(2,'0')}″`;
+
+const dial = document.getElementById('dial');
+function vzyat(e){
+  const r = dial.getBoundingClientRect();
+  const x = (e.clientX - r.left) / r.width * 360, y = (e.clientY - r.top) / r.height * 150;
+  let a = Math.atan2(y - CY, x - CX);
+  if (a < 0) a += TAU;
+  if (a < Math.PI) a = a < Math.PI/2 ? TAU : Math.PI;
+  idx = Math.max(0, Math.min(SCALE.length - 1, Math.round((a - Math.PI) / Math.PI * (SCALE.length - 1))));
+  infinite = false;
+  if (idet) rejs(true);                    // сменили длину на ходу — отсчёт начинается заново
+  else risui();
+}
+dial.addEventListener('pointerdown', (e)=>{ dial.setPointerCapture(e.pointerId); vzyat(e); });
+dial.addEventListener('pointermove', (e)=>{ if (e.buttons) vzyat(e); });
+document.getElementById('palka').addEventListener('input', (e)=>{
+  const v = +e.target.value; infinite = v === 5; idx = Math.min(v, 4); risui(); });
+
+// ---------- ЛОГИКА ТАЙМЕРА (правила, чтобы не путаться во времени) ----------
+// 1. Длину задаёт только человек — дайлом. Ни пресет, ни цвет её не меняют.
+// 2. ∞ — это режим, а не длина: циферблат исчезает, отсчёта нет, звук идёт без конца.
+// 3. Любое переключение режима или длины во время рейса перезапускает отсчёт С ПОЛНОЙ длины —
+//    иначе непонятно, сколько осталось (слово автора 26.09).
+// 4. Finish и добежавший до нуля отсчёт гасят звук; следующий Start начинается с полной длины.
+function rejs(pusk){                       // единственная точка, где начинается и кончается рейс
+  clearInterval(tick); tick = null;
+  idet = !!pusk;
+  if (idet){
+    t = infinite ? 0 : SCALE[idx] * 60;                       // всегда с полной длины
+    zvukVkl(infinite ? 9e7 : SCALE[idx] * 60 + 8);
+    if (!infinite) tick = setInterval(()=>{
+      t -= 1;
+      if (t <= 0){ rejs(false); return; }                     // добежали — рейс закрыт целиком
+      risui();
+    }, 1000);
+  } else zvukVykl();
+  risui(); perevod();                      // зерно живёт только в рейсе
+}
+document.getElementById('inf').onclick = ()=>{ infinite = !infinite;
+  if (idet) rejs(true);                    // режим сменили на ходу — рейс начинается заново
+  else risui(); };
+document.getElementById('start').onclick = ()=> rejs(!idet);
+document.getElementById('star').onclick = ()=> rejs(!idet);   // тап по звезде — как в продукте
+
+document.getElementById('colors').onclick = (e)=>{
+  const b = e.target.closest('b'); if (!b) return;
+  [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  document.documentElement.style.setProperty('--warm', b.dataset.w);
+  document.documentElement.style.setProperty('--warm-soft', b.dataset.s);
+  cvet = b.dataset.c; if (E) E.setColour(cvet); perevod();
+};
+
+document.querySelectorAll('.knob').forEach(k=>{
+  const dr = Array.from({length: 40}, ()=> (Math.random() - .5) * 0.55);   // своё дрожание у каждой ручки
+  const put = ()=>{ const v = +k.dataset.v, a0 = Math.PI*0.85, a1 = Math.PI*2.15;
+    const a = a0 + (a1-a0)*v, cx = 48, cy = 46, n = Math.max(4, Math.round(v * 34));
+    let d = '';
+    for (let i = 0; i <= n; i++){
+      const aa = a0 + (a - a0) * (i/n), rr = 28 + dr[i % dr.length];
+      d += (i ? ' L ' : 'M ') + (cx + rr*Math.cos(aa)).toFixed(1) + ' ' + (cy + rr*Math.sin(aa)).toFixed(1);
+    }
+    k.querySelector('.fill').setAttribute('d', d); };
+  put(); k._put = put;
+  k.tabIndex = 0;
+
+  // ОСЬ ВЫБИРАЕТ РУКА — как в продукте (hearth.js makeKnob, решение 08-24 по голосу 3):
+  // ось встаёт по первому заметному движению (>4 px) и до конца перетаскивания не меняется;
+  // вверх и вправо прибавляют; 150 px — весь ход.
+  let dragX = 0, dragY = 0, valFrom = 0, axis = null;
+  const set = (nv)=>{ const c = Math.max(0, Math.min(1, nv));
+    if (c === +k.dataset.v) return;
+    k.dataset.v = c; put(); perevod();
+    document.getElementById('dropbtn').textContent = 'custom';   // тронул руками — это уже не пресет
+  };
+  k.addEventListener('pointerdown', (e)=>{ e.stopPropagation(); k.setPointerCapture(e.pointerId);
+    dragX = e.clientX; dragY = e.clientY; valFrom = +k.dataset.v; axis = null; k.focus(); });
+  k.addEventListener('pointermove', (e)=>{
+    if (!k.hasPointerCapture(e.pointerId)) return;
+    const dx = e.clientX - dragX, dy = e.clientY - dragY;
+    if (!axis){ if (Math.max(Math.abs(dx), Math.abs(dy)) < 4) return;
+      axis = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y'; }
+    set(valFrom + (axis === 'y' ? -dy : dx) / 150);
+  });
+  ['pointerup','pointercancel'].forEach(t => k.addEventListener(t, (e)=>{
+    if (k.hasPointerCapture(e.pointerId)) k.releasePointerCapture(e.pointerId); }));
+  k.addEventListener('wheel', (e)=>{ e.preventDefault(); set(+k.dataset.v - Math.sign(e.deltaY) * 0.04); }, { passive:false });
+  k.addEventListener('keydown', (e)=>{
+    const K = e.key;
+    if (K === 'ArrowUp' || K === 'ArrowRight') set(+k.dataset.v + 0.02);
+    else if (K === 'ArrowDown' || K === 'ArrowLeft') set(+k.dataset.v - 0.02);
+    else if (K === 'Home') set(0); else if (K === 'End') set(1);
+    else return;
+    e.preventDefault();
+  });
+});
+
+// ---------- ПРЕСЕТЫ: готовая комбинация всех параметров под ситуацию ----------
+// Каждый — [громкость, маскировка, стимуляция, тон] + цвет + длина. Основание — разбор домена
+// (SOUND.md 26.09): главная боль в том, что человек должен настраивать сам.
+const PRESETY = {
+  // контексты взяты из разбора домена (SOUND.md 26.09) — то, что люди реально закрывают шумом
+  // ЛЕНГТЬ НЕ ТРОГАЕМ: пресет — про звук (что за комната), длина — про человека (сколько у него времени)
+  office:   { cvet:'brown', v:[0.62,0.92,0.45,0.15] },  // чужая речь рядом: стена шире всего, шум ровный
+  dorm:     { cvet:'brown', v:[0.72,1.00,0.50,0.10] },  // сосед за стеной, низы и телевизор: максимум стены
+  cafe:     { cvet:'pink',  v:[0.46,0.55,0.55,0.30] },  // гул приятный, не глушим — подмешиваемся
+  reading:  { cvet:'brown', v:[0.40,0.35,0.25,0.20] },  // тихо вокруг: ровность важнее стены
+  thoughts: { cvet:'brown', v:[0.55,0.50,0.70,0.35] },  // шумно внутри: больше стимуляции, чтобы внимание держалось
+  overload: { cvet:'pink',  v:[0.50,0.70,0.15,0.10] },  // сенсорная перегрузка: тише и мягче
+};
+const dropbtn = document.getElementById('dropbtn'), droplist = document.getElementById('droplist');
+dropbtn.onclick = (e)=>{ e.stopPropagation(); droplist.hidden = !droplist.hidden; };
+document.addEventListener('click', ()=>{ droplist.hidden = true; });
+function stavPreset(key){
+  const P = PRESETY[key]; if (!P) return;
+  dropbtn.textContent = [...droplist.children].find(li => li.dataset.p === key).textContent;
+  [...droplist.children].forEach(li => li.classList.toggle('on', li.dataset.p === key));
+  document.querySelectorAll('.knob').forEach((k,i)=>{ k.dataset.v = P.v[i]; k._put(); });
+  const dot = [...document.querySelectorAll('.colors b')].find(b=>b.dataset.c === P.cvet);
+  if (dot) dot.click();                                  // цвет: и звук, и температура света, и крупность зерна
+  cvet = P.cvet; perevod(); risui();     // длина и режим не меняются: это не дело пресета
+}
+droplist.addEventListener('click', (e)=>{
+  const li = e.target.closest('li'); if (!li) return;
+  e.stopPropagation(); droplist.hidden = true; stavPreset(li.dataset.p);
+});
+
+document.querySelector('.pult').addEventListener('click', (e)=>{
+  // кнопка «закрыть звук» тоже .v, но она не переключатель вида: без этой проверки она
+  // переименовывалась в «палку» и вешала класс "undefined" на страницу (баг найден 26.09)
+  const b = e.target.closest('button.v'); if (!b || b.id === 'zakryt') return;
+  if (b.dataset.gamma !== undefined){
+    document.body.classList.remove('neutral','holod');
+    if (b.dataset.gamma) document.body.classList.add(b.dataset.gamma);
+    b.parentElement.querySelectorAll('button').forEach(x=>x.classList.remove('on')); b.classList.add('on');
+    return;
+  }
+  document.body.classList.toggle(b.dataset.cls);
+  const on = !document.body.classList.contains(b.dataset.cls);
+  b.classList.toggle('on', on); b.textContent = on ? 'дайл' : 'палка';
+});
+document.getElementById('kz').addEventListener('input', (e)=> document.documentElement.style.setProperty('--kal-zerno', e.target.value));
+document.getElementById('ko').addEventListener('input', (e)=> document.documentElement.style.setProperty('--kal-oreol', e.target.value));
+
+stavPreset('office');    // дефолт — самый частый контекст
+perevod(); risui();
+</script>
+</html>

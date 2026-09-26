@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Иконка, вариант А «искра на тёплом поле» (2026-09-26). Мастер: PNG только генерируются из него
+       (build-icons.py), руками не правятся.
+       Контур искры — дословно из прежнего мастера icon-master-bg.html (форма 2, масштаб 0.62).
+       Поменялись поле (тёмно-синее → тёплое почти-чёрное, как панель 1.2.0) и цвет искры (тёплый панели
+       #ffb055 с накалом к центру); добавлен ореол — как у звезды в панели. -->
+  <defs>
+    <radialGradient id="pole" cx="64" cy="60" r="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1d1510"/>
+      <stop offset=".55" stop-color="#100d0b"/>
+      <stop offset="1" stop-color="#0a0908"/>
+    </radialGradient>
+    <radialGradient id="oreol" cx="64" cy="64" r="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb055" stop-opacity=".45"/>
+      <stop offset=".5" stop-color="#ffb055" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#ffb055" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="iskra" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffecc8"/>
+      <stop offset="52%" stop-color="#ffb055"/>
+      <stop offset="100%" stop-color="#ee8c2c"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="22" fill="url(#pole)"/>
+  <circle cx="64" cy="64" r="44" fill="url(#oreol)"/>
+  <path transform="translate(64 64) scale(0.62) translate(-64 -64)"
+        d="M64 8 C69 46 82 59 120 64 C82 69 69 82 64 120 C59 82 46 69 8 64 C46 59 59 46 64 8 Z"
+        fill="url(#iskra)"/>
+</svg>

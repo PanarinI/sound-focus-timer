@@ -60,11 +60,13 @@ HTML = """<!doctype html><meta charset="utf-8"><style>
 <div class="s">
   <div class="bg"></div><div class="vig"></div>
   <svg class="rip" width="1280" height="800" viewBox="0 0 1280 800">%(rings)s</svg>
-  <div class="txt"><div class="h">Work inside<br>a warm sound</div></div>
+  %(txt)s
 </div>"""
 
 p = os.path.join(HERE, "_sound.html")
-open(p, "w", encoding="utf-8").write(HTML % {"src": SRC, "rings": RINGS})
+# вариант raw* — без надписи (26.09: слова листинга ждут имени, сцена и дуги те же)
+TXT = "" if VARIANT.startswith("raw") else '<div class="txt"><div class="h">Work inside<br>a warm sound</div></div>'
+open(p, "w", encoding="utf-8").write(HTML % {"src": SRC, "rings": RINGS, "txt": TXT})
 subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars",
                 "--force-device-scale-factor=1", "--window-size=1280,800",
                 f"--screenshot={OUT}", f"file://{p}"], capture_output=True)

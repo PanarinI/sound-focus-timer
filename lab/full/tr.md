@@ -1,66 +1,79 @@
-Minimalist Timer, tarayıcın için dikkat dağıtmayan, sade bir odaklanma zamanlayıcısı. Sakin bir yıldız, boş bir alan ve sıcak, sürekli üretilen bir ses seni bir çalışma seansı boyunca taşır — ve bir alarmla irkiltmek yerine usulca yere inmeni sağlar. Karmaşa yok, hesap yok. Odaklanmak sana genelde soğuk ya da mekanik geliyorsa, bu zamanlayıcı sakin hissettirmek için tasarlandı.
+Brown Noise Generator, tarayıcında çalışmak ve ders çalışmak için sakin bir alan. Kendi cihazında canlı olarak sıcak, derin bir ses üretir ve etrafına yumuşak bir odaklanma zamanlayıcısı sarar. Yan panelde aç, Start'a bas, ve oda sessizleşir: sesler, klavyeler ve sokak gürültüsü yumuşak, sabit bir ses duvarının altına gömülür. Reklam yok, hesap yok, canlı tutman gereken bir video sekmesi yok.
 
-Süreni ayarla, başlat'a bas ve akışta kal.
+🌟 Neden bu kahverengi gürültü jeneratörü
+- ➤ Ses canlı olarak üretilir — tekrar eden kısa bir kayıt değil
+- ➤ Tek bir arada beyaz, pembe, kahverengi gürültü jeneratörü: üç renk, her biri tek dokunuşla
+- ➤ Kahverengi gürültü reklamsız, arabellek beklemeden, ortasında kesilen hiçbir şey olmadan
+- ➤ Gerçek mekanlar için hazır ayarlar: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Yumuşak bir zamanlayıcı: 5, 15, 25, 45 ya da 90 dakika, ya da tamamen açık uçlu
+- ➤ Chrome'un yan panelinde yaşar ve onu kapattığında da çalmaya devam eder
+- ➤ Ses ve zamanlayıcı cihazında çalışır: kayıt gerekmez, çevrimdışı da çalışır
 
-🌟 Neden bu minimalist pomodoro zamanlayıcısı?
-- ➤ Sade, minimalist tasarım — tek bir sakin sahne, dikkatini dağıtacak hiçbir şey yok
-- ➤ Sıcak brown noise ve yumuşak odak sesleri dahili — zamanın kelimenin tam anlamıyla sesten oluşuyor
-- ➤ Yumuşak bir başlangıç ve yumuşak bir iniş — seansın bittiğinde tiz bir alarm yok
-- ➤ Esnek seanslar: 5, 15, 25, 45, 90 dakika ya da açık uçlu
-- ➤ Sen çalışırken yan panelde sessizce çalışır — ses sekmeler arasında çalmaya devam eder
-- ➤ Tamamen cihazında: tasarımı gereği gizlilik odaklı, çevrimdışı çalışır, kayıt gerektirmez
+🔊 Bir kahverengi gürültü jeneratörü nasıl bir ses çıkarır
+Kahverengi gürültü, brownian noise olarak da bilinir, enerjisinin çoğunu düşük frekanslarda tutar — parazite değil, uzaktaki dalga sesine ya da bir uçak kabininin uğultusuna daha yakındır. Bu jeneratör onu cihazında gerçek zamanlı olarak üretir, bu yüzden asla döngüye girmez: üstünde biraz hava olan yumuşak bir kahverengi gürültü, bir odayı doldurmaya yetecek kadar dolu ve unutulmaya yetecek kadar yumuşak. Konsantrasyon için derin bir kahverengi gürültü olacak şekilde tasarlandı: odayı örtmeye yetecek kadar, dikkatinden silinmeye yetecek kadar yumuşak.
 
-🔊 Odağını koruyan ses
-Sessiz geri sayımlar sıradandır. Bu zamanlayıcıysa seansını sıcak brown noise'a sarar — arka plandaki dikkat dağıtıcıları maskeleyen ve içine yerleşmene yardım eden yumuşak, derin, jeneratif bir ses (kısa bir döngü değil). Şarkılar yerine sakin odak seslerini mi tercih edersin? Bu ses, odak müziğinden daha sakin, sert white noise'dan daha yumuşak kalır. İster ders çalışmak için brown noise, ister odaklanmak ya da derin çalışma için ortam sesleri, isterse yalnızca huzursuz bir zihni yatıştırmak olsun — ses yavaşça süzülür ve asla tekrar etmez.
+Onu kayıt içermeyen bir ortam sesi jeneratörü gibi düşün — döngüdeki yağmur ve kuş sesleri yerine tek, temiz, üretilmiş bir ses.
 
-🎯 Odaklanma ve ders çalışma, tek bir zamanlayıcıda
-İster derin çalışma için bir odaklanma zamanlayıcısına, ister uzun seanslar için bir ders çalışma zamanlayıcısına, ister ofis için sakin bir çalışma zamanlayıcısına ihtiyacın olsun — arayüz kenara çekilir:
-1. Konsantrasyon ve akış için minimalist bir odaklanma zamanlayıcısı
-2. Okuma, yazma ve tekrar için minimalist bir ders çalışma zamanlayıcısı
-3. Görevler için sakin bir verimlilik ve konsantrasyon zamanlayıcısı
-4. Katı 25/5 döngüleri olmadan o havayı isteyenler için estetik bir pomodoro zamanlayıcısı
+İki düğme onu şekillendirir: masking (maskeleme) yakındaki sesler bulanıklaşana kadar duvarı genişletir, stimulation (uyarım) ise enerjiye ihtiyacın olduğunda onu daha parlak, sakinliğe ihtiyacın olduğunda daha alçak yapar.
 
-🎨 Estetik ve minimal
-Ekranında estetik bir zamanlayıcıyı ya da sevimli bir zamanlayıcıyı seviyorsan, bu minimalist geri sayım sayacı her şeyi güzel ve sade tutar: sakin, açık bir boşlukta, seansın ilerledikçe sana yaklaşan sıcak bir yıldız. Sana bağıran rakamlar yok, baskı yok — sadece bakması keyifli, sade ve estetik bir minimalist zamanlayıcı.
+🎨 Kahverengi, pembe ya da beyaz
+Kahverengi varsayılandır çünkü en derin ve en sıcak olanıdır. Bir pembe gürültü jeneratörü sadece bir dokunuş ötede, bir adım daha parlak, ve odaklanma için beyaz gürültü de orada — üçünün en parlağı. Pek çok kişi ders çalışmak için beyaz gürültüye yemin ederken, bazıları bir saat sonra onu keskin bulur. Her rengi dene ve kulaklarının fark etmeyi bıraktığı rengi tut. Panelin ışığı seçtiğin rengi takip eder.
 
-🧠 Dikkatine karşı nazik
-Dikkatin gerçekte nasıl çalıştığına nazik davranmak için tasarlandı. Zaman körlüğü yaşıyorsan ya da zamanı stres yaratmadan somut biçimde hissettiren görsel bir zamanlayıcı istiyorsan, yıldız sana yumuşak bir ilerleme duygusu verir. Sakin bir DEHB zamanlayıcısı alternatifi olarak güzel iş görür — seni cezalandırmak yerine odağa girip çıkmanda sana eşlik eder. Seni geri çağırır; kafese kapatmaz.
+🏢 İçinde bulunduğun mekan için hazır ayarlar
+Nerede olduğunu seç, ses senin için ayarlansın:
+1. open office — en geniş duvar, yakındaki sesler için
+2. thin walls — düşük frekanslarda daha fazla ağırlık, bir komşu ya da televizyon için
+3. café — daha hafif, böylece etrafındaki uğultu içine karışır
+4. deep reading — sessiz ve dengeli, sakin bir mekan için
+5. racing thoughts — daha fazla stimulation, kafanın içi gürültülüyken
+6. too much — daha yumuşak ve daha sessiz, yorucu günler için
 
-💡 Hesap yok, reklam yok ve hiçbir veri asla cihazından çıkmaz — beynin nasıl çalışıyorsa öyle, odaklanman için sakin ve özel bir alan.
+Ofis gevezeliği için bir beyaz gürültü jeneratörü arıyorsan, open office ile başla. Masan için basit bir ses maskeleme gibi çalışır, ve daha parlak istersen çalışma için beyaz gürültüye geçebilirsin. Herhangi bir düğmeye dokunmak hazır ayarı custom'a çevirir. Hazır ayarlar seans süreni asla değiştirmez.
+
+⏱ Yoluna çıkmayan bir zamanlayıcı
+Zamanlayıcı istediğinde orada. Kadranı 5, 15, 25, 45 ya da 90 dakikaya sürükle, ya da ∞'a bas ve sesin sınırsız çalmasına izin ver. Geri sayım kadranın içinde sessizce durur. Süre dolduğunda alarm çalmaz: ses yaklaşık kırk saniye içinde parlar ve söner, böylece irkilerek uyanmak yerine yavaşça yüzeye çıkarsın.
+
+Onu tek bir görev için bir odaklanma zamanlayıcısı, önümüzdeki saat için bir çalışma zamanlayıcısı, ya da senin için zamanı sadece tutan minimalist bir zamanlayıcı olarak kullan. Sıradan geri sayımları stresli bulan insanlar, onu genellikle yumuşak bir DEHB zamanlayıcısı olarak kullanır — seni odaktan çekip çıkarmak yerine nazikçe dışarı yürütür.
+
+🧠 Odaklanma, ders çalışma ve meşgul bir zihin için
+İnsanlar gürültülü bir odayı ya da gürültülü bir kafayı sakinleştirmek için ders çalışmak amacıyla kahverengi gürültüye, çalışmak amacıyla kahverengi gürültüye ve DEHB için kahverengi gürültüye yönelir. Beyin hakkında hiçbir söz vermiyoruz: araştırmalar birbiriyle çelişiyor, ve hiçbir ses herkes için işe yaramıyor. Sunduğumuz şey iyi bir kurulum — ders çalışmak için istikrarlı bir arka plan gürültüsü, altında kaymayan odaklanma sesleri, ve yardımcı olana kadar şekillendirebileceğin bir ses. Aynısı DEHB için beyaz gürültü ya da başka herhangi bir odaklanma sesi için de geçerli: rengi seç, işe yarayanı tut.
 
 🖥 Nasıl çalışır
-1️⃣ Minimalist zamanlayıcıyı araç çubuğundan aç
-2️⃣ Süreni ayarlamak için kaydır — 5 ila 90 dakika ya da ∞
-3️⃣ Yıldıza dokun — sıcak ses başlar ve odağa süzülürsün
-4️⃣ Süre dolduğunda seans alarmsız, yumuşacık iner
-5️⃣ Paneli istediğin an kapat — ses çalmaya devam eder
+1️⃣ Simgeye tıkla — Brown Noise Generator, Chrome'un yan panelinde açılır
+2️⃣ Mekanın için bir hazır ayar seç, ya da volume, masking, stimulation ve tone'u kendin ayarla
+3️⃣ Kadranı ayarla, ya da sınırsız için ∞'a bas
+4️⃣ Kahverengi gürültüyü çalmak için Start'a bas; duraklatmak ve devam ettirmek için yıldıza dokun
+5️⃣ Paneli istediğin an kapat — ses, seansın inene kadar devam eder
 
-Hafif bir pomodoro Chrome uzantısı ve masaüstü zamanlayıcısı olarak tam da çalıştığın yerde durur — ekstra pencere yok, yeni sekmeyi ele geçirme yok, dikkat dağıtıcı yok.
+Çevrimiçi bir kahverengi gürültü jeneratörü gibi çalışır, ama tarayıcında yaşar ve kurulduktan sonra bağlantıya ihtiyaç duymaz. Açık bırakman gereken bir kahverengi gürültü kara ekran videosu yoktur, açık tutman gereken bir sekme de yoktur: onu masaüstün için bir kahverengi gürültü uygulaması, çalıştığın yerin yanındaki hafif bir chrome uzantısı gibi düşün.
 
-📌 Şunlar için ideal
-- ▸ Derin çalışma, yazma, kod yazma ve okuma
-- ▸ Sakin görünen estetik bir ders çalışma zamanlayıcısı isteyen öğrenciler
-- ▸ Sıradan geri sayımları soğuk, gürültülü ya da stresli bulan herkes
-- ▸ Sıcak bir arka plan sesiyle daha iyi odaklanan insanlar
+👀 Sesi takip eden bir görüntü
+Ses çalarken, ince bir tane panelin üzerinde hareket eder: kahverengi için kaba, beyaz için en ince, daha fazla stimulation ile daha hızlı. Hareket seni rahatsız ediyorsa, köşeden motion'ı kapat.
+
+📌 Şunlar için harika
+- ▸ Açık ofisler, paylaşımlı evler ve kalabalık kafeler
+- ▸ Uzun akşamlar için sakin ders çalışma sesleri isteyen öğrenciler
+- ▸ Odaklanmak için kahverengi gürültü istediğinde yazı yazmak, kod yazmak ve okumak
+- ▸ Odaklanma seslerinin arasına giren reklamlardan bıkan herkes
 
 ❓ SSS
 
-🧐 Ödeme yapmam ya da kayıt olmam gerekir mi?
-➤ Hayır — her şey en baştan kullanıma hazır; hesap yok, kayıt yok.
+🧐 Hesap açmam gerekir mi?
+➤ Hayır. Kayıt yok, reklam yok, giriş yapman gereken bir şey yok.
 
-🧐 Ses diğer zamanlayıcılardan nasıl farklı?
-➤ Sessiz bir geri sayım yerine zamanın, dikkat dağıtıcıları maskeleyen ve akışta kalmana yardım eden sıcak brown noise ve yumuşak odak seslerinden oluşur.
+🧐 Telefonum için bir kahverengi gürültü jeneratörü uygulaması var mı?
+➤ Henüz yok. Bu, masaüstü ve dizüstü tarayıcıları için bir Chrome uzantısı.
+
+🧐 Beyaza ya da pembeye geçebilir miyim?
+➤ Evet. Üst köşedeki üç nokta kahverengi, pembe ve beyaz arasında geçiş yapar.
+
+🧐 Paneli kapatırsam ya da sekme değiştirirsem ses durur mu?
+➤ Hayır. Seansın sürdüğü boyunca, hangi sekmede olursan ol çalmaya devam eder.
 
 🧐 Çevrimdışı çalışır mı?
-➤ Evet. Her şey cihazında çalışır; yani bu minimalist zamanlayıcı bağlantı olmadan da çalışır.
+➤ Evet. Kahverengi gürültü jeneratörü ve zamanlayıcı tamamen cihazında çalışır.
 
-🧐 Pomodoro için kullanabilir miyim?
-➤ Klasik odak sürelerini ayarlayabilirsin ama zorunlu molalar yok — bu, katı döngüler yerine akış etrafında kurulmuş, daha yumuşak ve minimalist bir pomodoro zamanlayıcısı.
+🧐 Bütün gün çalabilir mi?
+➤ Evet. ∞'a bas, Finish'e basana kadar çalar.
 
-🧐 Odaklanma ve ders çalışma için iyi mi?
-➤ Evet — sıcak sesi ve yumuşak görseliyle konsantre olmana ve derin çalışmanı korumana yardım eden, sakin bir odaklanma ve ders çalışma zamanlayıcısı olarak tasarlandı.
-
-🧐 Sekme değiştirirsem ses durur mu?
-➤ Hayır — seansın devam ederken odak sesleri sekmeler arasında çalmaya devam eder.
-
-Süreni ayarla, başlat'a bas ve minimalist bir zamanlayıcı odağını taşısın. ⭐
+Brown Noise Generator'ı aç, mekanını seç, ve çalışırken sesin alanı tutmasına izin ver. ⭐

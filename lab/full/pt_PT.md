@@ -1,66 +1,79 @@
-Minimalist Timer é um timer de foco com poucas distrações para o teu navegador. Uma estrela tranquila, um campo vazio e um som generativo quente que te conduz por uma sessão de trabalho — e depois deixa-te pousar suavemente, em vez de te assustar com um alarme. Sem confusão, sem contas. Se focar costuma parecer frio ou mecânico, este foi feito para parecer calmo.
+Brown Noise Generator é um lugar tranquilo para trabalhar e estudar, direto no teu navegador. Cria ao vivo, no teu próprio dispositivo, um som quente e grave, e envolve-o com um temporizador de foco suave. Abre-o no painel lateral, carrega em Start, e a divisão fica em silêncio: vozes, teclados e ruídos da rua afundam-se sob uma parede de som suave e constante. Sem anúncios, sem conta, sem separador de vídeo para manter vivo.
 
-Define o teu tempo, carrega em iniciar e permanece no fluxo.
+🌟 Porquê este gerador de ruído castanho
+- ➤ O som é gerado ao vivo — não é uma gravação curta em loop
+- ➤ Um gerador de ruído branco, rosa e castanho num só: três cores, um toque para cada
+- ➤ Ruído castanho sem anúncios, sem buffering, nada que se interrompa a meio
+- ➤ Predefinições para divisões reais: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Um temporizador suave: 5, 15, 25, 45 ou 90 minutos, ou sem fim
+- ➤ Vive no painel lateral do Chrome e continua a tocar quando o fechas
+- ➤ O som e o temporizador correm no teu dispositivo: sem registo, e funciona offline
 
-🌟 Porquê este timer Pomodoro minimalista
-- ➤ Design limpo e minimalista — uma cena tranquila, nada a puxar a tua atenção
-- ➤ Brown noise quente e sons suaves de foco integrados — o teu tempo é feito literalmente de som
-- ➤ Um início suave e uma aterragem suave — sem alarme brusco quando a sessão termina
-- ➤ Sessões flexíveis: 5, 15, 25, 45, 90 minutos ou abertas
-- ➤ Corre silenciosamente no painel lateral enquanto trabalhas — o som continua a tocar entre os separadores
-- ➤ Totalmente no dispositivo: privado por design, funciona offline, sem registo
+🔊 Como soa um gerador de ruído castanho
+O ruído castanho, também chamado ruído browniano, mantém a maior parte da energia nos graves — mais perto de um rebentar de ondas distante ou do zumbido da cabine de um avião do que de estática. Este gerador de ruído browniano cria-o na tua máquina em tempo real, por isso nunca se repete em loop: um ruído castanho suave com um pouco de ar por cima, cheio o suficiente para preencher uma divisão e suave o suficiente para se esquecer. Foi feito para ser um ruído castanho profundo para a concentração: suficiente para cobrir a divisão, suave o suficiente para desaparecer da tua atenção.
 
-🔊 Som que sustenta o teu foco
-Contagens decrescentes silenciosas são a norma. Este envolve a tua sessão em brown noise quente — um som suave, grave e generativo (não um loop curto) que mascara distrações de fundo e te ajuda a assentar. Preferes sons calmos de foco em vez de música? Este permanece mais calmo que música para foco e mais suave que ruído branco pesado. Seja brown noise para estudar, sons ambientais para trabalho profundo ou apenas acalmar uma mente agitada, o som move-se lentamente e nunca se repete.
+Pensa nele como um gerador de som ambiente sem gravações — um som limpo e gerado, em vez de chuva e pássaros em loop.
 
-🎯 Um timer de foco e estudo num só
-Seja um timer de foco para trabalho profundo, um timer de estudo para sessões longas ou um timer de trabalho tranquilo para o escritório, ele mantém a interface fora do teu caminho:
-1. Um timer de foco minimalista para concentração e fluxo
-2. Um timer de estudo minimalista para ler, escrever e revisar
-3. Um timer de produtividade e concentração tranquilo para tarefas
-4. Um timer Pomodoro estético para quem quer a vibe sem ciclos rígidos de 25/5
+Dois controlos moldam-no: masking (mascaramento) alarga a parede até as vozes próximas ficarem esbatidas, e stimulation torna-o mais claro quando precisas de energia, mais grave quando precisas de calma.
 
-🎨 Estético e minimalista
-Se adoras um timer estético ou bonito no ecrã, este timer de contagem decrescente minimalista mantém tudo bonito e simples: uma estrela quente que se aproxima à medida que a sessão avança, dentro de um espaço tranquilo e aberto. Sem números a gritar contigo, sem pressão — apenas um timer minimalista estético que dá gosto olhar.
+🎨 Castanho, rosa ou branco
+O castanho é a cor predefinida porque é a mais grave e quente. Um gerador de ruído rosa está a um toque de distância, um grau mais claro, e o ruído branco para foco também está lá — o mais claro dos três. Muita gente jura pelo ruído branco para estudar, enquanto outros o acham áspero ao fim de uma hora. Experimenta cada cor e fica com a que os teus ouvidos deixam de notar. A luz do painel segue a cor que escolhes.
 
-🧠 Gentil com a tua atenção
-Ele foi feito para ser gentil com o modo como a atenção realmente funciona. Se tens dificuldade com cegueira temporal ou queres um timer visual que torne o tempo real sem stress, a estrela dá-te uma suave sensação de progresso. Funciona bem como uma alternativa tranquila de timer para TDAH — uma que te guia para dentro e para fora do foco em vez de te punir. Ele chama-te de volta; não te prende.
+🏢 Predefinições para a divisão em que estás
+Escolhe onde estás, e o som ajusta-se para ti:
+1. open office — a parede mais larga, para vozes próximas
+2. thin walls — mais peso nos graves, para um vizinho ou uma TV
+3. café — mais leve, para que o burburinho à tua volta se misture
+4. deep reading — calmo e uniforme, para uma divisão tranquila
+5. racing thoughts — mais estimulação, quando está barulho dentro da tua cabeça
+6. too much — mais suave e mais baixo, para os dias de sobrecarga
 
-💡 Sem contas, sem anúncios e sem que nenhum dado saia do teu dispositivo — apenas um espaço tranquilo e privado para focar, seja como for que a tua mente funcione.
+Se andavas à procura de um gerador de ruído branco para a agitação do escritório, começa com open office. Funciona como um mascaramento sonoro simples para a tua secretária, e podes mudar para ruído branco para o trabalho se preferires mais claro. Toca em qualquer controlo e a predefinição passa a custom. As predefinições nunca mudam a duração da tua sessão.
+
+⏱ Um temporizador que se mantém fora do caminho
+O temporizador está lá quando o queres. Arrasta o dial para 5, 15, 25, 45 ou 90 minutos, ou carrega em ∞ e deixa o som correr sem fim. A contagem decrescente fica quieta dentro do dial. Quando o tempo acaba, não há alarme: o som clareia e esbate-se ao longo de uns quarenta segundos, para que emirjas em vez de seres sobressaltado.
+
+Usa-o como temporizador de foco para uma tarefa, temporizador de trabalho para a próxima hora, ou temporizador minimalista que simplesmente guarda o tempo por ti. Quem acha as contagens decrescentes normais stressantes costuma usá-lo como um temporizador para TDAH suave — leva-te para fora do foco em vez de te arrancar dele.
+
+🧠 Para foco, estudo e uma mente ocupada
+As pessoas recorrem ao ruído castanho para estudar, ao ruído castanho para trabalhar e ao ruído castanho para o TDAH — para acalmar uma divisão ruidosa ou uma cabeça ruidosa. Não fazemos promessas sobre o cérebro: a investigação é inconsistente, e nenhum som funciona para todos. O que oferecemos é uma boa configuração — ruído de fundo constante para estudar, sons de foco que não se movem debaixo de ti, e um som que podes moldar até que ajude. O mesmo vale para o ruído branco para o TDAH ou qualquer outro som de foco: escolhe a cor, fica com o que funciona.
 
 🖥 Como funciona
-1️⃣ Abre o timer minimalista pela barra de ferramentas
-2️⃣ Desliza para definir o teu tempo — de 5 a 90 minutos, ou ∞
-3️⃣ Toca na estrela — o som quente começa e deslizas para o foco
-4️⃣ Quando o tempo acaba, a sessão aterra suavemente, sem alarme
-5️⃣ Fecha o painel quando quiseres — o som continua
+1️⃣ Clica no ícone — o Brown Noise Generator abre no painel lateral do Chrome
+2️⃣ Escolhe uma predefinição para a tua divisão, ou ajusta tu mesmo volume, masking, stimulation e tone
+3️⃣ Ajusta o dial, ou carrega em ∞ para não ter fim
+4️⃣ Carrega em Start para tocar ruído castanho; toca na estrela para pausar e retomar
+5️⃣ Fecha o painel — o som continua até a tua sessão aterrar
 
-Como uma leve extensão Pomodoro para Chrome e timer de desktop, fica mesmo onde trabalhas — sem janela extra, sem ocupar o novo separador, sem distrações.
+Funciona como um gerador de ruído castanho online, mas vive no teu navegador e não precisa de ligação depois de instalado. Não há nenhum vídeo de ruído castanho com ecrã preto para deixar a correr, nem separador para manter aberto: pensa nele como uma app de ruído castanho para o teu ambiente de trabalho, uma extensão Chrome leve ao lado do teu trabalho.
 
-📌 Ideal para
-- ▸ Trabalho profundo, escrita, programação e leitura
-- ▸ Estudantes que querem um timer de estudo estético e de aparência calma
-- ▸ Qualquer pessoa que ache as contagens decrescentes comuns frias, barulhentas ou stressantes
-- ▸ Pessoas que focam melhor com som de fundo quente
+👀 Uma imagem que segue o som
+Enquanto o som toca, um grão fino move-se pelo painel: mais grosso para o castanho, mais fino para o branco, mais rápido com mais estimulação. Se o movimento te incomodar, desativa motion no canto.
+
+📌 Ótimo para
+- ▸ Escritórios abertos, apartamentos partilhados e cafés cheios
+- ▸ Estudantes que querem sons de estudo tranquilos para noites longas
+- ▸ Escrever, programar e ler, quando queres ruído castanho para o foco
+- ▸ Qualquer pessoa cansada de anúncios a interromper os seus sons de foco
 
 ❓ Perguntas frequentes
 
-🧐 Preciso de pagar ou de me registar?
-➤ Não — tudo está disponível desde o início, sem conta e sem registo.
+🧐 Preciso de uma conta?
+➤ Não. Não há registo, não há anúncios, e não há nada onde iniciar sessão.
 
-🧐 Como é que o som é diferente de outros timers?
-➤ Em vez de uma contagem decrescente silenciosa, o teu tempo é feito de brown noise quente e sons suaves de foco que mascaram distrações e te ajudam a manter o fluxo.
+🧐 Há um gerador de ruído castanho para o meu telemóvel?
+➤ Ainda não. Esta é uma extensão Chrome para navegadores de computador e portátil.
+
+🧐 Posso mudar para branco ou rosa?
+➤ Sim. Os três pontos no canto superior alternam entre castanho, rosa e branco.
+
+🧐 O som para se eu fechar o painel ou mudar de separador?
+➤ Não. Continua a tocar enquanto a tua sessão estiver ativa, em qualquer separador.
 
 🧐 Funciona offline?
-➤ Sim. Tudo corre no dispositivo, portanto este timer minimalista funciona sem ligação.
+➤ Sim. O gerador de ruído castanho e o temporizador correm inteiramente no teu dispositivo.
 
-🧐 Posso usar para Pomodoro?
-➤ Podes definir durações de foco clássicas, mas não há pausas forçadas — é um timer Pomodoro minimalista mais gentil, construído em torno do fluxo, não de ciclos rígidos.
+🧐 Pode tocar o dia todo?
+➤ Sim. Carrega em ∞ e toca até carregares em Finish.
 
-🧐 É bom para foco e estudo?
-➤ Sim — foi pensado como um timer tranquilo de foco e estudo, com som quente e um visual suave para te ajudar a concentrares-te e a proteger o trabalho profundo.
-
-🧐 O som para se eu mudar de separador?
-➤ Não — os sons de foco continuam a tocar entre os separadores enquanto a tua sessão está ativa.
-
-Define o teu tempo, carrega em iniciar e deixa um timer minimalista conduzir o teu foco. ⭐
+Abre o Brown Noise Generator, escolhe a tua divisão, e deixa o som segurar o espaço enquanto trabalhas. ⭐

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<title>Стенд: музыка + наш шум</title>
+<!--
+  Стенд 26.09.2026 к идее автора «наложить нашу маску на музыку».
+  Шум — НАСТОЯЩИЙ движок продукта (../extension/engine.js). Музыка — синтезируется здесь же,
+  чужие треки не тянем: простая тёплая петля (пэд + мягкий пульс), чтобы слышать, как мешаются.
+  «Автоотступ» показывает, как вела бы себя адаптивная стена: шум приседает под музыку и
+  возвращается в паузах. В продукте для чужой вкладки это потребует прав на захват звука,
+  здесь же музыка своя, поэтому всё видно без прав.
+  ЗАКОН: по «Стоп» звук глушится и AudioContext закрывается (ничего не остаётся играть).
+-->
+<style>
+  body{margin:0;background:#141210;color:#e8ded2;font:14px/1.6 Inter,Helvetica,Arial,sans-serif;padding:26px;max-width:900px}
+  h1{font-size:18px;margin:0 0 6px} .dim{color:#8a8178;font-size:12px}
+  .card{background:#0d0c0b;border:1px solid #272220;border-radius:16px;padding:18px 20px;margin:16px 0}
+  .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:10px 0}
+  label{font-size:13px;color:#c9bfb2;min-width:120px}
+  input[type=range]{width:220px;accent-color:#ffb055}
+  button{background:#1b1815;color:#e8ded2;border:1px solid #2e2825;border-radius:10px;padding:9px 16px;font-size:14px;cursor:pointer}
+  button.glav{background:#ffb055;color:#241a10;border-color:#ffb055;font-weight:600}
+  button.on{border-color:#ffb055;color:#ffb055}
+  b.dot{width:18px;height:18px;border-radius:50%;display:inline-block;cursor:pointer;margin-right:8px;vertical-align:-3px}
+  b.dot.on{box-shadow:0 0 0 2px #0d0c0b,0 0 0 4px #ffb055}
+  .meter{height:8px;background:#221f1c;border-radius:4px;overflow:hidden;width:220px}
+  .meter i{display:block;height:100%;background:#ffb055;width:0}
+  code{color:#ffb055}
+</style>
+
+<h1>Стенд: музыка + наш шум</h1>
+<div class="dim">Шум — настоящий движок продукта. Музыка синтезируется здесь же (чужие треки не берём). Слушай, как они складываются, и крути уровни.</div>
+
+<div class="card">
+  <div class="row">
+    <button class="glav" id="go">▶ Пуск: музыка + шум</button>
+    <button id="stop">■ Стоп и закрыть звук</button>
+    <span class="dim" id="sost">звук не запущен</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="row"><label>Цвет шума</label>
+    <span id="colors">
+      <b class="dot on" data-c="brown" style="background:#c98a4b"></b>
+      <b class="dot" data-c="pink" style="background:#b98a95"></b>
+      <b class="dot" data-c="white" style="background:#d9d6d0"></b>
+    </span>
+  </div>
+  <div class="row"><label>Громкость шума</label><input type="range" id="vshum" min="0" max="1" step="0.01" value="0.5"><span class="dim" id="vshumN">0.50</span></div>
+  <div class="row"><label>Тон в шуме</label><input type="range" id="mix" min="0" max="1" step="0.01" value="0"><span class="dim" id="mixN">0.00</span></div>
+</div>
+
+<div class="card">
+  <div class="row"><label>Громкость музыки</label><input type="range" id="vmus" min="0" max="1" step="0.01" value="0.45"><span class="dim" id="vmusN">0.45</span></div>
+  <div class="row"><label>Уровень музыки</label><span class="meter"><i id="mm"></i></span></div>
+  <div class="row"><label>Автоотступ</label>
+    <button id="duck">выключен</button>
+    <span class="dim">шум приседает под музыку и возвращается в паузах</span>
+  </div>
+  <div class="row"><label>Глубина отступа</label><input type="range" id="depth" min="0" max="1" step="0.05" value="0.6"><span class="dim" id="depthN">0.60</span></div>
+  <div class="row"><label>Что слышит шум</label><span class="meter"><i id="nm"></i></span><span class="dim" id="nmN">—</span></div>
+</div>
+
+<div class="card dim">
+  Что тут проверяется: 1) мешает ли наш шум музыке и наоборот; 2) на какой громкости шума речь ещё
+  закрывается, а музыка уже не портится; 3) нужен ли автоотступ вообще — может, хватает ручного баланса.
+</div>
+
+<script src="../extension/engine.js"></script>
+<script>
+let e = null, AC = null, noiseOut = null, musBus = null, an = null, raf = 0, duck = false, muzUzly = [];
+
+const $ = (id) => document.getElementById(id);
+const pokaz = (t) => $('sost').textContent = t;
+
+function muzyka(AC, bus){                       // простая тёплая петля: пэд + мягкий пульс
+  const AKKORDY = [[220,261.6,329.6],[174.6,220,261.6],[196,246.9,293.7],[164.8,207.7,246.9]];
+  const pad = AC.createGain(); pad.gain.value = 0.0001; pad.connect(bus);
+  const lp = AC.createBiquadFilter(); lp.type='lowpass'; lp.frequency.value = 1400; lp.connect(pad);
+  let t0 = AC.currentTime + 0.05, sh = 0;
+  const shag = () => {
+    const ak = AKKORDY[sh % AKKORDY.length], t = AC.currentTime;
+    ak.forEach((f, i) => {
+      const o = AC.createOscillator(); o.type = i ? 'triangle' : 'sine'; o.frequency.value = f * (i===2?1:1);
+      o.detune.value = (i - 1) * 6;
+      const g = AC.createGain(); g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.09, t + 1.2); g.gain.setTargetAtTime(0.0001, t + 2.2, 1.1);
+      o.connect(g); g.connect(lp); o.start(t); o.stop(t + 5); muzUzly.push(o);
+    });
+    // мягкий пульс
+    const k = AC.createOscillator(), kg = AC.createGain();
+    k.frequency.setValueAtTime(90, t); k.frequency.exponentialRampToValueAtTime(48, t + 0.16);
+    kg.gain.setValueAtTime(0.16, t); kg.gain.exponentialRampToValueAtTime(0.0001, t + 0.22);
+    k.connect(kg); kg.connect(bus); k.start(t); k.stop(t + 0.3); muzUzly.push(k);
+    sh++;
+  };
+  pad.gain.value = 1; shag();
+  const id = setInterval(shag, 3200);
+  return () => { clearInterval(id); muzUzly.forEach(n => { try { n.stop(); } catch(_){} }); muzUzly = []; };
+}
+
+let stopMuz = null;
+$('go').onclick = async () => {
+  if (e) return;
+  e = new AudioEngine(() => {});
+  e.turnOn();                                   // движок сам построит AudioContext
+  AC = e.AC;
+  e.setChar({ volume: +$('vshum').value });
+  e.setMix(+$('mix').value);
+  e.startSession(9e7);                          // без конца: слушаем, а не летим
+  noiseOut = AC.createGain(); noiseOut.gain.value = 1;
+  try { e.master.disconnect(); } catch(_){}
+  e.master.connect(noiseOut); noiseOut.connect(AC.destination);
+
+  musBus = AC.createGain(); musBus.gain.value = +$('vmus').value;
+  an = AC.createAnalyser(); an.fftSize = 1024;
+  musBus.connect(an); an.connect(AC.destination);
+  stopMuz = muzyka(AC, musBus);
+
+  const buf = new Uint8Array(an.fftSize);
+  const kadr = () => {
+    an.getByteTimeDomainData(buf);
+    let s = 0; for (let i = 0; i < buf.length; i++) { const v = (buf[i]-128)/128; s += v*v; }
+    const rms = Math.min(1, Math.sqrt(s/buf.length) * 3.2);
+    $('mm').style.width = (rms*100).toFixed(0) + '%';
+    const g = duck ? Math.max(0.12, 1 - rms * +$('depth').value * 1.6) : 1;
+    noiseOut.gain.setTargetAtTime(g, AC.currentTime, 0.12);
+    $('nm').style.width = (g*100).toFixed(0) + '%'; $('nmN').textContent = duck ? g.toFixed(2) : 'ручной баланс';
+    raf = requestAnimationFrame(kadr);
+  };
+  kadr();
+  pokaz('играет: музыка + шум');
+};
+
+$('stop').onclick = () => {
+  cancelAnimationFrame(raf);
+  if (stopMuz) stopMuz();
+  try { e && e.turnOff(); } catch(_){}
+  try { AC && AC.close(); } catch(_){}       // закон: ничего не остаётся играть
+  e = AC = noiseOut = musBus = an = null; stopMuz = null;
+  $('mm').style.width = $('nm').style.width = '0'; $('nmN').textContent = '—';
+  pokaz('звук остановлен, контекст закрыт');
+};
+addEventListener('beforeunload', () => { try { AC && AC.close(); } catch(_){} });
+
+$('colors').onclick = (ev) => {
+  const b = ev.target.closest('b.dot'); if (!b) return;
+  [...ev.currentTarget.children].forEach(x => x.classList.remove('on')); b.classList.add('on');
+  if (e) e.setColour(b.dataset.c);
+};
+$('vshum').oninput = (ev) => { $('vshumN').textContent = (+ev.target.value).toFixed(2); if (e) e.setChar({ volume: +ev.target.value }); };
+$('mix').oninput   = (ev) => { $('mixN').textContent   = (+ev.target.value).toFixed(2); if (e) e.setMix(+ev.target.value); };
+$('vmus').oninput  = (ev) => { $('vmusN').textContent  = (+ev.target.value).toFixed(2); if (musBus) musBus.gain.setTargetAtTime(+ev.target.value, AC.currentTime, 0.05); };
+$('depth').oninput = (ev) => $('depthN').textContent = (+ev.target.value).toFixed(2);
+$('duck').onclick  = (ev) => { duck = !duck; ev.target.textContent = duck ? 'включён' : 'выключен'; ev.target.classList.toggle('on', duck); };
+</script>
+</html>

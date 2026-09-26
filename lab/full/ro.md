@@ -1,66 +1,79 @@
-Minimalist Timer este un timer de concentrare, aproape fără distrageri, pentru browserul tău. O stea liniștită, un câmp gol și un sunet generativ cald care te poartă printr-o sesiune de lucru — apoi te lasă să aterizezi lin, în loc să te sperie cu o alarmă. Fără dezordine, fără conturi. Dacă de obicei concentrarea ți se pare rece sau mecanică, acesta e gândit să transmită calm.
+Brown Noise Generator este un loc liniștit pentru muncă și studiu, chiar în browserul tău. Creează în timp real, pe dispozitivul tău, un sunet cald și grav, și îl învăluie cu un cronometru de concentrare blând. Deschide-l în panoul lateral, apasă Start, și camera se liniștește: vocile, tastaturile și zgomotele de stradă se estompează sub un zid de sunet moale și constant. Fără reclame, fără cont, fără filă video pe care s-o ții deschisă.
 
-Setează-ți timpul, apasă start și rămâi în flow.
+🌟 De ce acest generator de zgomot maro
+- ➤ Sunetul e generat în timp real — nu e o înregistrare scurtă în buclă
+- ➤ Un generator de zgomot alb, roz și maro într-unul singur: trei culori, o atingere fiecare
+- ➤ Zgomot maro fără reclame, fără buffering, nimic care să se întrerupă pe la jumătate
+- ➤ Presetări pentru camere reale: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Un cronometru blând: 5, 15, 25, 45 sau 90 de minute, sau deloc limitat
+- ➤ Trăiește în panoul lateral din Chrome și continuă să cânte când îl închizi
+- ➤ Sunetul și cronometrul rulează pe dispozitivul tău: fără înregistrare, și funcționează offline
 
-🌟 De ce acest timer Pomodoro minimalist
-- ➤ Design curat și minimalist — o scenă calmă, nimic care să-ți tragă atenția
-- ➤ Brown noise cald și sunete blânde pentru concentrare, incluse — timpul tău e făcut, literalmente, din sunet
-- ➤ Un start blând și o aterizare blândă — nicio alarmă stridentă când se termină sesiunea
-- ➤ Sesiuni flexibile: 5, 15, 25, 45, 90 de minute sau nelimitat
-- ➤ Rulează discret în panoul lateral în timp ce lucrezi — sunetul continuă de la o filă la alta
-- ➤ Complet pe dispozitiv: privat prin concepție, funcționează offline, fără înregistrare
+🔊 Cum sună un generator de zgomot maro
+Zgomotul maro, numit și zgomot brownian, își păstrează cea mai mare parte a energiei jos — mai aproape de un vuiet îndepărtat de valuri sau de zumzetul cabinei unui avion decât de paraziți. Acest generator de zgomot brownian îl creează pe mașina ta în timp real, deci nu se repetă niciodată în buclă: un zgomot maro moale, cu puțin aer deasupra, suficient de plin cât să umple o cameră și suficient de moale cât să fie uitat. E gândit ca zgomot maro profund pentru concentrare: destul cât să acopere camera, destul de blând cât să se estompeze din atenția ta.
 
-🔊 Un sunet care îți susține concentrarea
-Numărătorile inverse silențioase sunt norma. Acesta îți învăluie sesiunea în brown noise cald — un sunet blând, grav și generativ (nu o buclă scurtă) care maschează distragerile de fundal și te ajută să te acomodezi. Preferi sunete liniștite pentru concentrare în locul melodiilor? Acesta rămâne mai calm decât muzica pentru concentrare și mai blând decât un white noise dur. Fie că e brown noise pentru studiu, sunete ambientale pentru concentrare și deep work sau doar pentru a liniști o minte agitată, sunetul plutește lent și nu se repetă niciodată.
+Gândește-te la el ca la un generator de sunet ambiental fără înregistrări — un sunet curat, generat, în loc de ploaie și păsări în buclă.
 
-🎯 Un timer de concentrare și studiu într-unul singur
-Fie că ai nevoie de un timer de concentrare pentru deep work, de un timer de studiu pentru sesiuni lungi sau de un timer de lucru calm pentru birou, interfața nu-ți stă în cale:
-1. Un timer de concentrare minimalist pentru focus și flow
-2. Un timer de studiu minimalist pentru citit, scris și recapitulare
-3. Un timer de productivitate și concentrare calm pentru sarcini
-4. Un timer Pomodoro estetic pentru cei care vor atmosfera, fără cicluri rigide de 25/5
+Două butoane îl modelează: masking (mascare) lărgește zidul până când vocile din apropiere se estompează, iar stimulation îl face mai luminos când ai nevoie de energie, mai jos când ai nevoie de calm.
 
-🎨 Estetic și minimalist
-Dacă îți place un timer estetic sau un timer drăguț pe ecran, acest timer minimalist cu numărătoare inversă păstrează totul frumos și simplu: o stea caldă care se apropie pe măsură ce avansează sesiunea, într-un spațiu liniștit și deschis. Fără cifre care să-ți strige în față, fără presiune — doar un timer minimalist estetic, plăcut de privit.
+🎨 Maro, roz sau alb
+Maro e culoarea implicită pentru că e cea mai joasă și mai caldă. Un generator de zgomot roz e la o atingere distanță, cu o treaptă mai luminos, iar zgomotul alb pentru concentrare e și el acolo — cel mai luminos dintre cele trei. Mulți jură pe zgomotul alb pentru studiu, în timp ce alții îl găsesc prea ascuțit după o oră. Încearcă fiecare culoare și păstreaz-o pe cea pe care urechile tale încetează s-o observe. Lumina panoului urmează culoarea pe care o alegi.
 
-🧠 Blând cu atenția ta
-Este construit ca să respecte felul în care funcționează cu adevărat atenția. Dacă te lupți cu pierderea noțiunii timpului sau vrei un timer vizual care face timpul să pară real, fără stres, steaua îți dă un sentiment blând de progres. Funcționează bine ca o alternativă calmă de timer pentru ADHD — una care te ghidează spre concentrare și înapoi, în loc să te pedepsească. Te cheamă înapoi; nu te închide în cușcă.
+🏢 Presetări pentru camera în care ești
+Alege unde ești, și sunetul se ajustează pentru tine:
+1. open office — cel mai larg zid, pentru voci din apropiere
+2. thin walls — mai multă greutate în frecvențele joase, pentru un vecin sau un televizor
+3. café — mai ușor, ca zumzetul din jurul tău să se contopească
+4. deep reading — liniștit și uniform, pentru o cameră calmă
+5. racing thoughts — mai multă stimulare, când e gălăgie în capul tău
+6. too much — mai moale și mai încet, pentru zilele de suprasolicitare
 
-💡 Fără conturi, fără reclame și fără ca datele tale să-ți părăsească vreodată dispozitivul — doar un spațiu calm și privat pentru concentrare, oricum ar funcționa creierul tău.
+Dacă ai venit căutând un generator de zgomot alb pentru vacarmul de birou, începe cu open office. Funcționează ca o mascare sonoră simplă pentru biroul tău, și poți trece la zgomot alb pentru muncă dacă îl preferi mai luminos. Atinge orice buton și presetarea devine custom. Presetările nu schimbă niciodată durata sesiunii tale.
+
+⏱ Un cronometru care nu-ți stă în cale
+Cronometrul e acolo când îl vrei. Trage discul la 5, 15, 25, 45 sau 90 de minute, sau apasă ∞ și lasă sunetul să ruleze fără sfârșit. Numărătoarea inversă stă liniștită în interiorul discului. Când timpul expiră, nu există alarmă: sunetul se luminează și se stinge treptat în circa patruzeci de secunde, ca să ieși la suprafață în loc să fii smuls brusc.
+
+Folosește-l ca cronometru de concentrare pentru o sarcină, cronometru de lucru pentru ora următoare, sau cronometru minimalist care pur și simplu ține timpul pentru tine. Cei care găsesc numărătorile inverse obișnuite stresante îl folosesc adesea ca un cronometru pentru ADHD blând — te scoate din concentrare, nu te smulge din ea.
+
+🧠 Pentru concentrare, studiu și o minte agitată
+Oamenii apelează la zgomot maro pentru studiu, zgomot maro pentru muncă și zgomot maro pentru ADHD — ca să liniștească o cameră gălăgioasă sau o minte gălăgioasă. Nu facem promisiuni despre creier: cercetările sunt neconcludente, și niciun sunet nu funcționează pentru toată lumea. Ce oferim e o configurație bună — zgomot de fundal constant pentru studiu, sunete de concentrare care nu se mișcă sub tine, și un sunet pe care îl poți modela până te ajută. Același lucru e valabil pentru zgomotul alb pentru ADHD sau orice alt sunet de concentrare: alege culoarea, păstreaz-o pe cea care funcționează.
 
 🖥 Cum funcționează
-1️⃣ Deschide timerul minimalist din bara de instrumente
-2️⃣ Glisează pentru a-ți seta timpul — de la 5 la 90 de minute, sau ∞
-3️⃣ Atinge steaua — sunetul cald începe și aluneci în concentrare
-4️⃣ Când timpul expiră, sesiunea aterizează blând, fără nicio alarmă
-5️⃣ Închide panoul oricând — sunetul continuă
+1️⃣ Dă clic pe pictogramă — Brown Noise Generator se deschide în panoul lateral din Chrome
+2️⃣ Alege o presetare pentru camera ta, sau ajustează-ți singur volume, masking, stimulation și tone
+3️⃣ Ajustează discul, sau apasă ∞ pentru niciun sfârșit
+4️⃣ Apasă Start ca să redai zgomot maro; atinge steaua ca să pui pauză și să reiei
+5️⃣ Închide panoul — sunetul continuă până când sesiunea ta aterizează
 
-Ca o extensie Pomodoro ușoară pentru Chrome și timer de desktop, rămâne exact acolo unde lucrezi — fără fereastră în plus, fără să-ți acapareze fila nouă, fără distrageri.
+Funcționează ca un generator de zgomot maro online, dar trăiește în browserul tău și nu are nevoie de conexiune odată instalat. Nu există niciun videoclip cu zgomot maro și ecran negru pe care să-l lași să ruleze, nici o filă pe care s-o ții deschisă: gândește-te la el ca la o aplicație de zgomot maro pentru desktopul tău, o extensie ușoară de Chrome de lângă munca ta.
 
-📌 Perfect pentru
-- ▸ Deep work, scris, programare și citit
-- ▸ Studenți care vor un timer de studiu estetic, cu aspect calm
-- ▸ Oricine găsește numărătorile inverse obișnuite reci, zgomotoase sau stresante
-- ▸ Cei care se concentrează mai bine cu un sunet cald de fundal
+👀 O imagine care urmează sunetul
+Cât timp sunetul cântă, un grăunte fin se mișcă pe panou: aspru pentru maro, cel mai fin pentru alb, mai rapid cu mai multă stimulare. Dacă mișcarea te deranjează, dezactivează motion din colț.
 
-❓ FAQ
+📌 Excelent pentru
+- ▸ Birouri deschise, apartamente comune și cafenele aglomerate
+- ▸ Studenți care vor sunete de studiu liniștite pentru seri lungi
+- ▸ Scris, programare și citit, când vrei zgomot maro pentru concentrare
+- ▸ Oricine e obosit de reclamele care le întrerup sunetele de concentrare
 
-🧐 Trebuie să plătesc sau să-mi fac cont?
-➤ Nu — totul e disponibil de la lansare, fără cont și fără înregistrare.
+❓ Întrebări frecvente
 
-🧐 Prin ce e diferit sunetul față de alte timere?
-➤ În loc de o numărătoare inversă silențioasă, timpul tău e făcut din brown noise cald și sunete blânde pentru concentrare, care maschează distragerile și te ajută să rămâi în flow.
+🧐 Am nevoie de cont?
+➤ Nu. Nu există înregistrare, nu există reclame, și nu ai unde să te autentifici.
+
+🧐 Există un generator de zgomot maro pentru telefonul meu?
+➤ Încă nu. Aceasta e o extensie Chrome pentru browsere de desktop și laptop.
+
+🧐 Pot trece la alb sau roz?
+➤ Da. Cele trei puncte din colțul de sus comută între maro, roz și alb.
+
+🧐 Se oprește sunetul dacă închid panoul sau schimb fila?
+➤ Nu. Continuă să cânte cât timp sesiunea ta rulează, în orice filă.
 
 🧐 Funcționează offline?
-➤ Da. Totul rulează pe dispozitiv, așa că acest timer minimalist funcționează fără conexiune.
+➤ Da. Generatorul de zgomot maro și cronometrul rulează în întregime pe dispozitivul tău.
 
-🧐 Îl pot folosi pentru Pomodoro?
-➤ Poți seta durate clasice de concentrare, dar nu există pauze forțate — e un timer Pomodoro minimalist, mai blând, construit în jurul flow-ului, nu al ciclurilor rigide.
+🧐 Poate cânta toată ziua?
+➤ Da. Apasă ∞ și cântă până apeși Finish.
 
-🧐 E bun pentru concentrare și studiu?
-➤ Da — e conceput ca un timer calm de concentrare și studiu, cu sunet cald și un vizual blând care te ajută să te concentrezi și să protejezi deep work-ul.
-
-🧐 Se oprește sunetul dacă schimb fila?
-➤ Nu — sunetele pentru concentrare continuă să se audă de la o filă la alta cât timp sesiunea e activă.
-
-Setează-ți timpul, apasă start și lasă un timer minimalist să-ți poarte concentrarea. ⭐
+Deschide Brown Noise Generator, alege-ți camera, și lasă sunetul să țină spațiul cât timp lucrezi. ⭐

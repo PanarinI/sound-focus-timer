@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<title>Стенд: язычок в стиле панели</title>
+<!--
+  Стенд 26.09.2026. Повод — слово автора после теста 1.2.0-dev: «только edge tab теперь выбивается
+  из стиля». Язычок (glow.js) остался из эпохи уголька: оранжевая неоновая нить одного цвета.
+  Панель с 26.09 живёт по линии дизайна: тёплое почти-чёрное поле, одна тёплая звезда, линия от руки,
+  цвет интерфейса = цвет шума, движение гасится выключателем motion.
+  Три колонки: как сейчас · А (та же нить, но цвета шума и от руки) · Б (кусочек панели со звездой).
+  После выбора автора — перенос в extension/glow.js дословно (урок 26.09: переносить копированием).
+-->
+<style>
+  :root{ --warm:#ffb055; --warm-soft:#ffd9a0; --dyh:5.5s; --mercanie:1; }
+  *{box-sizing:border-box}
+  body{margin:0;background:#141210;color:#e8ded2;font:14px/1.5 Inter,Helvetica,Arial,sans-serif;padding:24px}
+  h1{font-size:17px;margin:0 0 4px}
+  .sub{color:#8a8178;font-size:12px;margin-bottom:16px;max-width:780px}
+  .pult{display:flex;gap:26px;flex-wrap:wrap;align-items:center;margin-bottom:20px;font-size:12px;color:#8a8178}
+  .pult span{display:flex;gap:6px;align-items:center}
+  button.v{background:#1b1815;color:#8a8178;border:1px solid #2e2825;border-radius:8px;padding:5px 10px;font-size:12px;cursor:pointer}
+  button.v.on{background:var(--warm);color:#241a10;border-color:var(--warm)}
+  .setka{display:grid;grid-template-columns:repeat(3,250px);gap:26px}
+  .kol h2{font-size:13px;font-weight:600;margin:0 0 4px;color:#e8ded2}
+  .kol p{font-size:11.5px;color:#8a8178;margin:0 0 10px;min-height:52px}
+  .str{position:relative;width:250px;height:300px;border-radius:6px;overflow:hidden;margin-bottom:14px}
+  .str.bel{background:#fff}
+  .str.tem{background:#202124}
+  .str i{display:block;height:7px;border-radius:3px;margin:0 50px 11px 18px}
+  .str.bel i{background:#e7e7e7}
+  .str.tem i{background:#35373b}
+  .str i.z{height:12px;width:55%;margin:22px 0 18px 18px}
+  .str.bel i.z{background:#d4d4d4}
+  .str.tem i.z{background:#45474c}
+  .str i.k{width:40%}
+  @keyframes nakal{0%,100%{filter:brightness(calc(1 - .07*var(--mercanie)))}
+                   43%{filter:brightness(calc(1 + .09*var(--mercanie)))}
+                   68%{filter:brightness(calc(1 - .04*var(--mercanie)))}}
+
+  /* ── КАК СЕЙЧАС: стили extension/glow.js дословно (fixed → absolute) ── */
+  .cur{position:absolute;right:0;top:50%;width:8px;height:116px;border-radius:4px 0 0 4px;cursor:pointer;
+    background:linear-gradient(180deg, rgba(242,195,119,0) 0%, rgba(238,158,66,.94) 15%, #e8912c 50%, rgba(198,108,48,.94) 85%, rgba(176,101,60,0) 100%);
+    transform:translate(0,-50%);transition:transform .55s cubic-bezier(.22,.9,.3,1.12), box-shadow .8s ease, filter .5s ease, width .4s ease}
+  .cur::after{content:'';position:absolute;inset:9px 1px 9px 1px;border-radius:2px;
+    background:linear-gradient(180deg, rgba(255,242,210,0), rgba(255,244,214,.95) 50%, rgba(255,226,170,0));
+    opacity:var(--lit,.5);animation:breathe 6s ease-in-out infinite}
+  .cur:hover{transform:translate(-4px,-50%);width:11px}
+  .cur.st-pause{filter:saturate(.5) brightness(.72)}
+  .cur.st-idle{filter:saturate(.62) brightness(.58)}
+  @keyframes breathe{0%,100%{opacity:var(--lit,.5)}50%{opacity:calc(var(--lit,.5) + .25)}}
+
+  /* ── А · НИТЬ ЦВЕТА ШУМА: та же форма, но цвет = цвет шума, линия от руки, свечение тише ── */
+  .nit{position:absolute;right:0;top:50%;width:14px;height:124px;transform:translateY(-50%);cursor:pointer;
+       transition:transform .45s cubic-bezier(.22,.9,.3,1.12), opacity .5s}
+  .nit svg{display:block;width:14px;height:124px;overflow:visible}
+  .nit .obv{fill:none;stroke:#0d0c0b;stroke-width:6;stroke-linecap:round;opacity:.28}
+  .nit .sv{fill:none;stroke:url(#gnit);stroke-width:3.4;stroke-linecap:round;transition:filter .5s}
+  .nit .jila{fill:none;stroke:var(--warm-soft);stroke-width:1.1;stroke-linecap:round;opacity:0;transition:opacity .5s}
+  .nit:hover{transform:translate(-3px,-50%)}
+  .nit.st-run .sv{filter:drop-shadow(-3px 0 5px color-mix(in srgb, var(--warm) 60%, transparent))}
+  .nit.st-run .jila{opacity:.75}
+  .nit.st-run{animation:nakal var(--dyh) ease-in-out infinite}
+  .nit.st-idle{opacity:.5}
+  .nit.st-pause{opacity:.72}
+
+  /* ── Б · КУСОЧЕК ПАНЕЛИ: тёмная плашка с рамкой от руки, внутри звезда панели ── */
+  .kus{position:absolute;right:0;top:50%;width:16px;height:66px;transform:translateY(-50%);cursor:pointer;
+       border-radius:6px 0 0 6px;overflow:hidden;background:#0d0c0b;
+       box-shadow:-2px 0 9px rgba(0,0,0,.28);
+       transition:transform .45s cubic-bezier(.22,.9,.3,1.12)}
+  .kus::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .6s;
+       background:radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--warm) 22%, transparent) 0%, transparent 72%)}
+  .kus.st-run::before{opacity:1}
+  .kus.st-pause::before{opacity:.45}
+  .kus svg{position:absolute;inset:0;width:100%;height:100%}
+  .kus svg path{fill:none;stroke:#3a322c;stroke-width:1}
+  .kus .kz{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;
+       width:18px;height:18px;opacity:.55;
+       background:radial-gradient(circle, var(--warm-soft) 0 11%, color-mix(in srgb, var(--warm) 62%, transparent) 32%, transparent 70%);
+       transition:width .6s cubic-bezier(.2,.7,.2,1), height .6s cubic-bezier(.2,.7,.2,1), opacity .6s}
+  .kus.st-run .kz{width:30px;height:30px;opacity:1;animation:nakal var(--dyh) ease-in-out infinite}
+  .kus.st-pause .kz{width:24px;height:24px;opacity:.75}
+  .kus:hover{transform:translate(-3px,-50%)}
+
+  body.tiho .nit, body.tiho .kus .kz, body.tiho .cur::after{animation:none}
+  .podp{font-size:11px;color:#6f665d;margin:-8px 0 12px}
+</style>
+
+<h1>Стенд: язычок в стиле панели</h1>
+<div class="sub">Язычок у правого края страниц — дверь обратно в панель. Сейчас это оранжевая неоновая нить эпохи
+уголька: одного цвета при любом шуме и ярче всего вокруг. Ниже — как сейчас и два варианта по линии дизайна панели.
+Наведи мышь на язычок: он выезжает, как в продукте.</div>
+
+<div class="pult">
+  <span>цвет шума
+    <button class="v on" data-c="brown">brown</button>
+    <button class="v" data-c="pink">pink</button>
+    <button class="v" data-c="white">white</button>
+  </span>
+  <span>состояние
+    <button class="v" data-s="idle">покой</button>
+    <button class="v on" data-s="run">рейс</button>
+    <button class="v" data-s="pause">пауза</button>
+  </span>
+  <span>движение
+    <button class="v on" data-m="1">вкл</button>
+    <button class="v" data-m="0">выкл</button>
+  </span>
+</div>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="gnit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:var(--warm);stop-opacity:0"/>
+      <stop offset=".16" style="stop-color:var(--warm);stop-opacity:.9"/>
+      <stop offset=".5" style="stop-color:var(--warm);stop-opacity:1"/>
+      <stop offset=".84" style="stop-color:var(--warm);stop-opacity:.9"/>
+      <stop offset="1" style="stop-color:var(--warm);stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<div class="setka" id="setka"></div>
+
+<script>
+const GAMMA = { brown:['#ffb055','#ffd9a0'], pink:['#e8a0b4','#ffd8e2'], white:['#dfe4ea','#ffffff'] };
+const KOL = [
+  { k:'cur', h:'Как сейчас', p:'Оранжевая нить с неоновым свечением. Цвет не зависит от шума; в покое тускнеет фильтром.' },
+  { k:'nit', h:'А · нить цвета шума', p:'Та же форма и место. Цвет — цвет шума, линия от руки, свечение тише; тёмная кайма держит её на белой странице.' },
+  { k:'kus', h:'Б · кусочек панели', p:'Тёмная плашка с рамкой от руки, внутри звезда панели: в рейсе дышит, в покое мала и тускла. На белой странице видна сразу.' },
+];
+const stranica = (cls) => `<div class="str ${cls}"><i class="z"></i>${'<i></i>'.repeat(4)}<i class="k"></i>${'<i></i>'.repeat(5)}<i class="k"></i>${'<i></i>'.repeat(3)}<i class="k"></i><div class="yaz"></div></div>`;
+
+// линия от руки: короткие отрезки со стабильным дрожанием (как дуга и рамка панели)
+const drozh = (a) => (Math.random() - .5) * a;
+function nitPath() {                                  // вертикальная нить 8…116 у правого края
+  let d = '';
+  for (let y = 8, i = 0; y <= 116; y += 6, i++) d += (i ? ' L ' : 'M ') + (10 + drozh(.9)).toFixed(1) + ' ' + y;
+  return d;
+}
+function kusPath(w, h) {                              // рамка плашки: верх, скруглённый левый край, низ; правый край открыт
+  const r = 6, pts = [];
+  for (let x = w; x >= r; x -= 3) pts.push([x, .5 + drozh(.6)]);
+  for (let a = 0; a <= 1; a += .25) { const t = -Math.PI/2 - a*Math.PI/2; pts.push([r + r*Math.cos(t) + .5, r + r*Math.sin(t) + .5]); }
+  for (let y = r; y <= h - r; y += 4) pts.push([.5 + drozh(.6), y]);
+  for (let a = 0; a <= 1; a += .25) { const t = Math.PI - a*Math.PI/2; pts.push([r + r*Math.cos(t) + .5, h - r + r*Math.sin(t) - .5]); }
+  for (let x = r; x <= w; x += 3) pts.push([x, h - .5 + drozh(.6)]);
+  return pts.map((p, i) => (i ? 'L ' : 'M ') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+}
+function yazychok(k) {
+  if (k === 'cur') return '<div class="cur yz" title="Open / close"></div>';
+  if (k === 'nit') { const d = nitPath();
+    return `<div class="nit yz" title="Open / close"><svg viewBox="0 0 14 124"><path class="obv" d="${d}"/><path class="sv" d="${d}"/><path class="jila" d="${d}" transform="translate(-.6,0)"/></svg></div>`; }
+  return `<div class="kus yz" title="Open / close"><svg viewBox="0 0 16 66" preserveAspectRatio="none"><path d="${kusPath(16, 66)}"/></svg><div class="kz"></div></div>`;
+}
+
+const setka = document.getElementById('setka');
+KOL.forEach(({ k, h, p }) => {
+  const el = document.createElement('div'); el.className = 'kol';
+  el.innerHTML = `<h2>${h}</h2><p>${p}</p>${stranica('bel')}<div class="podp">белая страница</div>${stranica('tem')}<div class="podp">тёмная страница</div>`;
+  el.querySelectorAll('.yaz').forEach((y) => { y.outerHTML = yazychok(k); });
+  setka.appendChild(el);
+});
+
+let sost = 'run';
+function primenit() {
+  document.querySelectorAll('.yz').forEach((y) => {
+    y.classList.remove('st-idle', 'st-run', 'st-pause'); y.classList.add('st-' + sost);
+    if (y.classList.contains('cur')) {                // как считает glow.js: жар 0,6 в рейсе, потухший в покое
+      const heat = .6, active = sost !== 'idle', glow = active ? heat : -0.7;
+      y.style.setProperty('--lit', active ? (0.5 + heat * 0.45).toFixed(2) : '0.16');
+      y.style.boxShadow = `-${Math.max(4, 9 + glow*9).toFixed(0)}px 0 ${Math.max(8, 24 + glow*22).toFixed(0)}px rgba(255,170,76,${Math.max(.10, .42 + glow*.34).toFixed(2)}), -1px 0 3px rgba(45,22,8,.55)`;
+    }
+  });
+}
+document.querySelector('.pult').addEventListener('click', (e) => {
+  const b = e.target.closest('button'); if (!b) return;
+  b.parentElement.querySelectorAll('button').forEach((x) => x.classList.remove('on')); b.classList.add('on');
+  if (b.dataset.c) { const [w, s] = GAMMA[b.dataset.c]; document.documentElement.style.setProperty('--warm', w); document.documentElement.style.setProperty('--warm-soft', s); }
+  if (b.dataset.s) { sost = b.dataset.s; primenit(); }
+  if (b.dataset.m) document.body.classList.toggle('tiho', b.dataset.m === '0');
+});
+primenit();
+</script>
+</html>

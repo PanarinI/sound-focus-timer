@@ -1,66 +1,79 @@
-Minimalist Timer är en fokustimer med få distraktioner för din webbläsare. En stilla stjärna, ett tomt fält och ett varmt, generativt ljud bär dig genom ett arbetspass – och låter dig landa mjukt i stället för att skrämma dig med ett larm. Inget stök, inga konton. Om fokus annars känns kallt eller mekaniskt är den här byggd för att kännas lugn.
+Brown Noise Generator är en lugn plats att arbeta och plugga på, direkt i din webbläsare. Den skapar ett varmt, djupt ljud live på din egen enhet och lägger en mjuk fokustimer runt det. Öppna den i sidopanelen, tryck på Start, och rummet blir tyst: röster, tangentbord och gatuljud sjunker under en mjuk, jämn ljudvägg. Inga annonser, inget konto, ingen videoflik att hålla igång.
 
-Ställ in din tid, tryck på start och stanna i flowet.
+🌟 Varför den här generatorn för brunt brus (brown noise)
+- ➤ Ljud som genereras live — ingen kort inspelning som upprepas
+- ➤ En generator för vitt brus (white noise), rosa brus och brunt brus i en: tre färger, ett tryck var
+- ➤ Brunt brus utan annonser, utan buffring, inget som avbryts halvvägs
+- ➤ Presets för verkliga rum: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ En mjuk timer: 5, 15, 25, 45 eller 90 minuter, eller utan slut alls
+- ➤ Finns i Chromes sidopanel och fortsätter spela när du stänger den
+- ➤ Ljud och timer körs på din enhet: ingen registrering, och den fungerar offline
 
-🌟 Varför den här minimalistiska timern
-- ➤ Ren, minimalistisk design – en lugn scen, inget som drar i din uppmärksamhet
-- ➤ Varmt brown noise och milda fokusljud inbyggda – din tid är bokstavligen gjord av ljud
-- ➤ En mjuk start och en mjuk landning – inget gällt larm när passet tar slut
-- ➤ Flexibla pass: 5, 15, 25, 45, 90 minuter eller utan bortre gräns
-- ➤ Körs tyst i din sidopanel medan du jobbar – ljudet fortsätter spela mellan flikar
-- ➤ Helt på din enhet: privat i grunden, fungerar offline, ingen registrering
+🔊 Så låter en generator för brunt brus
+Brunt brus, även kallat brownskt brus, håller det mesta av sin energi lågt — närmare avlägsen bränning eller suset i en flygplanskabin än statiskt brus. Den här generatorn bygger det på din maskin i realtid, så det loopar aldrig: ett jämnt brunt brus med lite luft ovanpå, fullt nog att fylla ett rum och mjukt nog att glömma bort. Det är gjort för att vara djupt brunt brus för koncentration: nog för att täcka rummet, mjukt nog för att glida ur din uppmärksamhet.
 
-🔊 Ljud som håller ditt fokus
-Tysta nedräkningar är normen. Den här sveper in ditt pass i varmt brown noise – ett mjukt, lågt, generativt ljud (ingen kort loop) som maskerar bakgrundsljud och hjälper dig att landa. Föredrar du lugna fokusljud framför låtar? Det här är lugnare än fokusmusik och mildare än skarpt white noise. Oavsett om det är brown noise för plugg, ambient-ljud för fokus, deep work eller bara för att lugna ett rastlöst sinne – ljudet driver långsamt och upprepas aldrig.
+Se det som en ambient-generator utan inspelningar — ett rent, genererat ljud i stället för regn och fåglar i en loop.
 
-🎯 En fokus- och studietimer i ett
-Oavsett om du behöver en fokustimer för deep work, en studietimer för långa pass eller en lugn arbetstimer för kontoret håller gränssnittet sig undan:
-1. En minimalistisk fokustimer för koncentration och flow
-2. En minimalistisk studietimer för läsning, skrivande och repetition
-3. En lugn produktivitetstimer och koncentrationstimer för uppgifter
-4. En estetisk pomodoro-timer för dig som vill ha känslan utan stela 25/5-cykler
+Två reglage formar det: masking breddar väggen tills röster i närheten suddas ut, och stimulation gör det ljusare när du behöver energi, lägre när du behöver lugn.
 
-🎨 Estetisk och minimal
-Om du älskar en estetisk timer eller en söt timer på skärmen håller den här minimalistiska nedräkningstimern allt vackert och enkelt: en varm stjärna som kommer närmare medan passet pågår, i ett stilla, öppet rum. Inga siffror som skriker åt dig, ingen press – bara en ren, estetisk minimalistisk timer som är skön att vila ögonen på.
+🎨 Brunt, rosa eller vitt
+Brunt är standard eftersom det är djupast och varmast. En generator för rosa brus är ett tryck bort, ett steg ljusare, och vitt brus för fokus finns också — det ljusaste av de tre. Många svär vid vitt brus för plugg, medan andra tycker det blir skarpt efter en timme. Prova varje färg och behåll den dina öron slutar lägga märke till. Panelens ljus följer färgen du väljer.
 
-🧠 Skonsam mot din uppmärksamhet
-Den är byggd för att vara snäll mot hur uppmärksamhet faktiskt fungerar. Om du har svårt att känna hur tiden går, eller vill ha en visuell timer som gör tiden verklig utan stress, ger stjärnan dig en mjuk känsla av framsteg. Den fungerar fint som ett lugnt ADHD-timer-alternativ – ett som lotsar dig in i och ut ur fokus i stället för att bestraffa dig. Den kallar tillbaka dig; den burar inte in dig.
+🏢 Presets för rummet du är i
+Välj var du är, så ställs ljudet in åt dig:
+1. open office — den bredaste väggen, för röster i närheten
+2. thin walls — mer tyngd i lågregistret, för en granne eller en tv
+3. café — lättare, så att sorlet runt dig smälter in
+4. deep reading — tyst och jämnt, för ett lugnt rum
+5. racing thoughts — mer stimulation, när det är högljutt inuti huvudet
+6. too much — mjukare och tystare, för överbelastade dagar
 
-💡 Inga konton, inga annonser och ingen data lämnar någonsin din enhet – bara ett lugnt, privat utrymme att fokusera i, precis så som din hjärna fungerar.
+Om du kom hit och letade efter en generator för vitt brus mot kontorssorl, börja med open office. Det fungerar som enkel ljudmaskering för ditt skrivbord, och du kan byta till vitt brus för arbete om du föredrar det ljusare. Rör vilket reglage som helst och presetet blir custom. Presets ändrar aldrig längden på ditt pass.
+
+⏱ En timer som håller sig undan
+Timern finns där när du vill ha den. Dra ratten till 5, 15, 25, 45 eller 90 minuter, eller tryck på ∞ och låt ljudet gå utan slut. Nedräkningen ligger tyst inbäddad i ratten. När tiden är slut hörs inget larm: ljudet ljusnar och tonar ut under ungefär fyrtio sekunder, så att du dyker upp i stället för att ryckas upp ur fokus.
+
+Använd den som en fokustimer för en uppgift, en arbetstimer för nästa timme, eller en minimalistisk timer som helt enkelt håller reda på tiden åt dig. De som tycker vanliga nedräkningar är stressiga använder den ofta som en mild ADHD-timer — den leder dig ut ur fokus i stället för att slita dig ut.
+
+🧠 För fokus, plugg och ett rastlöst sinne
+Folk vänder sig till brunt brus för plugg, brunt brus för arbete och brunt brus vid ADHD — för att lugna ett högljutt rum eller ett rastlöst sinne. Vi lovar inget om hjärnan: forskningen är splittrad, och inget ljud fungerar för alla. Det vi erbjuder är en bra grund — stadigt bakgrundsljud för plugg, fokusljud som inte flyttar sig under dig, och ett ljud du kan forma tills det hjälper. Detsamma gäller vitt brus vid ADHD eller vilket annat fokusljud som helst: välj färgen, behåll det som funkar.
 
 🖥 Så fungerar det
-1️⃣ Öppna den minimalistiska timern från verktygsfältet
-2️⃣ Dra för att ställa in din tid – 5 till 90 minuter, eller ∞
-3️⃣ Tryck på stjärnan – varmt ljud börjar och du glider in i fokus
-4️⃣ När tiden är ute landar passet mjukt, utan larm
-5️⃣ Stäng panelen när du vill – ljudet fortsätter
+1️⃣ Klicka på ikonen — Brown Noise Generator öppnas i Chromes sidopanel
+2️⃣ Välj ett preset för ditt rum, eller ställ in volume, masking, stimulation och tone själv
+3️⃣ Ställ in ratten, eller tryck på ∞ för inget slut
+4️⃣ Tryck på Start för att spela brunt brus; tryck på stjärnan för att pausa och återuppta
+5️⃣ Stäng panelen — ljudet fortsätter tills ditt pass landar
 
-Som ett lättviktigt pomodoro-Chrome-tillägg och en skrivbordstimer stannar den precis där du jobbar – inget extra fönster, ingen ny flik som tar över, inga distraktioner.
+Den fungerar som en generator för brunt brus online, men den lever i din webbläsare och behöver ingen uppkoppling när den väl är installerad. Det finns ingen video med svart skärm och brunt brus att låta rulla och ingen flik att hålla öppen: se den som en app för brunt brus till skrivbordet, ett lättviktigt Chrome-tillägg vid sidan av ditt arbete.
+
+👀 En bild som följer ljudet
+Medan ljudet spelar rör sig ett fint korn över panelen: grövre för brunt, finast för vitt, snabbare med mer stimulation. Om rörelsen stör dig, stäng av motion i hörnet.
 
 📌 Perfekt för
-- ▸ Deep work, skrivande, kodning och läsning
-- ▸ Studenter som vill ha en estetisk studietimer som ser lugn ut
-- ▸ Alla som tycker att vanliga nedräkningar är kalla, högljudda eller stressande
-- ▸ Dig som fokuserar bättre med varmt bakgrundsljud
+- ▸ Öppna kontor, delade lägenheter och livliga kaféer
+- ▸ Studenter som vill ha lugna pluggljud för långa kvällar
+- ▸ Skrivande, kodning och läsning, när du vill ha brunt brus för fokus
+- ▸ Alla som är trötta på annonser som stör deras fokusljud
 
 ❓ Vanliga frågor
 
-🧐 Måste jag betala eller registrera mig?
-➤ Nej – allt är tillgängligt från start, utan konto och utan registrering.
+🧐 Behöver jag ett konto?
+➤ Nej. Det finns ingen registrering, inga annonser, och inget att logga in på.
 
-🧐 Hur skiljer sig ljudet från andra timers?
-➤ I stället för en tyst nedräkning är din tid gjord av varmt brown noise och mjuka fokusljud som maskerar distraktioner och hjälper dig att stanna i flowet.
+🧐 Finns det en app med generator för brunt brus till min mobil?
+➤ Inte än. Det här är ett Chrome-tillägg för dator- och laptopwebbläsare.
+
+🧐 Kan jag byta till vitt eller rosa?
+➤ Ja. De tre punkterna i övre hörnet växlar mellan brunt, rosa och vitt.
+
+🧐 Slutar ljudet om jag stänger panelen eller byter flik?
+➤ Nej. Det fortsätter spela medan ditt pass pågår, på vilken flik som helst.
 
 🧐 Fungerar den offline?
-➤ Ja. Allt körs på din enhet, så den här minimalistiska timern fungerar utan uppkoppling och spårar dig aldrig.
+➤ Ja. Generatorn för brunt brus och timern körs helt på din enhet.
 
-🧐 Kan jag använda den för pomodoro?
-➤ Du kan ställa in klassiska fokuslängder, men det finns inga påtvingade pauser – det är en mjukare, minimalistisk pomodoro-timer byggd kring flow, inte stela cykler.
+🧐 Kan den spela hela dagen?
+➤ Ja. Tryck på ∞ och den spelar tills du trycker på Finish.
 
-🧐 Är den bra för fokus och plugg?
-➤ Ja – den är gjord som en lugn fokus- och studietimer, med varmt ljud och en mjuk bild som hjälper dig att koncentrera dig och skydda din deep work.
-
-🧐 Slutar ljudet om jag byter flik?
-➤ Nej – fokusljuden fortsätter spela mellan flikar medan passet pågår.
-
-Ställ in din tid, tryck på start och låt en minimalistisk timer bära ditt fokus. ⭐
+Öppna Brown Noise Generator, välj ditt rum, och låt ljudet hålla rummet medan du arbetar. ⭐

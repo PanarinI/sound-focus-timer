@@ -1,66 +1,79 @@
-Minimalist Timer je timer za fokus s malo ometanja, u vašem pregledniku. Jedna tiha zvijezda, prazno polje i topao generativni zvuk koji vas nosi kroz radnu sesiju — a zatim vam dopušta da meko sletite umjesto da vas trgne alarm. Bez nereda, bez računa. Ako vam se fokus obično čini hladnim ili mehaničkim, ovaj je stvoren da se osjeća smireno.
+Brown Noise Generator je mirno mjesto za rad i učenje, izravno u vašem pregledniku. Uživo gradi topao, dubok zvuk na vašem uređaju i omata ga blagim tajmerom za fokus. Otvorite ga u bočnoj ploči, pritisnite Start — i prostorija utihne: glasovi, tipkovnice i ulična buka tonu ispod mekog, ravnomjernog zida zvuka. Bez oglasa, bez računa, bez video kartice koju morate držati aktivnom.
 
-Postavite vrijeme, pritisnite start i ostanite u flowu.
+🌟 Zašto baš ovaj generator smeđeg šuma
+- ➤ Zvuk se generira uživo — nije kratka snimka koja se ponavlja
+- ➤ Generator bijelog, ružičastog i smeđeg šuma u jednom: tri boje, jedan dodir za svaku
+- ➤ Smeđi šum bez oglasa, bez baferiranja — ništa što se prekida na pola puta
+- ➤ Predlošci za stvarne prostorije: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Blagi tajmer: 5, 15, 25, 45 ili 90 minuta, ili posve bez kraja
+- ➤ Živi u bočnoj ploči Chromea i nastavlja svirati kad je zatvorite
+- ➤ Zvuk i tajmer rade na vašem uređaju: bez registracije, radi offline
 
-🌟 Zašto ovaj minimalistički timer
-- ➤ Čist, minimalistički dizajn — jedna smirena scena, ništa vam ne odvlači pažnju
-- ➤ Ugrađen topao brown noise i nježni zvukovi za fokus — vaše je vrijeme doslovno satkano od zvuka
-- ➤ Mekan početak i mekano slijetanje — bez naglog alarma kad sesija završi
-- ➤ Fleksibilne sesije: 5, 15, 25, 45, 90 minuta ili bez ograničenja
-- ➤ Tiho radi u bočnoj ploči dok radite — zvuk se nastavlja reproducirati kroz sve kartice
-- ➤ U potpunosti na uređaju: privatan po dizajnu, radi offline, bez registracije
+🔊 Kako zvuči generator smeđeg šuma
+Smeđi šum, koji se naziva i Brownov šum, zadržava veći dio svoje energije nisko — bliži je dalekom valovima ili brujanju kabine zrakoplova nego statičkom šumu. Ovaj generator Brownova šuma gradi ga na vašem uređaju u stvarnom vremenu, pa se nikad ne ponavlja u petlji: gladak smeđi šum s malo zraka na vrhu, dovoljno pun da ispuni prostoriju i dovoljno mekan da se zaboravi. Osmišljen je kao dubok smeđi šum za koncentraciju: dovoljan da prekrije prostoriju, dovoljno mekan da izblijedi iz vaše pažnje.
 
-🔊 Zvuk koji drži vaš fokus
-Tiha odbrojavanja su pravilo. Ovaj vašu sesiju obavija toplim brown noiseom — mekim, dubokim, generativnim zvukom (a ne kratkom petljom) koji maskira ometanja u pozadini i pomaže vam da se smjestite. Više volite tihe zvukove za fokus nego pjesme? Ovaj ostaje smireniji od glazbe za fokus i nježniji od oštrog white noisea za koncentraciju. Bilo da je riječ o brown noiseu za učenje, ambijentalnim zvukovima za fokus, deep work ili jednostavno smirivanju užurbanog uma — zvuk polako lebdi i nikad se ne ponavlja.
+Zamislite ga kao ambijentalni generator zvuka bez snimki — jedan čist, generirani zvuk umjesto kiše i ptica u petlji.
 
-🎯 Timer za fokus i učenje u jednom
-Bilo da vam treba timer za fokus za deep work, timer za učenje za duge sesije ili smiren radni timer za ured — sučelje vam se ne isprječuje:
-1. Minimalistički timer za fokus, za koncentraciju i flow
-2. Minimalistički timer za učenje — za čitanje, pisanje i ponavljanje
-3. Smiren timer za produktivnost i koncentraciju za vaše zadatke
-4. Estetski pomodoro timer za one koji žele osjećaj bez krutih ciklusa 25/5
+Dva gumba oblikuju zvuk: masking (maskiranje) širi zid dok se obližnji glasovi ne stope, a stimulation (stimulacija) čini ga svjetlijim kad vam treba energija, a nižim kad vam treba mir.
 
-🎨 Estetski i minimalan
-Ako volite estetski timer ili sladak timer na svom ekranu, ovaj minimalistički timer s odbrojavanjem sve drži lijepim i jednostavnim: topla zvijezda koja se približava kako sesija odmiče, unutar tihog, otvorenog prostora. Nema brojki koje viču na vas, nema pritiska — samo čist, estetski minimalistički timer na koji je ugodno gledati.
+🎨 Smeđi, ružičasti ili bijeli
+Smeđi je zadani jer je najdublji i najtopliji. Generator ružičastog šuma udaljen je jedan dodir, korak svjetliji, a tu je i bijeli šum za fokus — najsvjetliji od sva tri. Mnogi se kunu u bijeli šum za učenje, dok se drugima nakon sat vremena čini oštrim. Isprobajte svaku boju i zadržite onu koju vaše uši prestanu primjećivati. Svjetlo ploče prati boju koju odaberete.
 
-🧠 Nježan prema vašoj pažnji
-Osmišljen je da bude blag prema tome kako pažnja zapravo funkcionira. Ako se borite s gubitkom osjećaja za vrijeme ili želite vizualni timer koji čini vrijeme opipljivim bez stresa, zvijezda vam daje mekan osjećaj napretka. Odlično funkcionira kao smirena alternativa ADHD timeru — ona koja vas uvodi u fokus i izvodi iz njega umjesto da vas kažnjava. Ona vas doziva; ne zatvara vas u kavez.
+🏢 Predlošci za prostoriju u kojoj ste
+Odaberite gdje se nalazite, i zvuk se podešava za vas:
+1. open office — najširi zid, za glasove u blizini
+2. thin walls — više težine u niskim tonovima, za susjeda ili televizor
+3. café — lakše, da se žamor oko vas stopi s pozadinom
+4. deep reading — tiho i ravnomjerno, za mirnu prostoriju
+5. racing thoughts — više stimulation, kad je bučno u vašoj glavi
+6. too much — mekše i tiše, za preopterećene dane
 
-💡 Bez računa, bez oglasa i bez podataka koji ikad napuštaju vaš uređaj — samo smiren, privatan prostor za fokus, kako god vaš mozak radi.
+Ako ste tražili generator bijelog šuma za žamor u uredu, počnite s open office. Radi kao jednostavno maskiranje zvuka za vaš radni stol, a možete prijeći na bijeli šum za rad ako vam odgovara svjetlije. Dodirnite bilo koji gumb i predložak postaje custom. Predlošci nikad ne mijenjaju duljinu vaše sesije.
+
+⏱ Tajmer koji vam ne smeta
+Tajmer je tu kad vam zatreba. Povucite brojčanik na 5, 15, 25, 45 ili 90 minuta, ili pritisnite ∞ i pustite zvuk da traje bez kraja. Odbrojavanje tiho stoji unutar brojčanika. Kad vrijeme istekne, nema alarma: zvuk se razvedri i utihne za oko četrdeset sekundi, tako da isplivate na površinu umjesto da vas trgne.
+
+Koristite ga kao tajmer za fokus za jedan zadatak, radni tajmer za sljedeći sat, ili minimalistički tajmer koji jednostavno čuva vrijeme umjesto vas. Ljudi kojima je uobičajeno odbrojavanje stresno često ga koriste kao blagi tajmer za ADHD — on vas izvodi iz fokusa umjesto da vas naglo izvlači.
+
+🧠 Za fokus, učenje i nemiran um
+Ljudi posežu za smeđim šumom za učenje, smeđim šumom za rad i smeđim šumom za ADHD — da utišaju bučnu prostoriju ili bučnu glavu. Mi ne dajemo nikakva obećanja o mozgu: istraživanja su neujednačena, i nijedan zvuk ne djeluje na sve. Ono što nudimo je dobro podešavanje — ravnomjeran zvuk u pozadini za učenje, zvukovi za fokus koji se ne pomiču ispod vas, i zvuk koji možete oblikovati dok ne pomogne. Isto vrijedi i za bijeli šum za ADHD ili bilo koji drugi zvuk za fokus: odaberite boju i zadržite ono što djeluje.
 
 🖥 Kako radi
-1️⃣ Otvorite minimalistički timer iz alatne trake
-2️⃣ Povucite klizač da postavite vrijeme — od 5 do 90 minuta ili ∞
-3️⃣ Dodirnite zvijezdu — topao zvuk počinje i vi uranjate u fokus
-4️⃣ Kad vrijeme istekne, sesija meko slijeće, bez alarma
-5️⃣ Zatvorite ploču kad god želite — zvuk se nastavlja
+1️⃣ Kliknite na ikonu — Brown Noise Generator se otvara u bočnoj ploči Chromea
+2️⃣ Odaberite predložak za svoju prostoriju, ili sami podesite volume, masking, stimulation i tone
+3️⃣ Podesite brojčanik, ili pritisnite ∞ za bez kraja
+4️⃣ Pritisnite Start da pustite smeđi šum; dodirnite zvijezdu da pauzirate i nastavite
+5️⃣ Zatvorite ploču — zvuk se nastavlja dok se vaša sesija ne završi
 
-Kao lagana pomodoro Chrome ekstenzija i timer za računalo, ostaje točno ondje gdje radite — bez dodatnog prozora, bez preuzimanja nove kartice, bez ometanja.
+Radi kao online generator smeđeg šuma, ali živi u vašem pregledniku i ne treba mu veza nakon instalacije. Nema video snimke s crnim ekranom i smeđim šumom koju morate ostaviti da radi, i nema kartice koju morate držati otvorenom: zamislite ga kao aplikaciju sa smeđim šumom za vaše računalo — lagano proširenje za Chrome pored vašeg posla.
+
+👀 Slika koja prati zvuk
+Dok zvuk svira, sitno zrno se pomiče preko ploče: krupnije za smeđi, najfinije za bijeli, brže uz više stimulation. Ako vam smeta pokret, isključite motion u kutu.
 
 📌 Izvrstan za
-- ▸ Deep work, pisanje, programiranje i čitanje
-- ▸ Studente koji žele estetski timer za učenje smirenog izgleda
-- ▸ Sve kojima su obična odbrojavanja hladna, glasna ili stresna
-- ▸ Ljude koji se bolje koncentriraju uz topao zvuk u pozadini
+- ▸ Otvorene urede, dijeljene stanove i bučne kafiće
+- ▸ Studente koji žele mirne zvukove za učenje tijekom dugih večeri
+- ▸ Pisanje, programiranje i čitanje, kad vam treba smeđi šum za fokus
+- ▸ Sve koji su umorni od oglasa koji upadaju u njihove zvukove za fokus
 
 ❓ Česta pitanja
 
-🧐 Moram li plaćati ili se registrirati?
-➤ Ne — sve je dostupno od početka, bez računa i bez registracije.
+🧐 Trebam li račun?
+➤ Ne. Nema registracije, nema oglasa, i nema se gdje prijaviti.
 
-🧐 Po čemu se zvuk razlikuje od drugih timera?
-➤ Umjesto tihog odbrojavanja, vaše je vrijeme satkano od toplog brown noisea i mekih zvukova za fokus koji maskiraju ometanja i pomažu vam da ostanete u flowu.
+🧐 Postoji li generator smeđeg šuma za moj telefon?
+➤ Još ne. Ovo je Chrome ekstenzija za preglednike na stolnim i prijenosnim računalima.
+
+🧐 Mogu li prebaciti na bijeli ili ružičasti?
+➤ Da. Tri točke u gornjem kutu prebacuju između smeđeg, ružičastog i bijelog.
+
+🧐 Zaustavlja li se zvuk ako zatvorim ploču ili promijenim karticu?
+➤ Ne. Nastavlja svirati dok traje vaša sesija, na bilo kojoj kartici.
 
 🧐 Radi li offline?
-➤ Da. Sve radi na uređaju, pa ovaj minimalistički timer radi bez veze i nikad vas ne prati.
+➤ Da. Generator smeđeg šuma i tajmer rade u potpunosti na vašem uređaju.
 
-🧐 Mogu li ga koristiti za pomodoro?
-➤ Možete postaviti klasična trajanja fokusa, ali nema nametnutih pauza — to je nježniji, minimalistički pomodoro timer izgrađen oko flowa, a ne oko krutih ciklusa.
+🧐 Može li svirati cijeli dan?
+➤ Da. Pritisnite ∞ i svira dok ne pritisnete Finish.
 
-🧐 Je li dobar za fokus i učenje?
-➤ Da — osmišljen je kao smiren timer za fokus i učenje, s toplim zvukom i mekim vizualom koji vam pomažu da se koncentrirate i zaštitite deep work.
-
-🧐 Prestaje li zvuk ako promijenim karticu?
-➤ Ne — zvukovi za fokus nastavljaju svirati kroz sve kartice dok vaša sesija traje.
-
-Postavite vrijeme, pritisnite start i pustite da minimalistički timer nosi vaš fokus. ⭐
+Otvorite Brown Noise Generator, odaberite svoju prostoriju, i pustite da zvuk čuva prostor dok radite. ⭐

@@ -1,66 +1,79 @@
-Minimalist Timer est un minuteur de concentration peu distrayant pour ton navigateur. Une étoile paisible, un champ vide et un son génératif chaleureux qui te porte à travers une session de travail — puis te laisse atterrir en douceur au lieu de te réveiller en sursaut avec une alarme. Pas d'encombrement, pas de comptes. Si la concentration te semble d'habitude froide ou mécanique, celui-ci est conçu pour être apaisant.
+Brown Noise Generator est un endroit calme pour travailler et étudier, directement dans ton navigateur. Il crée en direct, sur ton propre appareil, un son chaud et grave, et l'enveloppe d'un minuteur de concentration doux. Ouvre-le dans le panneau latéral, appuie sur Start, et la pièce devient silencieuse : les voix, les claviers et les bruits de rue s'effacent sous un mur de son doux et régulier. Pas de pub, pas de compte, pas d'onglet vidéo à garder ouvert.
 
-Règle ton temps, appuie sur démarrer et reste dans le flow.
+🌟 Pourquoi ce générateur de bruit brun
+- ➤ Le son est généré en direct — pas un court enregistrement en boucle
+- ➤ Un générateur de bruit blanc, rose et brun en un seul : trois couleurs, chacune en un geste
+- ➤ Bruit brun sans pub, sans mise en mémoire tampon, rien qui casse en plein milieu
+- ➤ Des préréglages pour de vraies pièces : open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Un minuteur doux : 5, 15, 25, 45 ou 90 minutes, ou sans fin du tout
+- ➤ Vit dans le panneau latéral de Chrome et continue de jouer quand tu le fermes
+- ➤ Le son et le minuteur tournent sur ton appareil : sans inscription, et ça marche hors ligne
 
-🌟 Pourquoi ce timer Pomodoro minimaliste
-- ➤ Design épuré et minimaliste — une scène calme, rien qui tire sur ton attention
-- ➤ Brown noise chaleureux et sons de concentration doux intégrés — ton temps est littéralement fait de son
-- ➤ Un démarrage doux et un atterrissage doux — pas d'alarme brutale quand la session se termine
-- ➤ Sessions flexibles : 5, 15, 25, 45, 90 minutes, ou libre
-- ➤ Fonctionne discrètement dans ton panneau latéral pendant que tu travailles — le son continue d'un onglet à l'autre
-- ➤ Entièrement sur l'appareil : privé par conception, fonctionne hors ligne, sans inscription
+🔊 À quoi ressemble un générateur de bruit brun
+Le bruit brun, aussi appelé bruit brownien, garde l'essentiel de son énergie dans les graves — plus proche d'un ressac lointain ou du ronronnement d'une cabine d'avion que d'un grésillement statique. Ce générateur de bruit brownien le crée sur ta machine en temps réel, donc il ne boucle jamais : un bruit brun doux avec un peu d'air par-dessus, assez plein pour remplir une pièce et assez doux pour se faire oublier. Il est pensé comme un bruit brun profond pour la concentration : assez pour couvrir la pièce, assez doux pour s'effacer de ton attention.
 
-🔊 Un son qui soutient ta concentration
-Les comptes à rebours silencieux sont la norme. Celui-ci enveloppe ta session dans un brown noise chaleureux — un son doux, grave et génératif (pas une courte boucle) qui masque les distractions de fond et t'aide à te poser. Tu préfères des sons de concentration calmes plutôt que de la musique ? Celui-ci reste plus calme que la musique de concentration et plus doux qu'un bruit blanc agressif. Que ce soit du brown noise pour étudier, des sons d'ambiance pour le deep work ou simplement pour apaiser un esprit agité, le son dérive lentement et ne se répète jamais.
+Vois-le comme un générateur de son d'ambiance sans enregistrements — un son propre et généré, plutôt que de la pluie et des oiseaux en boucle.
 
-🎯 Un minuteur de concentration et d'étude en un
-Que tu aies besoin d'un minuteur de concentration pour le deep work, d'un minuteur d'étude pour de longues sessions ou d'un minuteur de travail calme pour le bureau, il garde l'interface hors de ton chemin :
-1. Un minuteur de concentration minimaliste pour l'attention et le flow
-2. Un minuteur d'étude minimaliste pour lire, écrire et réviser
-3. Un minuteur de productivité et de concentration calme pour les tâches
-4. Un timer Pomodoro esthétique pour qui veut l'ambiance sans les cycles rigides de 25/5
+Deux réglages le façonnent : masking (masquage) élargit le mur jusqu'à ce que les voix proches se brouillent, et stimulation le rend plus clair quand tu as besoin d'énergie, plus grave quand tu as besoin de calme.
 
-🎨 Esthétique et minimal
-Si tu aimes un minuteur esthétique ou joli sur ton écran, ce minuteur à rebours minimaliste garde tout beau et simple : une étoile chaleureuse qui se rapproche au fil de ta session, dans un espace calme et ouvert. Pas de chiffres qui te crient dessus, pas de pression — juste un minuteur minimaliste esthétique qu'il fait du bien de regarder.
+🎨 Brun, rose ou blanc
+Le brun est la couleur par défaut, car c'est la plus grave et la plus chaude. Un générateur de bruit rose est à un geste de là, un cran plus clair, et le bruit blanc pour la concentration est là aussi — le plus clair des trois. Beaucoup jurent par le bruit blanc pour étudier, tandis que d'autres le trouvent trop vif au bout d'une heure. Essaie chaque couleur et garde celle que tes oreilles cessent de remarquer. La lumière du panneau suit la couleur que tu choisis.
 
-🧠 Doux avec ton attention
-Il est conçu pour respecter la façon dont l'attention fonctionne vraiment. Si tu luttes contre la cécité au temps ou veux un minuteur visuel qui rend le temps réel sans stress, l'étoile te donne une douce sensation de progression. Il fonctionne bien comme une alternative de minuteur TDAH apaisante — une qui te guide vers la concentration et en ressort, au lieu de te punir. Il te rappelle ; il ne t'enferme pas.
+🏢 Des préréglages pour la pièce où tu es
+Choisis où tu es, et le son se règle pour toi :
+1. open office — le mur le plus large, pour des voix proches
+2. thin walls — plus de poids dans les graves, pour un voisin ou une télé
+3. café — plus léger, pour que le bourdonnement autour de toi se fonde dedans
+4. deep reading — calme et régulier, pour une pièce tranquille
+5. racing thoughts — plus de stimulation, quand c'est bruyant dans ta tête
+6. too much — plus doux et plus discret, pour les jours de surcharge
 
-💡 Pas de comptes, pas de publicités, et aucune donnée ne quitte jamais ton appareil — juste un espace calme et privé pour te concentrer, quel que soit le fonctionnement de ton esprit.
+Si tu cherchais un générateur de bruit blanc pour le brouhaha de bureau, commence par open office. Ça marche comme un simple masquage sonore pour ton bureau, et tu peux passer au bruit blanc pour le travail si tu le préfères plus clair. Touche un réglage, et le préréglage devient custom. Les préréglages ne changent jamais la durée de ta session.
+
+⏱ Un minuteur qui reste discret
+Le minuteur est là quand tu en as besoin. Fais glisser le cadran sur 5, 15, 25, 45 ou 90 minutes, ou appuie sur ∞ et laisse le son tourner sans fin. Le compte à rebours reste discret à l'intérieur du cadran. Quand le temps est écoulé, il n'y a pas d'alarme : le son s'éclaircit et s'estompe en une quarantaine de secondes, pour que tu refasses surface au lieu d'être arraché au sommeil.
+
+Utilise-le comme minuteur de concentration pour une tâche, minuteur de travail pour l'heure qui vient, ou minuteur minimaliste qui garde simplement le temps pour toi. Les personnes qui trouvent les comptes à rebours ordinaires stressants l'utilisent souvent comme un minuteur TDAH tout en douceur — il t'accompagne hors de la concentration au lieu de t'en arracher.
+
+🧠 Pour la concentration, l'étude et un esprit agité
+Les gens se tournent vers le bruit brun pour étudier, le bruit brun pour travailler et le bruit brun pour le TDAH — pour apaiser une pièce bruyante ou une tête bruyante. Nous ne faisons aucune promesse sur le cerveau : la recherche est partagée, et aucun son ne fonctionne pour tout le monde. Ce que nous proposons, c'est un bon réglage — un bruit de fond régulier pour étudier, des sons de concentration qui ne bougent pas sous toi, et un son que tu peux façonner jusqu'à ce qu'il t'aide. C'est pareil pour le bruit blanc pour le TDAH ou tout autre son de concentration : choisis la couleur, garde ce qui marche.
 
 🖥 Comment ça marche
-1️⃣ Ouvre le minuteur minimaliste depuis ta barre d'outils
-2️⃣ Fais glisser pour régler ton temps — de 5 à 90 minutes, ou ∞
-3️⃣ Touche l'étoile — le son chaleureux commence et tu glisses dans la concentration
-4️⃣ Quand le temps est écoulé, la session atterrit en douceur, sans alarme
-5️⃣ Ferme le panneau quand tu veux — le son continue
+1️⃣ Clique sur l'icône — Brown Noise Generator s'ouvre dans le panneau latéral de Chrome
+2️⃣ Choisis un préréglage pour ta pièce, ou règle toi-même volume, masking, stimulation et tone
+3️⃣ Règle le cadran, ou appuie sur ∞ pour ne pas mettre de fin
+4️⃣ Appuie sur Start pour jouer du bruit brun ; touche l'étoile pour mettre en pause et reprendre
+5️⃣ Ferme le panneau — le son continue jusqu'à ce que ta session touche terre
 
-En tant qu'extension Pomodoro légère pour Chrome et minuteur de bureau, il reste là où tu travailles — pas de fenêtre supplémentaire, pas de prise de contrôle du nouvel onglet, pas de distractions.
+Ça marche comme un générateur de bruit brun en ligne, mais ça vit dans ton navigateur et n'a besoin d'aucune connexion une fois installé. Il n'y a pas de vidéo bruit brun écran noir à laisser tourner, ni d'onglet à garder ouvert : vois-le comme une application de bruit brun pour ton bureau, une extension Chrome légère à côté de ton travail.
+
+👀 Une image qui suit le son
+Pendant que le son joue, un grain fin se déplace sur le panneau : grossier pour le brun, le plus fin pour le blanc, plus rapide avec plus de stimulation. Si le mouvement te dérange, désactive motion dans le coin.
 
 📌 Idéal pour
-- ▸ Le deep work, l'écriture, le code et la lecture
-- ▸ Les étudiants qui veulent un minuteur d'étude esthétique à l'air calme
-- ▸ Tous ceux qui trouvent les comptes à rebours ordinaires froids, bruyants ou stressants
-- ▸ Les personnes qui se concentrent mieux avec un son de fond chaleureux
+- ▸ Les open spaces, les colocations et les cafés animés
+- ▸ Les étudiants qui veulent des sons d'étude calmes pour de longues soirées
+- ▸ L'écriture, le code et la lecture, quand tu veux du bruit brun pour la concentration
+- ▸ Tous ceux qui en ont assez que la pub s'invite dans leurs sons de concentration
 
 ❓ FAQ
 
-🧐 Dois-je payer ou m'inscrire ?
-➤ Non — tout est disponible dès le départ, sans compte et sans inscription.
+🧐 Ai-je besoin d'un compte ?
+➤ Non. Il n'y a pas d'inscription, pas de pub, et rien où te connecter.
 
-🧐 En quoi le son diffère-t-il des autres minuteurs ?
-➤ Au lieu d'un compte à rebours silencieux, ton temps est fait de brown noise chaleureux et de sons de concentration doux qui masquent les distractions et t'aident à rester dans le flow.
+🧐 Y a-t-il un générateur de bruit brun pour mon téléphone ?
+➤ Pas encore. C'est une extension Chrome pour les navigateurs de bureau et d'ordinateur portable.
 
-🧐 Fonctionne-t-il hors ligne ?
-➤ Oui. Tout fonctionne sur l'appareil, donc ce minuteur minimaliste fonctionne sans connexion et ne te suit jamais.
+🧐 Puis-je passer au blanc ou au rose ?
+➤ Oui. Les trois points dans le coin en haut permettent de passer du brun au rose et au blanc.
 
-🧐 Puis-je l'utiliser pour Pomodoro ?
-➤ Tu peux régler des durées de concentration classiques, mais il n'y a pas de pauses forcées — c'est un timer Pomodoro minimaliste plus doux, construit autour du flow, pas de cycles rigides.
+🧐 Le son s'arrête-t-il si je ferme le panneau ou change d'onglet ?
+➤ Non. Il continue de jouer tant que ta session tourne, sur n'importe quel onglet.
 
-🧐 Est-il bon pour la concentration et les études ?
-➤ Oui — il est pensé comme un minuteur calme de concentration et d'étude, avec un son chaleureux et un visuel doux pour t'aider à te concentrer et protéger le deep work.
+🧐 Est-ce que ça marche hors ligne ?
+➤ Oui. Le générateur de bruit brun et le minuteur tournent entièrement sur ton appareil.
 
-🧐 Le son s'arrête-t-il si je change d'onglet ?
-➤ Non — les sons de concentration continuent d'un onglet à l'autre tant que ta session est active.
+🧐 Peut-il jouer toute la journée ?
+➤ Oui. Appuie sur ∞ et il joue jusqu'à ce que tu appuies sur Finish.
 
-Règle ton temps, appuie sur démarrer et laisse un minuteur minimaliste porter ta concentration. ⭐
+Ouvre Brown Noise Generator, choisis ta pièce, et laisse le son tenir l'espace pendant que tu travailles. ⭐

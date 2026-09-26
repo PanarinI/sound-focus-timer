@@ -1,216 +1,216 @@
 {
-  "_comment": "Листинг i18n. appName=NAME (SEO-дверь), shortDesc=SHORT (<=132). EN=дверь minimalist (KD1); локали=pomodoro (выверено DFS/Wordstat 07-26). Волна 1 (ядро CWS-аудитории). build-locales.py раскладывает в extension/_locales/<code>/messages.json. FULL грузится в CWS отдельно.",
+  "_comment": "Листинг i18n, выпуск 1.2 (26–27.09). appName = местное слово коричневого шума + ' - Brown Noise Generator' (канон 3.4:72; замер 14 стран — translations.md 26.09; остальные 🔶 переводом). ID/FIL/MS — местного слова нет, ищут по-английски → имя только EN. shortDesc <=132: местный ключ 1× + белый/розовый шум. Прежние помидорные имена 07-26 — full/variants/locales-data--mt-1.1.7.json.",
   "en": {
-    "appName": "Minimalist Timer",
-    "shortDesc": "A calm minimalist timer with a brown noise generator built in, plus pink and white noise — focus sounds for study and deep work."
+    "appName": "Brown Noise Generator",
+    "shortDesc": "A warm brown noise generator for work and study, with a gentle focus timer. Pink and white noise too, no ads, no sign-up."
   },
   "de": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Schlichter Pomodoro Timer für Fokus & Lernen – mit warmem Brown Noise und sanften Klängen zum Konzentrieren."
+    "appName": "Braunes Rauschen - Brown Noise Generator",
+    "shortDesc": "Warmes braunes Rauschen zum Arbeiten und Lernen, mit sanftem Fokus-Timer. Auch rosa und weißes Rauschen – ohne Werbung, ohne Konto."
   },
   "fr": {
-    "appName": "Timer Pomodoro - Minimalist Timer",
-    "shortDesc": "Timer Pomodoro minimaliste pour la concentration et les études, avec un brown noise chaud et des sons doux."
+    "appName": "Bruit brun - Brown Noise Generator",
+    "shortDesc": "Un bruit brun chaud pour travailler et étudier, avec un minuteur de concentration doux. Bruit rose et bruit blanc aussi, sans pub."
   },
   "es": {
-    "appName": "Temporizador Pomodoro - Minimalist Timer",
-    "shortDesc": "Temporizador Pomodoro minimalista para concentración y estudio, con brown noise cálido y sonidos suaves."
+    "appName": "Ruido marrón - Brown Noise Generator",
+    "shortDesc": "Un ruido marrón cálido para estudiar y trabajar, con un temporizador suave para concentrarte. También ruido rosa y ruido blanco."
   },
   "it": {
-    "appName": "Timer Pomodoro - Minimalist Timer",
-    "shortDesc": "Timer Pomodoro minimalista per concentrazione e studio, con brown noise caldo e suoni delicati per concentrarti."
+    "appName": "Rumore marrone - Brown Noise Generator",
+    "shortDesc": "Un rumore marrone caldo per lavorare e studiare, con un timer delicato per la concentrazione. Anche rumore rosa e rumore bianco."
   },
   "pt_BR": {
-    "appName": "Timer Pomodoro - Minimalist Timer",
-    "shortDesc": "Timer Pomodoro minimalista para foco e estudo, com brown noise quentinho e sons suaves para se concentrar."
+    "appName": "Ruído marrom - Brown Noise Generator",
+    "shortDesc": "Um ruído marrom para estudar e trabalhar, com um timer de foco suave. Também ruído rosa e ruído branco, sem anúncios e sem cadastro."
   },
   "nl": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistische Pomodoro Timer voor focus en studie, met warme brown noise en zachte geluiden om te concentreren."
+    "appName": "Bruine ruis - Brown Noise Generator",
+    "shortDesc": "Warme bruine ruis om te werken en te studeren, met een rustige focustimer. Ook roze en witte ruis (white noise), zonder reclame."
   },
   "sv": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistisk Pomodoro Timer för fokus och studier, med varmt brusljud och mjuka ljud för koncentration."
+    "appName": "Brunt brus - Brown Noise Generator",
+    "shortDesc": "Varmt brunt brus för arbete och studier, med en mjuk fokustimer. Även rosa och vitt brus (white noise), utan reklam och utan konto."
   },
   "da": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistisk Pomodoro Timer til fokus og studie, med varm brown noise og bløde lyde til koncentration."
+    "appName": "Brun støj - Brown Noise Generator",
+    "shortDesc": "Varm brun støj til arbejde og studier, med en blid fokustimer. Også lyserød og hvid støj (white noise), uden reklamer og uden konto."
   },
   "no": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistisk Pomodoro Timer for fokus og studier, med varm brown noise og myke lyder for konsentrasjon."
+    "appName": "Brun støy - Brown Noise Generator",
+    "shortDesc": "Varm brun støy for jobb og studier, med en rolig fokustimer. Også rosa og hvit støy (white noise), uten reklame og uten konto."
   },
   "fi": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistinen Pomodoro-ajastin keskittymiseen ja opiskeluun, lämpimällä brown noisella ja pehmeillä äänillä."
+    "appName": "Ruskea kohina - Brown Noise Generator",
+    "shortDesc": "Lämmin ruskea kohina työhön ja opiskeluun, lempeällä fokusajastimella. Myös vaaleanpunainen ja valkoinen kohina, ilman mainoksia."
   },
   "pl": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistyczny Pomodoro Timer do skupienia i nauki, z ciepłym brown noise i delikatnymi dźwiękami."
+    "appName": "Brązowy szum - Brown Noise Generator",
+    "shortDesc": "Ciepły brązowy szum do pracy i nauki, z łagodnym timerem skupienia. Także różowy i biały szum, bez reklam i bez rejestracji."
   },
   "cs": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistický Pomodoro Timer pro soustředění a studium, s teplým brown noise a jemnými zvuky."
+    "appName": "Hnědý šum - Brown Noise Generator",
+    "shortDesc": "Teplý hnědý šum pro práci i studium, s jemným časovačem soustředění. Také růžový a bílý šum, bez reklam a bez registrace."
   },
   "tr": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Odaklanma ve çalışma için sade Pomodoro Timer; sıcak brown noise ve yumuşak seslerle konsantre olun."
+    "appName": "Kahverengi gürültü - Brown Noise Generator",
+    "shortDesc": "Çalışma ve ders için sıcak kahverengi gürültü, yumuşak bir odak zamanlayıcısıyla. Pembe ve beyaz gürültü de var, reklamsız."
   },
   "ru": {
-    "appName": "Помодоро таймер - Minimalist Timer",
-    "shortDesc": "Минималистичный помодоро таймер для фокуса и учёбы, с тёплым коричневым шумом и мягкими звуками для концентрации."
+    "appName": "Коричневый шум - Brown Noise Generator",
+    "shortDesc": "Тёплый коричневый шум для работы и учёбы с мягким таймером фокуса. Есть розовый и белый шум, без рекламы и регистрации."
   },
   "uk": {
-    "appName": "Помодоро таймер - Minimalist Timer",
-    "shortDesc": "Мінімалістичний помодоро таймер для фокусу та навчання, з теплим коричневим шумом і м'якими звуками."
+    "appName": "Коричневий шум - Brown Noise Generator",
+    "shortDesc": "Теплий коричневий шум для роботи й навчання з м’яким таймером фокусу. Є також рожевий і білий шум, без реклами та реєстрації."
   },
   "ja": {
-    "appName": "ポモドーロタイマー - Minimalist Timer",
-    "shortDesc": "集中と勉強のためのシンプルなポモドーロタイマー。温かいブラウンノイズと静かな音で、心地よく集中を続けられます。"
+    "appName": "ブラウンノイズ - Brown Noise Generator",
+    "shortDesc": "仕事や勉強に、あたたかいブラウンノイズを。やさしい集中タイマー付き。ピンクノイズとホワイトノイズも、広告なし・登録不要。"
   },
   "ko": {
-    "appName": "뽀모도로 타이머 - Minimalist Timer",
-    "shortDesc": "집중과 공부를 위한 미니멀 뽀모도로 타이머. 따뜻한 브라운 노이즈와 부드러운 소리로 편안하게 집중하세요."
+    "appName": "브라운 노이즈 - Brown Noise Generator",
+    "shortDesc": "일과 공부를 위한 따뜻한 브라운 노이즈, 부드러운 집중 타이머와 함께. 핑크 노이즈와 화이트 노이즈도, 광고 없이 가입 없이."
   },
   "zh_CN": {
-    "appName": "番茄钟 - Minimalist Timer",
-    "shortDesc": "简约番茄钟，专注与学习两相宜。温暖的棕噪音与柔和声音，助你静心专注。"
+    "appName": "棕色噪音 - Brown Noise Generator",
+    "shortDesc": "温暖的棕色噪音，陪你工作和学习，附带温和的专注计时器。还有粉红噪音和白噪音，无广告，无需注册。"
   },
   "zh_TW": {
-    "appName": "番茄鐘 - Minimalist Timer",
-    "shortDesc": "簡約番茄鐘，專注與學習兼顧。溫暖的棕噪音與柔和聲音，助你靜心專注。"
+    "appName": "棕色噪音 - Brown Noise Generator",
+    "shortDesc": "溫暖的棕色噪音，陪你工作與讀書，附帶溫和的專注計時器。也有粉紅噪音與白噪音，無廣告，免註冊。"
   },
   "id": {
-    "appName": "Timer Pomodoro - Minimalist Timer",
-    "shortDesc": "Timer Pomodoro minimalis untuk fokus dan belajar, dengan brown noise hangat dan suara lembut untuk berkonsentrasi."
+    "appName": "Brown Noise Generator",
+    "shortDesc": "Brown noise hangat untuk kerja dan belajar, dengan timer fokus yang lembut. Ada juga pink noise dan white noise, tanpa iklan."
   },
   "vi": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Timer Pomodoro tối giản cho tập trung và học tập, với brown noise ấm áp và âm thanh nhẹ nhàng."
+    "appName": "Tiếng ồn nâu - Brown Noise Generator",
+    "shortDesc": "Tiếng ồn nâu ấm áp để làm việc và học tập, kèm hẹn giờ tập trung nhẹ nhàng. Có cả tiếng ồn hồng và trắng, không quảng cáo."
   },
   "th": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "ตัวจับเวลา Pomodoro มินิมอลเพื่อสมาธิและการเรียน พร้อมบราวน์นอยส์อุ่นๆ และเสียงนุ่มนวลช่วยโฟกัส"
+    "appName": "เสียงสีน้ำตาล - Brown Noise Generator",
+    "shortDesc": "เสียงสีน้ำตาลอบอุ่นสำหรับทำงานและเรียน พร้อมตัวจับเวลาโฟกัสแบบนุ่มนวล มีเสียงสีชมพูและเสียงสีขาวด้วย ไม่มีโฆษณา ไม่ต้องสมัคร"
   },
   "ar": {
-    "appName": "مؤقت بومودورو - Minimalist Timer",
-    "shortDesc": "مؤقت بومودورو بسيط للتركيز والدراسة، مع ضوضاء بنية دافئة وأصوات هادئة تساعدك على التركيز."
+    "appName": "الضجيج البني - Brown Noise Generator",
+    "shortDesc": "الضجيج البني الدافئ للعمل والدراسة، مع مؤقت تركيز لطيف. وأيضًا الضوضاء الوردية والضوضاء البيضاء، بلا إعلانات ولا تسجيل."
   },
   "es_419": {
-    "appName": "Temporizador Pomodoro - Minimalist Timer",
-    "shortDesc": "Temporizador Pomodoro minimalista para concentración y estudio, con brown noise cálido y sonidos suaves."
+    "appName": "Ruido marrón - Brown Noise Generator",
+    "shortDesc": "Un ruido marrón cálido para estudiar y trabajar, con un temporizador suave para concentrarte. También ruido rosa y ruido blanco."
   },
   "pt_PT": {
-    "appName": "Timer Pomodoro - Minimalist Timer",
-    "shortDesc": "Timer Pomodoro minimalista para foco e estudo, com brown noise quente e sons suaves para te concentrares."
+    "appName": "Ruído castanho - Brown Noise Generator",
+    "shortDesc": "Um ruído castanho quente para estudar e trabalhar, com um temporizador de foco suave. Também ruído rosa e branco, sem anúncios."
   },
   "en_GB": {
-    "appName": "Minimalist Timer",
-    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+    "appName": "Brown Noise Generator",
+    "shortDesc": "A warm brown noise generator for work and study, with a gentle focus timer. Pink and white noise too, no ads, no sign-up."
   },
   "he": {
-    "appName": "טיימר פומודורו - Minimalist Timer",
-    "shortDesc": "טיימר פומודורו מינימליסטי לריכוז וללימודים, עם רעש חום חמים וצלילים רכים למיקוד."
+    "appName": "רעש חום - Brown Noise Generator",
+    "shortDesc": "רעש חום חמים לעבודה וללימודים, עם טיימר ריכוז עדין. גם רעש ורוד ורעש לבן, בלי פרסומות ובלי הרשמה."
   },
   "fa": {
-    "appName": "تایمر پومودورو - Minimalist Timer",
-    "shortDesc": "تایمر پومودورو مینیمال برای تمرکز و مطالعه، با نویز قهوه‌ای گرم و صداهای ملایم."
+    "appName": "نویز قهوه‌ای - Brown Noise Generator",
+    "shortDesc": "نویز قهوه‌ای گرم برای کار و مطالعه، با تایمر تمرکز ملایم. نویز صورتی و نویز سفید هم دارد، بدون تبلیغ و بدون ثبت‌نام."
   },
   "hi": {
-    "appName": "पोमोडोरो टाइमर - Minimalist Timer",
-    "shortDesc": "फोकस और पढ़ाई के लिए मिनिमल पोमोडोरो टाइमर, गर्म ब्राउन नॉइज़ और कोमल ध्वनियों के साथ।"
+    "appName": "ब्राउन नॉइज़ - Brown Noise Generator",
+    "shortDesc": "काम और पढ़ाई के लिए गर्म ब्राउन नॉइज़, एक सौम्य फ़ोकस टाइमर के साथ। पिंक और व्हाइट नॉइज़ भी, बिना विज्ञापन, बिना साइन-अप।"
   },
   "el": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Μινιμαλιστικό Pomodoro Timer για συγκέντρωση και μελέτη, με ζεστό brown noise και απαλούς ήχους."
+    "appName": "Καφέ θόρυβος - Brown Noise Generator",
+    "shortDesc": "Ζεστός καφέ θόρυβος για δουλειά και διάβασμα, με ήπιο χρονόμετρο συγκέντρωσης. Και ροζ και λευκός θόρυβος, χωρίς διαφημίσεις."
   },
   "ro": {
-    "appName": "Timer Pomodoro - Minimalist Timer",
-    "shortDesc": "Timer Pomodoro minimalist pentru concentrare și studiu, cu brown noise cald și sunete blânde."
+    "appName": "Zgomot maro - Brown Noise Generator",
+    "shortDesc": "Zgomot maro cald pentru muncă și studiu, cu un cronometru de concentrare blând. Și zgomot roz și zgomot alb, fără reclame."
   },
   "hu": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalista Pomodoro Timer fókuszhoz és tanuláshoz, meleg brown noise-szal és lágy hangokkal."
+    "appName": "Barna zaj - Brown Noise Generator",
+    "shortDesc": "Meleg barna zaj munkához és tanuláshoz, szelíd fókuszidőzítővel. Rózsaszín és fehér zaj is, reklám és regisztráció nélkül."
   },
   "sk": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistický Pomodoro Timer na sústredenie a štúdium, s teplým brown noise a jemnými zvukmi."
+    "appName": "Hnedý šum - Brown Noise Generator",
+    "shortDesc": "Teplý hnedý šum na prácu aj štúdium, s jemným časovačom sústredenia. Aj ružový a biely šum, bez reklám a bez registrácie."
   },
   "sl": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalističen Pomodoro Timer za fokus in učenje, s toplim brown noise in nežnimi zvoki."
+    "appName": "Rjavi šum - Brown Noise Generator",
+    "shortDesc": "Topel rjavi šum za delo in učenje, z nežnim časovnikom za zbranost. Tudi rožnati in beli šum, brez oglasov in registracije."
   },
   "hr": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistički Pomodoro Timer za fokus i učenje, s toplim brown noise i nježnim zvukovima."
+    "appName": "Smeđi šum - Brown Noise Generator",
+    "shortDesc": "Topli smeđi šum za rad i učenje, uz blagi tajmer za fokus. Tu su i ružičasti i bijeli šum, bez oglasa i bez registracije."
   },
   "sr": {
-    "appName": "Pomodoro tajmer - Minimalist Timer",
-    "shortDesc": "Minimalistički Pomodoro tajmer za fokus i učenje, sa toplim šumom i nežnim zvucima."
+    "appName": "Braon šum - Brown Noise Generator",
+    "shortDesc": "Topli braon šum za rad i učenje, uz blagi tajmer za fokus. Tu su i roze i beli šum, bez reklama i bez registracije."
   },
   "bg": {
-    "appName": "Помодоро таймер - Minimalist Timer",
-    "shortDesc": "Минималистичен Помодоро таймер за фокус и учене, с топъл кафяв шум и меки звуци."
+    "appName": "Кафяв шум - Brown Noise Generator",
+    "shortDesc": "Топъл кафяв шум за работа и учене, с мек таймер за фокус. Също розов и бял шум, без реклами и без регистрация."
   },
   "et": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistlik Pomodoro taimer keskendumiseks ja õppimiseks, sooja pruuni müra ja pehmete helidega."
+    "appName": "Pruun müra - Brown Noise Generator",
+    "shortDesc": "Soe pruun müra tööks ja õppimiseks, pehme keskendumistaimeriga. Ka roosa ja valge müra, ilma reklaamide ja kontota."
   },
   "lt": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalistinis Pomodoro laikmatis susikaupimui ir mokymuisi su šiltu rudu triukšmu ir švelniais garsais."
+    "appName": "Rudasis triukšmas - Brown Noise Generator",
+    "shortDesc": "Šiltas rudasis triukšmas darbui ir mokymuisi, su švelniu dėmesio laikmačiu. Taip pat rožinis ir baltasis triukšmas, be reklamų."
   },
   "lv": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimālistisks Pomodoro taimeris fokusam un mācībām ar siltu brūno troksni un maigām skaņām."
+    "appName": "Brūnais troksnis - Brown Noise Generator",
+    "shortDesc": "Silts brūnais troksnis darbam un mācībām, ar maigu fokusa taimeri. Arī rozā un baltais troksnis, bez reklāmām un reģistrācijas."
   },
   "fil": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Minimalist na Pomodoro Timer para sa focus at pag-aaral, may mainit na brown noise at malambot na tunog."
+    "appName": "Brown Noise Generator",
+    "shortDesc": "Mainit na brown noise para sa trabaho at pag-aaral, may banayad na focus timer. May pink noise at white noise din, walang ads."
   },
   "ms": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Pemasa Pomodoro minimalis untuk fokus dan belajar, dengan brown noise hangat dan bunyi lembut."
+    "appName": "Brown Noise Generator",
+    "shortDesc": "Brown noise yang hangat untuk kerja dan belajar, dengan pemasa fokus yang lembut. Ada juga pink noise dan white noise, tanpa iklan."
   },
   "ca": {
-    "appName": "Temporitzador Pomodoro - Minimalist Timer",
-    "shortDesc": "Temporitzador Pomodoro minimalista per a concentració i estudi, amb brown noise càlid i sons suaus."
+    "appName": "Soroll marró - Brown Noise Generator",
+    "shortDesc": "Un soroll marró càlid per treballar i estudiar, amb un temporitzador de concentració suau. També soroll rosa i blanc, sense anuncis."
   },
   "sw": {
-    "appName": "Pomodoro Timer - Minimalist Timer",
-    "shortDesc": "Kipima muda cha Pomodoro rahisi kwa umakini na masomo, chenye brown noise ya joto na sauti laini."
+    "appName": "Kelele za kahawia - Brown Noise Generator",
+    "shortDesc": "Kelele za kahawia zenye joto kwa kazi na masomo, pamoja na kipima muda cha umakini. Pia kelele za waridi na nyeupe, bila matangazo."
   },
-  "_comment_wave3": "Волна 3 (8 сложных скриптов): appName=локальное имя-дверь (транслит pomodoro, ⚠ на вычитку носителем) + shortDesc=EN (честный fallback, не кривой перевод). Цель — засчитать язык в счётчике CWS (+8 → 53) без вранья в описании.",
+  "_comment_wave3": "Волна 3 (8 сложных скриптов): appName = транслит 'brown noise' + ' - Brown Noise Generator' (⚠ на вычитку носителем), shortDesc и FULL = EN (честный fallback, принцип 07-26).",
   "bn": {
-    "appName": "পোমোডোরো টাইমার - Minimalist Timer",
-    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+    "appName": "ব্রাউন নয়েজ - Brown Noise Generator",
+    "shortDesc": "A warm brown noise generator for work and study, with a gentle focus timer. Pink and white noise too, no ads, no sign-up."
   },
   "ta": {
-    "appName": "பொமடோரோ டைமர் - Minimalist Timer",
-    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+    "appName": "பிரவுன் நாய்ஸ் - Brown Noise Generator",
+    "shortDesc": "A warm brown noise generator for work and study, with a gentle focus timer. Pink and white noise too, no ads, no sign-up."
   },
   "te": {
-    "appName": "పోమోడోరో టైమర్ - Minimalist Timer",
-    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+    "appName": "బ్రౌన్ నాయిస్ - Brown Noise Generator",
+    "shortDesc": "A warm brown noise generator for work and study, with a gentle focus timer. Pink and white noise too, no ads, no sign-up."
   },
   "gu": {
-    "appName": "પોમોડોરો ટાઈમર - Minimalist Timer",
-    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+    "appName": "બ્રાઉન નોઇઝ - Brown Noise Generator",
+    "shortDesc": "A warm brown noise generator for work and study, with a gentle focus timer. Pink and white noise too, no ads, no sign-up."
   },
   "kn": {
-    "appName": "ಪೊಮೊಡೊರೊ ಟೈಮರ್ - Minimalist Timer",
-    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+    "appName": "ಬ್ರೌನ್ ನಾಯ್ಸ್ - Brown Noise Generator",
+    "shortDesc": "A warm brown noise generator for work and study, with a gentle focus timer. Pink and white noise too, no ads, no sign-up."
   },
   "ml": {
-    "appName": "പോമോഡോറോ ടൈമർ - Minimalist Timer",
-    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+    "appName": "ബ്രൗൺ നോയ്സ് - Brown Noise Generator",
+    "shortDesc": "A warm brown noise generator for work and study, with a gentle focus timer. Pink and white noise too, no ads, no sign-up."
   },
   "mr": {
-    "appName": "पोमोडोरो टायमर - Minimalist Timer",
-    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+    "appName": "ब्राउन नॉइज - Brown Noise Generator",
+    "shortDesc": "A warm brown noise generator for work and study, with a gentle focus timer. Pink and white noise too, no ads, no sign-up."
   },
   "am": {
-    "appName": "ፖሞዶሮ ታይመር - Minimalist Timer",
-    "shortDesc": "A clean minimalist timer for focus and study, with warm brown noise, focus sounds, and an aesthetic pomodoro timer."
+    "appName": "ብራውን ኖይዝ - Brown Noise Generator",
+    "shortDesc": "A warm brown noise generator for work and study, with a gentle focus timer. Pink and white noise too, no ads, no sign-up."
   }
 }

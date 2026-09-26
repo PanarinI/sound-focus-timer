@@ -1,66 +1,79 @@
-Minimalist Timer adalah timer fokus minim gangguan untuk browser-mu. Sebuah bintang yang tenang, ruang kosong, dan suara generatif hangat yang membawamu melewati sesi kerja — lalu membiarkanmu mendarat lembut, bukan mengagetkanmu dengan alarm. Tanpa kekacauan, tanpa akun. Jika fokus biasanya terasa dingin atau mekanis, yang ini dibuat agar terasa tenang.
+Brown Noise Generator adalah tempat tenang untuk bekerja dan belajar, langsung di browser-mu. Ia membuat suara hangat dan dalam secara langsung di perangkatmu sendiri, dan membungkusnya dengan timer fokus yang lembut. Buka di panel sisi, tekan Start, dan ruangan jadi tenang: suara obrolan, keyboard, dan suara jalanan tenggelam di bawah dinding suara yang lembut dan stabil. Tanpa iklan, tanpa akun, tanpa tab video yang harus tetap menyala.
 
-Atur waktumu, tekan mulai, dan tetap dalam flow.
+🌟 Kenapa brown noise generator ini
+- ➤ Suara dihasilkan secara langsung — bukan rekaman pendek yang diulang
+- ➤ Generator white, pink, brown noise dalam satu: tiga warna, satu ketukan untuk berganti
+- ➤ Brown noise tanpa iklan, tanpa buffering, tak ada yang macet di tengah jalan
+- ➤ Preset untuk ruangan nyata: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Timer yang lembut: 5, 15, 25, 45, atau 90 menit, atau tanpa batas sama sekali
+- ➤ Ada di panel sisi Chrome dan tetap berbunyi saat kamu menutupnya
+- ➤ Suara dan timer berjalan di perangkatmu: tanpa pendaftaran, dan bisa dipakai offline
 
-🌟 Kenapa timer Pomodoro minimalis ini
-- ➤ Desain bersih dan minimalis — satu adegan tenang, tak ada yang menarik perhatianmu
-- ➤ Brown noise hangat dan suara fokus lembut sudah terpasang — waktumu benar-benar terbuat dari suara
-- ➤ Awal yang lembut dan pendaratan yang lembut — tanpa alarm menyentak saat sesi berakhir
-- ➤ Sesi fleksibel: 5, 15, 25, 45, 90 menit, atau terbuka
-- ➤ Berjalan diam di panel samping saat kamu bekerja — suara terus berbunyi antar tab
-- ➤ Sepenuhnya di perangkat: privat sejak awal, bekerja offline, tanpa pendaftaran
+🔊 Seperti apa suara brown noise generator
+Brown noise, juga disebut brownian noise, menyimpan sebagian besar energinya di frekuensi rendah — lebih dekat ke suara ombak jauh atau dengungan kabin pesawat daripada suara statis. Brownian noise generator ini membuat suaranya di mesinmu secara langsung, jadi tak pernah berulang: brown noise yang halus dengan sedikit sentuhan udara di atasnya, cukup penuh untuk mengisi ruangan dan cukup lembut untuk dilupakan. Ia dibuat menjadi brown noise dalam untuk konsentrasi: cukup untuk menutupi ruangan, cukup lembut untuk memudar dari perhatianmu.
 
-🔊 Suara yang menjaga fokusmu
-Hitung mundur yang senyap adalah hal biasa. Yang ini membungkus sesimu dengan brown noise hangat — suara lembut, rendah, dan generatif (bukan loop pendek) yang menyamarkan gangguan latar dan membantumu tenang. Lebih suka suara fokus yang tenang daripada musik? Ini lebih tenang daripada musik fokus dan lebih lembut daripada white noise yang keras. Baik brown noise untuk belajar, suara ambient untuk deep work, atau sekadar menenangkan pikiran yang gelisah, suaranya bergeser perlahan dan tak pernah berulang.
+Anggap saja ini generator suara ambient tanpa rekaman — satu suara bersih yang dihasilkan, ganti hujan dan kicau burung yang berulang-ulang.
 
-🎯 Timer fokus dan belajar dalam satu
-Entah kamu butuh timer fokus untuk deep work, timer belajar untuk sesi panjang, atau timer kerja yang tenang untuk kantor, antarmukanya tak menghalangi:
-1. Timer fokus minimalis untuk konsentrasi dan flow
-2. Timer belajar minimalis untuk membaca, menulis, dan mengulang
-3. Timer produktivitas dan konsentrasi yang tenang untuk tugas
-4. Timer Pomodoro estetik untuk yang ingin nuansanya tanpa siklus kaku 25/5
+Dua knob membentuk suaranya: masking melebarkan dinding suara sampai suara orang di dekatmu jadi buram, dan stimulation membuatnya lebih terang saat kamu butuh energi, lebih rendah saat kamu butuh ketenangan.
 
-🎨 Estetik dan minimal
-Jika kamu suka timer estetik atau imut di layar, timer hitung mundur minimalis ini menjaga semuanya indah dan sederhana: bintang hangat yang mendekat seiring sesi berjalan, di dalam ruang yang tenang dan terbuka. Tak ada angka yang berteriak padamu, tanpa tekanan — hanya timer minimalis estetik yang enak dipandang.
+🎨 Brown, pink, atau white
+Brown jadi default karena paling dalam dan paling hangat. Pink noise generator tinggal satu ketukan, satu tingkat lebih terang, dan white noise untuk fokus juga ada — paling terang dari ketiganya. Banyak orang sangat menyukai white noise untuk belajar, sementara yang lain merasa tajam setelah satu jam. Coba tiap warna dan simpan yang telingamu berhenti sadari. Cahaya panel mengikuti warna yang kamu pilih.
 
-🧠 Lembut pada perhatianmu
-Ia dibuat untuk ramah dengan cara kerja perhatian yang sebenarnya. Jika kamu kesulitan dengan kebutaan waktu atau ingin timer visual yang membuat waktu terasa nyata tanpa stres, bintang memberimu rasa kemajuan yang lembut. Ia bekerja baik sebagai alternatif timer ADHD yang menenangkan — yang menuntunmu masuk dan keluar fokus alih-alih menghukummu. Ia memanggilmu kembali; ia tak mengurungmu.
+🏢 Preset untuk ruangan tempatmu berada
+Pilih di mana kamu berada, dan suaranya diatur untukmu:
+1. open office — dinding suara terlebar, untuk suara orang di dekatmu
+2. thin walls — bobot lebih berat di bawah, untuk tetangga atau TV
+3. café — lebih ringan, agar dengungan sekitarmu membaur
+4. deep reading — tenang dan rata, untuk ruangan yang tenang
+5. racing thoughts — stimulasi lebih tinggi, saat kepalamu ramai
+6. too much — lebih lembut dan lebih pelan, untuk hari yang berat
 
-💡 Tanpa akun, tanpa iklan, dan tak ada data yang pernah keluar dari perangkatmu — hanya ruang tenang dan privat untuk fokus, apa pun cara kerja pikiranmu.
+Kalau kamu mencari white noise generator untuk obrolan kantor, mulai dengan open office. Ia bekerja sebagai sound masking sederhana untuk mejamu, dan kamu bisa beralih ke white noise untuk kerja kalau suka yang lebih terang. Sentuh knob mana pun dan preset berubah jadi custom. Preset tak pernah mengubah panjang sesimu.
+
+⏱ Timer yang tak menghalangi
+Timer ada di sana saat kamu membutuhkannya. Geser dial ke 5, 15, 25, 45, atau 90 menit, atau tekan ∞ dan biarkan suaranya berjalan tanpa akhir. Hitung mundur duduk diam di dalam dial. Saat waktu habis, tak ada alarm: suaranya jadi terang lalu memudar selama sekitar empat puluh detik, jadi kamu muncul perlahan, bukan tersentak bangun.
+
+Gunakan sebagai timer fokus untuk satu tugas, timer kerja untuk satu jam ke depan, atau timer minimalis yang sekadar menjaga waktu untukmu. Orang yang merasa hitung mundur biasa itu menegangkan sering memakainya sebagai timer ADHD yang lembut — ia menuntunmu keluar dari fokus, bukan menariknya keluar paksa.
+
+🧠 Untuk fokus, belajar, dan pikiran yang sibuk
+Orang mencari brown noise untuk belajar, brown noise untuk kerja, dan brown noise untuk ADHD — untuk meredakan ruangan yang berisik atau kepala yang berisik. Kami tak membuat janji apa pun soal otak: penelitiannya masih beragam, dan tak ada suara yang cocok untuk semua orang. Yang kami tawarkan adalah pengaturan yang baik — suara latar stabil untuk belajar, suara fokus yang tak bergeser di bawahmu, dan suara yang bisa kamu bentuk sampai benar-benar membantu. Hal yang sama berlaku untuk white noise untuk ADHD atau suara fokus lainnya: pilih warnanya, simpan yang berhasil.
 
 🖥 Cara kerjanya
-1️⃣ Buka timer minimalis dari bilah alatmu
-2️⃣ Geser untuk mengatur waktu — 5 hingga 90 menit, atau ∞
-3️⃣ Ketuk bintang — suara hangat dimulai dan kamu meluncur ke fokus
-4️⃣ Saat waktu habis, sesi mendarat lembut, tanpa alarm
-5️⃣ Tutup panel kapan saja — suara terus berjalan
+1️⃣ Klik ikonnya — Brown Noise Generator terbuka di panel sisi Chrome
+2️⃣ Pilih preset untuk ruanganmu, atau atur sendiri volume, masking, stimulation, dan tone
+3️⃣ Atur dial, atau tekan ∞ untuk tanpa batas
+4️⃣ Tekan Start untuk memutar brown noise; ketuk bintang untuk jeda dan lanjut
+5️⃣ Tutup panelnya kapan saja — suaranya terus berjalan sampai sesimu selesai
 
-Sebagai ekstensi Pomodoro Chrome yang ringan dan timer desktop, ia tetap di tempat kamu bekerja — tanpa jendela tambahan, tanpa mengambil alih tab baru, tanpa gangguan.
+Ia bekerja seperti online brown noise generator, tapi tinggal di browser-mu dan tak butuh koneksi setelah terpasang. Tak ada video brown noise layar hitam yang harus dibiarkan menyala, dan tak ada tab yang harus tetap terbuka: anggap saja ini brown noise app untuk desktopmu, ekstensi Chrome ringan di sebelah pekerjaanmu.
+
+👀 Gambar yang mengikuti suara
+Selagi suara diputar, butiran halus bergerak melintasi panel: kasar untuk brown, paling halus untuk white, makin cepat dengan stimulation lebih tinggi. Kalau gerakannya mengganggu, matikan motion di pojok.
 
 📌 Cocok untuk
-- ▸ Deep work, menulis, coding, dan membaca
-- ▸ Pelajar yang ingin timer belajar estetik yang terlihat tenang
-- ▸ Siapa pun yang merasa hitung mundur biasa itu dingin, berisik, atau bikin stres
-- ▸ Orang yang lebih fokus dengan suara latar hangat
+- ▸ Kantor terbuka, apartemen bersama, dan kafe yang ramai
+- ▸ Pelajar yang ingin suara belajar tenang untuk malam-malam panjang
+- ▸ Menulis, coding, dan membaca, saat kamu ingin brown noise untuk fokus
+- ▸ Siapa pun yang lelah dengan iklan yang mengganggu suara fokus mereka
 
-❓ Tanya Jawab
+❓ FAQ
 
-🧐 Apakah saya harus membayar atau mendaftar?
-➤ Tidak — semuanya tersedia sejak awal, tanpa akun dan tanpa pendaftaran.
+🧐 Apakah saya perlu akun?
+➤ Tidak. Tak ada pendaftaran, tak ada iklan, dan tak ada yang perlu di-login.
 
-🧐 Apa bedanya suaranya dengan timer lain?
-➤ Alih-alih hitung mundur senyap, waktumu terbuat dari brown noise hangat dan suara fokus lembut yang menyamarkan gangguan dan membantumu tetap dalam flow.
+🧐 Apakah ada aplikasi brown noise generator untuk ponsel saya?
+➤ Belum ada. Ini adalah ekstensi Chrome untuk browser desktop dan laptop.
 
-🧐 Apakah bekerja offline?
-➤ Ya. Semuanya berjalan di perangkat, jadi timer minimalis ini bekerja tanpa koneksi dan tak pernah melacakmu.
+🧐 Bisakah saya beralih ke white atau pink?
+➤ Bisa. Tiga titik di pojok atas beralih antara brown, pink, dan white.
 
-🧐 Bisakah dipakai untuk Pomodoro?
-➤ Kamu bisa mengatur durasi fokus klasik, tapi tak ada jeda paksa — ini timer Pomodoro minimalis yang lebih lembut, dibangun di sekitar flow, bukan siklus kaku.
+🧐 Apakah suaranya berhenti kalau saya menutup panel atau berganti tab?
+➤ Tidak. Ia terus berbunyi selama sesimu berjalan, di tab mana pun.
 
-🧐 Apakah bagus untuk fokus dan belajar?
-➤ Ya — dirancang sebagai timer fokus dan belajar yang tenang, dengan suara hangat dan visual lembut untuk membantumu berkonsentrasi dan melindungi deep work.
+🧐 Apakah bisa dipakai offline?
+➤ Bisa. Brown noise generator dan timernya berjalan sepenuhnya di perangkatmu.
 
-🧐 Apakah suara berhenti jika saya ganti tab?
-➤ Tidak — suara fokus terus berbunyi antar tab selama sesimu berjalan.
+🧐 Bisakah diputar sepanjang hari?
+➤ Bisa. Tekan ∞ dan ia akan berputar sampai kamu menekan Finish.
 
-Atur waktumu, tekan mulai, dan biarkan timer minimalis membawa fokusmu. ⭐
+Buka Brown Noise Generator, pilih ruanganmu, dan biarkan suaranya menjaga ruang itu selagi kamu bekerja. ⭐

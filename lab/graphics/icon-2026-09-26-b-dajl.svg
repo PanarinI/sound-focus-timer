@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Иконка, вариант Б «дайл и звезда» (2026-09-26). Мастер: PNG только генерируются из него
+       (build-icons.py), руками не правятся.
+       Знак взят из настоящей панели 1.2.0 (extension/hearth.html и hearth.js):
+       · дуга — шкала дайла (там M 68 120 A 112 112 0 0 1 292 120; «5» слева, «25» на вершине, «90» справа);
+         янтарём залита половина от «5» до вершины — шкала, выставленная на 25;
+       · звезда стоит на вершине: в панели она тоже светит над вершиной шкалы;
+       · цвета панели: поле #0d0c0b, тёплый #ffb055, накал #ffd9a0; дорожка шкалы у панели #2b2724,
+         здесь светлее (#433a32) — иначе в 16 px она пропадает целиком.
+       Всё главное — слева и сверху: бейдж минут Chrome закрывает правую нижнюю часть иконки. -->
+  <defs>
+    <radialGradient id="pole" cx="64" cy="48" r="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#231911"/>
+      <stop offset=".5" stop-color="#100d0b"/>
+      <stop offset="1" stop-color="#0a0908"/>
+    </radialGradient>
+    <radialGradient id="oreol" cx="64" cy="46" r="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb055" stop-opacity=".62"/>
+      <stop offset=".45" stop-color="#ffb055" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#ffb055" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="zvezda" cx="64" cy="46" r="11.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff5e6"/>
+      <stop offset=".55" stop-color="#ffd9a0"/>
+      <stop offset="1" stop-color="#ffb866"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="22" fill="url(#pole)"/>
+  <path d="M 22 88 A 42 42 0 0 1 106 88" fill="none" stroke="#433a32" stroke-width="11" stroke-linecap="round"/>
+  <path d="M 22 88 A 42 42 0 0 1 64 46" fill="none" stroke="#ffb055" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="64" cy="46" r="32" fill="url(#oreol)"/>
+  <circle cx="64" cy="46" r="11.5" fill="url(#zvezda)"/>
+</svg>

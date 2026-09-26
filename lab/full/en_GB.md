@@ -1,66 +1,79 @@
-Minimalist Timer is a distraction-light focus timer for your browser. One quiet star, an empty field, and a warm generative sound that carries you through a work session — then lets you land gently instead of shocking you with an alarm. No clutter, no accounts. If focus usually feels cold or mechanical, this one is built to feel calm.
+Brown Noise Generator is a calm place to work and study, right in your browser. It builds a warm, deep sound live on your own device and wraps a gentle focus timer around it. Open it in the side panel, press Start, and the room goes quiet: voices, keyboards and street sounds sink under a soft, steady wall of sound. No ads, no account, no video tab to keep alive.
 
-Set your time, press start, and stay in flow.
+🌟 Why this brown noise generator
+- ➤ Sound generated live — not a short recording on repeat
+- ➤ A white, pink, brown noise generator in one: three colours, one tap each
+- ➤ Brown noise no ads, no buffering, nothing that breaks in halfway through
+- ➤ Presets for real rooms: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ A gentle timer: 5, 15, 25, 45 or 90 minutes, or no end at all
+- ➤ Lives in the Chrome side panel and keeps playing when you close it
+- ➤ Sound and timer run on your device: no sign-up, and it works offline
 
-🌟 Why this minimalist timer
-- ➤ Clean, minimalist design — one calm scene, nothing pulling at your attention
-- ➤ Warm brown noise and gentle focus sounds built in — your time is literally made of sound
-- ➤ A soft start and a soft landing — no jarring alarm when your session ends
-- ➤ Flexible sessions: 5, 15, 25, 45, 90 minutes, or open-ended
-- ➤ Runs quietly in your side panel whilst you work — the sound keeps playing across tabs
-- ➤ Fully on-device: private by design, works offline, no sign-up
+🔊 What a brown noise generator sounds like
+Brown noise, also called brownian noise, keeps most of its energy low — closer to distant surf or the hum of a plane cabin than to static. This brownian noise generator builds it on your machine in real time, so it never loops: a smooth brown noise with a little air on top, full enough to fill a room and soft enough to forget. It is made to be deep brown noise for concentration: enough to cover the room, soft enough to fade from your attention.
 
-🔊 Sound that holds your focus
-Silent countdowns are the norm. This one wraps your session in warm brown noise — a soft, low, generative sound (not a short loop) that masks background distractions and helps you settle in. Prefer quiet focus sounds over songs? This stays calmer than focus music and gentler than harsh white noise for focus. Whether it's brown noise for studying, ambient sounds for focus, deep work, or just calming a busy mind, the sound drifts slowly and never repeats.
+Think of it as an ambient noise generator without recordings — one clean, generated sound instead of rain and birds on a loop.
 
-🎯 A focus and study timer in one
-Whether you need a focus timer for deep work, a study timer for long sessions, or a calm work timer for the office, it keeps the interface out of your way:
-1. A minimalist focus timer for concentration and flow
-2. A minimalist study timer for reading, writing, and revision
-3. A calm productivity timer and concentration timer for tasks
-4. An aesthetic pomodoro timer for people who want the vibe without rigid 25/5 cycles
+Two knobs shape it: masking widens the wall until nearby voices blur, and stimulation makes it brighter when you need energy, lower when you need calm.
 
-🎨 Aesthetic and minimal
-If you love an aesthetic timer or a cute timer on your screen, this minimalist countdown timer keeps things beautiful and simple: a warm star that draws closer as your session goes on, inside a quiet, open space. No numbers shouting at you, no pressure — just a clean, aesthetic minimalist timer that feels good to look at.
+🎨 Brown, pink or white
+Brown is the default because it is the deepest and warmest. A pink noise generator is one tap away, a step brighter, and white noise for focus is there too — the brightest of the three. Plenty of people swear by white noise for studying, while others find it sharp after an hour. Try each colour and keep the one your ears stop noticing. The light of the panel follows the colour you pick.
 
-🧠 Gentle with your attention
-It's built to be kind to how attention actually works. If you struggle with time blindness or want a visual timer that makes time feel real without stress, the star gives you a soft sense of progress. It works well as a calm adhd timer alternative — one that guides you in and out of focus instead of punishing you. It calls you back; it doesn't cage you.
+🏢 Presets for the room you are in
+Choose where you are, and the sound is set for you:
+1. open office — the widest wall, for voices nearby
+2. thin walls — more weight low, for a neighbour or a TV
+3. café — lighter, so the hum around you blends in
+4. deep reading — quiet and even, for a calm room
+5. racing thoughts — more stimulation, when it is loud inside your head
+6. too much — softer and quieter, for overloaded days
 
-💡 No accounts, no ads, and no data ever leaves your device — just a calm, private space to focus, however your brain works.
+If you came looking for a white noise generator for office chatter, start with open office. It works as simple sound masking for your desk, and you can switch to white noise for work if you like it brighter. Touch any knob and the preset turns into custom. Presets never change your session length.
+
+⏱ A timer that stays out of the way
+The timer is there when you want it. Drag the dial to 5, 15, 25, 45 or 90 minutes, or press ∞ and let the sound run with no end. The countdown sits quietly inside the dial. When time is up, there is no alarm: the sound brightens and fades over about forty seconds, so you surface instead of jolting awake.
+
+Use it as a focus timer for one task, a work timer for the next hour, or a minimalist timer that simply holds the time for you. People who find ordinary countdowns stressful often use it as a gentle adhd timer — it walks you out of focus instead of pulling you out.
+
+🧠 For focus, study and a busy mind
+People reach for brown noise for studying, brown noise for work and brown noise for adhd — to quiet a noisy room or a noisy head. We make no promises about brains: research is mixed, and no sound works for everyone. What we offer is a good setup — steady background noise for studying, focus sounds that do not shift under you, and a sound you can shape until it helps. The same goes for white noise for adhd or any other focus noise: pick the colour, keep what works.
 
 🖥 How it works
-1️⃣ Open the minimalist timer from your toolbar
-2️⃣ Slide to set your time — 5 to 90 minutes, or ∞
-3️⃣ Tap the star — warm sound begins and you drift into focus
-4️⃣ When time is up, the session lands softly, with no alarm
-5️⃣ Close the panel any time — the sound keeps going
+1️⃣ Click the icon — Brown Noise Generator opens in the Chrome side panel
+2️⃣ Pick a preset for your room, or set volume, masking, stimulation and tone yourself
+3️⃣ Set the dial, or press ∞ for no end
+4️⃣ Press Start to play brown noise; tap the star to pause and resume
+5️⃣ Close the panel — the sound keeps going until your session lands
 
-As a lightweight pomodoro chrome extension and desktop timer, it stays right where you work — no extra window, no new-tab takeover, no distractions.
+It works like an online brown noise generator, but it lives in your browser and needs no connection once installed. There is no brown noise black screen video to leave running and no tab to keep open: think of it as a brown noise app for your desktop, a lightweight chrome extension beside your work.
+
+👀 A picture that follows the sound
+While the sound plays, a fine grain moves across the panel: coarse for brown, finest for white, faster with more stimulation. If motion bothers you, switch motion off in the corner.
 
 📌 Great for
-- ▸ Deep work, writing, coding, and reading
-- ▸ Students who want an aesthetic study timer that looks calm
-- ▸ Anyone who finds regular countdowns cold, loud, or stressful
-- ▸ People who focus better with warm background sound
+- ▸ Open offices, shared flats and busy cafés
+- ▸ Students who want calm study sounds for long evenings
+- ▸ Writing, coding and reading, when you want brown noise for focus
+- ▸ Anyone tired of ads breaking into their focus sounds
 
 ❓ FAQ
 
-🧐 Do I need to pay or sign up?
-➤ No — everything is available at launch, with no account and no sign-up.
+🧐 Do I need an account?
+➤ No. There is no sign-up, no ads, and nothing to log in to.
 
-🧐 How is the sound different from other timers?
-➤ Instead of a silent countdown, your time is made of warm brown noise and soft focus sounds that mask distractions and help you stay in flow.
+🧐 Is there a brown noise generator app for my phone?
+➤ Not yet. This is a Chrome extension for desktop and laptop browsers.
+
+🧐 Can I switch to white or pink?
+➤ Yes. The three dots in the top corner switch between brown, pink and white.
+
+🧐 Does the sound stop if I close the panel or switch tabs?
+➤ No. It keeps playing while your session runs, on any tab.
 
 🧐 Does it work offline?
-➤ Yes. Everything runs on-device, so this minimalist timer works without a connection.
+➤ Yes. The brown noise generator and the timer run entirely on your device.
 
-🧐 Can I use it for pomodoro?
-➤ You can set classic focus lengths, but there are no forced breaks — it's a gentler, minimalist pomodoro timer built around flow, not rigid cycles.
+🧐 Can it play all day?
+➤ Yes. Press ∞ and it plays until you press Finish.
 
-🧐 Is it good for focus and studying?
-➤ Yes — it's designed as a calm focus and study timer, with warm sound and a soft visual to help you concentrate and protect deep work.
-
-🧐 Does the sound stop if I switch tabs?
-➤ No — the focus sounds keep playing across tabs whilst your session runs.
-
-Set your time, press start, and let a minimalist timer carry your focus. ⭐
+Open Brown Noise Generator, pick your room, and let the sound hold the space while you work. ⭐

@@ -1,66 +1,79 @@
-Minimalist Timer on rauhallinen, lähes häiriötön keskittymisajastin selaimeesi. Yksi hiljainen tähti, tyhjä kenttä ja lämmin generatiivinen ääni, joka kantaa sinut työjakson läpi – ja antaa sinun laskeutua pehmeästi sen sijaan, että säikäyttäisi sinut hälytyksellä. Ei sekavuutta, ei tilejä. Jos keskittyminen tuntuu yleensä kylmältä tai mekaaniselta, tämä on rakennettu tuntumaan rauhalliselta.
+Brown Noise Generator on rauhallinen paikka työhön ja opiskeluun, suoraan selaimessasi. Se rakentaa lämpimän, syvän äänen live-tilassa omalla laitteellasi ja kietoo sen ympärille lempeän keskittymisajastimen. Avaa se sivupaneelissa, paina Start, ja huone hiljenee: äänet, näppäimistöt ja katumelu vaipuvat pehmeän, tasaisen äänimuurin alle. Ei mainoksia, ei tiliä, ei videovälilehteä pidettäväksi hengissä.
 
-Aseta aika, paina käynnistä ja pysy flow-tilassa.
+🌟 Miksi juuri tämä ruskean kohinan (brown noise) generaattori
+- ➤ Ääni syntyy live-tilassa — ei lyhyt äänite, joka toistuu
+- ➤ Valkoisen kohinan (white noise), vaaleanpunaisen ja ruskean kohinan generaattori yhdessä: kolme väriä, yksi napautus kutakin
+- ➤ Ruskea kohina ilman mainoksia, ilman puskurointia, mikään ei katkea kesken kaiken
+- ➤ Esiasetukset oikeille huoneille: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Lempeä ajastin: 5, 15, 25, 45 tai 90 minuuttia, tai ei loppua lainkaan
+- ➤ Asuu Chromen sivupaneelissa ja jatkaa soimista, kun suljet sen
+- ➤ Ääni ja ajastin toimivat laitteellasi: ei rekisteröitymistä, ja se toimii offline-tilassa
 
-🌟 Miksi juuri tämä minimalistinen pomodoro-ajastin
-- ➤ Selkeä, minimalistinen muotoilu – yksi rauhallinen näkymä, mikään ei kisko huomiotasi
-- ➤ Lämmin brown noise ja hellävaraiset keskittymisäänet sisäänrakennettuina – aikasi on kirjaimellisesti tehty äänestä
-- ➤ Pehmeä lähtö ja pehmeä lasku – ei kirskuvaa hälytystä jakson päättyessä
-- ➤ Joustavat jaksot: 5, 15, 25, 45, 90 minuuttia tai avoin kesto
-- ➤ Pyörii hiljaa sivupaneelissa työskennellessäsi – ääni jatkuu välilehdeltä toiselle
-- ➤ Täysin laitteella: yksityinen jo lähtökohtaisesti, toimii offline, ei rekisteröitymistä
+🔊 Miltä ruskean kohinan generaattori kuulostaa
+Ruskea kohina, jota kutsutaan myös Brownin kohinaksi, pitää suurimman osan energiastaan matalalla — lähempänä kaukaista aallokkoa tai lentokoneen matkustamon huminaa kuin kohinaista staattista ääntä. Tämä generaattori rakentaa sen laitteellasi reaaliajassa, joten se ei koskaan toista itseään silmukkana: tasainen ruskea kohina, jonka päällä on hieman ilmaa, riittävän täyteläinen täyttämään huoneen ja riittävän pehmeä unohtuakseen. Se on tehty syväksi ruskeaksi kohinaksi keskittymiseen: riittää peittämään huoneen, riittävän pehmeä haipumaan pois huomiostasi.
 
-🔊 Ääni, joka kannattelee keskittymistäsi
-Äänettömät lähtölaskennat ovat normi. Tämä kietoo jaksosi lämpimään brown noiseen – pehmeään, matalaan, generatiiviseen ääneen (ei lyhyt luuppi), joka peittää taustan häiriöt ja auttaa sinua asettumaan. Pidätkö rauhallisista keskittymisäänistä enemmän kuin kappaleista? Tämä pysyy rauhallisempana kuin keskittymismusiikki ja hellävaraisempana kuin karkea white noise. Oli kyse sitten brown noisesta opiskeluun, ambient-äänistä keskittymiseen ja syvään työhön tai vain kiireisen mielen rauhoittamisesta – ääni ajelehtii hitaasti eikä toistu koskaan.
+Ajattele sitä ambient-generaattorina ilman äänitteitä — yksi puhdas, generoitu ääni sateen ja lintujen silmukan sijaan.
 
-🎯 Keskittymis- ja opiskeluajastin yhdessä
-Tarvitsitpa keskittymisajastinta syvään työhön, opiskeluajastinta pitkiin jaksoihin tai rauhallista työajastinta toimistolle, käyttöliittymä pysyy poissa tieltäsi:
-1. Minimalistinen fokusajastin keskittymiseen ja flow-tilaan
-2. Minimalistinen opiskeluajastin lukemiseen, kirjoittamiseen ja kertaamiseen
-3. Rauhallinen tuottavuus- ja keskittymisajastin tehtäviin
-4. Esteettinen pomodoro-ajastin niille, jotka haluavat tunnelman ilman jäykkiä 25/5-syklejä
+Kaksi säädintä muovaa sitä: masking levittää muuria, kunnes lähelläsi olevat äänet sumenevat, ja stimulation kirkastaa sitä, kun tarvitset energiaa, ja madaltaa, kun tarvitset rauhaa.
 
-🎨 Esteettinen ja minimalistinen
-Jos rakastat esteettistä ajastinta tai söpöä ajastinta näytölläsi, tämä minimalistinen ajastin pitää kaiken kauniina ja yksinkertaisena: lämmin tähti, joka lähestyy jakson edetessä, hiljaisessa, avoimessa tilassa. Ei numeroita huutamassa sinulle, ei painetta – vain selkeä, esteettinen minimalistinen ajastin, jota on miellyttävä katsella.
+🎨 Ruskea, vaaleanpunainen vai valkoinen
+Ruskea on oletus, koska se on syvin ja lämpimin. Vaaleanpunaisen kohinan generaattori on yhden napautuksen päässä, askeleen kirkkaampi, ja valkoinen kohina keskittymiseen löytyy myös — kirkkain kolmesta. Moni vannoo valkoisen kohinan nimeen opiskelussa, kun taas toisista se tuntuu terävältä tunnin jälkeen. Kokeile jokaista väriä ja pidä se, jota korvasi lakkaavat huomaamasta. Paneelin valo seuraa valitsemaasi väriä.
 
-🧠 Lempeä tarkkaavaisuudellesi
-Se on suunniteltu olemaan lempeä sille, miten tarkkaavaisuus oikeasti toimii. Jos sinun on vaikea hahmottaa ajan kulkua tai kaipaat visuaalista ajastinta, joka saa ajan tuntumaan todelliselta ilman stressiä, tähti antaa sinulle pehmeän tunteen edistymisestä. Se toimii hyvin rauhallisena ADHD-ajastimen vaihtoehtona – sellaisena, joka ohjaa sinut keskittymiseen ja pois siitä sen sijaan, että rankaisisi sinua. Se kutsuu sinut takaisin; se ei sulje sinua häkkiin.
+🏢 Esiasetukset huoneellesi
+Valitse, missä olet, niin ääni säätyy sinulle:
+1. open office — levein muuri, lähellä oleville äänille
+2. thin walls — enemmän painoa matalissa, naapurille tai televisiolle
+3. café — kevyempi, jotta ympärilläsi oleva hälinä sulautuu joukkoon
+4. deep reading — hiljainen ja tasainen, rauhalliseen huoneeseen
+5. racing thoughts — enemmän stimulation-tehoa, kun päässä on meluisaa
+6. too much — pehmeämpi ja hiljaisempi, ylikuormittuneille päiville
 
-💡 Ei tilejä, ei mainoksia, eikä mikään data koskaan poistu laitteeltasi – vain rauhallinen, yksityinen tila keskittymiseen, toimivatpa aivosi miten tahansa.
+Jos tulit etsimään valkoisen kohinan generaattoria toimistohälinää vastaan, aloita open office -asetuksesta. Se toimii yksinkertaisena äänen maskauksena työpöydällesi, ja voit vaihtaa valkoiseen kohinaan työntekoon, jos pidät siitä kirkkaampana. Kosketa mitä tahansa säädintä, ja esiasetus muuttuu custom-tilaksi. Esiasetukset eivät koskaan muuta istuntosi pituutta.
+
+⏱ Ajastin, joka pysyy poissa tieltä
+Ajastin on siellä, kun haluat sen. Vedä kiekko kohtaan 5, 15, 25, 45 tai 90 minuuttia, tai paina ∞ ja anna äänen jatkua loputtomiin. Lähtölaskenta istuu hiljaa kiekon sisällä. Kun aika loppuu, hälytystä ei kuulu: ääni kirkastuu ja häipyy noin neljänkymmenen sekunnin aikana, jotta nouset pinnalle etkä säikähdä hereille.
+
+Käytä sitä keskittymisajastimena yhteen tehtävään, työajastimena seuraavaan tuntiin, tai minimalistisena ajastimena, joka vain pitää ajan sinulle. Ihmiset, joista tavalliset lähtölaskennat tuntuvat stressaavilta, käyttävät sitä usein lempeänä ADHD-ajastimena — se johdattaa sinut ulos keskittymisestä sen sijaan, että repisi sinut siitä irti.
+
+🧠 Keskittymiseen, opiskeluun ja levottomaan mieleen
+Ihmiset tarttuvat ruskeaan kohinaan opiskellessaan, ruskeaan kohinaan töissä ja ruskeaan kohinaan ADHD:n kanssa — rauhoittaakseen meluisan huoneen tai levottoman mielen. Emme lupaa mitään aivoista: tutkimustulokset ovat ristiriitaisia, eikä mikään ääni toimi kaikille. Tarjoamme hyvän lähtökohdan — tasaisen taustakohinan opiskeluun, keskittymisäänet, jotka eivät liiku altasi, ja äänen, jota voit muokata, kunnes se auttaa. Sama pätee valkoiseen kohinaan ADHD:ssä tai mihin tahansa muuhun keskittymisääneen: valitse väri, pidä se mikä toimii.
 
 🖥 Näin se toimii
-1️⃣ Avaa minimalistinen ajastin työkalupalkista
-2️⃣ Säädä aika liu'uttamalla – 5–90 minuuttia tai ∞
-3️⃣ Napauta tähteä – lämmin ääni alkaa ja ajaudut keskittymiseen
-4️⃣ Kun aika loppuu, jakso laskeutuu pehmeästi ilman hälytystä
-5️⃣ Sulje paneeli milloin tahansa – ääni jatkuu
+1️⃣ Napsauta kuvaketta — Brown Noise Generator avautuu Chromen sivupaneelissa
+2️⃣ Valitse esiasetus huoneellesi, tai säädä volume, masking, stimulation ja tone itse
+3️⃣ Aseta kiekko, tai paina ∞ ilman loppua
+4️⃣ Paina Start soittaaksesi ruskeaa kohinaa; napauta tähteä pysäyttääksesi ja jatkaaksesi
+5️⃣ Sulje paneeli — ääni jatkuu, kunnes istuntosi laskeutuu
 
-Kevyenä pomodoro-Chrome-laajennuksena ja työpöytäajastimena se pysyy juuri siellä, missä työskentelet – ei ylimääräistä ikkunaa, ei uuden välilehden kaappausta, ei häiriöitä.
+Se toimii kuin verkossa toimiva ruskean kohinan generaattori, mutta se asuu selaimessasi eikä tarvitse yhteyttä asennuksen jälkeen. Ei ole mustan ruudun ruskean kohinan videota pidettäväksi käynnissä eikä välilehteä pidettäväksi auki: ajattele sitä ruskean kohinan sovelluksena työpöydällesi, kevyenä Chrome-laajennuksena työsi vierellä.
 
-📌 Sopii erinomaisesti:
-- ▸ Syvään työhön, kirjoittamiseen, koodaamiseen ja lukemiseen
-- ▸ Opiskelijoille, jotka kaipaavat esteettistä opiskeluajastinta, joka näyttää rauhalliselta
-- ▸ Kaikille, joista tavalliset lähtölaskennat tuntuvat kylmiltä, kovaäänisiltä tai stressaavilta
-- ▸ Ihmisille, jotka keskittyvät paremmin lämpimän taustaäänen avulla
+👀 Kuva, joka seuraa ääntä
+Äänen soidessa hieno jyvä liikkuu paneelin poikki: karkeampi ruskealle, hienoin valkoiselle, nopeampi suuremmalla stimulation-tehoilla. Jos liike häiritsee sinua, kytke motion pois nurkasta.
 
-❓ Usein kysytyt kysymykset
+📌 Sopii erinomaisesti
+- ▸ Avokonttoreihin, jaettuihin asuntoihin ja vilkkaisiin kahviloihin
+- ▸ Opiskelijoille, jotka haluavat rauhallisia opiskeluääniä pitkiin iltoihin
+- ▸ Kirjoittamiseen, koodaamiseen ja lukemiseen, kun haluat ruskeaa kohinaa keskittymiseen
+- ▸ Kaikille, jotka ovat kyllästyneet mainoksiin, jotka keskeyttävät heidän keskittymisäänensä
 
-🧐 Pitääkö minun maksaa tai rekisteröityä?
-➤ Ei – kaikki on käytettävissä alusta alkaen, ilman tiliä ja ilman rekisteröitymistä.
+❓ UKK
 
-🧐 Miten ääni eroaa muista ajastimista?
-➤ Äänettömän lähtölaskennan sijaan aikasi on tehty lämpimästä brown noisesta ja pehmeistä keskittymisäänistä, jotka peittävät häiriöt ja auttavat pysymään flow-tilassa.
+🧐 Tarvitsenko tilin?
+➤ Ei. Ei rekisteröitymistä, ei mainoksia, eikä mitään, mihin kirjautua.
+
+🧐 Onko ruskean kohinan generaattorista sovellusta puhelimelleni?
+➤ Ei vielä. Tämä on Chrome-laajennus pöytäkoneen ja kannettavan selaimille.
+
+🧐 Voinko vaihtaa valkoiseen tai vaaleanpunaiseen?
+➤ Kyllä. Kolme pistettä yläkulmassa vaihtavat ruskean, vaaleanpunaisen ja valkoisen välillä.
+
+🧐 Pysähtyykö ääni, jos suljen paneelin tai vaihdan välilehteä?
+➤ Ei. Se jatkaa soimista istuntosi ajan, millä tahansa välilehdellä.
 
 🧐 Toimiiko se offline-tilassa?
-➤ Kyllä. Kaikki toimii laitteella, joten tämä minimalistinen ajastin toimii ilman verkkoyhteyttä.
+➤ Kyllä. Ruskean kohinan generaattori ja ajastin toimivat kokonaan laitteellasi.
 
-🧐 Voinko käyttää sitä pomodoroon?
-➤ Voit asettaa klassisia keskittymisaikoja, mutta pakotettuja taukoja ei ole – tämä on hellävaraisempi, minimalistinen pomodoro-ajastin, joka on rakennettu flow-tilan ympärille, ei jäykkien syklien varaan.
+🧐 Voiko se soida koko päivän?
+➤ Kyllä. Paina ∞, ja se soi, kunnes painat Finish.
 
-🧐 Sopiiko se keskittymiseen ja opiskeluun?
-➤ Kyllä – se on suunniteltu rauhalliseksi keskittymis- ja opiskeluajastimeksi, jossa lämmin ääni ja pehmeä visuaali auttavat keskittymään ja suojaamaan syvää työtä.
-
-🧐 Pysähtyykö ääni, jos vaihdan välilehteä?
-➤ Ei – keskittymisäänet jatkuvat välilehdeltä toiselle jakson ajan.
-
-Aseta aika, paina käynnistä ja anna minimalistisen ajastimen kantaa keskittymistäsi. ⭐
+Avaa Brown Noise Generator, valitse huoneesi, ja anna äänen pitää tila hallussa, kun työskentelet. ⭐

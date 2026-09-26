@@ -1,66 +1,79 @@
-Minimalist Timer – beveik neblaškantis susikaupimo laikmatis tavo naršyklei. Viena tyli žvaigždė, tuščias laukas ir šiltas generatyvus garsas, kuris perneša tave per visą darbo sesiją, o pabaigoje leidžia švelniai nusileisti, užuot išgąsdinęs signalu. Jokios sumaišties, jokių paskyrų. Jei susikaupimas paprastai atrodo šaltas ar mechaniškas, šis sukurtas taip, kad jaustųsi ramus.
+Brown Noise Generator – tai rami vieta dirbti ir mokytis tiesiai tavo naršyklėje. Jis realiuoju laiku sukuria šiltą, gilų garsą tavo pačiame įrenginyje ir apgaubia jį švelniu susikaupimo laikmačiu. Atverk jį šoniniame skydelyje, paspausk Start, ir kambarys nutyla: balsai, klaviatūros ir gatvės garsai nuskęsta po minkšta, tolygia garso siena. Jokios reklamos, jokios paskyros, jokio vaizdo įrašo skirtuko, kurį reikėtų palaikyti gyvą.
 
-Nustatyk laiką, paspausk start ir išlik sraute.
+🌟 Kodėl šis rudojo triukšmo generatorius
+- ➤ Garsas generuojamas gyvai — ne trumpas įrašas, kuris kartojasi
+- ➤ Baltojo, rožinio ir rudojo triukšmo generatorius viename: trys spalvos, po vieną prisilietimą kiekvienai
+- ➤ Rudasis triukšmas be reklamų, be buferizavimo, nieko, kas nutrūktų pusiaukelėje
+- ➤ Iš anksto nustatyti profiliai tikroms erdvėms: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Švelnus laikmatis: 5, 15, 25, 45 arba 90 minučių, arba visai be pabaigos
+- ➤ Gyvena Chrome šoniniame skydelyje ir toliau groja, kai jį uždarai
+- ➤ Garsas ir laikmatis veikia tavo įrenginyje: registruotis nereikia, ir viskas veikia neprisijungus
 
-🌟 Kodėl šis minimalistinis laikmatis
-- ➤ Švarus, minimalistinis dizainas – viena rami scena, niekas netraukia tavo dėmesio
-- ➤ Įdiegtas šiltas brown noise ir švelnūs susikaupimo garsai – tavo laikas tiesiogine prasme sudarytas iš garso
-- ➤ Švelnus startas ir švelnus nusileidimas – jokio rėžiančio signalo, kai sesija baigiasi
-- ➤ Lanksčios sesijos: 5, 15, 25, 45, 90 minučių arba be ribos
-- ➤ Tyliai veikia šoniniame skydelyje, kol dirbi – garsas skamba toliau net perjungus skirtukus
-- ➤ Visiškai tavo įrenginyje: privatus iš prigimties, veikia neprisijungus, be registracijos
+🔊 Kaip skamba rudojo triukšmo generatorius
+Rudasis triukšmas, dar vadinamas Brauno triukšmu, didžiąją dalį energijos išlaiko žemuose dažniuose — arčiau tolimo bangų mūšos ar lėktuvo salono ūžesio nei prie trikdžių. Šis generatorius kuria jį tavo įrenginyje realiuoju laiku, todėl jis niekada nesikartoja kilpa: tolygus rudasis triukšmas su nedideliu oro prieskoniu viršuje, pakankamai pilnas, kad užpildytų kambarį, ir pakankamai švelnus, kad būtų pamirštas. Jis sukurtas kaip gilus rudasis triukšmas susikaupimui: pakanka, kad uždengtų kambarį, ir yra pakankamai švelnus, kad išnyktų iš tavo dėmesio.
 
-🔊 Garsas, kuris palaiko tavo susikaupimą
-Tylus laiko skaičiavimas yra įprasta. Šis laikmatis apgaubia tavo sesiją šiltu brown noise – švelniu, žemu, generatyviu garsu (ne trumpa kilpa), kuris užmaskuoja aplinkos blaškymus ir padeda įsitraukti. Labiau mėgsti ramius susikaupimo garsus nei dainas? Šis garsas ramesnis už fokuso muziką ir švelnesnis už aštrų white noise. Ar tai būtų brown noise mokymuisi, aplinkos garsai susikaupimui, deep work, ar tiesiog nerimstančio proto raminimas – garsas lėtai plaukia ir niekada nepasikartoja.
+Įsivaizduok jį kaip aplinkos garsų generatorių be įrašų — vieną švarų, sugeneruotą garsą vietoj lietaus ir paukščių, besikartojančių kilpoje.
 
-🎯 Susikaupimo ir mokymosi laikmatis viename
-Nesvarbu, ar tau reikia susikaupimo laikmačio deep work, mokymosi laikmačio ilgoms sesijoms, ar ramaus darbo laikmačio biurui – sąsaja nesipainioja po kojomis:
-1. Minimalistinis susikaupimo laikmatis koncentracijai ir srautui
-2. Minimalistinis mokymosi laikmatis skaitymui, rašymui ir kartojimui
-3. Ramus produktyvumo ir koncentracijos laikmatis užduotims
-4. Estetiškas Pomodoro laikmatis tiems, kas nori nuotaikos be griežtų 25/5 ciklų
+Du reguliatoriai formuoja jį: masking praplečia sieną, kol netoliese esantys balsai išsilieja, o stimulation padaro jį šviesesnį, kai reikia energijos, ir žemesnį, kai reikia ramybės.
 
-🎨 Estetiška ir minimalu
-Jei mėgsti estetišką laikmatį ar mielą laikmatį savo ekrane, šis minimalistinis atgalinės atskaitos laikmatis viską išlaiko gražiai ir paprastai: šilta žvaigždė artėja, kol tęsiasi tavo sesija, ramioje atviroje erdvėje. Jokių skaičių, kurie ant tavęs rėktų, jokio spaudimo – tik švarus, estetiškas minimalistinis laikmatis, į kurį malonu žiūrėti.
+🎨 Rudas, rožinis ar baltas
+Rudas yra numatytasis, nes jis giliausias ir šilčiausias. Rožinio triukšmo generatorius yra per vieną prisilietimą, žingsniu šviesesnis, o baltasis triukšmas susikaupimui taip pat yra – ryškiausias iš trijų. Daugelis prisiekia baltuoju triukšmu mokantis, kai kiti po valandos jį laiko per aštrų. Išbandyk kiekvieną spalvą ir pasilik tą, kurios tavo ausys nustoja pastebėti. Skydelio šviesa seka spalvą, kurią pasirenki.
 
-🧠 Švelnus tavo dėmesiui
-Jis sukurtas gerbti tai, kaip dėmesys iš tikrųjų veikia. Jei tau sunku justi laiko tėkmę arba nori vaizdinio laikmačio, kuris paverstų laiką apčiuopiamu be streso, žvaigždė suteikia švelnų progreso pojūtį. Jis puikiai tinka kaip rami ADHD laikmačio alternatyva – tokia, kuri įveda ir išveda iš susikaupimo, o ne baudžia. Jis pasikviečia tave atgal, o ne uždaro narve.
+🏢 Iš anksto nustatyti profiliai erdvei, kurioje esi
+Pasirink, kur esi, ir garsas bus pritaikytas tau:
+1. open office — plačiausia siena, netoliese esantiems balsams
+2. thin walls — daugiau svorio žemuose dažniuose, kaimynui ar televizoriui
+3. café — lengvesnis, kad aplink tave sklindantis ūžesys susilietų
+4. deep reading — tylus ir tolygus, ramiai erdvei
+5. racing thoughts — daugiau stimulation, kai galvoje triukšminga
+6. too much — švelnesnis ir tylesnis, perkrautoms dienoms
 
-💡 Jokių paskyrų, jokių reklamų ir jokie duomenys niekada nepalieka tavo įrenginio – tik rami, privati erdvė susikaupti, kad ir kaip veiktų tavo smegenys.
+Jei atėjai ieškodamas baltojo triukšmo generatoriaus prieš biuro šurmulį, pradėk nuo open office. Jis veikia kaip paprastas garso maskavimas tavo darbo vietai, o jei nori šviesesnio garso darbui, gali perjungti į baltąjį triukšmą. Palietus bet kurį reguliatorių, profilis tampa custom. Profiliai niekada nekeičia tavo sesijos trukmės.
+
+⏱ Laikmatis, kuris nesipainioja po kojomis
+Laikmatis ten, kai jo reikia. Vilk ratuką iki 5, 15, 25, 45 ar 90 minučių arba paspausk ∞ ir leisk garsui skambėti be pabaigos. Atgalinė atskaita tyliai slypi ratuke. Kai laikas baigiasi, jokio signalo nėra: garsas šviesėja ir nyksta apie keturiasdešimt sekundžių, kad iškiltum į paviršių, o ne būtum staiga pažadintas.
+
+Naudok jį kaip susikaupimo laikmatį vienai užduočiai, darbo laikmatį kitai valandai arba minimalistinį laikmatį, kuris tiesiog seka laiką už tave. Žmonės, kuriems įprastos atgalinės atskaitos kelia stresą, dažnai naudoja jį kaip švelnią ADHD laikmačio alternatyvą — jis išveda tave iš susikaupimo, o ne ištraukia jėga.
+
+🧠 Susikaupimui, mokymuisi ir neramiam protui
+Žmonės renkasi rudąjį triukšmą mokymuisi, rudąjį triukšmą darbui ir rudąjį triukšmą sergant ADHD — kad nutildytų triukšmingą kambarį ar neramią galvą. Mes nieko nežadame apie smegenis: tyrimai prieštaringi, ir nė vienas garsas netinka visiems. Mes siūlome gerą pagrindą — pastovų foninį triukšmą mokymuisi, susikaupimo garsus, kurie nejuda po tavimi, ir garsą, kurį gali formuoti, kol jis padeda. Tas pats galioja ir baltajam triukšmui sergant ADHD ar bet kokiam kitam susikaupimo garsui: pasirink spalvą, pasilik tai, kas veikia.
 
 🖥 Kaip tai veikia
-1️⃣ Atverk minimalistinį laikmatį iš įrankių juostos
-2️⃣ Slinkdamas nustatyk laiką – nuo 5 iki 90 minučių arba ∞
-3️⃣ Bakstelėk žvaigždę – prasideda šiltas garsas ir tu panyri į susikaupimą
-4️⃣ Kai laikas baigiasi, sesija švelniai nusileidžia be jokio signalo
-5️⃣ Bet kada uždaryk skydelį – garsas skamba toliau
+1️⃣ Spustelėk piktogramą — Brown Noise Generator atsidaro Chrome šoniniame skydelyje
+2️⃣ Pasirink profilį savo erdvei arba pats nustatyk volume, masking, stimulation ir tone
+3️⃣ Nustatyk ratuką arba paspausk ∞ be pabaigos
+4️⃣ Paspausk Start, kad grotų rudasis triukšmas; bakstelėk žvaigždę, kad sustabdytum ir tęstum
+5️⃣ Uždaryk skydelį — garsas skambės toliau, kol nusileis tavo sesija
 
-Kaip lengvas Pomodoro Chrome plėtinys ir darbalaukio laikmatis, jis lieka ten, kur dirbi – jokio papildomo lango, jokio naujo skirtuko užgrobimo, jokių blaškymų.
+Jis veikia kaip internetinis rudojo triukšmo generatorius, tačiau gyvena tavo naršyklėje ir, įdiegus, ryšio nebereikia. Nėra juodo ekrano vaizdo įrašo su ruduoju triukšmu, kurį reikėtų palikti veikiantį, ir nėra skirtuko, kurį reikėtų palikti atvertą: laikyk jį rudojo triukšmo programėle savo darbalaukiui, lengvu Chrome plėtiniu šalia tavo darbo.
+
+👀 Vaizdas, kuris seka garsą
+Kol groja garsas, per skydelį slenka smulkūs grūdeliai: rupesni rudajai spalvai, smulkiausi baltajai, greitesni, kai daugiau stimulation. Jei judesys tave trikdo, išjunk motion kampe.
 
 📌 Puikiai tinka
-- ▸ Deep work, rašymui, programavimui ir skaitymui
-- ▸ Studentams, norintiems estetiško mokymosi laikmačio, kuris atrodo ramiai
-- ▸ Visiems, kam įprasti laikmačiai atrodo šalti, garsūs ar stresą keliantys
-- ▸ Tiems, kas geriau susikaupia su šiltu foniniu garsu
+- ▸ Atviro tipo biurams, bendriems butams ir šurmuliuojančioms kavinėms
+- ▸ Studentams, norintiems ramių mokymosi garsų ilgiems vakarams
+- ▸ Rašymui, programavimui ir skaitymui, kai nori rudojo triukšmo susikaupimui
+- ▸ Visiems, kam įgriso reklamos, pertraukiančios jų susikaupimo garsus
 
 ❓ DUK
 
-🧐 Ar reikia mokėti ar registruotis?
-➤ Ne – viskas prieinama nuo pat pradžių, be paskyros ir be registracijos.
+🧐 Ar man reikia paskyros?
+➤ Ne. Registruotis nereikia, reklamų nėra, ir nėra kur prisijungti.
 
-🧐 Kuo garsas skiriasi nuo kitų laikmačių?
-➤ Vietoj tylaus laiko skaičiavimo tavo laikas sudarytas iš šilto brown noise ir švelnių susikaupimo garsų, kurie užmaskuoja blaškymus ir padeda išlikti sraute.
+🧐 Ar yra rudojo triukšmo generatoriaus programėlė mano telefonui?
+➤ Dar ne. Tai Chrome plėtinys darbalaukio ir nešiojamojo kompiuterio naršyklėms.
 
-🧐 Ar veikia neprisijungus?
-➤ Taip. Viskas veikia tavo įrenginyje, tad šis minimalistinis laikmatis veikia be interneto ir niekada tavęs neseka.
+🧐 Ar galiu perjungti į baltą ar rožinę?
+➤ Taip. Trys taškai viršutiniame kampe perjungia tarp rudos, rožinės ir baltos.
 
-🧐 Ar galiu naudoti Pomodoro metodui?
-➤ Gali nustatyti klasikines susikaupimo trukmes, bet nėra priverstinių pertraukų – tai švelnesnis, minimalistinis Pomodoro laikmatis, sukurtas aplink srautą, o ne griežtus ciklus.
+🧐 Ar garsas sustoja, jei uždarau skydelį arba pereinu į kitą skirtuką?
+➤ Ne. Jis toliau groja, kol vyksta tavo sesija, bet kuriame skirtuke.
 
-🧐 Ar tinka susikaupimui ir mokymuisi?
-➤ Taip – jis sukurtas kaip ramus susikaupimo ir mokymosi laikmatis su šiltu garsu ir švelniu vaizdu, kuris padeda susitelkti ir apsaugoti deep work.
+🧐 Ar tai veikia neprisijungus?
+➤ Taip. Rudojo triukšmo generatorius ir laikmatis veikia visiškai tavo įrenginyje.
 
-🧐 Ar garsas nutrūksta perjungus skirtukus?
-➤ Ne – susikaupimo garsai skamba toliau tarp skirtukų, kol vyksta tavo sesija.
+🧐 Ar tai gali groti visą dieną?
+➤ Taip. Paspausk ∞, ir tai grieš, kol paspausi Finish.
 
-Nustatyk laiką, paspausk start ir leisk minimalistiniam laikmačiui nešti tavo susikaupimą. ⭐
+Atverk Brown Noise Generator, pasirink savo erdvę ir leisk garsui išlaikyti erdvę, kol dirbi. ⭐

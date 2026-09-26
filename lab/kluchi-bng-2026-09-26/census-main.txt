@@ -1,0 +1,201 @@
+
+=== 'brownian noise generator' → FREE  (стор-поиск: 7 расширений, 7 проверено) ===
+🟢 держателей 0 · кандидатов 7
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     ?     1746   23        нет  FocusRoom — New Tab Lo-Fi, Rain & Brown Nois
+  NO     ?     2316   2         нет  HealthCheck – Tinnitus Sound Relief
+  NO     53    6896   122       да   Minimalist Timer
+  NO     ?     4644   76        да   Binaural Extension
+
+=== 'online brown noise generator' → FREE  (стор-поиск: 4 расширений, 4 проверено) ===
+🟢 держателей 0 · кандидатов 4
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     2125   6         нет  Audiomultitool
+
+=== 'brown noise generator app' → FREE  (стор-поиск: 3 расширений, 3 проверено) ===
+🟢 держателей 0 · кандидатов 3
+  класс  langs desc   users     опт  title
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+
+=== 'white brown pink noise generator' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     ?     2859   24        нет  Custom Noise Generator
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     2316   2         нет  HealthCheck – Tinnitus Sound Relief
+  NO     53    6896   122       да   Minimalist Timer
+  NO     ?     4644   76        да   Binaural Extension
+  NO     ?     2125   6         нет  Audiomultitool
+
+=== 'brown noise' → OCCUPIED-WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟠 Brown Noise Player · 51 яз · 2263 симв · 5 юз
+  класс  langs desc   users     опт  title
+  START  51    2263   5         да   Brown Noise Player
+  NO     ?     1423   411       нет  Noise Generator
+  MID    ?     1746   23        нет  FocusRoom — New Tab Lo-Fi, Rain & Brown Nois
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     1962   129       нет  Noise Level Monitor
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     ?     1332   43        нет  Smartnoise - Visual
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+
+=== 'brown noise no ads' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     53    6896   122       да   Minimalist Timer
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     6     6523   14        да   FocusSpark – Smart Focus Sessions
+  NO     ?     2586   11        нет  Ambient Sounds Pro
+  NO     2     3548   13        да   Uykucu — Sleep Sounds, White Noise & Relaxat
+  NO     ?     2835   336       нет  AmbientFocus
+  NO     17    6181   1,000     да   Glassy - New Tab
+  NO     ?     4644   76        да   Binaural Extension
+  NO     14    3404   66        да   MeTenk – Link Tasks to Pomodoro in One Click
+  NO     ?     2674   4         нет  ProTab – Pomodoro Timer & Productivity
+
+=== 'brown noise for studying' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     51    2263   5         да   Brown Noise Player
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     52    4648   47        да   Noise Maker
+  NO     53    6896   122       да   Minimalist Timer
+  NO     6     2671   22        нет  ADHD Relief - Focus & Relaxation
+  NO     ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     ?     2478   30        нет  Ambiens — Ambient Sound Mixer
+  NO     ?     1718   9         нет  Youtube white noise autoplayer
+  NO     ?     2586   11        нет  Ambient Sounds Pro
+
+=== 'deep brown noise' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     51    2263   5         да   Brown Noise Player
+  NO     ?     1746   23        нет  FocusRoom — New Tab Lo-Fi, Rain & Brown Nois
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     6     2671   22        нет  ADHD Relief - Focus & Relaxation
+  NO     ?     2104   52        нет  TAKT
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     ?     2584   54        нет  Calm Background Sounds
+  NO     53    6896   122       да   Minimalist Timer
+  NO     ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+
+=== 'play brown noise' → FREE  (стор-поиск: 8 расширений, 8 проверено) ===
+🟢 держателей 0 · кандидатов 8
+  класс  langs desc   users     опт  title
+  NO     51    2263   5         да   Brown Noise Player
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     ?     3875   ?         да   LeetNoise
+  NO     ?     2859   24        нет  Custom Noise Generator
+  NO     ?     2375   686       нет  Goal Board, Vision Board, GSD Board
+  NO     ?     2584   54        нет  Calm Background Sounds
+  NO     ?     2835   336       нет  AmbientFocus
+  NO     52    4363   16        да   Rain sounds & thunder
+
+=== 'smooth brown noise' → FREE  (стор-поиск: 8 расширений, 8 проверено) ===
+🟢 держателей 0 · кандидатов 8
+  класс  langs desc   users     опт  title
+  NO     51    2263   5         да   Brown Noise Player
+  NO     ?     1423   411       нет  Noise Generator
+  NO     ?     2584   54        нет  Calm Background Sounds
+  NO     10    2387   7         нет  Efrd - Efficient Reading
+  NO     ?     2870   11        нет  Sanctuary
+  NO     ?     7009   17        да   Relax Your Mind
+  NO     ?     3002   4         да   Anemone - Dynamic Anti Eye Strain Filter
+  NO     41    5806   24        да   Pomodoro Timer Focus Productivity
+
+=== 'brown noise app' → FREE  (стор-поиск: 4 расширений, 4 проверено) ===
+🟢 держателей 0 · кандидатов 4
+  класс  langs desc   users     опт  title
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     53    6896   122       да   Minimalist Timer
+
+=== 'brown noise for adhd' → FREE  (стор-поиск: 6 расширений, 6 проверено) ===
+🟢 держателей 0 · кандидатов 6
+  класс  langs desc   users     опт  title
+  NO     6     2671   22        нет  ADHD Relief - Focus & Relaxation
+  NO     4     2062   6         нет  ADHD Task Starter
+  NO     ?     1737   29        нет  Noice Noise
+  NO     ?     2478   30        нет  Ambiens — Ambient Sound Mixer
+  NO     ?     2586   11        нет  Ambient Sounds Pro
+  NO     ?     7009   17        да   Relax Your Mind
+
+=== 'white pink brown noise' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     ?     1737   29        нет  Noice Noise
+  NO     ?     2859   24        нет  Custom Noise Generator
+  NO     ?     2316   2         нет  HealthCheck – Tinnitus Sound Relief
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     1718   9         нет  Youtube white noise autoplayer
+  NO     ?     1709   5         нет  FocusBot - Neural Sound Waves & Smart Pomodo
+
+=== 'brown noise for focus' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     51    2263   5         да   Brown Noise Player
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     ?     1423   411       нет  Noise Generator
+  NO     6     2671   22        нет  ADHD Relief - Focus & Relaxation
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     53    3704   1,000     да   Focus Mode
+  NO     ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     53    6896   122       да   Minimalist Timer
+  NO     6     6523   14        да   FocusSpark – Smart Focus Sessions
+
+=== 'brown noise for concentration' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     6     2671   22        нет  ADHD Relief - Focus & Relaxation
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     53    6896   122       да   Minimalist Timer
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     1410   25        нет  Music for focus and work - Flow Music
+  NO     ?     2584   54        нет  Calm Background Sounds
+  NO     ?     1737   29        нет  Noice Noise
+
+=== 'brown noise for work' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     51    2263   5         да   Brown Noise Player
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     1746   23        нет  FocusRoom — New Tab Lo-Fi, Rain & Brown Nois
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     53    6896   122       да   Minimalist Timer
+  NO     6     2671   22        нет  ADHD Relief - Focus & Relaxation
+  NO     ?     1410   25        нет  Music for focus and work - Flow Music
+  NO     ?     1962   129       нет  Noise Level Monitor
+
+=== 'brown noise black screen' → FREE  (стор-поиск: 1 расширений, 1 проверено) ===
+🟢 держателей 0 · кандидатов 1
+  класс  langs desc   users     опт  title
+  NO     53    6896   122       да   Minimalist Timer
+
+=== dry-run: 17 двери · дискавери $0 (стор-поиск) · keys.csv НЕ тронут ===

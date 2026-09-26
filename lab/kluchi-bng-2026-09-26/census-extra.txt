@@ -1,0 +1,270 @@
+
+=== 'pink noise generator' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     ?     2859   24        нет  Custom Noise Generator
+  NO     ?     2316   2         нет  HealthCheck – Tinnitus Sound Relief
+  NO     52    4648   47        да   Noise Maker
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     53    6896   122       да   Minimalist Timer
+  NO     ?     4644   76        да   Binaural Extension
+  NO     ?     2125   6         нет  Audiomultitool
+
+=== 'white noise generator' → OCCUPIED  (стор-поиск: 10 расширений, 10 проверено) ===
+🔴 White Noise Generator · 52 яз · 4318 симв · 1000 юз
+  класс  langs desc   users     опт  title
+  EQUAL  52    4318   1,000     да   White Noise Generator
+  NO     ?     1423   411       нет  Noise Generator
+  MID    ?     4980   13        да   Neurorite - White Noise Generator
+  NO     41    2307   2,000     да   White Noise for Google Chrome™
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     ?     2859   24        нет  Custom Noise Generator
+  NO     40    2733   49        да   White Noise Sound App
+  NO     52    4648   47        да   Noise Maker
+  NO     52    4524   3,000     да   Ambient sound
+  NO     ?     2316   2         нет  HealthCheck – Tinnitus Sound Relief
+
+=== 'pink noise' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Pink Noise Focus · ? яз · 1174 симв · 13 юз
+  класс  langs desc   users     опт  title
+  NO     ?     1423   411       нет  Noise Generator
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  START  ?     1174   13        нет  Pink Noise Focus
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     ?     2316   2         нет  HealthCheck – Tinnitus Sound Relief
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     52    4409   22        да   White Noise Sound
+  NO     ?     1737   29        нет  Noice Noise
+  NO     ?     2859   24        нет  Custom Noise Generator
+
+=== 'white noise for studying' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     41    2307   2,000     да   White Noise for Google Chrome™
+  NO     52    4524   3,000     да   Ambient sound
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     13    2563   50        нет  White Noise
+  NO     ?     4050   119       да   White Noise Player
+  NO     30    3758   500,000   да   Focus To-Do: Pomodoro Timer & To Do List
+  NO     ?     1718   9         нет  Youtube white noise autoplayer
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     ?     1377   177       нет  Simple Music Player
+
+=== 'white noise for focus' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     13    2563   50        нет  White Noise
+  NO     41    2307   2,000     да   White Noise for Google Chrome™
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     2     1026   49        нет  Minimalist white noise
+  NO     51    2302   ?         да   White Noise Player
+  NO     40    2733   49        да   White Noise Sound App
+  NO     52    4524   3,000     да   Ambient sound
+  NO     ?     1334   21        нет  Focus Sounds
+  NO     ?     2632   398       нет  AttainMate - White Noise & Pomodoro Timer
+
+=== 'white noise generator for office' → FREE  (стор-поиск: 4 расширений, 4 проверено) ===
+🟢 держателей 0 · кандидатов 4
+  класс  langs desc   users     опт  title
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     52    4648   47        да   Noise Maker
+  NO     52    4363   16        да   Rain sounds & thunder
+
+=== 'sound masking' → FREE  (стор-поиск: 9 расширений, 9 проверено) ===
+🟢 держателей 0 · кандидатов 9 · MID: Tinnirelief — Tinnitus Sound M
+  класс  langs desc   users     опт  title
+  MID    ?     3790   5         да   Tinnirelief — Tinnitus Sound Masking
+  NO     52    4524   3,000     да   Ambient sound
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     ?     7009   17        да   Relax Your Mind
+  NO     ?     2584   54        нет  Calm Background Sounds
+  NO     52    4648   47        да   Noise Maker
+  NO     ?     2147   47        нет  Tinnitus Notch Therapy
+
+=== 'study sounds' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     52    4524   3,000     да   Ambient sound
+  NO     ?     1747   100,000   нет  Prolific Assistant
+  NO     56    1664   1,000     да   Custom Sound for Chrome™
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     ?     3184   7         да   YouTube Study Enhancer
+  NO     ?     9196   882       да   Sound Tools
+  NO     ?     2089   10,000    нет  Lofi Girl
+  NO     ?     2650   100       нет  Study Planner- Todo list & pomodoro timer
+  NO     52    5640   571       да   Lecture Recorder
+  NO     ?     3888   47        да   StudyChime - Prolific Study Alerts
+
+=== 'focus sounds' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Focus Sounds · ? яз · 1334 симв · 21 юз
+  класс  langs desc   users     опт  title
+  EQUAL  ?     1334   21        нет  Focus Sounds
+  START  ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     52    4524   3,000     да   Ambient sound
+  NO     4     5290   300,000   да   Wallsflow New Tab: Live Wallpapers, Widgets 
+  NO     55    3554   40,000    да   Noise Cancelling App
+  NO     5     2110   391       нет  ABF (Audio Brain Focus)
+  NO     ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     41    2307   2,000     да   White Noise for Google Chrome™
+  NO     6     6523   14        да   FocusSpark – Smart Focus Sessions
+  NO     ?     2302   37        нет  Focus Waves - Pomodoro Timer with Custom Amb
+
+=== 'focus noise' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     55    3554   40,000    да   Noise Cancelling App
+  NO     ?     1334   21        нет  Focus Sounds
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     41    2307   2,000     да   White Noise for Google Chrome™
+  NO     52    4524   3,000     да   Ambient sound
+  NO     ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     13    2563   50        нет  White Noise
+  NO     6     2671   22        нет  ADHD Relief - Focus & Relaxation
+  NO     ?     2017   50        нет  LeetQuiet: Code with Focus. Not with Noise.
+
+=== 'background noise for studying' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     41    2307   2,000     да   White Noise for Google Chrome™
+  NO     52    4524   3,000     да   Ambient sound
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     13    2563   50        нет  White Noise
+  NO     ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     ?     4050   119       да   White Noise Player
+  NO     52    4648   47        да   Noise Maker
+  NO     7     2503   9         нет  Deep Focus — Study Dashboard
+  NO     ?     2657   18        нет  Sonora — An Ambient Sound Mixer
+
+=== 'noise generator' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Noise Generator · ? яз · 1423 симв · 411 юз · сосед: White Noise Generator (1,000 юз, свой ключ)
+  класс  langs desc   users     опт  title
+  EQUAL  ?     1423   411       нет  Noise Generator
+  MID    52    4318   1,000     да   White Noise Generator
+  MID    ?     2859   24        нет  Custom Noise Generator
+  MID    ?     4980   13        да   Neurorite - White Noise Generator
+  NO     41    2307   2,000     да   White Noise for Google Chrome™
+  NO     52    4648   47        да   Noise Maker
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     52    4524   3,000     да   Ambient sound
+  NO     40    2733   49        да   White Noise Sound App
+  NO     ?     2316   2         нет  HealthCheck – Tinnitus Sound Relief
+
+=== 'ambient noise generator' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     52    4524   3,000     да   Ambient sound
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     41    2307   2,000     да   White Noise for Google Chrome™
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     ?     1423   411       нет  Noise Generator
+  NO     ?     2859   24        нет  Custom Noise Generator
+  NO     52    4648   47        да   Noise Maker
+  NO     51    2611   1,000     да   Nature Sounds and White Noise
+  NO     40    2733   49        да   White Noise Sound App
+  NO     ?     2478   30        нет  Ambiens — Ambient Sound Mixer
+
+=== 'ambient noise' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10 · MID: Focus Sounds – Ambient Noise
+  класс  langs desc   users     опт  title
+  NO     52    4524   3,000     да   Ambient sound
+  NO     ?     2586   11        нет  Ambient Sounds Pro
+  MID    ?     1742   4         нет  Focus Sounds – Ambient Noise
+  NO     52    2262   33        да   Ambient sound
+  MID    ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+  NO     55    3554   40,000    да   Noise Cancelling App
+  NO     13    2563   50        нет  White Noise
+  NO     55    3385   1,000     да   Background Noise Remover
+  NO     52    4409   22        да   White Noise Sound
+  NO     8     1647   4         нет  Ambient Soundscape
+
+=== 'focus timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 Focus Timer · 10 яз · 2146 симв · 7000 юз · сосед: StayFocusd – Website B (700,000 юз, свой ключ)
+  класс  langs desc   users     опт  title
+  NO     30    3758   500,000   да   Focus To-Do: Pomodoro Timer & To Do List
+  EQUAL  10    2146   7,000     нет  Focus Timer
+  NO     56    2932   5,000     да   Pomodoro Timer
+  NO     ?     4437   60,000    да   Otto: Pomodoro timer & Website Blocker. Bloc
+  NO     ?     0      1,000     нет  Purrfect Pomodoro Timer: Productivity, Time 
+  NO     ?     2335   1,000     нет  TimeDay - Focus Pomodoro Timer and Countdown
+  MID    10    3866   700,000   да   StayFocusd – Website Blocker & Focus Timer &
+  NO     ?     1955   1,000     нет  Pomodoro Timer for Google Calendar
+  NO     53    4390   869       да   Pomodoro Technique Timer
+  MID    ?     2100   400       нет  Pomodoro Focus Timer
+
+=== 'adhd timer' → WEAK  (стор-поиск: 10 расширений, 10 проверено) ===
+🟡 ADHD Timer — Focus Timer & To-Do S · 5 яз · 2618 симв · 11 юз
+  класс  langs desc   users     опт  title
+  START  5     2618   11        нет  ADHD Timer — Focus Timer & To-Do Side Panel
+  NO     ?     1559   35        нет  Timer for ADHD
+  NO     ?     3964   512       да   Tomato Timeout - ADHD Focus Timer + Site Blo
+  NO     ?     4758   12        да   Dopamodoro - ADHD Pomodoro Timer & AI Focus 
+  NO     ?     2716   79        нет  Monora: ADHD Focus Timer & Distraction Block
+  NO     55    2746   31        да   Pomodoro Focus Timer & ADHD Study Tool by Lo
+  NO     ?     1358   3         нет  ADHD Netflix Timer
+  NO     ?     2246   3,000     нет  Meowdoro Tracker - Pomodoro Work Timer & Pro
+  NO     ?     3227   65        да   Do One Thing - ADHD Focus Timer & Task Manag
+  NO     4     4511   440       да   New Tab: Pomodoro Timer & Site Blocker for C
+
+=== 'sound timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     12    1959   80,000    нет  Alarm, Timer and Stopwatch
+  NO     43    4765   60,000    да   Timer for Google Chrome™
+  NO     ?     3791   8,000     да   Meeting Timer - for Google Meet
+  NO     17    4795   80,000    да   Call Timer for Meet
+  NO     3     1904   6,000     нет  Pomodoro Timer PRO
+  NO     23    3899   1,000     да   Alarm Clock, Timer & Stopwatch – World Clock
+  NO     52    5635   1,000     да   Break Timer
+  NO     ?     4779   21        да   Green Stripe Timer
+  NO     52    3749   10,000    да   Timer Countdown
+  NO     ?     4588   4,000     да   Timer for Google Slides
+
+=== 'minimalist timer' → OCCUPIED-WEAK  (стор-поиск: 9 расширений, 9 проверено) ===
+🟠 Minimalist Timer · 53 яз · 6896 симв · 122 юз
+  класс  langs desc   users     опт  title
+  EQUAL  53    6896   122       да   Minimalist Timer
+  NO     ?     1848   1,000     нет  Minimalist Focus Timer
+  NO     ?     1849   190       нет  Simple Timer
+  NO     ?     1578   9         нет  Minimalist Countdown Timer
+  NO     ?     5563   68        да   Simple Timer
+  NO     ?     6309   62        да   Pomo — Minimalist Pomodoro Timer
+  NO     ?     2880   2,000     нет  Sidebar Clock
+  NO     ?     1433   6         нет  Minimalist Task & Timer
+  NO     ?     2139   39        нет  Break Now - Simple Meditation Timer to relie
+
+=== 'calm timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     ?     2889   4         нет  Calm Countdown Timer
+  NO     53    6896   122       да   Minimalist Timer
+  NO     ?     2139   39        нет  Break Now - Simple Meditation Timer to relie
+  NO     ?     2252   4         нет  CasaLoop: Calm New Tab, Focus Timer & To-Do 
+  NO     ?     3233   16        да   Capy: Study Timer, Notes, Flashcards & Site 
+  NO     ?     2787   54        нет  Sage: Pomodoro Focus & Study Timer, Website 
+  NO     52    5279   283       да   30 Minute Timer — Visual Countdown Timer
+  NO     ?     2067   18        нет  Lofi Timer — Minimal Pomodoro Clock
+  NO     10    2146   7,000     нет  Focus Timer
+  NO     ?     2743   8         нет  DuckDoro — Calm New Tab
+
+=== 'white noise for adhd' → FREE  (стор-поиск: 6 расширений, 6 проверено) ===
+🟢 держателей 0 · кандидатов 6
+  класс  langs desc   users     опт  title
+  NO     6     2671   22        нет  ADHD Relief - Focus & Relaxation
+  NO     52    5223   212       да   ADHD Focus - Black And White
+  NO     ?     2586   11        нет  Ambient Sounds Pro
+  NO     ?     2478   30        нет  Ambiens — Ambient Sound Mixer
+  NO     ?     1737   29        нет  Noice Noise
+  NO     ?     7009   17        да   Relax Your Mind
+
+=== dry-run: 20 двери · дискавери $0 (стор-поиск) · keys.csv НЕ тронут ===

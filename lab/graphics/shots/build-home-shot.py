@@ -23,6 +23,15 @@ VARIANT = (sys.argv[1] if len(sys.argv) > 1 else "base")
 VARDIR = os.path.join(HERE, "variants")
 os.makedirs(VARDIR, exist_ok=True)
 OUT = os.path.join(VARDIR, f"shot-home--{VARIANT}.png")
+# НОВАЯ ПАНЕЛЬ 1.2.0 (26.09, слово автора: вёрстка, слова и цитата — как в swap2, панель — настоящая новая).
+# Варианты на «-1-2» ставят в полосу снимок `build-raw-shots.py panel dom` (366×618 — ровно эта полоса).
+# Звезда новой панели ниже старой, дуги и свечение переезжают за ней: центр в окне 987.8 · 272.8
+# (середина полосы + 3 px сдвига звезды, 208 px композиции × 618/660), у старой было 985 · 257.
+#     python3 build-home-shot.py swap2-1-2   → variants/shot-home--swap2-1-2.png
+NEW = VARIANT.endswith("-1-2")
+if NEW:
+    PANEL = "variants/panel-dom--base.png"
+SX, SY = (987.8, 272.8) if NEW else (985, 257)
 
 lines = "".join(
     f"<div class='ln' style='width:{w}%'></div>" for w in
@@ -43,7 +52,7 @@ HTML = """<!doctype html><meta charset="utf-8"><style>
   .tab{margin-left:12px;height:26px;width:210px;border-radius:7px 7px 0 0;background:#eef0f6}
   .url{height:38px;background:#f2f3f7;display:flex;align-items:center;padding:0 14px;gap:10px}
   .pill{height:22px;flex:1;border-radius:11px;background:#fff;border:1px solid #dcdfe8}
-  .starglow{position:absolute;left:985px;top:257px;width:330px;height:330px;z-index:2;
+  .starglow{position:absolute;left:%(sx)spx;top:%(sy)spx;width:330px;height:330px;z-index:2;
      transform:translate(-50%%,-50%%);pointer-events:none;
      background:radial-gradient(circle closest-side,rgba(255,238,198,.62) 0%%,rgba(255,206,120,.40) 22%%,
        rgba(255,168,66,.18) 46%%,rgba(255,150,45,.05) 68%%,rgba(255,150,45,0) 86%%)}
@@ -94,7 +103,7 @@ HTML = """<!doctype html><meta charset="utf-8"><style>
     </div>
     <div class="starglow"></div>
     <svg class="arcs" width="1168" height="696" viewBox="0 0 1168 696"
-         style="position:absolute;left:0;top:0;pointer-events:none;z-index:3">%(arcs)s</svg>
+         style="position:absolute;left:0;top:0;pointer-events:none;z-index:3"><g transform="translate(%(dx)s,%(dy)s)">%(arcs)s</g></svg>
   </div>
 
 </div>
@@ -106,6 +115,7 @@ HEAD, SUB = ("A focus timer<br>in your side panel", "Warm brown noise, designed 
 if VARIANT.startswith("swap"):
     HEAD, SUB = ("Warm brown noise,<br>designed for focus", "A focus timer in your side panel.")
 open(p, "w", encoding="utf-8").write(HTML % {"lines": lines, "panel": PANEL, "arcs": ARCS,
+                                             "sx": SX, "sy": SY, "dx": round(SX - 985, 1), "dy": round(SY - 257, 1),
                                              "head": HEAD, "sub": SUB})
 subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars",
                 "--force-device-scale-factor=1", "--window-size=1280,800",

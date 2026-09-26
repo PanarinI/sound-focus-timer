@@ -1,0 +1,205 @@
+yazyk,kluch,mestnyj,obem,konkurenciya,za_god,za_3_goda
+de,brown noise,,3600,LOW,+1%,-51%
+de,brown noise generator,,50,LOW,+31%,+8%
+de,white noise,,9900,MEDIUM,-25%,-44%
+de,white noise generator,,320,MEDIUM,-25%,-37%
+de,pink noise,,4400,LOW,+219%,+149%
+de,noise generator,,210,LOW,-8%,-12%
+de,brown noise for studying,,20,LOW,+15%,+28%
+de,braunes rauschen,да,6600,LOW,-46%,+291%
+de,braunes rauschen generator,да,0,,,
+de,rauschgenerator,да,110,MEDIUM,-25%,-33%
+de,weißes rauschen,да,8100,LOW,-10%,-60%
+de,weisses rauschen,да,1000,MEDIUM,-4%,-87%
+de,rosa rauschen,да,1300,LOW,+14%,-12%
+de,braunes rauschen zum lernen,да,0,,,
+de,braunes rauschen konzentration,да,10,LOW,+11%,-23%
+de,white noise generator deutsch,да,0,,,
+fr,brown noise,,1000,LOW,+9%,-38%
+fr,brown noise generator,,20,LOW,-34%,+27%
+fr,white noise,,2900,LOW,-14%,-88%
+fr,white noise generator,,210,LOW,-20%,-24%
+fr,pink noise,,720,LOW,+1%,-36%
+fr,noise generator,,110,LOW,-2%,+1%
+fr,brown noise for studying,,20,LOW,+64%,+125%
+fr,bruit brun,да,880,LOW,+11%,+9%
+fr,bruit marron,да,390,LOW,+7%,+20%
+fr,générateur de bruit brun,да,0,,,
+fr,générateur de bruit,да,110,HIGH,-21%,-26%
+fr,bruit blanc,да,22200,LOW,-3%,-12%
+fr,générateur de bruit blanc,да,320,HIGH,-17%,-28%
+fr,bruit rose,да,2400,LOW,+13%,-31%
+fr,bruit brun pour étudier,да,0,,,
+fr,bruit brun concentration,да,10,LOW,+0%,-17%
+es,brown noise,,1300,LOW,+46%,-17%
+es,brown noise generator,,30,LOW,+47%,+75%
+es,white noise,,2900,LOW,-12%,-72%
+es,white noise generator,,110,MEDIUM,-3%,-10%
+es,pink noise,,720,LOW,-16%,+2%
+es,noise generator,,70,LOW,+1%,+11%
+es,brown noise for studying,,40,LOW,+218%,+192%
+es,ruido marrón,да,390,LOW,+50%,-29%
+es,ruido marron,да,390,LOW,+50%,-29%
+es,ruido café,да,70,LOW,-4%,+130%
+es,generador de ruido marrón,да,0,,,
+es,generador de ruido,да,30,HIGH,-15%,-11%
+es,ruido blanco,да,22200,LOW,-14%,-17%
+es,generador de ruido blanco,да,90,HIGH,-20%,-4%
+es,ruido rosa,да,2900,LOW,+47%,+58%
+es,ruido marrón para estudiar,да,50,LOW,+300%,+62%
+it,brown noise,,1300,LOW,+36%,+1%
+it,brown noise generator,,30,MEDIUM,+32%,+4%
+it,white noise,,3600,LOW,-11%,-70%
+it,white noise generator,,210,LOW,-14%,+27%
+it,pink noise,,1300,LOW,+22%,+65%
+it,noise generator,,90,LOW,-13%,-15%
+it,brown noise for studying,,40,LOW,+217%,+171%
+it,rumore marrone,да,880,LOW,+25%,+33%
+it,rumore bruno,да,0,,,
+it,generatore di rumore marrone,да,0,,,
+it,generatore di rumore,да,70,HIGH,-23%,-26%
+it,rumore bianco,да,9900,LOW,-9%,-67%
+it,generatore di rumore bianco,да,140,HIGH,-18%,-43%
+it,rumore rosa,да,1000,LOW,+5%,+14%
+it,rumore marrone per studiare,да,0,,,
+nl,brown noise,,1300,LOW,-5%,-49%
+nl,brown noise generator,,20,HIGH,-12%,-25%
+nl,white noise,,9900,HIGH,+5%,-47%
+nl,white noise generator,,140,HIGH,+1%,-23%
+nl,pink noise,,720,LOW,+3%,-11%
+nl,noise generator,,110,LOW,-27%,-27%
+nl,brown noise for studying,,10,LOW,+0%,+18%
+nl,bruine ruis,да,110,LOW,+12%,-17%
+nl,bruin geluid,да,10,LOW,+0%,-45%
+nl,bruine ruis generator,да,0,,,
+nl,ruis generator,да,10,HIGH,-9%,-17%
+nl,witte ruis,да,1000,HIGH,-21%,-35%
+nl,roze ruis,да,70,LOW,+7%,-10%
+nl,bruine ruis studeren,да,0,,,
+sv,brown noise,,720,LOW,+1%,-54%
+sv,brown noise generator,,10,LOW,+0%,-9%
+sv,white noise,,3600,HIGH,-1%,-55%
+sv,white noise generator,,70,MEDIUM,-23%,-38%
+sv,pink noise,,390,LOW,-3%,-31%
+sv,noise generator,,40,LOW,-17%,-15%
+sv,brown noise for studying,,10,LOW,+0%,+25%
+sv,brunt brus,да,70,LOW,-34%,-53%
+sv,brunt brus generator,да,0,,,
+sv,vitt brus,да,590,LOW,-19%,-84%
+sv,rosa brus,да,70,LOW,+26%,+7%
+sv,brusgenerator,да,10,HIGH,-9%,-9%
+sv,brunt brus plugga,да,0,,,
+da,brown noise,,480,LOW,-7%,-50%
+da,brown noise generator,,10,MEDIUM,-9%,-9%
+da,white noise,,2400,HIGH,+1%,-44%
+da,white noise generator,,30,HIGH,-42%,-53%
+da,pink noise,,260,LOW,-2%,-35%
+da,noise generator,,20,LOW,-26%,-29%
+da,brown noise for studying,,10,,-10%,+0%
+da,brun støj,да,50,LOW,+4%,-53%
+da,brun stoj,да,0,,,
+da,hvid støj,да,480,HIGH,+1%,-59%
+da,lyserød støj,да,10,HIGH,-25%,-71%
+da,brun støj generator,да,0,,,
+da,støjgenerator,да,0,,,
+no,brown noise,,480,LOW,-15%,-55%
+no,brown noise generator,,10,MEDIUM,-10%,-10%
+no,white noise,,1900,HIGH,+4%,-53%
+no,white noise generator,,40,MEDIUM,-18%,-22%
+no,pink noise,,210,LOW,-12%,-41%
+no,noise generator,,20,MEDIUM,-4%,-27%
+no,brown noise for studying,,10,LOW,+12%,+12%
+no,brun støy,да,30,LOW,-37%,-73%
+no,brun stoy,да,0,,,
+no,hvit støy,да,170,HIGH,-12%,-79%
+no,rosa støy,да,20,LOW,+0%,+0%
+no,brun støy generator,да,0,,,
+no,støygenerator,да,0,,,
+fi,brown noise,,480,LOW,-0%,-46%
+fi,brown noise generator,,10,MEDIUM,-9%,+0%
+fi,white noise,,1900,MEDIUM,-20%,-48%
+fi,white noise generator,,70,MEDIUM,+13%,-5%
+fi,pink noise,,320,LOW,-3%,-32%
+fi,noise generator,,30,LOW,-16%,-26%
+fi,brown noise for studying,,10,LOW,+0%,+14%
+fi,ruskea kohina,да,90,LOW,-27%,-68%
+fi,valkoinen kohina,да,590,HIGH,+12%,-50%
+fi,vaaleanpunainen kohina,да,40,LOW,-35%,+2%
+fi,ruskea kohina generaattori,да,0,,,
+fi,kohinageneraattori,да,30,MEDIUM,-9%,-12%
+ar,brown noise,,390,LOW,-12%,+35%
+ar,brown noise generator,,10,,-25%,+20%
+ar,white noise,,1600,MEDIUM,+11%,-8%
+ar,white noise generator,,10,MEDIUM,-31%,-15%
+ar,pink noise,,140,LOW,+23%,+36%
+ar,noise generator,,10,MEDIUM,-9%,+11%
+ar,brown noise for studying,,20,LOW,+100%,+120%
+ar,الضوضاء البنية,да,50,LOW,+75%,+331%
+ar,ضوضاء بنية,да,50,LOW,+75%,+331%
+ar,الضجيج البني,да,70,LOW,-25%,+725%
+ar,ضجيج بني,да,0,,,
+ar,مولد الضوضاء البنية,да,0,,,
+ar,الضوضاء البيضاء,да,3600,LOW,+17%,+40%
+ar,ضوضاء بيضاء,да,2900,LOW,+43%,+80%
+ar,الضوضاء الوردية,да,20,LOW,+120%,+120%
+ar,مولد الضوضاء البيضاء,да,0,,,
+id,brown noise,,590,LOW,+36%,-64%
+id,brown noise generator,,10,LOW,+0%,+11%
+id,white noise,,6600,LOW,+25%,+13%
+id,white noise generator,,70,LOW,+0%,+48%
+id,pink noise,,590,LOW,+19%,+21%
+id,noise generator,,110,LOW,+21%,+60%
+id,brown noise for studying,,20,LOW,+118%,+33%
+id,suara brown noise,да,10,,-25%,-36%
+id,brown noise untuk belajar,да,0,,,
+id,white noise untuk belajar,да,0,,,
+id,suara white noise,да,260,LOW,-13%,+212%
+id,noise coklat,да,0,,,
+id,suara coklat,да,10,LOW,-33%,-62%
+id,white noise untuk tidur,да,70,MEDIUM,-38%,+508%
+pt,brown noise,,2900,LOW,+2%,-46%
+pt,brown noise generator,,20,LOW,+13%,+21%
+pt,white noise,,4400,LOW,-15%,-61%
+pt,white noise generator,,90,LOW,-13%,-30%
+pt,pink noise,,720,LOW,+23%,+7%
+pt,noise generator,,110,LOW,-11%,+36%
+pt,brown noise for studying,,50,LOW,+12%,+283%
+pt,ruído marrom,да,12100,LOW,+10%,+25%
+pt,ruido marrom,да,12100,LOW,+10%,+25%
+pt,barulho marrom,да,140,LOW,-14%,-41%
+pt,gerador de ruído marrom,да,0,,,
+pt,gerador de ruído,да,90,LOW,-7%,-19%
+pt,ruído branco,да,110000,HIGH,+8%,-20%
+pt,ruido branco,да,110000,HIGH,+8%,-20%
+pt,gerador de ruído branco,да,140,HIGH,+11%,+7%
+pt,ruído rosa,да,2900,LOW,+38%,+8%
+pt,ruído marrom para estudar,да,590,LOW,+14%,-47%
+ja,brown noise,,590,LOW,+25%,+54%
+ja,brown noise generator,,10,LOW,-9%,-17%
+ja,white noise,,1600,LOW,-5%,-38%
+ja,white noise generator,,70,LOW,-10%,+4%
+ja,pink noise,,590,LOW,+16%,+2%
+ja,noise generator,,70,LOW,-4%,+15%
+ja,brown noise for studying,,10,LOW,+0%,+43%
+ja,ブラウンノイズ,да,8100,LOW,+38%,+466%
+ja,ブラウンノイズ 勉強,да,0,,,
+ja,ブラウンノイズ 集中,да,0,,,
+ja,ホワイトノイズ,да,33100,LOW,+7%,-43%
+ja,ピンクノイズ,да,3600,LOW,+54%,+19%
+ja,ノイズ 生成,да,20,LOW,-5%,-34%
+ja,ホワイトノイズ 生成,да,20,LOW,-21%,-27%
+ru (KZ),brown noise,,90,LOW,+20%,+28%
+ru (KZ),brown noise generator,,10,,-20%,-43%
+ru (KZ),white noise,,210,LOW,+37%,+1%
+ru (KZ),white noise generator,,10,LOW,+0%,+11%
+ru (KZ),pink noise,,50,LOW,+23%,+129%
+ru (KZ),noise generator,,10,LOW,+0%,+0%
+ru (KZ),brown noise for studying,,10,LOW,+133%,+250%
+ru (KZ),коричневый шум,да,110,LOW,+10%,+62%
+ru (KZ),коричневый шум для учебы,да,0,,,
+ru (KZ),коричневый шум для концентрации,да,0,,,
+ru (KZ),генератор коричневого шума,да,0,,,
+ru (KZ),генератор шума,да,40,LOW,-12%,-21%
+ru (KZ),белый шум,да,18100,LOW,+27%,+57%
+ru (KZ),генератор белого шума,да,30,HIGH,-15%,-18%
+ru (KZ),розовый шум,да,170,LOW,+9%,+29%

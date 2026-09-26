@@ -1,66 +1,79 @@
-Minimalist Timer je časovač na sústredenie s minimom rozptýlenia, priamo vo vašom prehliadači. Jedna tichá hviezda, prázdne pole a teplý generatívny zvuk, ktorý vás prenesie cez pracovnú reláciu — a potom vám dovolí mäkko pristáť namiesto toho, aby vás vyľakal alarmom. Žiadny neporiadok, žiadne účty. Ak sa vám sústredenie zvyčajne zdá chladné alebo mechanické, tento je vytvorený tak, aby pôsobil pokojne.
+Brown Noise Generator je pokojné miesto na prácu a štúdium priamo vo vašom prehliadači. Naživo vytvára teplý, hlboký zvuk na vašom vlastnom zariadení a obaľuje ho jemným časovačom na sústredenie. Otvorte ho v bočnom paneli, stlačte Start — a miestnosť stíchne: hlasy, klávesnice a pouličné zvuky sa strácajú pod mäkkou, rovnomernou stenou zvuku. Žiadne reklamy, žiadny účet, žiadna videokarta, ktorú musíte držať aktívnu.
 
-Nastavte si čas, stlačte štart a zostaňte vo flow.
+🌟 Prečo práve tento generátor hnedého šumu
+- ➤ Zvuk vzniká naživo — nie je to krátka nahrávka v slučke
+- ➤ Generátor bieleho, ružového a hnedého šumu v jednom: tri farby, jedno ťuknutie na každú
+- ➤ Hnedý šum bez reklám, bez bufferovania — nič, čo by sa v polovici prerušilo
+- ➤ Predvoľby pre skutočné miestnosti: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Jemný časovač: 5, 15, 25, 45 alebo 90 minút, alebo úplne bez konca
+- ➤ Žije v bočnom paneli Chromu a hrá ďalej, aj keď ho zatvoríte
+- ➤ Zvuk aj časovač bežia na vašom zariadení: bez registrácie, funguje offline
 
-🌟 Prečo tento minimalistický časovač
-- ➤ Čistý, minimalistický dizajn — jedna pokojná scéna, nič vám neodvádza pozornosť
-- ➤ Zabudovaný teplý brown noise a jemné zvuky na sústredenie — váš čas je doslova utkaný zo zvuku
-- ➤ Mäkký začiatok a mäkké pristátie — žiadny ostrý alarm, keď sa relácia skončí
-- ➤ Flexibilné relácie: 5, 15, 25, 45, 90 minút alebo bez obmedzenia
-- ➤ Ticho beží v bočnom paneli, kým pracujete — zvuk hrá ďalej naprieč kartami
-- ➤ Úplne v zariadení: súkromný už z princípu, funguje offline, bez registrácie
+🔊 Ako znie generátor hnedého šumu
+Hnedý šum, nazývaný aj brownovský šum, drží väčšinu svojej energie dole — je bližšie k vzdialenému príboju alebo hukotu v kabíne lietadla než k statickému šumu. Tento generátor brownovského šumu ho vytvára na vašom zariadení v reálnom čase, takže sa nikdy neopakuje v slučke: hladký hnedý šum s trochou vzduchu navrchu, dosť plný, aby vyplnil miestnosť, a dosť mäkký, aby sa dal zabudnúť. Je navrhnutý ako hlboký hnedý šum na koncentráciu: dosť na to, aby pokryl miestnosť, a dosť mäkký, aby vymizol z vašej pozornosti.
 
-🔊 Zvuk, ktorý udrží vaše sústredenie
-Tiché odpočítavania sú normou. Tento vašu reláciu zahalí do teplého brown noise — mäkkého, nízkeho, generatívneho zvuku (nie krátkej slučky), ktorý maskuje rušivé podnety v pozadí a pomáha vám usadiť sa. Máte radšej tiché zvuky na sústredenie než pesničky? Tento zostáva pokojnejší než hudba na sústredenie a jemnejší než ostrý white noise. Či už ide o brown noise na učenie, ambientné zvuky na sústredenie, deep work alebo len o upokojenie uponáhľanej mysle — zvuk sa pomaly nesie a nikdy sa neopakuje.
+Predstavte si ho ako ambientný generátor zvuku bez nahrávok — jeden čistý, generovaný zvuk namiesto dažďa a vtákov v slučke.
 
-🎯 Časovač na sústredenie a štúdium v jednom
-Či potrebujete časovač na sústredenie pre deep work, časovač na štúdium pre dlhé relácie alebo pokojný pracovný časovač do kancelárie — rozhranie vám nestojí v ceste:
-1. Minimalistický časovač na sústredenie, pre koncentráciu a flow
-2. Minimalistický časovač na štúdium — na čítanie, písanie a opakovanie
-3. Pokojný časovač na produktivitu a koncentráciu pre vaše úlohy
-4. Estetický pomodoro časovač pre tých, čo chcú ten pocit bez strnulých cyklov 25/5
+Dva gombíky tvarujú zvuk: masking (maskovanie) rozširuje stenu, kým sa blízke hlasy nerozmažú, a stimulation (stimulácia) ho zosvetlí, keď potrebujete energiu, a stlmí, keď potrebujete pokoj.
 
-🎨 Estetický a minimalistický
-Ak máte radi estetický časovač alebo pekný časovač na obrazovke, tento minimalistický odpočítavací časovač drží všetko krásne a jednoduché: teplá hviezda, ktorá sa s postupom relácie približuje, v tichom, otvorenom priestore. Žiadne čísla, ktoré na vás kričia, žiadny tlak — len čistý, estetický minimalistický časovač, na ktorý je príjemné sa pozerať.
+🎨 Hnedý, ružový alebo biely
+Hnedá je predvolená, pretože je najhlbšia a najteplejšia. Generátor ružového šumu je na jedno ťuknutie, o stupeň svetlejší, a k dispozícii je aj biely šum na sústredenie — najsvetlejší z troch. Mnohí neveria na nič iné než biely šum na učenie, iným po hodine pripadá ostrý. Vyskúšajte každú farbu a nechajte si tú, ktorú vaše uši prestanú vnímať. Podsvietenie panela sleduje farbu, ktorú si vyberiete.
 
-🧠 Ohľaduplný k vašej pozornosti
-Je stvorený tak, aby bol láskavý k tomu, ako pozornosť naozaj funguje. Ak zápasíte so stratou pocitu času alebo chcete vizuálny časovač, ktorý spraví čas hmatateľným bez stresu, hviezda vám dá jemný pocit napredovania. Skvele poslúži ako pokojná alternatíva k ADHD časovaču — taká, ktorá vás do sústredenia uvedie a zase vyvedie namiesto toho, aby vás trestala. Volá vás späť; nezatvára vás do klietky.
+🏢 Predvoľby pre miestnosť, v ktorej ste
+Vyberte, kde ste, a zvuk sa nastaví za vás:
+1. open office — najširšia stena, pre hlasy nablízku
+2. thin walls — viac váhy dole, na suseda alebo televízor
+3. café — ľahšie, aby sa hukot okolo vás vlial do pozadia
+4. deep reading — tiché a rovnomerné, pre pokojnú miestnosť
+5. racing thoughts — viac stimulation, keď je vám v hlave nahlas
+6. too much — mäkšie a tichšie, na preťažené dni
 
-💡 Žiadne účty, žiadne reklamy a žiadne dáta nikdy neopustia vaše zariadenie — len pokojný, súkromný priestor na sústredenie, nech už váš mozog funguje akokoľvek.
+Ak ste hľadali generátor bieleho šumu na kancelársky ruch, začnite s open office. Funguje ako jednoduché maskovanie zvuku pre váš stôl, a ak chcete svetlejší zvuk, môžete prepnúť na biely šum na prácu. Dotknite sa ktoréhokoľvek gombíka a predvoľba sa zmení na custom. Predvoľby nikdy nemenia dĺžku vašej relácie.
+
+⏱ Časovač, ktorý sa vám nepletie do cesty
+Časovač je tu, keď ho potrebujete. Potiahnite ciferník na 5, 15, 25, 45 alebo 90 minút, alebo stlačte ∞ a nechajte zvuk bežať bez konca. Odpočítavanie ticho sedí vnútri ciferníka. Keď čas vyprší, žiadny budík nezaznie: zvuk sa rozjasní a odznie asi za štyridsať sekúnd, takže sa vynoríte, namiesto toho, aby vás to trhlo.
+
+Použite ho ako časovač na sústredenie pri jednej úlohe, pracovný časovač na najbližšiu hodinu, alebo minimalistický časovač, ktorý vám jednoducho stráži čas. Ľudia, ktorým bežné odpočítavanie pripadá stresujúce, ho často používajú ako jemný časovač na ADHD — taký, ktorý vás zo sústredenia vyvedie, namiesto toho, aby vás z neho vytrhol.
+
+🧠 Na sústredenie, štúdium a nepokojnú myseľ
+Ľudia siahajú po hnedom šume na učenie, hnedom šume na prácu a hnedom šume na ADHD — aby stíšili hlučnú miestnosť alebo hlučnú hlavu. Neponúkame žiadne sľuby o mozgu: výskumy sa rôznia a žiadny zvuk nefunguje pre každého. Ponúkame dobré nastavenie — rovnomerný zvuk na pozadí na učenie, zvuky na sústredenie, ktoré sa pod vami neposúvajú, a zvuk, ktorý si môžete tvarovať, kým nezačne pomáhať. To isté platí pre biely šum na ADHD alebo akýkoľvek iný zvuk na sústredenie: vyberte si farbu a nechajte si to, čo funguje.
 
 🖥 Ako to funguje
-1️⃣ Otvorte minimalistický časovač z panela nástrojov
-2️⃣ Posuňte jazdec a nastavte si čas — od 5 do 90 minút alebo ∞
-3️⃣ Ťuknite na hviezdu — začne teplý zvuk a vy sa vnoríte do sústredenia
-4️⃣ Keď čas vyprší, relácia mäkko pristane, bez alarmu
-5️⃣ Panel kedykoľvek zatvorte — zvuk hrá ďalej
+1️⃣ Kliknite na ikonu — Brown Noise Generator sa otvorí v bočnom paneli Chromu
+2️⃣ Vyberte predvoľbu pre svoju miestnosť, alebo si sami nastavte volume, masking, stimulation a tone
+3️⃣ Nastavte ciferník, alebo stlačte ∞ pre bez konca
+4️⃣ Stlačte Start a spustite hnedý šum; ťuknutím na hviezdu ho pozastavíte a znova spustíte
+5️⃣ Zatvorte panel — zvuk beží ďalej, kým relácia neskončí
 
-Ako ľahké pomodoro rozšírenie do Chromu a časovač pre počítač zostáva presne tam, kde pracujete — žiadne ďalšie okno, žiadne prevzatie novej karty, žiadne rozptýlenie.
+Funguje ako online generátor hnedého šumu, ale žije vo vašom prehliadači a po inštalácii nepotrebuje pripojenie. Nie je tu žiadne video s čiernou obrazovkou a hnedým šumom, ktoré by ste museli nechať bežať, ani karta, ktorú by ste museli držať otvorenú: berte ho ako aplikáciu s hnedým šumom pre váš počítač — odľahčené rozšírenie pre Chrome vedľa vašej práce.
 
-📌 Ideálny na
-- ▸ Deep work, písanie, programovanie a čítanie
-- ▸ Študentov, ktorí chcú estetický časovač na štúdium s pokojným vzhľadom
-- ▸ Každého, komu sú bežné odpočítavania chladné, hlučné alebo stresujúce
-- ▸ Ľudí, ktorí sa lepšie sústredia s teplým zvukom v pozadí
+👀 Obraz, ktorý sleduje zvuk
+Kým zvuk hrá, po paneli sa pohybuje jemné zrno: hrubšie pre hnedú, najjemnejšie pre bielu, rýchlejšie pri vyššej stimulation. Ak vás pohyb ruší, vypnite motion v rohu.
+
+📌 Skvelý na
+- ▸ Open space kancelárie, zdieľané byty a rušné kaviarne
+- ▸ Študentov, ktorí chcú pokojné zvuky na štúdium počas dlhých večerov
+- ▸ Písanie, programovanie a čítanie, keď potrebujete hnedý šum na sústredenie
+- ▸ Každého, koho unavujú reklamy vstupujúce do jeho zvukov na sústredenie
 
 ❓ Časté otázky
 
-🧐 Musím platiť alebo sa registrovať?
-➤ Nie — všetko je dostupné hneď od začiatku, bez účtu a bez registrácie.
+🧐 Potrebujem účet?
+➤ Nie. Nie je potrebná registrácia, žiadne reklamy a nie je sa kam prihlasovať.
 
-🧐 Čím sa zvuk líši od iných časovačov?
-➤ Namiesto tichého odpočítavania je váš čas utkaný z teplého brown noise a jemných zvukov na sústredenie, ktoré maskujú rušivé podnety a pomáhajú vám zostať vo flow.
+🧐 Existuje generátor hnedého šumu pre telefón?
+➤ Zatiaľ nie. Toto je rozšírenie pre Chrome do prehliadačov na počítači a notebooku.
+
+🧐 Môžem prepnúť na biely alebo ružový?
+➤ Áno. Tri bodky v hornom rohu prepínajú medzi hnedým, ružovým a bielym.
+
+🧐 Zastaví sa zvuk, ak zatvorím panel alebo prepnem kartu?
+➤ Nie. Hrá ďalej, kým beží vaša relácia, na akejkoľvek karte.
 
 🧐 Funguje offline?
-➤ Áno. Všetko beží v zariadení, takže tento minimalistický časovač funguje bez pripojenia a nikdy vás nesleduje.
+➤ Áno. Generátor hnedého šumu aj časovač bežia úplne na vašom zariadení.
 
-🧐 Môžem ho použiť na pomodoro?
-➤ Môžete si nastaviť klasické dĺžky sústredenia, ale žiadne vynútené prestávky nie sú — je to jemnejší, minimalistický pomodoro časovač postavený na flow, nie na strnulých cykloch.
+🧐 Môže hrať celý deň?
+➤ Áno. Stlačte ∞ a hrá, kým nestlačíte Finish.
 
-🧐 Je dobrý na sústredenie a štúdium?
-➤ Áno — je navrhnutý ako pokojný časovač na sústredenie a štúdium, s teplým zvukom a jemným vizuálom, ktoré vám pomôžu sústrediť sa a chrániť deep work.
-
-🧐 Prestane zvuk, keď prepnem kartu?
-➤ Nie — zvuky na sústredenie hrajú ďalej naprieč kartami, kým vaša relácia beží.
-
-Nastavte si čas, stlačte štart a nechajte minimalistický časovač niesť vaše sústredenie. ⭐
+Otvorte Brown Noise Generator, vyberte si miestnosť a nechajte zvuk držať priestor, kým pracujete. ⭐

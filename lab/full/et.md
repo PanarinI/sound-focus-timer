@@ -1,66 +1,79 @@
-Minimalist Timer on vähese segajaga keskendumistaimer sinu brauseri jaoks. Üks vaikne täht, tühi väli ja soe generatiivne heli, mis kannab sind läbi tööseansi ning laseb siis pehmelt maanduda, selle asemel et sind signaaliga ehmatada. Ei mingit segadust ega kontosid. Kui keskendumine tundub tavaliselt külm või mehaaniline, siis see on loodud tunduma rahulik.
+Brown Noise Generator on rahulik koht töötamiseks ja õppimiseks, otse sinu brauseris. See loob sinu enda seadmes reaalajas sooja, sügava heli ja ümbritseb selle õrna keskendumistaimeriga. Ava see külgpaneelil, vajuta Start ja tuba jääb vaikseks: hääled, klaviatuurid ja tänavamüra vajuvad pehme, ühtlase helimüüri alla. Ei mingit reklaami, ei kontot, ei videosakki, mida elus hoida.
 
-Sea aeg, vajuta start ja püsi voos.
+🌟 Miks just see pruuni müra generaator
+- ➤ Heli tekib reaalajas — mitte lühike lindistus, mis kordub
+- ➤ Valge, roosa ja pruuni müra generaator ühes: kolm värvi, üks puudutus kummagi jaoks
+- ➤ Pruun müra ilma reklaamideta, ilma puhverdamiseta, miski ei jää poole peal kinni
+- ➤ Eelseaded päris ruumidele: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Õrn taimer: 5, 15, 25, 45 või 90 minutit, või üldse ilma lõputa
+- ➤ Elab Chrome'i külgpaneelil ja mängib edasi, kui selle suled
+- ➤ Heli ja taimer töötavad sinu seadmes: registreerumist pole vaja ja see töötab ka võrguühenduseta
 
-🌟 Miks just see minimalistlik taimer
-- ➤ Puhas, minimalistlik disain – üks rahulik vaade, miski ei tõmba su tähelepanu
-- ➤ Sisse ehitatud soe brown noise ja õrnad keskendumishelid – sinu aeg on sõna otseses mõttes tehtud helist
-- ➤ Pehme algus ja pehme maandumine – ei mingit teravat signaali, kui seanss lõpeb
-- ➤ Paindlikud seansid: 5, 15, 25, 45, 90 minutit või piiranguta
-- ➤ Töötab vaikselt su külgpaneelil, samal ajal kui sa töötad – heli mängib edasi ka kaartide vahel
-- ➤ Täielikult su seadmes: privaatne juba oma olemuselt, töötab võrguühenduseta, ilma registreerumiseta
+🔊 Milline kõlab pruuni müra generaator
+Pruun müra, mida nimetatakse ka Browni müraks, hoiab suurema osa oma energiast madalal — lähemal kaugele murdlainetusele või lennukikabiini sumisemisele kui sahinale. See generaator loob selle sinu masinas reaalajas, nii et see ei korda end kunagi: ühtlane pruun müra, mille peal on veidi õhku, piisavalt täidlane, et täita tuba, ja piisavalt pehme, et unustada. See on tehtud sügavaks pruuniks müraks keskendumise jaoks: piisavalt, et katta tuba, piisavalt pehme, et su tähelepanust hajuda.
 
-🔊 Heli, mis hoiab su keskendumist
-Vaikne aja lugemine on tavaline. See taimer mähib su seansi soojasse brown noise'i – pehmesse, madalasse, generatiivsesse helisse (mitte lühikesse korduvasse lõiku), mis varjab taustasegajad ja aitab sul sisse elada. Eelistad laulude asemel vaikseid keskendumishelisid? See püsib rahulikumana kui keskendumismuusika ja õrnemana kui terav white noise. Olgu see siis brown noise õppimiseks, ümbritsevad helid keskendumiseks, deep work või lihtsalt rahutu meele rahustamine – heli triivib aeglaselt ega kordu kunagi.
+Mõtle sellest kui ambient-generaatorist ilma lindistusteta — üks puhas, genereeritud heli vihma ja lindude asemel, mis kordub ringi.
 
-🎯 Keskendumis- ja õppimistaimer ühes
-Olgu sul vaja keskendumistaimerit deep work'i jaoks, õppimistaimerit pikkadeks seanssideks või rahulikku töötaimerit kontorisse – kasutajaliides ei jää ette:
-1. Minimalistlik fookustaimer keskendumiseks ja vooseisundiks
-2. Minimalistlik õppimistaimer lugemiseks, kirjutamiseks ja kordamiseks
-3. Rahulik produktiivsuse- ja keskendumistaimer ülesannete jaoks
-4. Esteetiline Pomodoro taimer neile, kes tahavad hõngu ilma jäikade 25/5 tsükliteta
+Kaks nuppu kujundavad seda: masking laiendab müüri, kuni lähedal olevad hääled hägustuvad, ja stimulation muudab selle heledamaks, kui vajad energiat, ja madalamaks, kui vajad rahu.
 
-🎨 Esteetiline ja minimalistlik
-Kui sulle meeldib esteetiline taimer või armas taimer su ekraanil, hoiab see minimalistlik pöördloendustaimer kõik ilusa ja lihtsana: soe täht, mis seansi edenedes ligemale tuleb, vaikses avaras ruumis. Ei mingeid sulle karjuvaid numbreid, mingit survet – lihtsalt puhas, esteetiline minimalistlik taimer, mida on hea vaadata.
+🎨 Pruun, roosa või valge
+Pruun on vaikimisi valik, sest see on sügavaim ja soojaim. Roosa müra generaator on ühe puudutuse kaugusel, samm heledam, ja valge müra keskendumiseks on samuti olemas — kõige heledam kolmest. Paljud vannuvad valge müra nimel õppimisel, samas kui teistele tundub see tunni pärast terav. Proovi iga värvi ja jäta see, mida su kõrvad enam ei märka. Paneeli valgus järgib värvi, mille valid.
 
-🧠 Õrn su tähelepanu vastu
-See on loodud arvestama sellega, kuidas tähelepanu tegelikult töötab. Kui sul on raske aja kulgu tajuda või tahad visuaalset taimerit, mis teeb aja stressita tuntavaks, annab täht sulle pehme edenemistunde. See sobib hästi rahuliku ADHD taimeri alternatiivina – sellisena, mis juhatab sind keskendumisse ja sealt välja, selle asemel et karistada. See kutsub sind tagasi, mitte ei pane puuri.
+🏢 Eelseaded ruumile, kus sa oled
+Vali, kus sa oled, ja heli seatakse sinu jaoks:
+1. open office — kõige laiem müür, lähedal olevate häälte jaoks
+2. thin walls — rohkem rõhku madalatel toonidel, naabri või teleri jaoks
+3. café — kergem, nii et sind ümbritsev sumin sulandub
+4. deep reading — vaikne ja ühtlane, rahuliku ruumi jaoks
+5. racing thoughts — rohkem stimulation'it, kui peas on vali
+6. too much — pehmem ja vaiksem, ülekoormatud päevade jaoks
 
-💡 Ei mingeid kontosid, reklaame ega andmeid, mis kunagi su seadmest lahkuksid – lihtsalt rahulik, privaatne ruum keskendumiseks, ükskõik kuidas su aju töötab.
+Kui tulid siia otsima valge müra generaatorit kontorisumina vastu, alusta open office'iga. See toimib lihtsa helimaskeeringuna sinu laua jaoks ja saad lülituda valgele mürale töö jaoks, kui eelistad seda heledamana. Puuduta mis tahes nuppu ja eelseade muutub custom'iks. Eelseaded ei muuda kunagi sinu seansi pikkust.
+
+⏱ Taimer, mis ei jää ette
+Taimer on olemas, kui sa seda tahad. Lohista ketast, et seada 5, 15, 25, 45 või 90 minutit, või vajuta ∞ ja lase helil kesta lõputa. Loendus istub vaikselt ketta sees. Kui aeg saab otsa, häiret ei kostu: heli heledub ja hajub umbes nelikümmend sekundit, nii et tõused pinnale, selle asemel et ehmatavalt ärkad.
+
+Kasuta seda keskendumistaimerina ühe ülesande jaoks, töötaimerina järgmiseks tunniks või minimalistliku taimerina, mis lihtsalt hoiab sinu jaoks aega. Inimesed, kellele tavalised loendused tunduvad stressirohked, kasutavad seda sageli õrna ADHD taimerina — see juhatab su keskendumisest välja, selle asemel et sind sealt rebida.
+
+🧠 Keskendumiseks, õppimiseks ja rahutu mõistuse jaoks
+Inimesed pöörduvad pruuni müra poole õppimisel, pruuni müra poole tööl ja pruuni müra poole ADHD puhul — et rahustada mürarikast tuba või rahutut pead. Me ei luba midagi aju kohta: uuringud on vastuolulised ja ükski heli ei sobi kõigile. Meie pakume head lähtekohta — ühtlast taustamüra õppimiseks, keskendumishelisid, mis ei nihku su alt, ja heli, mida saad kujundada, kuni see aitab. Sama kehtib valge müra kohta ADHD puhul või mis tahes muu keskendumisheli kohta: vali värv, jäta see, mis toimib.
 
 🖥 Kuidas see töötab
-1️⃣ Ava minimalistlik taimer oma tööriistaribalt
-2️⃣ Lohista liugurit, et aeg seada – 5 kuni 90 minutit või ∞
-3️⃣ Puuduta tähte – soe heli algab ja sa libised keskendumisse
-4️⃣ Kui aeg on läbi, maandub seanss pehmelt, ilma signaalita
-5️⃣ Sulge paneel millal tahes – heli mängib edasi
+1️⃣ Klõpsa ikoonil — Brown Noise Generator avaneb Chrome'i külgpaneelil
+2️⃣ Vali eelseade oma ruumile või sea volume, masking, stimulation ja tone ise
+3️⃣ Sea ketas või vajuta ∞ lõputa kestuse jaoks
+4️⃣ Vajuta Start, et mängida pruuni müra; puuduta tähte, et pausile panna ja jätkata
+5️⃣ Sulge paneel — heli jätkub, kuni su seanss maandub
 
-Kerge Pomodoro Chrome'i laiendusena ja töölauataimerina püsib see just seal, kus sa töötad – ei mingit lisaakent, uue kaardi ülevõtmist ega segajaid.
+See toimib nagu veebipõhine pruuni müra generaator, aga see elab su brauseris ega vaja pärast paigaldamist internetiühendust. Pole musta ekraaniga pruuni müra videot, mida käigus hoida, ega sakki, mida lahti hoida: mõtle sellest kui pruuni müra rakendusest su töölauale, kerge Chrome'i laiendusena su töö kõrval.
 
-📌 Sobib suurepäraselt
-- ▸ Deep work, kirjutamine, kodeerimine ja lugemine
-- ▸ Õpilased, kes tahavad rahuliku ilmega esteetilist õppimistaimerit
-- ▸ Kõik, kellele tavalised taimerid tunduvad külmad, valjud või stressirohked
-- ▸ Inimesed, kes keskenduvad paremini sooja taustaheliga
+👀 Pilt, mis järgib heli
+Heli mängimise ajal liigub paneelil peen tera: jämedam pruuni jaoks, peenim valge jaoks, kiirem suurema stimulation'iga. Kui liikumine sind häirib, lülita motion nurgast välja.
+
+📌 Suurepärane järgnevaks
+- ▸ Avatud kontorid, jagatud korterid ja rahvarohked kohvikud
+- ▸ Õpilased, kes tahavad rahulikke õppimishelisid pikkadeks õhtuteks
+- ▸ Kirjutamine, kodeerimine ja lugemine, kui tahad pruuni müra keskendumiseks
+- ▸ Kõik, kes on väsinud reklaamidest, mis lõikavad läbi nende keskendumishelide
 
 ❓ KKK
 
-🧐 Kas pean maksma või registreeruma?
-➤ Ei – kõik on saadaval kohe algusest peale, ilma konto ja registreerumiseta.
+🧐 Kas ma vajan kontot?
+➤ Ei. Registreerumist pole, reklaame pole ja midagi, kuhu sisse logida, ka pole.
 
-🧐 Mille poolest heli erineb teistest taimeritest?
-➤ Vaikse pöördloenduse asemel on sinu aeg tehtud soojast brown noise'ist ja õrnadest keskendumishelidest, mis varjavad segajad ja aitavad voos püsida.
+🧐 Kas on olemas pruuni müra generaatori rakendus mu telefonile?
+➤ Mitte veel. See on Chrome'i laiendus laua- ja sülearvuti brauseritele.
+
+🧐 Kas ma saan lülituda valgele või roosale?
+➤ Jah. Kolm punkti ülemises nurgas lülitavad pruuni, roosa ja valge vahel.
+
+🧐 Kas heli peatub, kui suled paneeli või vahetan sakki?
+➤ Ei. See jätkab mängimist, kuni su seanss kestab, ükskõik millisel sakil.
 
 🧐 Kas see töötab võrguühenduseta?
-➤ Jah. Kõik toimub sinu seadmes, seega see minimalistlik taimer töötab ilma ühenduseta.
+➤ Jah. Pruuni müra generaator ja taimer töötavad täielikult su seadmes.
 
-🧐 Kas saan seda kasutada Pomodoro jaoks?
-➤ Saad seada klassikalisi keskendumispikkusi, kuid sundpause pole – see on õrnem, minimalistlik Pomodoro taimer, mis on ehitatud voo, mitte jäikade tsüklite ümber.
+🧐 Kas see saab mängida terve päeva?
+➤ Jah. Vajuta ∞ ja see mängib, kuni vajutad Finish.
 
-🧐 Kas see sobib keskendumiseks ja õppimiseks?
-➤ Jah – see on loodud rahuliku keskendumis- ja õppimistaimerina, sooja heli ja õrna visuaaliga, mis aitab keskenduda ja kaitsta deep work'i.
-
-🧐 Kas heli peatub, kui vahetan kaarte?
-➤ Ei – keskendumishelid mängivad edasi kaartide vahel, kuni su seanss kestab.
-
-Sea aeg, vajuta start ja lase minimalistlikul taimeril kanda su keskendumist. ⭐
+Ava Brown Noise Generator, vali oma ruum ja lase helil hoida ruumi, kuni sa töötad. ⭐

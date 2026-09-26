@@ -1,66 +1,79 @@
-A Minimalist Timer egy zavaró elemektől mentes fókuszidőzítő a böngésződhöz. Egyetlen csendes csillag, egy üres mező és egy meleg, generatív hang, amely végigvisz egy munkameneten – majd hagyja, hogy lágyan érkezz meg, ahelyett, hogy riasztással ijesztene meg. Semmi felesleg, semmi fiók. Ha a fókusz általában hidegnek vagy gépiesnek hat, ezt arra építették, hogy nyugodtnak érződjön.
+A Brown Noise Generator egy nyugodt hely a munkához és a tanuláshoz, egyenesen a böngésződben. Élőben épít fel egy meleg, mély hangot a saját eszközödön, és egy szelíd fókuszidőzítőbe csomagolja. Nyisd meg az oldalsó panelen, nyomd meg a Start gombot — és a szoba elcsendesedik: a hangok, billentyűzetek és utcazajok elmerülnek egy puha, egyenletes hangfal alatt. Nincs hirdetés, nincs fiók, nincs videós lap, amit életben kell tartanod.
 
-Állítsd be az időt, nyomd meg a startot, és maradj flow-ban.
+🌟 Miért ez a barnazaj-generátor
+- ➤ A hang élőben jön létre — nem egy rövid felvétel ismétlődik
+- ➤ Fehér, rózsaszín és barna zaj generátor egyben: három szín, egy koppintás mindegyikhez
+- ➤ Barna zaj hirdetés nélkül, pufferelés nélkül — semmi, ami félúton megszakad
+- ➤ Előbeállítások valódi helyiségekhez: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Szelíd időzítő: 5, 15, 25, 45 vagy 90 perc, vagy egyáltalán nincs vége
+- ➤ A Chrome oldalsó paneljén él, és akkor is szól, amikor bezárod
+- ➤ A hang és az időzítő az eszközödön fut: nincs regisztráció, és offline is működik
 
-🌟 Miért ez a minimalista pomodoro időzítő
-- ➤ Letisztult, minimalista dizájn – egyetlen nyugodt látvány, semmi nem rángatja a figyelmedet
-- ➤ Meleg brown noise és lágy fókuszhangok beépítve – az időd szó szerint hangból áll
-- ➤ Lágy indulás és lágy érkezés – nincs éles riasztás, amikor véget ér a menet
-- ➤ Rugalmas menetek: 5, 15, 25, 45, 90 perc, vagy kötetlen
-- ➤ Csendben fut az oldalpanelen, miközben dolgozol – a hang a lapok között is tovább szól
-- ➤ Teljesen az eszközön: alapból privát, offline is működik, nincs regisztráció
+🔊 Hogyan szól a barnazaj-generátor
+A barna zaj, amit Brown-zajnak is hívnak, energiájának nagy részét mélyen tartja — közelebb áll a távoli hullámveréshez vagy egy repülőgép kabinjának zúgásához, mint a recsegéshez. Ez a Brown-zaj-generátor valós időben építi fel a gépeden, így soha nem ismétlődik hurokban: sima barna zaj egy kis levegővel a tetején, elég telt ahhoz, hogy betöltsön egy szobát, és elég lágy ahhoz, hogy megfeledkezz róla. Úgy készült, hogy mély barna zaj legyen a koncentrációhoz: elég ahhoz, hogy lefedje a szobát, elég lágy ahhoz, hogy kikopjon a figyelmedből.
 
-🔊 Hang, amely megtartja a fókuszod
-A néma visszaszámlálás a megszokott. Ez meleg brown noise-ba burkolja a menetedet – lágy, mély, generatív hangba (nem rövid, ismétlődő hurok), amely elfedi a háttérzajokat, és segít belerázódni. Jobban szereted a csendes fókuszhangokat a daloknál? Ez nyugodtabb marad, mint a fókuszzene, és lágyabb, mint a durva white noise. Legyen szó tanuláshoz való brown noise-ról, fókuszt segítő ambient hangokról, mély munkáról vagy csak egy zaklatott elme lecsendesítéséről – a hang lassan sodródik, és sosem ismétlődik.
+Gondolj rá úgy, mint egy ambient zajgenerátorra felvételek nélkül — egyetlen tiszta, generált hang eső és madarak hurokban ismétlődő hangja helyett.
 
-🎯 Fókusz- és tanulásidőzítő egyben
-Akár fókuszidőzítőre van szükséged a mély munkához, tanulásidőzítőre hosszú menetekhez, vagy nyugodt munkaidőzítőre az irodába, a felület nem lesz az utadban:
-1. Minimalista fókuszidőzítő a koncentrációhoz és a flow-hoz
-2. Minimalista tanulásidőzítő olvasáshoz, íráshoz és ismétléshez
-3. Nyugodt produktivitás- és koncentrációidőzítő a feladatokhoz
-4. Esztétikus pomodoro időzítő azoknak, akik a hangulatra vágynak a merev 25/5-ös ciklusok nélkül
+Két gomb formálja a hangot: a masking (maszkolás) szélesíti a falat, amíg a közeli hangok el nem mosódnak, a stimulation (stimuláció) pedig fényesebbé teszi, ha energiára van szükséged, és lejjebb veszi, ha nyugalomra.
 
-🎨 Esztétikus és minimalista
-Ha szereted az esztétikus időzítőt vagy egy cuki időzítőt a képernyődön, ez a minimalista visszaszámláló időzítő szépen és egyszerűen tartja a dolgokat: egy meleg csillag, amely közelebb húzódik, ahogy halad a menet, egy csendes, nyitott térben. Nincsenek rád kiabáló számok, nincs nyomás – csak egy letisztult, esztétikus minimalista időzítő, amelyre jó ránézni.
+🎨 Barna, rózsaszín vagy fehér
+A barna az alapértelmezett, mert ez a legmélyebb és legmelegebb. A rózsaszín zaj generátor egy koppintásra van, egy fokkal fényesebb, és a fókuszhoz való fehér zaj is elérhető — a három közül a legfényesebb. Sokan esküsznek a fehér zajra tanuláshoz, míg másoknak egy óra után élesnek tűnik. Próbáld ki mindegyik színt, és tartsd meg azt, amelyikről a füled megfeledkezik. A panel fénye követi a kiválasztott színt.
 
-🧠 Kíméletes a figyelmeddel
-Úgy építették meg, hogy tekintettel legyen arra, hogyan működik valójában a figyelem. Ha küzdesz az idővaksággal, vagy olyan vizuális időzítőre vágysz, amely stressz nélkül teszi kézzelfoghatóvá az időt, a csillag finoman érzékelteti veled a haladást. Jól működik nyugodt ADHD-időzítő alternatívaként – olyanként, amely bevezet a fókuszba és ki is vezet onnan, ahelyett, hogy büntetne. Visszahív, de nem zár ketrecbe.
+🏢 Előbeállítások a helyiségedhez
+Válaszd ki, hol vagy, és a hang beáll neked:
+1. open office — a legszélesebb fal, közeli hangokhoz
+2. thin walls — több súly a mélyben, szomszédhoz vagy tévéhez
+3. café — könnyedebb, hogy a körülötted lévő zsongás beleolvadjon
+4. deep reading — csendes és egyenletes, nyugodt szobához
+5. racing thoughts — több stimulation, amikor hangos a fejedben
+6. too much — lágyabb és halkabb, túlterhelt napokra
 
-💡 Nincsenek fiókok, nincsenek hirdetések, és soha semmilyen adat nem hagyja el az eszközödet – csak egy nyugodt, privát tér a fókuszhoz, bárhogyan is működik az agyad.
+Ha fehér zaj generátort kerestél az irodai zsongáshoz, kezdd az open office-szal. Egyszerű hangmaszkolásként működik az asztalodhoz, és átválthatsz fehér zajra munkához, ha fényesebbet szeretnél. Érints meg bármelyik gombot, és az előbeállítás custom-má válik. Az előbeállítások soha nem változtatják meg a meneted hosszát.
+
+⏱ Egy időzítő, amely nem áll az utadba
+Az időzítő ott van, amikor szükséged van rá. Húzd a tárcsát 5, 15, 25, 45 vagy 90 percre, vagy nyomd meg a ∞ gombot, és hagyd, hogy a hang vég nélkül szóljon. A visszaszámlálás csendben ül a tárcsán belül. Amikor lejár az idő, nincs riasztás: a hang kivilágosodik és elhalványul körülbelül negyven másodperc alatt, így felszínre emelkedsz, ahelyett hogy megriasztana.
+
+Használd fókuszidőzítőként egy feladathoz, munkaidőzítőként a következő órára, vagy minimalista időzítőként, amely egyszerűen tartja neked az időt. Akiknek a hagyományos visszaszámlálás stresszes, gyakran használják szelíd ADHD-időzítőként — ez kivezet a fókuszból, ahelyett hogy hirtelen kirántana belőle.
+
+🧠 Fókuszhoz, tanuláshoz és nyüzsgő elméhez
+Az emberek barna zajhoz nyúlnak tanuláshoz, barna zajhoz munkához és barna zajhoz ADHD esetén — hogy elcsendesítsenek egy zajos szobát vagy egy zajos fejet. Nem ígérünk semmit az agyról: a kutatások megosztottak, és egyetlen hang sem működik mindenkinél. Amit kínálunk, az egy jó beállítás — egyenletes háttérzaj tanuláshoz, fókuszhangok, amelyek nem csúsznak el alattad, és egy hang, amelyet addig formálhatsz, amíg segít. Ugyanez vonatkozik a fehér zajra ADHD esetén vagy bármilyen más fókuszhangra: válaszd ki a színt, és tartsd meg, ami működik.
 
 🖥 Így működik
-1️⃣ Nyisd meg a minimalista időzítőt az eszköztáradból
-2️⃣ Csúszkával állítsd be az időt – 5-től 90 percig, vagy ∞
-3️⃣ Koppints a csillagra – megszólal a meleg hang, és belesodródsz a fókuszba
-4️⃣ Amikor lejár az idő, a menet lágyan érkezik meg, riasztás nélkül
-5️⃣ Bármikor bezárhatod a panelt – a hang tovább szól
+1️⃣ Kattints az ikonra — a Brown Noise Generator megnyílik a Chrome oldalsó panelén
+2️⃣ Válassz előbeállítást a helyiségedhez, vagy állítsd be magad a volume, masking, stimulation és tone értékeket
+3️⃣ Állítsd be a tárcsát, vagy nyomd meg a ∞ gombot a vég nélkülihez
+4️⃣ Nyomd meg a Start gombot, hogy elindítsd a barna zajt; koppints a csillagra a szüneteltetéshez és folytatáshoz
+5️⃣ Zárd be a panelt — a hang tovább szól, amíg véget nem ér a meneted
 
-Könnyű pomodoro Chrome-bővítményként és asztali időzítőként pontosan ott marad, ahol dolgozol – nincs külön ablak, nincs újlap-átvétel, nincsenek zavaró tényezők.
+Úgy működik, mint egy online barnazaj-generátor, de a böngésződben él, és telepítés után nincs szüksége kapcsolatra. Nincs fekete képernyős barnazaj-videó, amit futni kell hagynod, és nincs lap, amit nyitva kell tartanod: gondolj rá úgy, mint egy barna zajos alkalmazásra az asztali géphez — egy könnyű Chrome-bővítményre a munkád mellett.
 
-📌 Kiváló választás
-- ▸ Mély munkához, íráshoz, kódoláshoz és olvasáshoz
-- ▸ Diákoknak, akik nyugodt megjelenésű, esztétikus tanulásidőzítőt szeretnének
-- ▸ Bárkinek, aki hidegnek, hangosnak vagy stresszesnek találja a hagyományos visszaszámlálókat
-- ▸ Azoknak, akik meleg háttérhang mellett jobban koncentrálnak
+👀 Egy kép, amely követi a hangot
+Amíg a hang szól, egy finom szemcse mozog a panelen: durvább barnánál, legfinomabb fehérnél, gyorsabb nagyobb stimulation mellett. Ha a mozgás zavar, kapcsold ki a motion funkciót a sarokban.
+
+📌 Kiváló ehhez
+- ▸ Nyitott terű irodák, közös lakások és forgalmas kávézók
+- ▸ Diákok, akik nyugodt tanulási hangokat szeretnének hosszú estékre
+- ▸ Íráshoz, kódoláshoz és olvasáshoz, amikor barna zajra van szükséged a fókuszhoz
+- ▸ Bárkinek, aki elege van abból, hogy hirdetések törnek be a fókuszhangjaiba
 
 ❓ GYIK
 
-🧐 Kell fizetnem vagy regisztrálnom?
-➤ Nem – az induláskor minden elérhető, fiók és regisztráció nélkül.
+🧐 Kell fiók?
+➤ Nem. Nincs regisztráció, nincs hirdetés, és nincs hova bejelentkezni.
 
-🧐 Miben más a hang, mint a többi időzítőnél?
-➤ Néma visszaszámlálás helyett az időd meleg brown noise-ból és lágy fókuszhangokból áll, amelyek elfedik a zavaró zajokat, és segítenek flow-ban maradni.
+🧐 Van barnazaj-generátor alkalmazás a telefonomhoz?
+➤ Még nincs. Ez egy Chrome-bővítmény asztali és laptop böngészőkhöz.
+
+🧐 Átválthatok fehérre vagy rózsaszínre?
+➤ Igen. A felső sarokban lévő három pont vált a barna, rózsaszín és fehér között.
+
+🧐 Leáll a hang, ha bezárom a panelt vagy lapot váltok?
+➤ Nem. Tovább szól, amíg a meneted tart, bármelyik lapon.
 
 🧐 Működik offline?
-➤ Igen. Minden az eszközön fut, így ez a minimalista időzítő internetkapcsolat nélkül is működik, és soha nem követ téged.
+➤ Igen. A barnazaj-generátor és az időzítő teljesen az eszközödön fut.
 
-🧐 Használhatom pomodoróra?
-➤ Beállíthatsz klasszikus fókuszhosszokat, de nincsenek kötelező szünetek – ez egy szelídebb, minimalista pomodoro időzítő, amely a flow-ra épül, nem a merev ciklusokra.
+🧐 Szólhat egész nap?
+➤ Igen. Nyomd meg a ∞ gombot, és szól, amíg meg nem nyomod a Finish gombot.
 
-🧐 Jó fókuszhoz és tanuláshoz?
-➤ Igen – nyugodt fókusz- és tanulásidőzítőnek terveztük, meleg hanggal és lágy látvánnyal, amely segít koncentrálni és megvédeni a mély munkát.
-
-🧐 Leáll a hang, ha lapot váltok?
-➤ Nem – a fókuszhangok a lapok között is tovább szólnak, amíg fut a meneted.
-
-Állítsd be az időt, nyomd meg a startot, és hagyd, hogy egy minimalista időzítő vigye a fókuszodat. ⭐
+Nyisd meg a Brown Noise Generatort, válaszd ki a helyiségedet, és hagyd, hogy a hang tartsa a teret, amíg dolgozol. ⭐

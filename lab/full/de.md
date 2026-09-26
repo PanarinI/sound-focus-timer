@@ -1,66 +1,79 @@
-Minimalist Timer ist ein ablenkungsarmer Fokus-Timer für deinen Browser. Ein ruhiger Stern, ein leeres Feld und ein warmer, generativer Klang tragen dich durch eine Arbeitssitzung – und lassen dich sanft landen, statt dich mit einem Alarm zu erschrecken. Kein Ballast, keine Konten. Wenn sich Fokus sonst kalt oder mechanisch anfühlt, ist dieser hier darauf ausgelegt, sich ruhig anzufühlen.
+Brown Noise Generator ist ein ruhiger Ort zum Arbeiten und Lernen, direkt in deinem Browser. Er erzeugt live auf deinem eigenen Gerät einen warmen, tiefen Klang und legt einen sanften Fokus-Timer darum. Öffne ihn in der Seitenleiste, drück auf Start, und der Raum wird still: Stimmen, Tastaturen und Straßenlärm versinken unter einer weichen, gleichmäßigen Klangwand. Keine Werbung, kein Konto, kein Video-Tab, das am Laufen gehalten werden muss.
 
-Zeit einstellen, Start drücken und im Flow bleiben.
+🌟 Warum dieser Generator für braunes Rauschen
+- ➤ Der Klang wird live erzeugt — keine kurze Aufnahme in Dauerschleife
+- ➤ Ein Generator für weißes, rosa und braunes Rauschen in einem: drei Farben, je ein Fingertipp
+- ➤ Braunes Rauschen ohne Werbung, ohne Pufferung, nichts, was mittendrin abbricht
+- ➤ Presets für reale Räume: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Ein sanfter Timer: 5, 15, 25, 45 oder 90 Minuten, oder ganz ohne Ende
+- ➤ Lebt in der Chrome-Seitenleiste und spielt weiter, wenn du sie schließt
+- ➤ Klang und Timer laufen auf deinem Gerät: keine Anmeldung, funktioniert offline
 
-🌟 Warum dieser minimalistische Pomodoro Timer
-- ➤ Klares, minimalistisches Design – eine ruhige Szene, nichts, was an deiner Aufmerksamkeit zieht
-- ➤ Warmes Brown Noise und sanfte Fokus-Klänge integriert – deine Zeit besteht buchstäblich aus Klang
-- ➤ Ein sanfter Start und eine sanfte Landung – kein schriller Alarm, wenn die Sitzung endet
-- ➤ Flexible Sitzungen: 5, 15, 25, 45, 90 Minuten oder offen
-- ➤ Läuft leise in deiner Seitenleiste, während du arbeitest – der Klang spielt über Tabs hinweg weiter
-- ➤ Vollständig auf dem Gerät: privat durch Design, funktioniert offline, keine Anmeldung
+🔊 Wie ein Generator für braunes Rauschen klingt
+Braunes Rauschen, auch brownsches Rauschen genannt, hält seine Energie größtenteils tief — näher an fernem Brandungsrauschen oder dem Brummen einer Flugzeugkabine als an Senderauschen. Dieser Generator für brownsches Rauschen erzeugt es in Echtzeit auf deinem Gerät, sodass es nie in Schleife läuft: ein weiches braunes Rauschen mit etwas Luft obendrauf, voll genug, um einen Raum zu füllen, und sanft genug, um vergessen zu werden. Es ist gemacht als tiefes braunes Rauschen für Konzentration: genug, um den Raum abzudecken, sanft genug, um aus deiner Aufmerksamkeit zu verschwinden.
 
-🔊 Klang, der deinen Fokus hält
-Stille Countdowns sind die Norm. Dieser hüllt deine Sitzung in warmes Brown Noise – einen sanften, tiefen, generativen Klang (keine kurze Schleife), der Hintergrundablenkungen maskiert und dir hilft, dich einzufinden. Lieber ruhige Fokus-Klänge statt Musik? Das bleibt ruhiger als Fokus-Musik und sanfter als hartes White Noise. Ob Brown Noise zum Lernen, Ambient-Klänge für Deep Work oder einfach, um einen unruhigen Kopf zu beruhigen – der Klang driftet langsam und wiederholt sich nie.
+Stell es dir vor wie einen Ambient-Klanggenerator ohne Aufnahmen — ein sauberer, generierter Klang statt Regen und Vögel in Dauerschleife.
 
-🎯 Ein Fokus- und Lern-Timer in einem
-Ob du einen Fokus-Timer für Deep Work, einen Lern-Timer für lange Sitzungen oder einen ruhigen Arbeitstimer fürs Büro brauchst – die Oberfläche hält sich zurück:
-1. Ein minimalistischer Fokus-Timer für Konzentration und Flow
-2. Ein minimalistischer Lern-Timer für Lesen, Schreiben und Wiederholen
-3. Ein ruhiger Produktivitäts- und Konzentrationstimer für Aufgaben
-4. Ein ästhetischer Pomodoro Timer für alle, die das Gefühl ohne starre 25/5-Zyklen wollen
+Zwei Regler formen ihn: masking (Maskierung) verbreitert die Wand, bis Stimmen in der Nähe verschwimmen, und stimulation (Stimulation) macht ihn heller, wenn du Energie brauchst, tiefer, wenn du Ruhe brauchst.
 
-🎨 Ästhetisch und minimal
-Wenn du einen ästhetischen Timer oder einen schönen Timer auf deinem Bildschirm liebst, hält dieser minimalistische Countdown-Timer alles schön und einfach: ein warmer Stern, der im Verlauf der Sitzung näher kommt, in einem ruhigen, offenen Raum. Keine Zahlen, die dich anschreien, kein Druck – nur ein klarer, ästhetischer minimalistischer Timer, der sich gut anfühlt.
+🎨 Braun, Rosa oder Weiß
+Braun ist die Voreinstellung, weil es am tiefsten und wärmsten ist. Ein Generator für rosa Rauschen ist einen Fingertipp entfernt, eine Stufe heller, und weißes Rauschen für den Fokus gibt es auch — das hellste der drei. Viele schwören auf weißes Rauschen zum Lernen, andere finden es nach einer Stunde zu scharf. Probier jede Farbe aus und behalte die, die deine Ohren nicht mehr bemerken. Das Licht der Leiste folgt der gewählten Farbe.
 
-🧠 Sanft zu deiner Aufmerksamkeit
-Er ist so gebaut, dass er zu der Art passt, wie Aufmerksamkeit tatsächlich funktioniert. Wenn du mit Zeitblindheit kämpfst oder einen visuellen Timer möchtest, der Zeit ohne Stress spürbar macht, gibt dir der Stern ein sanftes Gefühl von Fortschritt. Er funktioniert gut als ruhige ADHS-Timer-Alternative – eine, die dich in den Fokus hinein- und wieder herausführt, statt dich zu bestrafen. Er ruft dich zurück; er sperrt dich nicht ein.
+🏢 Presets für den Raum, in dem du bist
+Wähle, wo du bist, und der Klang stellt sich für dich ein:
+1. open office — die breiteste Wand, für Stimmen in der Nähe
+2. thin walls — mehr Gewicht im Tiefton, für Nachbarn oder einen Fernseher
+3. café — leichter, damit der Lärm um dich herum verschmilzt
+4. deep reading — ruhig und gleichmäßig, für einen stillen Raum
+5. racing thoughts — mehr Stimulation, wenn es in deinem Kopf laut ist
+6. too much — weicher und leiser, für überforderte Tage
 
-💡 Keine Konten, keine Werbung und keine Daten verlassen je dein Gerät – nur ein ruhiger, privater Raum zum Fokussieren, so wie dein Kopf eben funktioniert.
+Wenn du auf der Suche nach einem Generator für weißes Rauschen gegen Bürogeräusche warst, fang mit open office an. Es funktioniert als einfache Geräuschmaskierung für deinen Schreibtisch, und du kannst zu weißem Rauschen für die Arbeit wechseln, wenn dir das heller lieber ist. Berühr einen Regler, und das Preset wird zu custom. Presets ändern nie die Länge deiner Sitzung.
+
+⏱ Ein Timer, der sich zurückhält
+Der Timer ist da, wenn du ihn willst. Zieh den Regler auf 5, 15, 25, 45 oder 90 Minuten, oder drück auf ∞ und lass den Klang ohne Ende laufen. Der Countdown sitzt still im Regler. Wenn die Zeit um ist, gibt es keinen Alarm: Der Klang wird heller und verklingt über etwa vierzig Sekunden, sodass du auftauchst, statt aufzuschrecken.
+
+Nutz ihn als Fokus-Timer für eine Aufgabe, als Arbeitstimer für die nächste Stunde oder als minimalistischen Timer, der einfach die Zeit für dich hält. Wer gewöhnliche Countdowns stressig findet, nutzt ihn oft als sanften ADHS-Timer — er führt dich aus dem Fokus heraus, statt dich herauszureißen.
+
+🧠 Für Fokus, Lernen und einen unruhigen Kopf
+Menschen greifen zu braunem Rauschen zum Lernen, braunem Rauschen für die Arbeit und braunem Rauschen bei ADHS — um einen lauten Raum oder einen lauten Kopf zu beruhigen. Wir machen keine Versprechen über Gehirne: Die Forschung ist uneinheitlich, und kein Klang wirkt bei jedem. Was wir bieten, ist ein gutes Setup — gleichmäßiges Hintergrundrauschen zum Lernen, Fokus-Klänge, die sich nicht unter dir verschieben, und ein Klang, den du formen kannst, bis er hilft. Das Gleiche gilt für weißes Rauschen bei ADHS oder jeden anderen Fokus-Klang: Wähl die Farbe, behalt, was funktioniert.
 
 🖥 So funktioniert es
-1️⃣ Öffne den minimalistischen Timer über deine Symbolleiste
-2️⃣ Schieb den Regler, um deine Zeit einzustellen – 5 bis 90 Minuten oder ∞
-3️⃣ Tippe auf den Stern – warmer Klang beginnt und du gleitest in den Fokus
-4️⃣ Wenn die Zeit um ist, landet die Sitzung sanft, ohne Alarm
-5️⃣ Schließ die Leiste jederzeit – der Klang läuft weiter
+1️⃣ Klick auf das Symbol — Brown Noise Generator öffnet sich in der Chrome-Seitenleiste
+2️⃣ Wähl ein Preset für deinen Raum, oder stell volume, masking, stimulation und tone selbst ein
+3️⃣ Stell den Regler ein, oder drück auf ∞ für kein Ende
+4️⃣ Drück auf Start, um braunes Rauschen abzuspielen; tipp auf den Stern zum Pausieren und Fortsetzen
+5️⃣ Schließ die Leiste — der Klang läuft weiter, bis deine Sitzung landet
 
-Als leichtgewichtige Pomodoro Chrome-Erweiterung und Desktop-Timer bleibt er genau dort, wo du arbeitest – kein zusätzliches Fenster, keine New-Tab-Übernahme, keine Ablenkungen.
+Es funktioniert wie ein Online-Generator für braunes Rauschen, lebt aber in deinem Browser und braucht nach der Installation keine Verbindung. Es gibt kein Video mit braunem Rauschen auf schwarzem Bildschirm, das laufen muss, und keinen Tab, den du offen halten musst: Stell es dir vor wie eine App für braunes Rauschen für deinen Desktop, eine leichte Chrome-Erweiterung neben deiner Arbeit.
 
-📌 Ideal für
-- ▸ Deep Work, Schreiben, Programmieren und Lesen
-- ▸ Lernende, die einen ästhetischen Lern-Timer wollen, der ruhig aussieht
-- ▸ Alle, die normale Countdowns kalt, laut oder stressig finden
-- ▸ Menschen, die sich mit warmem Hintergrundklang besser konzentrieren
+👀 Ein Bild, das dem Klang folgt
+Während der Klang spielt, zieht sich ein feines Korn über die Leiste: grob bei Braun, am feinsten bei Weiß, schneller bei mehr Stimulation. Falls dich Bewegung stört, schalt motion in der Ecke aus.
+
+📌 Gut geeignet für
+- ▸ Großraumbüros, WGs und belebte Cafés
+- ▸ Studierende, die ruhige Lernklänge für lange Abende wollen
+- ▸ Schreiben, Programmieren und Lesen, wenn du braunes Rauschen für den Fokus willst
+- ▸ Alle, die es leid sind, dass Werbung ihren Fokus-Klang unterbricht
 
 ❓ FAQ
 
-🧐 Muss ich zahlen oder mich anmelden?
-➤ Nein – alles ist zum Start verfügbar, ohne Konto und ohne Anmeldung.
+🧐 Brauche ich ein Konto?
+➤ Nein. Es gibt keine Anmeldung, keine Werbung und nichts, wo du dich einloggen müsstest.
 
-🧐 Wie unterscheidet sich der Klang von anderen Timern?
-➤ Statt eines stillen Countdowns besteht deine Zeit aus warmem Brown Noise und sanften Fokus-Klängen, die Ablenkungen maskieren und dir helfen, im Flow zu bleiben.
+🧐 Gibt es eine App mit braunem Rauschen für mein Handy?
+➤ Noch nicht. Das hier ist eine Chrome-Erweiterung für Desktop- und Laptop-Browser.
+
+🧐 Kann ich zu Weiß oder Rosa wechseln?
+➤ Ja. Die drei Punkte in der oberen Ecke wechseln zwischen Braun, Rosa und Weiß.
+
+🧐 Stoppt der Klang, wenn ich die Leiste schließe oder den Tab wechsle?
+➤ Nein. Er spielt weiter, solange deine Sitzung läuft, in jedem Tab.
 
 🧐 Funktioniert es offline?
-➤ Ja. Alles läuft auf dem Gerät, also funktioniert dieser minimalistische Timer ohne Verbindung.
+➤ Ja. Der Generator für braunes Rauschen und der Timer laufen vollständig auf deinem Gerät.
 
-🧐 Kann ich ihn für Pomodoro nutzen?
-➤ Du kannst klassische Fokus-Längen einstellen, aber es gibt keine erzwungenen Pausen – es ist ein sanfterer, minimalistischer Pomodoro Timer rund um den Flow, nicht um starre Zyklen.
+🧐 Kann er den ganzen Tag laufen?
+➤ Ja. Drück auf ∞, und er spielt, bis du auf Finish drückst.
 
-🧐 Ist er gut für Fokus und Lernen?
-➤ Ja – er ist als ruhiger Fokus- und Lern-Timer gedacht, mit warmem Klang und einer sanften Visualisierung, die dir hilft, dich zu konzentrieren und Deep Work zu schützen.
-
-🧐 Stoppt der Klang, wenn ich den Tab wechsle?
-➤ Nein – die Fokus-Klänge spielen über Tabs hinweg weiter, während deine Sitzung läuft.
-
-Zeit einstellen, Start drücken und einen minimalistischen Timer deinen Fokus tragen lassen. ⭐
+Öffne Brown Noise Generator, wähl deinen Raum, und lass den Klang den Raum halten, während du arbeitest. ⭐

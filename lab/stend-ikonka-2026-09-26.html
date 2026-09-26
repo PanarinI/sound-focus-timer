@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Стенд иконки</title>
+<!--
+  Рождён 2026-09-26: иконка под панель 1.2.0 (тёплое почти-чёрное поле, звезда, дайл).
+  Все картинки — готовые PNG из мастеров lab/graphics/icon-2026-09-26-{a-iskra,b-dajl}.svg
+  (генератор lab/graphics/build-icons.py). Что видно здесь, то и поедет в extension/icons/.
+  Кнопка в тулбаре и бейдж собраны по коду Chrome (icon_with_badge_image_source.cc, chromium main 09-2026),
+  цвета тулбара — из его палитры (ref_color_mixer.cc), цвета бейджа — из extension/background.js paintBadge.
+  Открывать через сервер sft-root: http://localhost:8785/lab/stend-ikonka-2026-09-26.html
+-->
+<style>
+  :root{--bg:#17181a;--card:#202124;--line:#2c2d31;--ink:#e8e6e3;--dim:#9b9894;--mute:#6f6c68;--warm:#ffb055}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;padding:22px 16px 40px}
+  .wrap{max-width:1180px;margin:0 auto}
+  h1{font-size:19px;margin:0 0 4px;font-weight:600}
+  .sub{color:var(--dim);font-size:12.5px;margin:0 0 18px;max-width:900px}
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 16px 14px}
+  h2{font-size:15px;margin:0 0 2px;font-weight:600}
+  h2 i{font-style:normal;color:var(--warm);margin-right:6px}
+  .what{color:var(--dim);font-size:12.5px;margin:0 0 12px}
+  h3{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:14px 0 7px}
+  .strip{display:flex;align-items:flex-end;gap:16px;padding:12px 14px;border-radius:6px}
+  .strip.light{background:#ffffff}.strip.dark{background:#1f1f1f}
+  .strip figure{margin:0;text-align:center}
+  .strip figcaption{font:10.5px ui-monospace,Menlo,monospace;color:#8a8886;margin-top:5px}
+  .pix{image-rendering:pixelated;display:block}
+  .pair{display:grid;grid-template-columns:1fr;gap:6px}
+  /* кусок тулбара Chrome: соседнее расширение · наше · пазл */
+  .tbrow{display:grid;grid-template-columns:repeat(3,max-content);gap:10px}
+  .tb{display:flex;align-items:center;gap:6px;height:40px;padding:0 8px;border-radius:6px;overflow:hidden}
+  .tb.light{background:#ffffff;color:#474747}.tb.dark{background:#3c3c3c;color:#c7c7c7}
+  .tb .nb{width:28px;height:28px;display:flex;align-items:center;justify-content:center}
+  .tb .nb span{width:15px;height:15px;border-radius:4px;background:currentColor;opacity:.35}
+  .tb canvas{width:28px;height:28px;display:block}
+  .tb svg{display:block;fill:currentColor}
+  .state{font:10.5px ui-monospace,Menlo,monospace;color:var(--mute);margin:3px 0 0 2px}
+  .loupe{display:grid;grid-template-columns:repeat(3,max-content);gap:10px}
+  .loupe figure{margin:0;text-align:center}
+  .loupe figcaption{font:10.5px ui-monospace,Menlo,monospace;color:var(--mute);margin-top:4px}
+  .rec{margin-top:16px;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--warm);border-radius:8px;padding:16px 18px}
+  .rec h2{margin-bottom:8px}
+  .rec ol{margin:0 0 10px;padding-left:20px}
+  .rec li{margin-bottom:6px}
+  .rec p{margin:0 0 8px}
+  .rec .now{display:flex;align-items:center;gap:10px;color:var(--dim);font-size:12.5px;margin-top:10px}
+  .rec .now img{width:32px;height:32px}
+  .foot{color:var(--mute);font-size:11.5px;margin-top:14px}
+  .foot a{color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Иконка: два варианта</h1>
+  <p class="sub">Всё ниже — готовые PNG, сгенерированные кодом из двух мастеров. Кнопка в тулбаре и бейдж
+    с минутами собраны по исходнику Chrome: иконка 16 × 16 в квадрате 28 × 28, бейдж высотой 14 садится
+    вниз справа, и под ним Chrome вырезает иконку с зазором в 1 пиксель.</p>
+
+  <div class="cols">
+    <section class="card" data-v="a">
+      <h2><i>А</i>Искра на тёплом поле</h2>
+      <p class="what">Тот же контур искры, что сейчас в сторе. Поле тёплое почти-чёрное, как панель; вокруг искры ореол, как у звезды.</p>
+    </section>
+    <section class="card" data-v="b">
+      <h2><i>Б</i>Дайл и звезда</h2>
+      <p class="what">Шкала из панели, выставленная на 25: янтарь от «5» до вершины. Звезда на вершине — в панели она тоже светит над вершиной шкалы.</p>
+    </section>
+  </div>
+
+  <div class="rec">
+    <h2>Советую Б</h2>
+    <ol>
+      <li><b>Бейдж с минутами висит на иконке весь рейс.</b> Chrome ставит его вниз и стирает иконку под
+        ним — видно на лупе. С «25» у искры остаётся только верхний луч: середина уходит под бейдж. У дуги
+        звезда и верх шкалы стоят выше бейджа и остаются видны.</li>
+      <li><b>Искра в тулбаре уже занята.</b> В Chrome у американцев справа вверху стоит кнопка Gemini —
+        четырёхлучевая искра, и она тоже открывает боковую панель
+        (<a href="https://chromestory.com/2026/05/how-to-disable-the-gemini-side-panel-in-google-chrome/" style="color:inherit">chromestory, 05.2026</a>).
+        Наша рядом с ней легко сойдёт за ещё одну ИИ-кнопку.</li>
+      <li><b>Дуга — прибор из самой панели.</b> Шкала приёмника и таймер в одном знаке, поэтому он
+        подходит к любому имени из финалистов — и про шум, и про таймер.</li>
+    </ol>
+    <p><b>Что теряем:</b> 125 человек привыкли к искре, и на welcome она стоит в трёх местах. Картинку
+      welcome мы и так переснимаем после иконки.</p>
+    <div class="now"><img src="graphics/icon128.png" alt="">сейчас в сторе — синяя плашка и искра (июль)</div>
+  </div>
+
+  <p class="foot">Мастера: <code>lab/graphics/icon-2026-09-26-a-iskra.svg</code> ·
+    <code>lab/graphics/icon-2026-09-26-b-dajl.svg</code>; PNG — <code>lab/graphics/build-icons.py</code>.
+    Цвета тулбара — из палитры Chrome (светлый #ffffff, тёмный #3c3c3c), бейдж — из
+    <code>background.js</code> (#2a2119, цифры #e8b25c).</p>
+</div>
+
+<script>
+// Кнопка расширения в тулбаре Chrome — по исходнику icon_with_badge_image_source.cc (chromium main, 09-2026):
+// область 28×28 dip, иконка 16×16 по центру (отступ 6); бейдж высотой 14, системный шрифт 9 px жирный,
+// ширина = текст + 2·2 (чётная, не меньше 14); при ширине ≥ 20 — по центру, иначе прижат вправо; стоит
+// внизу области (y = 14…28); под бейджем иконка стирается рамкой в 1 dip (радиус 3), сам бейдж — радиус 4.
+function chromeAction(img, text, k, bg) {
+  const c = document.createElement('canvas');
+  c.width = c.height = 28 * k;
+  const x = c.getContext('2d');
+  x.fillStyle = bg; x.fillRect(0, 0, 28 * k, 28 * k);
+  x.imageSmoothingQuality = 'high';
+  x.drawImage(img, 6 * k, 6 * k, 16 * k, 16 * k);
+  if (text) {
+    x.font = `bold ${9 * k}px system-ui, -apple-system, "Segoe UI", sans-serif`;
+    const tw = Math.min(23, Math.ceil(x.measureText(text).width / k));
+    let w = tw + 4;
+    if (w % 2 !== 0) w += 1;                 // чётность ширины области (28)
+    w = Math.max(14, w);
+    const bx = w >= 20 ? Math.floor((28 - w) / 2) : 28 - w, by = 14;
+    x.fillStyle = bg;                        // вырез: иконка под бейджем стирается до фона тулбара
+    x.beginPath(); x.roundRect((bx - 1) * k, (by - 1) * k, (w + 2) * k, 16 * k, 3 * k); x.fill();
+    x.fillStyle = '#2a2119';                 // цвета бейджа — extension/background.js paintBadge
+    x.beginPath(); x.roundRect(bx * k, by * k, w * k, 14 * k, 4 * k); x.fill();
+    x.fillStyle = '#e8b25c'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    x.fillText(text, (bx + w / 2) * k, (by + 7.5) * k);
+  }
+  return c;
+}
+
+const VARS = { a: 'graphics/icons-2026-09-26-a-iskra', b: 'graphics/icons-2026-09-26-b-dajl' };
+const THEMES = [['light', '#ffffff', 'светлый'], ['dark', '#3c3c3c', 'тёмный']];
+const STATES = [['', 'покой'], ['25', 'рейс, 25 мин'], ['∞', 'без конца']];
+const load = (u) => new Promise((ok, bad) => { const i = new Image(); i.onload = () => ok(i); i.onerror = bad; i.src = u; });
+const DPR = Math.min(2, Math.max(1, Math.round(window.devicePixelRatio || 1)));
+
+const PUZZLE = '<svg width="20" height="20" viewBox="0 -960 960 960"><path d="M720-120H200q-33 0-56.5-23.5T120-200v-152q48 0 84-30.5t36-77.5q0-47-36-77.5T120-568v-152q0-33 23.5-56.5T200-800h160q0-42 29-71t71-29q42 0 71 29t29 71h160q33 0 56.5 23.5T800-720v160q42 0 71 29t29 71q0 42-29 71t-71 29v160q0 33-23.5 56.5T720-120Zm-520-80h520v-240h80q8 0 14-6t6-14q0-8-6-14t-14-6h-80v-240H480v-80q0-8-6-14t-14-6q-8 0-14 6t-6 14v80H200v88q54 20 87 67t33 105q0 57-33 104t-87 68v88Z"/></svg>';
+
+function el(tag, cls, html) { const e = document.createElement(tag); if (cls) e.className = cls; if (html) e.innerHTML = html; return e; }
+
+(async () => {
+  for (const [v, dir] of Object.entries(VARS)) {
+    const card = document.querySelector(`[data-v="${v}"]`);
+    const png = {};
+    for (const s of [16, 32, 48, 128]) png[s] = await load(`${dir}/${s}.png`);
+
+    // 1. Файлы в своём размере: пиксель файла = пиксель обычного экрана (на Retina — квадрат 2×2)
+    card.append(el('h3', '', 'Файлы 128 · 48 · 32 · 16 в своём размере'));
+    const pair = el('div', 'pair');
+    for (const [t] of THEMES) {
+      const st = el('div', `strip ${t}`);
+      for (const s of [128, 48, 32, 16]) {
+        const f = el('figure'), im = png[s].cloneNode();
+        im.className = 'pix'; im.width = s; im.height = s;
+        f.append(im, el('figcaption', '', String(s)));
+        st.append(f);
+      }
+      pair.append(st);
+    }
+    card.append(pair);
+
+    // 2. Тулбар как на этом экране (Retina — иконка 32 в 16 точках; обычный экран — иконка 16)
+    card.append(el('h3', '', DPR >= 2 ? 'Тулбар, как на вашем экране (Retina)' : 'Тулбар, как на вашем экране'));
+    for (const [t, bg] of THEMES) {
+      const row = el('div', 'tbrow');
+      for (const [txt, lab] of STATES) {
+        const wrap = el('div');
+        const tb = el('div', `tb ${t}`);
+        tb.append(el('div', 'nb', '<span></span>'));
+        tb.append(chromeAction(DPR >= 2 ? png[32] : png[16], txt, DPR, bg));
+        tb.append(el('div', 'nb', PUZZLE));
+        wrap.append(tb, el('div', 'state', `${t === 'light' ? 'светлый' : 'тёмный'} · ${lab}`));
+        row.append(wrap);
+      }
+      card.append(row);
+      row.style.marginBottom = '8px';
+    }
+
+    // 3. Лупа: обычный экран (иконка 16, без Retina), каждый пиксель ×3 — чёткими квадратами на любом экране
+    card.append(el('h3', '', 'Лупа ×3: обычный экран, иконка 16'));
+    const lp = el('div', 'loupe');
+    for (const [t, bg, tn] of THEMES) {
+      for (const [txt, lab] of STATES) {
+        const f = el('figure'), src = chromeAction(png[16], txt, 1, bg), n = 28 * 3 * DPR;
+        const big = document.createElement('canvas'); big.width = big.height = n;
+        const bx = big.getContext('2d'); bx.imageSmoothingEnabled = false; bx.drawImage(src, 0, 0, n, n);
+        big.className = 'pix'; big.style.width = big.style.height = '84px';
+        f.append(big, el('figcaption', '', `${tn} · ${txt || 'покой'}`));
+        lp.append(f);
+      }
+    }
+    card.append(lp);
+  }
+})();
+</script>
+</body>
+</html>

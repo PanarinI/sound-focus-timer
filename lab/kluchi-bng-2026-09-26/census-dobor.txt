@@ -1,0 +1,30 @@
+
+=== 'white noise for work' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10
+  класс  langs desc   users     опт  title
+  NO     52    4318   1,000     да   White Noise Generator
+  NO     13    2563   50        нет  White Noise
+  NO     ?     2632   398       нет  AttainMate - White Noise & Pomodoro Timer
+  NO     ?     4980   13        да   Neurorite - White Noise Generator
+  NO     52    4524   3,000     да   Ambient sound
+  NO     51    2302   ?         да   White Noise Player
+  NO     ?     4050   119       да   White Noise Player
+  NO     52    4648   47        да   Noise Maker
+  NO     30    3758   500,000   да   Focus To-Do: Pomodoro Timer & To Do List
+  NO     ?     3533   13        да   Nuro: Binaural Beats, Ambient Noise & Focus
+
+=== 'work timer' → FREE  (стор-поиск: 10 расширений, 10 проверено) ===
+🟢 держателей 0 · кандидатов 10 · MID: Meowdoro Tracker - Pomodoro Wo
+  класс  langs desc   users     опт  title
+  NO     30    3758   500,000   да   Focus To-Do: Pomodoro Timer & To Do List
+  NO     56    2932   5,000     да   Pomodoro Timer
+  NO     52    4590   7,000     да   Study Timer
+  NO     ?     4437   60,000    да   Otto: Pomodoro timer & Website Blocker. Bloc
+  NO     10    2146   7,000     нет  Focus Timer
+  MID    ?     2246   3,000     нет  Meowdoro Tracker - Pomodoro Work Timer & Pro
+  NO     53    4390   869       да   Pomodoro Technique Timer
+  NO     ?     2505   40        нет  Focus Timer Pro: Task & Productivity Tracker
+  NO     ?     1955   3,000     нет  Thinking Time Tracker
+  NO     52    5635   1,000     да   Break Timer
+
+=== dry-run: 2 двери · дискавери $0 (стор-поиск) · keys.csv НЕ тронут ===

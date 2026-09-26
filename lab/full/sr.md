@@ -1,66 +1,79 @@
-Minimalist Timer je tajmer za fokus s malo ometanja, u vašem pregledaču. Jedna tiha zvezda, prazno polje i topao generativni zvuk koji vas nosi kroz radnu sesiju — a zatim vam dopušta da meko sletite umesto da vas trgne alarm. Bez nereda, bez naloga. Ako vam se fokus obično čini hladnim ili mehaničkim, ovaj je napravljen da deluje smireno.
+Brown Noise Generator je mirno mesto za rad i učenje, tačno u vašem pregledaču. Uživo gradi topao, dubok zvuk na vašem sopstvenom uređaju i obavija ga blagim tajmerom za fokus. Otvorite ga u bočnom panelu, pritisnite Start — i prostorija utihne: glasovi, tastature i ulična buka tonu ispod mekog, ravnomernog zida zvuka. Bez reklama, bez naloga, bez video kartice koju morate držati aktivnom.
 
-Podesite vreme, pritisnite start i ostanite u zanosu.
+🌟 Zašto baš ovaj generator braon šuma
+- ➤ Zvuk se generiše uživo — nije kratak snimak koji se ponavlja
+- ➤ Generator belog, roze i braon šuma u jednom: tri boje, jedan dodir za svaku
+- ➤ Braon šum bez reklama, bez baferovanja — ništa što se prekida na pola puta
+- ➤ Presetovi za stvarne prostorije: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Blag tajmer: 5, 15, 25, 45 ili 90 minuta, ili sasvim bez kraja
+- ➤ Živi u bočnom panelu Chrome-a i nastavlja da svira kad ga zatvorite
+- ➤ Zvuk i tajmer rade na vašem uređaju: bez registracije, i radi offline
 
-🌟 Zašto ovaj minimalistički tajmer
-- ➤ Čist, minimalistički dizajn — jedna smirena scena, ništa vam ne odvlači pažnju
-- ➤ Ugrađen topao brown noise i nežni zvuci za fokus — vaše vreme je bukvalno satkano od zvuka
-- ➤ Mek početak i meko sletanje — bez naglog alarma kad se sesija završi
-- ➤ Fleksibilne sesije: 5, 15, 25, 45, 90 minuta ili bez ograničenja
-- ➤ Tiho radi u bočnom panelu dok radite — zvuk se nastavlja kroz sve kartice
-- ➤ U potpunosti na uređaju: privatan po dizajnu, radi offline, bez registracije
+🔊 Kako zvuči generator braon šuma
+Braon šum, koji se naziva i braunovski šum, drži veći deo svoje energije nisko — bliži je dalekim talasima ili zujanju kabine aviona nego statičkom šumu. Ovaj generator braunovskog šuma gradi ga na vašem uređaju u realnom vremenu, tako da se nikad ne ponavlja u petlji: gladak braon šum s malo vazduha na vrhu, dovoljno pun da ispuni prostoriju i dovoljno mek da se zaboravi. Napravljen je da bude dubok braon šum za koncentraciju: dovoljan da pokrije prostoriju, dovoljno mek da izbledi iz vaše pažnje.
 
-🔊 Zvuk koji drži vaš fokus
-Tiha odbrojavanja su pravilo. Ovaj vašu sesiju obavija toplim brown noise-om — mekim, dubokim, generativnim zvukom (a ne kratkom petljom) koji maskira ometanja u pozadini i pomaže vam da se smestite. Više volite tihe zvuke za fokus nego pesme? Ovaj ostaje smireniji od muzike za fokus i nežniji od oštrog white noise-a. Bilo da je reč o brown noise za učenje, ambijentalnim zvucima za fokus, deep work ili prosto o smirivanju uznemirenog uma — zvuk polako lebdi i nikad se ne ponavlja.
+Zamislite ga kao ambijentalni generator zvuka bez snimaka — jedan čist, generisan zvuk umesto kiše i ptica u petlji.
 
-🎯 Tajmer za fokus i učenje u jednom
-Bilo da vam treba tajmer za fokus za deep work, tajmer za učenje za duge sesije ili smiren radni tajmer za kancelariju — interfejs vam ne staje na put:
-1. Minimalistički tajmer za fokus, za koncentraciju i zanos
-2. Minimalistički tajmer za učenje — za čitanje, pisanje i ponavljanje
-3. Smiren tajmer za produktivnost i koncentraciju za vaše zadatke
-4. Estetski pomodoro tajmer za one koji žele taj osećaj bez krutih ciklusa 25/5
+Dva dugmeta oblikuju zvuk: masking (maskiranje) širi zid dok se obližnji glasovi ne stope, a stimulation (stimulacija) ga čini svetlijim kad vam treba energija, a nižim kad vam treba mir.
 
-🎨 Estetski i minimalan
-Ako volite estetski tajmer ili sladak tajmer na svom ekranu, ovaj minimalistički tajmer s odbrojavanjem drži sve lepim i jednostavnim: topla zvezda koja se približava kako sesija odmiče, unutar tihog, otvorenog prostora. Nema brojeva koji viču na vas, nema pritiska — samo čist, estetski minimalistički tajmer koji je prijatno gledati.
+🎨 Braon, roze ili beli
+Braon je podrazumevana boja jer je najdublja i najtoplija. Generator roze šuma je udaljen jedan dodir, korak svetliji, a tu je i beli šum za fokus — najsvetliji od sva tri. Mnogi se kunu u beli šum za učenje, dok drugima posle sat vremena deluje oštro. Isprobajte svaku boju i zadržite onu koju vaše uši prestanu da primećuju. Svetlo panela prati boju koju izaberete.
 
-🧠 Nežan prema vašoj pažnji
-Napravljen je da bude blag prema tome kako pažnja zaista funkcioniše. Ako se borite s gubitkom osećaja za vreme ili želite vizuelni tajmer koji čini vreme opipljivim bez stresa, zvezda vam daje mek osećaj napretka. Odlično funkcioniše kao smirena alternativa ADHD tajmeru — ona koja vas uvodi u fokus i izvodi iz njega umesto da vas kažnjava. Ona vas doziva; ne zatvara vas u kavez.
+🏢 Presetovi za prostoriju u kojoj ste
+Izaberite gde se nalazite, i zvuk se podešava za vas:
+1. open office — najširi zid, za glasove u blizini
+2. thin walls — više težine u niskim tonovima, za komšiju ili televizor
+3. café — lakše, da se žamor oko vas stopi s pozadinom
+4. deep reading — tiho i ravnomerno, za mirnu prostoriju
+5. racing thoughts — više stimulation, kad je bučno u vašoj glavi
+6. too much — mekše i tiše, za preopterećene dane
 
-💡 Bez naloga, bez reklama i bez podataka koji ikada napuštaju vaš uređaj — samo smiren, privatan prostor za fokus, kako god vaš mozak funkcioniše.
+Ako ste tražili generator belog šuma za žamor u kancelariji, počnite sa open office. Radi kao jednostavno maskiranje zvuka za vaš radni sto, a možete preći na beli šum za rad ako vam prija svetlije. Dodirnite bilo koje dugme i preset postaje custom. Presetovi nikad ne menjaju dužinu vaše sesije.
+
+⏱ Tajmer koji vam ne smeta
+Tajmer je tu kad vam zatreba. Prevucite brojčanik na 5, 15, 25, 45 ili 90 minuta, ili pritisnite ∞ i pustite zvuk da traje bez kraja. Odbrojavanje tiho stoji unutar brojčanika. Kad vreme istekne, nema alarma: zvuk se razvedri i utihne za oko četrdeset sekundi, tako da isplivate na površinu umesto da vas trgne.
+
+Koristite ga kao tajmer za fokus za jedan zadatak, radni tajmer za sledeći sat, ili minimalistički tajmer koji jednostavno čuva vreme umesto vas. Ljudi kojima je obično odbrojavanje stresno često ga koriste kao blag tajmer za ADHD — on vas izvodi iz fokusa umesto da vas naglo izvlači.
+
+🧠 Za fokus, učenje i nemiran um
+Ljudi posežu za braon šumom za učenje, braon šumom za rad i braon šumom za ADHD — da utišaju bučnu prostoriju ili bučnu glavu. Mi ne dajemo nikakva obećanja o mozgu: istraživanja su neujednačena, i nijedan zvuk ne deluje na sve. Ono što nudimo je dobro podešavanje — ravnomeran zvuk u pozadini za učenje, zvuci za fokus koji se ne pomeraju ispod vas, i zvuk koji možete oblikovati dok ne pomogne. Isto važi i za beli šum za ADHD ili bilo koji drugi zvuk za fokus: izaberite boju i zadržite ono što deluje.
 
 🖥 Kako funkcioniše
-1️⃣ Otvorite minimalistički tajmer iz trake sa alatkama
-2️⃣ Prevucite klizač da podesite vreme — od 5 do 90 minuta ili ∞
-3️⃣ Dodirnite zvezdu — počinje topao zvuk i vi tonete u fokus
-4️⃣ Kad vreme istekne, sesija meko sleti, bez alarma
-5️⃣ Zatvorite panel kad god želite — zvuk se nastavlja
+1️⃣ Kliknite na ikonicu — Brown Noise Generator se otvara u bočnom panelu Chrome-a
+2️⃣ Izaberite preset za svoju prostoriju, ili sami podesite volume, masking, stimulation i tone
+3️⃣ Podesite brojčanik, ili pritisnite ∞ za bez kraja
+4️⃣ Pritisnite Start da pustite braon šum; dodirnite zvezdu da pauzirate i nastavite
+5️⃣ Zatvorite panel — zvuk se nastavlja dok se vaša sesija ne završi
 
-Kao lagana pomodoro Chrome ekstenzija i tajmer za računar, ostaje tačno tamo gde radite — bez dodatnog prozora, bez preuzimanja nove kartice, bez ometanja.
+Radi kao onlajn generator braon šuma, ali živi u vašem pregledaču i ne treba mu veza nakon instalacije. Nema video snimka s crnim ekranom i braon šumom koji morate ostaviti da radi, i nema kartice koju morate držati otvorenom: zamislite ga kao aplikaciju sa braon šumom za vaš računar — lagano proširenje za Chrome pored vašeg posla.
+
+👀 Slika koja prati zvuk
+Dok zvuk svira, sitno zrno se pomera preko panela: krupnije za braon, najfinije za beli, brže uz više stimulation. Ako vam smeta pokret, isključite motion u uglu.
 
 📌 Odličan za
-- ▸ Deep work, pisanje, programiranje i čitanje
-- ▸ Studente koji žele estetski tajmer za učenje smirenog izgleda
-- ▸ Sve kojima su obična odbrojavanja hladna, glasna ili stresna
-- ▸ Ljude koji se bolje koncentrišu uz topao zvuk u pozadini
+- ▸ Otvorene kancelarije, deljene stanove i bučne kafiće
+- ▸ Studente koji žele mirne zvuke za učenje tokom dugih večeri
+- ▸ Pisanje, programiranje i čitanje, kad vam treba braon šum za fokus
+- ▸ Sve koji su umorni od reklama koje upadaju u njihove zvuke za fokus
 
 ❓ Česta pitanja
 
-🧐 Moram li da platim ili da se registrujem?
-➤ Ne — sve je dostupno od samog početka, bez naloga i bez registracije.
+🧐 Da li mi treba nalog?
+➤ Ne. Nema registracije, nema reklama, i nema ničega za prijavu.
 
-🧐 Po čemu se zvuk razlikuje od drugih tajmera?
-➤ Umesto tihog odbrojavanja, vaše vreme je satkano od toplog brown noise i mekih zvukova za fokus koji maskiraju ometanja i pomažu vam da ostanete u zanosu.
+🧐 Postoji li generator braon šuma za moj telefon?
+➤ Još ne. Ovo je Chrome ekstenzija za desktop i laptop pregledače.
+
+🧐 Mogu li da prebacim na beli ili roze?
+➤ Da. Tri tačke u gornjem uglu prebacuju između braon, roze i belog.
+
+🧐 Da li se zvuk zaustavlja ako zatvorim panel ili promenim karticu?
+➤ Ne. Nastavlja da svira dok traje vaša sesija, na bilo kojoj kartici.
 
 🧐 Da li radi offline?
-➤ Da. Sve radi na uređaju, pa ovaj minimalistički tajmer radi bez veze i nikada vas ne prati.
+➤ Da. Generator braon šuma i tajmer rade u potpunosti na vašem uređaju.
 
-🧐 Mogu li da ga koristim za pomodoro?
-➤ Možete da podesite klasične dužine fokusa, ali nema nametnutih pauza — to je nežniji, minimalistički pomodoro tajmer izgrađen oko zanosa, a ne oko krutih ciklusa.
+🧐 Da li može da svira ceo dan?
+➤ Da. Pritisnite ∞ i svira dok ne pritisnete Finish.
 
-🧐 Da li je dobar za fokus i učenje?
-➤ Da — osmišljen je kao smiren tajmer za fokus i učenje, s toplim zvukom i nežnim vizuelom koji vam pomažu da se koncentrišete i zaštitite deep work.
-
-🧐 Da li zvuk prestaje ako promenim karticu?
-➤ Ne — zvuci za fokus se nastavljaju kroz sve kartice dok vaša sesija traje.
-
-Podesite vreme, pritisnite start i pustite da minimalistički tajmer nosi vaš fokus. ⭐
+Otvorite Brown Noise Generator, izaberite svoju prostoriju, i pustite da zvuk čuva prostor dok radite. ⭐

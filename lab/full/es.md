@@ -1,66 +1,79 @@
-Minimalist Timer es un temporizador de concentración con pocas distracciones para tu navegador. Una estrella tranquila, un campo vacío y un sonido generativo cálido que te acompaña a lo largo de una sesión de trabajo, y luego te deja aterrizar suavemente en lugar de sobresaltarte con una alarma. Sin desorden, sin cuentas. Si concentrarte suele sentirse frío o mecánico, este está hecho para sentirse en calma.
+Brown Noise Generator es un lugar tranquilo para trabajar y estudiar, directamente en tu navegador. Genera en directo, en tu propio dispositivo, un sonido cálido y grave, y lo envuelve con un temporizador de concentración suave. Ábrelo en el panel lateral, pulsa Start, y la habitación se queda en calma: las voces, los teclados y los ruidos de la calle se hunden bajo un muro de sonido suave y constante. Sin anuncios, sin cuenta, sin pestaña de vídeo que mantener viva.
 
-Pon tu tiempo, pulsa iniciar y quédate en el flow.
+🌟 Por qué este generador de ruido marrón
+- ➤ El sonido se genera en directo, no es una grabación corta en bucle
+- ➤ Un generador de ruido blanco, rosa y marrón en uno: tres colores, cada uno a un toque
+- ➤ Ruido marrón sin anuncios, sin bufferización, nada que se corte a mitad de camino
+- ➤ Preajustes para habitaciones reales: open office, thin walls, café, deep reading, racing thoughts, too much
+- ➤ Un temporizador suave: 5, 15, 25, 45 o 90 minutos, o sin final alguno
+- ➤ Vive en el panel lateral de Chrome y sigue sonando cuando lo cierras
+- ➤ El sonido y el temporizador funcionan en tu dispositivo: sin registro, y funciona sin conexión
 
-🌟 Por qué este temporizador Pomodoro minimalista
-- ➤ Diseño limpio y minimalista: una escena tranquila, nada que tire de tu atención
-- ➤ Brown noise cálido y sonidos suaves de concentración integrados: tu tiempo está hecho literalmente de sonido
-- ➤ Un inicio suave y un aterrizaje suave: sin alarma brusca cuando termina la sesión
-- ➤ Sesiones flexibles: 5, 15, 25, 45, 90 minutos o abiertas
-- ➤ Funciona en silencio en tu panel lateral mientras trabajas: el sonido sigue sonando entre pestañas
-- ➤ Totalmente en el dispositivo: privado por diseño, funciona sin conexión, sin registro
+🔊 A qué suena un generador de ruido marrón
+El ruido marrón, también llamado ruido browniano, mantiene la mayor parte de su energía en los graves, más cerca del oleaje lejano o el zumbido de la cabina de un avión que de la estática. Este generador de ruido browniano lo crea en tu máquina en tiempo real, así que nunca se repite en bucle: un ruido marrón suave con un poco de aire encima, lo bastante lleno para llenar una habitación y lo bastante suave para olvidarlo. Está pensado como ruido marrón profundo para la concentración: suficiente para cubrir la habitación, suave para desvanecerse de tu atención.
 
-🔊 Sonido que mantiene tu concentración
-Las cuentas atrás silenciosas son la norma. Este envuelve tu sesión en brown noise cálido: un sonido suave, grave y generativo (no un bucle corto) que enmascara las distracciones de fondo y te ayuda a asentarte. ¿Prefieres sonidos tranquilos de concentración en lugar de música? Este se mantiene más calmado que la música para concentrarse y más suave que el ruido blanco fuerte. Ya sea brown noise para estudiar, sonidos ambientales para trabajo profundo o simplemente calmar una mente inquieta, el sonido se desplaza lentamente y nunca se repite.
+Piensa en él como un generador de sonido ambiental sin grabaciones: un sonido limpio y generado en lugar de lluvia y pájaros en bucle.
 
-🎯 Un temporizador de concentración y estudio en uno
-Ya necesites un temporizador de concentración para trabajo profundo, un temporizador de estudio para sesiones largas o un temporizador de trabajo tranquilo para la oficina, mantiene la interfaz fuera de tu camino:
-1. Un temporizador de concentración minimalista para enfoque y flow
-2. Un temporizador de estudio minimalista para leer, escribir y repasar
-3. Un temporizador de productividad y concentración tranquilo para tareas
-4. Un temporizador Pomodoro estético para quienes quieren la vibra sin ciclos rígidos de 25/5
+Dos mandos le dan forma: masking (enmascaramiento) ensancha el muro hasta que las voces cercanas se difuminan, y stimulation lo hace más claro cuando necesitas energía, más grave cuando necesitas calma.
 
-🎨 Estético y minimal
-Si te encanta un temporizador estético o bonito en tu pantalla, este temporizador de cuenta atrás minimalista lo mantiene todo bello y simple: una estrella cálida que se acerca a medida que avanza tu sesión, dentro de un espacio tranquilo y abierto. Sin números gritándote, sin presión: solo un temporizador minimalista estético que da gusto mirar.
+🎨 Marrón, rosa o blanco
+El marrón es el color por defecto porque es el más grave y cálido. Un generador de ruido rosa está a un toque de distancia, un punto más claro, y el ruido blanco para concentrarte también está ahí: el más claro de los tres. Mucha gente jura por el ruido blanco para estudiar, mientras que otros lo encuentran demasiado agudo después de una hora. Prueba cada color y quédate con el que tus oídos dejen de notar. La luz del panel sigue el color que elijas.
 
-🧠 Amable con tu atención
-Está hecho para ser amable con cómo funciona la atención de verdad. Si luchas con la ceguera al tiempo o quieres un temporizador visual que haga el tiempo real sin estrés, la estrella te da una suave sensación de progreso. Funciona bien como alternativa tranquila de temporizador para TDAH: una que te guía dentro y fuera de la concentración en lugar de castigarte. Te llama de vuelta; no te encierra.
+🏢 Preajustes para la habitación en la que estás
+Elige dónde estás, y el sonido se ajusta para ti:
+1. open office — el muro más ancho, para voces cercanas
+2. thin walls — más peso en los graves, para un vecino o una tele
+3. café — más ligero, para que el murmullo a tu alrededor se funda
+4. deep reading — tranquilo y uniforme, para una habitación en calma
+5. racing thoughts — más estimulación, cuando hay ruido dentro de tu cabeza
+6. too much — más suave y más bajo, para los días de sobrecarga
 
-💡 Sin cuentas, sin anuncios y sin que ningún dato salga nunca de tu dispositivo: solo un espacio tranquilo y privado para concentrarte, sea como sea tu mente.
+Si buscabas un generador de ruido blanco para el jaleo de oficina, empieza con open office. Funciona como un enmascaramiento sonoro sencillo para tu escritorio, y puedes cambiar a ruido blanco para el trabajo si lo prefieres más claro. Toca cualquier mando y el preajuste se convierte en custom. Los preajustes nunca cambian la duración de tu sesión.
+
+⏱ Un temporizador que no se interpone
+El temporizador está ahí cuando lo quieres. Arrastra el dial a 5, 15, 25, 45 o 90 minutos, o pulsa ∞ y deja que el sonido corra sin final. La cuenta atrás se queda tranquila dentro del dial. Cuando se acaba el tiempo, no hay alarma: el sonido se aclara y se desvanece durante unos cuarenta segundos, para que salgas a flote en lugar de sobresaltarte.
+
+Úsalo como temporizador de concentración para una tarea, temporizador de trabajo para la próxima hora, o temporizador minimalista que simplemente guarda el tiempo por ti. Quienes encuentran estresantes las cuentas atrás normales suelen usarlo como un temporizador TDAH suave: te saca de la concentración en lugar de arrancarte de ella.
+
+🧠 Para concentrarte, estudiar y una mente ocupada
+La gente recurre al ruido marrón para estudiar, al ruido marrón para trabajar y al ruido marrón para el TDAH, para calmar una habitación ruidosa o una cabeza ruidosa. No hacemos promesas sobre el cerebro: la investigación es dispar, y ningún sonido funciona para todo el mundo. Lo que ofrecemos es una buena configuración: ruido de fondo constante para estudiar, sonidos de concentración que no se mueven bajo tus pies, y un sonido que puedes moldear hasta que te ayude. Lo mismo vale para el ruido blanco para el TDAH o cualquier otro sonido de concentración: elige el color, quédate con lo que funcione.
 
 🖥 Cómo funciona
-1️⃣ Abre el temporizador minimalista desde tu barra de herramientas
-2️⃣ Desliza para poner tu tiempo: de 5 a 90 minutos, o ∞
-3️⃣ Toca la estrella: empieza el sonido cálido y te deslizas hacia la concentración
-4️⃣ Cuando se acaba el tiempo, la sesión aterriza suavemente, sin alarma
-5️⃣ Cierra el panel cuando quieras: el sonido sigue sonando
+1️⃣ Haz clic en el icono: Brown Noise Generator se abre en el panel lateral de Chrome
+2️⃣ Elige un preajuste para tu habitación, o ajusta tú mismo volume, masking, stimulation y tone
+3️⃣ Ajusta el dial, o pulsa ∞ para que no tenga final
+4️⃣ Pulsa Start para reproducir ruido marrón; toca la estrella para pausar y reanudar
+5️⃣ Cierra el panel: el sonido sigue hasta que tu sesión aterriza
 
-Como una ligera extensión Pomodoro para Chrome y temporizador de escritorio, se queda justo donde trabajas: sin ventana extra, sin apoderarse de la nueva pestaña, sin distracciones.
+Funciona como un generador de ruido marrón en línea, pero vive en tu navegador y no necesita conexión una vez instalado. No hay ningún vídeo de ruido marrón con pantalla negra que dejar corriendo, ni una pestaña que mantener abierta: piensa en él como una aplicación de ruido marrón para tu escritorio, una extensión de Chrome ligera junto a tu trabajo.
+
+👀 Una imagen que sigue al sonido
+Mientras suena el sonido, un grano fino se mueve por el panel: grueso para el marrón, más fino para el blanco, más rápido con más estimulación. Si el movimiento te molesta, desactiva motion en la esquina.
 
 📌 Ideal para
-- ▸ Trabajo profundo, escritura, programación y lectura
-- ▸ Estudiantes que quieren un temporizador de estudio estético y de aspecto tranquilo
-- ▸ Cualquiera que encuentre las cuentas atrás normales frías, ruidosas o estresantes
-- ▸ Personas que se concentran mejor con sonido de fondo cálido
+- ▸ Oficinas abiertas, pisos compartidos y cafés concurridos
+- ▸ Estudiantes que quieren sonidos de estudio tranquilos para noches largas
+- ▸ Escribir, programar y leer, cuando quieres ruido marrón para concentrarte
+- ▸ Cualquiera cansado de que los anuncios interrumpan sus sonidos de concentración
 
 ❓ Preguntas frecuentes
 
-🧐 ¿Tengo que pagar o registrarme?
-➤ No: todo está disponible desde el inicio, sin cuenta y sin registro.
+🧐 ¿Necesito una cuenta?
+➤ No. No hay registro, no hay anuncios, y no hay nada donde iniciar sesión.
 
-🧐 ¿En qué se diferencia el sonido de otros temporizadores?
-➤ En lugar de una cuenta atrás silenciosa, tu tiempo está hecho de brown noise cálido y sonidos suaves de concentración que enmascaran las distracciones y te ayudan a mantener el flow.
+🧐 ¿Hay un generador de ruido marrón para mi móvil?
+➤ Todavía no. Esto es una extensión de Chrome para navegadores de escritorio y portátil.
+
+🧐 ¿Puedo cambiar a blanco o rosa?
+➤ Sí. Los tres puntos en la esquina superior cambian entre marrón, rosa y blanco.
+
+🧐 ¿El sonido se detiene si cierro el panel o cambio de pestaña?
+➤ No. Sigue sonando mientras tu sesión está activa, en cualquier pestaña.
 
 🧐 ¿Funciona sin conexión?
-➤ Sí. Todo funciona en el dispositivo, así que este temporizador minimalista funciona sin conexión.
+➤ Sí. El generador de ruido marrón y el temporizador funcionan por completo en tu dispositivo.
 
-🧐 ¿Puedo usarlo para Pomodoro?
-➤ Puedes poner duraciones de concentración clásicas, pero no hay descansos forzados: es un temporizador Pomodoro minimalista más amable, construido en torno al flow, no a ciclos rígidos.
+🧐 ¿Puede sonar todo el día?
+➤ Sí. Pulsa ∞ y sonará hasta que pulses Finish.
 
-🧐 ¿Es bueno para concentrarse y estudiar?
-➤ Sí: está pensado como un temporizador tranquilo de concentración y estudio, con sonido cálido y una visual suave que te ayuda a concentrarte y proteger el trabajo profundo.
-
-🧐 ¿Se detiene el sonido si cambio de pestaña?
-➤ No: los sonidos de concentración siguen sonando entre pestañas mientras tu sesión está activa.
-
-Pon tu tiempo, pulsa iniciar y deja que un temporizador minimalista lleve tu concentración. ⭐
+Abre Brown Noise Generator, elige tu habitación, y deja que el sonido sostenga el espacio mientras trabajas. ⭐
