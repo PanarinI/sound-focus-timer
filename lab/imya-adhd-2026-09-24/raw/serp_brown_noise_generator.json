@@ -1,0 +1,790 @@
+[
+ {
+  "keyword": "brown noise generator",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=brown%20noise%20generator&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-24 20:24:37 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "video",
+   "organic",
+   "people_also_ask",
+   "related_searches"
+  ],
+  "se_results_count": 164,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Jason Lewis - Mind Amend",
+      "title": "Super Deep Smoothed Brown Noise - 12 Hours",
+      "timestamp": "2022-06-21 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=P48QELwruQs"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Jason Lewis - Mind Amend",
+      "title": "Smoothed Brown Noise 8-Hours - Remastered, for Relaxation ...",
+      "timestamp": "2017-11-17 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=RqzGzwTY-6w"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Calming Audio",
+      "title": "Brown Noise Generator Sound (10 Hours)",
+      "timestamp": "2022-02-25 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=-rBMKdgY5Bs"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "LOUD Brown Noise Black Screen | Sleep, Relax or Study with ...",
+      "timestamp": "2024-05-05 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=1SJCZSlueJM"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]",
+    "domain": "mynoise.net",
+    "title": "The Ultimate White Noise Player — Design Your Own Color",
+    "url": "https://mynoise.net/NoiseMachines/whiteNoiseGenerator.php",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://mynoise.net › whiteNoiseGenerator",
+    "website_name": "myNoise",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Despite being named \"white\", this generator plays noise in the pink range. This is a compromise between the authentic white noise and the more popular brown ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "generator",
+     "noise",
+     "brown"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://mynoise.net/NoiseMachines/whiteNoiseGenerator.php#:~:text=Despite%20being%20named%20%22white%22%2C%20this,the%20more%20popular%20brown%20setting.",
+      "domain": "mynoise.net"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+    "domain": "29a.ch",
+    "title": "Noise Generator - Online White, Pink, Velvet, Brownian Noise",
+    "url": "https://29a.ch/noise-generator/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://29a.ch › noise-generator",
+    "website_name": "29a.ch",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "The 29a.ch noise generator is an online tool to generate and shape noise. It can be used to block out distracting noise (noise masking), to increase ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "an online tool to generate and shape noise"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+    "domain": "brownnoise.com",
+    "title": "Brown Noise Generator – Free, No Ads | BrownNoise.com",
+    "url": "https://brownnoise.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://brownnoise.com",
+    "website_name": "BrownNoise.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Play deep brown noise free at the official BrownNoise.com. No ads, no sign-up, no app needed. One tap starts 10+ hours of sound for sleep and focus.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Play deep brown noise free at the official BrownNoise.com"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "Is it OK to play brown noise all night?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the best brown noise generator?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "How do you create brown noise?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Does brown noise really work?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]",
+    "domain": "muted.io",
+    "title": "Online Noise Generator for White, Pink or Brown Noise",
+    "url": "https://muted.io/noise-generator/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://muted.io › noise-generator",
+    "website_name": "Muted.io",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Online noise generator to generate either white, pink or brown noise. You can also filter out some frequencies with a high pass or low pass filter.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Online noise generator"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "You can `listen to free, continuous, ad-free brown noise online` using the [Brown Noise Generator](https://brownnoise.com/).[[1]](https://brownnoise.com/)\n\nBrown noise (also known as red noise) features a deep, low-frequency rumble similar to a heavy waterfall or a distant airplane cabin. It contains more energy at lower frequencies and less at higher frequencies than white or pink noise, making it softer and smoother to human ears.[[1]](https://www.youtube.com/watch?v=P48QELwruQs)[[2]](https://slonoise.com/play/brown-noise/)[[3]](https://29a.ch/noise-generator/)[[4]](https://www.youtube.com/watch?v=pfJfe1H9Jk4)[[5]](https://www.youtube.com/watch?v=RqzGzwTY-6w)\n\n### Free Online Generators\n\n- **BrownNoise.com:** A completely free, minimalist web player featuring one-tap play/pause and a customizable sleep timer.\n- **[Slo Noise](https://slonoise.com/play/brown-noise/):** A free browser-based player that lets you mix brown noise with background sounds like rain.\n- **[Muted.io Noise Generator](https://muted.io/noise-generator/):** An interactive tool allowing you to toggle between white, pink, and brown noise with custom filter adjustments.\n- **[SimplyNoise](https://simplynoise.com/):** One of the original web-based color noise generators providing classic brown noise streams.[[1]](https://muted.io/noise-generator/)[[2]](https://brownnoise.com/)[[3]](https://slonoise.com/play/brown-noise/)[[4]](https://simplynoise.com/)\n\n### Benefits of Brown Noise\n\n- **Sleep and Relaxation:** The deep, steady rumble helps mask sudden nighttime disturbances like traffic, loud HVAC units, or barking dogs.\n- **Focus and ADHD:** The deep broadband sound helps calm a racing mind, mask distracting office sounds, and improve concentration for studying or working.\n- **Tinnitus Relief:** The lack of harsh high-pitched static provides a soothing backdrop that can help lessen the perception of ringing in the ears.[[1]](https://www.youtube.com/watch?v=RqzGzwTY-6w)[[2]](https://slonoise.com/play/brown-noise/)[[3]](https://29a.ch/noise-generator/)[[4]](https://www.youtube.com/watch?v=pfJfe1H9Jk4)\n\nIf you'd like, I can help you find **dedicated mobile apps** or recommend **hardware sound machines** for bedside use.",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "You can listen to free, continuous, ad-free brown noise online using the Brown Noise Generator.",
+      "markdown": "You can `listen to free, continuous, ad-free brown noise online` using the [Brown Noise Generator](https://brownnoise.com/).[[1]](https://brownnoise.com/)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Brown Noise Generator",
+        "description": null,
+        "url": "https://brownnoise.com/",
+        "domain": "brownnoise.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "BrownNoise.com",
+        "domain": "brownnoise.com",
+        "url": "https://brownnoise.com/",
+        "title": "Brown Noise Generator – Free, No Ads | BrownNoise.com",
+        "text": "No ads, ever. No commercials at 3 a.m. No banners. It is like a radio station that only plays brown noise. Very little data. It ca..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Brown noise (also known as red noise) features a deep, low-frequency rumble similar to a heavy waterfall or a distant airplane cabin. It contains more energy at lower frequencies and less at higher frequencies than white or pink noise, making it softer and smoother to human ears.",
+      "markdown": "Brown noise (also known as red noise) features a deep, low-frequency rumble similar to a heavy waterfall or a distant airplane cabin. It contains more energy at lower frequencies and less at higher frequencies than white or pink noise, making it softer and smoother to human ears.[[1]](https://www.youtube.com/watch?v=P48QELwruQs)[[2]](https://slonoise.com/play/brown-noise/)[[3]](https://29a.ch/noise-generator/)[[4]](https://www.youtube.com/watch?v=pfJfe1H9Jk4)[[5]](https://www.youtube.com/watch?v=RqzGzwTY-6w)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=P48QELwruQs",
+        "title": "Super Deep Smoothed Brown Noise - 12 Hours - YouTube",
+        "text": "Super deep smoothed brown noise can be used for sleeping, relaxing or studying. Brown noise is a softer-sounding alternative to wh..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "slonoise.com",
+        "domain": "slonoise.com",
+        "url": "https://slonoise.com/play/brown-noise/",
+        "title": "Brown Noise Generator — Free Online, No Ads, No Signup",
+        "text": "Brown Noise. Brown noise is a deep, steady rumble, closer to a distant waterfall or a plane cabin than to static. Press play below..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "29a.ch",
+        "domain": "29a.ch",
+        "url": "https://29a.ch/noise-generator/",
+        "title": "Noise Generator - Online White, Pink, Velvet, Brownian Noise - 29a.ch",
+        "text": "about Noise Generator is an online tool to generate and shape white, pink and brownian noise. It can be used to block out other di..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=pfJfe1H9Jk4",
+        "title": "How brown noise could help people with ADHD",
+        "text": "How brown noise could help people with ADHD for some people with ADHD the low rumble of brown noise can quiet the brain it sounds ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=RqzGzwTY-6w",
+        "title": "Smoothed Brown Noise 8-Hours - Remastered, for Relaxation, Sleep ...",
+        "text": "Brown noise is a useful sound masking tool, that can block out external sounds and distractions and be used in many different ways..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Free Online Generators",
+      "text": "BrownNoise.com : A completely free, minimalist web player featuring one-tap play/pause and a customizable sleep timer. Slo Noise : A free browser-based player that lets you mix brown noise with background sounds like rain. Muted.io Noise Generator : An interactive tool allowing you to toggle between white, pink, and brown noise with custom filter adjustments. SimplyNoise : One of the original web-based color noise generators providing classic brown noise streams.",
+      "markdown": "- **BrownNoise.com:** A completely free, minimalist web player featuring one-tap play/pause and a customizable sleep timer.\n- **[Slo Noise](https://slonoise.com/play/brown-noise/):** A free browser-based player that lets you mix brown noise with background sounds like rain.\n- **[Muted.io Noise Generator](https://muted.io/noise-generator/):** An interactive tool allowing you to toggle between white, pink, and brown noise with custom filter adjustments.\n- **[SimplyNoise](https://simplynoise.com/):** One of the original web-based color noise generators providing classic brown noise streams.[[1]](https://muted.io/noise-generator/)[[2]](https://brownnoise.com/)[[3]](https://slonoise.com/play/brown-noise/)[[4]](https://simplynoise.com/)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Slo Noise",
+        "description": null,
+        "url": "https://slonoise.com/play/brown-noise/",
+        "domain": "slonoise.com"
+       },
+       {
+        "type": "link_element",
+        "title": "Muted.io Noise Generator",
+        "description": null,
+        "url": "https://muted.io/noise-generator/",
+        "domain": "muted.io"
+       },
+       {
+        "type": "link_element",
+        "title": "SimplyNoise",
+        "description": null,
+        "url": "https://simplynoise.com/",
+        "domain": "simplynoise.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Muted.io",
+        "domain": "muted.io",
+        "url": "https://muted.io/noise-generator/",
+        "title": "Online Noise Generator for White, Pink or Brown Noise | muted.io",
+        "text": "Online Noise Generator for White, Pink or Brown Noise Get the desktop app 🔊 Here's an online noise generator that makes it easy t..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "BrownNoise.com",
+        "domain": "brownnoise.com",
+        "url": "https://brownnoise.com/",
+        "title": "Brown Noise Generator – Free, No Ads | BrownNoise.com",
+        "text": "No ads, ever. No commercials at 3 a.m. No banners. It is like a radio station that only plays brown noise. Very little data. It ca..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "slonoise.com",
+        "domain": "slonoise.com",
+        "url": "https://slonoise.com/play/brown-noise/",
+        "title": "Brown Noise Generator — Free Online, No Ads, No Signup",
+        "text": "Brown Noise. Brown noise is a deep, steady rumble, closer to a distant waterfall or a plane cabin than to static. Press play below..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "SimplyNoise",
+        "domain": "simplynoise.com",
+        "url": "https://simplynoise.com/",
+        "title": "SimplyNoise",
+        "text": "Hear what your Mind has been missing... SimplyNoise is the original color noise generator, free on the web since 2008. White, pink..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Benefits of Brown Noise",
+      "text": "Sleep and Relaxation: The deep, steady rumble helps mask sudden nighttime disturbances like traffic, loud HVAC units, or barking dogs. Focus and ADHD: The deep broadband sound helps calm a racing mind, mask distracting office sounds, and improve concentration for studying or working. Tinnitus Relief: The lack of harsh high-pitched static provides a soothing backdrop that can help lessen the perception of ringing in the ears.",
+      "markdown": "- **Sleep and Relaxation:** The deep, steady rumble helps mask sudden nighttime disturbances like traffic, loud HVAC units, or barking dogs.\n- **Focus and ADHD:** The deep broadband sound helps calm a racing mind, mask distracting office sounds, and improve concentration for studying or working.\n- **Tinnitus Relief:** The lack of harsh high-pitched static provides a soothing backdrop that can help lessen the perception of ringing in the ears.[[1]](https://www.youtube.com/watch?v=RqzGzwTY-6w)[[2]](https://slonoise.com/play/brown-noise/)[[3]](https://29a.ch/noise-generator/)[[4]](https://www.youtube.com/watch?v=pfJfe1H9Jk4)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=RqzGzwTY-6w",
+        "title": "Smoothed Brown Noise 8-Hours - Remastered, for Relaxation, Sleep ...",
+        "text": "Brown noise is a useful sound masking tool, that can block out external sounds and distractions and be used in many different ways..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "slonoise.com",
+        "domain": "slonoise.com",
+        "url": "https://slonoise.com/play/brown-noise/",
+        "title": "Brown Noise Generator — Free Online, No Ads, No Signup",
+        "text": "Brown Noise. Brown noise is a deep, steady rumble, closer to a distant waterfall or a plane cabin than to static. Press play below..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "29a.ch",
+        "domain": "29a.ch",
+        "url": "https://29a.ch/noise-generator/",
+        "title": "Noise Generator - Online White, Pink, Velvet, Brownian Noise - 29a.ch",
+        "text": "about Noise Generator is an online tool to generate and shape white, pink and brownian noise. It can be used to block out other di..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=pfJfe1H9Jk4",
+        "title": "How brown noise could help people with ADHD",
+        "text": "How brown noise could help people with ADHD for some people with ADHD the low rumble of brown noise can quiet the brain it sounds ..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "If you'd like, I can help you find dedicated mobile apps or recommend hardware sound machines for bedside use.",
+      "markdown": "If you'd like, I can help you find **dedicated mobile apps** or recommend **hardware sound machines** for bedside use.",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=P48QELwruQs",
+      "title": "Super Deep Smoothed Brown Noise - 12 Hours - YouTube",
+      "text": "Super deep smoothed brown noise can be used for sleeping, relaxing or studying. Brown noise is a softer-sounding alternative to wh..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=RqzGzwTY-6w",
+      "title": "Smoothed Brown Noise 8-Hours - Remastered, for Relaxation, Sleep ...",
+      "text": "Brown noise is a useful sound masking tool, that can block out external sounds and distractions and be used in many different ways..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Muted.io",
+      "domain": "muted.io",
+      "url": "https://muted.io/noise-generator/",
+      "title": "Online Noise Generator for White, Pink or Brown Noise | muted.io",
+      "text": "Online Noise Generator for White, Pink or Brown Noise Get the desktop app 🔊 Here's an online noise generator that makes it easy t..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "slonoise.com",
+      "domain": "slonoise.com",
+      "url": "https://slonoise.com/play/brown-noise/",
+      "title": "Brown Noise Generator — Free Online, No Ads, No Signup",
+      "text": "Brown Noise. Brown noise is a deep, steady rumble, closer to a distant waterfall or a plane cabin than to static. Press play below..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "BrownNoise.com",
+      "domain": "brownnoise.com",
+      "url": "https://brownnoise.com/",
+      "title": "Brown Noise Generator – Free, No Ads | BrownNoise.com",
+      "text": "No ads, ever. No commercials at 3 a.m. No banners. It is like a radio station that only plays brown noise. Very little data. It ca..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "29a.ch",
+      "domain": "29a.ch",
+      "url": "https://29a.ch/noise-generator/",
+      "title": "Noise Generator - Online White, Pink, Velvet, Brownian Noise - 29a.ch",
+      "text": "about Noise Generator is an online tool to generate and shape white, pink and brownian noise. It can be used to block out other di..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "SimplyNoise",
+      "domain": "simplynoise.com",
+      "url": "https://simplynoise.com/",
+      "title": "SimplyNoise",
+      "text": "Hear what your Mind has been missing... SimplyNoise is the original color noise generator, free on the web since 2008. White, pink..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=pfJfe1H9Jk4",
+      "title": "How brown noise could help people with ADHD",
+      "text": "How brown noise could help people with ADHD for some people with ADHD the low rumble of brown noise can quiet the brain it sounds ..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]",
+    "domain": "slonoise.com",
+    "title": "Brown Noise Generator — Free Online, No Ads, No Signup",
+    "url": "https://slonoise.com/play/brown-noise/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://slonoise.com › play › brown-noise",
+    "website_name": "slonoise.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Play brown noise free in your browser, with nothing to download. Set a sleep timer, layer rain over it in the mixer, or get the Slo app for iOS and Android.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Play brown noise free in your browser"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "noises.online",
+    "title": "Online Background Noises • Relaxing Sounds • Noise Masking",
+    "url": "https://noises.online/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://noises.online",
+    "website_name": "Online Background Noises",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "myNoise is probably the best background noise generator on the internet. It offers an unsurpassed number of noises and is second to none for customizing sound. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "myNoise is probably the best background noise generator on the internet"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://noises.online/#:~:text=myNoise%20is%20probably%20the%20best,to%20none%20for%20customizing%20sound.",
+      "domain": "noises.online"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+    "domain": "play.google.com",
+    "title": "Noise: White, Pink, Brown - Apps on ...",
+    "url": "https://play.google.com/store/apps/details?id=com.hipxel.noise&hl=en_US",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://play.google.com › store › apps › details › id=com...",
+    "website_name": "Google Play",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "The app can generate various color / types of noise. Different people need different noises. For example one may find that brown noise helps with sleep ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": "4.7(3,903)  · Free · ‎Android · ‎Entertainment",
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4.7,
+     "votes_count": 3903,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "brown noise helps with sleep"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://play.google.com/store/apps/details?id=com.hipxel.noise&hl=en_US",
+      "domain": "play.google.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[20]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "Brown Noise (10 Hours) Brown Noise Generator, The ...",
+    "url": "https://open.spotify.com/playlist/7FVA5ObgnObPUW38tyYk2k",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › playlist",
+    "website_name": "Spotify",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Brown Noise (10 Hours) Brown Noise Generator, The Brown Noise, Brown Noise Machine · 01 (Continuous No Gaps) · White Noise Radiance, Brown Noise · 02 (Continuous ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Brown Noise (10 Hours) Brown Noise Generator"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://open.spotify.com/playlist/7FVA5ObgnObPUW38tyYk2k#:~:text=Brown%20Noise%20(10%20Hours)%20Brown,Brown%20Noise%2C%20Brown%20Noise%20Machine&text=01%20(Continuous%20No%20Gaps),White%20Noise%20Radiance%2C%20Brown%20Noise&text=02%20(Continuous%20No%20Gaps)",
+      "domain": "open.spotify.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Brown noise generator online",
+     "Brown noise generator app",
+     "Brown noise generator free",
+     "Brown noise generator for sleeping",
+     "White noise generator",
+     "Green noise generator",
+     "Brown noise generator VST",
+     "Color noise generator"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

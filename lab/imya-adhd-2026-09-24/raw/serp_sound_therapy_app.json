@@ -1,0 +1,684 @@
+[
+ {
+  "keyword": "sound therapy app",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=sound%20therapy%20app&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-26 07:36:53 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "organic",
+   "people_also_ask",
+   "video",
+   "related_searches"
+  ],
+  "se_results_count": 154,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "Sound therapy apps `use specialized frequencies, nature sounds, or binaural beats to help with relaxation, sleep, focus, and tinnitus relief`.\n\n### General Relaxation & Mental Wellness\n\n- **Insight Timer:** Offers a wide variety of ambient tracks, singing bowls, and meditation timers for stress relief.[[1]](https://socialworktech.com/2013/10/18/sound-apps-for-therapy/)\n- **Spiritune:** Plays personalized, clinical-grade music designed to shift your mood from anxious or stressed to calm.[[1]](https://www.reddit.com/r/musicsuggestions/comments/1avuj3d/any_good_apps_or_playlists_for_ambient_music/)\n- **myNoise:** Provides customizable, web- and app-based ambient soundscapes and noise therapy generators.[[1]](https://www.reddit.com/r/musicsuggestions/comments/1avuj3d/any_good_apps_or_playlists_for_ambient_music/)\n\n### Tinnitus & Hearing Therapy\n\n- **ReSound Relief:** Combines sound therapy, relaxation exercises, and guidance specifically to manage ringing in the ears.[[1]](https://www.resound.com/en-us/hearing-aids/apps/relief)\n- **AudioCardio:** Delivers threshold sound therapies designed to stimulate inner ear cells and support hearing health.[[1]](https://audiocardio.com/)\n- **Sound Oasis:** Features professionally recorded nature sounds and doctor-developed masking tracks for sleep and tinnitus.[[1]](https://www.soundoasis.com/apps/)\n\n### Frequency & Binaural Beats\n\n- **Healing Sounds- Sound Therapy:** Features a large collection of binaural beats, Solfeggio frequencies, and singing bowls.[[1]](https://apps.apple.com/us/app/healing-sounds-sound-therapy/id1625569788)\n- **Frequency: Healing Sounds:** Centers on core healing frequencies with structured listening protocols.[[1]](https://apps.apple.com/us/app/frequency-healing-sounds/id684672780)\n\nIf you tell me what you want to treat—such as **tinnitus, sleep issues, anxiety, or focus** —I can recommend the best specific app for your needs.",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Sound therapy apps use specialized frequencies, nature sounds, or binaural beats to help with relaxation, sleep, focus, and tinnitus relief.",
+      "markdown": "Sound therapy apps `use specialized frequencies, nature sounds, or binaural beats to help with relaxation, sleep, focus, and tinnitus relief`.",
+      "links": null,
+      "images": null,
+      "references": null
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "General Relaxation & Mental Wellness",
+      "text": "Insight Timer: Offers a wide variety of ambient tracks, singing bowls, and meditation timers for stress relief. Spiritune: Plays personalized, clinical-grade music designed to shift your mood from anxious or stressed to calm. myNoise: Provides customizable, web- and app-based ambient soundscapes and noise therapy generators.",
+      "markdown": "- **Insight Timer:** Offers a wide variety of ambient tracks, singing bowls, and meditation timers for stress relief.[[1]](https://socialworktech.com/2013/10/18/sound-apps-for-therapy/)\n- **Spiritune:** Plays personalized, clinical-grade music designed to shift your mood from anxious or stressed to calm.[[1]](https://www.reddit.com/r/musicsuggestions/comments/1avuj3d/any_good_apps_or_playlists_for_ambient_music/)\n- **myNoise:** Provides customizable, web- and app-based ambient soundscapes and noise therapy generators.[[1]](https://www.reddit.com/r/musicsuggestions/comments/1avuj3d/any_good_apps_or_playlists_for_ambient_music/)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Social Work Tech",
+        "domain": "socialworktech.com",
+        "url": "https://socialworktech.com/2013/10/18/sound-apps-for-therapy/",
+        "title": "Ask Iggy: What Are Great Sound Apps for Therapy?",
+        "text": "Here are some apps that can be used in therapy: * **Coffitivity** This app recreates the ambiance of a coffee shop, which can help..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Reddit",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/musicsuggestions/comments/1avuj3d/any_good_apps_or_playlists_for_ambient_music/",
+        "title": "Any good apps or playlists for ambient music specifically for mental health ...",
+        "text": "It looks like you shared an AMP link. These should load faster, but AMP is controversial because of concerns over privacy and the ..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Tinnitus & Hearing Therapy",
+      "text": "ReSound Relief: Combines sound therapy, relaxation exercises, and guidance specifically to manage ringing in the ears. AudioCardio: Delivers threshold sound therapies designed to stimulate inner ear cells and support hearing health. Sound Oasis: Features professionally recorded nature sounds and doctor-developed masking tracks for sleep and tinnitus.",
+      "markdown": "- **ReSound Relief:** Combines sound therapy, relaxation exercises, and guidance specifically to manage ringing in the ears.[[1]](https://www.resound.com/en-us/hearing-aids/apps/relief)\n- **AudioCardio:** Delivers threshold sound therapies designed to stimulate inner ear cells and support hearing health.[[1]](https://audiocardio.com/)\n- **Sound Oasis:** Features professionally recorded nature sounds and doctor-developed masking tracks for sleep and tinnitus.[[1]](https://www.soundoasis.com/apps/)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "ReSound",
+        "domain": "www.resound.com",
+        "url": "https://www.resound.com/en-us/hearing-aids/apps/relief",
+        "title": "Enjoy Tinnitus Relief with the ReSound Relief App",
+        "text": "The ReSound Relief app No matter how you hear or experience tinnitus, the ReSound Relief app helps you to easily and discreetly ma..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "AudioCardio",
+        "domain": "audiocardio.com",
+        "url": "https://audiocardio.com/",
+        "title": "AudioCardio: App for Tinnitus | Sound Therapy | Hearing Loss App",
+        "text": "A Mobile App Designed to Strengthen Hearing and Relieve Tinnitus. AudioCardio™ is an evidence-based mobile app that delivers inaud..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Sound Oasis",
+        "domain": "www.soundoasis.com",
+        "url": "https://www.soundoasis.com/apps/",
+        "title": "App Store | Sleep Sound Therapy Systems - Sound Oasis",
+        "text": "App Store | Sleep Sound Therapy Systems | Tinnitus Therapy Home / App Store App Store Sound Therapy Apps with a focus on original ..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Frequency & Binaural Beats",
+      "text": "Healing Sounds- Sound Therapy: Features a large collection of binaural beats, Solfeggio frequencies, and singing bowls. Frequency: Healing Sounds: Centers on core healing frequencies with structured listening protocols.",
+      "markdown": "- **Healing Sounds- Sound Therapy:** Features a large collection of binaural beats, Solfeggio frequencies, and singing bowls.[[1]](https://apps.apple.com/us/app/healing-sounds-sound-therapy/id1625569788)\n- **Frequency: Healing Sounds:** Centers on core healing frequencies with structured listening protocols.[[1]](https://apps.apple.com/us/app/frequency-healing-sounds/id684672780)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Apple",
+        "domain": "apps.apple.com",
+        "url": "https://apps.apple.com/us/app/healing-sounds-sound-therapy/id1625569788",
+        "title": "Healing Sounds- Sound Therapy - App Store",
+        "text": "Healing Sounds- Sound Therapy You can even feel the direct effect on your body such as increased energy & stronger immune system. ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Apple",
+        "domain": "apps.apple.com",
+        "url": "https://apps.apple.com/us/app/frequency-healing-sounds/id684672780",
+        "title": "Frequency: Healing Sounds App",
+        "text": "The app's library is based on eight core healing frequencies: * **852 Hz** A quiet, centering tone for stillness and peace The app..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "If you tell me what you want to treat—such as tinnitus, sleep issues, anxiety, or focus —I can recommend the best specific app for your needs.",
+      "markdown": "If you tell me what you want to treat—such as **tinnitus, sleep issues, anxiety, or focus** —I can recommend the best specific app for your needs.",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Apple",
+      "domain": "apps.apple.com",
+      "url": "https://apps.apple.com/us/app/healing-sounds-sound-therapy/id1625569788",
+      "title": "Healing Sounds- Sound Therapy - App Store",
+      "text": "Healing Sounds- Sound Therapy You can even feel the direct effect on your body such as increased energy & stronger immune system. ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Apple",
+      "domain": "apps.apple.com",
+      "url": "https://apps.apple.com/us/app/frequency-healing-sounds/id684672780",
+      "title": "Frequency: Healing Sounds App",
+      "text": "The app's library is based on eight core healing frequencies: * **852 Hz** A quiet, centering tone for stillness and peace The app..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Sound Oasis",
+      "domain": "www.soundoasis.com",
+      "url": "https://www.soundoasis.com/apps/",
+      "title": "App Store | Sleep Sound Therapy Systems - Sound Oasis",
+      "text": "App Store | Sleep Sound Therapy Systems | Tinnitus Therapy Home / App Store App Store Sound Therapy Apps with a focus on original ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "ReSound",
+      "domain": "www.resound.com",
+      "url": "https://www.resound.com/en-us/hearing-aids/apps/relief",
+      "title": "Enjoy Tinnitus Relief with the ReSound Relief App",
+      "text": "The ReSound Relief app No matter how you hear or experience tinnitus, the ReSound Relief app helps you to easily and discreetly ma..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Reddit",
+      "domain": "www.reddit.com",
+      "url": "https://www.reddit.com/r/musicsuggestions/comments/1avuj3d/any_good_apps_or_playlists_for_ambient_music/",
+      "title": "Any good apps or playlists for ambient music specifically for mental health ...",
+      "text": "It looks like you shared an AMP link. These should load faster, but AMP is controversial because of concerns over privacy and the ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "AudioCardio",
+      "domain": "audiocardio.com",
+      "url": "https://audiocardio.com/",
+      "title": "AudioCardio: App for Tinnitus | Sound Therapy | Hearing Loss App",
+      "text": "A Mobile App Designed to Strengthen Hearing and Relieve Tinnitus. AudioCardio™ is an evidence-based mobile app that delivers inaud..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Social Work Tech",
+      "domain": "socialworktech.com",
+      "url": "https://socialworktech.com/2013/10/18/sound-apps-for-therapy/",
+      "title": "Ask Iggy: What Are Great Sound Apps for Therapy?",
+      "text": "Here are some apps that can be used in therapy: * **Coffitivity** This app recreates the ambiance of a coffee shop, which can help..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]",
+    "domain": "play.google.com",
+    "title": "Healing Sounds & Sound Therapy - Apps on Google Play",
+    "url": "https://play.google.com/store/apps/details?id=com.dailymistika.healingsounds&hl=en_US",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://play.google.com › store › apps › details › id=com...",
+    "website_name": "Google Play",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sep 17, 2026 — Heal your mind and soul with transcendent healing frequencies in our Sound Therapy app. Listen to binaural beats, solfeggio frequencies, ... Read more",
+    "pre_snippet": "09/17/2026 00:00:00",
+    "extended_snippet": "4.4(7,373)  · Free · ‎Android · ‎Health",
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4.4,
+     "votes_count": 7373,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "transcendent healing frequencies"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://play.google.com/store/apps/details?id=com.dailymistika.healingsounds&hl=en_US",
+      "domain": "play.google.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-09-17 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "Can I do sound therapy on myself?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Is there a free app that uses frequency healing sounds?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Does listening to healing frequencies really work?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the best free binaural app?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]",
+    "domain": "apps.apple.com",
+    "title": "Healing Sounds- Sound Therapy - App Store - Apple",
+    "url": "https://apps.apple.com/us/app/healing-sounds-sound-therapy/id1625569788",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://apps.apple.com › app › healing-sounds-sound-th...",
+    "website_name": "Apple",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Feb 6, 2023 — Find your calm with 500+ healing sounds, binaural beats & guided meditations. Sleep deeper, stress less, and feel better every day. Read more",
+    "pre_snippet": "02/06/2023 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "500+ healing sounds, binaural beats & guided meditations"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://apps.apple.com/us/app/healing-sounds-sound-therapy/id1625569788#:~:text=Find%20your%20calm%20with%20500%2B,and%20feel%20better%20every%20day.",
+      "domain": "apps.apple.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2023-02-06 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]",
+    "domain": "socialworktech.com",
+    "title": "Ask Iggy: What Are Great Sound Apps for Therapy?",
+    "url": "https://socialworktech.com/2013/10/18/sound-apps-for-therapy/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://socialworktech.com › Ask Iggy",
+    "website_name": "Social Work Tech",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Oct 18, 2013 — Ambiance is great for therapy because it offers a myriad of various different sounds that promote relaxation. This app is ideal for background ... Read more",
+    "pre_snippet": "10/18/2013 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Ambiance"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://socialworktech.com/2013/10/18/sound-apps-for-therapy/#:~:text=Ambiance%20is%20great%20for%20therapy,of%20a%20white%20noise%20machine.",
+      "domain": "socialworktech.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2013-10-18 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[9]/div[1]/div[1]",
+    "domain": "apps.apple.com",
+    "title": "Frequency: Healing Sounds - App Store - Apple",
+    "url": "https://apps.apple.com/us/app/frequency-healing-sounds/id684672780",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://apps.apple.com › app › frequency-healing-sounds",
+    "website_name": "Apple",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Frequency Healing Sounds delivers natural healing frequency sound therapy for pain relief, deep sleep, relaxation, and calm. , and Crashes/Sleeps",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Frequency Healing Sounds"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[11]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Treble Health",
+      "title": "The 5 BEST Tinnitus Apps of 2025",
+      "timestamp": "2025-05-21 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=AbKDX1vLojc"
+     },
+     {
+      "type": "video_element",
+      "source": "Calm - The #1 App for Meditation and Sleep",
+      "title": "EMDR-Inspired Bilateral: Anxiety",
+      "timestamp": "2023-02-02 00:00:00 +00:00",
+      "url": "https://www.calm.com/app/program/9vFHpss0lj"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Treble Health",
+      "title": "Doctor Recommended Apps For Tinnitus Treatment",
+      "timestamp": "2025-09-23 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=2iLvID37-hM"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[13]/div[1]/div[1]",
+    "domain": "www.ata.org",
+    "title": "Useful Apps for Tinnitus Management",
+    "url": "https://www.ata.org/about-tinnitus/patient-tools/apps/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.ata.org › About Tinnitus › Patient Tools",
+    "website_name": "American Tinnitus Association",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Therapy Therapy and Treatment. The apps listed below represent a limited selection of ones that tinnitus patients and their healthcare providers find helpful.  ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Therapy Therapy",
+     "apps"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[15]/div[1]/div[1]",
+    "domain": "play.google.com",
+    "title": "Frequency Healing Sounds Hertz - Apps on Google Play",
+    "url": "https://play.google.com/store/apps/details?id=com.frequency.healing.chakra.binaural.beats.brainwaves&hl=en_US",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://play.google.com › store › apps › details",
+    "website_name": "Google Play",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Experience healing frequencies, solfeggio sounds, chakra music, and binaural beats for sleep, relaxation, meditation, focus, and energy. Explore powerful 432Hz,",
+    "pre_snippet": null,
+    "extended_snippet": "4.6(8,830)  · Free · ‎Android · ‎Health",
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4.6,
+     "votes_count": 8830,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "healing frequencies, solfeggio sounds, chakra music, and binaural beats"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[17]/div[1]/div[1]",
+    "domain": "www.axios.com",
+    "title": "We tried it: Sound therapy, via Soaak app",
+    "url": "https://www.axios.com/2024/04/12/sound-therapy-soaak-app",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.axios.com › Technology",
+    "website_name": "Axios",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Apr 12, 2024 — Can \"sound therapy\" actually help you focus, relax or drift off to sleep? Sound therapy, in which specially designed sounds are used to trigger ...",
+    "pre_snippet": "04/12/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Sound"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-04-12 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[19]/div[1]/div[1]",
+    "domain": "insighttimer.com",
+    "title": "Free Sound Healing Meditations",
+    "url": "https://insighttimer.com/meditation-topics/soundhealing",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://insighttimer.com › meditation-topics › soundheal...",
+    "website_name": "Insight Timer",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Insight Timer offers a wide range of guided meditations and sound healing tracks to help you incorporate sound healing into your daily practice. Enjoy sessions ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Insight Timer offers a wide range of guided meditations and sound healing tracks"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://insighttimer.com/meditation-topics/soundhealing#:~:text=Insight%20Timer%20offers%20a%20wide,crystal%20singing%20bowls%2C%20and%20more.",
+      "domain": "insighttimer.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Sound therapy app free",
+     "Sound therapy app for android",
+     "Sound therapy app for iphone",
+     "Best sound therapy app",
+     "Best healing frequency app",
+     "Biblical healing frequency app",
+     "Healing sound therapy",
+     "Best free healing frequency app"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

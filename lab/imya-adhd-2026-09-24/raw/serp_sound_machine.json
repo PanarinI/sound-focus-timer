@@ -1,0 +1,1619 @@
+[
+ {
+  "keyword": "sound machine",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=sound%20machine&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 15:08:35 +00:00",
+  "spell": null,
+  "refinement_chips": {
+   "type": "refinement_chips",
+   "xpath": "/html[1]/body[1]/div[3]/div[1]/div[9]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]",
+   "items": [
+    {
+     "type": "refinement_chips_element",
+     "title": "For Babies",
+     "url": "https://www.google.com/search?q=sound+machine+for+babies&hl=en&gl=US&shoprs=CAEYASoNc291bmQgbWFjaGluZTIcCAESCkZvciBCYWJpZXMYAjoKCJH2aBCS9mgwA1ifwCBgAQ&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAF6BAgpEEo",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Nearby",
+     "url": "https://www.google.com/search?q=sound+machine+nearby&hl=en&gl=US&shoprs=CAEYAyoNc291bmQgbWFjaGluZTIMCAMSBk5lYXJieRgCWJ_AIGAB&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAJ6BAgpEEs",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "On sale",
+     "url": "https://www.google.com/search?q=sound+machine+sale&hl=en&gl=US&shoprs=CAESBEoCGAEYBioNc291bmQgbWFjaGluZTITCAYSB09uIHNhbGUYAiIESgIYAVifwCBgAQ&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAN6BAgpEEw",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Online",
+     "url": "https://www.google.com/search?q=online+sound+machine&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTIKCBISBk9ubGluZWAB&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAR6BAgpEE0",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "For Sale",
+     "url": "https://www.google.com/search?q=sound+machine+for+sale&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTIMCBISCEZvciBTYWxlYAE&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAV6BAgpEE4",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Get it fast",
+     "url": "https://www.google.com/search?q=sound+machine&hl=en&gl=US&shoprs=CAESDZoBCgoIEAM4AUABSAEYFCoNc291bmQgbWFjaGluZTIkCBQSC0dldCBpdCBmYXN0Ig2aAQoKCBADOAFAAUgBKgQQARgBYAE&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAZ6BAgpEE8",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Reviews",
+     "url": "https://www.google.com/search?q=reviews+sound+machine&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTILCBISB1Jldmlld3NgAQ&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAd6BAgpEFA",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Under $45",
+     "url": "https://www.google.com/search?q=sound+machine+under+$45&hl=en&gl=US&shoprs=CAESDRILEQAAAAAqdYVBGAEYBSoNc291bmQgbWFjaGluZTIiCAUSCVVuZGVyICQ0NRgCIg0SCxEAAAAAKnWFQRgBKgIYAVifwCBgAQ&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAh6BAgpEFE",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Pink",
+     "url": "https://www.google.com/search?q=pink+sound+machine&hl=en&gl=US&shoprs=CAEYASoNc291bmQgbWFjaGluZTIWCAESBFBpbms6DAjYjPUBEOmK9QEwC1ifwCBgAQ&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAl6BAgpEFI",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Smart",
+     "url": "https://www.google.com/search?q=smart+sound+machine&hl=en&gl=US&shoprs=CAEYASoNc291bmQgbWFjaGluZTIVCAESBVNtYXJ0OgoIhfZoEIb2aDADWJ_AIGAB&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAp6BAgpEFM",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Buy",
+     "url": "https://www.google.com/search?q=buy+sound+machine&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTIHCBISA0J1eWAB&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAt6BAgpEFQ",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Free",
+     "url": "https://www.google.com/search?q=free+sound+machine&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTIICBISBEZyZWVgAQ&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKAx6BAgpEFU",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Books",
+     "url": "https://www.google.com/search?q=books+sound+machine&hl=en&gl=US&shoprs=CAEYCSoNc291bmQgbWFjaGluZTIJCAkSBUJvb2tzYAE&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKA16BAgpEFY",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Price",
+     "url": "https://www.google.com/search?q=price+sound+machine&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTIJCBISBVByaWNlYAE&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKA56BAgpEFc",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Alarm Clocks",
+     "url": "https://www.google.com/search?q=alarm+clocks+sound+machine&hl=en&gl=US&shoprs=CAEYCSoNc291bmQgbWFjaGluZTIQCAkSDEFsYXJtIENsb2Nrc2AB&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKA96BAgpEFg",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Music",
+     "url": "https://www.google.com/search?q=music+sound+machine&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTIJCBISBU11c2ljYAE&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKBB6BAgpEFk",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Plug-in",
+     "url": "https://www.google.com/search?q=plug-in+sound+machine&hl=en&gl=US&shoprs=CAEYASoNc291bmQgbWFjaGluZTIZCAESB1BsdWctaW46DAiF5rYCEIjmtgIwAlifwCBgAQ&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKBF6BAgpEFo",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "White",
+     "url": "https://www.google.com/search?q=white+sound+machine&hl=en&gl=US&shoprs=CAEYASoNc291bmQgbWFjaGluZTIXCAESBVdoaXRlOgwI2Iz1ARChi_UBMAtYn8AgYAE&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKBJ6BAgpEFs",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Stage",
+     "url": "https://www.google.com/search?q=stage+sound+machine&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTIJCBISBVN0YWdlYAE&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKBN6BAgpEFw",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Green",
+     "url": "https://www.google.com/search?q=green+sound+machine&hl=en&gl=US&shoprs=CAEYASoNc291bmQgbWFjaGluZTIXCAESBUdyZWVuOgwI2Iz1ARDoivUBMAtYn8AgYAE&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKBR6BAgpEF0",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Adult",
+     "url": "https://www.google.com/search?q=adult+sound+machine&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTIJCBISBUFkdWx0YAE&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKBV6BAgpEF4",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Blue",
+     "url": "https://www.google.com/search?q=blue+sound+machine&hl=en&gl=US&shoprs=CAEYASoNc291bmQgbWFjaGluZTIWCAESBEJsdWU6DAjYjPUBEOaK9QEwC1ifwCBgAQ&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKBZ6BAgpEF8",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Brand",
+     "url": "https://www.google.com/search?q=brand+sound+machine&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTIJCBISBUJyYW5kYAE&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKBd6BAgpEGA",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Home",
+     "url": "https://www.google.com/search?q=home+sound+machine&hl=en&gl=US&shoprs=CAEYEioNc291bmQgbWFjaGluZTIICBISBEhvbWVgAQ&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQip4GKBh6BAgpEGE",
+     "domain": "www.google.com",
+     "options": null
+    }
+   ]
+  },
+  "item_types": [
+   "organic",
+   "video",
+   "people_also_ask",
+   "popular_products",
+   "images",
+   "related_searches"
+  ],
+  "se_results_count": 255,
+  "pages_count": 1,
+  "items_count": 15,
+  "items": [
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "domain": "www.amazon.com",
+    "title": "Best Sleep Sound Machines",
+    "url": "https://www.amazon.com/Best-Sellers-Sleep-Sound-Machines/zgbs/hpc/18746767011",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.amazon.com › zgbs › hpc",
+    "website_name": "Amazon.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Discover the best Sleep Sound Machines in Best Sellers. Find the top 100 most popular items in Amazon Health & Household Best Sellers.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Sleep Sound Machines in Best Sellers"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "Sleep Sounds White Noise Machine | Fan Audio for Sleeping & ...",
+      "timestamp": "2016-04-24 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=gwXZX7XKWMs"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · No Sleepless Nights",
+      "title": "The Best White Noise Machines: 20 Reviewed And Compared",
+      "timestamp": "2025-08-31 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=ck2nN6llWC4"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Myself Stylish",
+      "title": "6 Best White Noise Machines for Sleep 2026! Block Out ...",
+      "timestamp": "2026-06-13 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=MP3LuI6Ruhw"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "Is it healthy to sleep with a sound machine?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What are the best sound machines?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What's the best portable sound machine?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What does a sound machine do?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "popular_products",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]",
+    "title": "Popular products",
+    "items": [
+     {
+      "type": "popular_products_element",
+      "title": "Radsen Portable Sound Machine White Noise Machine for Baby Adults 29 Soothing Sounds for Sleep",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - Radsen",
+      "more_sellers": false,
+      "seller": "Walmart - Radsen",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251508-2042-0139-0000-e634b3cda82d:0",
+      "price": {
+       "current": 19.99,
+       "regular": 59,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$19.99 $59"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.9,
+       "votes_count": 14,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "6620293273117551412",
+       "data_docid": "203349161837276601",
+       "gid": "1605226999843031686"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Homedics Calming SoundSpa Portable Desk Lamp White",
+      "url": null,
+      "domain": null,
+      "description": "Target\nFree delivery on $35+\nPlug-in · Rechargeable",
+      "more_sellers": false,
+      "seller": "Target",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251508-2042-0139-0000-e634b3cda82d:1",
+      "price": {
+       "current": 14.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$14.99"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "16768618206549519922",
+       "data_docid": "5379149900809862407",
+       "gid": null
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Dreamegg White Noise Sound Machine for Sleep, Baby Adults Travel Essential, Black, Size: 50 g",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - Dreamegg",
+      "more_sellers": false,
+      "seller": "Walmart - Dreamegg",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251508-2042-0139-0000-e634b3cda82d:2",
+      "price": {
+       "current": 13.88,
+       "regular": 29,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$13.88 $29"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.5,
+       "votes_count": 96,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": null,
+       "data_docid": "7307533215358118967",
+       "gid": null
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Yogasleep Duet Sound Machine & Night Light with Wireless Speaker",
+      "url": "https://www.nosleeplessnights.com/yogasleep-duet-review/",
+      "domain": "www.nosleeplessnights.com",
+      "description": "Sears & more\nFree delivery\n30 sounds: 7 white noise, 4 fan sounds, 9 nature, 7 relaxation/music, 3 … · No internal battery, so it needs to be plugged in to work No Sleepless Nights",
+      "more_sellers": true,
+      "seller": "Sears",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251508-2042-0139-0000-e634b3cda82d:3",
+      "price": {
+       "current": 26.59,
+       "regular": null,
+       "max_value": 45,
+       "currency": "USD",
+       "is_price_range": true,
+       "displayed_price": "$26.59 Usually $45"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.7,
+       "votes_count": 280,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "3559045382141806343",
+       "data_docid": "18349787628911719501",
+       "gid": "4387252367624467290"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Dohm Nova Sound Machine & Night Light Yogasleep",
+      "url": "https://views-media.com/blog/best-white-noise-machines-2026",
+      "domain": "views-media.com",
+      "description": "Best Buy & more\nTrue mechanical fan with analog sound — no digital artifacts · Maximum volume is only 62 dB — not enough to mask loud external noise Views Media",
+      "more_sellers": true,
+      "seller": "Best Buy",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251508-2042-0139-0000-e634b3cda82d:4",
+      "price": {
+       "current": 64.99,
+       "regular": 70,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$64.99 $70"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.7,
+       "votes_count": 73,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "17809940352318899681",
+       "data_docid": "7893125710406450573",
+       "gid": "6288597476741454112"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Pure Enrichment Wave Baby Premium Soothing Sound Machine",
+      "url": null,
+      "domain": null,
+      "description": "Target & more\nFree delivery on $35+",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251508-2042-0139-0000-e634b3cda82d:5",
+      "price": {
+       "current": 29.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$29.99"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.4,
+       "votes_count": 79,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "9233961532794757904",
+       "data_docid": "291168279271573618",
+       "gid": "6711296907783064872"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Dreamegg White Noise Machine with Night Light and Clock",
+      "url": null,
+      "domain": null,
+      "description": "Dreamegg.com & more\nFree delivery",
+      "more_sellers": true,
+      "seller": "Dreamegg.com",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251508-2042-0139-0000-e634b3cda82d:6",
+      "price": {
+       "current": 45.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$45.99"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "15171501499331509114",
+       "data_docid": "2389238298054243295",
+       "gid": "9187715087284938024"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "SNOOZ Pro White Noise Machine",
+      "url": "https://sleepsoundguide.com/snooz-white-noise-machine-review/",
+      "domain": "sleepsoundguide.com",
+      "description": "Best Buy & more\nFree delivery\nLow end is genuinely quiet · May not produce enough masking volume Sleep Sound Guide",
+      "more_sellers": true,
+      "seller": "Best Buy",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251508-2042-0139-0000-e634b3cda82d:7",
+      "price": {
+       "current": 119.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$119.99"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.6,
+       "votes_count": 147,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "7249975978157427923",
+       "data_docid": "1485947695202981608",
+       "gid": "1900759370166187479"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Mini Sound Machine Portable White Noise Sound Machine for Sleep White Noise for Baby & Adult with 20 Soothing Sounds",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - Radsen",
+      "more_sellers": false,
+      "seller": "Walmart - Radsen",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251508-2042-0139-0000-e634b3cda82d:8",
+      "price": {
+       "current": 17.99,
+       "regular": 40,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$17.99 $40"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.7,
+       "votes_count": 23,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "9936913499785035226",
+       "data_docid": "1774684233840010315",
+       "gid": "5872126265947270826"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Yogasleep Dreamcenter Sound Machine",
+      "url": "https://www.nosleeplessnights.com/yogasleep-dreamcenter-sound-machine-review/",
+      "domain": "www.nosleeplessnights.com",
+      "description": "Target & more\nFree delivery on $35+\nMasks most external noise very well · Good volume range No Sleepless Nights",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251508-2042-0139-0000-e634b3cda82d:9",
+      "price": {
+       "current": 29.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$29.99"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.6,
+       "votes_count": 229,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "9898519816149361118",
+       "data_docid": "15797639224353852777",
+       "gid": "1767943852571020241"
+      }
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "popular_products",
+    "rank_group": 2,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]",
+    "title": "More products",
+    "items": [
+     {
+      "type": "popular_products_element",
+      "title": "RIPTUNES White Noise Sound Machine with 28 Sounds, Timer Options and Automatic Shutdowns",
+      "url": null,
+      "domain": null,
+      "description": "Home Depot\nFree delivery",
+      "more_sellers": false,
+      "seller": "Home Depot",
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTeipOiFoU8aVCI1sSHc7lXtucAin8TsrFAN-SFmMop7ErxMd-j0ZObQxkvpJ3i6sZOzXd14OAZ4erGjhaolEkT2KHf6rXWMca2lrFFmU4DTa8zV37ri6a3",
+      "price": {
+       "current": 35.76,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$35.76"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.1,
+       "votes_count": 8,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": null,
+       "data_docid": "8333647847519050926",
+       "gid": null
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "9H Sleep Sound Machine 24 Natural Soothing Sounds 7 Color Breathing Lights and Night Light with Timer Memory Feature Rechargeable Portable",
+      "url": null,
+      "domain": null,
+      "description": "Wayfair & more",
+      "more_sellers": true,
+      "seller": "Wayfair",
+      "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQGMsKgKB2OE4cHALdaToF8bY0jNtbSjqYNBPXrmjfX00RlPi0-EfQG7m1JVrBEYvOqdLFij17tGVpZe3F2TiYbwHZ6nZEy29n38S4kMAaMyOqh5AZKPr9Q",
+      "price": {
+       "current": 29.99,
+       "regular": 33,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$29.99 $33"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.7,
+       "votes_count": 69,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "3565903762987032814",
+       "data_docid": "16780098821147569748",
+       "gid": "6359289361361519971"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Magicteam White Noise Machine with 20 Non Looping Natural Soothing Sounds and Memory Function 32 Levels of Volume Powered by AC or USB and Sleep Sound",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - Zhuhai Xindongrui Business Co., Ltd.\nPlug-in · Rechargeable · Smart",
+      "more_sellers": false,
+      "seller": "Walmart - Zhuhai Xindongrui Business Co., Ltd.",
+      "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQgD46PsXHg-gz8HDjFuuKamLKGDVMxI52oOfvv9gAwpavruzKuUkUAJkI9D_90jL8t1edtSetDPUueHBmWfBILG4ZopZrcTvBzQBt9hF-rma2cPSknkTBtzA",
+      "price": {
+       "current": 23.65,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$23.65"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 5,
+       "votes_count": 2,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "7520196785272846445",
+       "data_docid": "12424924858843877464",
+       "gid": "3431224345129999429"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Yogasleep Rohm Travel Sound Machine",
+      "url": "https://www.babycantravel.com/best-travel-white-noise-machine/",
+      "domain": "www.babycantravel.com",
+      "description": "Best Buy & more\nVery compact and lightweight · No built-in clip on original Rohm (Rohm+ adds more features) Baby Toddler Travel",
+      "more_sellers": true,
+      "seller": "Best Buy",
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSlwSUZhy11R_A4qE3k6ZfFxg9RR-rD519eyJX15efYoVt15zBlGkAJy_ruLTh01oOxFjQ4MShOwlc_Au56sG71_NT3humz4XizsncuornbYAYlcM3VAfEQ5A",
+      "price": {
+       "current": 19.99,
+       "regular": 24,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$19.99 $24"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.4,
+       "votes_count": 539,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "6830340524033104305",
+       "data_docid": "13935426430704232760",
+       "gid": "13401046929027118387"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Momcozy Smart Baby Sound Machine",
+      "url": "https://www.gearbrain.com/momcozy-smart-baby-sound-review-2667872387.html",
+      "domain": "www.gearbrain.com",
+      "description": "Target & more\nFree delivery by Thu\nExcels in simplicity and functionality · Extensive sound selection Gearbrain",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQIzcEV7S39eu_tyLWgwThXAZUdxNpyOY6Q-WVhPv49v3wkCbBXHzeoNt4nfiAoplFTm9syc5n91yddnR3_sxyv5xlafmvtICau-nN1XadSecKRmeXMDLkouw",
+      "price": {
+       "current": 39.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$39.99"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.7,
+       "votes_count": 432,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "3336875694783979879",
+       "data_docid": "6890601038871470672",
+       "gid": "11993773505388475683"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Hatch Baby Sleep Support Sound Machine",
+      "url": "https://www.ncoa.org/product-resources/gift-guides/gifts-for-grandkids/",
+      "domain": "www.ncoa.org",
+      "description": "Hatch Sleep & more\nFree delivery by Wed\nAdjustable volume · Tech features may not appeal to all parents The National Council on Aging (NCOA)",
+      "more_sellers": true,
+      "seller": "Hatch Sleep",
+      "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRPecFo8h5_F2TMnkIqEpdoEBWExL3B3F4l66oSerb7UgPnhTJRbPENXAXokfwqmNrB9ZPZPZYkTJ70vBkdoTOQANkiSlLUWofr7NBT9wZ6AHF8YTYvponW9w",
+      "price": {
+       "current": 84.99,
+       "regular": null,
+       "max_value": 90,
+       "currency": "USD",
+       "is_price_range": true,
+       "displayed_price": "$84.99 Usually $90"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.4,
+       "votes_count": 10000,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "13778867014891280067",
+       "data_docid": "13722355133909590995",
+       "gid": "11229637676428650093"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Canopy 3 In 1 Sleep Soother Machine",
+      "url": null,
+      "domain": null,
+      "description": "Target & more\nFree delivery on $35+\nPortable (117 user reviews)",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTvphvTwdGO2ZBHAZsOkU7hwS4k9nlQxYfhNGZjl1Rdyj6IguuwLhuvfOgsyAqIyFFXcGUuSElmeFgggbDVjr-BCuA5F5GbtYoydfRbBtY0DxucH-u6jwjm",
+      "price": {
+       "current": 31.99,
+       "regular": 40,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$31.99 $40"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.7,
+       "votes_count": 246,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "1250852743867591734",
+       "data_docid": "9465021689004556215",
+       "gid": "884046968195315456"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Yogasleep Dohm White Noise Sound Machine",
+      "url": "https://sleepopolis.com/white-noise-sound-machine-reviews/marpac-dohm-serious-sleep-sound-machine-review/",
+      "domain": "sleepopolis.com",
+      "description": "Target & more\nFree delivery by Thu\nGets the job done, without being fancy or overly technical · Easily portable Sleepopolis",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSluRM5ktOwMz2UYVW9Sl2a0aMeQI4JyfrsX5DduMxUQjV9gdJ4nOUUo3R5-mY9X23YDPJ2teX47cDDuvjSqqccJ8gBTUBB4nD-Z7BkdbIkVq6nQTNXGxez9A",
+      "price": {
+       "current": 49.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$49.99"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.5,
+       "votes_count": 1800,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "9280368080517000531",
+       "data_docid": "7540764000694567833",
+       "gid": "532044973285380849"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Homedics Sound Machine",
+      "url": "https://sleepopolis.com/white-noise-sound-machine-reviews/homedics-sound-spa-portable-sound-machine-review/",
+      "domain": "sleepopolis.com",
+      "description": "TalkShopLive & more\nFree delivery\nSmall enough in size to be used most anywhere · Ability to control volume is great Sleepopolis",
+      "more_sellers": true,
+      "seller": "TalkShopLive",
+      "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRCbywG7VKxV9sIJkuafps6B5HgXwz7h8s6M_jvu_1Al1d568LWN-66l0CiWMPVrzcAiCj_2HiGW56jY_d6EvvXdYczkoZtbX0ypf-rB0Gq",
+      "price": {
+       "current": 25.22,
+       "regular": 39,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$25.22 $39"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.4,
+       "votes_count": 3100,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "8808993635207347961",
+       "data_docid": "7871108314243380440",
+       "gid": "1267585318501250835"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Sound+Sleep SE Sleep Sound Machine",
+      "url": "https://noisyworld.org/sound-sleep-se-review/",
+      "domain": "noisyworld.org",
+      "description": "Target & more\nFree delivery\nParticularly rich selection of water-related sounds · Boosted bass NoisyWorld",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTyeyggD3B-yZurH7xOwgBKjTKaiqAeY3NEOUNgBSrvSJzKqSC-fR8GSXP_N4q0raCxKhI2Empbu06QhfOFH4cgf3wZiZCIGXPujnOitTo2SAI_FmESDncI",
+      "price": {
+       "current": 139.95,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$139.95"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.4,
+       "votes_count": 69,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "2985013949161275370",
+       "data_docid": "1535392256179192882",
+       "gid": "4061787344879988907"
+      }
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "12 Hour Sound Machines for Sleep (no loops or fades)",
+    "url": "https://open.spotify.com/show/7rb8eiXKJpg8gjmiY4yDAN",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › show",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Listen to 12 Hour Sound Machines for Sleep (no loops or fades) on Spotify. The #1 Sound Machine Podcast in the world, downloaded over 300 million times ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "12 Hour Sound Machines for Sleep"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]/div[1]",
+    "domain": "www.nytimes.com",
+    "title": "The 4 Best White Noise Machines of 2026",
+    "url": "https://www.nytimes.com/wirecutter/reviews/best-white-noise-machine/?eafs_enabled=false",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.nytimes.com › Sleep › How to sleep better",
+    "website_name": "The New York Times",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Aug 20, 2026 — The Sound+Sleep SE has 64 total sound variations, including color-based noises, fan sounds, and other ambience. The audio quality is rich and ... Read more",
+    "pre_snippet": "08/20/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Sound",
+     "sound",
+     "sounds"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.nytimes.com/wirecutter/reviews/best-white-noise-machine/?eafs_enabled=false#:~:text=The%20Sound%2BSleep%20SE%20has%2064,the%20device's%20design%20is%20intuitive.",
+      "domain": "www.nytimes.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-08-20 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[15]/div[1]/div[1]/div[1]",
+    "domain": "www.amazon.com",
+    "title": "SoundMe",
+    "url": "https://www.amazon.com/stores/SoundMe/page/E7142807-E168-4B68-92C5-7804FA157999",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.amazon.com › stores › SoundMe › page",
+    "website_name": "Amazon.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sound Machine White Noise Machine for Sleeping with 32 Soothing Sounds 32 Volume Control Portable Brown Noise Machine for Baby Kids Adults... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Sound Machine"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.amazon.com/stores/SoundMe/page/E7142807-E168-4B68-92C5-7804FA157999#:~:text=Sound%20Machine%20White%20Noise%20Machine,Machine%20for%20Baby%20Kids%20Adults...",
+      "domain": "www.amazon.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "popular_products",
+    "rank_group": 3,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[17]/div[1]",
+    "title": "Deals on Sound Machines",
+    "items": [
+     {
+      "type": "popular_products_element",
+      "title": "Canopy 3 In 1 Sleep Soother Machine",
+      "url": null,
+      "domain": null,
+      "description": "Target & more\nFree delivery on $35+\nPortable (117 user reviews)",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTvphvTwdGO2ZBHAZsOkU7hwS4k9nlQxYfhNGZjl1Rdyj6IguuwLhuvfOgsyAqIyFFXcGUuSElmeFgggbDVjr-BCuA5F5GbtYoydfRbBtY0DxucH-u6jwjm",
+      "price": {
+       "current": 31.99,
+       "regular": 40,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$31.99 $40"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.7,
+       "votes_count": 246,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "1250852743867591734",
+       "data_docid": "9465021689004556215",
+       "gid": "884046968195315456"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Phewnyzo Sound Machine Alarm Clock with 25 Natural Sleep Sounds Bluetooth Speaker Gentle Wake Up Alarm Dimmable Display and 9 Color Night Light",
+      "url": null,
+      "domain": null,
+      "description": "Lowe's\nFree delivery by Wed",
+      "more_sellers": false,
+      "seller": "Lowe's",
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRRLCyT2bJMI3-Nlw3a9Lrs03PIrsez6siV-il76WE6YBPp1Sp33vT1rev8XQU7Dv5CwEgm_Q9Ydwa_rxE3UaqGQTjAnV5Y_-u3R0YXZtPLVIA2knrDIZ-G0A",
+      "price": {
+       "current": 78.32,
+       "regular": null,
+       "max_value": 98,
+       "currency": "USD",
+       "is_price_range": true,
+       "displayed_price": "$78.32 Was $98"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "5318670996876058502",
+       "data_docid": "15820608852590978133",
+       "gid": "14353423850725027024"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Volivo White Noise Sound Machine for Sleeping with 16 Sleep Sounds",
+      "url": null,
+      "domain": null,
+      "description": "Walmart - VOLIVO",
+      "more_sellers": false,
+      "seller": "Walmart - VOLIVO",
+      "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS6ZiTo0XYBTzkjhSGFk5qHBbNp2UpO2iiJBilnWXh4pIaROnk1Ear-Xp07ffDVjOhYFdZ2nOZDrvrPwwt32iAON_53dwihO2xG2aaA65nDxpR9006moCYa",
+      "price": {
+       "current": 23.39,
+       "regular": 40,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$23.39 $40"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.8,
+       "votes_count": 5,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "5394147860667828332",
+       "data_docid": "12315700570109785064",
+       "gid": "17601316017815989544"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Sleeptasic Baby Sound Machine & Nightlight",
+      "url": null,
+      "domain": null,
+      "description": "DYPER\nFree delivery on $85+",
+      "more_sellers": false,
+      "seller": "DYPER",
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQX6d2k1tClxxJq2GWvNl9pZR9QisZp9SyRtNB4WWjKqTLLGO2HGGoW_8unkjElUwiB260nsDtLSn_5YWF9rGAavGjYfqC49i53lT2U4IJm4Kqg5MYVwRlU",
+      "price": {
+       "current": 9,
+       "regular": 29,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$9.00 $29"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.4,
+       "votes_count": 5,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "6183045330771136141",
+       "data_docid": "3099477860145323450",
+       "gid": "10633214445018217875"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Hatch Baby Sleep Support Sound Machine",
+      "url": "https://www.ncoa.org/product-resources/gift-guides/gifts-for-grandkids/",
+      "domain": "www.ncoa.org",
+      "description": "Hatch Sleep & more\nFree delivery by Wed\nAdjustable volume · Tech features may not appeal to all parents The National Council on Aging (NCOA)",
+      "more_sellers": true,
+      "seller": "Hatch Sleep",
+      "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRPecFo8h5_F2TMnkIqEpdoEBWExL3B3F4l66oSerb7UgPnhTJRbPENXAXokfwqmNrB9ZPZPZYkTJ70vBkdoTOQANkiSlLUWofr7NBT9wZ6AHF8YTYvponW9w",
+      "price": {
+       "current": 84.99,
+       "regular": null,
+       "max_value": 90,
+       "currency": "USD",
+       "is_price_range": true,
+       "displayed_price": "$84.99 Usually $90"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.4,
+       "votes_count": 10000,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "13778867014891280067",
+       "data_docid": "13722355133909590995",
+       "gid": "11229637676428650093"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Glocusent Mini Sound Machine N18 for Better Sleep Lighting+",
+      "url": null,
+      "domain": null,
+      "description": "Glocusent & more",
+      "more_sellers": true,
+      "seller": "Glocusent",
+      "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRAyMbeODd0kTOx3-07CpRN2aHPFhoXaSry42oivUFdzpwLrsk27kBLo9ePL4HUC_Zllb5DIxLr_QO18RRpD_RogyUsfp8xEYAGiq8hKoi5ukjdmi5fziTjGA",
+      "price": {
+       "current": 29.99,
+       "regular": 70,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$29.99 $70"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "18117803648983863328",
+       "data_docid": "586434318374717805",
+       "gid": "395144367998446600"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Manta Sleep Manta White Noise Machine Blocks Noise One Click Start",
+      "url": null,
+      "domain": null,
+      "description": "Manta Sleep",
+      "more_sellers": false,
+      "seller": "Manta Sleep",
+      "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQqr_YBIPA4Pdyw5DEi13QAlGKmMoJFKr0nWlkMrYcj6HgMQGOokLdWO5Ou4Hle34G5PaTW1i08JX56JEx1a95g3AgdeH7l5PcrUPKLwNZc7ix81khJ_dpT",
+      "price": {
+       "current": 54,
+       "regular": 60,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$54.00 $60"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.5,
+       "votes_count": 82,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "6189804220590810424",
+       "data_docid": "2409612088332830101",
+       "gid": "2069577368704547868"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Delton WN9 Portable White Noise Sound Machine dspwn9wh",
+      "url": null,
+      "domain": null,
+      "description": "Best Buy & more\nFree delivery",
+      "more_sellers": true,
+      "seller": "Best Buy",
+      "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQZpJ-1SYWWPMtrz9PfPFbPbVNVRJvee-2ct9qgkuFtyrOvjGYjayYXDjFp0Pk54STveJMk3K8VSz5_1KkgumOtVF8HB59xtQD54z80DNS-gchL5koeXYW7",
+      "price": {
+       "current": 74.99,
+       "regular": 95,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$74.99 $95"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "3335007692865605286",
+       "data_docid": "17526709457905393707",
+       "gid": "7596701930804498698"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "9H Sleep Sound Machine 24 Natural Soothing Sounds 7 Color Breathing Lights and Night Light with Timer Memory Feature Rechargeable Portable",
+      "url": null,
+      "domain": null,
+      "description": "Wayfair & more",
+      "more_sellers": true,
+      "seller": "Wayfair",
+      "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQGMsKgKB2OE4cHALdaToF8bY0jNtbSjqYNBPXrmjfX00RlPi0-EfQG7m1JVrBEYvOqdLFij17tGVpZe3F2TiYbwHZ6nZEy29n38S4kMAaMyOqh5AZKPr9Q",
+      "price": {
+       "current": 29.99,
+       "regular": 33,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$29.99 $33"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.7,
+       "votes_count": 69,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "3565903762987032814",
+       "data_docid": "16780098821147569748",
+       "gid": "6359289361361519971"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Skip Hop Stroll & Go Portable Baby Soother",
+      "url": null,
+      "domain": null,
+      "description": "Carter's & more\nFree delivery on $50+",
+      "more_sellers": true,
+      "seller": "Carter's",
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR9955TlRAnGIJvnOullCwx8LqVyXUnavp34HA0BPkAKDEpWRZQ2nf2QL2DhvfuTuDjzSPUHdmQgy8Quw2_Jg39JDrZ8BLxSm-loTTMmiPXg9MTIP64Flob",
+      "price": {
+       "current": 12,
+       "regular": 16,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$12.00 $16"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.1,
+       "votes_count": 667,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "13878707852418517209",
+       "data_docid": "3750728178853880201",
+       "gid": "1129396210583868066"
+      }
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[19]/div[1]/div[1]/div[1]",
+    "domain": "www.babylist.com",
+    "title": "Sound machines & soothers",
+    "url": "https://www.babylist.com/store/sound-machines-soothers",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.babylist.com › Babylist Shop",
+    "website_name": "Babylist",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Shop the best baby Sound Machines & Soothers at Babylist ! Read reviews from our experts and real parents, plus get free shipping on $45+ orders.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": {
+     "current": 21,
+     "regular": null,
+     "max_value": 85,
+     "currency": "USD",
+     "is_price_range": true,
+     "displayed_price": "$21 to $85"
+    },
+    "highlighted": [
+     "Shop the best baby Sound Machines & Soothers at Babylist"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[21]/div[1]/div[1]/div[1]",
+    "domain": "yogasleep.com",
+    "title": "White Noise Sound Machines for Sleep",
+    "url": "https://yogasleep.com/collections/sound-machines?srsltid=AU7gw4V6zRn5FaPoXYIU3RbXuM2I3xWe2EgImgogdhs1fvRMr-qtclSh",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://yogasleep.com › collections › sound-machines",
+    "website_name": "Yogasleep",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Explore our full collection of sound machines designed to support sleep, focus, and relaxation. Thoughtfully made for life at home, with babies, and on the ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": {
+     "current": 20,
+     "regular": null,
+     "max_value": 65,
+     "currency": "USD",
+     "is_price_range": true,
+     "displayed_price": "$20 to $65"
+    },
+    "highlighted": [
+     "sound machines"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://yogasleep.com/collections/sound-machines?srsltid=AU7gw4V6zRn5FaPoXYIU3RbXuM2I3xWe2EgImgogdhs1fvRMr-qtclSh#:~:text=Explore%20our%20full%20collection%20of,the%20go.%20Trusted%20since%201962.",
+      "domain": "yogasleep.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[23]/div[1]/div[1]/div[1]",
+    "domain": "www.target.com",
+    "title": "Sound Maker Machines | Portable & Quiet Noise ...",
+    "url": "https://www.target.com/s/sound+maker",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.target.com › Baby",
+    "website_name": "Target",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Discover a variety of sound maker machines. From portable units to night lights, enjoy white noise and soothing sounds for any space.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": {
+     "current": 13,
+     "regular": null,
+     "max_value": 110,
+     "currency": "USD",
+     "is_price_range": true,
+     "displayed_price": "$13 to $110"
+    },
+    "highlighted": [
+     "enjoy white noise and soothing sounds for any space"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 13,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[25]/div[1]/div[1]/div[1]",
+    "domain": "nymag.com",
+    "title": "9 Best Sound Machines | The Strategist",
+    "url": "https://nymag.com/strategist/article/best-sound-machines-noise-machines.html",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://nymag.com › strategist › article › best-sound-ma...",
+    "website_name": "New York Magazine",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sep 8, 2025 — The Yogasleep Dohm uses an internal fan to generate a “white noise” sound mechanically. The simple device has been around since 1962 and has ... Read more",
+    "pre_snippet": "09/08/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "uses an internal fan to generate a “white noise” sound"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://nymag.com/strategist/article/best-sound-machines-noise-machines.html#:~:text=The%20Yogasleep%20Dohm%20uses%20an,Yang%2C%20and%20several%20Strategist%20staffers.",
+      "domain": "nymag.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-09-08 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "images",
+    "rank_group": 1,
+    "rank_absolute": 14,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[27]/div[1]",
+    "title": "Images",
+    "url": "https://www.google.com/search?sca_esv=eb3ed732ab39b407&hl=en&gl=US&sxsrf=APpeQnun2geXNMvmRlifmhZxbKY_kVLwXA:1790348912485&q=sound+machine&udm=2&source=univ&fir=K5z0ufD_PogQUM%252CJpHZ9SnzlYpCHM%252C_%253BXI7BYFCnsP98tM%252CCaZEFz4-_TWPuM%252C_%253B-4A5RBVp9t4gcM%252Caf7gHP7V4CGWFM%252C_%253B8BnXuqPsw39GMM%252Ct4gQoMgthsfowM%252C_%253BcSZBxMkzruxWPM%252CU0Sf_DIawqA9AM%252C_%253BnBumkOTV7SkydM%252C-kyQzaVNZ0qphM%252C_%253BAn3mwDmc8eEtwM%252CzoIGt1XzyTVV8M%252C_%253BUXJnj4CTdQrCZM%252CXGVL37zkSuTguM%252C_&usg=AI4_-kSLwh3z879APDTnnVbWwy1a_Ubjew&sa=X&ved=2ahUKEwjQic-3gYqXAxXGbEEAHcECB1AQ7Al6BAhrEAU",
+    "items": [
+     {
+      "type": "images_element",
+      "alt": "HoMedics SS-2000 Mini Portable Travel Sound Spa, Sleep Therapy Machine with  6 Calm Effects, Nature Sounds for Home",
+      "url": "https://www.walmart.com/ip/Homedics-Sound-Spa-and-White-Noise-Machine-6-Relaxing-Nature-Sounds-Sound-Therapy-for-Home-Office-Nursery/2686012",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQKQL-Q-HNNOA1JU0OoA3rKLrqabrMTFNxFyAVPdCJvAE8BSYUimnq6zA&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Amazon.com: BGOVERSS White Noise Sound Machine with 20 ...",
+      "url": "https://www.amazon.com/Machine-Soothing-Sounds-Sleeping-Feature/dp/B09SG9TZNS",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmqAP5ATOxsO2RzbaXlbgF_bOB_ZrXWhV8NYGwyWT618_pGSCFdAu-smrc_Q&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Baby Sound Machine | Moms On Call",
+      "url": "https://momsoncall.com/products/lectrofan-classic-sound-machine?srsltid=AU7gw4XImnfFJYv1z9h_m1OmYYjvnB6UlEZfiHajY0Wpxyj5wbzjpDrg",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgXSGU6VJ1rnJ_DZepU6nLrvQPhxg0XatFvC17Jf5O2tI2Lu-6xbI2WEI&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Why and How Sound Machines Can Help You Sleep",
+      "url": "https://www.everydayhealth.com/sleep/why-how-sound-machines-can-help-you-sleep/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKei0VtT59h4VIM5LnObpSGZqR_0BC0PUoViwQ_s1-g8hMx5rY7scz4CQ&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Sound Machine Easysleep White Noise Machine with 25 Soothing Sounds and  Night Lights with Memory Function 32 Levels of Volume and 5 Sleep Timer ...",
+      "url": "https://www.amazon.com/Easysleep-Soothing-Machines-Function-Relaxation/dp/B087CPCVK9",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTMu8qQX89P2q3hKTdTTbH7TLjv31Jo9vILpnVSrHyp3Jkn1Qb1LSaMbk&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Yogasleep Dreamcenter White Noise Machine Review",
+      "url": "https://www.nosleeplessnights.com/yogasleep-dreamcenter-sound-machine-review/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq6OrViUfPQ-AYLTx_oZfK1ZkDxtGuonXBuTpWnY_fsW7gnWCso34-n9A&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "5 Best Sound Machines of 2024, Tested by Tech Experts",
+      "url": "https://www.menshealth.com/technology-gear/g42625533/best-sound-machines/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAjKw3oy9tS_QgbE7YT6FRo5L2YA7l892o1irc55ntrPzJac_8UT5FJY&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Soundscreen™ White Noise Machine",
+      "url": "https://www.acousticalsurfaces.com/white_noise/white_noise.htm",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJSI4eaM6O-BDvF8q7tjageMQjF_8lDKyTyZV_CjSLpwPgxCTLJSCpe3A&s"
+     }
+    ],
+    "related_image_searches": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 15,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Sound machine online",
+     "Sound Machine audio",
+     "Sound Machine music",
+     "Sleep sound machine for adults",
+     "Sound machine Noise for Baby",
+     "Sound machine app",
+     "Sound Machine Amazon",
+     "Sound machine noise free"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

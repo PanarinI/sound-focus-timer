@@ -1,0 +1,771 @@
+[
+ {
+  "keyword": "sound therapy",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=sound%20therapy&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-26 07:54:41 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "organic",
+   "people_also_ask",
+   "local_pack",
+   "related_searches"
+  ],
+  "se_results_count": 117,
+  "pages_count": 1,
+  "items_count": 15,
+  "items": [
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "Sound therapy `uses specific tones, frequencies, and physical vibrations to promote relaxation, mental peace, and stress relief`.[[1]](https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health)[[2]](https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work)\n\n### Common Types of Sound Therapy\n\n- **Sound baths:** Immersive listening sessions using crystal or metal singing bowls, chimes, and gongs to induce a deeply calm state.[[1]](https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work)[[2]](https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health)\n- **Binaural beats:** Two slightly different sound frequencies played in separate ears through headphones to create a perceived third beat that can aid focus or sleep.[[1]](https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health)[[2]](https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work)\n- **Vibroacoustic therapy:** Low-frequency sound waves delivered through specialized mats or chairs to relax muscles and ease physical discomfort.[[1]](https://aanmc.org/natural-remedies/science-behind-sound-therapy/)[[2]](https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health)\n- **Everyday sound tools:** White noise machines like the [Yogasleep Dohm Classic](https://www.allegromedical.com/products/products-marpac-dohm-ds-whitenoise-sound-blac-k-color-ea-083-586141-02/?srsltid=AU7gw4Vcnyp9CaaNuOKt2NXbqqaMx-3SHusatn1de633Om3EyAmxHQYLGpA) (~$50) or portable options like the [Homedics Sound Spa](https://shop.tiktok.com/us/pdp/homedics-portable-sound-spa-machine-with-6-soothing-sounds-timer/1731080462509642695) (~$22–$30) help mask background noises for better sleep.[[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:11127782019044384256,catalogid:10181924848441947041,gpcid:13356204108310676004,mid:576462774757134093&ibp=oshop)[[2]](https://www.google.com/search?q=product&prds=pvt:hg,productid:212353570528045725,catalogid:3710191285419376229,gpcid:1267585318501250835,mid:576462483821108911&ibp=oshop)\n\n### Potential Benefits\n\n- **Stress reduction:** Helps lower heart rate, quiet active thoughts, and ease anxiety.\n- **Sleep support:** Creates a soothing environment that helps transition the brain into rest.\n- **Pain and tension relief:** Physical vibrations can help relax tight muscles and alter pain perception.[[1]](https://www.psychologytoday.com/us/blog/urban-survival/201907/the-healing-power-of-sound-as-meditation)[[2]](https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health)[[3]](https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work)[[4]](https://www.sermo.com/resources/sound-therapy-in-practice/)\n\nWould you like to explore **how to practice sound baths at home** , or are you looking for **help with a specific goal** like better sleep or stress relief?",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Sound therapy uses specific tones, frequencies, and physical vibrations to promote relaxation, mental peace, and stress relief.",
+      "markdown": "Sound therapy `uses specific tones, frequencies, and physical vibrations to promote relaxation, mental peace, and stress relief`.[[1]](https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health)[[2]](https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "UCLA Health",
+        "domain": "www.uclahealth.org",
+        "url": "https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health",
+        "title": "What is sound therapy — and could it benefit your health?",
+        "text": "What is sound therapy — and could it benefit your health? * People are surrounded by sounds all day. While you may tune out a lot ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Cedars-Sinai",
+        "domain": "www.cedars-sinai.org",
+        "url": "https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work",
+        "title": "Sound Therapy and Binaural Beats: Do They Work? - Cedars",
+        "text": "Sound therapy is an umbrella term for practices that use sound, tones, frequencies or rhythmic vibrations to support relaxation, f..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Common Types of Sound Therapy",
+      "text": "Sound baths: Immersive listening sessions using crystal or metal singing bowls, chimes, and gongs to induce a deeply calm state. Binaural beats: Two slightly different sound frequencies played in separate ears through headphones to create a perceived third beat that can aid focus or sleep. Vibroacoustic therapy: Low-frequency sound waves delivered through specialized mats or chairs to relax muscles and ease physical discomfort. Everyday sound tools: White noise machines like the Yogasleep Dohm Classic (~$50) or portable options like the Homedics Sound Spa (~$22–$30) help mask background noises for better sleep.",
+      "markdown": "- **Sound baths:** Immersive listening sessions using crystal or metal singing bowls, chimes, and gongs to induce a deeply calm state.[[1]](https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work)[[2]](https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health)\n- **Binaural beats:** Two slightly different sound frequencies played in separate ears through headphones to create a perceived third beat that can aid focus or sleep.[[1]](https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health)[[2]](https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work)\n- **Vibroacoustic therapy:** Low-frequency sound waves delivered through specialized mats or chairs to relax muscles and ease physical discomfort.[[1]](https://aanmc.org/natural-remedies/science-behind-sound-therapy/)[[2]](https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health)\n- **Everyday sound tools:** White noise machines like the [Yogasleep Dohm Classic](https://www.allegromedical.com/products/products-marpac-dohm-ds-whitenoise-sound-blac-k-color-ea-083-586141-02/?srsltid=AU7gw4Vcnyp9CaaNuOKt2NXbqqaMx-3SHusatn1de633Om3EyAmxHQYLGpA) (~$50) or portable options like the [Homedics Sound Spa](https://shop.tiktok.com/us/pdp/homedics-portable-sound-spa-machine-with-6-soothing-sounds-timer/1731080462509642695) (~$22–$30) help mask background noises for better sleep.[[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:11127782019044384256,catalogid:10181924848441947041,gpcid:13356204108310676004,mid:576462774757134093&ibp=oshop)[[2]](https://www.google.com/search?q=product&prds=pvt:hg,productid:212353570528045725,catalogid:3710191285419376229,gpcid:1267585318501250835,mid:576462483821108911&ibp=oshop)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Yogasleep Dohm Classic",
+        "description": null,
+        "url": "https://www.allegromedical.com/products/products-marpac-dohm-ds-whitenoise-sound-blac-k-color-ea-083-586141-02/?srsltid=AU7gw4Vcnyp9CaaNuOKt2NXbqqaMx-3SHusatn1de633Om3EyAmxHQYLGpA",
+        "domain": "www.allegromedical.com"
+       },
+       {
+        "type": "link_element",
+        "title": "Homedics Sound Spa",
+        "description": null,
+        "url": "https://shop.tiktok.com/us/pdp/homedics-portable-sound-spa-machine-with-6-soothing-sounds-timer/1731080462509642695",
+        "domain": "shop.tiktok.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "AANMC",
+        "domain": "aanmc.org",
+        "url": "https://aanmc.org/natural-remedies/science-behind-sound-therapy/",
+        "title": "Sound Therapy Benefits: What the Science Shows | AANMC",
+        "text": "The Science of Sound Therapy: Vibrational Medicine in Clinical Practice * This shift reflects a broader understanding of how the h..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Google",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:11127782019044384256,catalogid:10181924848441947041,gpcid:13356204108310676004,mid:576462774757134093&ibp=oshop",
+        "title": "Dohm Classic White Noise Machine Sound",
+        "text": "The sleep inducing magic of a Marpac sound machine makes falling asleep as easy as pushing a button. Dohm Classic is the original ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Google",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:212353570528045725,catalogid:3710191285419376229,gpcid:1267585318501250835,mid:576462483821108911&ibp=oshop",
+        "title": "Homedics Sound Machine",
+        "text": "Get the rest that you need with the help of the Homedics SS-2000 Sound Spa. When you are fatigued, it is designed to give you the ..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Potential Benefits",
+      "text": "Stress reduction: Helps lower heart rate, quiet active thoughts, and ease anxiety. Sleep support: Creates a soothing environment that helps transition the brain into rest. Pain and tension relief: Physical vibrations can help relax tight muscles and alter pain perception.",
+      "markdown": "- **Stress reduction:** Helps lower heart rate, quiet active thoughts, and ease anxiety.\n- **Sleep support:** Creates a soothing environment that helps transition the brain into rest.\n- **Pain and tension relief:** Physical vibrations can help relax tight muscles and alter pain perception.[[1]](https://www.psychologytoday.com/us/blog/urban-survival/201907/the-healing-power-of-sound-as-meditation)[[2]](https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health)[[3]](https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work)[[4]](https://www.sermo.com/resources/sound-therapy-in-practice/)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Psychology Today",
+        "domain": "www.psychologytoday.com",
+        "url": "https://www.psychologytoday.com/us/blog/urban-survival/201907/the-healing-power-of-sound-as-meditation",
+        "title": "The Healing Power of Sound as Meditation | Psychology Today",
+        "text": "One theory is that sound works through the vibrational tactile effects on the whole body. Sound could stimulate touch fibers that ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Sermo",
+        "domain": "www.sermo.com",
+        "url": "https://www.sermo.com/resources/sound-therapy-in-practice/",
+        "title": "Sound Therapy: A Physician's Guide to Healing Vibrations - Sermo",
+        "text": "What is sound therapy? Sound therapy, also called audio therapy, encompasses a wide variety of techniques that use sound, frequenc..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Would you like to explore how to practice sound baths at home, or are you looking for help with a specific goal like better sleep or stress relief?",
+      "markdown": "Would you like to explore **how to practice sound baths at home** , or are you looking for **help with a specific goal** like better sleep or stress relief?",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "UCLA Health",
+      "domain": "www.uclahealth.org",
+      "url": "https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health",
+      "title": "What is sound therapy — and could it benefit your health?",
+      "text": "What is sound therapy — and could it benefit your health? * People are surrounded by sounds all day. While you may tune out a lot ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Cedars-Sinai",
+      "domain": "www.cedars-sinai.org",
+      "url": "https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work",
+      "title": "Sound Therapy and Binaural Beats: Do They Work? - Cedars",
+      "text": "Sound therapy is an umbrella term for practices that use sound, tones, frequencies or rhythmic vibrations to support relaxation, f..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "AANMC",
+      "domain": "aanmc.org",
+      "url": "https://aanmc.org/natural-remedies/science-behind-sound-therapy/",
+      "title": "Sound Therapy Benefits: What the Science Shows | AANMC",
+      "text": "The Science of Sound Therapy: Vibrational Medicine in Clinical Practice * This shift reflects a broader understanding of how the h..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Psychology Today",
+      "domain": "www.psychologytoday.com",
+      "url": "https://www.psychologytoday.com/us/blog/urban-survival/201907/the-healing-power-of-sound-as-meditation",
+      "title": "The Healing Power of Sound as Meditation | Psychology Today",
+      "text": "One theory is that sound works through the vibrational tactile effects on the whole body. Sound could stimulate touch fibers that ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Sermo",
+      "domain": "www.sermo.com",
+      "url": "https://www.sermo.com/resources/sound-therapy-in-practice/",
+      "title": "Sound Therapy: A Physician's Guide to Healing Vibrations - Sermo",
+      "text": "What is sound therapy? Sound therapy, also called audio therapy, encompasses a wide variety of techniques that use sound, frequenc..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Google",
+      "domain": "www.google.com",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:11127782019044384256,catalogid:10181924848441947041,gpcid:13356204108310676004,mid:576462774757134093&ibp=oshop",
+      "title": "Dohm Classic White Noise Machine Sound",
+      "text": "The sleep inducing magic of a Marpac sound machine makes falling asleep as easy as pushing a button. Dohm Classic is the original ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Google",
+      "domain": "www.google.com",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:212353570528045725,catalogid:3710191285419376229,gpcid:1267585318501250835,mid:576462483821108911&ibp=oshop",
+      "title": "Homedics Sound Machine",
+      "text": "Get the rest that you need with the help of the Homedics SS-2000 Sound Spa. When you are fatigued, it is designed to give you the ..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]",
+    "domain": "www.uclahealth.org",
+    "title": "What is sound therapy — and could it benefit your health?",
+    "url": "https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.uclahealth.org › news › article › what-soun...",
+    "website_name": "UCLA Health",
+    "is_image": true,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_image"
+    ],
+    "description": "Oct 6, 2025 — Sound therapies such as sound baths, binaural beats and vibroacoustic therapy may help reduce pain, improve mood and enhance cognition.",
+    "pre_snippet": "10/06/2025 00:00:00",
+    "extended_snippet": null,
+    "images": [
+     {
+      "type": "images_element",
+      "alt": "sound therapy from www.uclahealth.org",
+      "url": "https://www.uclahealth.org/news/article/what-sound-therapy-and-could-it-benefit-your-health",
+      "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-2527cef1ccb9:0"
+     }
+    ],
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "may help reduce pain, improve mood and enhance cognition"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-10-06 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What exactly is sound therapy?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Does sound healing really work?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Who should not do sound therapy?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What does 528 Hz do to the human body?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "local_pack",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]",
+    "title": "Singing Bowls of the Rockies",
+    "description": "7+ years in business · Colorado Springs, CO · (719) 464-3444 \nClosed · Opens 8 AM \n\"The sound bath was transformative and is a beautiful journey.\" \n",
+    "domain": "www.singingbowlsoftherockies.com",
+    "phone": "(719) 464-3444",
+    "booking_url": "https://www.singingbowlsoftherockies.com/privatesoundbaths?utm_source=google&utm_medium=book_button&utm_campaign=service_list&rwg_token=AE37R_jUNp4Go2rpJXyZmUivxUI-u0-HjyMbwYc7vU6UaPOLvsLPsVU7bTvL-Zx10xD21aVBeWj5OXuRx_eT0tmU7gURpieXrw%3D%3D&source=cat",
+    "url": "http://www.singingbowlsoftherockies.com/",
+    "is_paid": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 5,
+     "votes_count": 100,
+     "rating_max": 5
+    },
+    "cid": "4982859009747593811",
+    "rectangle": null
+   },
+   {
+    "type": "local_pack",
+    "rank_group": 2,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]",
+    "title": "Tri Resonance Sound & Energy Wellness",
+    "description": "5+ years in business · Lone Tree, CO · (303) 601-1196 \nClosed · Opens 11 AM Tue \n\"The sounds and vibrations are truly soothing to the soul.\" \n",
+    "domain": "www.triresonance.com",
+    "phone": "(303) 601-1196",
+    "booking_url": null,
+    "url": "https://www.triresonance.com/",
+    "is_paid": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 5,
+     "votes_count": 47,
+     "rating_max": 5
+    },
+    "cid": "8040145616738219364",
+    "rectangle": null
+   },
+   {
+    "type": "local_pack",
+    "rank_group": 3,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[5]/div[1]/div[1]",
+    "title": "Mindful Healing Sounds",
+    "description": "Colorado Springs, CO · (720) 465-5997 \nClosed · Opens 9 AM \n\" Sound healing will definitely be added to my self-care rotation.\" \n",
+    "domain": "www.mindfulbalancing.com",
+    "phone": "(720) 465-5997",
+    "booking_url": null,
+    "url": "https://www.mindfulbalancing.com/",
+    "is_paid": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 5,
+     "votes_count": 19,
+     "rating_max": 5
+    },
+    "cid": "14521215063079626614",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]",
+    "domain": "aanmc.org",
+    "title": "Sound Therapy Benefits: What the Science Shows",
+    "url": "https://aanmc.org/natural-remedies/science-behind-sound-therapy/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://aanmc.org › Naturopathic News",
+    "website_name": "AANMC",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Feb 26, 2026 — Sound therapy uses specific frequencies and music-based techniques to influence the nervous system. Research on 40 Hz stimulation shows promise ...",
+    "pre_snippet": "02/26/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "uses specific frequencies and music-based techniques"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-02-26 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[9]/div[1]/div[1]",
+    "domain": "britishacademyofsoundtherapy.com",
+    "title": "What is Sound Therapy?",
+    "url": "https://britishacademyofsoundtherapy.com/what-is-sound-therapy/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://britishacademyofsoundtherapy.com › what-is-sou...",
+    "website_name": "The British Academy of Sound Therapy",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sound Therapy uses sound, music and specialist instruments played in therapeutic ways, combined with deep self-reflection techniques to improve health and ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "uses sound, music and specialist instruments played in therapeutic ways"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://britishacademyofsoundtherapy.com/what-is-sound-therapy/#:~:text=Sound%20Therapy%20uses%20sound%2C%20music,to%20improve%20health%20and%20wellbeing.",
+      "domain": "britishacademyofsoundtherapy.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]",
+    "domain": "www.psychologytoday.com",
+    "title": "The Healing Power of Sound as Meditation",
+    "url": "https://www.psychologytoday.com/us/blog/urban-survival/201907/the-healing-power-of-sound-as-meditation",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.psychologytoday.com › urban-survival › t...",
+    "website_name": "Psychology Today",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jan 16, 2024 — Sound-based treatment has even been found to improve mobility, reduce muscle pain and stiffness, increase blood circulation, and lower blood ... Read more",
+    "pre_snippet": "01/16/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Sound"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.psychologytoday.com/us/blog/urban-survival/201907/the-healing-power-of-sound-as-meditation#:~:text=Sound-based%20treatment%20has%20even%20been,circulation%2C%20and%20lower%20blood%20pressure.",
+      "domain": "www.psychologytoday.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-01-16 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[13]/div[1]/div[1]",
+    "domain": "www.cedars-sinai.org",
+    "title": "Sound Therapy and Binaural Beats: Do They Work?",
+    "url": "https://www.cedars-sinai.org/stories-and-insights/healthy-living/sound-advice-do-sound-therapy-and-binaural-beats-work",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.cedars-sinai.org › ... › Disease Prevention",
+    "website_name": "Cedars-Sinai",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Apr 30, 2026 — Sound therapy is an umbrella term for practices that use sound, tones, frequencies or rhythmic vibrations to support relaxation, focus, sleep ...",
+    "pre_snippet": "04/30/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "practices that use sound, tones, frequencies or rhythmic vibrations"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-04-30 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[15]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "The Science Behind Sound Therapy",
+    "url": "https://www.youtube.com/watch?v=p0ZBJT7KMOs",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "173.2K+ views  ·  3 years ago",
+    "website_name": "YouTube · The Wall Street Journal",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Ads for sound therapy, or sound baths, say these musical sessions provide mental-health benefits like relieving stress and anxiety. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "sound therapy"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=p0ZBJT7KMOs#:~:text=The%20Science%20Behind%20Sound%20Therapy",
+      "domain": "www.youtube.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[17]/div[1]/div[1]",
+    "domain": "www.sermo.com",
+    "title": "Sound Therapy: A Physician's Guide to Healing Vibrations",
+    "url": "https://www.sermo.com/resources/sound-therapy-in-practice/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.sermo.com › Resources",
+    "website_name": "Sermo",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sep 25, 2025 — sound therapy involves a therapeutic setting where patients are exposed to specific sounds and frequencies as part of a prescribed healing ...",
+    "pre_snippet": "09/25/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "sound therapy involves a therapeutic setting"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-09-25 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 13,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[19]/div[1]/div[1]",
+    "domain": "cambridgesleepsciences.com",
+    "title": "Sound Therapy: The Science, History and Evidence",
+    "url": "https://cambridgesleepsciences.com/blog/the-science-and-history-of-sound-therapy/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://cambridgesleepsciences.com › blog › the-science-...",
+    "website_name": "Cambridge Sleep Sciences",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jun 18, 2026 — \"Sound is a very powerful and effective means of changing brain state and improving mood. It is understood that low frequency sounds are linked ... Read more",
+    "pre_snippet": "06/18/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Sound",
+     "sounds"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://cambridgesleepsciences.com/blog/the-science-and-history-of-sound-therapy/#:~:text=%22Sound%20is%20a%20very%20powerful,frequencies%20encourage%20alertness%20and%20focus.",
+      "domain": "cambridgesleepsciences.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-06-18 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 9,
+    "rank_absolute": 14,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[21]/div[1]/div[1]",
+    "domain": "iaminharmony.com",
+    "title": "A Comprehensive Guide to Types of Sound Therapy",
+    "url": "https://iaminharmony.com/pages/typesofsoundtherapy?srsltid=AU7gw4VAszkDyc029jQs7NobeTPsGeGYl6aF8ptQGNqMsEr5DLjxlyEl",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://iaminharmony.com › pages › typesofsoundtherapy",
+    "website_name": "inHarmony",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Types of Sound Therapy · 1. Vibroacoustic Therapy · 2. Music Therapy · 3. Sound Baths · 4. Binaural Beats · 5. Frequency Therapy · 6. Gong Therapy · 7. Singing ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Sound Therapy"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://iaminharmony.com/pages/typesofsoundtherapy?srsltid=AU7gw4VAszkDyc029jQs7NobeTPsGeGYl6aF8ptQGNqMsEr5DLjxlyEl#:~:text=Types%20of%20Sound%20Therapy&text=1.%20Vibroacoustic%20Therapy&text=2.%20Music%20Therapy&text=3.%20Sound%20Baths&text=4.%20Binaural%20Beats&text=5.%20Frequency%20Therapy&text=6.%20Gong%20Therapy&text=7.%20Singing%20Bowl%20Therapy",
+      "domain": "iaminharmony.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 15,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Sound therapy near me",
+     "Sound therapy app",
+     "Sound Therapy devices",
+     "Sound therapy for kids",
+     "Sound therapy music",
+     "Sound Therapy Machine",
+     "Sound therapy at home",
+     "Sound therapy youtube"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

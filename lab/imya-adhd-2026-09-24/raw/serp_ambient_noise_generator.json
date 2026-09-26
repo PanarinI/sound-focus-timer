@@ -1,0 +1,519 @@
+[
+ {
+  "keyword": "ambient noise generator",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=ambient%20noise%20generator&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 20:05:21 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "organic",
+   "people_also_ask",
+   "video",
+   "related_searches"
+  ],
+  "se_results_count": 190,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "domain": "mynoise.net",
+    "title": "Custom Soundscapes for Focus, Relaxation & Sleep ...",
+    "url": "https://mynoise.net/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://mynoise.net",
+    "website_name": "myNoise",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Adjustable soundscapes that adapt to your space and your needs. Nature sounds, ambient music, and noise textures in a seamless, uninterrupted flow.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Adjustable soundscapes that adapt to your space and your needs"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]",
+    "domain": "asoftmurmur.com",
+    "title": "A Soft Murmur",
+    "url": "https://asoftmurmur.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://asoftmurmur.com",
+    "website_name": "A Soft Murmur",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "A Soft Murmur is an online background noise generator designed to help you relax, focus, and tune out unpleasant sounds from your environment. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "online background noise generator"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://asoftmurmur.com/#:~:text=A%20Soft%20Murmur%20is%20an,unpleasant%20sounds%20from%20your%20environment.",
+      "domain": "asoftmurmur.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the best app for ambient noise?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Where can I find free ambient sounds?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Do white noise generators work?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "How can I record ambient noise?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · A Joe-Blog Composer",
+      "title": "This Turns Words Into Cinematic Soundscapes | Sampleson ...",
+      "timestamp": "2026-09-24 20:05:19 +00:00",
+      "url": "https://www.youtube.com/watch?v=nIjKRureZYU"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Alessandro Mastroianni",
+      "title": "Discover the Ultimate Ambient Music Generator",
+      "timestamp": "2024-10-24 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=YV8EIQyyx3Q"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Production Expert",
+      "title": "Creating Soundscapes With Krotos Studio AI Ambience ...",
+      "timestamp": "2024-10-23 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=F9hfMeHEIMg"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+    "domain": "noises.online",
+    "title": "Online Background Noises • Relaxing Sounds • Noise Masking",
+    "url": "https://noises.online/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://noises.online",
+    "website_name": "Online Background Noises",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "myNoise is probably the best background noise generator on the internet. It offers an unsurpassed number of noises and is second to none for customizing sound. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "myNoise is probably the best background noise generator on the internet"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://noises.online/#:~:text=myNoise%20is%20probably%20the%20best,to%20none%20for%20customizing%20sound.",
+      "domain": "noises.online"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+    "domain": "www.ambient-mixer.com",
+    "title": "Listen and create ambient sounds easily",
+    "url": "https://www.ambient-mixer.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.ambient-mixer.com",
+    "website_name": "Ambient Mixer",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Listen online to relaxing sound atmospheres, ambient music or chilling sound effects. You can even create and mix your own moods, all for free.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Listen online to relaxing sound atmospheres, ambient music or chilling sound effects"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]",
+    "domain": "moodist.mvze.net",
+    "title": "Moodist: Ambient Sounds for Focus and Calm",
+    "url": "https://moodist.mvze.net/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://moodist.mvze.net",
+    "website_name": "Moodist",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Moodist is a free and open-source ambient sound generator featuring 84 carefully curated sounds. Create your ideal atmosphere for relaxation, focus, ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Moodist is a free and open-source ambient sound generator"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "www.noisli.com",
+    "title": "Noisli - Background Noise Generator and Ambient Sounds for ...",
+    "url": "https://www.noisli.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.noisli.com",
+    "website_name": "Noisli",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Noisli offers free online background noises enabling you to create your own soothing soundscapes for work, study or sleep.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "free online background noises"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+    "domain": "defonic.com",
+    "title": "Defonic | A fabulous ambient noise generator",
+    "url": "https://defonic.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://defonic.com",
+    "website_name": "Defonic",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Ambient sounds for use as background noise at home or in the office. Create your own unique sound environment with our noise generator. 1 hour mute in 30 min.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Ambient sounds",
+     "background noise",
+     "sound",
+     "noise generator"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[20]/div[1]/div[1]",
+    "domain": "mynoise.net",
+    "title": "The Ultimate Enterprise Background Noise Generator",
+    "url": "https://mynoise.net/NoiseMachines/spaceshipNoiseGenerator.php",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://mynoise.net › spaceshipNoiseGenerator",
+    "website_name": "myNoise",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "This soundscape has all the background noises needed to immerse yourself in a classic Sci-Fi movie soundtrack. For the TOS fans, we even added those fluttery ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "all the background noises needed to immerse yourself in a classic Sci-Fi movie soundtrack"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://mynoise.net/NoiseMachines/spaceshipNoiseGenerator.php#:~:text=This%20soundscape%20has%20all%20the,the%20future%20was%20perceived%20like...",
+      "domain": "mynoise.net"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 9,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[22]/div[1]/div[1]",
+    "domain": "simplynoise.com",
+    "title": "SimplyNoise • classic",
+    "url": "https://simplynoise.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://simplynoise.com",
+    "website_name": "SimplyNoise",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Free color noise and ambient soundscapes for focus, sleep, and calm ... SimplyNoise is the original color noise generator, free on the web since 2008. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Free color noise and ambient soundscapes"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://simplynoise.com/#:~:text=SimplyNoise%20is%20the%20original%20color,on%20the%20web%20since%202008.",
+      "domain": "simplynoise.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Ambient noise generator online",
+     "Ambient noise generator online free",
+     "Ambient noise generator free",
+     "Ambient noise website",
+     "Audio noise generator",
+     "Ambient noise mixer",
+     "Noise generator online free",
+     "Ambient sound generator AI"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

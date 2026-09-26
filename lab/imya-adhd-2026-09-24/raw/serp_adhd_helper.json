@@ -1,0 +1,797 @@
+[
+ {
+  "keyword": "adhd helper",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=adhd%20helper&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 15:09:24 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "organic",
+   "images",
+   "people_also_ask",
+   "related_searches"
+  ],
+  "se_results_count": 123,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "Effective ADHD helpers include `practical digital apps, physical organizing tools, and community support networks designed to manage executive dysfunction`.\n\n### Digital Apps and Tools\n\n- **Focusmate:** Uses virtual body doubling for real-time accountability and focus.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Tiimo:** A visual planner created specifically for neurodivergent daily scheduling.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Goblin Tools (Magic ToDo):** Breaks overwhelming tasks down into manageable steps automatically.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Llama Life:** A timeboxing tool that keeps you working on one single task at a time.[[1]](https://add.org/adhd-tools-for-adults/)\n\n### Organization Strategies\n\n- **Centralized Systems:** Most users on [Reddit](https://www.reddit.com/r/ADHD/comments/16vaxtm/what_are_your_favorite_and_most_effective_tools/) agree that maintaining a single, unified calendar and master task list prevents the overwhelm of scattered notes.[[1]](https://www.reddit.com/r/ADHD/comments/16vaxtm/what_are_your_favorite_and_most_effective_tools/)[[2]](https://www.youtube.com/watch?v=R5nCjKtTTHs)\n- **Landing Stations:** Create a designated physical home near your door for daily essentials like keys, wallets, and phones.[[1]](https://advancedpsychiatryassociates.com/resources/blog/strategies-for-adults-living-with-adhd)[[2]](https://www.youtube.com/watch?v=R5nCjKtTTHs)\n- **Visual Cues:** Use color-coding, pictures, or logos on file folders instead of text to make items easier to locate quickly.[[1]](https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/childrens-hospital/developmental-disabilities/ndbp-site/documents/73-ADHD-Friendly-Ways-to-Organize-Your-Life.pdf)[[2]](https://advancedpsychiatryassociates.com/resources/blog/strategies-for-adults-living-with-adhd)\n\n### Support Organizations\n\n- **CHADD:** The leading nonprofit resource for education, advocacy, and support for individuals and families affected by ADHD.[[1]](https://chadd.org/)[[2]](https://www.cdc.gov/adhd/php/communication-resources/index.html)\n- **ADDA:** The [Attention Deficit Disorder Association](https://add.org/) offers specialized programs, self-screening tools, and resources tailored specifically for adults living with ADHD.[[1]](https://add.org/)\n\nIf you'd like, let me know:\n\n- Are you looking for helpers for an **adult or a child**?\n- Do you prefer **digital tools** (apps) or **physical tools** (planners, fidgets)?\n\nI can narrow down the best specific recommendations for your situation.",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Effective ADHD helpers include practical digital apps, physical organizing tools, and community support networks designed to manage executive dysfunction.",
+      "markdown": "Effective ADHD helpers include `practical digital apps, physical organizing tools, and community support networks designed to manage executive dysfunction`.",
+      "links": null,
+      "images": null,
+      "references": null
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Digital Apps and Tools",
+      "text": "Focusmate: Uses virtual body doubling for real-time accountability and focus. Tiimo: A visual planner created specifically for neurodivergent daily scheduling. Goblin Tools (Magic ToDo): Breaks overwhelming tasks down into manageable steps automatically. Llama Life: A timeboxing tool that keeps you working on one single task at a time.",
+      "markdown": "- **Focusmate:** Uses virtual body doubling for real-time accountability and focus.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Tiimo:** A visual planner created specifically for neurodivergent daily scheduling.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Goblin Tools (Magic ToDo):** Breaks overwhelming tasks down into manageable steps automatically.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Llama Life:** A timeboxing tool that keeps you working on one single task at a time.[[1]](https://add.org/adhd-tools-for-adults/)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "ADDA - Attention Deficit Disorder Association",
+        "domain": "add.org",
+        "url": "https://add.org/adhd-tools-for-adults/",
+        "title": "Best ADHD Apps and Tools for Adults - ADDA - Attention Deficit Disorder Association",
+        "text": "What to Look for in an ADHD App. There are plenty of ADHD management tools available for adults. Examples include productivity app..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Organization Strategies",
+      "text": "Centralized Systems: Most users on Reddit agree that maintaining a single, unified calendar and master task list prevents the overwhelm of scattered notes. Landing Stations: Create a designated physical home near your door for daily essentials like keys, wallets, and phones. Visual Cues: Use color-coding, pictures, or logos on file folders instead of text to make items easier to locate quickly.",
+      "markdown": "- **Centralized Systems:** Most users on [Reddit](https://www.reddit.com/r/ADHD/comments/16vaxtm/what_are_your_favorite_and_most_effective_tools/) agree that maintaining a single, unified calendar and master task list prevents the overwhelm of scattered notes.[[1]](https://www.reddit.com/r/ADHD/comments/16vaxtm/what_are_your_favorite_and_most_effective_tools/)[[2]](https://www.youtube.com/watch?v=R5nCjKtTTHs)\n- **Landing Stations:** Create a designated physical home near your door for daily essentials like keys, wallets, and phones.[[1]](https://advancedpsychiatryassociates.com/resources/blog/strategies-for-adults-living-with-adhd)[[2]](https://www.youtube.com/watch?v=R5nCjKtTTHs)\n- **Visual Cues:** Use color-coding, pictures, or logos on file folders instead of text to make items easier to locate quickly.[[1]](https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/childrens-hospital/developmental-disabilities/ndbp-site/documents/73-ADHD-Friendly-Ways-to-Organize-Your-Life.pdf)[[2]](https://advancedpsychiatryassociates.com/resources/blog/strategies-for-adults-living-with-adhd)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Reddit",
+        "description": null,
+        "url": "https://www.reddit.com/r/ADHD/comments/16vaxtm/what_are_your_favorite_and_most_effective_tools/",
+        "domain": "www.reddit.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Reddit",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/ADHD/comments/16vaxtm/what_are_your_favorite_and_most_effective_tools/",
+        "title": "What are your favorite and most effective tools for thriving with ADHD?",
+        "text": "Centralized Note-Taking: Maintaining a single, comprehensive notebook or digital document (e.g., a perpetually open computer docum..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=R5nCjKtTTHs",
+        "title": "Psychiatrist Recommended Top 10 Tools for Managing ADHD (Non- ...",
+        "text": "Psychiatrist Recommended Top 10 Tools for Managing ADHD (Non-Medication ADHD Tools That Work) hey how's it going i'm a psychiatris..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Advanced Psychiatry Associates",
+        "domain": "advancedpsychiatryassociates.com",
+        "url": "https://advancedpsychiatryassociates.com/resources/blog/strategies-for-adults-living-with-adhd",
+        "title": "Strategies for Adults Living With ADHD",
+        "text": "Use a day planner: Use a calendar, planner notebook or smart device to record all activities and appointments every day. Schedule ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "University of Rochester",
+        "domain": "www.urmc.rochester.edu",
+        "url": "https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/childrens-hospital/developmental-disabilities/ndbp-site/documents/73-ADHD-Friendly-Ways-to-Organize-Your-Life.pdf",
+        "title": "73 ADHD-Friendly Ways to Organize YourLife Now - URMC.Rochester.edu",
+        "text": "I paste logos of companies on file folders, rather than writing names on them. The colorful logo of Citigroup or Geico is easier t..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Advanced Psychiatry Associates",
+        "domain": "advancedpsychiatryassociates.com",
+        "url": "https://advancedpsychiatryassociates.com/resources/blog/strategies-for-adults-living-with-adhd",
+        "title": "Strategies for Adults Living With ADHD",
+        "text": "Use a day planner: Use a calendar, planner notebook or smart device to record all activities and appointments every day. Schedule ..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Support Organizations",
+      "text": "CHADD: The leading nonprofit resource for education, advocacy, and support for individuals and families affected by ADHD. ADDA: The Attention Deficit Disorder Association offers specialized programs, self-screening tools, and resources tailored specifically for adults living with ADHD.",
+      "markdown": "- **CHADD:** The leading nonprofit resource for education, advocacy, and support for individuals and families affected by ADHD.[[1]](https://chadd.org/)[[2]](https://www.cdc.gov/adhd/php/communication-resources/index.html)\n- **ADDA:** The [Attention Deficit Disorder Association](https://add.org/) offers specialized programs, self-screening tools, and resources tailored specifically for adults living with ADHD.[[1]](https://add.org/)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Attention Deficit Disorder Association",
+        "description": null,
+        "url": "https://add.org/",
+        "domain": "add.org"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "CHADD",
+        "domain": "chadd.org",
+        "url": "https://chadd.org/",
+        "title": "CHADD - Improving the lives of people affected by ADHD",
+        "text": "Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD) is the nation's leading nonprofit organization serving p..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Centers for Disease Control and Prevention | CDC (.gov)",
+        "domain": "www.cdc.gov",
+        "url": "https://www.cdc.gov/adhd/php/communication-resources/index.html",
+        "title": "Free Materials on ADHD - CDC",
+        "text": "Partnership work. CDC funds the National Resource Center on ADHD (NRC), a program of CHADD–Children and Adults with Attention-Defi..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "ADDA - Attention Deficit Disorder Association",
+        "domain": "add.org",
+        "url": "https://add.org/",
+        "title": "ADDA - Attention Deficit Disorder Association: Home",
+        "text": "ADDA is the world's largest organization dedicated to helping adults with ADHD. ADDA has been serving adults with ADHD for 30 year..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "If you'd like, let me know:Are you looking for helpers for an adult or a child ?\nDo you prefer digital tools (apps) or physical tools (planners, fidgets)?\nI can narrow down the best specific recommendations for your situation.",
+      "markdown": "If you'd like, let me know:\n\n- Are you looking for helpers for an **adult or a child**?\n- Do you prefer **digital tools** (apps) or **physical tools** (planners, fidgets)?\n\nI can narrow down the best specific recommendations for your situation.",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Reddit",
+      "domain": "www.reddit.com",
+      "url": "https://www.reddit.com/r/ADHD/comments/16vaxtm/what_are_your_favorite_and_most_effective_tools/",
+      "title": "What are your favorite and most effective tools for thriving with ADHD?",
+      "text": "Centralized Note-Taking: Maintaining a single, comprehensive notebook or digital document (e.g., a perpetually open computer docum..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "ADDA - Attention Deficit Disorder Association",
+      "domain": "add.org",
+      "url": "https://add.org/adhd-tools-for-adults/",
+      "title": "Best ADHD Apps and Tools for Adults - ADDA - Attention Deficit Disorder Association",
+      "text": "What to Look for in an ADHD App. There are plenty of ADHD management tools available for adults. Examples include productivity app..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "CHADD",
+      "domain": "chadd.org",
+      "url": "https://chadd.org/",
+      "title": "CHADD - Improving the lives of people affected by ADHD",
+      "text": "Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD) is the nation's leading nonprofit organization serving p..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Advanced Psychiatry Associates",
+      "domain": "advancedpsychiatryassociates.com",
+      "url": "https://advancedpsychiatryassociates.com/resources/blog/strategies-for-adults-living-with-adhd",
+      "title": "Strategies for Adults Living With ADHD",
+      "text": "Use a day planner: Use a calendar, planner notebook or smart device to record all activities and appointments every day. Schedule ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "ADDA - Attention Deficit Disorder Association",
+      "domain": "add.org",
+      "url": "https://add.org/",
+      "title": "ADDA - Attention Deficit Disorder Association: Home",
+      "text": "ADDA is the world's largest organization dedicated to helping adults with ADHD. ADDA has been serving adults with ADHD for 30 year..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "University of Rochester",
+      "domain": "www.urmc.rochester.edu",
+      "url": "https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/childrens-hospital/developmental-disabilities/ndbp-site/documents/73-ADHD-Friendly-Ways-to-Organize-Your-Life.pdf",
+      "title": "73 ADHD-Friendly Ways to Organize YourLife Now - URMC.Rochester.edu",
+      "text": "I paste logos of companies on file folders, rather than writing names on them. The colorful logo of Citigroup or Geico is easier t..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Centers for Disease Control and Prevention | CDC (.gov)",
+      "domain": "www.cdc.gov",
+      "url": "https://www.cdc.gov/adhd/php/communication-resources/index.html",
+      "title": "Free Materials on ADHD - CDC",
+      "text": "Partnership work. CDC funds the National Resource Center on ADHD (NRC), a program of CHADD–Children and Adults with Attention-Defi..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=R5nCjKtTTHs",
+      "title": "Psychiatrist Recommended Top 10 Tools for Managing ADHD (Non- ...",
+      "text": "Psychiatrist Recommended Top 10 Tools for Managing ADHD (Non-Medication ADHD Tools That Work) hey how's it going i'm a psychiatris..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+    "domain": "add.org",
+    "title": "Best ADHD Apps and Tools for Adults",
+    "url": "https://add.org/adhd-tools-for-adults/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://add.org › ADDA Library › Focus & Organization",
+    "website_name": "ADDA - Attention Deficit Disorder Association",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jul 21, 2026 — There are plenty of ADHD management tools available for adults. Examples include productivity apps, fidget toys, clocks and timers, ADHD ... Read more",
+    "pre_snippet": "07/21/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "productivity apps, fidget toys, clocks and timers"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://add.org/adhd-tools-for-adults/#:~:text=There%20are%20plenty%20of%20ADHD,a%20bulletin%20board%20or%20whiteboard.",
+      "domain": "add.org"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-07-21 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]",
+    "domain": "www.additudemag.com",
+    "title": "25 Great Mobile Apps for ADHD Minds",
+    "url": "https://www.additudemag.com/mobile-apps-for-adhd-minds/?srsltid=AU7gw4VkmmJ4wHRwHrIiZz2Sfwt2ng8GaD7kkta3uFH_4vGhitNeUa6j",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.additudemag.com › mobile-apps-for-adhd-...",
+    "website_name": "ADDitude",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Feb 8, 2026 — ADHD Apps Help Manage My Life · 1. RescueTime · 2. Focus@Will · 3. Freedom · 4. Evernote · 5. Mint · 6. Google Voice · 7. Boomerang for Gmail ... Read more",
+    "pre_snippet": "02/08/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "1. RescueTime"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "ADHD Apps Help Manage My...",
+      "description": null,
+      "url": "https://www.additudemag.com/mobile-apps-for-adhd-minds/#adhd-apps-help-manage-my-life",
+      "domain": "www.additudemag.com"
+     },
+     {
+      "type": "link_element",
+      "title": "RescueTime",
+      "description": null,
+      "url": "https://www.additudemag.com/mobile-apps-for-adhd-minds/#1-rescuetime",
+      "domain": "www.additudemag.com"
+     },
+     {
+      "type": "link_element",
+      "title": "Freedom",
+      "description": null,
+      "url": "https://www.additudemag.com/mobile-apps-for-adhd-minds/#3-freedom",
+      "domain": "www.additudemag.com"
+     },
+     {
+      "type": "link_element",
+      "title": "Dropbox",
+      "description": null,
+      "url": "https://www.additudemag.com/mobile-apps-for-adhd-minds/#8-dropbox",
+      "domain": "www.additudemag.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-02-08 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "images",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]",
+    "title": "Images",
+    "url": "https://www.google.com/search?sca_esv=eb3ed732ab39b407&hl=en&gl=US&sxsrf=APpeQnu7Rs7fx6MlSybN7og_O65Gxjgfqw:1790348960055&q=adhd+helper&udm=2&source=univ&fir=2kOpO80ckI4v6M%252CVfGPNKlOKMpaQM%252C_%253BbawqdMxiHgWUvM%252CzsLufYUaLmSKwM%252C_%253Bs__OLlo0Dc0rKM%252CzsLufYUaLmSKwM%252C_%253BMe6ntT3-l9k9fM%252CzsLufYUaLmSKwM%252C_%253BmQh2F7GmxLabDM%252CIKhSt9LX8-ZSLM%252C_%253Bv7vjaYmP4bA17M%252CO2IprPwKBW7qqM%252C_%253B1bVz0kGDCcfvIM%252CzsLufYUaLmSKwM%252C_%253BKTeEdmRO23wTcM%252CVfGPNKlOKMpaQM%252C_%253B7xCs8U7Zch1-JM%252CO2IprPwKBW7qqM%252C_&usg=AI4_-kRdBB-gf0l-p9okIfJa1A31QGpdxA&sa=X&ved=2ahUKEwjrv6bOgYqXAxUIOBAIHUSZEY4Q7Al6BAgcEAU",
+    "items": [
+     {
+      "type": "images_element",
+      "alt": "Looking For ADHD Help?",
+      "url": "https://www.theminiadhdcoach.com/adhd-help",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251509-2042-0139-0000-58d385f5aa04:0"
+     },
+     {
+      "type": "images_element",
+      "alt": "ADHD Daily Helper",
+      "url": "https://insightdecks.com/products/adhd-daily-helper",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251509-2042-0139-0000-58d385f5aa04:1"
+     },
+     {
+      "type": "images_element",
+      "alt": "ADHD Daily Helper - Digital",
+      "url": "https://insightdecks.com/products/adhd-daily-helper",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251509-2042-0139-0000-58d385f5aa04:2"
+     },
+     {
+      "type": "images_element",
+      "alt": "ADHD Daily Helper - Digital",
+      "url": "https://insightdecks.com/products/adhd-daily-helper",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMoDFKz9X-2ZYAswOaxuUPTFDqd7YD7CYSeUGMBCZiFKuDvBDheca1to&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "The Best ADHD Management Tools",
+      "url": "https://www.healthline.com/health/favorite-healthy-adhd-management-finds",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5eQmnQNt2fhPZXXpWQhLg2lG2_iPsOQBFMj0sEPjl20kY8AvQQM3UCtE&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "ADHD Self Help | Get.gg - Getselfhelp.co.uk",
+      "url": "https://www.getselfhelp.co.uk/adhd-self-help/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9mMKdAP8EvVTC-37tFALT5fMA6c_9ZQB8g40j_ur0j7rbDciB2a9h6U&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "ADHD Daily Helper - Digital",
+      "url": "https://insightdecks.com/products/adhd-daily-helper",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb3xCPHBClnwZfslR-pMJC00E9WopeGnUaXd7i5nv115S74qjcfxMaBwE&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Looking For ADHD Help?",
+      "url": "https://www.theminiadhdcoach.com/adhd-help",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVf8d2jp9rJtssix4DjiMseRqSfshh4VV9snSC0e7W-TiH4ubDHxdhP_w&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "ADHD Self Help | Get.gg - Getselfhelp.co.uk",
+      "url": "https://www.getselfhelp.co.uk/adhd-self-help/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQigsOfArb93cMre2u97Xzxk2uN5mBEB_-BYOeCcNWOnvApWHy9vCCVy8c&s"
+     }
+    ],
+    "related_image_searches": null,
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "How to help adults with ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Which ADHD medication is best for me?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What does ADHD look like an adult?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "How can people with ADHD be successful?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+    "domain": "advancedpsychiatryassociates.com",
+    "title": "Strategies for Adults Living With ADHD",
+    "url": "https://advancedpsychiatryassociates.com/resources/blog/strategies-for-adults-living-with-adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://advancedpsychiatryassociates.com › blog › strateg...",
+    "website_name": "Advanced Psychiatry Associates",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Strategies for Adults Living With ADHD · 1. Get Organized · 2. Follow a Routine · 3. Make Big Tasks More Manageable · 4. Minimize Distractions · 5. Respect Your ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Get Organized"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://advancedpsychiatryassociates.com/resources/blog/strategies-for-adults-living-with-adhd#:~:text=Strategies%20for%20Adults%20Living%20With,ADHD&text=1.%20Get%20Organized&text=2.%20Follow%20a%20Routine&text=3.%20Make%20Big%20Tasks%20More,Manageable&text=4.%20Minimize%20Distractions&text=5.%20Respect%20Your%20Limits",
+      "domain": "advancedpsychiatryassociates.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+    "domain": "magazine.medlineplus.gov",
+    "title": "ADHD support toolkit | NIH MedlinePlus Magazine",
+    "url": "https://magazine.medlineplus.gov/article/adhd-support-toolkit",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://magazine.medlineplus.gov › article › adhd-supp...",
+    "website_name": "NIH MedlinePlus Magazine (.gov)",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Apr 4, 2024 — There are many practical ways to help someone with ADHD, such as giving them a hand with tasks like cleaning and organizing or simply being ... Read more",
+    "pre_snippet": "04/04/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "There are many practical ways to help someone with ADHD"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://magazine.medlineplus.gov/article/adhd-support-toolkit#:~:text=There%20are%20many%20practical%20ways,and%20engaged%20while%20they%20work.",
+      "domain": "magazine.medlineplus.gov"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-04-04 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]",
+    "domain": "www.helpguide.org",
+    "title": "Tips for Managing Adult ADHD",
+    "url": "https://www.helpguide.org/mental-health/adhd/managing-adult-adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.helpguide.org › ADHD",
+    "website_name": "HelpGuide.org",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "May 19, 2026 — Learn how to deal with the symptoms of adult ADHD, focus better at work, get organized, and improve your money and time management.",
+    "pre_snippet": "05/19/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Learn how to deal with the symptoms of adult ADHD"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-05-19 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "www.thesterlinggroupdc.com",
+    "title": "Therapist's Recommendation for ADHD Friendly Apps",
+    "url": "https://www.thesterlinggroupdc.com/blog/theres-an-adhd-app-for-that-a-therapists-recommendation-for-adhd-friendly-apps",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.thesterlinggroupdc.com › blog › theres-an-...",
+    "website_name": "thesterlinggroupdc.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Are you looking for tools to make managing your ADHD easier? Learn some of the best apps that could help you from a ADHD therapist in Washington, DC.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Learn some of the best apps that could help you from a ADHD therapist"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[17]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "5 Game-Changing Productivity Apps For ADHD",
+    "url": "https://www.youtube.com/watch?v=kzxNGPJROcA",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "272.5K+ views  ·  2 years ago",
+    "website_name": "YouTube · How to ADHD",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "7 Weird ADHD Hacks to Improve Your Life (Without Discipline) · 7 AI Tools That Finally Made My ADHD Brain Productive · 50 Accommodations I Use As ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "7 Weird ADHD Hacks to Improve Your Life"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-09-19 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[19]/div[1]/div[1]",
+    "domain": "www.reddit.com",
+    "title": "What apps work best for people with ADHD?",
+    "url": "https://www.reddit.com/r/ProductivityApps/comments/1hwvgh5/what_apps_work_best_for_people_with_adhd/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "100+ comments  ·  1 year ago",
+    "website_name": "Reddit · r/ProductivityApps",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Apps like Todoist, Notion, and Trello can help with task management and staying on top of deadlines. They offer reminders and structure to ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Apps like Todoist, Notion, and Trello"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Perfect Apps that I use that helps with my ADHD [feel ...",
+      "description": null,
+      "url": "https://www.reddit.com/r/ADHD_Programmers/comments/10pubgy/perfect_apps_that_i_use_that_helps_with_my_adhd/",
+      "domain": "www.reddit.com"
+     },
+     {
+      "type": "link_element",
+      "title": "r/ADHD on Reddit: What are your favorite and most ...",
+      "description": null,
+      "url": "https://www.reddit.com/r/ADHD/comments/16vaxtm/what_are_your_favorite_and_most_effective_tools/",
+      "domain": "www.reddit.com"
+     },
+     {
+      "type": "link_element",
+      "title": "More results from www.reddit.com",
+      "description": null,
+      "url": "https://www.google.com/search?q=adhd+helper+site:www.reddit.com&sca_esv=eb3ed732ab39b407&hl=en&gl=US&sxsrf=APpeQnu7Rs7fx6MlSybN7og_O65Gxjgfqw:1790348960055&sa=X&ved=2ahUKEwjrv6bOgYqXAxUIOBAIHUSZEY4QrQIoAnoECD8QAw",
+      "domain": "www.google.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Free apps for ADHD adults",
+     "ADHD tools and gadgets for adults",
+     "Best apps for ADHD adults",
+     "How to calm down ADHD in adults",
+     "Free ADHD tools for adults",
+     "Best ADHD tools for adults",
+     "How to help someone with ADHD who is overwhelmed",
+     "How to help someone with ADHD adults"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

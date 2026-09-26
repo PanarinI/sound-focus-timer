@@ -1,0 +1,724 @@
+[
+ {
+  "keyword": "healing frequencies",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=healing%20frequencies&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-26 07:54:29 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "video",
+   "people_also_ask",
+   "organic",
+   "images",
+   "related_searches"
+  ],
+  "se_results_count": 110,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "Healing frequencies are `specific sound pitches measured in hertz (Hz) used in supportive wellness practices to promote relaxation, mindfulness, and stress relief`.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)\n\nMost users on [Reddit](https://www.reddit.com/r/Meditation/comments/16wp221/is_the_healing_effectbenefits_of_the_frequency/) reach a consensus that while music or tones featuring these frequencies do not cure medical illness or repair DNA, they offer tangible benefits for mood and meditation.[[1]](https://www.reddit.com/r/Meditation/comments/16wp221/is_the_healing_effectbenefits_of_the_frequency/)[[2]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)\n\n### Common Healing Frequencies and Goals\n\n- **174 Hz (Deep Relaxation):** Used for physical soothing and grounding after sensory overload.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)\n- **396 Hz (Releasing Fear):** Associated with clearing anxiety and heavy emotional patterns.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)[[2]](https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance)\n- **417 Hz (Emotional Transition):** Helps with adaptability and letting go of negative cycles.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)[[2]](https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance)\n- **432 Hz (Grounding & Balance):** One of the most popular pitches for steady, calming meditation.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)\n- **528 Hz (Emotional Renewal):** Often called the \"love frequency,\" linked to warmth and uplift.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)[[2]](https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance)\n- **963 Hz (Deep Stillness):** Used for contemplation and a sense of expansive quiet.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)\n\n### How to Use Them Safely\n\n- **Session Length:** Listen for 20 to 30 minutes during quiet rest, breathwork, or meditation.[[1]](https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance)\n- **Volume:** Keep the sound at a comfortable, low level so it does not overstimulate your nervous system.\n- **Expectations:** Treat sound as a complementary self-care tool rather than a medical treatment. You can explore curated options like the [Healing Frequencies Playlist](https://www.youtube.com/playlist?list=PLZCjSAnJZ-awgxUCP0fetCJ0Bu93RiwBA) on YouTube.[[1]](https://www.youtube.com/playlist?list=PLZCjSAnJZ-awgxUCP0fetCJ0Bu93RiwBA)[[2]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)\n\nIf you'd like, let me know:\n\n- What specific **wellness goal** you have (such as sleep, anxiety relief, or focus)\n- Whether you prefer **ambient music** or **pure tones** \n\nI can recommend a specific frequency and listening approach for you.",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Healing frequencies are specific sound pitches measured in hertz (Hz) used in supportive wellness practices to promote relaxation, mindfulness, and stress relief.",
+      "markdown": "Healing frequencies are `specific sound pitches measured in hertz (Hz) used in supportive wellness practices to promote relaxation, mindfulness, and stress relief`.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "PS Its Counseling",
+        "domain": "www.ps-itscounseling.com",
+        "url": "https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/",
+        "title": "Best Healing Frequencies - A Complete Guide - PS Its Counseling",
+        "text": "Interest in healing frequencies has grown as more people look for gentle, non-invasive ways to support stress relief, emotional re..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Most users on Reddit reach a consensus that while music or tones featuring these frequencies do not cure medical illness or repair DNA, they offer tangible benefits for mood and meditation.",
+      "markdown": "Most users on [Reddit](https://www.reddit.com/r/Meditation/comments/16wp221/is_the_healing_effectbenefits_of_the_frequency/) reach a consensus that while music or tones featuring these frequencies do not cure medical illness or repair DNA, they offer tangible benefits for mood and meditation.[[1]](https://www.reddit.com/r/Meditation/comments/16wp221/is_the_healing_effectbenefits_of_the_frequency/)[[2]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Reddit",
+        "description": null,
+        "url": "https://www.reddit.com/r/Meditation/comments/16wp221/is_the_healing_effectbenefits_of_the_frequency/",
+        "domain": "www.reddit.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Reddit",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Meditation/comments/16wp221/is_the_healing_effectbenefits_of_the_frequency/",
+        "title": "Is the healing effect/benefits of the frequency 432hz and 528hz real?",
+        "text": "Defining 528 Hz Music: There is discussion regarding the term \"528 Hz music,\" as music is composed of multiple tones, not a single..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "PS Its Counseling",
+        "domain": "www.ps-itscounseling.com",
+        "url": "https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/",
+        "title": "Best Healing Frequencies - A Complete Guide - PS Its Counseling",
+        "text": "Interest in healing frequencies has grown as more people look for gentle, non-invasive ways to support stress relief, emotional re..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Common Healing Frequencies and Goals",
+      "text": "174 Hz (Deep Relaxation): Used for physical soothing and grounding after sensory overload. 396 Hz (Releasing Fear): Associated with clearing anxiety and heavy emotional patterns. 417 Hz (Emotional Transition): Helps with adaptability and letting go of negative cycles. 432 Hz (Grounding & Balance): One of the most popular pitches for steady, calming meditation. 528 Hz (Emotional Renewal): Often called the \"love frequency,\" linked to warmth and uplift. 963 Hz (Deep Stillness): Used for contemplation and a sense of expansive quiet.",
+      "markdown": "- **174 Hz (Deep Relaxation):** Used for physical soothing and grounding after sensory overload.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)\n- **396 Hz (Releasing Fear):** Associated with clearing anxiety and heavy emotional patterns.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)[[2]](https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance)\n- **417 Hz (Emotional Transition):** Helps with adaptability and letting go of negative cycles.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)[[2]](https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance)\n- **432 Hz (Grounding & Balance):** One of the most popular pitches for steady, calming meditation.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)\n- **528 Hz (Emotional Renewal):** Often called the \"love frequency,\" linked to warmth and uplift.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)[[2]](https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance)\n- **963 Hz (Deep Stillness):** Used for contemplation and a sense of expansive quiet.[[1]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "PS Its Counseling",
+        "domain": "www.ps-itscounseling.com",
+        "url": "https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/",
+        "title": "Best Healing Frequencies - A Complete Guide - PS Its Counseling",
+        "text": "Interest in healing frequencies has grown as more people look for gentle, non-invasive ways to support stress relief, emotional re..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Pures Music",
+        "domain": "www.puresmusic.com",
+        "url": "https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance",
+        "title": "All Healing Frequencies: Solfeggio, Brainwaves, Angelic & Planetary ...",
+        "text": "A typical session involves listening to one or more tones for 20–30 minutes during meditation, breathwork, or relaxation. * Solfeg..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "How to Use Them Safely",
+      "text": "Session Length: Listen for 20 to 30 minutes during quiet rest, breathwork, or meditation. Volume: Keep the sound at a comfortable, low level so it does not overstimulate your nervous system. Expectations: Treat sound as a complementary self-care tool rather than a medical treatment. You can explore curated options like the Healing Frequencies Playlist on YouTube.",
+      "markdown": "- **Session Length:** Listen for 20 to 30 minutes during quiet rest, breathwork, or meditation.[[1]](https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance)\n- **Volume:** Keep the sound at a comfortable, low level so it does not overstimulate your nervous system.\n- **Expectations:** Treat sound as a complementary self-care tool rather than a medical treatment. You can explore curated options like the [Healing Frequencies Playlist](https://www.youtube.com/playlist?list=PLZCjSAnJZ-awgxUCP0fetCJ0Bu93RiwBA) on YouTube.[[1]](https://www.youtube.com/playlist?list=PLZCjSAnJZ-awgxUCP0fetCJ0Bu93RiwBA)[[2]](https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Healing Frequencies Playlist",
+        "description": null,
+        "url": "https://www.youtube.com/playlist?list=PLZCjSAnJZ-awgxUCP0fetCJ0Bu93RiwBA",
+        "domain": "www.youtube.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Pures Music",
+        "domain": "www.puresmusic.com",
+        "url": "https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance",
+        "title": "All Healing Frequencies: Solfeggio, Brainwaves, Angelic & Planetary ...",
+        "text": "A typical session involves listening to one or more tones for 20–30 minutes during meditation, breathwork, or relaxation. * Solfeg..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/playlist?list=PLZCjSAnJZ-awgxUCP0fetCJ0Bu93RiwBA",
+        "title": "Healing Frequencies Music - YouTube",
+        "text": "Music for Body and Spirit - Meditation Music Playlist•268 videos•258,649 views Frequencies of these tracks have been chosen for a ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "PS Its Counseling",
+        "domain": "www.ps-itscounseling.com",
+        "url": "https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/",
+        "title": "Best Healing Frequencies - A Complete Guide - PS Its Counseling",
+        "text": "Interest in healing frequencies has grown as more people look for gentle, non-invasive ways to support stress relief, emotional re..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "If you'd like, let me know:What specific wellness goal you have (such as sleep, anxiety relief, or focus)\nWhether you prefer ambient music or pure tones\nI can recommend a specific frequency and listening approach for you.",
+      "markdown": "If you'd like, let me know:\n\n- What specific **wellness goal** you have (such as sleep, anxiety relief, or focus)\n- Whether you prefer **ambient music** or **pure tones** \n\nI can recommend a specific frequency and listening approach for you.",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "PS Its Counseling",
+      "domain": "www.ps-itscounseling.com",
+      "url": "https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/",
+      "title": "Best Healing Frequencies - A Complete Guide - PS Its Counseling",
+      "text": "Interest in healing frequencies has grown as more people look for gentle, non-invasive ways to support stress relief, emotional re..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Reddit",
+      "domain": "www.reddit.com",
+      "url": "https://www.reddit.com/r/Meditation/comments/16wp221/is_the_healing_effectbenefits_of_the_frequency/",
+      "title": "Is the healing effect/benefits of the frequency 432hz and 528hz real?",
+      "text": "Defining 528 Hz Music: There is discussion regarding the term \"528 Hz music,\" as music is composed of multiple tones, not a single..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/playlist?list=PLZCjSAnJZ-awgxUCP0fetCJ0Bu93RiwBA",
+      "title": "Healing Frequencies Music - YouTube",
+      "text": "Music for Body and Spirit - Meditation Music Playlist•268 videos•258,649 views Frequencies of these tracks have been chosen for a ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Pures Music",
+      "domain": "www.puresmusic.com",
+      "url": "https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance",
+      "title": "All Healing Frequencies: Solfeggio, Brainwaves, Angelic & Planetary ...",
+      "text": "A typical session involves listening to one or more tones for 20–30 minutes during meditation, breathwork, or relaxation. * Solfeg..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Healing Energy for Soul",
+      "title": "432Hz - The Most Powerful Healing Frequency, Heal Damage ...",
+      "timestamp": "2026-06-18 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=HvPdPeHQEqY"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Music for Body and Spirit - Meditation Music",
+      "title": "Full Body Healing Frequencies, 528Hz + 174Hz, Miracle ...",
+      "timestamp": "2022-11-23 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=Pu-Ny1L8yDU"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Healing Energy for Soul",
+      "title": "432Hz- Alpha Waves Heal The Whole Body and Spirit",
+      "timestamp": "2023-06-11 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=u3papaX85MA"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the best frequency for healing?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What are the 9 healing frequencies?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What does 528 Hz do to the human body?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is God's healing frequency?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "Solfeggio Healing Frequencies MT",
+    "url": "https://open.spotify.com/artist/5R9eOlQf7HGzD6srMeJKio",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › artist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": true,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_image"
+    ],
+    "description": "Frequency 176,604,621 528 Hz DNA Repair 157,244,685 528 Hz Love & Miracles 155,843,458. Heart Chakra Healing 963 Hz 741 Hz",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": [
+     {
+      "type": "images_element",
+      "alt": null,
+      "url": null,
+      "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-a89c4ce1740e:0"
+     },
+     {
+      "type": "images_element",
+      "alt": null,
+      "url": null,
+      "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-a89c4ce1740e:1"
+     },
+     {
+      "type": "images_element",
+      "alt": null,
+      "url": null,
+      "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-a89c4ce1740e:2"
+     }
+    ],
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "176,604,621 528 Hz"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "images",
+    "rank_group": 1,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[8]/div[1]",
+    "title": "Images",
+    "url": "https://www.google.com/search?sca_esv=687af446f448273f&hl=en&gl=US&sxsrf=APpeQntj9aApdDH3CVMcKY1ke3nJzMnPmw:1790409268359&q=healing+frequencies&udm=2&source=univ&fir=5n1aRgc-52ddYM%252Cpo5tOXUYeGXHyM%252C_%253B8xJMtOAKWvkEVM%252CZ_KykYf_3EqP1M%252C_%253B88cY_1phvroO4M%252Cjwzo8k9c49TKdM%252C_%253BDSzqWkeynvc_MM%252CbT0ejeaYp7UznM%252C_%253BqglsjCQ1oFhD6M%252ClyBszLxTg4zFMM%252C_%253B_arXgTtU0MPAvM%252CM2vWlLUd_cCsIM%252C_%253BtKy1cWPsWHI7QM%252CnS-ptN_NecCTlM%252C_%253BTteks2yMuP4_FM%252Cbe0h-xyLgAbRmM%252C_%253BswbYNU_BLiAL0M%252CjWmLSinpjk6ghM%252C_&usg=AI4_-kTB_KkXs8sYncbDcp4-cLYA555IoA&sa=X&ved=2ahUKEwiLqsWj4ouXAxW948kDHd2TPE0Q7Al6BAhJEAU",
+    "items": [
+     {
+      "type": "images_element",
+      "alt": "How I Use Solfeggio Frequencies As a Healing Tool | Arawme",
+      "url": "https://www.arawme.com/latest-on-the-blog/tips-solfeggio-frequencies-healing-properties",
+      "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-a89c4ce1740e:3"
+     },
+     {
+      "type": "images_element",
+      "alt": "Play Healing Frequencies HZ by Solfeggio Frequency Sound on ...",
+      "url": "https://www.amazon.com/Healing-Frequencies-Solfeggio-Frequency-Sound/dp/B0CL89W8FW",
+      "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-a89c4ce1740e:4"
+     },
+     {
+      "type": "images_element",
+      "alt": "Solfeggio Healing Frequencies - Album by Emiliano Bruguera ...",
+      "url": "https://open.spotify.com/album/3prtMXD2aLt1PNorf3e5Ay",
+      "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-a89c4ce1740e:5"
+     },
+     {
+      "type": "images_element",
+      "alt": "Healing Frequencies For Meditation Chart",
+      "url": "https://www.etsy.com/listing/1307517639/healing-frequencies-for-meditation-chart",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9eXaVibXAzB3TMbWaPq6SA6F7FJQ1qsYjDM41WFyt2k3S7kfISFUxERY&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "The Benefits of the 9 Solfeggio Frequencies",
+      "url": "https://ouraring.com/blog/the-benefits-of-the-9-solfeggio-frequencies/?srsltid=AU7gw4WZcG5EzZrst_nwSJOZPzQCfaANOAnfU3wCR5pPByMvgDHS02sV",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRizdBvjw4DNF1kYOP83wxBPnUI-bdvMrKErj_yhA9uLd-NF-ZPi6D_6fg&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Frequency: Healing Sounds - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.frequency.chakra.meditation.brainwaves",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_IEeOZHP1xboiEnaLGMAjwaHYadzRWJQ_RuRFtP2gcrzIWi0JUcS9TM&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Solfeggio Healing Frequencies MT | Spotify",
+      "url": "https://open.spotify.com/artist/5R9eOlQf7HGzD6srMeJKio",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ENOIEymkQWJGEHwM-Dp5Kr3jaXTreiNycKFOGlmGRhpf7G2TMvLCguk&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "The 7 Healing Frequencies & What They Actually Do",
+      "url": "https://bellehealth.co/what-are-the-7-healing-frequencies/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxyuUiOI58BFTAecOafGRUxWdowXb-c65M5Bi0yvENC0X2PyDS4Pyh9Og&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "The 7 Healing Frequencies For The Body Explained + Healing ...",
+      "url": "https://theyogatique.com/7-healing-frequencies-for-the-body-explained/?srsltid=AU7gw4VkRfqyvVuNkue3dY0RJCceGAA2sfo2lbRVtG0Pffot69VBXW6Q",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKPzT7U1NIuofdMyw4ddrDj7jsApHokTgj0TAFAqDc916F8zOLp3AcYy8&s"
+     }
+    ],
+    "related_image_searches": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+    "domain": "www.ps-itscounseling.com",
+    "title": "Best Healing Frequencies - A Complete Guide",
+    "url": "https://www.ps-itscounseling.com/blog/best-healing-frequencies-a-complete-guide/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.ps-itscounseling.com › Blog",
+    "website_name": "PS Its Counseling",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "2 – 285 Hz – Body Awareness & Comfort ・ 5 – 432 Hz – Grounding & Emotional Balance ・ 6 – 444 Hz – Nervous System Regulation ・ 8 – 639 Hz – Emotional ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "2 – 285 Hz – Body Awareness & Comfort"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+    "domain": "www.puresmusic.com",
+    "title": "All Healing Frequencies: Solfeggio, Brainwaves, Angelic & ...",
+    "url": "https://www.puresmusic.com/blogs/sound-healing/healing-frequencies-list-for-optimal-wellbeing-and-balance?srsltid=AU7gw4WzO9joG_I8bBN4vhqCCKtddRbjEnhhMDJWI-22embcu-j-A3fT",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.puresmusic.com › Sound Healing",
+    "website_name": "Pures Music",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jan 2, 2026 — Healing frequencies : Solfeggio Frequencies (174 Hz – 963 Hz) – Chakra and emotional healing Brainwave Frequencies (0.5 Hz – 100 Hz) – Mental ...",
+    "pre_snippet": "01/02/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Healing frequencies"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-01-02 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]",
+    "domain": "music.apple.com",
+    "title": "Healing Frequencies",
+    "url": "https://music.apple.com/us/artist/healing-frequencies/1372296446",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://music.apple.com › artist › healing-frequencies",
+    "website_name": "Apple Music",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Top Songs · 432 Hz Positive Energy · 432 Hz Instantly Manifest Miracles · 432 Hz Deep Sleep Relaxation · 432 Hz Relieve Stress & Anxiety · 432 Hz Ease the Mind. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "432 Hz Positive Energy"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://music.apple.com/us/artist/healing-frequencies/1372296446#:~:text=Top%20Songs&text=432%20Hz%20Positive%20Energy&text=432%20Hz%20Instantly%20Manifest%20Miracles&text=432%20Hz%20Deep%20Sleep%20Relaxation&text=432%20Hz%20Relieve%20Stress%20%26,Anxiety&text=432%20Hz%20Ease%20the%20Mind",
+      "domain": "music.apple.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "www.donovanhealth.com",
+    "title": "Healing the Body with Frequencies: The Basics Explained",
+    "url": "https://www.donovanhealth.com/blog/healing-the-body-with-frequencies-the-basics-explained",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.donovanhealth.com › blog › healing-the-b...",
+    "website_name": "DonovanHealth",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Feb 21, 2025 — By tuning music to certain frequencies like 432 Hz, research suggests we may be able to increase our body's natural healing abilities. 528 Hz. Read more",
+    "pre_snippet": "02/21/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "432 Hz"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.donovanhealth.com/blog/healing-the-body-with-frequencies-the-basics-explained#:~:text=By%20tuning%20music%20to%20certain,528%20Hz",
+      "domain": "www.donovanhealth.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-02-21 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "Healing Frequencies Music",
+    "url": "https://www.youtube.com/playlist?list=PLZCjSAnJZ-awgxUCP0fetCJ0Bu93RiwBA",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "4.6M+ followers",
+    "website_name": "YouTube · Music for Body and Spirit - Meditation Music",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "432Hz + 528Hz + 1111Hz | Deep Healing Frequencies: Whole Body Regeneration, DNA Repair. Music for Body and Spirit - Meditation Music. 21K views • 3 months ago. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "432Hz + 528Hz + 1111Hz"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.youtube.com/playlist?list=PLZCjSAnJZ-awgxUCP0fetCJ0Bu93RiwBA#:~:text=432Hz%20%2B%20528Hz%20%2B%201111Hz,views%20%E2%80%A2%203%20months%20ago",
+      "domain": "www.youtube.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[20]/div[1]/div[1]",
+    "domain": "evoluteur.github.io",
+    "title": "Healing Frequencies Scale: 0 to 4225 Hz",
+    "url": "https://evoluteur.github.io/healing-frequencies/healing-frequencies-scale.html",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://evoluteur.github.io › healing-frequencies › healin...",
+    "website_name": "Olivier Giulieri",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Healing: Blood circulation, sleep, and stress relief. 128 Hz. Otto: Joints mobility. Ohm: Mid Ohm. Chakra: Heart (Anahata). 136.1 Hz. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "128 Hz"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://evoluteur.github.io/healing-frequencies/healing-frequencies-scale.html#:~:text=Healing%3A%20Blood%20circulation%2C%20sleep%2C%20and,136.1%20Hz",
+      "domain": "evoluteur.github.io"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Healing Frequencies book",
+     "Healing frequencies study",
+     "Healing solfeggio frequencies healing frequencies",
+     "Full Body healing Frequency 528 Hz",
+     "Full Body Healing frequencies",
+     "Do healing frequencies work",
+     "Healing Frequencies machine",
+     "Healing frequencies music"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

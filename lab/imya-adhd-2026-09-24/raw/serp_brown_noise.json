@@ -1,0 +1,540 @@
+[
+ {
+  "keyword": "brown noise",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=brown%20noise&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-24 20:24:29 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "video",
+   "people_also_ask",
+   "organic",
+   "related_searches",
+   "knowledge_graph"
+  ],
+  "se_results_count": 107,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Jason Lewis - Mind Amend",
+      "title": "Smoothed Brown Noise 8-Hours - Remastered, for Relaxation ...",
+      "timestamp": "2017-11-17 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=RqzGzwTY-6w"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Jason Lewis - Mind Amend",
+      "title": "Super Deep Smoothed Brown Noise - 12 Hours",
+      "timestamp": "2022-06-21 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=P48QELwruQs"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Mindful Frequencies Lab",
+      "title": "Academic Brown | 8 hr | Brown Noise: A Sonic Wellness Journey",
+      "timestamp": "2023-02-05 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=0GDfOAuUvQ0"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "Sleep, Study, Focus | Super Smooth & Deep Brown Noise",
+      "timestamp": "2025-03-12 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=gJnxtjE1FY0"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What exactly is brown noise?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Is it okay to listen to brown noise all night?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What are the four types of noise?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is brown noise ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[2]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "Brown Noise | Spotify Playlist",
+    "url": "https://open.spotify.com/playlist/37i9dQZF1DX4hpot8sYudB",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › playlist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Soothing, low frequencies for relaxation, meditation or sleep. Spotify. 1,371,381 saves. Amber Dusk · Caelestis Nati · Swell Brown Tone. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Soothing, low frequencies for relaxation, meditation or sleep"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://open.spotify.com/playlist/37i9dQZF1DX4hpot8sYudB#:~:text=Soothing%2C%20low%20frequencies%20for%20relaxation%2C,Swell%20Brown%20Tone",
+      "domain": "open.spotify.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+    "domain": "en.wikipedia.org",
+    "title": "Brownian noise",
+    "url": "https://en.wikipedia.org/wiki/Brownian_noise",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://en.wikipedia.org › wiki › Brownian_noise",
+    "website_name": "Wikipedia",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "In acoustics, this translates to a sound that is heavily weighted towards low frequencies, producing a deep, muffled roar. Brown noise. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "a sound that is heavily weighted towards low frequencies"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://en.wikipedia.org/wiki/Brownian_noise#:~:text=In%20acoustics%2C%20this%20translates%20to,Brown%20noise",
+      "domain": "en.wikipedia.org"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]",
+    "domain": "music.amazon.com",
+    "title": "Brown Noise Sleep Sounds Podcast",
+    "url": "https://music.amazon.com/podcasts/fc3701ff-c706-4f8d-94ed-b9380cfd4bae/brown-noise-sleep-sounds",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://music.amazon.com › podcasts › brown-noise-sle...",
+    "website_name": "Amazon Music",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Welcome to the Brown Noise Sleep Sounds Podcast – your audio companion for sleep, relaxation, and focus. Here you'll find brown noise, white noise, pink noise ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "brown noise"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]",
+    "domain": "health.clevelandclinic.org",
+    "title": "Brown Noise May Help You Focus and Relax",
+    "url": "https://health.clevelandclinic.org/brown-noise",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://health.clevelandclinic.org › brown-noise",
+    "website_name": "Cleveland Clinic Health Essentials",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Mar 28, 2024 — Brown noise has louder low frequencies and softer high frequencies for balanced sounds like waterfalls, which may help with focus",
+    "pre_snippet": "03/28/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Brown noise has louder low frequencies and softer high frequencies"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-03-28 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]",
+    "domain": "music.youtube.com",
+    "title": "YouTube Music",
+    "url": "https://music.youtube.com/search?q=brown+noise",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://music.youtube.com › search › q=brown+noise",
+    "website_name": "YouTube Music",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Brown Noise for Sleep (10 Hours ) Natural Noise Blocker | Relaxing Sounds for Insomnia, Tinnitus, Soothe a Baby, Stress Relief, Concentration or Study. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Brown Noise for Sleep (10 Hours"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://music.youtube.com/search?q=brown+noise#:~:text=Brown%20Noise%20for%20Sleep%20(10,Stress%20Relief%2C%20Concentration%20or%20Study",
+      "domain": "music.youtube.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "Deep Sleep Brown Noise | 8 Hours Black Screen",
+    "url": "https://www.youtube.com/watch?v=ilPJFHBlsPY&vl=en",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "455.5K+ views  ·  3 years ago",
+    "website_name": "YouTube · 닥터지노 Dr Jino",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "This 8 hour brown noise recording provides a smooth low-frequency sound designed to support deep sleep, focus, relaxation, and concentration.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "provides a smooth low-frequency sound"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2022-11-20 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+    "domain": "draxe.com",
+    "title": "What Is Brown Noise? Benefits and How to Use It for Better ...",
+    "url": "https://draxe.com/health/brown-noise/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://draxe.com › Health",
+    "website_name": "Dr. Axe",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jan 3, 2024 — There's evidence that brown noise benefits include promoting relaxation, sleep quality and focus. Learn how it differs from white and pink ...",
+    "pre_snippet": "01/03/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "brown noise benefits include promoting relaxation, sleep quality and focus"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-01-03 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[20]/div[1]/div[1]",
+    "domain": "www.relaxingwhitenoise.com",
+    "title": "Brown Noise | Sleep, Study, Focus | 8 Hour Super Smooth ...",
+    "url": "https://www.relaxingwhitenoise.com/brown-noise-sleep-study-focus-8-hour-super-smooth-deep-brown-noise/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.relaxingwhitenoise.com › Episodes",
+    "website_name": "relaxingwhitenoise.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "May 4, 2025 — This brown noise (or Brownian noise!) is super smooth and a lot deeper than our typical white noise to sleep, really helping to cover up outside ... Read more",
+    "pre_snippet": "05/04/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4,
+     "votes_count": 97,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "super smooth and a lot deeper than our typical white noise to sleep"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.relaxingwhitenoise.com/brown-noise-sleep-study-focus-8-hour-super-smooth-deep-brown-noise/#:~:text=This%20brown%20noise%20(or%20Brownian,distractions%20that%20keep%20you%20awake.",
+      "domain": "www.relaxingwhitenoise.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-05-04 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Brown noise machine",
+     "Brown noise for sleeping",
+     "What is brown noise vs white noise",
+     "Brown noise frequency",
+     "12 Hour Brown Noise MP3",
+     "Brown noise Deep sleep",
+     "Brown Noise for studying MP3 download",
+     "Brown noise tinnitus"
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "knowledge_graph",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "right",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]",
+    "title": "Brownian noise",
+    "subtitle": null,
+    "description": "In science, Brownian noise, also known as Brown noise or red noise, is the type of signal noise produced by Brownian motion, hence its alternative name of random walk noise. Source: More Less Description",
+    "card_id": null,
+    "url": null,
+    "image_url": "https://api.dataforseo.com/cdn/i/09242024-2042-0139-0000-b2e4d3353451:0",
+    "logo_url": null,
+    "cid": null,
+    "items": [
+     {
+      "type": "knowledge_graph_description_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+      "text": "In science, Brownian noise, also known as Brown noise or red noise, is the type of signal noise produced by Brownian motion, hence its alternative name of random walk noise. Source: Wikipedia Wikipedia More Less Description",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Brownian_noise",
+        "domain": "en.wikipedia.org",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/visd-inline-description[1]/div[1]/div[1]/a[1]"
+       },
+       {
+        "type": "link_element",
+        "title": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Brownian_noise",
+        "domain": "en.wikipedia.org",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/visd-inline-description[1]/div[1]/span[2]/span[1]/span[1]/a[1]"
+       }
+      ],
+      "rectangle": null
+     }
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

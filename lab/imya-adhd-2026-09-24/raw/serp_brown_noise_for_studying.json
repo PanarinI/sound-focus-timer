@@ -1,0 +1,406 @@
+[
+ {
+  "keyword": "brown noise for studying",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=brown%20noise%20for%20studying&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 17:40:39 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "video",
+   "people_also_ask",
+   "organic",
+   "related_searches"
+  ],
+  "se_results_count": 107,
+  "pages_count": 1,
+  "items_count": 9,
+  "items": [
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Jason Lewis - Mind Amend",
+      "title": "Smoothed Brown Noise 8-Hours - Remastered, for Relaxation ...",
+      "timestamp": "2017-11-17 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=RqzGzwTY-6w"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Jason Lewis - Mind Amend",
+      "title": "Super Deep Smoothed Brown Noise - 12 Hours",
+      "timestamp": "2022-06-21 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=P48QELwruQs"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Mindful Frequencies Lab",
+      "title": "Academic Brown | 8 hr | Brown Noise: A Sonic Wellness Journey",
+      "timestamp": "2023-02-05 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=0GDfOAuUvQ0"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "Sleep, Study, Focus | Super Smooth & Deep Brown Noise",
+      "timestamp": "2025-03-12 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=gJnxtjE1FY0"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "Is brown noise good for studying?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What color noise is best for studying?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Do people with ADHD like brown noise?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Which noise is best for studying ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "brown noise for studying 🎧🦉 - playlist by Maira",
+    "url": "https://open.spotify.com/playlist/25u3wuY2IcmOSaq1FTPLg5",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › playlist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "brown noise for studying ; Lush Brown Noise · A Dreaming Machine ; Dark Brown Noise · Grey Sample Library ; Hora De Acostarse · Hz Catchers ; Brown Noise Ocean. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "brown noise for studying"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://open.spotify.com/playlist/25u3wuY2IcmOSaq1FTPLg5#:~:text=brown%20noise%20for%20studying%20%F0%9F%8E%A7%F0%9F%A6%89&text=Lush%20Brown%20Noise,A%20Dreaming%20Machine&text=Dark%20Brown%20Noise,Grey%20Sample%20Library&text=Hora%20De%20Acostarse,Hz%20Catchers&text=Brown%20Noise%20Ocean",
+      "domain": "open.spotify.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+    "domain": "www.relaxingwhitenoise.com",
+    "title": "Brown Noise | Sleep, Study, Focus | 8 Hour Super Smooth ...",
+    "url": "https://www.relaxingwhitenoise.com/brown-noise-sleep-study-focus-8-hour-super-smooth-deep-brown-noise/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.relaxingwhitenoise.com › Episodes",
+    "website_name": "relaxingwhitenoise.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "May 4, 2025 — Brown noise can also help you focus better while studying or working, quieting busy thoughts and allowing your mind to concentrate on your tasks ... Read more",
+    "pre_snippet": "05/04/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4,
+     "votes_count": 97,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "Brown noise can also help you focus better while studying"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.relaxingwhitenoise.com/brown-noise-sleep-study-focus-8-hour-super-smooth-deep-brown-noise/#:~:text=Brown%20noise%20can%20also%20help,to%20concentrate%20on%20your%20tasks.",
+      "domain": "www.relaxingwhitenoise.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-05-04 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]",
+    "domain": "health.clevelandclinic.org",
+    "title": "Brown Noise May Help You Focus and Relax",
+    "url": "https://health.clevelandclinic.org/brown-noise",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://health.clevelandclinic.org › brown-noise",
+    "website_name": "Cleveland Clinic Health Essentials",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Mar 28, 2024 — Brown noise has louder low frequencies and softer high frequencies for balanced sounds like waterfalls, which may help with focus",
+    "pre_snippet": "03/28/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Brown noise has louder low frequencies and softer high frequencies"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-03-28 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "Brown Noise for Focus & Studying (3 Hours of Deep ...",
+    "url": "https://open.spotify.com/episode/0caAYdexV8yJen2dPzs1hQ",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › episode",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Nov 26, 2025 — This steady, low-frequency sound creates a warm audio blanket that helps you stay focused, block out background noise, and stay locked in while ...",
+    "pre_snippet": "11/26/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "warm audio blanket that helps you stay focused"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-11-26 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]",
+    "domain": "brownnoise.com",
+    "title": "Brown Noise Generator – Free, No Ads | BrownNoise.com",
+    "url": "https://brownnoise.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://brownnoise.com",
+    "website_name": "BrownNoise.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Brown noise is a deep, steady sound. so many people play brown noise for sleep and study. It is also a favorite for studying, coding, and long writing sessions.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Brown noise is a deep, steady sound"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[15]/div[1]/div[1]",
+    "domain": "pixabay.com",
+    "title": "Free Brown-Noise Sound Effects Download",
+    "url": "https://pixabay.com/sound-effects/search/brown-noise/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://pixabay.com › sound-effects › search › brown-n...",
+    "website_name": "Pixabay",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "7,269 royalty-free brown-noise sound effects. Download brown-noise royalty-free sound effects to use in your next project. Royalty-free sound effects. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Download brown-noise royalty-free sound effects"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://pixabay.com/sound-effects/search/brown-noise/#:~:text=7%2C269%20royalty-free%20brown-noise%20sound%20effects,Royalty-free%20sound%20effects",
+      "domain": "pixabay.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Brown Noise for studying MP3 download",
+     "Brown noise for sleeping",
+     "Brown noise for studying reddit",
+     "Brown noise for studying youtube",
+     "Brown noise for studying no ads",
+     "Brown noise for studying Pomodoro",
+     "Brown noise for studying ADHD",
+     "12 Hour Brown Noise MP3"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

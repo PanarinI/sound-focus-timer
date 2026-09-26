@@ -1,0 +1,743 @@
+[
+ {
+  "keyword": "sound generator",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=sound%20generator&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-26 07:11:11 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "organic",
+   "people_also_ask",
+   "related_searches"
+  ],
+  "se_results_count": 199,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "domain": "www.szynalski.com",
+    "title": "Online Tone Generator",
+    "url": "https://www.szynalski.com/tone-generator/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.szynalski.com › tone-generator",
+    "website_name": "Tomasz P. Szynalski",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "To change the frequency, drag the slider or press ← → (arrow keys). To adjust the frequency by 1 Hz, use the buttons or press Shift + ← and Shift + → . Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": null,
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.szynalski.com/tone-generator/#:~:text=To%20change%20the%20frequency%2C%20drag,.",
+      "domain": "www.szynalski.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]",
+    "domain": "onlinetonegenerator.com",
+    "title": "Online Tone Generator - Free, Simple and Easy to Use",
+    "url": "https://onlinetonegenerator.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://onlinetonegenerator.com",
+    "website_name": "onlinetonegenerator.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Simply enter your desired frequency and press play. The tone generator can play four different waveforms: Sine, Square, Sawtooth and Triangle.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Simply enter your desired frequency and press play"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Multiple Tone Generator",
+      "description": null,
+      "url": "https://onlinetonegenerator.com/multiple-tone-generator.html",
+      "domain": "onlinetonegenerator.com"
+     },
+     {
+      "type": "link_element",
+      "title": "Voice Generator",
+      "description": null,
+      "url": "https://onlinetonegenerator.com/voice-generator.html",
+      "domain": "onlinetonegenerator.com"
+     },
+     {
+      "type": "link_element",
+      "title": "Sweep Generator",
+      "description": null,
+      "url": "https://onlinetonegenerator.com/frequency-sweep-generator.html",
+      "domain": "onlinetonegenerator.com"
+     },
+     {
+      "type": "link_element",
+      "title": "Alarm Generator",
+      "description": null,
+      "url": "https://onlinetonegenerator.com/alarm-generator.html",
+      "domain": "onlinetonegenerator.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+    "domain": "elevenlabs.io",
+    "title": "Free AI Sound Effect Generator | Text to Sound Effects",
+    "url": "https://elevenlabs.io/sound-effects",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://elevenlabs.io › ElevenCreative",
+    "website_name": "ElevenLabs",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Generate any sound imaginable from a text prompt with our AI sound effect generator. Create royalty free sound effects, and ambient audio.",
+    "pre_snippet": null,
+    "extended_snippet": "4.8(20,937)  · Free · ‎Multimedia",
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4.8,
+     "votes_count": 20937,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "Generate any sound imaginable from a text prompt"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "A sound generator is `a device or software that creates audio frequencies, electronic waveforms, or simulated acoustic effects for testing, music production, or ambient masking`.\n\nYou can use a free web browser tool like the [Online Tone Generator](https://onlinetonegenerator.com/) to instantly play specific frequencies and test audio equipment or your hearing.[[1]](https://www.onlinemictest.com/tone-generator/)[[2]](https://hzgenerator.com/)\n\n### Types of Sound Generators\n\n- **Frequency & Tone Generators:** Software or hardware that outputs precise mathematical waveforms like sine, square, triangle, or sawtooth waves.\n- **AI Sound Effect Generators:** Tools that turn text prompts into realistic environmental noises, cinematic sounds, or audio samples.\n- **Physical Noise Machines:** Dedicated hardware (such as fan-based white noise units) used for sleep therapy and blocking distractions.[[1]](https://onlinetonegenerator.com/)[[2]](https://www.google.com/search?q=product&prds=pvt:hg,productid:15185905367632991602,catalogid:9152072550518833653,gpcid:4740159981333835276,mid:576462869032811535&ibp=oshop)[[3]](https://lalals.com/sound-fx)[[4]](https://www.google.com/search?q=product&prds=pvt:hg,productid:16886920324146986616,catalogid:3985344906954448184,gpcid:13356204108310676004,mid:576462774757134093&ibp=oshop)\n\n### Common Uses\n\n- **Audio Testing:** Calibrating speakers, headphones, amplifiers, and recording gear.\n- **Health & Wellness:** Masking tinnitus ringing or playing soothing frequencies for meditation.\n- **Creative Media:** Generating custom sound effects and Foley audio for video games and film.[[1]](https://lalals.com/sound-fx)[[2]](https://hzgenerator.com/)[[3]](https://mynoise.net/NoiseMachines/binauralBrainwaveGenerator.php)\n\nSee how you can build a simple physical audio oscillator using basic electronic components:\n\n![](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLCRdms1r6QaTcppd7h2GSrKzRzEE4HCvZ96WiLxTxRPk_vOcR)\n1m\n[](https://www.youtube.com/watch?v=wG8S_rGd80c&t=7) DIY Sound Generator Using 555 Timer 1.8K views  · 3 years ago![](https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.youtube.com&amp;client=AIM&amp;size=16&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL)\nYouTube · Tech Insert\n\nIf you want to narrow this down, tell me:\n\n- Are you looking for a **software/online tool** or a **physical device**?\n- What is your **specific project or goal** (testing audio, sleeping, music production)?",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "A sound generator is a device or software that creates audio frequencies, electronic waveforms, or simulated acoustic effects for testing, music production, or ambient masking.",
+      "markdown": "A sound generator is `a device or software that creates audio frequencies, electronic waveforms, or simulated acoustic effects for testing, music production, or ambient masking`.",
+      "links": null,
+      "images": null,
+      "references": null
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "You can use a free web browser tool like the Online Tone Generator to instantly play specific frequencies and test audio equipment or your hearing.",
+      "markdown": "You can use a free web browser tool like the [Online Tone Generator](https://onlinetonegenerator.com/) to instantly play specific frequencies and test audio equipment or your hearing.[[1]](https://www.onlinemictest.com/tone-generator/)[[2]](https://hzgenerator.com/)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Online Tone Generator",
+        "description": null,
+        "url": "https://onlinetonegenerator.com/",
+        "domain": "onlinetonegenerator.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Online Mic Test",
+        "domain": "www.onlinemictest.com",
+        "url": "https://www.onlinemictest.com/tone-generator/",
+        "title": "Online Tone Generator - Play any tone or frequency",
+        "text": "An online mic test tone generator can be used for a variety of purposes: * **Testing musical equipment** * **Tuning instruments** ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "HzGenerator",
+        "domain": "hzgenerator.com",
+        "url": "https://hzgenerator.com/",
+        "title": "Hz Generator",
+        "text": "Use of Tone Generator •Hearing tests — play specific frequencies to check your hearing range or identify tones your ears struggle ..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Types of Sound Generators",
+      "text": "Frequency & Tone Generators: Software or hardware that outputs precise mathematical waveforms like sine, square, triangle, or sawtooth waves. AI Sound Effect Generators: Tools that turn text prompts into realistic environmental noises, cinematic sounds, or audio samples. Physical Noise Machines: Dedicated hardware (such as fan-based white noise units) used for sleep therapy and blocking distractions.",
+      "markdown": "- **Frequency & Tone Generators:** Software or hardware that outputs precise mathematical waveforms like sine, square, triangle, or sawtooth waves.\n- **AI Sound Effect Generators:** Tools that turn text prompts into realistic environmental noises, cinematic sounds, or audio samples.\n- **Physical Noise Machines:** Dedicated hardware (such as fan-based white noise units) used for sleep therapy and blocking distractions.[[1]](https://onlinetonegenerator.com/)[[2]](https://www.google.com/search?q=product&prds=pvt:hg,productid:15185905367632991602,catalogid:9152072550518833653,gpcid:4740159981333835276,mid:576462869032811535&ibp=oshop)[[3]](https://lalals.com/sound-fx)[[4]](https://www.google.com/search?q=product&prds=pvt:hg,productid:16886920324146986616,catalogid:3985344906954448184,gpcid:13356204108310676004,mid:576462774757134093&ibp=oshop)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "onlinetonegenerator.com",
+        "domain": "onlinetonegenerator.com",
+        "url": "https://onlinetonegenerator.com/",
+        "title": "Online Tone Generator - Free, Simple and Easy to Use",
+        "text": "Online Tone Generator. Free, Simple and Easy to Use. Simply enter your desired frequency and press play. You will hear a pure tone..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Google",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:15185905367632991602,catalogid:9152072550518833653,gpcid:4740159981333835276,mid:576462869032811535&ibp=oshop",
+        "title": "Audio Function Generator",
+        "text": "The SISCO audio function generator that operates in the 20Hz to 20kHz range is a versatile tool for generating audio signals acros..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Lalals",
+        "domain": "lalals.com",
+        "url": "https://lalals.com/sound-fx",
+        "title": "AI Sound Generator | Sound Effects, Samples & Loops",
+        "text": "All you need to know about Sound Fx. * What is an AI sound effects generator? An AI sound effects generator is a tool that uses ar..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Google",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:16886920324146986616,catalogid:3985344906954448184,gpcid:13356204108310676004,mid:576462774757134093&ibp=oshop",
+        "title": "Dohm Classic White Noise Machine Sound",
+        "text": "Beloved by generations since 1962, the Dohm Classic is the original white noise machine. The Classic model features our fan-based ..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Common Uses",
+      "text": "Audio Testing: Calibrating speakers, headphones, amplifiers, and recording gear. Health & Wellness: Masking tinnitus ringing or playing soothing frequencies for meditation. Creative Media: Generating custom sound effects and Foley audio for video games and film.",
+      "markdown": "- **Audio Testing:** Calibrating speakers, headphones, amplifiers, and recording gear.\n- **Health & Wellness:** Masking tinnitus ringing or playing soothing frequencies for meditation.\n- **Creative Media:** Generating custom sound effects and Foley audio for video games and film.[[1]](https://lalals.com/sound-fx)[[2]](https://hzgenerator.com/)[[3]](https://mynoise.net/NoiseMachines/binauralBrainwaveGenerator.php)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Lalals",
+        "domain": "lalals.com",
+        "url": "https://lalals.com/sound-fx",
+        "title": "AI Sound Generator | Sound Effects, Samples & Loops",
+        "text": "All you need to know about Sound Fx. * What is an AI sound effects generator? An AI sound effects generator is a tool that uses ar..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "HzGenerator",
+        "domain": "hzgenerator.com",
+        "url": "https://hzgenerator.com/",
+        "title": "Hz Generator",
+        "text": "Use of Tone Generator •Hearing tests — play specific frequencies to check your hearing range or identify tones your ears struggle ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "myNoise",
+        "domain": "mynoise.net",
+        "url": "https://mynoise.net/NoiseMachines/binauralBrainwaveGenerator.php",
+        "title": "The Ultimate Binaural Beat Generator — Online & Free",
+        "text": "Binaural Beats Most binaural beat generators online rely on just two carrier tones, one per ear. Here, we use ten. This creates la..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "See how you can build a simple physical audio oscillator using basic electronic components: 1m DIY Sound Generator Using 555 Timer 1.8K views · 3 years ago YouTube · Tech Insert",
+      "markdown": "See how you can build a simple physical audio oscillator using basic electronic components:\n\n![](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLCRdms1r6QaTcppd7h2GSrKzRzEE4HCvZ96WiLxTxRPk_vOcR)\n1m\n[](https://www.youtube.com/watch?v=wG8S_rGd80c&t=7) DIY Sound Generator Using 555 Timer 1.8K views  · 3 years ago![](https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.youtube.com&amp;client=AIM&amp;size=16&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL)\nYouTube · Tech Insert",
+      "links": null,
+      "images": null,
+      "references": null
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "If you want to narrow this down, tell me:Are you looking for a software/online tool or a physical device ?\nWhat is your specific project or goal (testing audio, sleeping, music production)?",
+      "markdown": "If you want to narrow this down, tell me:\n\n- Are you looking for a **software/online tool** or a **physical device**?\n- What is your **specific project or goal** (testing audio, sleeping, music production)?",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "onlinetonegenerator.com",
+      "domain": "onlinetonegenerator.com",
+      "url": "https://onlinetonegenerator.com/",
+      "title": "Online Tone Generator - Free, Simple and Easy to Use",
+      "text": "Online Tone Generator. Free, Simple and Easy to Use. Simply enter your desired frequency and press play. You will hear a pure tone..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Lalals",
+      "domain": "lalals.com",
+      "url": "https://lalals.com/sound-fx",
+      "title": "AI Sound Generator | Sound Effects, Samples & Loops",
+      "text": "All you need to know about Sound Fx. * What is an AI sound effects generator? An AI sound effects generator is a tool that uses ar..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "HzGenerator",
+      "domain": "hzgenerator.com",
+      "url": "https://hzgenerator.com/",
+      "title": "Hz Generator",
+      "text": "Use of Tone Generator •Hearing tests — play specific frequencies to check your hearing range or identify tones your ears struggle ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "myNoise",
+      "domain": "mynoise.net",
+      "url": "https://mynoise.net/NoiseMachines/binauralBrainwaveGenerator.php",
+      "title": "The Ultimate Binaural Beat Generator — Online & Free",
+      "text": "Binaural Beats Most binaural beat generators online rely on just two carrier tones, one per ear. Here, we use ten. This creates la..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Online Mic Test",
+      "domain": "www.onlinemictest.com",
+      "url": "https://www.onlinemictest.com/tone-generator/",
+      "title": "Online Tone Generator - Play any tone or frequency",
+      "text": "An online mic test tone generator can be used for a variety of purposes: * **Testing musical equipment** * **Tuning instruments** ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Google",
+      "domain": "www.google.com",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:15185905367632991602,catalogid:9152072550518833653,gpcid:4740159981333835276,mid:576462869032811535&ibp=oshop",
+      "title": "Audio Function Generator",
+      "text": "The SISCO audio function generator that operates in the 20Hz to 20kHz range is a versatile tool for generating audio signals acros..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Google",
+      "domain": "www.google.com",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:16886920324146986616,catalogid:3985344906954448184,gpcid:13356204108310676004,mid:576462774757134093&ibp=oshop",
+      "title": "Dohm Classic White Noise Machine Sound",
+      "text": "Beloved by generations since 1962, the Dohm Classic is the original white noise machine. The Classic model features our fan-based ..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What is a sound generator used for?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "How can I generate audio frequencies?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Is there a free AI sound generator?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What type of generator is best for a sound system?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+    "domain": "play.google.com",
+    "title": "Frequency Sound Generator - Apps on Google Play",
+    "url": "https://play.google.com/store/apps/details?id=com.luxdelux.frequencygenerator&hl=en_US",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://play.google.com › store › apps › details › id=com...",
+    "website_name": "Google Play",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Dec 22, 2025 — Frequency Generator Sound player lets you generate a sine, square, sawtooth or triangle sound wave with a frequency between 1Hz and 22000Hz ( ...",
+    "pre_snippet": "12/22/2025 00:00:00",
+    "extended_snippet": "4.6(49,270)  · Free · ‎Android · ‎Utilities/Tools",
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4.6,
+     "votes_count": 49270,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "Frequency Generator Sound player"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-12-22 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+    "domain": "hzgenerator.com",
+    "title": "Hz Generator: Online Tone Generator",
+    "url": "https://hzgenerator.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://hzgenerator.com",
+    "website_name": "HzGenerator",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Easily generate tones and frequencies online with our free Hz generator. The best online tone generator for sound testing, audio experiments, and more.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Easily generate tones and frequencies online"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]",
+    "domain": "en.wikipedia.org",
+    "title": "Sound generator",
+    "url": "https://en.wikipedia.org/wiki/Sound_generator",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://en.wikipedia.org › wiki › Sound_generator",
+    "website_name": "Wikipedia",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "A sound generator is a vibrating object which produces a sound. There are two main kinds of sound generators (thus, two main kinds of musical instruments). Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "vibrating object which produces a sound"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://en.wikipedia.org/wiki/Sound_generator#:~:text=A%20sound%20generator%20is%20a,main%20kinds%20of%20musical%20instruments).",
+      "domain": "en.wikipedia.org"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "www.adobe.com",
+    "title": "Free AI Sound Effect Generator | Adobe Firefly",
+    "url": "https://www.adobe.com/products/firefly/features/sound-effect-generator.html",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.adobe.com › ... › Adobe Firefly › Features",
+    "website_name": "Adobe",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Create custom audio with the free AI sound effect generator from Adobe Firefly. Generate high-quality sound effects for your videos, podcasts, and more.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "free AI sound effect generator"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+    "domain": "morphic.com",
+    "title": "AI audio generator - Royalty-Free Sound Effects",
+    "url": "https://morphic.com/resources/tools/ai-audio-generator",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://morphic.com › resources › tools › ai-audio-gene...",
+    "website_name": "Morphic",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Generate AI sound effects and ambient audio free. Unlimited sounds, royalty-free downloads for videos, games, and podcasts.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Generate AI sound effects and ambient audio"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 9,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[20]/div[1]/div[1]",
+    "domain": "www.microsoft.com",
+    "title": "Sound Generator - Download and install on Windows",
+    "url": "https://www.microsoft.com/en-ag/p/sound-generator/9nccv1h94fml",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.microsoft.com › en-ag › sound-generator",
+    "website_name": "Microsoft",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sound generator with 3 oscillators. Real time controls. Save and load sounds. Smooth frequency change! Frequency Sound Generator is a simple wave form sound ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Sound generator with 3 oscillators"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.microsoft.com/en-ag/p/sound-generator/9nccv1h94fml#:~:text=Sound%20generator%20with%203%20oscillators.,form%20sound%20generator%20and%20oscillator.",
+      "domain": "www.microsoft.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Sound Generator app",
+     "Sound generator Hz",
+     "Sound generator AI",
+     "Sound generator online",
+     "Frequency sound generator",
+     "High frequency sound generator",
+     "50000 Hz sound generator",
+     "AI sound generator free"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

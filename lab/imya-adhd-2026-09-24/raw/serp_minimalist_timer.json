@@ -1,0 +1,1057 @@
+[
+ {
+  "keyword": "minimalist timer",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=minimalist%20timer&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-24 18:19:22 +00:00",
+  "spell": null,
+  "refinement_chips": {
+   "type": "refinement_chips",
+   "xpath": "/html[1]/body[1]/div[3]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]",
+   "items": [
+    {
+     "type": "refinement_chips_element",
+     "title": "Online",
+     "url": "https://www.google.com/search?q=online+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyCggSEgZPbmxpbmVgAQ&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAF6BAgmEDk",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Alarm Clocks",
+     "url": "https://www.google.com/search?q=alarm+clocks+minimalist+timer&hl=en&gl=US&shoprs=GAkqEG1pbmltYWxpc3QgdGltZXIyEAgJEgxBbGFybSBDbG9ja3NgAQ&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAJ6BAgmEDo",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Black",
+     "url": "https://www.google.com/search?q=black+minimalist+timer&hl=en&gl=US&shoprs=GAEqEG1pbmltYWxpc3QgdGltZXIyFwgBEgVCbGFjazoMCNiM9QEQ5Yr1ATALWIu7IGAB&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAN6BAgmEDs",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "On sale",
+     "url": "https://www.google.com/search?q=minimalist+timer+sale&hl=en&gl=US&shoprs=EgRKAhgBGAYqEG1pbmltYWxpc3QgdGltZXIyEwgGEgdPbiBzYWxlGAIiBEoCGAFYi7sgYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAR6BAgmEDw",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Music",
+     "url": "https://www.google.com/search?q=music+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyCQgSEgVNdXNpY2AB&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAV6BAgmED0",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Pink",
+     "url": "https://www.google.com/search?q=pink+minimalist+timer&hl=en&gl=US&shoprs=GAEqEG1pbmltYWxpc3QgdGltZXIyFggBEgRQaW5rOgwI2Iz1ARDpivUBMAtYi7sgYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAZ6BAgmED4",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Outlet Timers",
+     "url": "https://www.google.com/search?q=outlet+timers+minimalist+timer&hl=en&gl=US&shoprs=GAkqEG1pbmltYWxpc3QgdGltZXIyEQgJEg1PdXRsZXQgVGltZXJzYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAd6BAgmED8",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Free",
+     "url": "https://www.google.com/search?q=free+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyCAgSEgRGcmVlYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAh6BAgmEEA",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "White",
+     "url": "https://www.google.com/search?q=white+minimalist+timer&hl=en&gl=US&shoprs=GAEqEG1pbmltYWxpc3QgdGltZXIyFwgBEgVXaGl0ZToMCNiM9QEQoYv1ATALWIu7IGAB&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAl6BAgmEEE",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Reviews",
+     "url": "https://www.google.com/search?q=reviews+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyCwgSEgdSZXZpZXdzYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAp6BAgmEEI",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Hourglasses",
+     "url": "https://www.google.com/search?q=hourglasses+minimalist+timer&hl=en&gl=US&shoprs=GAkqEG1pbmltYWxpc3QgdGltZXIyDwgJEgtIb3VyZ2xhc3Nlc2AB&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAt6BAgmEEM",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Blue",
+     "url": "https://www.google.com/search?q=blue+minimalist+timer&hl=en&gl=US&shoprs=GAEqEG1pbmltYWxpc3QgdGltZXIyFggBEgRCbHVlOgwI2Iz1ARDmivUBMAtYi7sgYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKAx6BAgmEEQ",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Under $25",
+     "url": "https://www.google.com/search?q=minimalist+timer+under+$25&hl=en&gl=US&shoprs=Eg0SCxEAAAAAhNd3QRgBGAUqEG1pbmltYWxpc3QgdGltZXIyIggFEglVbmRlciAkMjUYAiINEgsRAAAAAITXd0EYASoCGAFYi7sgYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKA16BAgmEEU",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Green",
+     "url": "https://www.google.com/search?q=green+minimalist+timer&hl=en&gl=US&shoprs=GAEqEG1pbmltYWxpc3QgdGltZXIyFwgBEgVHcmVlbjoMCNiM9QEQ6Ir1ATALWIu7IGAB&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKA56BAgmEEY",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Buy",
+     "url": "https://www.google.com/search?q=buy+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyBwgSEgNCdXlgAQ&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKA96BAgmEEc",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Small",
+     "url": "https://www.google.com/search?q=small+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyCQgSEgVTbWFsbGAB&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBB6BAgmEEg",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Digital",
+     "url": "https://www.google.com/search?q=digital+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyCwgSEgdEaWdpdGFsYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBF6BAgmEEk",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Images",
+     "url": "https://www.google.com/search?q=images+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyCggSEgZJbWFnZXNgAQ&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBJ6BAgmEEo",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Meaning",
+     "url": "https://www.google.com/search?q=meaning+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyCwgSEgdNZWFuaW5nYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBN6BAgmEEs",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Woman",
+     "url": "https://www.google.com/search?q=woman+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyCQgSEgVXb21hbmAB&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBR6BAgmEEw",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Target",
+     "url": "https://www.google.com/search?q=target+minimalist+timer&hl=en&gl=US&shoprs=GAIqEG1pbmltYWxpc3QgdGltZXIyCggCEgZUYXJnZXRYi7sgYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBV6BAgmEE0",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Professional",
+     "url": "https://www.google.com/search?q=professional+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyEAgSEgxQcm9mZXNzaW9uYWxgAQ&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBZ6BAgmEE8",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "For Sale",
+     "url": "https://www.google.com/search?q=minimalist+timer+for+sale&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyDAgSEghGb3IgU2FsZWAB&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBd6BAgmEFA",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Face",
+     "url": "https://www.google.com/search?q=face+minimalist+timer&hl=en&gl=US&shoprs=GBIqEG1pbmltYWxpc3QgdGltZXIyCAgSEgRGYWNlYAE&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBh6BAgmEFE",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Home Depot",
+     "url": "https://www.google.com/search?q=home+depot+minimalist+timer&hl=en&gl=US&shoprs=GAIqEG1pbmltYWxpc3QgdGltZXIyDggCEgpIb21lIERlcG90WIu7IGAB&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBl6BAgmEFI",
+     "domain": "www.google.com",
+     "options": null
+    },
+    {
+     "type": "refinement_chips_element",
+     "title": "Walmart",
+     "url": "https://www.google.com/search?q=walmart+minimalist+timer&hl=en&gl=US&shoprs=GAIqEG1pbmltYWxpc3QgdGltZXIyCwgCEgdXYWxtYXJ0WIu7IGAB&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4Qip4GKBp6BAgmEFQ",
+     "domain": "www.google.com",
+     "options": null
+    }
+   ]
+  },
+  "item_types": [
+   "ai_overview",
+   "organic",
+   "popular_products",
+   "related_searches"
+  ],
+  "se_results_count": 180,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "domain": "flocus.com",
+    "title": "Minimalist Pomodoro Timer",
+    "url": "https://flocus.com/minimalist-pomodoro-timer/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://flocus.com › minimalist-pomodoro-timer",
+    "website_name": "Flocus",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "A minimalist Pomodoro timer to keep you motivated and focused. Customize your focus timer and choose from minimalist themes.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "A minimalist Pomodoro timer"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]",
+    "domain": "flipclock.app",
+    "title": "Minimal Timer for Focus & Productivity - FlipClock",
+    "url": "https://flipclock.app/timer",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://flipclock.app › timer",
+    "website_name": "FlipClock Web",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Boost your productivity with the sleek, minimal FlipClock timer. Stay focused with customizable countdowns, time tracking, and elegant flip animations.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "sleek, minimal FlipClock timer"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "popular_products",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]",
+    "title": "Popular products",
+    "items": [
+     {
+      "type": "popular_products_element",
+      "title": "Flow Timer — Physical Pomodoro Timer | Minimal Desk Setups Midnight Black",
+      "url": null,
+      "domain": null,
+      "description": "Minimal Desk Setups",
+      "more_sellers": false,
+      "seller": "Minimal Desk Setups",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241819-2042-0139-0000-52a5095b5a64:0",
+      "price": {
+       "current": 69.99,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$69.99"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.8,
+       "votes_count": 98,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": null,
+       "data_docid": "404176531753572856",
+       "gid": null
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "ZONE Productivity Timer (Pre-Order)",
+      "url": null,
+      "domain": null,
+      "description": "New Things Lab B.V.\nFree delivery",
+      "more_sellers": false,
+      "seller": "New Things Lab B.V.",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241819-2042-0139-0000-52a5095b5a64:1",
+      "price": {
+       "current": 79,
+       "regular": 89,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$79.00 $89"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "11065764008337628337",
+       "data_docid": "15066687927615453003",
+       "gid": "16359478018224467882"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "TIME Timer Home MOD 60 Minute Kids Visual Timer Home Edition for Homeschool Supplies Study Tool, Timer for Kids Desk, Office Desk and Meetings",
+      "url": null,
+      "domain": null,
+      "description": "Target & more\nFree delivery on $35+",
+      "more_sellers": true,
+      "seller": "Target",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241819-2042-0139-0000-52a5095b5a64:2",
+      "price": {
+       "current": 19.95,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$19.95"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.6,
+       "votes_count": 181,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "1467109378951665607",
+       "data_docid": "2636372751069799247",
+       "gid": "12100708821807562974"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "FOCUS The 1% Mindful Timer for Productivity & Flow",
+      "url": null,
+      "domain": null,
+      "description": "The Head Plan",
+      "more_sellers": false,
+      "seller": "The Head Plan",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241819-2042-0139-0000-52a5095b5a64:3",
+      "price": {
+       "current": 26,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$26.00"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.7,
+       "votes_count": 81,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "15677974700305059462",
+       "data_docid": "10527977137290146862",
+       "gid": "11324798818151238474"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Caraway Mechanical Kitchen Timer",
+      "url": null,
+      "domain": null,
+      "description": "Caraway & more\nFree delivery on $90+",
+      "more_sellers": true,
+      "seller": "Caraway",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241819-2042-0139-0000-52a5095b5a64:4",
+      "price": {
+       "current": 40,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$40.00"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.5,
+       "votes_count": 215,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "445460716471012066",
+       "data_docid": "1211297950291013682",
+       "gid": "14912882770655418274"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Ticktime Pomodoro Timer Productivity Timer Cube Magnetic Flip Hexagon Timer",
+      "url": null,
+      "domain": null,
+      "description": "Ticktime Online Store & more\nFree delivery on $50+",
+      "more_sellers": true,
+      "seller": "Ticktime Online Store",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241819-2042-0139-0000-52a5095b5a64:5",
+      "price": {
+       "current": 32.99,
+       "regular": null,
+       "max_value": 65,
+       "currency": "USD",
+       "is_price_range": true,
+       "displayed_price": "$32.99 Usually $65"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 4.7,
+       "votes_count": 58,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "9602085372624857849",
+       "data_docid": "14159203027623821699",
+       "gid": "3976072566488798654"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "Time Timer Retro 8 inch Eco Edition Visual Timer 60 Minute Countdown Clock Made with at Least 20% Natural Plant Material",
+      "url": null,
+      "domain": null,
+      "description": "TimeTimer.com & more\nFree delivery on $100+",
+      "more_sellers": true,
+      "seller": "TimeTimer.com",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241819-2042-0139-0000-52a5095b5a64:6",
+      "price": {
+       "current": 27.95,
+       "regular": null,
+       "max_value": null,
+       "currency": "USD",
+       "is_price_range": false,
+       "displayed_price": "$27.95"
+      },
+      "rating": null,
+      "product_identifiers": {
+       "product_id": "641817033698217837",
+       "data_docid": "6057032512363704387",
+       "gid": "108349277086885147"
+      }
+     },
+     {
+      "type": "popular_products_element",
+      "title": "TimeStack Blue",
+      "url": null,
+      "domain": null,
+      "description": "ThermoWorks & more",
+      "more_sellers": true,
+      "seller": "ThermoWorks",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241819-2042-0139-0000-52a5095b5a64:7",
+      "price": {
+       "current": 44.85,
+       "regular": null,
+       "max_value": 55,
+       "currency": "USD",
+       "is_price_range": true,
+       "displayed_price": "$44.85 Usually $55"
+      },
+      "rating": {
+       "rating_type": "Max5",
+       "value": 5,
+       "votes_count": 3,
+       "rating_max": 5
+      },
+      "product_identifiers": {
+       "product_id": "2355748023061842052",
+       "data_docid": "2018535222052172613",
+       "gid": "4572656066835101510"
+      }
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+    "domain": "play.google.com",
+    "title": "Goodtime: Pomodoro Timer - Apps on Google Play",
+    "url": "https://play.google.com/store/apps/details?id=com.apps.adrcotfas.goodtime&hl=en_US",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://play.google.com › store › apps › details",
+    "website_name": "Google Play",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Goodtime is an indie open-source minimalist productivity timer - lightweight, ad-free and tracking-free. Perfect for students needing a study timer ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": "4.6(22,167)  · Free · ‎Android · ‎Business/Productivity",
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4.6,
+     "votes_count": 22167,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "Goodtime is an indie open-source minimalist productivity timer"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://play.google.com/store/apps/details?id=com.apps.adrcotfas.goodtime&hl=en_US",
+      "domain": "play.google.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]",
+    "domain": "shop.minimaldesksetups.com",
+    "title": "Pomodoro Timer - Dual Display Focus & Productivity Timer",
+    "url": "https://shop.minimaldesksetups.com/products/pomodoro-timer?srsltid=AU7gw4VIRfCiiqDBYrzHbiUJ55d276YiL5enTienhqKPROOKJLhWv44W",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://shop.minimaldesksetups.com › products › pomo...",
+    "website_name": "Minimal Desk Setups",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Stay productive with our Pomodoro Timer – featuring a dual display for focus and rest, a tactile dial, and customizable sessions. Conquer distractions now!",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4.6,
+     "votes_count": 300,
+     "rating_max": 5
+    },
+    "price": {
+     "current": 19,
+     "regular": null,
+     "max_value": null,
+     "currency": "USD",
+     "is_price_range": false,
+     "displayed_price": "$19.00"
+    },
+    "highlighted": [
+     "featuring a dual display for focus and rest"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]",
+    "domain": "studiestimer.com",
+    "title": "StudiesTimer — Free Aesthetic Pomodoro & Study Timer Online",
+    "url": "https://studiestimer.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://studiestimer.com",
+    "website_name": "StudiesTimer",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Start a customizable aesthetic Pomodoro timer without signing up. Create a free account when you want study history, streaks, subject labels, groups, ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Start a customizable aesthetic Pomodoro timer"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]",
+    "domain": "www.reddit.com",
+    "title": "is there a good minimalist study timer? : r/studytips",
+    "url": "https://www.reddit.com/r/studytips/comments/1v520cl/is_there_a_good_minimalist_study_timer/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "10+ comments  ·  2 months ago",
+    "website_name": "Reddit · r/studytips",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "i've used forest app for years, and recently they added too many features which feels overstimulating to me.\n\nthe issue i have with forest app is too many ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": null,
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Whats the most minimalist study timer? : r ...",
+      "description": null,
+      "url": "https://www.reddit.com/r/GetStudying/comments/1efhej2/whats_the_most_minimalist_study_timer/",
+      "domain": "www.reddit.com"
+     },
+     {
+      "type": "link_element",
+      "title": "A minimalist focus timer I made for myself — no ...",
+      "description": null,
+      "url": "https://www.reddit.com/r/digitalminimalism/comments/1kvox0c/a_minimalist_focus_timer_i_made_for_myself_no/",
+      "domain": "www.reddit.com"
+     },
+     {
+      "type": "link_element",
+      "title": "More results from www.reddit.com",
+      "description": null,
+      "url": "https://www.google.com/search?q=minimalist+timer+site:www.reddit.com&sca_esv=4011b64f3e834313&hl=en&gl=US&sxsrf=APpeQntesULDi_qON0rbMFFxvGqbQB6wLw:1790273961492&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4QrQIoAnoECEoQAw",
+      "domain": "www.google.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "25 Minute Timer | Minimalist Aesthetic | Study Session",
+    "url": "https://www.youtube.com/watch?v=HiDQDT-ikdI",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "9.7K+ views  ·  5 months ago",
+    "website_name": "YouTube · The Aesthetic Study Club",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "25 minute lofi Timer Study With Me Pomodoro 25 min ☕ Focus Music. Milli Lofi Timer · 31K views ; Study With Me | 25 Minute Timer | chill beats ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "25 minute lofi Timer"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-04-16 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "www.etsy.com",
+    "title": "Minimalist Pomodoro Timer for Personal Use",
+    "url": "https://www.etsy.com/listing/4427492698/minimalist-pomodoro-timer-for-personal",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.etsy.com › ... › Digital",
+    "website_name": "Etsy",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Dec 19, 2025 — Boost your productivity with this aesthetic, minimalist Focus Timer. This is a lightweight, browser-based Pomodoro timer designed to help ... Read more",
+    "pre_snippet": "12/19/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 5,
+     "votes_count": 2,
+     "rating_max": 5
+    },
+    "price": {
+     "current": 3.49,
+     "regular": null,
+     "max_value": null,
+     "currency": "USD",
+     "is_price_range": false,
+     "displayed_price": "$3.49"
+    },
+    "highlighted": [
+     "minimalist Focus Timer"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.etsy.com/listing/4427492698/minimalist-pomodoro-timer-for-personal#:~:text=Be%20the%20first%20to%20review",
+      "domain": "www.etsy.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-12-19 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 9,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+    "domain": "pomodorotimer.online",
+    "title": "Pomodoro Timer — Do more in less time, stress-free",
+    "url": "https://pomodorotimer.online/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://pomodorotimer.online",
+    "website_name": "pomodorotimer.online",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Free online Pomodoro timer with background music, a to-do list, custom intervals, daily streaks and challenges. Beat procrastination and stay focused.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Free online Pomodoro timer"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[19]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "A minimalist timer is `a clean, distraction-free tool designed to help you track time for work, study, or daily tasks without clutter`.\n\n### Online & Browser Timers\n\n- **[Flocus](https://flocus.com/minimalist-pomodoro-timer/)** : A free, aesthetic online Pomodoro tool with calm background themes, ambient sounds, and a clean study interface.[[1]](https://flocus.com/minimalist-pomodoro-timer/)\n- **[FlipClock](https://flipclock.app/timer)** : A sleek, minimal web countdown and time tracker featuring elegant flip animations.[[1]](https://flipclock.app/timer)\n\n### Physical Desk & Kitchen Timers\n\nAdd to list A simple 60-minute visual timer with a protective silicone cover and a quiet, disappearing red disk.[[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:14726412744626661824,catalogid:14788393304270788608,gpcid:8810582074494787590,mid:576462845911018779&ibp=oshop)Add to list A modern, stainless steel kitchen timer with a timeless, minimal look that attaches magnetically to metal surfaces.[[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:5916860923447920104,catalogid:5058585202011322944,gpcid:9652884277003494715,mid:576462367231937950&ibp=oshop)Add to list A soft, tactile desk cube that tracks time blocks using minutes only—no ticking seconds or loud alarms.[[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:5161462299905094194,catalogid:13222704406170010304,gpcid:16359478018224467882,mid:576462861760389564&ibp=oshop)Show more\n\nIf you let me know whether you want a **physical device** or a **free website/app** , I can give you a more specific recommendation.",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "A minimalist timer is a clean, distraction-free tool designed to help you track time for work, study, or daily tasks without clutter.",
+      "markdown": "A minimalist timer is `a clean, distraction-free tool designed to help you track time for work, study, or daily tasks without clutter`.",
+      "links": null,
+      "images": null,
+      "references": null
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Online & Browser Timers",
+      "text": "Flocus : A free, aesthetic online Pomodoro tool with calm background themes, ambient sounds, and a clean study interface. FlipClock : A sleek, minimal web countdown and time tracker featuring elegant flip animations.",
+      "markdown": "- **[Flocus](https://flocus.com/minimalist-pomodoro-timer/)** : A free, aesthetic online Pomodoro tool with calm background themes, ambient sounds, and a clean study interface.[[1]](https://flocus.com/minimalist-pomodoro-timer/)\n- **[FlipClock](https://flipclock.app/timer)** : A sleek, minimal web countdown and time tracker featuring elegant flip animations.[[1]](https://flipclock.app/timer)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Flocus",
+        "description": null,
+        "url": "https://flocus.com/minimalist-pomodoro-timer/",
+        "domain": "flocus.com"
+       },
+       {
+        "type": "link_element",
+        "title": "FlipClock",
+        "description": null,
+        "url": "https://flipclock.app/timer",
+        "domain": "flipclock.app"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Flocus",
+        "domain": "flocus.com",
+        "url": "https://flocus.com/minimalist-pomodoro-timer/",
+        "title": "Minimalist Pomodoro Timer | Flocus",
+        "text": "Use the Pomodoro sequence: Pomodoro → short break, repeat 4x, then one long break Number of Pomodoros complete is indicated with d..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "FlipClock Web",
+        "domain": "flipclock.app",
+        "url": "https://flipclock.app/timer",
+        "title": "Minimal Timer for Focus & Productivity - FlipClock",
+        "text": "Boost your productivity with the sleek, minimal FlipClock timer. Stay focused with customizable countdowns, time tracking, and ele..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Physical Desk & Kitchen Timers",
+      "text": "Time Timer MOD $39.99 Wayfair & more 4.6 (102) Add to list A simple 60-minute visual timer with a protective silicone cover and a quiet, disappearing red disk. Blomus Puncto $23.95 blomus USA & more 4.5 (116) Add to list A modern, stainless steel kitchen timer with a timeless, minimal look that attaches magnetically to metal surfaces. ZONE Productivity Timer $79.00 $89 New Things Lab B.V. & more Add to list A soft, tactile desk cube that tracks time blocks using minutes only—no ticking seconds or loud alarms. Show more",
+      "markdown": "Add to list A simple 60-minute visual timer with a protective silicone cover and a quiet, disappearing red disk.[[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:14726412744626661824,catalogid:14788393304270788608,gpcid:8810582074494787590,mid:576462845911018779&ibp=oshop)Add to list A modern, stainless steel kitchen timer with a timeless, minimal look that attaches magnetically to metal surfaces.[[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:5916860923447920104,catalogid:5058585202011322944,gpcid:9652884277003494715,mid:576462367231937950&ibp=oshop)Add to list A soft, tactile desk cube that tracks time blocks using minutes only—no ticking seconds or loud alarms.[[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:5161462299905094194,catalogid:13222704406170010304,gpcid:16359478018224467882,mid:576462861760389564&ibp=oshop)Show more",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Time Timer MOD$39.99Wayfair& more4.6(102)Go to product viewer dialog for this item.",
+        "description": null,
+        "url": "https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:48,mid:576462845911018779,imageDocid:2924427455335286570,gpcid:8810582074494787590,headlineOfferDocid:7363864863177177750,catalogid:14788393304270788608,productDocid:14726412744626661824,rds:PC_8810582074494787590%7CPROD_PC_8810582074494787590&q=product&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4QgLcPegoIAggACAAIAhAa",
+        "domain": "www.google.com"
+       },
+       {
+        "type": "link_element",
+        "title": "Blomus Puncto$23.95blomus USA& more4.5(116)Go to product viewer dialog for this item.",
+        "description": null,
+        "url": "https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:48,mid:576462367231937950,imageDocid:18246750226214116461,gpcid:9652884277003494715,headlineOfferDocid:7190193167546223263,catalogid:5058585202011322944,productDocid:5916860923447920104,rds:PC_9652884277003494715%7CPROD_PC_9652884277003494715&q=product&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4QgLcPegoIAggACAAIAhAp",
+        "domain": "www.google.com"
+       },
+       {
+        "type": "link_element",
+        "title": "ZONE Productivity Timer$79.00$89New Things Lab B.V.& moreGo to product viewer dialog for this item.",
+        "description": null,
+        "url": "https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:48,mid:576462861760389564,imageDocid:14599807184911160898,gpcid:16359478018224467882,headlineOfferDocid:5516550364924337527,catalogid:13222704406170010304,productDocid:5161462299905094194&q=product&sa=X&ved=2ahUKEwjrwZmc6oeXAxWvv4kEHdZFMN4QgLcPegoIAggACAAIFxAB",
+        "domain": "www.google.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Google",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:14726412744626661824,catalogid:14788393304270788608,gpcid:8810582074494787590,mid:576462845911018779&ibp=oshop",
+        "title": "MOD Time Timer",
+        "text": "The Time Timer MOD is a modern take on time management from Time Timer. The MOD is a sleek 60 minute visual timer that looks great..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Google",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:5916860923447920104,catalogid:5058585202011322944,gpcid:9652884277003494715,mid:576462367231937950&ibp=oshop",
+        "title": "Blomus Puncto Kitchen Timer",
+        "text": "From eggs in the morning to the Christmas dinner, you always need a kitchen timer you can count on. Puncto is exactly that. Part o..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Google",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:5161462299905094194,catalogid:13222704406170010304,gpcid:16359478018224467882,mid:576462861760389564&ibp=oshop",
+        "title": "ZONE Productivity Timer (Pre-Order)",
+        "text": "The #1 Timer for Mindful Productivity. ZONE is a minimalist desk timer designed to help you work with clarity and intention. It di..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "If you let me know whether you want a physical device or a free website/app, I can give you a more specific recommendation.",
+      "markdown": "If you let me know whether you want a **physical device** or a **free website/app** , I can give you a more specific recommendation.",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Flocus",
+      "domain": "flocus.com",
+      "url": "https://flocus.com/minimalist-pomodoro-timer/",
+      "title": "Minimalist Pomodoro Timer | Flocus",
+      "text": "Use the Pomodoro sequence: Pomodoro → short break, repeat 4x, then one long break Number of Pomodoros complete is indicated with d..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "FlipClock Web",
+      "domain": "flipclock.app",
+      "url": "https://flipclock.app/timer",
+      "title": "Minimal Timer for Focus & Productivity - FlipClock",
+      "text": "Boost your productivity with the sleek, minimal FlipClock timer. Stay focused with customizable countdowns, time tracking, and ele..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Google",
+      "domain": "www.google.com",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:14726412744626661824,catalogid:14788393304270788608,gpcid:8810582074494787590,mid:576462845911018779&ibp=oshop",
+      "title": "MOD Time Timer",
+      "text": "The Time Timer MOD is a modern take on time management from Time Timer. The MOD is a sleek 60 minute visual timer that looks great..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Google",
+      "domain": "www.google.com",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:5916860923447920104,catalogid:5058585202011322944,gpcid:9652884277003494715,mid:576462367231937950&ibp=oshop",
+      "title": "Blomus Puncto Kitchen Timer",
+      "text": "From eggs in the morning to the Christmas dinner, you always need a kitchen timer you can count on. Puncto is exactly that. Part o..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Google",
+      "domain": "www.google.com",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:5161462299905094194,catalogid:13222704406170010304,gpcid:16359478018224467882,mid:576462861760389564&ibp=oshop",
+      "title": "ZONE Productivity Timer (Pre-Order)",
+      "text": "The #1 Timer for Mindful Productivity. ZONE is a minimalist desk timer designed to help you work with clarity and intention. It di..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Minimalist timer app",
+     "Minimalist timer online",
+     "Minimalist timer countdown",
+     "Minimalist desk timer",
+     "Best minimalist timer",
+     "Minimalist Pomodoro timer",
+     "Minimalist timer free",
+     "Minimalist Pomodoro timer online"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

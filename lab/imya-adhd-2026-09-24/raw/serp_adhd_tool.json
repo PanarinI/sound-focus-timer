@@ -1,0 +1,717 @@
+[
+ {
+  "keyword": "adhd tool",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=adhd%20tool&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 15:09:28 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "organic",
+   "people_also_ask",
+   "images",
+   "related_searches"
+  ],
+  "se_results_count": 127,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "Effective tools for managing ADHD include `digital planning apps, physical organizational systems, and sensory focus aids`.\n\n### Digital Apps and Tech\n\n- **Focusmate** : Uses virtual \"body doubling\" to pair you with someone else while you both work on tasks.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Tiimo** : A visual time-management planner built specifically for neurodivergent brains.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Goblin Tools** : Features a \"Magic ToDo\" function that breaks large or overwhelming chores into small steps.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Voice assistants** : Tools like Siri, Alexa, or Google Assistant help set quick alarms and running grocery lists.[[1]](https://www.embracethemuchness.com/blog/my-top-10-tech-tools-to-support-adhd-and-executive-functioning)\n\n### Physical and Analog Tools\n\n- **Bullet Journal (BuJo)** : A customizable, paper-based system that uses simple symbols to get tasks out of your head.[[1]](https://www.adhdadvisor.org/learn/adhd-organization-tools)\n- **Visual Timers** : Physical countdown clocks give your brain a clear, visible cue of passing time.[[1]](https://www.adhdspace.ca/blog/managing-adult-adhd-tools-and-strategies-that-actually-work)\n- **Landing Stations** : A designated physical spot near your door for essential items like keys, wallets, and phones.[[1]](https://www.youtube.com/watch?v=R5nCjKtTTHs)\n\n### Fidget and Sensory Tools\n\n- **Fidget Spinners & Cubes** : Small, tactile items (like the [Klicks Fidget Spinner Go to product viewer dialog for this item.](https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:48,imageDocid:5319418674349070889,headlineOfferDocid:17888541175322994339,productDocid:17888541175322994339&q=product&sa=X&ved=2ahUKEwiH8bTRgYqXAxU2CTQIHZ-mFGsQxa4PegYIAggeEBo) or an [Antsy Labs Fidget Cube Go to product viewer dialog for this item.](https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:48,mid:576462654455515284,imageDocid:7746792035183715091,gpcid:6775971744104812869,headlineOfferDocid:18072397181429244745,catalogid:2208978806830357483,productDocid:15003367392629623907,rds:PC_6775971744104812869%7CPROD_PC_6775971744104812869&q=product&sa=X&ved=2ahUKEwiH8bTRgYqXAxU2CTQIHZ-mFGsQxa4PegYIAggeEBw) ) provide non-distracting sensory feedback to help maintain focus during boring tasks.[[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:17888541175322994339&ibp=oshop)[[2]](https://www.google.com/search?q=product&prds=pvt:hg,productid:3370288030787734178,catalogid:17630116438775192851,gpcid:10082067386377508681,mid:576462880775317408&ibp=oshop)\n- **Chewelry / Discreet Jewelry** : Necklaces or rings with moving parts offer quiet self-regulation on the go.[[1]](https://add.org/adhd-tools-for-adults/)\n\nIf you'd like, let me know:\n\n- Are you looking for **digital apps** or **physical/tactile tools**?\n- What specific executive function area do you want to support (like **time management** or **task initiation**)?\n\nI can narrow down the best recommendations for you.",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Effective tools for managing ADHD include digital planning apps, physical organizational systems, and sensory focus aids.",
+      "markdown": "Effective tools for managing ADHD include `digital planning apps, physical organizational systems, and sensory focus aids`.",
+      "links": null,
+      "images": null,
+      "references": null
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Digital Apps and Tech",
+      "text": "Focusmate : Uses virtual \"body doubling\" to pair you with someone else while you both work on tasks. Tiimo : A visual time-management planner built specifically for neurodivergent brains. Goblin Tools : Features a \"Magic ToDo\" function that breaks large or overwhelming chores into small steps. Voice assistants : Tools like Siri, Alexa, or Google Assistant help set quick alarms and running grocery lists.",
+      "markdown": "- **Focusmate** : Uses virtual \"body doubling\" to pair you with someone else while you both work on tasks.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Tiimo** : A visual time-management planner built specifically for neurodivergent brains.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Goblin Tools** : Features a \"Magic ToDo\" function that breaks large or overwhelming chores into small steps.[[1]](https://add.org/adhd-tools-for-adults/)\n- **Voice assistants** : Tools like Siri, Alexa, or Google Assistant help set quick alarms and running grocery lists.[[1]](https://www.embracethemuchness.com/blog/my-top-10-tech-tools-to-support-adhd-and-executive-functioning)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "ADDA - Attention Deficit Disorder Association",
+        "domain": "add.org",
+        "url": "https://add.org/adhd-tools-for-adults/",
+        "title": "Best ADHD Apps and Tools for Adults - ADDA - Attention Deficit Disorder Association",
+        "text": "What to Look for in an ADHD App. There are plenty of ADHD management tools available for adults. Examples include productivity app..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Embrace the Muchness",
+        "domain": "www.embracethemuchness.com",
+        "url": "https://www.embracethemuchness.com/blog/my-top-10-tech-tools-to-support-adhd-and-executive-functioning",
+        "title": "Top 10 ADHD Tech Tools for Memory, Focus, and Executive Function Support | Embrace the Muchness LLC",
+        "text": "Here are some ADHD-friendly tech tools: * **Voice assistants** Google Assistant, Alexa, and Siri can help with: * Adding items to ..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Physical and Analog Tools",
+      "text": "Bullet Journal (BuJo) : A customizable, paper-based system that uses simple symbols to get tasks out of your head. Visual Timers : Physical countdown clocks give your brain a clear, visible cue of passing time. Landing Stations : A designated physical spot near your door for essential items like keys, wallets, and phones.",
+      "markdown": "- **Bullet Journal (BuJo)** : A customizable, paper-based system that uses simple symbols to get tasks out of your head.[[1]](https://www.adhdadvisor.org/learn/adhd-organization-tools)\n- **Visual Timers** : Physical countdown clocks give your brain a clear, visible cue of passing time.[[1]](https://www.adhdspace.ca/blog/managing-adult-adhd-tools-and-strategies-that-actually-work)\n- **Landing Stations** : A designated physical spot near your door for essential items like keys, wallets, and phones.[[1]](https://www.youtube.com/watch?v=R5nCjKtTTHs)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "ADHD Advisor",
+        "domain": "www.adhdadvisor.org",
+        "url": "https://www.adhdadvisor.org/learn/adhd-organization-tools",
+        "title": "9 ADHD Planners & Organization Tools for Adults (2026 Edition)",
+        "text": "Let's explore some of the best ADHD planners for adults to help you find one that fits your lifestyle. * 1. The Happy Planner (Dis..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "The ADHD Space",
+        "domain": "www.adhdspace.ca",
+        "url": "https://www.adhdspace.ca/blog/managing-adult-adhd-tools-and-strategies-that-actually-work",
+        "title": "ADHD Tools for Adults That Actually Work: Practical Strategies from Occupational Therapists",
+        "text": "Here are some tools that can help with ADHD: * **Chunking** Break tasks into smaller steps * **Visual timers or alarms** Give your..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=R5nCjKtTTHs",
+        "title": "Psychiatrist Recommended Top 10 Tools for Managing ADHD (Non- ...",
+        "text": "Psychiatrist Recommended Top 10 Tools for Managing ADHD (Non-Medication ADHD Tools That Work) hey how's it going i'm a psychiatris..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Fidget and Sensory Tools",
+      "text": "Fidget Spinners & Cubes : Small, tactile items (like the Klicks Fidget Spinner or an Antsy Labs Fidget Cube ) provide non-distracting sensory feedback to help maintain focus during boring tasks. Chewelry / Discreet Jewelry : Necklaces or rings with moving parts offer quiet self-regulation on the go.",
+      "markdown": "- **Fidget Spinners & Cubes** : Small, tactile items (like the [Klicks Fidget Spinner Go to product viewer dialog for this item.](https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:48,imageDocid:5319418674349070889,headlineOfferDocid:17888541175322994339,productDocid:17888541175322994339&q=product&sa=X&ved=2ahUKEwiH8bTRgYqXAxU2CTQIHZ-mFGsQxa4PegYIAggeEBo) or an [Antsy Labs Fidget Cube Go to product viewer dialog for this item.](https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:48,mid:576462654455515284,imageDocid:7746792035183715091,gpcid:6775971744104812869,headlineOfferDocid:18072397181429244745,catalogid:2208978806830357483,productDocid:15003367392629623907,rds:PC_6775971744104812869%7CPROD_PC_6775971744104812869&q=product&sa=X&ved=2ahUKEwiH8bTRgYqXAxU2CTQIHZ-mFGsQxa4PegYIAggeEBw) ) provide non-distracting sensory feedback to help maintain focus during boring tasks.[[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:17888541175322994339&ibp=oshop)[[2]](https://www.google.com/search?q=product&prds=pvt:hg,productid:3370288030787734178,catalogid:17630116438775192851,gpcid:10082067386377508681,mid:576462880775317408&ibp=oshop)\n- **Chewelry / Discreet Jewelry** : Necklaces or rings with moving parts offer quiet self-regulation on the go.[[1]](https://add.org/adhd-tools-for-adults/)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Klicks Fidget SpinnerGo to product viewer dialog for this item.",
+        "description": null,
+        "url": "https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:48,imageDocid:5319418674349070889,headlineOfferDocid:17888541175322994339,productDocid:17888541175322994339&q=product&sa=X&ved=2ahUKEwiH8bTRgYqXAxU2CTQIHZ-mFGsQxa4PegYIAggeEBo",
+        "domain": "www.google.com"
+       },
+       {
+        "type": "link_element",
+        "title": "Antsy Labs Fidget CubeGo to product viewer dialog for this item.",
+        "description": null,
+        "url": "https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:48,mid:576462654455515284,imageDocid:7746792035183715091,gpcid:6775971744104812869,headlineOfferDocid:18072397181429244745,catalogid:2208978806830357483,productDocid:15003367392629623907,rds:PC_6775971744104812869%7CPROD_PC_6775971744104812869&q=product&sa=X&ved=2ahUKEwiH8bTRgYqXAxU2CTQIHZ-mFGsQxa4PegYIAggeEBw",
+        "domain": "www.google.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Google",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:17888541175322994339&ibp=oshop",
+        "title": "Klicks Fidget Spinner",
+        "text": "Klicks Fidget Spinners are the ultimate multi-sensory spinning fidget tools, a true treat for your fingers! This clever toy combin..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Google",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:3370288030787734178,catalogid:17630116438775192851,gpcid:10082067386377508681,mid:576462880775317408&ibp=oshop",
+        "title": "Fidget Cube Spinner Anti-Anxiety Focusing Fidget Toys,Cube Finger Top Desktop ADHD Stress Relieve Toys for Kids and Adults",
+        "text": "Fidget Toys: Made of high-quality kirsite,with the design of only 1.2 × 1.2× 1.2 inches. This fidget cube can be easily placed in ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "ADDA - Attention Deficit Disorder Association",
+        "domain": "add.org",
+        "url": "https://add.org/adhd-tools-for-adults/",
+        "title": "Best ADHD Apps and Tools for Adults - ADDA - Attention Deficit Disorder Association",
+        "text": "What to Look for in an ADHD App. There are plenty of ADHD management tools available for adults. Examples include productivity app..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "If you'd like, let me know:Are you looking for digital apps or physical/tactile tools ?\nWhat specific executive function area do you want to support (like time management or task initiation )?\nI can narrow down the best recommendations for you.",
+      "markdown": "If you'd like, let me know:\n\n- Are you looking for **digital apps** or **physical/tactile tools**?\n- What specific executive function area do you want to support (like **time management** or **task initiation**)?\n\nI can narrow down the best recommendations for you.",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "ADDA - Attention Deficit Disorder Association",
+      "domain": "add.org",
+      "url": "https://add.org/adhd-tools-for-adults/",
+      "title": "Best ADHD Apps and Tools for Adults - ADDA - Attention Deficit Disorder Association",
+      "text": "What to Look for in an ADHD App. There are plenty of ADHD management tools available for adults. Examples include productivity app..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "ADHD Advisor",
+      "domain": "www.adhdadvisor.org",
+      "url": "https://www.adhdadvisor.org/learn/adhd-organization-tools",
+      "title": "9 ADHD Planners & Organization Tools for Adults (2026 Edition)",
+      "text": "Let's explore some of the best ADHD planners for adults to help you find one that fits your lifestyle. * 1. The Happy Planner (Dis..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Embrace the Muchness",
+      "domain": "www.embracethemuchness.com",
+      "url": "https://www.embracethemuchness.com/blog/my-top-10-tech-tools-to-support-adhd-and-executive-functioning",
+      "title": "Top 10 ADHD Tech Tools for Memory, Focus, and Executive Function Support | Embrace the Muchness LLC",
+      "text": "Here are some ADHD-friendly tech tools: * **Voice assistants** Google Assistant, Alexa, and Siri can help with: * Adding items to ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "The ADHD Space",
+      "domain": "www.adhdspace.ca",
+      "url": "https://www.adhdspace.ca/blog/managing-adult-adhd-tools-and-strategies-that-actually-work",
+      "title": "ADHD Tools for Adults That Actually Work: Practical Strategies from Occupational Therapists",
+      "text": "Here are some tools that can help with ADHD: * **Chunking** Break tasks into smaller steps * **Visual timers or alarms** Give your..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=R5nCjKtTTHs",
+      "title": "Psychiatrist Recommended Top 10 Tools for Managing ADHD (Non- ...",
+      "text": "Psychiatrist Recommended Top 10 Tools for Managing ADHD (Non-Medication ADHD Tools That Work) hey how's it going i'm a psychiatris..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Google",
+      "domain": "www.google.com",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:17888541175322994339&ibp=oshop",
+      "title": "Klicks Fidget Spinner",
+      "text": "Klicks Fidget Spinners are the ultimate multi-sensory spinning fidget tools, a true treat for your fingers! This clever toy combin..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Google",
+      "domain": "www.google.com",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:3370288030787734178,catalogid:17630116438775192851,gpcid:10082067386377508681,mid:576462880775317408&ibp=oshop",
+      "title": "Fidget Cube Spinner Anti-Anxiety Focusing Fidget Toys,Cube Finger Top Desktop ADHD Stress Relieve Toys for Kids and Adults",
+      "text": "Fidget Toys: Made of high-quality kirsite,with the design of only 1.2 × 1.2× 1.2 inches. This fidget cube can be easily placed in ..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]",
+    "domain": "psychology-tools.com",
+    "title": "Adult ADHD Self-Report Scale (ASRSv1.1) - Psychology Tools",
+    "url": "https://psychology-tools.com/test/adult-adhd-self-report-scale",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://psychology-tools.com › Disorders › ADHD",
+    "website_name": "psychology-tools.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Explore your ADHD symptoms with the Adult ADHD Self-Report Scale (ASRSv1.1), a comprehensive assessment based on DSM-IV criteria.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Explore your ADHD symptoms"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]",
+    "domain": "add.org",
+    "title": "Adult ADHD Self-Report Scale (ASRS-v1.1) Symptom ...",
+    "url": "https://add.org/wp-content/uploads/2015/03/adhd-questionnaire-ASRS111.pdf",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://add.org › adhd-questionnaire-ASRS111",
+    "website_name": "ADDA - Attention Deficit Disorder Association",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "by A Part — As a healthcare professional, you can use the ASRS v1.1 as a tool to help screen for ADHD in adult patients. The checklist takes about 5 minutes to complete",
+    "pre_snippet": "by A Part",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ASRS v1.1"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "How do I know if I'm add?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What does ADHD look like an adult?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "How is ADHD managed in adults?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What are the best tools for ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]",
+    "domain": "www.aafp.org",
+    "title": "Adult ADHD Toolkit For Family Physicians",
+    "url": "https://www.aafp.org/clinical-insights/cognitive-and-behavioral-health/adult-adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.aafp.org › cognitive-and-behavioral-health",
+    "website_name": "American Academy Of Family Physicians | AAFP",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Recommended screening tools (ASRS, DIVA, CAARS ) Validated screening tools can help identify ADHD symptoms and guide further evaluation.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Recommended screening tools (ASRS, DIVA, CAARS"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[9]/div[1]/div[1]",
+    "domain": "pmc.ncbi.nlm.nih.gov",
+    "title": "Screening for adult ADHD using brief rating tools - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116749/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://pmc.ncbi.nlm.nih.gov › articles › PMC7116749",
+    "website_name": "National Institutes of Health (NIH) | (.gov)",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "by SR Chamberlain · 2021 · Cited by 57 — The World Health Organization (WHO) Adult ADHD Self-Report Scale v1.1 (ASRS v1.1) Part A is the most widely used screening tool for ADHD cases in adults [6]. Read more",
+    "pre_snippet": "by SR Chamberlain · 2021 · Cited by 57",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "The World Health Organization (WHO) Adult ADHD Self-Report Scale v1.1 (ASRS v1.1) Part A"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116749/#:~:text=The%20World%20Health%20Organization%20(WHO),ADHD%20cases%20in%20adults%20%5B6%5D.",
+      "domain": "pmc.ncbi.nlm.nih.gov"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]",
+    "domain": "ncpal.org",
+    "title": "Screening for ADHD",
+    "url": "https://ncpal.org/resources/screening-forms/adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://ncpal.org › resources › screening-forms › adhd",
+    "website_name": "NC-PAL",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "ADHD Rating Scale IV - Assesses inattention and hyperactivity in preschoolers. inattention, hyperactivity, and impulsivity.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADHD Rating Scale IV"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "images",
+    "rank_group": 1,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[13]/div[1]",
+    "title": "Images",
+    "url": "https://www.google.com/search?sca_esv=eb3ed732ab39b407&hl=en&gl=US&sxsrf=APpeQnsBZITPPNU5SP8iipZXD0M2CXZRRA:1790348966603&q=adhd+tool&udm=2&source=univ&fir=mQh2F7GmxLabDM%252CIKhSt9LX8-ZSLM%252C_%253B7z_jmmVkqJrAWM%252CDA1_wvs69gZ_8M%252C_%253B55UpNMGErfqj3M%252CHBXTiXOJXbngrM%252C_%253BMJUz6Gyvb_EBIM%252C8X0-VlhqGcCPgM%252C_%253BFXll3c3hBzy7eM%252Cgm7Fsth-7cBzYM%252C_%253BUFdDArgYwaZr6M%252Ci1cDp8cM8UW_uM%252C_%253BCgqmxuxE0JaRHM%252C_xnxQuZyvklXYM%252C_%253Ba1oD4N5owPt3KM%252CYXGtSx5xCibZbM%252C_%253B_yMrLaA2aP4dxM%252Cjo4PBVjvQlCaNM%252C_&usg=AI4_-kTW4HCJSrbQRSaZkG-nMZa_6y7wUg&sa=X&ved=2ahUKEwiH8bTRgYqXAxU2CTQIHZ-mFGsQ7Al6BAhNEAU",
+    "items": [
+     {
+      "type": "images_element",
+      "alt": "The Best ADHD Management Tools",
+      "url": "https://www.healthline.com/health/favorite-healthy-adhd-management-finds",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251509-2042-0139-0000-769b0e4b9bf1:0"
+     },
+     {
+      "type": "images_element",
+      "alt": "Attention Deficit Hyperactivity Disorder (ADHD) Evaluation ...",
+      "url": "https://mentalhealthliteracy.org/product/adhd-checklist/",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251509-2042-0139-0000-769b0e4b9bf1:1"
+     },
+     {
+      "type": "images_element",
+      "alt": "The best ADHD tool for adults, built by an adult with ADHD",
+      "url": "https://llamalife.co/blog/the-best-adhd-tool-for-adults-built-by-an-adult-with-adhd-clehs701m54221llklycn38pt",
+      "image_url": "https://api.dataforseo.com/cdn/i/09251509-2042-0139-0000-769b0e4b9bf1:2"
+     },
+     {
+      "type": "images_element",
+      "alt": "Fidgets for ADHD: Do They Work and How to Use Them in Class",
+      "url": "https://ot4adhd.com/2023/05/19/fidgets-and-adhd-a-focus-tool-or-a-toy/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCHLjnuWHlZ0yKWqzgmOdP2uRChesrxGFml7ughVZqPOPBhML6H2g_B3k&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Amazon.com: 5 IN 1 Visual Timer for Kids/Adults with Chore ...",
+      "url": "https://www.amazon.com/Pomodoro-Products-Schedule-Supplies-Off-white/dp/B0FDB83T7Z",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU9gRLfSB_FigP5BLPdCpQEy4u-1R5vR1ha7wfpV_d8pxNbK8Efc4w2Ic&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "ADHD Assessment Tool: How It Works",
+      "url": "https://creyos.com/blog/adhd-assessment-tool",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMjDeS4xWwKt70VfSSRqnLydkUTGDvYQS2bfnw6eEGI0E6vbuwpl_MoD0&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "8 Essential Tools for ADHD Self-Care Infographic",
+      "url": "https://sanespaces.com/2025/02/adhd-self-care-infographic/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNQMNKeg8ESE8Z_V5fjS14dBfU2sYOPz8pRq4Tb5ev7wRqiRlurU7t7-Y&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Are you an individual with ADHD who faces challenges with ...",
+      "url": "https://www.instagram.com/p/DMYzaRzsOUM/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAARe1sGAIvYNp8dDjCWNKq02vs1EJvhf-Ki6Za4lTtBPzKTUuu4upTzk&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Best Products for Kids with ADHD - thechildhoodcollective.com",
+      "url": "https://thechildhoodcollective.com/2023/08/17/products-we-love-for-kids-with-adhd/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2iwR6aVCP4C0aQFd1C7K45ieTpbQnC6Lyff1lV04B3KRy8rSQsvN1OTM&s"
+     }
+    ],
+    "related_image_searches": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[15]/div[1]/div[1]",
+    "domain": "screening.mhanational.org",
+    "title": "ADHD Test - MHA Screening - Mental Health America",
+    "url": "https://screening.mhanational.org/screening-tools/adhd/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://screening.mhanational.org › screening-tools › ad...",
+    "website_name": "Mental Health America",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Our online ADHD test is free, quick, confidential, and scientifically validated for teens and adults. Online screening tools are not diagnostic instruments.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "free, quick, confidential, and scientifically validated"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[17]/div[1]/div[1]",
+    "domain": "adhduk.co.uk",
+    "title": "Adult ADHD Self Screening Tool",
+    "url": "https://adhduk.co.uk/adult-adhd-screening-survey/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://adhduk.co.uk › adult-adhd-screening-survey",
+    "website_name": "ADHD UK",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "This survey is designed to be done by individuals on their own to give an indication of whether they might have ADHD and would therefore benefit from further ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADHD"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://adhduk.co.uk/adult-adhd-screening-survey/#:~:text=This%20survey%20is%20designed%20to,would%20therefore%20benefit%20from%20further",
+      "domain": "adhduk.co.uk"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[19]/div[1]/div[1]",
+    "domain": "www.caddra.ca",
+    "title": "ADULT ADHD SELF-REPORT SCALE (ASRS-V1.1) ...",
+    "url": "https://www.caddra.ca/wp-content/uploads/ASRS.pdf",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.caddra.ca › wp-content › uploads",
+    "website_name": "The Canadian ADHD Resource Alliance",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "by A PART · 2003 — ADULT ADHD SELF-REPORT SCALE. Please answer the questions below, rating yourself on each of the criteria shown using the scale on the right side of the page.",
+    "pre_snippet": "by A PART · 2003",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADULT ADHD SELF-REPORT SCALE"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "ADHD questionnaire for adults PDF",
+     "ADHD questionnaire for child",
+     "ADHD screening tool for adults",
+     "ASRS ADHD",
+     "Who ADHD test",
+     "Adult ADHD Self-Report Scale scoring",
+     "ADHD tools and gadgets for adults",
+     "ADHD Self assessment for adults"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

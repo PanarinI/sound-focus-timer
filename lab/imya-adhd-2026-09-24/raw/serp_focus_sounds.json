@@ -1,0 +1,433 @@
+[
+ {
+  "keyword": "focus sounds",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=focus%20sounds&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 17:40:54 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "video",
+   "people_also_ask",
+   "organic",
+   "related_searches"
+  ],
+  "se_results_count": 108,
+  "pages_count": 1,
+  "items_count": 10,
+  "items": [
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "Focus, Increase Concentration, Calm Your Mind | White Noise ...",
+      "timestamp": "2015-02-10 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=ArwcHjmsw3A"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "Improve Concentration with Deep White Noise for Studying",
+      "timestamp": "2025-04-06 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=Z5_mSyaNqHw"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "White Noise for Studying, Homework, Focus | No Ads While ...",
+      "timestamp": "2026-04-01 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=2jUGwHfn6Kk"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · LULANKO",
+      "title": "Study Sound for Concentration, Homework, Exam Prep 1 HOUR",
+      "timestamp": "2024-11-26 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=aY8H28Q00aA"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What are the best sounds for focusing?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is a focus sound?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the noise that helps you focus?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What noise helps ADHD focus?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "Binaural Beats Sounds For Studying, Focus, Concentration ...",
+    "url": "https://open.spotify.com/album/6035JmOXELaAUjbaCzq7bu",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › album",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Studying Music: Binaural Beats Sounds For Studying, Focus, Concentration and Ambient Study Music. Study Music & Sounds. 201825 songs, 56 min 38 sec. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Binaural Beats Sounds For Studying, Focus, Concentration"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://open.spotify.com/album/6035JmOXELaAUjbaCzq7bu#:~:text=Studying%20Music%3A%20Binaural%20Beats%20Sounds,songs%2C%2056%20min%2038%20sec",
+      "domain": "open.spotify.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+    "domain": "slonoise.com",
+    "title": "7 Best Sounds for Focus and Concentration (2026) - Slo",
+    "url": "https://slonoise.com/resources/best-sounds-for-focus/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://slonoise.com › Resources",
+    "website_name": "slonoise.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "5 days ago — Compare brown, pink and white noise, nature sounds, coffee-shop ambience, lo-fi and binaural beats, with a focus sound for every task.",
+    "pre_snippet": "5 days ago",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "focus sound"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-09-20 17:40:53 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]",
+    "domain": "soundcloud.com",
+    "title": "Study Sounds White Noise for Focus and Concentration",
+    "url": "https://soundcloud.com/relaxing-white-noise/sets/signature-sounds-for-study",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "32K+ followers  ·  7 years ago",
+    "website_name": "SoundCloud · Relaxing White Noise",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Listen to Study Sounds White Noise for Focus and Concentration, a playlist curated by Relaxing White Noise on desktop and mobile.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Study Sounds White Noise for Focus and Concentration"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "Deep Focus - Music For Studying, Concentration and Work",
+    "url": "https://www.youtube.com/watch?v=oPVte6aMprI",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "33.1M+ views  ·  6 years ago",
+    "website_name": "YouTube · Quiet Quest - Study Music",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "This relaxing music to study combines soothing ambient music with beautiful nature images, so you can play in the background while you focus on ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "soothing ambient music with beautiful nature images"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2020-01-19 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+    "domain": "mindtime.app",
+    "title": "The Best Sounds for Focus and Concentration (2026)",
+    "url": "https://mindtime.app/resources/best-sounds-for-focus",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://mindtime.app › Resources",
+    "website_name": "mindtime.app",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jul 22, 2026 — For most deep work, brown noise is the best focus sound — it masks distractions thoroughly and stays comfortable for hours. White noise is ... Read more",
+    "pre_snippet": "07/22/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "brown noise is the best focus sound"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://mindtime.app/resources/best-sounds-for-focus#:~:text=For%20most%20deep%20work%2C%20brown,bursts%20and%20for%20blocking%20voices.",
+      "domain": "mindtime.app"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-07-22 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]",
+    "domain": "www.headspace.com",
+    "title": "Focus Audio & Concentration Music Library",
+    "url": "https://www.headspace.com/content/categories/focus",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.headspace.com › content › categories › focus",
+    "website_name": "Headspace",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Improve your concentration and focus with science-backed audio. Explore focus meditations, exercises, and music designed to sharpen your mind.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "science-backed audio"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "Study Music. White Noise for Study and Work. Focus Sounds.",
+    "url": "https://open.spotify.com/album/4H2ih2mYLKyiFpFqUq5fOl",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › album",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Listen to Study Music. White Noise for Study and Work. Focus Sounds. on Spotify · album · White Noise for Studying · 2018 · 7 songs.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Focus Sounds"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "White Noise for Studying MP3 download",
+     "Concentration sounds for studying",
+     "Focus sound meaning",
+     "Brain focus sounds",
+     "Focus sounds free",
+     "Focus sounds youtube",
+     "Relaxing White Noise for studying",
+     "Deep focus music for students"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

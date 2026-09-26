@@ -1,0 +1,899 @@
+[
+ {
+  "keyword": "432 hz",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=432%20hz&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-26 07:54:36 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "video",
+   "people_also_ask",
+   "organic",
+   "perspectives",
+   "carousel",
+   "short_videos",
+   "related_searches",
+   "knowledge_graph"
+  ],
+  "se_results_count": 107,
+  "pages_count": 1,
+  "items_count": 15,
+  "items": [
+   {
+    "type": "knowledge_graph",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]",
+    "title": "432 Hz Music",
+    "subtitle": "Musical artist",
+    "description": null,
+    "card_id": null,
+    "url": null,
+    "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-d598701f3a03:8",
+    "logo_url": null,
+    "cid": null,
+    "items": [
+     {
+      "type": "knowledge_graph_carousel_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+      "title": "Listen",
+      "data_attrid": "action:listen_artist",
+      "link": null,
+      "items": [
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "YouTube",
+        "subtitle": null,
+        "url": "https://www.youtube.com/channel/UCQyRUx4rzM_cuaUEmspvxSw?feature=gws_kp_artist&feature=gws_kp_artist",
+        "domain": "www.youtube.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-d598701f3a03:0",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "YouTube Music",
+        "subtitle": null,
+        "url": "https://music.youtube.com/channel/UCQyRUx4rzM_cuaUEmspvxSw?feature=gws_kp_artist&feature=gws_kp_artist",
+        "domain": "music.youtube.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-d598701f3a03:1",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "Spotify",
+        "subtitle": null,
+        "url": "https://open.spotify.com/artist/62cwNSUuDKsjNMlJLXOH2O?autoplay=true",
+        "domain": "open.spotify.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-d598701f3a03:2",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "Apple Music",
+        "subtitle": null,
+        "url": "https://music.apple.com/us/artist/432-hz-music/1634665987",
+        "domain": "music.apple.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-d598701f3a03:3",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]"
+       }
+      ],
+      "rectangle": null
+     },
+     {
+      "type": "knowledge_graph_carousel_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]",
+      "title": "People also search for",
+      "data_attrid": null,
+      "link": null,
+      "items": [
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "432 Hertz Band",
+        "subtitle": null,
+        "url": "https://www.google.com/search?sca_esv=687af446f448273f&hl=en&gl=US&sxsrf=APpeQnsZ5cqy_Pwu1fC0p8rjz3U6QeR3Cw:1790409274518&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0aYp8cSY7OJ4-fUT_VGmR1Rq10Cr1KURvHzzHU5U1B3N2qhJ-fRrEe29ZYTQ5USapT8LMMIn0TmfqzN2S4mePhU6MuOOnuM2C-0hngeba2Xx8FcJ4yoHQOBXMZyEa9pc641pGpi0HZGFOkXCRDuxxnnBzjG-IDVB-wEwsMXscG_nlZcujQ%3D%3D&q=432+Hertz+Band&sa=X&ved=2ahUKEwiow7ym4ouXAxXdRf4FHa2oCaQQs9oBKAB6BAgSEAY",
+        "domain": "www.google.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-d598701f3a03:4",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "Nature Sound Retreat",
+        "subtitle": null,
+        "url": "https://www.google.com/search?sca_esv=687af446f448273f&hl=en&gl=US&sxsrf=APpeQnsZ5cqy_Pwu1fC0p8rjz3U6QeR3Cw:1790409274518&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0eA6hCM8h8LOWrI9rJhAGDzHs4ObajJuSzaGVzHDIDP8WhlKd-WN-_c_bV-TpZ-i8mMh_cpBJgTtZPxcRibyioku-UaI6dQ-II40FSW5Xk9maruAu2aCmL0JIHO2IDYjiSvp2deXLk7i5wLpZGXJwG4leE87VDQIkDP--c8_WTYZeqZE3MqKe4ie4ejr15PKErncCe0%3D&q=Nature+Sound+Retreat&sa=X&ved=2ahUKEwiow7ym4ouXAxXdRf4FHa2oCaQQs9oBKAB6BAgSEAo",
+        "domain": "www.google.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-d598701f3a03:5",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "Inner Lotus Music",
+        "subtitle": null,
+        "url": "https://www.google.com/search?sca_esv=687af446f448273f&hl=en&gl=US&sxsrf=APpeQnsZ5cqy_Pwu1fC0p8rjz3U6QeR3Cw:1790409274518&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0WLyfvCRX_Bb203D96LrMv2ieo7Nk_aMdqH3mcNO8j9HLd2nfS08Bm_gBRGdcX2GUoWRifS4xhpPITduE9MR6c_PRNX0qagHB_vWr-2bSH0LjKItTJXMuvNq9MVxSbnWzmKolrX301e7r82h-9hxQk339FI8L9aZioLl3Mcotn8dLOGddQ%3D%3D&q=Inner+Lotus+Music&sa=X&ved=2ahUKEwiow7ym4ouXAxXdRf4FHa2oCaQQs9oBKAB6BAgSEA4",
+        "domain": "www.google.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-d598701f3a03:6",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "Music for Plants",
+        "subtitle": null,
+        "url": "https://www.google.com/search?sca_esv=687af446f448273f&hl=en&gl=US&sxsrf=APpeQnsZ5cqy_Pwu1fC0p8rjz3U6QeR3Cw:1790409274518&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0WauM5tSeK1iM5U01L6u_EIA_4cWBbfyQ6WOTKy08Xu0G4FmYG_0hnqoOEnwri8AquKWPSE2LmHWayVfPuagbMrCkW1icLsvYBjKic5mJt6fnFG1NJwtXyMXyHc8rqdOcpm6YxMdJb_Wrjn7vnY4a4zZNzy1u3zMw_ADrHef1qTn8qmMiw%3D%3D&q=Music+for+Plants&sa=X&ved=2ahUKEwiow7ym4ouXAxXdRf4FHa2oCaQQs9oBKAB6BAgSEBI",
+        "domain": "www.google.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09260754-2042-0139-0000-d598701f3a03:7",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]"
+       }
+      ],
+      "rectangle": null
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Music for Body and Spirit - Meditation Music",
+      "title": "432 Hz + 10 Hz Alpha Waves | Positive Energy & Inner Joy",
+      "timestamp": "2026-09-22 07:54:35 +00:00",
+      "url": "https://www.youtube.com/watch?v=A0PC9c9uSss"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relax & Rejuvenate with Jason Stephenson",
+      "title": "432 Hz Activate a Higher State of Consciousness, Clear Your ...",
+      "timestamp": "2026-08-26 07:54:35 +00:00",
+      "url": "https://www.youtube.com/watch?v=ng_UBGlYylA"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Healing Energy for Soul",
+      "title": "432Hz - The Most Powerful Healing Frequency, Heal Damage ...",
+      "timestamp": "2026-06-18 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=HvPdPeHQEqY"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What is God's healing frequency?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Is 432 Hz bad for you?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "How long should you listen to 432 Hz?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What artists were recorded in 432 Hz?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "432 Hz Meditation | Spotify Playlist",
+    "url": "https://open.spotify.com/playlist/37i9dQZF1DX3DRt77Ekehy",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › playlist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "A positive Solfeggio Frequency, used by many for meditation, manifestation and healing. Spotify. 250,741 saves. Infinite balance 432Hz. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "used by many for meditation, manifestation and healing"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://open.spotify.com/playlist/37i9dQZF1DX3DRt77Ekehy#:~:text=A%20positive%20Solfeggio%20Frequency%2C%20used,Infinite%20balance%20432Hz",
+      "domain": "open.spotify.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]",
+    "domain": "pubmed.ncbi.nlm.nih.gov",
+    "title": "Music Tuned to 440 Hz Versus 432 Hz and the Health Effects",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31031095/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://pubmed.ncbi.nlm.nih.gov › ...",
+    "website_name": "National Institutes of Health (NIH) | (.gov)",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "by D Calamassi · 2019 · Cited by 99 — Conclusions: The data suggests that 432 Hz tuned music can decrease heart rate more than 440 Hz tuned music. The study results suggest repeating the experiment ... Read more",
+    "pre_snippet": "by D Calamassi · 2019 · Cited by 99",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "432 Hz tuned music can decrease heart rate more than 440 Hz tuned music"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31031095/#:~:text=Conclusions%3A%20The%20data%20suggests%20that,trials%20covering%20more%20clinical%20parameters.",
+      "domain": "pubmed.ncbi.nlm.nih.gov"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]",
+    "domain": "www.calm.com",
+    "title": "What is 432 Hz frequency? The sound, music, and benefits",
+    "url": "https://www.calm.com/blog/432-hertz",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.calm.com › blog › 432-hertz",
+    "website_name": "Calm",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Benefits of 432 Hz music and sound · Reduces stress and anxiety · Enhances mental clarity and focus · Promotes healing and pain relief · Improves sleep quality. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Reduces stress and anxiety"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.calm.com/blog/432-hertz#:~:text=Benefits%20of%20432%20Hz%20music,and%20sound&text=Reduces%20stress%20and%20anxiety&text=Enhances%20mental%20clarity%20and%20focus&text=Promotes%20healing%20and%20pain%20relief&text=Improves%20sleep%20quality",
+      "domain": "www.calm.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]",
+    "domain": "meditativemind.org",
+    "title": "Healing Benefits of 432 Hz Music you didn't know",
+    "url": "https://meditativemind.org/healing-benefits-of-music-tuned-to-432-hz-music-of-nature/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://meditativemind.org › healing-benefits-of-music-tu...",
+    "website_name": "meditativemind.org",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Listening to music tuned at 432 Hz helps to calm the body and mind, makes us more flexible, creative and spontaneous. More healing benefits of 432Hz Music.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "helps to calm the body and mind"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[15]/div[1]/div[1]",
+    "domain": "www.reddit.com",
+    "title": "the \"healing\" frequency of 432 hz - what's the evidence and ...",
+    "url": "https://www.reddit.com/r/audioengineering/comments/25kdtp/the_healing_frequency_of_432_hz_whats_the/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "20+ comments  ·  12 years ago",
+    "website_name": "Reddit · r/audioengineering",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "432 Hz is said to be mathematically consistent with the patterns of the universe. Studies reveal that 432hz tuning vibrates with the universe's ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "432 Hz is said to be mathematically consistent with the patterns of the universe"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.reddit.com/r/audioengineering/comments/25kdtp/the_healing_frequency_of_432_hz_whats_the/#:~:text=432%20Hz%20is%20said%20to,tuning%20vibrates%20with%20the%20universe's",
+      "domain": "www.reddit.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "Inner Balance | 432Hz + 111Hz Healing Calm & Inner Peace",
+    "url": "https://www.youtube.com/watch?v=C9hMaqQFKXk&vl=en",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "39.3M+ views  ·  3 years ago",
+    "website_name": "YouTube · Inner Lotus Music",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "The natural frequency of 432Hz, also called the“Earth frequency”, is the frequency everything in our Universe resonates with.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "The natural frequency of 432Hz"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2023-08-27 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "perspectives",
+    "rank_group": 1,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[18]/div[1]",
+    "title": "What people are saying",
+    "items": [
+     {
+      "type": "perspectives_element",
+      "title": "Banah Winn",
+      "description": null,
+      "url": "https://www.facebook.com/61574889987599/posts/this-is-432hz-it-makes-your-brain-quiet-stay-as-long-as-you-needsometimes-you-do/122191664228829666/",
+      "domain": "www.facebook.com",
+      "date": "2 weeks ago",
+      "source": "Facebook",
+      "timestamp": "2026-09-12 07:54:35 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "432 Hz is a frequency often called the heartbeat of the Earth.\nIts gentle sound can help soothe anxiety, restore balance, and support the body in returning to a calmer state.\n\nClose your eyes, breathe deeply, and let the sound bring you home. 🤍",
+      "description": null,
+      "url": "https://www.instagram.com/reel/Db0qmNsBG0v/",
+      "domain": "www.instagram.com",
+      "date": "1 month ago",
+      "source": "meilanmaurits",
+      "timestamp": "2026-08-26 07:54:35 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "This 432Hz Piano Will Calm Your Mind Instantly 🎹 LIVE Deep Relaxation Music",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=7fa_zcHYRs8",
+      "domain": "www.youtube.com",
+      "date": "1 month ago",
+      "source": "Matt Savina",
+      "timestamp": "2026-08-26 07:54:35 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "This is 432hz golden ratio.\nIt will raise your frequency 💫\nStay as long as you need ✨\n\nMaybe you don’t need to do anything right now.\n\nJust listen.\n\nLet the notifications stop.\nLet the scrolling stop.\nGive yourself a few quiet minutes. 🎧\n\nUse the sound while you breathe, meditate, visualize, or simply slow down.\n\nGolden Ratio frequencies can become a simple daily ritual for creating intentional space and shifting your attention toward what matters to you.\n\n✨ Comment “Golden” to start your free 7-day trial.",
+      "description": null,
+      "url": "https://www.instagram.com/reel/DdmJgXIhCGA/",
+      "domain": "www.instagram.com",
+      "date": "3 days ago",
+      "source": "banahwinn",
+      "timestamp": "2026-09-23 07:54:35 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Mountain Rain",
+      "description": null,
+      "url": "https://www.facebook.com/61578344000819/posts/432hz-crystal-soundclear-pure-sound-waves-unadorned-and-uncluttered-penetrate-yo/122192264864944800/",
+      "domain": "www.facebook.com",
+      "date": "2 weeks ago",
+      "source": "Facebook",
+      "timestamp": "2026-09-12 07:54:35 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "440 Hz vs 432 | Which one sounds better ? #guitar #fingerstyleguitar #guitarcover #guitarra #guitarist",
+      "description": null,
+      "url": "https://www.facebook.com/100076337952025/posts/440-hz-vs-432-which-one-sounds-better-guitar-fingerstyleguitar-guitarcover-guita/1111677868053468/",
+      "domain": "www.facebook.com",
+      "date": "3 weeks ago",
+      "source": "100076337952025",
+      "timestamp": "2026-09-05 07:54:35 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "GUIDED HUMAN FREQUENCY The \"Universal Frequency\" primarily refers to 432 Hz, often called the \"tuning of nature\". It is widely used in sound therapy and guided meditation to align with cosmic patterns, reduce emotional tension, and restore inner balanc",
+      "description": null,
+      "url": "https://www.linkedin.com/posts/william-r-g-3182ba37_guided-human-frequency-the-universal-frequency-activity-7478254874934140928-ipjS",
+      "domain": "www.linkedin.com",
+      "date": "Jul 1, 2026",
+      "source": "William R. G.",
+      "timestamp": "2026-07-01 00:00:00 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "I have been telling people that 432 hz was never used historically. But now I am reading the Oxford Companion to Music written in 1952. Turns out it is actually true, 432 hz was the standard before 440 hz. UPDATE, it was never the standard, it was only used b",
+      "description": null,
+      "url": "https://www.facebook.com/groups/876194196241093/posts/2427462037780960/",
+      "domain": "www.facebook.com",
+      "date": "2 weeks ago",
+      "source": "Music Theory",
+      "timestamp": "2026-09-12 07:54:35 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "#music #432hz #spirituality #quantumzworld #fyp",
+      "description": null,
+      "url": "https://www.tiktok.com/@quantumcreation2.0/video/7670131744674270477",
+      "domain": "www.tiktok.com",
+      "date": "1 month ago",
+      "source": "QuantumCreation2.0",
+      "timestamp": "2026-08-26 07:54:35 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "432 Hz. Take a moment, listen, and notice how you feel. 432 Hz is often described as a calming or relaxing frequency. While some people report feeling more peaceful or settled while listening, there isn’t strong scientific evidence that 432 Hz specifically “quiet",
+      "description": null,
+      "url": "https://www.facebook.com/MooreWellnessLLC/posts/432-hz-take-a-moment-listen-and-notice-how-you-feel432-hz-is-often-described-as-/1693021812828437/",
+      "domain": "www.facebook.com",
+      "date": "2 weeks ago",
+      "source": "MooreWellnessLLC",
+      "timestamp": "2026-09-12 07:54:35 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Rock History Book/Music. . 432Hz vs 440Hz, The Shocking Water Experiment, Mark Farner (Grand Funk). #GrandFunkRailroad #GrandFunk #MarkFarner #DonBrewer #MelSchacher #AmericanBand #WereAnAmericanBand #SomeKindOfWonderful #TheLoc",
+      "description": null,
+      "url": "https://www.facebook.com/rockhistorybook/videos/432hz-vs-440hz-the-shocking-water-experiment-mark-farner-grand-funk-grandfunkrai/2699297900472969/",
+      "domain": "www.facebook.com",
+      "date": "1 week ago",
+      "source": "rockhistorybook",
+      "timestamp": "2026-09-19 07:54:35 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "432 Hz vs. 440 Hz.\n\nOne of the most debated questions in the history of music. 🎼\n\nFor centuries, there was no universal tuning standard. Different cities, orchestras, and instrument makers used different frequencies, creating a rich diversity of musical sound.\n\nIn the 20th century, A = 440 Hz became the international reference for tuning, allowing musicians around the world to perform in harmony.\n\nYet many artists, composers, and listeners continue to explore 432 Hz, describing it as warmer, softer, or more natural to the ear.\n\nThe science?\n\nThere is currently no conclusive evidence that either 432 Hz or 440 Hz has unique biological or healing effects.\n\nBut there is no denying one thing:\n\nFrequency shapes experience.\n\nEvery vibration carries energy.\n\nEvery note influences emotion.\n\nEvery melody becomes a conversation between mathematics, physics, and the human mind.\n\n🜂 The Alchemical Layer\n\nPerhaps the real question is not which frequency is “correct.”\n\nPerhaps it is this:\n\nHow does it",
+      "description": null,
+      "url": "https://www.instagram.com/reel/Da5Ppu6JWTT/",
+      "domain": "www.instagram.com",
+      "date": "Jul 17, 2026",
+      "source": "alchemist_kovalev",
+      "timestamp": "2026-07-17 00:00:00 +00:00"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "carousel",
+    "rank_group": 1,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[20]/div[1]",
+    "title": "Albums",
+    "items": [
+     {
+      "type": "carousel_element",
+      "title": "#432Hz Sleep",
+      "subtitle": "2022",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPIHP2sHcKV9D6-HgKt8h2ou9wXpvopGyP5nmtkiR_fA&s=10"
+     },
+     {
+      "type": "carousel_element",
+      "title": "Music for Sleeping 432 Hz with Rain Sounds",
+      "subtitle": "2022",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbt3iBaUXQYKWHylYIjdRlL_ZDvVkwoMFpGTlJiJeZyg&s=10"
+     },
+     {
+      "type": "carousel_element",
+      "title": "Dog Relaxation Retreat: Soothing 432Hz Frequencies, Stress Relief and Calming Therapy at Pet Spa",
+      "subtitle": "2024",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCXmHFjEH0hfpt-RCg3Y4WUgyEOrIUgsGqPOn7_LokNg&s=10"
+     },
+     {
+      "type": "carousel_element",
+      "title": "432 Hz Sleep Music, Sounds of Ocean",
+      "subtitle": "2022",
+      "image_url": "https://ssl.gstatic.com/knowledgecard/album-95.png"
+     },
+     {
+      "type": "carousel_element",
+      "title": "Birch Balm: the Soothing Touch of Nature",
+      "subtitle": null,
+      "image_url": "https://ssl.gstatic.com/knowledgecard/album-95.png"
+     },
+     {
+      "type": "carousel_element",
+      "title": "Bed Time",
+      "subtitle": "2022",
+      "image_url": "https://ssl.gstatic.com/knowledgecard/album-95.png"
+     },
+     {
+      "type": "carousel_element",
+      "title": "432 Hz Dream Flute: Melodic Journey",
+      "subtitle": null,
+      "image_url": "//www.gstatic.com/knowledgecard/album-95.png"
+     },
+     {
+      "type": "carousel_element",
+      "title": "Music for Relaxation Strategies",
+      "subtitle": "2022",
+      "image_url": "//www.gstatic.com/knowledgecard/album-95.png"
+     },
+     {
+      "type": "carousel_element",
+      "title": "Serene 432 Hz Piano Flowing Through the Woods",
+      "subtitle": null,
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMtKn13_8UdfLJKWM4h0DUXg7kWfZ6QwYYzKjq6U4ghA&s=10"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[22]/div[1]/div[1]",
+    "domain": "www.handpan.world",
+    "title": "Immerse yourself in the world of the 432 Hz frequency",
+    "url": "https://www.handpan.world/en/blogs/frequenzen/die-schwingungen-der-heilung-tauchen-sie-ein-in-die-welt-der-432-hz-frequenz?srsltid=AU7gw4W4axKrOGC-bEbBegAWXrpRDcYGgIPwRmwcx-Itja8h69RWkhed",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.handpan.world › Frequencies",
+    "website_name": "Handpan.World",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sep 28, 2023 — More than just a harmonic pitch, the 432 Hz frequency is a tool that can help reduce stress, promote relaxation, expand consciousness, and ... Read more",
+    "pre_snippet": "09/28/2023 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "a tool that can help reduce stress, promote relaxation, expand consciousness"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.handpan.world/en/blogs/frequenzen/die-schwingungen-der-heilung-tauchen-sie-ein-in-die-welt-der-432-hz-frequenz?srsltid=AU7gw4W4axKrOGC-bEbBegAWXrpRDcYGgIPwRmwcx-Itja8h69RWkhed#:~:text=More%20than%20just%20a%20harmonic,promote%20relaxation%2C%20expand%20consciousness%2C%20and",
+      "domain": "www.handpan.world"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2023-09-28 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 13,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[24]/div[1]/div[1]",
+    "domain": "wavwatch.com",
+    "title": "432 Hz Frequency Benefits: Finding Balance Naturally",
+    "url": "https://wavwatch.com/blogs/blog/432-hz-frequency-benefits-finding-balance-naturally?srsltid=AU7gw4WZhKbtK4RoyGqXJDmZQia77vmStDbaABJW-U-NXo-qydaoX6qE",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://wavwatch.com › blogs › blog › 432-hz-frequenc...",
+    "website_name": "WAVwatch",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sep 30, 2025 — 432 Hz is a sound frequency often used to support relaxation, emotional balance, sleep, and stress relief. Compared to standard 440 Hz tuning, ... Read more",
+    "pre_snippet": "09/30/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "432 Hz"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://wavwatch.com/blogs/blog/432-hz-frequency-benefits-finding-balance-naturally?srsltid=AU7gw4WZhKbtK4RoyGqXJDmZQia77vmStDbaABJW-U-NXo-qydaoX6qE#:~:text=432%20Hz%20is%20a%20sound,to%20standard%20440%20Hz%20tuning%2C",
+      "domain": "wavwatch.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-09-30 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "short_videos",
+    "rank_group": 1,
+    "rank_absolute": 14,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[1]/div[2]/div[1]/div[1]/div[26]/div[1]",
+    "title": "Short videos",
+    "items": [
+     {
+      "type": "short_videos_element",
+      "title": "432 Hz is a frequency often called the heartbeat of the Earth. Its ...",
+      "url": "https://www.facebook.com/MeilanMauritsRise/videos/432-hz-is-a-frequency-often-called-the-heartbeat-of-the-earthits-gentle-sound-ca/2602966003510121/",
+      "domain": "google.com",
+      "source": "Mei-lan Maurits"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "432 Hz Universe Frequency",
+      "url": "https://www.youtube.com/shorts/Jv3we9ctZ5c",
+      "domain": "google.com",
+      "source": "Music for Body and Spirit - Meditation Music"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "432 Hz is known as the heartbeat of the Earth. It can help ...",
+      "url": "https://www.facebook.com/MeilanMauritsRise/videos/432-hz-is-known-as-the-heartbeat-of-the-earthit-can-help-soothe-anxiety-balance-/2533260903775263/",
+      "domain": "google.com",
+      "source": "Mei-lan Maurits"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "Feel the soothing sounds of 432 Hz bring you grounding ...",
+      "url": "https://www.instagram.com/reel/DSY_SV1EhkD/?hl=en",
+      "domain": "google.com",
+      "source": "Taylor Sol 🪶"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "432 Hz Healing Frequency",
+      "url": "https://www.youtube.com/shorts/7COUrvgDbus",
+      "domain": "google.com",
+      "source": "Music for Body and Spirit - Meditation Music"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "This is 432 Hz Golden Ratio Frequency ...",
+      "url": "https://www.instagram.com/reel/DM6F9d6hbOi/?hl=en",
+      "domain": "google.com",
+      "source": "Banah Winn"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "432Hz Healing Night",
+      "url": "https://www.youtube.com/watch?v=7dOkVY--pHQ",
+      "domain": "google.com",
+      "source": "The Sound Wave - Topic"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "432 Hz is known as a frequency often used in sound healing to ...",
+      "url": "https://www.facebook.com/61563767842766/videos/432-hz-is-known-as-a-frequency-often-used-in-sound-healing-to-support-calm-and-r/2024677504754977/",
+      "domain": "google.com",
+      "source": "Mei-lan"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "432 Hz Deep Healing Music",
+      "url": "https://www.youtube.com/watch?v=XnRiLNIiteE",
+      "domain": "google.com",
+      "source": "Jason Stephenson - Topic"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "The benefits of listening to 432 Hz music may include",
+      "url": "https://www.instagram.com/reel/C7y9rY8gze8/?hl=en",
+      "domain": "google.com",
+      "source": "ＤＥＳＮＡ"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 15,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[3]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "432 Hz sound machine",
+     "432 Hz benefits",
+     "432 Hz frequency sound download",
+     "432 Hz sound",
+     "432 Hz Sound Frequency Songs",
+     "432 Hz Holy Spirit",
+     "432 Hz Music 432 Hz Healing",
+     "432 Hz youtube"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

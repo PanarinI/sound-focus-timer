@@ -1,0 +1,804 @@
+[
+ {
+  "keyword": "binaural beats",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=binaural%20beats&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 15:10:47 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "video",
+   "people_also_ask",
+   "organic",
+   "product_considerations",
+   "related_searches"
+  ],
+  "se_results_count": 107,
+  "pages_count": 1,
+  "items_count": 13,
+  "items": [
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "![This Is Your Brain on Binaural Beats – Doctor Segil, Neurologist](https://api.dataforseo.com/cdn/i/09251510-2042-0139-0000-acdac6ddec59:4)\nBinaural beats are `an auditory illusion created when you listen to two slightly different sound frequencies in each ear` , which your brain perceives as a single pulsing third tone.[[1]](https://insighttimer.com/techniques/sound-healing/binaural-beats)[[2]](https://www.youtube.com/shorts/V46C5WM8rjI)\n\n### How They Work\n\n- **Different Frequencies:** Your left ear hears one frequency (e.g., 400 Hz) and your right ear hears another (e.g., 410 Hz).\n- **Perceived Beat:** Your brain processes the difference between them as a new beat (in this example, 10 Hz).\n- **Brainwave Entrainment:** Listening to these tones through stereo headphones can encourage your [WebMD](https://www.webmd.com/balance/what-are-binaural-beats) brainwaves to synchronize with the frequency of the beat, a process detailed by resources like [Healthline](https://www.healthline.com/health/binaural-beats).[[1]](https://www.webmd.com/balance/what-are-binaural-beats)[[2]](https://www.youtube.com/shorts/V46C5WM8rjI)[[3]](https://insighttimer.com/techniques/sound-healing/binaural-beats)[[4]](https://www.healthline.com/health/binaural-beats)\n\n### Frequencies and Benefits\n\n- **Delta (1–4 Hz):** Linked to deep sleep, physical recovery, and profound relaxation.\n- **Theta (4–8 Hz):** Associated with light sleep, REM cycles, reduced anxiety, and deep meditation.\n- **Alpha (8–13 Hz):** Thought to encourage a calm, focused, and positive mindset.\n- **Beta (14–30 Hz):** Connected to high concentration, alertness, and active problem-solving.[[1]](https://www.youtube.com/watch?v=ETQHHQpAdY4)[[2]](https://www.google.com/search?q=product&prds=pvt:hg,productid:7353082456795459456&ibp=oshop)\n\n### How to Use Them\n\n- **Wear Headphones:** You must use stereo headphones or earbuds so each ear receives a distinct frequency.\n- **Match Your Goal:** Pick a frequency range that fits what you want to achieve, such as a focus track for studying or a delta track for sleeping.\n- **Set the Volume:** Keep the audio at a comfortable, moderate background level while working or resting.[[1]](https://www.youtube.com/watch?v=acQS2Fef8tU)[[2]](https://www.youtube.com/watch?v=ETQHHQpAdY4)[[3]](https://insighttimer.com/techniques/sound-healing/binaural-beats)",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Binaural beats are an auditory illusion created when you listen to two slightly different sound frequencies in each ear, which your brain perceives as a single pulsing third tone.",
+      "markdown": "![This Is Your Brain on Binaural Beats – Doctor Segil, Neurologist](https://api.dataforseo.com/cdn/i/09251510-2042-0139-0000-acdac6ddec59:2)\nBinaural beats are `an auditory illusion created when you listen to two slightly different sound frequencies in each ear` , which your brain perceives as a single pulsing third tone.[[1]](https://insighttimer.com/techniques/sound-healing/binaural-beats)[[2]](https://www.youtube.com/shorts/V46C5WM8rjI)",
+      "links": null,
+      "images": [
+       {
+        "type": "images_element",
+        "alt": "This Is Your Brain on Binaural Beats – Doctor Segil, Neurologist",
+        "url": null,
+        "image_url": "https://api.dataforseo.com/cdn/i/09251510-2042-0139-0000-acdac6ddec59:3"
+       }
+      ],
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Insight Timer",
+        "domain": "insighttimer.com",
+        "url": "https://insighttimer.com/techniques/sound-healing/binaural-beats",
+        "title": "Binaural Beats: What It Is, How It Works, Cited Research & Best Free ...",
+        "text": "Binaural beats are a headphone-based sound meditation in which each ear hears a slightly different tone and the brain perceives a ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/shorts/V46C5WM8rjI",
+        "title": "What exactly are binaural beats? Can they help you boost cognitive ...",
+        "text": "What exactly are binaural beats? Can they help you boost cognitive performance? #binauralbeats but tell us about binaural beats be..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "How They Work",
+      "text": "Different Frequencies: Your left ear hears one frequency (e.g., 400 Hz) and your right ear hears another (e.g., 410 Hz). Perceived Beat: Your brain processes the difference between them as a new beat (in this example, 10 Hz). Brainwave Entrainment: Listening to these tones through stereo headphones can encourage your WebMD brainwaves to synchronize with the frequency of the beat, a process detailed by resources like Healthline.",
+      "markdown": "- **Different Frequencies:** Your left ear hears one frequency (e.g., 400 Hz) and your right ear hears another (e.g., 410 Hz).\n- **Perceived Beat:** Your brain processes the difference between them as a new beat (in this example, 10 Hz).\n- **Brainwave Entrainment:** Listening to these tones through stereo headphones can encourage your [WebMD](https://www.webmd.com/balance/what-are-binaural-beats) brainwaves to synchronize with the frequency of the beat, a process detailed by resources like [Healthline](https://www.healthline.com/health/binaural-beats).[[1]](https://www.webmd.com/balance/what-are-binaural-beats)[[2]](https://www.youtube.com/shorts/V46C5WM8rjI)[[3]](https://insighttimer.com/techniques/sound-healing/binaural-beats)[[4]](https://www.healthline.com/health/binaural-beats)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "WebMD",
+        "description": null,
+        "url": "https://www.webmd.com/balance/what-are-binaural-beats",
+        "domain": "www.webmd.com"
+       },
+       {
+        "type": "link_element",
+        "title": "Healthline",
+        "description": null,
+        "url": "https://www.healthline.com/health/binaural-beats",
+        "domain": "www.healthline.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "WebMD",
+        "domain": "www.webmd.com",
+        "url": "https://www.webmd.com/balance/what-are-binaural-beats",
+        "title": "Binaural Beats: What Are They and What Are the Benefits? - WebMD",
+        "text": "Your brain interprets the two tones as a beat of its own. The two tones align with your brain waves, creating a beat with a differ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/shorts/V46C5WM8rjI",
+        "title": "What exactly are binaural beats? Can they help you boost cognitive ...",
+        "text": "What exactly are binaural beats? Can they help you boost cognitive performance? #binauralbeats but tell us about binaural beats be..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Insight Timer",
+        "domain": "insighttimer.com",
+        "url": "https://insighttimer.com/techniques/sound-healing/binaural-beats",
+        "title": "Binaural Beats: What It Is, How It Works, Cited Research & Best Free ...",
+        "text": "Binaural beats are a headphone-based sound meditation in which each ear hears a slightly different tone and the brain perceives a ..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Healthline",
+        "domain": "www.healthline.com",
+        "url": "https://www.healthline.com/health/binaural-beats",
+        "title": "Binaural Beats: Sleep, Therapy, and Meditation",
+        "text": "What health benefits are binaural beats claimed to have? Meditation is the practice of calming the mind and tuning down the number..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Frequencies and Benefits",
+      "text": "Delta (1–4 Hz): Linked to deep sleep, physical recovery, and profound relaxation. Theta (4–8 Hz): Associated with light sleep, REM cycles, reduced anxiety, and deep meditation. Alpha (8–13 Hz): Thought to encourage a calm, focused, and positive mindset. Beta (14–30 Hz): Connected to high concentration, alertness, and active problem-solving.",
+      "markdown": "- **Delta (1–4 Hz):** Linked to deep sleep, physical recovery, and profound relaxation.\n- **Theta (4–8 Hz):** Associated with light sleep, REM cycles, reduced anxiety, and deep meditation.\n- **Alpha (8–13 Hz):** Thought to encourage a calm, focused, and positive mindset.\n- **Beta (14–30 Hz):** Connected to high concentration, alertness, and active problem-solving.[[1]](https://www.youtube.com/watch?v=ETQHHQpAdY4)[[2]](https://www.google.com/search?q=product&prds=pvt:hg,productid:7353082456795459456&ibp=oshop)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=ETQHHQpAdY4",
+        "title": "Binaural Beats 2HZ | Healing music | Meditation Moments",
+        "text": "How do you use binaural beats? All you need to experiment with binaural beats is a binaural beat audio and a pair of headphones or..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Google",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:7353082456795459456&ibp=oshop",
+        "title": "Binaural Beats: 30+ Hours of Beta, Alpha, Theta & Delta Wave Frequencies for Sleep, Deep Focus, Stress Relief, Anxiety Reduction, ADHD Management, Med",
+        "text": "In the modern world, the cycle of high-stress, distracted days leads inevitably to restless, sleepless nights. If you are tired of..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "How to Use Them",
+      "text": "Wear Headphones: You must use stereo headphones or earbuds so each ear receives a distinct frequency. Match Your Goal: Pick a frequency range that fits what you want to achieve, such as a focus track for studying or a delta track for sleeping. Set the Volume: Keep the audio at a comfortable, moderate background level while working or resting.",
+      "markdown": "- **Wear Headphones:** You must use stereo headphones or earbuds so each ear receives a distinct frequency.\n- **Match Your Goal:** Pick a frequency range that fits what you want to achieve, such as a focus track for studying or a delta track for sleeping.\n- **Set the Volume:** Keep the audio at a comfortable, moderate background level while working or resting.[[1]](https://www.youtube.com/watch?v=acQS2Fef8tU)[[2]](https://www.youtube.com/watch?v=ETQHHQpAdY4)[[3]](https://insighttimer.com/techniques/sound-healing/binaural-beats)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=acQS2Fef8tU",
+        "title": "Increase Brain Power, Focus Music, Reduce Anxiety, Binaural and ...",
+        "text": "Increase Brain Power, Focus Music, Reduce Anxiety, Binaural and Isochronic Beats - YouTube This content isn't available. This is n..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=ETQHHQpAdY4",
+        "title": "Binaural Beats 2HZ | Healing music | Meditation Moments",
+        "text": "How do you use binaural beats? All you need to experiment with binaural beats is a binaural beat audio and a pair of headphones or..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Insight Timer",
+        "domain": "insighttimer.com",
+        "url": "https://insighttimer.com/techniques/sound-healing/binaural-beats",
+        "title": "Binaural Beats: What It Is, How It Works, Cited Research & Best Free ...",
+        "text": "Binaural beats are a headphone-based sound meditation in which each ear hears a slightly different tone and the brain perceives a ..."
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "WebMD",
+      "domain": "www.webmd.com",
+      "url": "https://www.webmd.com/balance/what-are-binaural-beats",
+      "title": "Binaural Beats: What Are They and What Are the Benefits? - WebMD",
+      "text": "Your brain interprets the two tones as a beat of its own. The two tones align with your brain waves, creating a beat with a differ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Healthline",
+      "domain": "www.healthline.com",
+      "url": "https://www.healthline.com/health/binaural-beats",
+      "title": "Binaural Beats: Sleep, Therapy, and Meditation",
+      "text": "What health benefits are binaural beats claimed to have? Meditation is the practice of calming the mind and tuning down the number..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=acQS2Fef8tU",
+      "title": "Increase Brain Power, Focus Music, Reduce Anxiety, Binaural and ...",
+      "text": "Increase Brain Power, Focus Music, Reduce Anxiety, Binaural and Isochronic Beats - YouTube This content isn't available. This is n..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Insight Timer",
+      "domain": "insighttimer.com",
+      "url": "https://insighttimer.com/techniques/sound-healing/binaural-beats",
+      "title": "Binaural Beats: What It Is, How It Works, Cited Research & Best Free ...",
+      "text": "Binaural beats are a headphone-based sound meditation in which each ear hears a slightly different tone and the brain perceives a ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=ETQHHQpAdY4",
+      "title": "Binaural Beats 2HZ | Healing music | Meditation Moments",
+      "text": "How do you use binaural beats? All you need to experiment with binaural beats is a binaural beat audio and a pair of headphones or..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/shorts/V46C5WM8rjI",
+      "title": "What exactly are binaural beats? Can they help you boost cognitive ...",
+      "text": "What exactly are binaural beats? Can they help you boost cognitive performance? #binauralbeats but tell us about binaural beats be..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Google",
+      "domain": "www.google.com",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,productid:7353082456795459456&ibp=oshop",
+      "title": "Binaural Beats: 30+ Hours of Beta, Alpha, Theta & Delta Wave Frequencies for Sleep, Deep Focus, Stress Relief, Anxiety Reduction, ADHD Management, Med",
+      "text": "In the modern world, the cycle of high-stress, distracted days leads inevitably to restless, sleepless nights. If you are tired of..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · SleepTube - Hypnotic Relaxation",
+      "title": "SUPER FOCUS [ Flow State Music ] Binaural Beats 40Hz  ...",
+      "timestamp": "2022-10-05 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=n4YghVcjbpw"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · SleepTube - Hypnotic Relaxation",
+      "title": "Calming Flow [ 7Hz THETA ] Binaural Beats Music for ...",
+      "timestamp": "2024-10-16 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=KlrnObUjA1U"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Greenred Productions - Relaxing Music",
+      "title": "Binaural Beats Music for Studying | Deep Focus Music",
+      "timestamp": "2026-09-23 15:10:47 +00:00",
+      "url": "https://www.youtube.com/watch?v=aDzN-cOycv0"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "Do binaural beats actually work?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Why do I feel weird after listening to binaural beats?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What happens if you fall asleep listening to binaural beats?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Which binaural beat is best?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "Binaural Beats: Focus | Spotify Playlist",
+    "url": "https://open.spotify.com/playlist/37i9dQZF1DX7EF8wVxBVhG",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › playlist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Enhance your concentration by traveling through different brainwave frequencies until you reach peak awareness in Gamma state.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "traveling through different brainwave frequencies"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]",
+    "domain": "www.webmd.com",
+    "title": "Binaural Beats: What Are They and What Are the Benefits?",
+    "url": "https://www.webmd.com/balance/what-are-binaural-beats",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.webmd.com › Health & Balance › Reference",
+    "website_name": "WebMD",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "A binaural beat is an illusion created by your brain when you listen to two tones with slightly different frequencies at the same time, one in each ear. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "an illusion created by your brain"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.webmd.com/balance/what-are-binaural-beats#:~:text=A%20binaural%20beat%20is%20an,time%2C%20one%20in%20each%20ear.",
+      "domain": "www.webmd.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[9]/div[1]/div[1]",
+    "domain": "pmc.ncbi.nlm.nih.gov",
+    "title": "Binaural beats to entrain the brain? A systematic review of the ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10198548/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://pmc.ncbi.nlm.nih.gov › articles › PMC10198548",
+    "website_name": "National Institutes of Health (NIH) | (.gov)",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "by RM Ingendoh · 2023 · Cited by 175 — Binaural beats are an auditory phenomenon that occurs when two tones of different frequencies, which are presented separately to each ear,",
+    "pre_snippet": "by RM Ingendoh · 2023 · Cited by 175",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Binaural beats"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]",
+    "domain": "www.healthline.com",
+    "title": "Binaural Beats: Sleep, Therapy, and Meditation",
+    "url": "https://www.healthline.com/health/binaural-beats",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.healthline.com › health › binaural-beats",
+    "website_name": "Healthline",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "The results of the study found that listening to binaural beats for 60 days significantly reduced anxiety and increased the overall quality of life of these ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "listening to binaural beats for 60 days significantly reduced anxiety"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.healthline.com/health/binaural-beats#:~:text=The%20results%20of%20the%20study,of%20life%20of%20these%20participants.",
+      "domain": "www.healthline.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[13]/div[1]/div[1]",
+    "domain": "www.sleepfoundation.org",
+    "title": "Can Binaural Beats Help You Fall Asleep?",
+    "url": "https://www.sleepfoundation.org/noise-and-sleep/binaural-beats",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.sleepfoundation.org › noise-and-sleep › bi...",
+    "website_name": "Sleep Foundation",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jul 29, 2025 — Binaural beats are not a sound but an auditory phenomenon that occurs when listening to two different frequencies at once.",
+    "pre_snippet": "07/29/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Binaural beats"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-07-29 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[15]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "Good Vibes - Binaural Beats",
+    "url": "https://www.youtube.com/channel/UCIauBb6cmot_0cYlYeEb8Mw",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "2.4M+ followers",
+    "website_name": "YouTube · Good Vibes - Binaural Beats",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "This collection of audio tracks utilizes the science of binaural beats to guide your brain through various states of consciousness, each tailored to help 2.0 Hz",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "utilizes the science of binaural beats"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[17]/div[1]/div[1]",
+    "domain": "insighttimer.com",
+    "title": "Binaural Beats: What It Is, How It Works, Cited Research ...",
+    "url": "https://insighttimer.com/techniques/sound-healing/binaural-beats",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://insighttimer.com › Techniques",
+    "website_name": "Insight Timer",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jul 28, 2026 — Binaural beats are a headphone-based sound meditation in which each ear hears a slightly different tone and the brain perceives a third pulsing ... Read more",
+    "pre_snippet": "07/28/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "headphone-based sound meditation"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://insighttimer.com/techniques/sound-healing/binaural-beats#:~:text=Binaural%20beats%20are%20a%20headphone-based,them%20(Ingendoh%20et%20al.%2C%202023).",
+      "domain": "insighttimer.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-07-28 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[19]/div[1]/div[1]",
+    "domain": "simple.wikipedia.org",
+    "title": "Binaural beats - Simple English Wikipedia, the free ...",
+    "url": "https://simple.wikipedia.org/wiki/Binaural_beats",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://simple.wikipedia.org › wiki › Binaural_beats",
+    "website_name": "Wikipedia",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "A binaural beat is an auditory illusion. It is perceived when two different pure-tone sine waves are presented to a listener, one tone to each ear. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "an auditory illusion"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://simple.wikipedia.org/wiki/Binaural_beats#:~:text=A%20binaural%20beat%20is%20an,one%20tone%20to%20each%20ear.",
+      "domain": "simple.wikipedia.org"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "product_considerations",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[20]/div[1]",
+    "title": "Things to know",
+    "items": [
+     {
+      "type": "product_considerations_element",
+      "title": "What are the benefits of binaural beats?",
+      "consideration_category": "Benefits",
+      "expanded_element": [
+       {
+        "type": "product_considerations_expanded_element",
+        "title": "Sound Therapy and Binaural Beats: Do They Work? - Cedars-Sinai",
+        "featured_title": null,
+        "breadcrumb": "https://www.cedars-sinai.org › healthy-living › sound-ad...",
+        "snippet": "Binaural beats are an auditory illusion that occurs in the brain when two tones of slightly different frequencies are played separately into each ear simultaneously using headphones. The brain then perceives a third pulsating sound some believe can promote focus, sleep, cognition and relaxation.",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?sca_esv=eb3ed732ab39b407&hl=en&gl=US&sxsrf=APpeQnvl6llUaqIg39wPDFMpcu3oX-j2mg:1790349046186&q=what+are+the+benefits+of+binaural+beats&sa=X&ved=2ahUKEwihxa_3gYqXAxUM_rsIHWADKv4QrooIegQIVRAO",
+        "timestamp": "2026-04-30 00:00:00 +00:00",
+        "related_searches": [
+         "What are the benefits of binaural beats?"
+        ],
+        "about_this_result": null
+       }
+      ]
+     },
+     {
+      "type": "product_considerations_element",
+      "title": "How do binaural beats work?",
+      "consideration_category": "How it Works",
+      "expanded_element": [
+       {
+        "type": "product_considerations_expanded_element",
+        "title": "Binaural beats to entrain the brain? A systematic review of the effects of ...",
+        "featured_title": null,
+        "breadcrumb": "https://pmc.ncbi.nlm.nih.gov › articles › PMC10198548",
+        "snippet": "Binaural beats are an auditory phenomenon that occurs when two tones of different frequencies, which are presented separately to each ear, elicit the sensation of a third tone oscillating at the difference frequency of the two tones.",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?sca_esv=eb3ed732ab39b407&hl=en&gl=US&sxsrf=APpeQnvl6llUaqIg39wPDFMpcu3oX-j2mg:1790349046186&q=how+do+binaural+beats+work&sa=X&ved=2ahUKEwihxa_3gYqXAxUM_rsIHWADKv4QrooIegQIVRAc",
+        "timestamp": "2023-05-19 00:00:00 +00:00",
+        "related_searches": [
+         "How do binaural beats work?"
+        ],
+        "about_this_result": null
+       }
+      ]
+     },
+     {
+      "type": "product_considerations_element",
+      "title": "How to pronounce Binaural Beats",
+      "consideration_category": "Pronunciation",
+      "expanded_element": null
+     },
+     {
+      "type": "product_considerations_element",
+      "title": "What are the different frequencies of binaural beats?",
+      "consideration_category": "Frequencies",
+      "expanded_element": [
+       {
+        "type": "product_considerations_expanded_element",
+        "title": "What Are Binaural Beats? Benefits, Frequencies, and Do's & Don'ts",
+        "featured_title": "Before diving into binaural beats, let's explore how they work, the types of binaural beats, and how to use binaural beats effectively.",
+        "breadcrumb": "https://www.brain.fm › blog › what_are_binaural_beats_...",
+        "snippet": "Types of Binaural Beats. ...\nDelta Waves (0.5–4 Hz) ...\nTheta Waves (4–8 Hz) ...\nAlpha Waves (8–14 Hz) ...\nBeta Waves (14–30 Hz) ...\nGamma Waves (30–100 Hz) ...\nPotential Benefits of Binaural Beats.",
+        "domain": "www.google.com",
+        "url": "https://www.google.com/search?sca_esv=eb3ed732ab39b407&hl=en&gl=US&sxsrf=APpeQnvl6llUaqIg39wPDFMpcu3oX-j2mg:1790349046186&q=what+are+the+different+frequencies+of+binaural+beats&sa=X&ved=2ahUKEwihxa_3gYqXAxUM_rsIHWADKv4QrooIegQIVRA4",
+        "timestamp": "2025-01-08 00:00:00 +00:00",
+        "related_searches": [
+         "What are the different frequencies of binaural beats?"
+        ],
+        "about_this_result": null
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 13,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Binaural beats machine",
+     "Binaural beats danger",
+     "Binaural Beats download",
+     "Binaural beats free",
+     "40 Hz binaural beats for studying",
+     "Binaural beats benefits",
+     "Binaural Beats sleep",
+     "Can binaural beats damage your brain"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

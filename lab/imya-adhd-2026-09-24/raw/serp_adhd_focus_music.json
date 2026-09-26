@@ -1,0 +1,626 @@
+[
+ {
+  "keyword": "adhd focus music",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=adhd%20focus%20music&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-24 20:27:07 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "video",
+   "organic",
+   "people_also_ask",
+   "related_searches",
+   "knowledge_graph"
+  ],
+  "se_results_count": 131,
+  "pages_count": 1,
+  "items_count": 11,
+  "items": [
+   {
+    "type": "knowledge_graph",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]",
+    "title": "Adhd Focus Music",
+    "subtitle": "Song ‧ 2025",
+    "description": null,
+    "card_id": null,
+    "url": null,
+    "image_url": null,
+    "logo_url": null,
+    "cid": null,
+    "items": [
+     {
+      "type": "knowledge_graph_row_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+      "title": "Artists",
+      "data_attrid": "kc:/music/recording_cluster:artist",
+      "text": "Artists : Deep Work Music, Concentration Music, Calm Music for Studying, Sleep, Study, Focus",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Deep Work Music",
+        "url": "https://www.google.com/search?sca_esv=aad93e118372d4df&hl=en&gl=US&sxsrf=APpeQns2AmyS0EG8gNtbthPiRb8IqZqIbQ:1790281625595&q=Deep+Work+Music&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0ePVVmCwsXjJ4TD-bUeZL5LTsmPTsYCXdVLa4G512Zi91OxU5U5PxEdhmaKkyPOotDfqP3RaBKygHix7g9JzU-51orP4YFtDtedOz4ImYOEMJFvKm898E6qF8t96rY1ZU7nW73AQ7ZDLfOYNNdcCB07c2TirwxZOE6ErniRiTTs6qOBi479dXVmJcP80_iVX9F9gfN73ODb-UWYWuGio53xk3fXfzS_xRW5C3bw9Bu5RByOhR1BlKCyPxZnGtO9ZCodLjYI%3D&sa=X&ved=2ahUKEwidr93ihoiXAxVSSPEDHeIcLtYQmxN6BAgTEAI",
+        "domain": "www.google.com",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[2]/span[1]/a[1]"
+       },
+       {
+        "type": "link_element",
+        "title": "Concentration Music",
+        "url": "https://www.google.com/search?sca_esv=aad93e118372d4df&hl=en&gl=US&sxsrf=APpeQns2AmyS0EG8gNtbthPiRb8IqZqIbQ:1790281625595&q=Concentration+Music&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0apXZ4I0VAiKTGYjcepTC2pdbYlqHqMyXKfkF_bIvjZFLcGAONN6syYHFZRFM7hqC13vBWg6pXsY1eMf7keRqBo7QKfW7AHB521f6h361MFWQFKmCo6cCY41P1MUuhwUDtopc8Z0pwrHF8mriaGKPOc48XYx1i1FTsV69mFHjOx66d9g9ntJ2r6tXHKe22R7Sx_GnM6hdqpwsSVkgPCAKtGPXPSWo0WP1TNPY-zPwEb3H89fHldA3FNoEJLNl4RQV9_xHrs%3D&sa=X&ved=2ahUKEwidr93ihoiXAxVSSPEDHeIcLtYQmxN6BAgTEAM",
+        "domain": "www.google.com",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[2]/span[1]/a[2]"
+       },
+       {
+        "type": "link_element",
+        "title": "Calm Music for Studying",
+        "url": "https://www.google.com/search?sca_esv=aad93e118372d4df&hl=en&gl=US&sxsrf=APpeQns2AmyS0EG8gNtbthPiRb8IqZqIbQ:1790281625595&q=Calm+Music+for+Studying&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0f9vDMb3EEwn6pC5vHBGRZeAwdEgnmzX70NURWkyI2mBvw3fwuBuzJkP7ZGs4TCAxkH4rMbt7yZEiVyplBGzGEr25B7MVeTq7PZMgg488dcO8xajsynSEY-vmEKLiX5JZzvuvmiiqVmQ40_Y8gguH2Us1nyYVdxBpxxDUgxxuaPMRFFN86JkijL1FNqjEBI_GR1eMHesmR1-uToRaTDl5xv-ahoivZpxFmNpSpRRb2hXpc1DhU-pWzVlyeO_mKgV-4P43-QLdQ0glMJ9HvAdmUikELHA&sa=X&ved=2ahUKEwidr93ihoiXAxVSSPEDHeIcLtYQmxN6BAgTEAQ",
+        "domain": "www.google.com",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[2]/span[1]/a[3]"
+       },
+       {
+        "type": "link_element",
+        "title": "Sleep, Study, Focus",
+        "url": "https://www.google.com/search?sca_esv=aad93e118372d4df&hl=en&gl=US&sxsrf=APpeQns2AmyS0EG8gNtbthPiRb8IqZqIbQ:1790281625595&q=Sleep,+Study,+Focus&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0VJxsyMpsRVx--wZLQob637sW9uBRtb8pUGocNV3pvpijQB_yCn8gBn7tiHjN_o2TTaAkOv9VFbuczDL5MMAnm7x5CQusUYimVjcvvFiSB9POXaYikm8VssyEPYVcWLNlpffKK3GhZplH1NloDT6Aqlkxfz_VDOueO3jlQM3CPmtko8xQWObdSEOGfd5HAOUHcn5p830XULQGju3RRXMvp2CbvgR9WIaualbCAukpfGTpWcv8sCsgUv4AqeyjnZE6M3juAw%3D&sa=X&ved=2ahUKEwidr93ihoiXAxVSSPEDHeIcLtYQmxN6BAgTEAU",
+        "domain": "www.google.com",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[2]/span[1]/a[4]"
+       }
+      ],
+      "rectangle": null
+     },
+     {
+      "type": "knowledge_graph_row_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "title": "Album",
+      "data_attrid": "kc:/music/recording_cluster:first album",
+      "text": "Album : Neural Stream",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Neural Stream",
+        "url": "https://www.google.com/search?sca_esv=aad93e118372d4df&hl=en&gl=US&sxsrf=APpeQns2AmyS0EG8gNtbthPiRb8IqZqIbQ:1790281625595&q=Calm+Music+for+Studying+Neural+Stream&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0YBqB4U7U7xsdkpzzLcGrS2YtVrbvIcEpDV87tp559saZrwktJtN83XyEp9_c9c5--L6KEPZbeYK73M0Uual1SyfNkcWg3U8cF8vXCi3PdPhmADl323UZQigSgOzuz9ZHzb5mk_vLo7lHsSl90IgQDaSR-mbu_4VP8q6DE9CWgYmstyyQrQRN5-rxu-NLMphqYrtXtreHOSJAQ62jtVfOMrk6g2a&sa=X&ved=2ahUKEwidr93ihoiXAxVSSPEDHeIcLtYQmxN6BAgfEAI",
+        "domain": "www.google.com",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[2]/span[1]/a[1]"
+       }
+      ],
+      "rectangle": null
+     },
+     {
+      "type": "knowledge_graph_row_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]",
+      "title": "Released",
+      "data_attrid": "kc:/music/recording_cluster:release date",
+      "text": "Released : 2025",
+      "links": null,
+      "rectangle": null
+     },
+     {
+      "type": "knowledge_graph_row_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]",
+      "title": "Genre",
+      "data_attrid": "kc:/music/recording_cluster:skos_genre",
+      "text": "Genre : Ambient",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Ambient",
+        "url": "https://www.google.com/search?sca_esv=aad93e118372d4df&hl=en&gl=US&sxsrf=APpeQns2AmyS0EG8gNtbthPiRb8IqZqIbQ:1790281625595&q=&si=APenkKmVGdgpMPDQZoEWS8RIAhsqXAKlNLP0B8DNkkiU9KPI0dfF3jnwLwhyBWpZBcf5bqAWbN99qXytVCELHB3GnWVKsQtm-Vbxw4KRVBsqGU0bXrjgpAtYoZmM-g9J8Zez-QVpOUJ3kbPucbahQre3WY2Qwo1oK9bgg8z7Oq2h_jGVluGivWYavzWJyRRQ01RhDCRzYTXK&sa=X&ved=2ahUKEwidr93ihoiXAxVSSPEDHeIcLtYQmxN6BAggEAI",
+        "domain": "www.google.com",
+        "description": null,
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/span[2]/span[1]/a[1]"
+       }
+      ],
+      "rectangle": null
+     },
+     {
+      "type": "knowledge_graph_carousel_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "page": 1,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+      "title": "Listen",
+      "data_attrid": "action:listen_recording_cluster",
+      "link": null,
+      "items": [
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "YouTube Music",
+        "subtitle": null,
+        "url": "https://music.youtube.com/watch?v=H6FQwI1Npwg&feature=gws_kp_track",
+        "domain": "music.youtube.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09242027-2042-0139-0000-9567cfc19b74:0",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "Apple Music",
+        "subtitle": null,
+        "url": "https://music.apple.com/us/album/best-music-for-adhd-focus/1186574409?i=1186574926",
+        "domain": "music.apple.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09242027-2042-0139-0000-9567cfc19b74:1",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "iHeartRadio",
+        "subtitle": null,
+        "url": "https://www.iheart.com/artist/music-for-studying-31714617/songs/study-music-for-adhd-remedy-50373470/?autoplay=true",
+        "domain": "www.iheart.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09242027-2042-0139-0000-9567cfc19b74:2",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]"
+       },
+       {
+        "type": "knowledge_graph_carousel_element",
+        "title": "Amazon Music",
+        "subtitle": null,
+        "url": "https://music.amazon.com/tracks/B0FBTBQTGK?do=play&agent=googleAssistant&ref=dmm_seo_google_gkp_tracks&explicit=false",
+        "domain": "music.amazon.com",
+        "image_url": "https://api.dataforseo.com/cdn/i/09242027-2042-0139-0000-9567cfc19b74:3",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]"
+       }
+      ],
+      "rectangle": null
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Quiet Quest - Study Music",
+      "title": "Hyperfocus Music - ADHD Relief Music For Work, Studying and ...",
+      "timestamp": "2025-06-09 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=tV7JrrDsGeg"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Quiet Quest - Study Music",
+      "title": "ADHD Relief Music, Study Music For Focus And Concentration ...",
+      "timestamp": "2023-08-14 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=yYdC9ieX3SE"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Quiet Quest - Study Music",
+      "title": "4 Hours Of Music For Concentration And Memory Retention",
+      "timestamp": "2026-07-06 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=5TOJszWQgWY"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Quiet Quest - Study Music",
+      "title": "Hyperfocus Music For ADHD Relief - Increase Concentration ...",
+      "timestamp": "2026-05-18 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=eEEweW7ZrFo"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[4]/div[3]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "ADHD focus music 2026✨ hyperfixation/hyperfocus",
+    "url": "https://open.spotify.com/playlist/6Cf1qYa6QwYB70TVDBIaE3",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › playlist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "for studying / focusing ~ improve concentration and increase brain power ~ be more productive ~binaural beats / isochronic tones.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "for studying / focusing"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "Do ADHD focus better with music?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the best music to focus on ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Why do people with ADHD feel more tired in the afternoon?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What causes the crash after hyperfocus in ADHD?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]",
+    "domain": "www.additudemag.com",
+    "title": "13 Productivity Playlists to Center and Focus ADHD Brains",
+    "url": "https://www.additudemag.com/focus-music-for-adhd-brains/?srsltid=AU7gw4UFz3AXLNSao-bZ5WcJ3WwfoN6YZNtbNFLGPCBvb5Jb28mn1s1o",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.additudemag.com › ... › How to Focus",
+    "website_name": "ADDitude",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "May 9, 2025 — Focus music centers an ADHD brain on work or studying. These 13 productivity playlists will help you get things done.",
+    "pre_snippet": "05/09/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Focus music centers an ADHD brain on work or studying"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-05-09 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+    "domain": "www.brain.fm",
+    "title": "Music for ADHD",
+    "url": "https://www.brain.fm/adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.brain.fm › adhd",
+    "website_name": "Brain.fm",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "The First Music Made for ADHD. Shown in peer-reviewed studies to increase focus brainwaves by 119% and improve sustained attention tasks in users with ADHD ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "increase focus brainwaves by 119"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.brain.fm/adhd#:~:text=The%20First%20Music%20Made%20for,in%20users%20with%20ADHD%20symptoms.",
+      "domain": "www.brain.fm"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "ADD and ADHD Music with Binaural Beats",
+    "url": "https://www.youtube.com/playlist?list=PLnOC9rlyvdSnYkzT-ePwj9bBmJQ1n3kuD",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "1.3M+ followers",
+    "website_name": "YouTube · Greenred Productions - Relaxing Music",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "ADHD music with binaural beats for focus, concentration and studying ...more. ADHD music with binaural beats for focus, concentration and studying ...more Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADHD music",
+     "focus",
+     "concentration"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.youtube.com/playlist?list=PLnOC9rlyvdSnYkzT-ePwj9bBmJQ1n3kuD#:~:text=Play%20all",
+      "domain": "www.youtube.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "ADHD Focus",
+    "url": "https://open.spotify.com/artist/3pZWCUXB3D30ZyI6ubhDgC",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › artist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Oasis of Mind · Repose Time for Your Soul · Dreamy Happiness and Dreamy Thoughts · Cloud Space · Sanctuary of Breathing ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Oasis of Mind"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://open.spotify.com/artist/3pZWCUXB3D30ZyI6ubhDgC#:~:text=Oasis%20of%20Mind&text=Repose%20Time%20for%20Your%20Soul&text=Dreamy%20Happiness%20and%20Dreamy%20Thoughts&text=Cloud%20Space&text=Sanctuary%20of%20Breathing",
+      "domain": "open.spotify.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "www.verywellmind.com",
+    "title": "Music for ADHD: Benefits & Types to Improve Focus",
+    "url": "https://www.verywellmind.com/music-to-improve-focus-adhd-6361057",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.verywellmind.com › ... › Living With",
+    "website_name": "Verywell Mind",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jun 9, 2026 — Music with repetitive rhythms like electronic or instrumental can help people with ADHD focus. Binaural and classical music might improve ... Read more",
+    "pre_snippet": "06/09/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Music",
+     "ADHD focus",
+     "music"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.verywellmind.com/music-to-improve-focus-adhd-6361057#:~:text=Music%20with%20repetitive%20rhythms%20like,performance%20in%20people%20with%20ADHD.",
+      "domain": "www.verywellmind.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-06-09 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[1]/div[2]/div[1]/div[1]/div[17]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "ADHD Relief Music: Studying Music for Better Concentration ...",
+    "url": "https://www.youtube.com/watch?v=RG2IK8oRZNA&xstg=CAMSBhUD-7L2Hw%3D%3D",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "19.7M+ views  ·  3 years ago",
+    "website_name": "YouTube · Greenred Productions - Relaxing Music",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "Clear Mind Intense Focus | Ambient Techno | ADHD High Focus Support · 40Hz Binaural Gamma Waves - Ultra Deep Concentration · BLOCK OUT ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Clear Mind Intense Focus"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2023-01-02 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[4]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Best adhd focus music",
+     "ADHD focus music youtube",
+     "Adhd focus music free",
+     "ADHD focus music for kids",
+     "ADHD focus music spotify",
+     "ADHD focus music Reddit",
+     "Hyperfocus music for studying",
+     "ADHD focus music frequency"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

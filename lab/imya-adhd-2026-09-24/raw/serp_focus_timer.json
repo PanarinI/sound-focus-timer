@@ -1,0 +1,686 @@
+[
+ {
+  "keyword": "focus timer",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=focus%20timer&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-24 19:46:42 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "organic",
+   "people_also_ask",
+   "related_searches"
+  ],
+  "se_results_count": 184,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "domain": "apps.apple.com",
+    "title": "Focus To-Do: Focus Timer&Tasks - App Store - Apple",
+    "url": "https://apps.apple.com/us/app/focus-to-do-focus-timer-tasks/id966057213",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://apps.apple.com › focus-to-do-focus-timer-tasks",
+    "website_name": "Apple",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Focus To-Do combines Pomodoro Timer with Task Management, it is a science-based app that will motivate you to stay focused and get things done. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Focus To-Do combines Pomodoro Timer with Task Management"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://apps.apple.com/us/app/focus-to-do-focus-timer-tasks/id966057213#:~:text=Focus%20To-Do%20combines%20Pomodoro%20Timer,focused%20and%20get%20things%20done.",
+      "domain": "apps.apple.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]",
+    "domain": "play.google.com",
+    "title": "Focus To-Do: Pomodoro & Tasks - Apps on Google Play",
+    "url": "https://play.google.com/store/apps/details?id=com.superelement.pomodoro&hl=en_US",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://play.google.com › store › apps › details",
+    "website_name": "Google Play",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Focus To-Do combines Pomodoro Timer with Task Management, it is a science-based app that will motivate you to stay focused and get things done. Read more",
+    "pre_snippet": null,
+    "extended_snippet": "4.6(286,069)  · Free · ‎Android · ‎Business/Productivity",
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4.6,
+     "votes_count": 286069,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "Focus To-Do combines Pomodoro Timer with Task Management"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://play.google.com/store/apps/details?id=com.superelement.pomodoro&hl=en_US",
+      "domain": "play.google.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+    "domain": "studywithme.io",
+    "title": "Aesthetic Pomodoro Timer | Study With Me",
+    "url": "https://studywithme.io/aesthetic-pomodoro-timer/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://studywithme.io › aesthetic-pomodoro-timer",
+    "website_name": "Aesthetic Pomodoro Timer | Study With Me",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "An aesthetic Pomodoro timer to keep you focused and motivated. Customize your study timer and choose from a variety of aesthetic themes.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "An aesthetic Pomodoro timer to keep you focused"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+    "domain": "flocus.com",
+    "title": "Flocus™ | A beautiful way to get more done",
+    "url": "https://flocus.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://flocus.com",
+    "website_name": "Flocus",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Plan your day, run focus sessions, and build a streak with soundscapes, stats, and beautiful themes. Customizable Focus Timer Pomodoro, countdown, stopwatch, ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Customizable Focus Timer"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "A focus timer `helps you manage your time and maintain concentration by breaking work into deliberate intervals`.[[1]](https://pomodorotimer.online/)\n\n### Popular Online Focus Timers\n\n- [Pomofocus](https://pomofocus.io/) : A clean, customizable online Pomodoro timer with task management and visual reports.[[1]](https://pomofocus.io/)\n- [Flocus](https://flocus.com/) : An aesthetic workspace tool featuring a focus timer, ambient soundscapes, and to-do lists.[[1]](https://flocus.com/)\n- [Forest App](https://forestapp.cc/) : A gamified timer that lets you grow virtual trees while staying off your phone.[[1]](https://forestapp.cc/)\n\n### The Pomodoro Technique Basics\n\n- **Pick a task:** Choose one single thing to work on.\n- **Focus for 25 minutes:** Work with no tabs, notifications, or distractions.\n- **Take a 5-minute break:** Step away, stretch, or grab water.\n- **Repeat:** After four work blocks, take a longer break of 15 to 30 minutes.[[1]](https://studiestimer.com/)[[2]](https://pomodorotimer.online/)[[3]](https://www.morgen.so/pomodoro-timer)\n\nWould you like a recommendation for a **free browser timer** , a **mobile app** , or a **physical desk timer**?",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "A focus timer helps you manage your time and maintain concentration by breaking work into deliberate intervals.",
+      "markdown": "A focus timer `helps you manage your time and maintain concentration by breaking work into deliberate intervals`.[[1]](https://pomodorotimer.online/)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "pomodorotimer.online",
+        "domain": "pomodorotimer.online",
+        "url": "https://pomodorotimer.online/",
+        "title": "Pomodoro Timer — Do more in less time, stress-free",
+        "text": "It's a 20-minute timer on steroids — built to help you study or work without procrastinating. The Pomodoro Technique breaks work i..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Popular Online Focus Timers",
+      "text": "Pomofocus : A clean, customizable online Pomodoro timer with task management and visual reports. Flocus : An aesthetic workspace tool featuring a focus timer, ambient soundscapes, and to-do lists. Forest App : A gamified timer that lets you grow virtual trees while staying off your phone.",
+      "markdown": "- [Pomofocus](https://pomofocus.io/) : A clean, customizable online Pomodoro timer with task management and visual reports.[[1]](https://pomofocus.io/)\n- [Flocus](https://flocus.com/) : An aesthetic workspace tool featuring a focus timer, ambient soundscapes, and to-do lists.[[1]](https://flocus.com/)\n- [Forest App](https://forestapp.cc/) : A gamified timer that lets you grow virtual trees while staying off your phone.[[1]](https://forestapp.cc/)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Pomofocus",
+        "description": null,
+        "url": "https://pomofocus.io/",
+        "domain": "pomofocus.io"
+       },
+       {
+        "type": "link_element",
+        "title": "Flocus",
+        "description": null,
+        "url": "https://flocus.com/",
+        "domain": "flocus.com"
+       },
+       {
+        "type": "link_element",
+        "title": "Forest App",
+        "description": null,
+        "url": "https://forestapp.cc/",
+        "domain": "forestapp.cc"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Pomofocus",
+        "domain": "pomofocus.io",
+        "url": "https://pomofocus.io/",
+        "title": "Pomodoro Timer",
+        "text": "Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Flocus",
+        "domain": "flocus.com",
+        "url": "https://flocus.com/",
+        "title": "Flocus™ | A beautiful way to get more done",
+        "text": "Flocus | A beautiful way to get more done 🚀 Offer ends September 30: $99 for lifetime access to Flocus Plus. Buy once, use foreve..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Forest",
+        "domain": "forestapp.cc",
+        "url": "https://forestapp.cc/",
+        "title": "Forest — The #1 Focus App for Time Well Spent",
+        "text": "Core focus works offline. Timer, tree growth, and stats keep running without a signal — plane, subway, dead zone. Time well-spent ..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "The Pomodoro Technique Basics",
+      "text": "Pick a task: Choose one single thing to work on. Focus for 25 minutes: Work with no tabs, notifications, or distractions. Take a 5-minute break: Step away, stretch, or grab water. Repeat: After four work blocks, take a longer break of 15 to 30 minutes.",
+      "markdown": "- **Pick a task:** Choose one single thing to work on.\n- **Focus for 25 minutes:** Work with no tabs, notifications, or distractions.\n- **Take a 5-minute break:** Step away, stretch, or grab water.\n- **Repeat:** After four work blocks, take a longer break of 15 to 30 minutes.[[1]](https://studiestimer.com/)[[2]](https://pomodorotimer.online/)[[3]](https://www.morgen.so/pomodoro-timer)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "StudiesTimer",
+        "domain": "studiestimer.com",
+        "url": "https://studiestimer.com/",
+        "title": "Study Timer",
+        "text": "What is the Pomodoro Technique? The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "pomodorotimer.online",
+        "domain": "pomodorotimer.online",
+        "url": "https://pomodorotimer.online/",
+        "title": "Pomodoro Timer — Do more in less time, stress-free",
+        "text": "It's a 20-minute timer on steroids — built to help you study or work without procrastinating. The Pomodoro Technique breaks work i..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "www.morgen.so",
+        "domain": "www.morgen.so",
+        "url": "https://www.morgen.so/pomodoro-timer",
+        "title": "Pomodoro Timer - Morgen",
+        "text": "Developed by Francesco Cirillo in the 1980s using a tomato-shaped kitchen timer. Pomodoro is Italian for \"tomato.\" A pomodoro time..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Would you like a recommendation for a free browser timer, a mobile app, or a physical desk timer ?",
+      "markdown": "Would you like a recommendation for a **free browser timer** , a **mobile app** , or a **physical desk timer**?",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Pomofocus",
+      "domain": "pomofocus.io",
+      "url": "https://pomofocus.io/",
+      "title": "Pomodoro Timer",
+      "text": "Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Flocus",
+      "domain": "flocus.com",
+      "url": "https://flocus.com/",
+      "title": "Flocus™ | A beautiful way to get more done",
+      "text": "Flocus | A beautiful way to get more done 🚀 Offer ends September 30: $99 for lifetime access to Flocus Plus. Buy once, use foreve..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "pomodorotimer.online",
+      "domain": "pomodorotimer.online",
+      "url": "https://pomodorotimer.online/",
+      "title": "Pomodoro Timer — Do more in less time, stress-free",
+      "text": "It's a 20-minute timer on steroids — built to help you study or work without procrastinating. The Pomodoro Technique breaks work i..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Forest",
+      "domain": "forestapp.cc",
+      "url": "https://forestapp.cc/",
+      "title": "Forest — The #1 Focus App for Time Well Spent",
+      "text": "Core focus works offline. Timer, tree growth, and stats keep running without a signal — plane, subway, dead zone. Time well-spent ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "StudiesTimer",
+      "domain": "studiestimer.com",
+      "url": "https://studiestimer.com/",
+      "title": "Study Timer",
+      "text": "What is the Pomodoro Technique? The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "www.morgen.so",
+      "domain": "www.morgen.so",
+      "url": "https://www.morgen.so/pomodoro-timer",
+      "title": "Pomodoro Timer - Morgen",
+      "text": "Developed by Francesco Cirillo in the 1980s using a tomato-shaped kitchen timer. Pomodoro is Italian for \"tomato.\" A pomodoro time..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+    "domain": "pomodorotimer.online",
+    "title": "Pomodoro Timer — Do more in less time, stress-free",
+    "url": "https://pomodorotimer.online/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://pomodorotimer.online",
+    "website_name": "pomodorotimer.online",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Free online Pomodoro timer with background music, a to-do list, custom intervals, daily streaks and challenges. Beat procrastination and stay focused.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Free online Pomodoro timer"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+    "domain": "pomofocus.io",
+    "title": "25:00 - Time to focus!",
+    "url": "https://pomofocus.io/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://pomofocus.io",
+    "website_name": "Pomofocus",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "A simple Pomodoro Timer app that works on a desktop & mobile browser. Pomofocus will help you manage your time and let you focus on any tasks such as study, ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Pomofocus"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]",
+    "domain": "studiestimer.com",
+    "title": "StudiesTimer — Free Aesthetic Pomodoro & Study Timer Online",
+    "url": "https://studiestimer.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://studiestimer.com",
+    "website_name": "StudiesTimer",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "StudiesTimer is the complete study platform with customizable Pomodoro timer with automatic breaks (any duration you want - not limited to 25 minutes), habits ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "customizable Pomodoro timer"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What is a focus timer and how does it work?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the best focus timer?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Is Focuspomo worth it?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Can you set a timer for focus on an iPhone?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+    "domain": "www.tomatotimers.com",
+    "title": "Pomodoro Timer",
+    "url": "https://www.tomatotimers.com/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.tomatotimers.com › Ambience Studio",
+    "website_name": "Tomato Timer – Pomodoro",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "It uses a timer to break work into focused intervals — traditionally 25 minutes — separated by short breaks. Our free online Pomodoro timer makes it easy to ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "break work into focused intervals"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.tomatotimers.com/#:~:text=It%20uses%20a%20timer%20to,and%20soothing%20lofi%20ambience%20sounds.",
+      "domain": "www.tomatotimers.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 9,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[20]/div[1]/div[1]",
+    "domain": "chromewebstore.google.com",
+    "title": "Focus To-Do: Pomodoro Timer & To Do List - Chrome Web Store",
+    "url": "https://chromewebstore.google.com/detail/focus-to-do-pomodoro-time/ngceodoilcgpmkijopinlkmohnfifjfb",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://chromewebstore.google.com › detail › ngceodoil...",
+    "website_name": "Chrome Web Store",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Focus To-Do combines Pomodoro Timer with Task Management, it is a science-based app that will motivate you to stay focused and get things done. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Focus To-Do combines Pomodoro Timer with Task Management"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://chromewebstore.google.com/detail/focus-to-do-pomodoro-time/ngceodoilcgpmkijopinlkmohnfifjfb",
+      "domain": "chromewebstore.google.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Focus timer online",
+     "Focus timer app",
+     "Focus timer for study",
+     "Productivity timer",
+     "FLIP - Focus timer for study",
+     "Focus timer pomodoro",
+     "Focus To-Do",
+     "Focus timer download"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<title>Стенд: аналоговый космос — гамма, зерно, дайл</title>
+<!--
+  Стенд дизайна 26.09.2026 к решению автора «аналоговость через материал».
+  Только ГЛАЗ: звука здесь нет намеренно — звук живёт в продукте и в звуковых стендах.
+  Что крутится: цвет шума (он же температура света) · длина на дайле · ∞ отдельной кнопкой ·
+  три ручки (громкость · маскировка · стимуляция) · переключатели вариантов слева.
+  Открывать через локальный сервер, файлом с диска зерно может не примениться.
+-->
+<style>
+  :root{
+    --warm:#ffb055; --warm-soft:#ffd9a0; --field:#0d0c0b; --edge:#272220;
+    --ink:#e8ded2; --ink-dim:#8a8178; --ink-mute:#6f665d; --grain:.5;
+  }
+  body.holod{ --warm:#9fc4ff; --warm-soft:#dfeaff; }
+  body.neutral{ --warm:#cfc6bb; --warm-soft:#efe8df; }
+  *{box-sizing:border-box}
+  body{margin:0;background:#141210;color:var(--ink);font:14px/1.5 Inter,Helvetica,Arial,sans-serif;
+       display:flex;gap:28px;padding:28px;align-items:flex-start;flex-wrap:wrap}
+  h1{font-size:17px;margin:0 0 4px}
+  .sub{color:var(--ink-dim);font-size:12px;margin-bottom:18px;max-width:320px}
+  .pult{width:300px}
+  .pult label{display:flex;justify-content:space-between;align-items:center;gap:10px;
+              padding:7px 0;border-bottom:1px solid #201c1a;color:var(--ink-dim);font-size:12px}
+  .pult input[type=range]{width:120px;accent-color:var(--warm)}
+  button.v{background:#1b1815;color:var(--ink-dim);border:1px solid #2e2825;border-radius:8px;
+           padding:5px 10px;font-size:12px;cursor:pointer}
+  button.v.on{background:var(--warm);color:#241a10;border-color:var(--warm)}
+
+  /* ---- панель ---- */
+  .panel{position:relative;width:360px;height:660px;border-radius:22px;background:var(--field);
+         border:1px solid var(--edge);overflow:hidden;user-select:none}
+  .grain{position:absolute;inset:0;opacity:var(--grain);pointer-events:none;mix-blend-mode:soft-light}
+  body.bez-zerna .grain{display:none}
+  .vinetka{position:absolute;inset:0;pointer-events:none;
+           background:radial-gradient(70% 60% at 50% 40%, transparent 55%, rgba(0,0,0,.6) 100%)}
+  .star{position:absolute;left:50%;top:210px;transform:translate(-50%,-50%);border-radius:50%;
+        background:radial-gradient(circle, var(--warm-soft) 0 12%, color-mix(in srgb, var(--warm) 70%, transparent) 30%, transparent 70%);
+        transition:width .5s, height .5s, opacity .5s}
+  .zvezdy i{position:absolute;width:2px;height:2px;border-radius:50%;background:#efe3d2;opacity:.45}
+  .num{position:absolute;left:0;right:0;top:300px;text-align:center;font-size:30px;font-weight:600;letter-spacing:.5px}
+  .num small{display:block;font-size:11px;font-weight:400;color:var(--ink-mute);letter-spacing:0}
+  .dial{position:absolute;left:0;right:0;top:250px;height:150px}
+  body.palka .dial{display:none}
+  .palka-row{position:absolute;left:28px;right:28px;top:352px;display:none;align-items:center;gap:8px}
+  body.palka .palka-row{display:flex}
+  .palka-row input{flex:1;accent-color:var(--warm)}
+  .row{position:absolute;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:14px}
+  .start{top:424px}
+  .start button{background:var(--warm);color:#241a10;border:0;border-radius:22px;padding:11px 26px;
+                font-size:15px;font-weight:600;cursor:pointer}
+  body.idet .start button{background:transparent;color:var(--ink);border:1px solid #5a4c3c}
+  .inf{width:44px;height:44px;border-radius:50%;border:1px solid #4a423b;background:transparent;
+       color:var(--ink-dim);font-size:18px;cursor:pointer}
+  .inf.on{border-color:var(--warm);color:var(--warm)}
+  .colors{position:absolute;right:22px;top:22px;display:flex;gap:12px}
+  .colors b{width:19px;height:19px;border-radius:50%;cursor:pointer;display:block}
+  .colors b.on{box-shadow:0 0 0 2px var(--field),0 0 0 4px var(--warm)}
+  .znak{position:absolute;left:24px;top:20px;color:var(--ink-mute);font-size:11px}
+  .knobs{position:absolute;left:0;right:0;top:500px;display:flex;justify-content:space-around}
+  .knob{width:96px;text-align:center;cursor:ns-resize}
+  .knob span{display:block;color:#c9bfb2;font-size:12px;margin-top:-16px}
+  .knob em{display:block;color:var(--ink-mute);font-size:10px;font-style:normal}
+  body.bez-podpisej .knob em{visibility:hidden}
+  .presets{position:absolute;left:24px;right:24px;bottom:18px;border-top:1px solid var(--edge);
+           padding-top:12px;color:var(--ink-dim);font-size:12px;display:flex;justify-content:space-between}
+</style>
+
+<div class="pult">
+  <h1>Стенд: аналоговый космос</h1>
+  <div class="sub">Только глаз, без звука. Крути и выбрасывай лишнее: если вариант не нравится — скажи, и он уйдёт из макета.</div>
+  <label>зерно <input type="range" id="grain" min="0" max="1" step="0.05" value="0.5"></label>
+  <label>зерно вообще <button class="v on" data-cls="bez-zerna" data-inv="1">вкл</button></label>
+  <label>гамма
+    <span>
+      <button class="v on" data-gamma="">янтарь</button>
+      <button class="v" data-gamma="neutral">нейтр</button>
+      <button class="v" data-gamma="holod">холод</button>
+    </span>
+  </label>
+  <label>шкала времени <button class="v on" data-cls="palka" data-inv="1">дайл</button></label>
+  <label>подписи под ручками <button class="v on" data-cls="bez-podpisej" data-inv="1">есть</button></label>
+  <div class="sub" style="margin-top:16px">Дайл тащится мышью, ∞ — отдельная кнопка. Кружки справа вверху — цвет шума, он же температура света. Ручки тянутся вверх-вниз.</div>
+</div>
+
+<div class="panel" id="panel">
+  <svg class="grain" xmlns="http://www.w3.org/2000/svg">
+    <filter id="f"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3"/>
+      <feColorMatrix type="saturate" values="0"/></filter>
+    <rect width="100%" height="100%" filter="url(#f)"/>
+  </svg>
+  <div class="zvezdy" id="zvezdy"></div>
+  <div class="star" id="star" style="width:190px;height:190px"></div>
+  <div class="vinetka"></div>
+
+  <div class="znak">цвет шума</div>
+  <div class="colors" id="colors">
+    <b class="on" data-w="#ffb055" data-s="#ffd9a0" style="background:#c98a4b" title="коричневый"></b>
+    <b data-w="#e8a0b4" data-s="#ffd8e2" style="background:#b98a95" title="розовый"></b>
+    <b data-w="#dfe4ea" data-s="#ffffff" style="background:#d9d6d0" title="белый"></b>
+  </div>
+
+  <div class="num" id="num">25′<small id="podpis">длина рейса</small></div>
+
+  <svg class="dial" id="dial" viewBox="0 0 360 150">
+    <path d="M 68 120 A 112 112 0 0 1 292 120" fill="none" stroke="#2b2724" stroke-width="7" stroke-linecap="round"/>
+    <path id="duga" d="" fill="none" stroke="var(--warm)" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+    <g id="riski" stroke="#4a423b" stroke-width="2"></g>
+    <g id="podpisi" fill="#6f665d" font-size="10" text-anchor="middle"></g>
+    <line id="strelka" x1="180" y1="120" x2="180" y2="30" stroke="var(--warm-soft)" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="180" cy="120" r="4" fill="var(--warm-soft)"/>
+  </svg>
+
+  <div class="palka-row">
+    <input type="range" id="palka" min="0" max="5" step="1" value="2">
+  </div>
+
+  <div class="row start">
+    <button id="start">▶&nbsp; Start</button>
+    <button class="inf" id="inf">∞</button>
+  </div>
+
+  <div class="knobs" id="knobs">
+    <div class="knob" data-v="0.55"><svg viewBox="0 0 96 60"><path d="M 20 46 A 28 28 0 1 1 76 46" fill="none" stroke="#2b2724" stroke-width="5" stroke-linecap="round"/><path class="fill" d="" fill="none" stroke="var(--warm)" stroke-width="5" stroke-linecap="round"/></svg><span>громкость</span><em>60 % — предел</em></div>
+    <div class="knob" data-v="0.8"><svg viewBox="0 0 96 60"><path d="M 20 46 A 28 28 0 1 1 76 46" fill="none" stroke="#2b2724" stroke-width="5" stroke-linecap="round"/><path class="fill" d="" fill="none" stroke="var(--warm)" stroke-width="5" stroke-linecap="round"/></svg><span>маскировка</span><em>закрыть речь</em></div>
+    <div class="knob" data-v="0.35"><svg viewBox="0 0 96 60"><path d="M 20 46 A 28 28 0 1 1 76 46" fill="none" stroke="#2b2724" stroke-width="5" stroke-linecap="round"/><path class="fill" d="" fill="none" stroke="var(--warm)" stroke-width="5" stroke-linecap="round"/></svg><span>стимуляция</span><em>сколько шума</em></div>
+  </div>
+
+  <div class="presets"><span>Пресеты: опенспейс · общежитие · кафе · чтение</span><span>⌄</span></div>
+</div>
+
+<script>
+const SCALE = [5,15,25,45,90], R = 112, CX = 180, CY = 120;
+let idx = 2, infinite = false, idet = false, t = 0, tick = null;
+
+const pt = (a) => [CX + R*Math.cos(a), CY + R*Math.sin(a)];            // угол в точку
+const ugol = (i) => Math.PI + (i/(SCALE.length-1)) * Math.PI;          // засечка → угол
+const duga = (a0,a1) => { const [x0,y0]=pt(a0), [x1,y1]=pt(a1);
+  return `M ${x0.toFixed(1)} ${y0.toFixed(1)} A ${R} ${R} 0 0 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`; };
+
+// засечки и подписи
+const riski = document.getElementById('riski'), podpisi = document.getElementById('podpisi');
+SCALE.forEach((v,i)=>{ const a = ugol(i), [x,y] = pt(a), [xi,yi] = [CX+(R-11)*Math.cos(a), CY+(R-11)*Math.sin(a)];
+  riski.insertAdjacentHTML('beforeend', `<line x1="${x.toFixed(1)}" y1="${y.toFixed(1)}" x2="${xi.toFixed(1)}" y2="${yi.toFixed(1)}"/>`);
+  const [xl,yl] = [CX+(R+16)*Math.cos(a), CY+(R+16)*Math.sin(a)];
+  podpisi.insertAdjacentHTML('beforeend', `<text x="${xl.toFixed(1)}" y="${(yl+4).toFixed(1)}">${v}</text>`); });
+
+// звёзды фоном
+const zv = document.getElementById('zvezdy');
+for (let i=0;i<26;i++) zv.insertAdjacentHTML('beforeend',
+  `<i style="left:${(Math.random()*340+10).toFixed(0)}px;top:${(Math.random()*400+20).toFixed(0)}px;opacity:${(Math.random()*.4+.2).toFixed(2)}"></i>`);
+
+function risui(){
+  const a = ugol(idx);
+  document.getElementById('duga').setAttribute('d', duga(Math.PI, a));
+  const [x,y] = [CX+(R-14)*Math.cos(a), CY+(R-14)*Math.sin(a)];
+  const s = document.getElementById('strelka'); s.setAttribute('x2', x.toFixed(1)); s.setAttribute('y2', y.toFixed(1));
+  const num = document.getElementById('num');
+  num.firstChild.textContent = infinite ? '∞' : (idet ? fmt(t) : SCALE[idx] + '′');
+  document.getElementById('podpis').textContent =
+    infinite ? (idet ? 'без конца' : 'режим без конца') : (idet ? 'осталось до прибытия' : 'длина рейса');
+  document.getElementById('inf').classList.toggle('on', infinite);
+  document.getElementById('start').innerHTML = idet ? '☀&nbsp; Finish' : '▶&nbsp; Start';
+  document.body.classList.toggle('idet', idet);
+  const st = document.getElementById('star'), k = idet ? 1 : .55;
+  st.style.width = st.style.height = (150 + 140*k) + 'px';
+  st.style.opacity = idet ? 1 : .75;
+}
+const fmt = (sec) => `${Math.floor(sec/60)}′ ${String(sec%60).padStart(2,'0')}″`;
+
+// дайл мышью
+const dial = document.getElementById('dial');
+const vzyat = (e) => {
+  const r = dial.getBoundingClientRect();
+  const x = (e.clientX - r.left) / r.width * 360, y = (e.clientY - r.top) / r.height * 150;
+  let a = Math.atan2(y - CY, x - CX); if (a > 0) a = a > Math.PI/2 ? Math.PI : 0;
+  const k = (a - Math.PI) / Math.PI * (SCALE.length - 1);
+  idx = Math.max(0, Math.min(SCALE.length-1, Math.round(k)));
+  infinite = false; risui();
+};
+dial.addEventListener('pointerdown', (e)=>{ dial.setPointerCapture(e.pointerId); vzyat(e); });
+dial.addEventListener('pointermove', (e)=>{ if (e.buttons) vzyat(e); });
+document.getElementById('palka').addEventListener('input', (e)=>{
+  const v = +e.target.value; infinite = v === 5; idx = Math.min(v, 4); risui(); });
+
+document.getElementById('inf').onclick = ()=>{ infinite = !infinite; risui(); };
+document.getElementById('start').onclick = ()=>{
+  idet = !idet; clearInterval(tick);
+  if (idet){ t = infinite ? 0 : SCALE[idx]*60;
+    tick = setInterval(()=>{ t += infinite ? 1 : -1; if (!infinite && t <= 0){ idet=false; clearInterval(tick); } risui(); }, 1000); }
+  risui();
+};
+
+// цвет шума = температура света
+document.getElementById('colors').onclick = (e)=>{
+  const b = e.target.closest('b'); if (!b) return;
+  [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  document.documentElement.style.setProperty('--warm', b.dataset.w);
+  document.documentElement.style.setProperty('--warm-soft', b.dataset.s);
+};
+
+// ручки
+document.querySelectorAll('.knob').forEach(k=>{
+  const put = ()=>{ const v = +k.dataset.v, a0 = Math.PI*0.85, a1 = Math.PI*2.15;
+    const a = a0 + (a1-a0)*v, rr = 28, cx = 48, cy = 46;
+    const [x0,y0] = [cx+rr*Math.cos(a0), cy+rr*Math.sin(a0)], [x1,y1] = [cx+rr*Math.cos(a), cy+rr*Math.sin(a)];
+    k.querySelector('.fill').setAttribute('d',
+      `M ${x0.toFixed(1)} ${y0.toFixed(1)} A ${rr} ${rr} 0 ${a-a0 > Math.PI ? 1 : 0} 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`); };
+  put();
+  k.addEventListener('pointerdown', (e)=>{ k.setPointerCapture(e.pointerId); k._y = e.clientY; });
+  k.addEventListener('pointermove', (e)=>{ if (!e.buttons) return;
+    k.dataset.v = Math.max(0, Math.min(1, +k.dataset.v + (k._y - e.clientY)/160)); k._y = e.clientY; put(); });
+});
+
+// пульт вариантов
+document.querySelector('.pult').addEventListener('click', (e)=>{
+  const b = e.target.closest('button.v'); if (!b) return;
+  if (b.dataset.gamma !== undefined){
+    document.body.classList.remove('neutral','holod');
+    if (b.dataset.gamma) document.body.classList.add(b.dataset.gamma);
+    b.parentElement.querySelectorAll('button').forEach(x=>x.classList.remove('on')); b.classList.add('on');
+    return;
+  }
+  const cls = b.dataset.cls; document.body.classList.toggle(cls);
+  const on = !document.body.classList.contains(cls);
+  b.classList.toggle('on', on);
+  b.textContent = cls === 'palka' ? (on ? 'дайл' : 'палка') : cls === 'bez-zerna' ? (on ? 'вкл' : 'выкл') : (on ? 'есть' : 'нет');
+});
+document.getElementById('grain').addEventListener('input', (e)=>
+  document.documentElement.style.setProperty('--grain', e.target.value));
+
+risui();
+</script>
+</html>

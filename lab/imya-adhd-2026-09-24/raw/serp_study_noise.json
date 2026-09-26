@@ -1,0 +1,600 @@
+[
+ {
+  "keyword": "study noise",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=study%20noise&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 19:33:59 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "video",
+   "organic",
+   "people_also_ask",
+   "perspectives",
+   "images",
+   "related_searches"
+  ],
+  "se_results_count": 105,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "Studying White Noise | Focus on Homework, Test Prep, School",
+      "timestamp": "2019-01-06 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=yLOM8R6lbzg"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "Improve Concentration with Deep White Noise for Studying",
+      "timestamp": "2025-04-06 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=Z5_mSyaNqHw"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "Focus, Increase Concentration, Calm Your Mind | White Noise ...",
+      "timestamp": "2015-02-10 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=ArwcHjmsw3A"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "White Noise for Studying & Concentration | Great for Test Prep!",
+      "timestamp": "2024-05-12 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=nU0UTnGgYOg"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "White Noise For Study 📚 - playlist by Dream Supplier",
+    "url": "https://open.spotify.com/playlist/2zjP2uwWCuLNvKRQ7ckBn1",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › playlist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "White Noise to help you focus on reading, working, studying for tests, homework, exams, finals. All sounds are loopable, repeatable, constant with no fade.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "White Noise to help you focus on reading, working, studying"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What's the best noise for studying?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What noise is best for ADHD studying?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is noise in a study?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Is white, pink, or brown noise better for studying?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+    "domain": "slonoise.com",
+    "title": "Best Sounds for Studying — Play Free, No Signup - Slo",
+    "url": "https://slonoise.com/resources/best-sounds-for-studying/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://slonoise.com › Resources",
+    "website_name": "slonoise.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "6 days ago — What is the best sound for studying? Brown noise is the best sound to start with for reading, writing and problem sets, because it is steady and ... Read more",
+    "pre_snippet": "6 days ago",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Brown noise is the best sound to start with"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://slonoise.com/resources/best-sounds-for-studying/#:~:text=What%20is%20the%20best%20sound,has%20no%20words%20in%20it.",
+      "domain": "slonoise.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-09-19 19:33:58 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]",
+    "domain": "www.reddit.com",
+    "title": "Background noise for working or studying? : r/productivity",
+    "url": "https://www.reddit.com/r/productivity/comments/18irngb/background_noise_for_working_or_studying/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "20+ comments  ·  2 years ago",
+    "website_name": "Reddit · r/productivity",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "I (24f) could use some suggestions here. Back in college, I used to be able to put a Lofi Study Girl or Study With Me With Music video and have a good ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": null,
+    "links": [
+     {
+      "type": "link_element",
+      "title": "23 answers",
+      "description": null,
+      "url": "https://www.reddit.com/r/productivity/comments/18irngb/background_noise_for_working_or_studying/kdfij92/",
+      "domain": "www.reddit.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]",
+    "domain": "www.relaxingwhitenoise.com",
+    "title": "White Noise for Studying, Concentration, Test-Prep & Homework",
+    "url": "https://www.relaxingwhitenoise.com/white-noise-for-studying-concentration-test-prep-homework-8-hours/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.relaxingwhitenoise.com › Episodes",
+    "website_name": "relaxingwhitenoise.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jan 27, 2025 — This podcast has the sound for you whether you use white noise for studying, to soothe a colicky baby, to fall asleep or for simply enjoying a ... Read more",
+    "pre_snippet": "01/27/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4,
+     "votes_count": 97,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "white noise for studying"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.relaxingwhitenoise.com/white-noise-for-studying-concentration-test-prep-homework-8-hours/#:~:text=This%20podcast%20has%20the%20sound,simply%20enjoying%20a%20peaceful%20moment.",
+      "domain": "www.relaxingwhitenoise.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-01-27 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]",
+    "domain": "soundcloud.com",
+    "title": "Study Sounds White Noise for Focus and Concentration",
+    "url": "https://soundcloud.com/relaxing-white-noise/sets/signature-sounds-for-study",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "32K+ followers  ·  7 years ago",
+    "website_name": "SoundCloud · Relaxing White Noise",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Listen to Study Sounds White Noise for Focus and Concentration, a playlist curated by Relaxing White Noise on desktop and mobile.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Study Sounds White Noise for Focus and Concentration"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[15]/div[1]/div[1]",
+    "domain": "dennislearningcenter.osu.edu",
+    "title": "Favorite Study Sounds - Dennis Learning Center",
+    "url": "https://dennislearningcenter.osu.edu/favorite-study-sounds/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://dennislearningcenter.osu.edu › favorite-study-sou...",
+    "website_name": "Dennis Learning Center",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Apr 21, 2025 — Rain, ocean waves, and rustling leaves provide a tranquil backdrop that drowns out distractions. Nature Sounds and No Music. ☕️White Noise & ... Read more",
+    "pre_snippet": "04/21/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Rain, ocean waves, and rustling leaves"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://dennislearningcenter.osu.edu/favorite-study-sounds/#:~:text=Rain%2C%20ocean%20waves%2C%20and%20rustling,%E2%98%95%EF%B8%8FWhite%20Noise%20%26%20Ambient%20Soundscapes",
+      "domain": "dennislearningcenter.osu.edu"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-04-21 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[17]/div[1]/div[1]",
+    "domain": "mystudylife.com",
+    "title": "What is Study Noise? Concentration Sounds for Studying",
+    "url": "https://mystudylife.com/study-noise/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://mystudylife.com › study-noise",
+    "website_name": "MyStudyLife",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jan 3, 2024 — It is well-recognized that sounds of nature, such as rushing water, rustling leaves, or chirping birds, have a relaxing impact on the brain. Read more",
+    "pre_snippet": "01/03/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "rushing water, rustling leaves, or chirping birds"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://mystudylife.com/study-noise/#:~:text=It%20is%20well-recognized%20that%20sounds,relaxing%20impact%20on%20the%20brain.",
+      "domain": "mystudylife.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-01-03 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "perspectives",
+    "rank_group": 1,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[19]/div[1]",
+    "title": "What people are saying",
+    "items": [
+     {
+      "type": "perspectives_element",
+      "title": "The Truth About Pink Noise and Your Sleep | by Dr. Patricia Farrell | BeingWell | Sep, 2026",
+      "description": null,
+      "url": "https://medium.com/beingwell/the-truth-about-pink-noise-and-your-sleep-608ca483855e",
+      "domain": "medium.com",
+      "date": "2 weeks ago",
+      "source": "Dr. Patricia Farrell",
+      "timestamp": "2026-09-11 19:33:58 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Pink noise—often used to promote sleep—may reduce restorative REM sleep and interfere with sleep recovery, while earplugs are significantly more effective in protecting sleep against traffic noise. The findings challenge the widespread use of ambient sound",
+      "description": null,
+      "url": "https://www.reddit.com/r/science/comments/1qvubvb/pink_noiseoften_used_to_promote_sleepmay_reduce/",
+      "domain": "www.reddit.com",
+      "date": "Feb 4, 2026",
+      "source": "r/science",
+      "timestamp": "2026-02-04 00:00:00 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Does white noise actually help you sleep? #Shorts",
+      "description": null,
+      "url": "https://www.youtube.com/shorts/PLsnIul7ep0",
+      "domain": "www.youtube.com",
+      "date": "Jun 29, 2026",
+      "source": "BrainCraft",
+      "timestamp": "2026-06-29 00:00:00 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Do you use a noise machine? Love it or hate it?! Comment WIND DOWN for my freebie guide with evidence-backed wind-down tips 🛌 💫",
+      "description": null,
+      "url": "https://www.instagram.com/reel/DZcwsPoCX7m/?hl=en",
+      "domain": "www.instagram.com",
+      "date": "Jun 11, 2026",
+      "source": "nessyhill",
+      "timestamp": "2026-06-11 00:00:00 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Can Ambient Noise (Pink, White or Brown) Really Help You Sleep? | by Robert Roy Britt | Wise & Well",
+      "description": null,
+      "url": "https://medium.com/wise-well/can-ambient-noise-pink-white-or-brown-really-help-you-sleep-d36c7bf13a2e",
+      "domain": "medium.com",
+      "date": "Feb 2, 2026",
+      "source": "Robert Roy Britt",
+      "timestamp": "2026-02-02 00:00:00 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Are White Noise Machines a Scam?",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=fNj3hDddVZQ&vl=en",
+      "domain": "www.youtube.com",
+      "date": "Jun 11, 2026",
+      "source": "BrainCraft",
+      "timestamp": "2026-06-11 00:00:00 +00:00"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "images",
+    "rank_group": 1,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[21]/div[1]",
+    "title": "Images",
+    "url": "https://www.google.com/search?sca_esv=61d4f8cae68376dd&hl=en&gl=US&sxsrf=APpeQnu839W8tAXxAXZId62JTqqwVWsxDA:1790364837671&q=study+noise&udm=2&source=univ&fir=JLIqYjJupBKZrM%252Cips5aF1kMjPdpM%252C_%253BsGoBOn5ayc8HxM%252C2dAiLei6XDdOcM%252C_%253BX3Q1tPPmTJnUvM%252C-O5jsvnS6RGKnM%252C_%253B_pDS2ykePpQ6wM%252CbaJ4YusBEfzuPM%252C_%253B0__ncurkwiYdTM%252COr0HUEahgeD7rM%252C_%253BVQxSGa6lV_n_SM%252CGw3lRqFtJg54KM%252C_%253B4Gt25iMzPYaJOM%252CduV-qdXV89QvTM%252C_%253ByqDElX1dRPY2nM%252C8egVbb4hEhFJtM%252C_%253BlLxP1TYn3UAxDM%252CGMM8iONbZj6gLM%252C_&usg=AI4_-kS-6Sn2N5jQLVUgiLnhKIRMUlfcEQ&sa=X&ved=2ahUKEwi4pKvhvIqXAxXdUFUIHQvlEcAQ7Al6BAhQEAU",
+    "items": [
+     {
+      "type": "images_element",
+      "alt": "STUDY POWER | Focus, Increase Concentration, Calm Your Mind | White Noise  For Homework & School",
+      "url": "https://www.youtube.com/watch?v=ArwcHjmsw3A",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEMqDu6wOeDi3_xlmjjz9TiZ2hsgy-_RqhOo7FFN-n&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Studying White Noise | Focus on Homework, Test Prep, School | 10 Hours  Study Sound",
+      "url": "https://www.youtube.com/watch?v=yLOM8R6lbzg",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76735la0gFSBrY1RFhSnK21jvq0rgzzrhmd_lN9JH&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "How to Study: Stress, Noise and Study Habits - Oxford Learning",
+      "url": "https://oxfordlearning.com/stress-noise-and-study-habits/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX9Mycmapv1qw0TXaAZXQJwCxwPyoglpl-nL6AnxAubKo3WabroGZ8piM&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "The Best Tools to Block Noise While Studying or Working in ...",
+      "url": "https://noisyworld.org/block-noise-studying-office-work/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX0ilZG6Y0jaRp28C7N0ZCFxGGA_UW1SI-pswAjemXuNji0fE87Xojtlc&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Stream Relaxing White Noise | Listen to Study Sounds White ...",
+      "url": "https://soundcloud.com/relaxing-white-noise/sets/signature-sounds-for-study",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNVp_eehCrdb80XpUEuCpfmb2SIybULalFgbLO53NGwXXz0TtwkVRIGo&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Is White Noise Good for Studying and Work? • RememberEverything",
+      "url": "https://remembereverything.org/white-noise-good-for-studying-work/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZC-RdaZkbAO6xZJ-SzrtgNefYzOeRVgCHFDzRRapo9dnRWtXof8N09JQ&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Best Sounds To Help You Study For Exams",
+      "url": "https://pzizz.com/blog/articles/sounds-for-studying/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-p-4RRpVG4RRcLUp9jfnqtMtkBrMRKMNSzxAxffH8pXSbtHPMLu5r6Is&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "The Impact of Noise on the Learning of Children and ...",
+      "url": "https://www.acousticbulletin.com/the-impact-of-noise-on-the-learning-of-children-and-adolescents/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbYlJNI2ufQFsuMFKLy-FUif_iiqQSgWHGsqbyAvn1vtADy2LmS6v03BE&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Can You Enhance Study Sessions With Background Music? -",
+      "url": "https://oxfordlearning.com/can-you-enhance-study-sessions-with-background-music/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToXkRItoj6W9rOzqsTT8AYoGOoiKhsdH9eYtot9vizahMphdMTEj9Pd8s&s"
+     }
+    ],
+    "related_image_searches": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Study noise free",
+     "Study noise for sleeping",
+     "White Noise for Studying MP3 download",
+     "Relaxing White Noise for studying",
+     "Concentration sounds for studying",
+     "White Noise for studying 1 hour",
+     "Best noise for studying ADHD",
+     "Pink noise for studying"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

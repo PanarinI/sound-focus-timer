@@ -1,0 +1,631 @@
+[
+ {
+  "keyword": "sound bath",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=sound%20bath&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-26 07:54:46 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "video",
+   "people_also_ask",
+   "local_pack",
+   "organic",
+   "short_videos",
+   "related_searches"
+  ],
+  "se_results_count": 110,
+  "pages_count": 1,
+  "items_count": 15,
+  "items": [
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Yoflaminga - Yoga with Jenny Hirtz",
+      "title": "Singing Bowls Sound Bath for Relaxation",
+      "timestamp": "2026-04-24 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=LbYUSVlpC0g"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Healing Vibrations",
+      "title": "Spiritual Healing Sound Bath | Releasing Pain | Transformation",
+      "timestamp": "2023-04-09 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=FDuDgCZyGUg"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Yoflaminga - Yoga with Jenny Hirtz",
+      "title": "Singing Bowls Sound Bath for Relaxation",
+      "timestamp": "2026-08-26 07:54:45 +00:00",
+      "url": "https://www.youtube.com/watch?v=EG7GAe3yU9A"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What does the sound bath do?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Are sound baths ok for Christians?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Who should not do a sound bath?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Can I do my own sound bath at home?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "local_pack",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]",
+    "title": "Sound Bath Journey",
+    "description": "Black Hawk, CO · (720) 431-7448 \nClosed · Opens 8 AM \n\"Cody and Reesa are amazing and their sound bath experience is incredible!\" \n",
+    "domain": "www.soundbathjourney.life",
+    "phone": "(720) 431-7448",
+    "booking_url": null,
+    "url": "https://www.soundbathjourney.life/",
+    "is_paid": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 5,
+     "votes_count": 18,
+     "rating_max": 5
+    },
+    "cid": "16732218112400977222",
+    "rectangle": null
+   },
+   {
+    "type": "local_pack",
+    "rank_group": 2,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]",
+    "title": "Singing Bowls of the Rockies",
+    "description": "7+ years in business · Colorado Springs, CO · (719) 464-3444 \nClosed · Opens 8 AM \n\"The sound bath was transformative and is a beautiful journey.\" \n",
+    "domain": "www.singingbowlsoftherockies.com",
+    "phone": "(719) 464-3444",
+    "booking_url": "https://www.singingbowlsoftherockies.com/privatesoundbaths?utm_source=google&utm_medium=book_button&utm_campaign=service_list&rwg_token=AE37R_gFlc6mSyT7SdulFfd0TVxwseOQ3B-QVCUQ8Xjlu-FMluUKYd7S_PjVqBFWaW-FzXP5cetaKTYUiYKMsz7BLEC_OYmRfw%3D%3D&source=cat",
+    "url": "http://www.singingbowlsoftherockies.com/",
+    "is_paid": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 5,
+     "votes_count": 100,
+     "rating_max": 5
+    },
+    "cid": "4982859009747593811",
+    "rectangle": null
+   },
+   {
+    "type": "local_pack",
+    "rank_group": 3,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[5]/div[1]/div[1]",
+    "title": "Ezra Alya Music That Soothes",
+    "description": "5+ years in business · Bend, OR · (458) 202-4959 \nClosed · Opens 7 AM \n\"Whenever I experience her sound bath I feel like I am truly floating.\" \n",
+    "domain": "ezraalya.com",
+    "phone": "(458) 202-4959",
+    "booking_url": null,
+    "url": "https://ezraalya.com/",
+    "is_paid": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 5,
+     "votes_count": 34,
+     "rating_max": 5
+    },
+    "cid": "13082931153937873814",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+    "domain": "www.verywellmind.com",
+    "title": "Sound Bath: Definition, Mental Health Benefits, Uses",
+    "url": "https://www.verywellmind.com/what-are-sound-baths-4783501",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.verywellmind.com › what-are-sound-baths...",
+    "website_name": "Verywell Mind",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sep 15, 2026 — A sound bath uses sound waves to help you relax and feel better. Participants lie down and listen to sounds to clear their minds and create ... Read more",
+    "pre_snippet": "09/15/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "uses sound waves to help you relax and feel better"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.verywellmind.com/what-are-sound-baths-4783501#:~:text=A%20sound%20bath%20uses%20sound,their%20minds%20and%20create%20harmony.",
+      "domain": "www.verywellmind.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-09-15 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]",
+    "domain": "health.clevelandclinic.org",
+    "title": "What Are Sound Baths?",
+    "url": "https://health.clevelandclinic.org/sound-bath",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://health.clevelandclinic.org › sound-bath",
+    "website_name": "Cleveland Clinic Health Essentials",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Nov 29, 2022 — During a sound bath, you're immersed in deep sound vibrations from a gong or a singing bowl. After having one, people report feeling calmer ...",
+    "pre_snippet": "11/29/2022 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "you're immersed in deep sound vibrations from a gong or a singing bowl"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2022-11-29 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[11]/div[1]/div[1]",
+    "domain": "www.mindbodyhum.com",
+    "title": "Sound Baths",
+    "url": "https://www.mindbodyhum.com/sound-baths",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.mindbodyhum.com › sound-baths",
+    "website_name": "Mind.Body.Hum",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "The general intention of a sound bath is to create a state of harmony in the listener by using sound to clear discordance from the participants' energy fields. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "to create a state of harmony in the listener"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.mindbodyhum.com/sound-baths#:~:text=The%20general%20intention%20of%20a,from%20the%20participants'%20energy%20fields.",
+      "domain": "www.mindbodyhum.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "20 Min Sound Baths",
+    "url": "https://www.youtube.com/playlist?list=PL0bmNgTThxz_tvvQ5gzAhnraKUvhsGU6X",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "318K+ followers",
+    "website_name": "YouTube · Irene Athanasiou",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "20 minute restorative sound baths for any time of the day to relax. Relaxing Sleep Music with Rain Water Sounds",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "20 minute restorative sound baths"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[15]/div[1]/div[1]",
+    "domain": "sound-bath.com",
+    "title": "What Is a Sound Bath Meditation?",
+    "url": "https://sound-bath.com/meditation/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://sound-bath.com › meditation",
+    "website_name": "The Soundbath Center",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "What a Sound Bath Meditation Is Good For · Stress relief and nervous system regulation · Sleep preparation · Focus and mental clarity · Breathwork support ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "What a Sound Bath Meditation Is Good For"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://sound-bath.com/meditation/#:~:text=What%20a%20Sound%20Bath%20Meditation,Is%20Good%20For&text=Stress%20relief%20and%20nervous%20system,regulation&text=Sleep%20preparation&text=Focus%20and%20mental%20clarity&text=Breathwork%20support",
+      "domain": "sound-bath.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[17]/div[1]/div[1]",
+    "domain": "www.worldsprings.com",
+    "title": "Sounds Baths Overview: What is a Sound Bath?",
+    "url": "https://www.worldsprings.com/blog/sounds-baths-overview-what-is-a-sound-bath",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.worldsprings.com › blog › sounds-baths-o...",
+    "website_name": "WorldSprings",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sound baths include the use of traditional instruments to create the waves, including chimes, singing bowls, rattles, drums, and even voices.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "use of traditional instruments to create the waves"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[19]/div[1]/div[1]",
+    "domain": "www.calm.com",
+    "title": "Sound bath meditation: benefits and what to expect",
+    "url": "https://www.calm.com/blog/sound-bath",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.calm.com › blog › sound-bath",
+    "website_name": "Calm",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "A sound bath uses soothing vibrations from instruments like bowls and gongs to promote deep relaxation, ease stress, and support emotional and/or physical ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "uses soothing vibrations from instruments like bowls and gongs"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 13,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[21]/div[1]/div[1]",
+    "domain": "www.ahealthiermichigan.org",
+    "title": "What is a Sound Bath?",
+    "url": "https://www.ahealthiermichigan.org/stories/fitness/sound-baths-how-to-create-one-at-home",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.ahealthiermichigan.org › stories › fitness",
+    "website_name": "A Healthier Michigan",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "A sound bath is a relaxation and mindfulness practice that uses soothing sounds and vibrations to help create a calm, meditative state. Sound baths can be done ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "uses soothing sounds and vibrations"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.ahealthiermichigan.org/stories/fitness/sound-baths-how-to-create-one-at-home#:~:text=A%20sound%20bath%20is%20a,chimes%2C%20recordings%20or%20an%20app.",
+      "domain": "www.ahealthiermichigan.org"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "short_videos",
+    "rank_group": 1,
+    "rank_absolute": 14,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[23]/div[1]",
+    "title": "Short videos",
+    "items": [
+     {
+      "type": "short_videos_element",
+      "title": "Sound bath or meditation?",
+      "url": "https://www.youtube.com/shorts/hCP0-30G-u8",
+      "domain": "google.com",
+      "source": "Mountainside Treatment Center"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "Sound Bath This is a meditative, immersive experience where ...",
+      "url": "https://www.instagram.com/reel/DWtoeM8xN2J/",
+      "domain": "google.com",
+      "source": "Lisa | Food & Content Creator"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "What is a sound bath? It's an experience where the body ...",
+      "url": "https://www.facebook.com/haciendadelsolaz/videos/what-is-a-sound-bath-its-an-experience-where-the-body-is-immersed-in-specific-de/1008872961379159/",
+      "domain": "google.com",
+      "source": "Hacienda del Sol Guest Ranch Resort"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "What is a sound bath? #soundbaths #soundhealing # ...",
+      "url": "https://www.youtube.com/shorts/gkFQbUA9XPo",
+      "domain": "google.com",
+      "source": "Mindful Modern Living"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "Cedars Sinai Sound Baths: Healing, Relaxation and Stress Relief",
+      "url": "https://www.facebook.com/CedarsSinai/videos/sound-based-practices-have-attracted-interest-and-attention-especially-from-thos/2159021131325052/",
+      "domain": "google.com",
+      "source": "Cedars-Sinai"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "\"What is a sound bath? That's the question that I've been asked ...",
+      "url": "https://www.instagram.com/reel/CiLAXAZAC9E/?hl=en",
+      "domain": "google.com",
+      "source": "Jesse Cale"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "A sound bath is a relaxed meditation where you listen to deep ...",
+      "url": "https://www.facebook.com/ritushakya490/videos/a-sound-bath-is-a-relaxed-meditation-where-you-listen-to-deep-calming-sounds-fro/1056437403478404/",
+      "domain": "google.com",
+      "source": "Ritu Shakya"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "Enjoy a beautiful Crystal Bowl sound bath to southern body and ...",
+      "url": "https://www.youtube.com/shorts/kKL8Ecm_McE",
+      "domain": "google.com",
+      "source": "Yoflaminga - Yoga with Jenny Hirtz"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "Sound bath. Raise the frequency | Taye Diggs",
+      "url": "https://www.facebook.com/TayeDiggs/videos/sound-bath-raise-the-frequency/1031917479441774/",
+      "domain": "google.com",
+      "source": "Taye Diggs"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "What is a sound bath? It's an experience where the body ...",
+      "url": "https://www.facebook.com/haciendadelsolaz/posts/what-is-a-sound-bath-its-an-experience-where-the-body-is-immersed-in-specific-de/1136202551884624/",
+      "domain": "google.com",
+      "source": "Hacienda del Sol Guest Ranch Resort"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 15,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Sound baths near me",
+     "Sound bath sounds",
+     "Sound bath negative effects",
+     "Sound bath wiki",
+     "Sound bath - youtube",
+     "Sound bath benefits",
+     "Sound bath bowls",
+     "Is a sound bath against Christianity"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

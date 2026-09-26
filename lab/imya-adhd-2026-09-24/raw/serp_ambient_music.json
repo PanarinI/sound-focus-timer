@@ -1,0 +1,783 @@
+[
+ {
+  "keyword": "ambient music",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=ambient%20music&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 19:33:40 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "organic",
+   "people_also_ask",
+   "perspectives",
+   "related_searches"
+  ],
+  "se_results_count": 165000,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "![Ambient Music Explained](https://api.dataforseo.com/cdn/i/09251933-2042-0139-0000-3b7548cbc0a9:4)\nAmbient music is `a genre that puts tone and atmosphere above traditional rhythm and song structure`.[[1]](https://en.wikipedia.org/wiki/Ambient_music)\n\n### Key Characteristics\n\n- **Focus on Texture:** Uses layered sounds and tones instead of catchy melodies.\n- **No Hard Beats:** Lacks a strong, driving rhythm or regular percussion.\n- **Calming Vibe:** Built to help people relax, focus, or think.\n- **Passive Listening:** Works well in the background without demanding full attention.[[1]](https://www.youtube.com/watch?v=MPsu7qrVtu8)[[2]](https://www.instagram.com/reel/DXziBNMoyT7/)[[3]](https://en.wikipedia.org/wiki/Ambient_music)\n\n### Origins and Pioneers\n\n- **Brian Eno:** Popularized the term in the 1970s and 1980s, defining it as being \"as ignorable as it is interesting.\" His album *Ambient 1: Music for Airports* is a landmark work.\n- **Early Roots:** Connects to Erik Satie's \"furniture music\" and minimalist composers like John Cage.[[1]](https://www.barbican.org.uk/read-watch-listen/an-introduction-to-ambient-music)\n\n### Common Uses\n\n- **Background Audio:** Used in films, video games, and study spaces to set a mood.\n- **Free Platforms:** You can find royalty-free tracks for projects on platforms like [Pixabay Music](https://pixabay.com/music/search/ambient/) or explore community-shared audio on the [Free Music Archive](https://freemusicarchive.org/genre/Ambient/).[[1]](https://www.epidemicsound.com/music/genres/ambient/)[[2]](https://pixabay.com/music/search/ambient/)[[3]](https://freemusicarchive.org/genre/Ambient/)\n\nWould you like recommendations for **specific ambient albums** or **artists** to start listening to?",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Ambient music is a genre that puts tone and atmosphere above traditional rhythm and song structure.",
+      "markdown": "![Ambient Music Explained](https://api.dataforseo.com/cdn/i/09251933-2042-0139-0000-3b7548cbc0a9:2)\nAmbient music is `a genre that puts tone and atmosphere above traditional rhythm and song structure`.[[1]](https://en.wikipedia.org/wiki/Ambient_music)",
+      "links": null,
+      "images": [
+       {
+        "type": "images_element",
+        "alt": "Ambient Music Explained",
+        "url": null,
+        "image_url": "https://api.dataforseo.com/cdn/i/09251933-2042-0139-0000-3b7548cbc0a9:3"
+       }
+      ],
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Wikipedia",
+        "domain": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/Ambient_music",
+        "title": "Ambient music - Wikipedia",
+        "text": "Ambient music is a genre of music that emphasizes tone and atmosphere over traditional musical structure or rhythm. Often \"peacefu..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Key Characteristics",
+      "text": "Focus on Texture: Uses layered sounds and tones instead of catchy melodies. No Hard Beats: Lacks a strong, driving rhythm or regular percussion. Calming Vibe: Built to help people relax, focus, or think. Passive Listening: Works well in the background without demanding full attention.",
+      "markdown": "- **Focus on Texture:** Uses layered sounds and tones instead of catchy melodies.\n- **No Hard Beats:** Lacks a strong, driving rhythm or regular percussion.\n- **Calming Vibe:** Built to help people relax, focus, or think.\n- **Passive Listening:** Works well in the background without demanding full attention.[[1]](https://www.youtube.com/watch?v=MPsu7qrVtu8)[[2]](https://www.instagram.com/reel/DXziBNMoyT7/)[[3]](https://en.wikipedia.org/wiki/Ambient_music)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=MPsu7qrVtu8",
+        "title": "CRYSTAL CAVE | Ethereal Fantasy Ambient Music",
+        "text": "CRYSTAL CAVE | Ethereal Fantasy Ambient Music - Relaxing Soundscape with Soothing Water Ambience - YouTube This content isn't avai..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Instagram",
+        "domain": "www.instagram.com",
+        "url": "https://www.instagram.com/reel/DXziBNMoyT7/",
+        "title": "When people ask what ambient music is for, I tell them",
+        "text": "Ambient music is used for thinking, creating a space for personal thoughts. It helps in transitioning between daily activities lik..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Wikipedia",
+        "domain": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/Ambient_music",
+        "title": "Ambient music - Wikipedia",
+        "text": "Ambient music is a genre of music that emphasizes tone and atmosphere over traditional musical structure or rhythm. Often \"peacefu..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Origins and Pioneers",
+      "text": "Brian Eno: Popularized the term in the 1970s and 1980s, defining it as being \"as ignorable as it is interesting.\" His album Ambient 1: Music for Airports is a landmark work. Early Roots: Connects to Erik Satie's \"furniture music\" and minimalist composers like John Cage.",
+      "markdown": "- **Brian Eno:** Popularized the term in the 1970s and 1980s, defining it as being \"as ignorable as it is interesting.\" His album *Ambient 1: Music for Airports* is a landmark work.\n- **Early Roots:** Connects to Erik Satie's \"furniture music\" and minimalist composers like John Cage.[[1]](https://www.barbican.org.uk/read-watch-listen/an-introduction-to-ambient-music)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Barbican",
+        "domain": "www.barbican.org.uk",
+        "url": "https://www.barbican.org.uk/read-watch-listen/an-introduction-to-ambient-music",
+        "title": "An introduction to Ambient Music",
+        "text": "An Ambient Discovery Building on this realisation/revelation, he would record and curate a number of landmark ambient albums, such..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Common Uses",
+      "text": "Background Audio: Used in films, video games, and study spaces to set a mood. Free Platforms: You can find royalty-free tracks for projects on platforms like Pixabay Music or explore community-shared audio on the Free Music Archive.",
+      "markdown": "- **Background Audio:** Used in films, video games, and study spaces to set a mood.\n- **Free Platforms:** You can find royalty-free tracks for projects on platforms like [Pixabay Music](https://pixabay.com/music/search/ambient/) or explore community-shared audio on the [Free Music Archive](https://freemusicarchive.org/genre/Ambient/).[[1]](https://www.epidemicsound.com/music/genres/ambient/)[[2]](https://pixabay.com/music/search/ambient/)[[3]](https://freemusicarchive.org/genre/Ambient/)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Pixabay Music",
+        "description": null,
+        "url": "https://pixabay.com/music/search/ambient/",
+        "domain": "pixabay.com"
+       },
+       {
+        "type": "link_element",
+        "title": "Free Music Archive",
+        "description": null,
+        "url": "https://freemusicarchive.org/genre/Ambient/",
+        "domain": "freemusicarchive.org"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Epidemic Sound",
+        "domain": "www.epidemicsound.com",
+        "url": "https://www.epidemicsound.com/music/genres/ambient/",
+        "title": "Royalty-Free Ambient Music",
+        "text": "Want more music? * Ambient music works as background music for almost any type of content, including videos, podcasts, and relaxat..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Pixabay",
+        "domain": "pixabay.com",
+        "url": "https://pixabay.com/music/search/ambient/",
+        "title": "Ambient Music | No Copyright Song & MP3 Free Downloads - Pixabay",
+        "text": "52,890+ Ambient no copyright music. Download ambient royalty-free audio tracks and instrumentals for your next project. Auto-match..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Free Music Archive",
+        "domain": "freemusicarchive.org",
+        "url": "https://freemusicarchive.org/genre/Ambient/",
+        "title": "Genre: Ambient",
+        "text": "Check out the Ambient music catalog available on Tribe of Noise PRO. * Circle around you by Anthony Attard Relaxing Tunes Electroa..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Would you like recommendations for specific ambient albums or artists to start listening to?",
+      "markdown": "Would you like recommendations for **specific ambient albums** or **artists** to start listening to?",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Wikipedia",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Ambient_music",
+      "title": "Ambient music - Wikipedia",
+      "text": "Ambient music is a genre of music that emphasizes tone and atmosphere over traditional musical structure or rhythm. Often \"peacefu..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=MPsu7qrVtu8",
+      "title": "CRYSTAL CAVE | Ethereal Fantasy Ambient Music",
+      "text": "CRYSTAL CAVE | Ethereal Fantasy Ambient Music - Relaxing Soundscape with Soothing Water Ambience - YouTube This content isn't avai..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Barbican",
+      "domain": "www.barbican.org.uk",
+      "url": "https://www.barbican.org.uk/read-watch-listen/an-introduction-to-ambient-music",
+      "title": "An introduction to Ambient Music",
+      "text": "An Ambient Discovery Building on this realisation/revelation, he would record and curate a number of landmark ambient albums, such..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Instagram",
+      "domain": "www.instagram.com",
+      "url": "https://www.instagram.com/reel/DXziBNMoyT7/",
+      "title": "When people ask what ambient music is for, I tell them",
+      "text": "Ambient music is used for thinking, creating a space for personal thoughts. It helps in transitioning between daily activities lik..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Pixabay",
+      "domain": "pixabay.com",
+      "url": "https://pixabay.com/music/search/ambient/",
+      "title": "Ambient Music | No Copyright Song & MP3 Free Downloads - Pixabay",
+      "text": "52,890+ Ambient no copyright music. Download ambient royalty-free audio tracks and instrumentals for your next project. Auto-match..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Free Music Archive",
+      "domain": "freemusicarchive.org",
+      "url": "https://freemusicarchive.org/genre/Ambient/",
+      "title": "Genre: Ambient",
+      "text": "Check out the Ambient music catalog available on Tribe of Noise PRO. * Circle around you by Anthony Attard Relaxing Tunes Electroa..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Epidemic Sound",
+      "domain": "www.epidemicsound.com",
+      "url": "https://www.epidemicsound.com/music/genres/ambient/",
+      "title": "Royalty-Free Ambient Music",
+      "text": "Want more music? * Ambient music works as background music for almost any type of content, including videos, podcasts, and relaxat..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "Spiritual Ambient Music for Deep Meditation",
+    "url": "https://www.youtube.com/watch?v=NJk0adguhKY",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "1.6K+ views  ·  2 weeks ago",
+    "website_name": "YouTube · Rhythms of the World",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "No AI-generated music. Best suited for meditation, breathwork, deep relaxation, yoga, reflection, sleep, reading, journaling, or simply taking ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "music"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-09-09 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What does ambient mean in music?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Where can I find free ambient music?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Which musician is known for his ambient music?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Can you give me an example of ambient music?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "4 Hours Of Ambient Study Music To Concentrate",
+    "url": "https://www.youtube.com/watch?v=vfct10qytVY",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "32K+ views  ·  5 years ago",
+    "website_name": "YouTube · SpaceWave - Cosmic Relaxation",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "This music can of course be used for other purposes aswell, like background music for deep relaxation, music for deep meditation, music for ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "background music for deep relaxation"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2021-06-02 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "RELAX-Ambient Music-Sounds Of Nature-Bird Noises-Calming ...",
+    "url": "https://www.youtube.com/watch?v=x8FTP1IgqBA",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "479.1K+ views  ·  16 years ago",
+    "website_name": "YouTube · johnnielawson",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "Nature sounds, with the soothing sound of a waterfall, forest sounds or birdsong are relaxing to our minds and help us to sleep, study, ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Nature sounds, with the soothing sound of a waterfall, forest sounds or birdsong"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2010-03-15 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "Meditation Music - Album by Ambient",
+    "url": "https://open.spotify.com/album/7t7wcLJI98OP8Z6KxBjryi",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › album",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Peaceful Ambient Morning. Album • 2022. Ambient Space Music. Album • 2019. Ambient Atmospheric Music. Album • 2015. Gentle Background Music for Work & Study. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Peaceful Ambient Morning. Album • 2022"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://open.spotify.com/album/7t7wcLJI98OP8Z6KxBjryi#:~:text=Peaceful%20Ambient%20Morning,Music%20for%20Work%20%26%20Study",
+      "domain": "open.spotify.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "Lost in the Void — Cosmic Space Ambient Music for Focus — 4K",
+    "url": "https://www.youtube.com/watch?v=DnEoIzIe9Fw",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "8.8K+ views  ·  2 weeks ago",
+    "website_name": "YouTube · COSMED",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "Space ambient music and cosmic soundscapes. 3 hours of space ambient for relaxation, focus and study. Ambient Music for Relaxation & Dreams 🌊💫",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Space ambient music and cosmic soundscapes"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-09-09 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "perspectives",
+    "rank_group": 1,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[11]/div[1]",
+    "title": "What people are saying",
+    "items": [
+     {
+      "type": "perspectives_element",
+      "title": "ambient exploration with the MVAVE FM-1, SideKick, Microcosm, & XYNTHESIZR App",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=8pHTB9eGLA0",
+      "domain": "www.youtube.com",
+      "date": "6 days ago",
+      "source": "TAETRO",
+      "timestamp": "2026-09-19 19:33:39 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "The best ambient music comes from artists fit for this sub",
+      "description": null,
+      "url": "https://www.reddit.com/r/TheOverload/comments/1wmkrbh/the_best_ambient_music_comes_from_artists_fit_for/",
+      "domain": "www.reddit.com",
+      "date": "4 days ago",
+      "source": "r/TheOverload",
+      "timestamp": "2026-09-21 19:33:39 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Spaces between the Clouds, Relaxing Music, Peaceful Soothing Instrumental Music, by Tim Janis",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=rbBSwy1pe1k",
+      "domain": "www.youtube.com",
+      "date": "1 month ago",
+      "source": "Tim Janis",
+      "timestamp": "2026-08-25 19:33:39 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "🇫🇷✨ Une heure toute douce a @lacordosmac samedi dernier, merci à ceux qui sont venu ralentir avec moi 🌸\n\n🎥 @deffervescingelephant \n\n#live #sleep #ambient #music #stegonaute",
+      "description": null,
+      "url": "https://www.instagram.com/reel/DdmNUqUsU6T/",
+      "domain": "www.instagram.com",
+      "date": "3 days ago",
+      "source": "stegonaute",
+      "timestamp": "2026-09-22 19:33:39 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Looking for minimalist-ish ambient songs/albums with a repeating but slowly changing motif",
+      "description": null,
+      "url": "https://www.reddit.com/r/MusicRecommendations/comments/1wnf3xi/looking_for_minimalistish_ambient_songsalbums/",
+      "domain": "www.reddit.com",
+      "date": "3 days ago",
+      "source": "r/MusicRecommendations",
+      "timestamp": "2026-09-22 19:33:39 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "17 minutes of hypnotic ambient drone textures",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=aJj9BWXcRj4",
+      "domain": "www.youtube.com",
+      "date": "1 week ago",
+      "source": "vekoni",
+      "timestamp": "2026-09-18 19:33:39 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "And yes I sometimes use she/her/they/them pronouns for the light instrument but how could you not #lightinstrument #ambientmusic #electronicmusic #ambient #meditationmusic",
+      "description": null,
+      "url": "https://www.tiktok.com/@theluxlight/video/7672506019695627550",
+      "domain": "www.tiktok.com",
+      "date": "1 month ago",
+      "source": "Lux",
+      "timestamp": "2026-08-25 19:33:39 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Which game has the most relaxing ambient music to you?",
+      "description": null,
+      "url": "https://www.reddit.com/r/AskReddit/comments/1wp5b87/which_game_has_the_most_relaxing_ambient_music_to/",
+      "domain": "www.reddit.com",
+      "date": "1 day ago",
+      "source": "r/AskReddit",
+      "timestamp": "2026-09-24 19:33:39 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "The Ambientalist - Miracle",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=HitLzjOV5Zo",
+      "domain": "www.youtube.com",
+      "date": "3 weeks ago",
+      "source": "The Ambientalist",
+      "timestamp": "2026-09-04 19:33:39 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "The Best Ambient Music on Bandcamp, June 2026",
+      "description": null,
+      "url": "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-june-2026",
+      "domain": "daily.bandcamp.com",
+      "date": "Jun 30, 2026",
+      "source": "Ted Davis",
+      "timestamp": "2026-06-30 00:00:00 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "AMBIENT MUSIC || Afternoon Trip #3 // GUITAR + IPAD [Launchpad]",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=aykmIpuD--k",
+      "domain": "www.youtube.com",
+      "date": "3 weeks ago",
+      "source": "Perry Frank",
+      "timestamp": "2026-09-04 19:33:39 +00:00"
+     },
+     {
+      "type": "perspectives_element",
+      "title": "Implied Music live. Ambient Minimalism",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=RUor2MYMn9s",
+      "domain": "www.youtube.com",
+      "date": "2 weeks ago",
+      "source": "Implied Music",
+      "timestamp": "2026-09-11 19:33:39 +00:00"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[13]/div[1]/div[1]",
+    "domain": "daily.bandcamp.com",
+    "title": "The Best Ambient Music on Bandcamp, January 2024",
+    "url": "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-january-2024",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://daily.bandcamp.com › best-ambient › the-best-a...",
+    "website_name": "Bandcamp Daily",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jan 24, 2024 — To kick off 2024, here's a roundup of atmospheric live jams, vibe-y downtempo beats, deconstructed jangle pop, and more.",
+    "pre_snippet": "01/24/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "atmospheric"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-01-24 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "W I T H I N - Ethereal Meditative Ambient Music - Deep & ...",
+    "url": "https://www.youtube.com/watch?v=oYwmDMpFLzI",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "23.4K+ views  ·  2 years ago",
+    "website_name": "YouTube · Ethereal Odyssey",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "Hello, my friends... I'm excited to share W I T H I N - my latest soundscape, infused with healing frequencies...a truly deep atmosphere.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": null,
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-03-11 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "www.facebook.com",
+    "title": "Top 10 essential ambient music albums",
+    "url": "https://www.facebook.com/groups/57904705717/posts/10158297403290718/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "80+ comments  ·  4 years ago",
+    "website_name": "Facebook · Ambient Music Community",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Top 10 essential ambient music albums. Biosphere's Substrata, Aphex Twin, and Global Communication's 76:14 are frequently recommended ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ambient music"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Youtube ambient music",
+     "Free ambient music"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

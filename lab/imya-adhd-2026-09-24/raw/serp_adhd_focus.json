@@ -1,0 +1,572 @@
+[
+ {
+  "keyword": "adhd focus",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=adhd%20focus&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-24 19:58:19 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "video",
+   "people_also_ask",
+   "images",
+   "organic",
+   "related_searches"
+  ],
+  "se_results_count": 107,
+  "pages_count": 1,
+  "items_count": 12,
+  "items": [
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "Managing focus with ADHD requires `breaking tasks into tiny steps and reducing distractions in your environment`.\n\n### Quick Focus Strategies\n\n- **Use the Pomodoro Technique:** Work for 20 minutes, then rest for 5 minutes. Short timers make big tasks feel easy.\n- **Clear your desk:** Remove everything except what you need for the current task. Out of sight means out of mind.\n- **Wear headphones:** Play instrumental music, white noise, or brown noise to block out sudden sounds.\n- **Write down stray thoughts:** Keep a notepad nearby. When a random idea pops up, write it down and go back to work.\n- **Break tasks apart:** Instead of \"clean the room,\" make the step \"pick up three shirts.\"\n\n### Brain Care\n\n- **Eat protein:** A high-protein breakfast helps your brain make chemicals for attention.\n- **Move your body:** Take a quick walk or do jumping jacks before starting a hard task.\n- **Sleep well:** Tired brains have a much harder time staying on track.\n\nIf you want, tell me:\n\n- What **specific task** are you trying to do right now?\n- What is **distracting you** the most?\n\nI can give you a quick, custom plan to get started.",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Managing focus with ADHD requires breaking tasks into tiny steps and reducing distractions in your environment.",
+      "markdown": "Managing focus with ADHD requires `breaking tasks into tiny steps and reducing distractions in your environment`.",
+      "links": null,
+      "images": null,
+      "references": null
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Quick Focus Strategies",
+      "text": "Use the Pomodoro Technique: Work for 20 minutes, then rest for 5 minutes. Short timers make big tasks feel easy. Clear your desk: Remove everything except what you need for the current task. Out of sight means out of mind. Wear headphones: Play instrumental music, white noise, or brown noise to block out sudden sounds. Write down stray thoughts: Keep a notepad nearby. When a random idea pops up, write it down and go back to work. Break tasks apart: Instead of \"clean the room,\" make the step \"pick up three shirts.\"",
+      "markdown": "- **Use the Pomodoro Technique:** Work for 20 minutes, then rest for 5 minutes. Short timers make big tasks feel easy.\n- **Clear your desk:** Remove everything except what you need for the current task. Out of sight means out of mind.\n- **Wear headphones:** Play instrumental music, white noise, or brown noise to block out sudden sounds.\n- **Write down stray thoughts:** Keep a notepad nearby. When a random idea pops up, write it down and go back to work.\n- **Break tasks apart:** Instead of \"clean the room,\" make the step \"pick up three shirts.\"",
+      "links": null,
+      "images": null,
+      "references": null
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Brain Care",
+      "text": "Eat protein: A high-protein breakfast helps your brain make chemicals for attention. Move your body: Take a quick walk or do jumping jacks before starting a hard task. Sleep well: Tired brains have a much harder time staying on track.",
+      "markdown": "- **Eat protein:** A high-protein breakfast helps your brain make chemicals for attention.\n- **Move your body:** Take a quick walk or do jumping jacks before starting a hard task.\n- **Sleep well:** Tired brains have a much harder time staying on track.",
+      "links": null,
+      "images": null,
+      "references": null
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "If you want, tell me:What specific task are you trying to do right now?\nWhat is distracting you the most?\nI can give you a quick, custom plan to get started.",
+      "markdown": "If you want, tell me:\n\n- What **specific task** are you trying to do right now?\n- What is **distracting you** the most?\n\nI can give you a quick, custom plan to get started.",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": null,
+    "rectangle": null
+   },
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Quiet Quest - Study Music",
+      "title": "Hyperfocus Music - ADHD Relief Music For Work, Studying and ...",
+      "timestamp": "2025-06-09 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=tV7JrrDsGeg"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Quiet Quest - Study Music",
+      "title": "ADHD Hyperfocus Study Music For Better Concentration And ...",
+      "timestamp": "2026-03-02 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=Xv6ObzQAxIk"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Greenred Productions - Relaxing Music",
+      "title": "ADHD Relief Music: Studying Music for Better Concentration ...",
+      "timestamp": "2023-01-02 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=RG2IK8oRZNA"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "Can a person with ADHD focus?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Why do people with ADHD always feel tired?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What are the symptoms of ADHD burnout?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What does ADHD hyperfocus look like?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "images",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]",
+    "title": "Images",
+    "url": "https://www.google.com/search?sca_esv=aad93e118372d4df&hl=en&gl=US&sxsrf=APpeQnsHMI19_SNRDI_zGifAjUduQ69NBA:1790279898185&q=adhd+focus&udm=2&source=univ&fir=DOnWGBHG5BouLM%252CyJamsULNrKiBQM%252C_%253BOUErKagPUljpPM%252CMZMuGnpd9beRYM%252C_%253BNk4wO8M5YTOlfM%252C658aP-36-QHkWM%252C_%253BJIOWVkWNF3LhKM%252CV0LQc8VKxaiG0M%252C_%253BTuXSwjhqHVW4GM%252CMk1EiwV0YJASIM%252C_%253BvD8WVXlYffWvxM%252C1Uanvpbkm8V-2M%252C_%253BzPM-yCo8b6e2oM%252CyJamsULNrKiBQM%252C_%253Bvew2X8grS14JxM%252CgxJ3NsYBHxcsMM%252C_%253BjnSuVrulGquALM%252Czlq9ig_4cIENqM%252C_&usg=AI4_-kT8-Hb-12AjjLruUu8EoLk__RK8BQ&sa=X&ved=2ahUKEwjTv4SrgIiXAxX1nf0HHVfWMZ4Q7Al6BAhKEAU",
+    "items": [
+     {
+      "type": "images_element",
+      "alt": "11 Clever Ways to Trick Yourself Into Focusing with ADHD ...",
+      "url": "https://www.addept.org/living-with-adult-add-adhd/adhd-focus",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241958-2042-0139-0000-3ebad72392f6:0"
+     },
+     {
+      "type": "images_element",
+      "alt": "Four Strategies to Improve Focus with ADHD",
+      "url": "https://www.unconventionalorganisation.com/post/four-strategies-to-improve-focus-with-adhd",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241958-2042-0139-0000-3ebad72392f6:1"
+     },
+     {
+      "type": "images_element",
+      "alt": "ADHD Tips To Improve Focus And Attention",
+      "url": "https://mentalhealthcenterkids.com/products/adhd-tips-to-improve-focus-and-attention?srsltid=AU7gw4XYsPxSg7_p0Y3lyhZPD3J0ToUH6aMJLy9QBd9jK448hm__HDv7",
+      "image_url": "https://api.dataforseo.com/cdn/i/09241958-2042-0139-0000-3ebad72392f6:2"
+     },
+     {
+      "type": "images_element",
+      "alt": "How to Stay Focused: Strategies for Students and Adults Who ...",
+      "url": "https://www.navigatingadhd.com/adhd-treatment/how-to-stay-focused-strategies-for-students-and-adults-who-struggle-with-boring-tasks/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFOoXpzi-xJvMKWZ2fMAHwxOpR9bCEPk2i-VaT2wSrmrzg9seAc5K3g6I&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "How to Focus with ADHD ADHD-BED Integrated®",
+      "url": "https://adhd.clinic/news-research/how-to-focus-with-adhd/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsRHYuezMZ4hCLBIEA-OhEjHSs5xVeFgHsdQ7kjtZNrYAhrSFN2e2dpN8&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Helping Students with ADHD FOCUS",
+      "url": "https://ot4adhd.com/product/helping-students-with-adhd-focus/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJV0QgsDXTsFSTVYnxRdxW9cNPA1AuIndvh7iF8jE25oTnR5dUURsCeNI&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "11 Clever Ways to Trick Yourself Into Focusing with ADHD ...",
+      "url": "https://www.addept.org/living-with-adult-add-adhd/adhd-focus",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPhArz0SkyvnETfgWNy295DIbokVVQhRWWV1Vu92sF6wBLOmpDHKfzNlI&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "People with ADHD just can't concentrate: MYTH ...",
+      "url": "https://www.adhdawarenessmonth.org/concentration-myth/",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwq2397SQquHVqR2UZu8BH1DGlIt4kVXIjBH0MywLmC40oRdnRzjAxP2E&s"
+     },
+     {
+      "type": "images_element",
+      "alt": "Extra Focus: The Quick Start Guide to Adult ADHD by Jesse J ...",
+      "url": "https://www.goodreads.com/book/show/197655262-extra-focus",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE1Z4dfNrrWkGkUBo9RIvBmLtP01BT8R4HQmEt5GgQOcYSobNWmi3KvSM&s"
+     }
+    ],
+    "related_image_searches": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "ADHD focus music 2026✨ hyperfixation/hyperfocus",
+    "url": "https://open.spotify.com/playlist/6Cf1qYa6QwYB70TVDBIaE3",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › playlist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "for studying / focusing ~ improve concentration and increase brain power ~ be more productive ~binaural beats / isochronic tones. ADHD focus music",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADHD focus"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[9]/div[1]/div[1]",
+    "domain": "www.understood.org",
+    "title": "How to focus with ADHD",
+    "url": "https://www.understood.org/en/articles/adhd-focus-tips",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.understood.org › articles › adhd-focus-tips",
+    "website_name": "Understood",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "You can improve your ADHD focus by taking short breaks and using tools like headphones. Setting alarms and having clear rules also help you get work done.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "You can improve your ADHD focus by taking short breaks and using tools like headphones"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]",
+    "domain": "memorialhermann.org",
+    "title": "How to Stay Focused with Adult ADHD",
+    "url": "https://memorialhermann.org/health-wellness/health/stay-focused-with-adult-adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://memorialhermann.org › health-wellness › health",
+    "website_name": "Memorial Hermann Health System",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "10 ADHD Focus Strategies · Break large tasks into smaller steps. · Celebrate small wins. · Take regular breaks. · Improve your sleep, diet and gut health. · Get ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Break large tasks into smaller steps"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://memorialhermann.org/health-wellness/health/stay-focused-with-adult-adhd#:~:text=10%20ADHD%20Focus%20Strategies&text=Break%20large%20tasks%20into%20smaller,steps.&text=Celebrate%20small%20wins.%20Rather%20than&text=Take%20regular%20breaks.%20Short%20pauses&text=Improve%20your%20sleep%2C%20diet%20and,gut%20health.&text=Get%20moving.%20Exercise%20doesn't%20just",
+      "domain": "memorialhermann.org"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[13]/div[1]/div[1]",
+    "domain": "www.brain.fm",
+    "title": "Music for ADHD",
+    "url": "https://www.brain.fm/adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.brain.fm › adhd",
+    "website_name": "Brain.fm",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Shown in peer-reviewed studies to increase focus brainwaves by 119% and improve sustained attention tasks in users with ADHD symptoms.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "increase focus brainwaves by 119"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[15]/div[1]/div[1]",
+    "domain": "newsinhealth.nih.gov",
+    "title": "Focusing on ADHD",
+    "url": "https://newsinhealth.nih.gov/2014/09/focusing-adhd",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://newsinhealth.nih.gov › 2014/09 › focusing-adhd",
+    "website_name": "NIH News in Health (.gov)",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Kids with the inattentive kind of ADHD have a hard time concentrating and following instructions. They often forget and lose things; they can't seem to get ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "have a hard time concentrating and following instructions"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[17]/div[1]/div[1]",
+    "domain": "chadd.org",
+    "title": "Tune In To Focus",
+    "url": "https://chadd.org/adhd-news/adhd-news-adults/adhd-weekly-tune-in-to-focus/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://chadd.org › ADHD News › ADHD News-Adults",
+    "website_name": "CHADD",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Music can not only help you relax, it can also be a useful tool when you have ADHD. Music can make it easier to focus, pay attention, and cross things off your ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ADHD",
+     "focus",
+     "attention"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://chadd.org/adhd-news/adhd-news-adults/adhd-weekly-tune-in-to-focus/#:~:text=Music%20can%20not%20only%20help,things%20off%20your%20to-do%20list.",
+      "domain": "chadd.org"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[19]/div[1]/div[1]",
+    "domain": "www.additudemag.com",
+    "title": "Hyperfocus: The ADHD Phenomenon of Hyper Fixation",
+    "url": "https://www.additudemag.com/understanding-adhd-hyperfocus/?srsltid=AU7gw4UAptaGD6kj65qgUEsgO4LROleErv9m9uXBlqdyfa-7M_RrVoBL",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.additudemag.com › understanding-adhd-h...",
+    "website_name": "ADDitude",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Aug 11, 2025 — Hyperfocus, a symptom of ADHD in children and adults, refers to a hyper fixation on an interest or activity for an extended period of time.",
+    "pre_snippet": "08/11/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Hyperfocus, a symptom of ADHD in children and adults"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Is Hyperfocus Bad?",
+      "description": null,
+      "url": "https://www.additudemag.com/understanding-adhd-hyperfocus/#:~:text=Is%20Hyperfocus%20Bad%3F,-There%27s%20nothing%20inherently%20harmful",
+      "domain": "www.additudemag.com"
+     },
+     {
+      "type": "link_element",
+      "title": "How To Use Adhd Hyperfocus...",
+      "description": null,
+      "url": "https://www.additudemag.com/understanding-adhd-hyperfocus/#:~:text=How%20to%20Use%20ADHD%20Hyperfocus%20to%20Your%20Advantage,-Ultimately%2C%20the%20best%20way",
+      "domain": "www.additudemag.com"
+     },
+     {
+      "type": "link_element",
+      "title": "Treating Adhd",
+      "description": null,
+      "url": "https://www.additudemag.com/understanding-adhd-hyperfocus/#:~:text=Treating%20ADHD",
+      "domain": "www.additudemag.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-08-11 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 12,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "Adhd focus test",
+     "ADHD focus music youtube",
+     "ADHD focus music for kids",
+     "ADHD focus music spotify",
+     "ADHD focus music free",
+     "Upbeat ADHD focus music",
+     "ADHD focus music Reddit",
+     "ADHD focus music frequency"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

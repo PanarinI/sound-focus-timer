@@ -1,0 +1,522 @@
+[
+ {
+  "keyword": "white noise for focus",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=white%20noise%20for%20focus&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 20:05:28 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "video",
+   "people_also_ask",
+   "organic",
+   "short_videos",
+   "related_searches"
+  ],
+  "se_results_count": 166,
+  "pages_count": 1,
+  "items_count": 11,
+  "items": [
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "Studying White Noise | Focus on Homework, Test Prep, School",
+      "timestamp": "2019-01-06 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=yLOM8R6lbzg"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "Improve Concentration with Deep White Noise for Studying",
+      "timestamp": "2025-04-06 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=Z5_mSyaNqHw"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "White Noise for Studying & Concentration | Great for Test Prep!",
+      "timestamp": "2024-05-12 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=nU0UTnGgYOg"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Relaxing White Noise",
+      "title": "White Noise for Studying, Homework, Focus | No Ads While ...",
+      "timestamp": "2026-04-01 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=2jUGwHfn6Kk"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "Which white noise is best for focus?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What noise helps ADHD focus?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the noise that helps you focus?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "Is white noise good for studying?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "White Noise For Study 📚 - playlist by Dream Supplier",
+    "url": "https://open.spotify.com/playlist/2zjP2uwWCuLNvKRQ7ckBn1",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › playlist",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "White Noise to help you focus on reading, working, studying for tests, homework, exams, finals. All sounds are loopable, repeatable, constant with no fade.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "White Noise to help you focus on reading, working, studying"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+    "domain": "www.relaxingwhitenoise.com",
+    "title": "White Noise for Studying, Concentration, Test-Prep & Homework",
+    "url": "https://www.relaxingwhitenoise.com/white-noise-for-studying-concentration-test-prep-homework-8-hours/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.relaxingwhitenoise.com › Episodes",
+    "website_name": "relaxingwhitenoise.com",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jan 27, 2025 — It has been shown that white noise sounds can be a happy medium of audio that can help focus our minds while also not being distracting in and ... Read more",
+    "pre_snippet": "01/27/2025 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": {
+     "rating_type": "Max5",
+     "value": 4,
+     "votes_count": 97,
+     "rating_max": 5
+    },
+    "price": null,
+    "highlighted": [
+     "white noise",
+     "focus"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.relaxingwhitenoise.com/white-noise-for-studying-concentration-test-prep-homework-8-hours/#:~:text=It%20has%20been%20shown%20that,distracting%20in%20and%20of%20itself.",
+      "domain": "www.relaxingwhitenoise.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2025-01-27 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "Focus, Increase Concentration, Calm Your Mind | White Noise ...",
+    "url": "https://www.youtube.com/watch?v=ArwcHjmsw3A&vl=en",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "30M+ views  ·  11 years ago",
+    "website_name": "YouTube · Relaxing White Noise",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "Focus, Increase Concentration, Calm Your Mind. Focus on Homework, Test Prep, School | 10 Hours. Calm Rainstorm Sounds for Relaxing, Focus or ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Focus, Increase Concentration, Calm Your Mind"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2015-02-10 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+    "domain": "soundcloud.com",
+    "title": "White Noise for Studying",
+    "url": "https://soundcloud.com/relaxing-white-noise/sets/white-noise-for-studying",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "32K+ followers  ·  8 years ago",
+    "website_name": "SoundCloud · Relaxing White Noise",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Listen to White Noise for Studying, a playlist curated by Relaxing White Noise. Focus Better at Work White Noise (75 Minutes) White Noise for ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "White Noise for Studying"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+    "domain": "www.bps.org.uk",
+    "title": "Can listening to white noise help you focus? | BPS",
+    "url": "https://www.bps.org.uk/research-digest/can-listening-white-noise-help-you-focus",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.bps.org.uk › research-digest › can-listening...",
+    "website_name": "British Psychological Society",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Sep 23, 2022 — Study of neurotypical adults finds white noise boosts attention and creativity - but improvements are small.",
+    "pre_snippet": "09/23/2022 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "white noise boosts attention and creativity"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2022-09-23 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]",
+    "domain": "mystudylife.com",
+    "title": "15 Best Types of White Noise for Studying- Maximize Focus",
+    "url": "https://mystudylife.com/white-noise-for-studying/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://mystudylife.com › white-noise-for-studying",
+    "website_name": "MyStudyLife",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Jan 12, 2024 — White noise can be a powerful tool for improving focus and concentration while studying. Rather than silence or distractions, background sounds ...",
+    "pre_snippet": "01/12/2024 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "White noise can be a powerful tool for improving focus"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2024-01-12 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+    "domain": "music.youtube.com",
+    "title": "White Noise For Studying & Concentration",
+    "url": "https://music.youtube.com/browse/MPREb_z9yzhNIwoBb",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://music.youtube.com › browse",
+    "website_name": "YouTube Music",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "White Noise For Studying & Concentration ; 1. White Noise To Sleep. 1.8K plays ; 2. White Noise To Concentrate. 1.6K plays ; 3. White Noise Long Loop (No Fade). Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "White Noise For Studying & Concentration"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://music.youtube.com/browse/MPREb_z9yzhNIwoBb#:~:text=White%20Noise%20For%20Studying%20%26,Concentration&text=1,1.8K%20plays&text=2,1.6K%20plays&text=3,Noise%20Long%20Loop%20(No%20Fade)",
+      "domain": "music.youtube.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "short_videos",
+    "rank_group": 1,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1]/div[18]/div[1]",
+    "title": "Short videos",
+    "items": [
+     {
+      "type": "short_videos_element",
+      "title": "White Noise for Studying & Concentration",
+      "url": "https://www.youtube.com/shorts/LO1eqlkQFGY",
+      "domain": "google.com",
+      "source": "Relaxing White Noise"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "White Noise For Studying",
+      "url": "https://www.youtube.com/watch?v=XQ5UNbGV_SM",
+      "domain": "google.com",
+      "source": "White Noise - Topic"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "White Noise for Better Focus",
+      "url": "https://www.youtube.com/shorts/ShdtTVSrRK4",
+      "domain": "google.com",
+      "source": "Focus.Time.Sessions"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "White noise for focus and studying",
+      "url": "https://www.youtube.com/shorts/UE9Wb6Y6FuM",
+      "domain": "google.com",
+      "source": "The English Zone"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "White Noise for Focus, Concentration & Studying",
+      "url": "https://www.youtube.com/shorts/T8fF72UWNPo",
+      "domain": "google.com",
+      "source": "Quiet Earth ASMR"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "White Noise for Studying",
+      "url": "https://www.youtube.com/shorts/LInGWo8tFiA",
+      "domain": "google.com",
+      "source": "BSO Relax"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "White Noise for Focus | 3 Hours Study & Work Background Sound",
+      "url": "https://www.youtube.com/shorts/HA_qbyrfSJQ",
+      "domain": "google.com",
+      "source": "A Place to Exhale | Ambient Soundscapes"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "White Noise for Long Study Sessions",
+      "url": "https://www.youtube.com/shorts/P9VBrrGofeY",
+      "domain": "google.com",
+      "source": "Focus.Time.Sessions"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "White Noise for Deep Study",
+      "url": "https://www.youtube.com/shorts/8fQLw7OMXsQ",
+      "domain": "google.com",
+      "source": "Focus.Time.Sessions"
+     },
+     {
+      "type": "short_videos_element",
+      "title": "White Noise For Studying & To Help You Focus",
+      "url": "https://www.youtube.com/shorts/lN11QB0P6So",
+      "domain": "google.com",
+      "source": "The Rain TV"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "related_searches",
+    "rank_group": 1,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+    "items": [
+     "White noise for focus youtube",
+     "White noise for focus free",
+     "White Noise for Studying MP3 download",
+     "Relaxing White Noise for studying",
+     "Best noise for studying ADHD",
+     "White Noise for studying 1 hour",
+     "Best white noise for studying",
+     "Pink noise for studying"
+    ],
+    "rectangle": null
+   }
+  ]
+ }
+]

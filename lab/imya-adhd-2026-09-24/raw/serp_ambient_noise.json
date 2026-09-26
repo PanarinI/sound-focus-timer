@@ -1,0 +1,711 @@
+[
+ {
+  "keyword": "ambient noise",
+  "type": "organic",
+  "se_domain": "google.com",
+  "location_code": 2840,
+  "language_code": "en",
+  "check_url": "https://www.google.com/search?q=ambient%20noise&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+  "datetime": "2026-09-25 19:33:44 +00:00",
+  "spell": null,
+  "refinement_chips": null,
+  "item_types": [
+   "ai_overview",
+   "video",
+   "people_also_ask",
+   "organic"
+  ],
+  "se_results_count": 129000,
+  "pages_count": 1,
+  "items_count": 11,
+  "items": [
+   {
+    "type": "ai_overview",
+    "rank_group": 1,
+    "rank_absolute": 1,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+    "asynchronous_ai_overview": false,
+    "markdown": "Ambient noise is `the all-encompassing background sound present in a given environment` , separate from any specific sound you are trying to focus on.[[1]](https://www.safeopedia.com/definition/5568/ambient-noise)\n\n### Types of Ambient Noise\n\n- **Natural sounds:** Rain, ocean waves, wind, and birdsong.[[1]](https://www.youtube.com/watch?v=ipf7ifVSeDU)[[2]](https://www.noisli.com/)\n- **Mechanical sounds:** Fans, air conditioners, and hums from electrical devices.[[1]](https://en.wikipedia.org/wiki/Background_noise)\n- **Urban and social sounds:** Traffic, distant chatter, or the murmur of a coffee shop.[[1]](https://asoftmurmur.com/)[[2]](https://www.bose.com/stories/what-is-ambient-noise)\n- **Color noises:** White noise (equal energy across frequencies) and pink noise (stronger low-frequency energy).[[1]](https://www.youtube.com/watch?v=rlgK3VSn9SY)\n\n### Effects and Uses\n\n- **Sound masking:** Constant, predictable ambient noise helps block out sudden, disruptive spikes in noise pollution.[[1]](https://www.noisli.com/)\n- **Focus and productivity:** Steady soundscapes from tools like [Noisli](https://www.noisli.com/) or generators like [A Soft Murmur](https://asoftmurmur.com/) can enhance concentration during work or study.[[1]](https://asoftmurmur.com/)[[2]](https://www.noisli.com/)\n- **Sleep and relaxation:** Gentle background audio helps calm inner alertness and aids transition into deep rest.[[1]](https://mynoise.net/)[[2]](https://www.noisli.com/)\n- **Health impacts:** Prolonged exposure to high ambient noise levels above 85 decibels can cause permanent hearing damage and elevate stress.[[1]](https://www.bose.com/stories/what-is-ambient-noise)\n\nIf you'd like, let me know if you are looking for ambient noise to help with **sleep, study, or blocking out a specific loud distraction** , and I can recommend a tailored sound type or generator.",
+    "items": [
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "Ambient noise is the all-encompassing background sound present in a given environment, separate from any specific sound you are trying to focus on.",
+      "markdown": "Ambient noise is `the all-encompassing background sound present in a given environment` , separate from any specific sound you are trying to focus on.[[1]](https://www.safeopedia.com/definition/5568/ambient-noise)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Safeopedia",
+        "domain": "www.safeopedia.com",
+        "url": "https://www.safeopedia.com/definition/5568/ambient-noise",
+        "title": "What is Ambient Noise? - Definition from Safeopedia",
+        "text": "Ambient noise is the noise present in a given environment, excluding the primary sound that an individual is paying attention to o..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Types of Ambient Noise",
+      "text": "Natural sounds: Rain, ocean waves, wind, and birdsong. Mechanical sounds: Fans, air conditioners, and hums from electrical devices. Urban and social sounds: Traffic, distant chatter, or the murmur of a coffee shop. Color noises: White noise (equal energy across frequencies) and pink noise (stronger low-frequency energy).",
+      "markdown": "- **Natural sounds:** Rain, ocean waves, wind, and birdsong.[[1]](https://www.youtube.com/watch?v=ipf7ifVSeDU)[[2]](https://www.noisli.com/)\n- **Mechanical sounds:** Fans, air conditioners, and hums from electrical devices.[[1]](https://en.wikipedia.org/wiki/Background_noise)\n- **Urban and social sounds:** Traffic, distant chatter, or the murmur of a coffee shop.[[1]](https://asoftmurmur.com/)[[2]](https://www.bose.com/stories/what-is-ambient-noise)\n- **Color noises:** White noise (equal energy across frequencies) and pink noise (stronger low-frequency energy).[[1]](https://www.youtube.com/watch?v=rlgK3VSn9SY)",
+      "links": null,
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=ipf7ifVSeDU",
+        "title": "Relaxing Meadow with Ambient Nature Sounds, Wildflowers, and ...",
+        "text": "Relaxing Meadow with Ambient Nature Sounds, Wildflowers, and Mountain View - 8 Hours - YouTube This content isn't available. Enjoy..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Noisli",
+        "domain": "www.noisli.com",
+        "url": "https://www.noisli.com/",
+        "title": "Noisli",
+        "text": "Your digital place for calm and focus. perfect soundscape for work, sleep and relax. Sign Up for Free The benefits of ambient soun..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Wikipedia",
+        "domain": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/Background_noise",
+        "title": "Background noise - Wikipedia",
+        "text": "Background noise is a form of noise pollution or interference; it is any sound other than the sound being monitored (primary sound..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "A Soft Murmur",
+        "domain": "asoftmurmur.com",
+        "url": "https://asoftmurmur.com/",
+        "title": "A Soft Murmur",
+        "text": "Soft murmur is an online background noise generator that can help you relax, focus, and tune out unpleasant sounds. It plays custo..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Bose",
+        "domain": "www.bose.com",
+        "url": "https://www.bose.com/stories/what-is-ambient-noise",
+        "title": "What Is Ambient Noise? Defining Background Noise.",
+        "text": "What is ambient noise? Defining background noise. Sometimes, you don't know what you're missing until you lose it. That's true for..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "YouTube",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=rlgK3VSn9SY",
+        "title": "Super Pink Noise Soft Ambient Sound",
+        "text": "Super Pink Noise Soft Ambient Sound - YouTube This content isn't available. Super Pink Noise Soft Ambient Sound = Sleep Music for ..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": "Effects and Uses",
+      "text": "Sound masking: Constant, predictable ambient noise helps block out sudden, disruptive spikes in noise pollution. Focus and productivity: Steady soundscapes from tools like Noisli or generators like A Soft Murmur can enhance concentration during work or study. Sleep and relaxation: Gentle background audio helps calm inner alertness and aids transition into deep rest. Health impacts: Prolonged exposure to high ambient noise levels above 85 decibels can cause permanent hearing damage and elevate stress.",
+      "markdown": "- **Sound masking:** Constant, predictable ambient noise helps block out sudden, disruptive spikes in noise pollution.[[1]](https://www.noisli.com/)\n- **Focus and productivity:** Steady soundscapes from tools like [Noisli](https://www.noisli.com/) or generators like [A Soft Murmur](https://asoftmurmur.com/) can enhance concentration during work or study.[[1]](https://asoftmurmur.com/)[[2]](https://www.noisli.com/)\n- **Sleep and relaxation:** Gentle background audio helps calm inner alertness and aids transition into deep rest.[[1]](https://mynoise.net/)[[2]](https://www.noisli.com/)\n- **Health impacts:** Prolonged exposure to high ambient noise levels above 85 decibels can cause permanent hearing damage and elevate stress.[[1]](https://www.bose.com/stories/what-is-ambient-noise)",
+      "links": [
+       {
+        "type": "link_element",
+        "title": "Noisli",
+        "description": null,
+        "url": "https://www.noisli.com/",
+        "domain": "www.noisli.com"
+       },
+       {
+        "type": "link_element",
+        "title": "A Soft Murmur",
+        "description": null,
+        "url": "https://asoftmurmur.com/",
+        "domain": "asoftmurmur.com"
+       }
+      ],
+      "images": null,
+      "references": [
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Noisli",
+        "domain": "www.noisli.com",
+        "url": "https://www.noisli.com/",
+        "title": "Noisli",
+        "text": "Your digital place for calm and focus. perfect soundscape for work, sleep and relax. Sign Up for Free The benefits of ambient soun..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "A Soft Murmur",
+        "domain": "asoftmurmur.com",
+        "url": "https://asoftmurmur.com/",
+        "title": "A Soft Murmur",
+        "text": "Soft murmur is an online background noise generator that can help you relax, focus, and tune out unpleasant sounds. It plays custo..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Noisli",
+        "domain": "www.noisli.com",
+        "url": "https://www.noisli.com/",
+        "title": "Noisli",
+        "text": "Your digital place for calm and focus. perfect soundscape for work, sleep and relax. Sign Up for Free The benefits of ambient soun..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "myNoise",
+        "domain": "mynoise.net",
+        "url": "https://mynoise.net/",
+        "title": "Custom Soundscapes for Focus, Relaxation & Sleep | myNoise ®",
+        "text": "myNoise gives you adjustable soundscapes that adapt to your space and your needs. Nature sounds, ambient music, and noise textures..."
+       },
+       {
+        "type": "ai_overview_reference",
+        "position": "left",
+        "source": "Bose",
+        "domain": "www.bose.com",
+        "url": "https://www.bose.com/stories/what-is-ambient-noise",
+        "title": "What Is Ambient Noise? Defining Background Noise.",
+        "text": "What is ambient noise? Defining background noise. Sometimes, you don't know what you're missing until you lose it. That's true for..."
+       }
+      ]
+     },
+     {
+      "type": "ai_overview_element",
+      "position": "left",
+      "title": null,
+      "text": "If you'd like, let me know if you are looking for ambient noise to help with sleep, study, or blocking out a specific loud distraction, and I can recommend a tailored sound type or generator.",
+      "markdown": "If you'd like, let me know if you are looking for ambient noise to help with **sleep, study, or blocking out a specific loud distraction** , and I can recommend a tailored sound type or generator.",
+      "links": null,
+      "images": null,
+      "references": null
+     }
+    ],
+    "references": [
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "myNoise",
+      "domain": "mynoise.net",
+      "url": "https://mynoise.net/",
+      "title": "Custom Soundscapes for Focus, Relaxation & Sleep | myNoise ®",
+      "text": "myNoise gives you adjustable soundscapes that adapt to your space and your needs. Nature sounds, ambient music, and noise textures..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "A Soft Murmur",
+      "domain": "asoftmurmur.com",
+      "url": "https://asoftmurmur.com/",
+      "title": "A Soft Murmur",
+      "text": "Soft murmur is an online background noise generator that can help you relax, focus, and tune out unpleasant sounds. It plays custo..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Safeopedia",
+      "domain": "www.safeopedia.com",
+      "url": "https://www.safeopedia.com/definition/5568/ambient-noise",
+      "title": "What is Ambient Noise? - Definition from Safeopedia",
+      "text": "Ambient noise is the noise present in a given environment, excluding the primary sound that an individual is paying attention to o..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Bose",
+      "domain": "www.bose.com",
+      "url": "https://www.bose.com/stories/what-is-ambient-noise",
+      "title": "What Is Ambient Noise? Defining Background Noise.",
+      "text": "What is ambient noise? Defining background noise. Sometimes, you don't know what you're missing until you lose it. That's true for..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=rlgK3VSn9SY",
+      "title": "Super Pink Noise Soft Ambient Sound",
+      "text": "Super Pink Noise Soft Ambient Sound - YouTube This content isn't available. Super Pink Noise Soft Ambient Sound = Sleep Music for ..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Wikipedia",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Background_noise",
+      "title": "Background noise - Wikipedia",
+      "text": "Background noise is a form of noise pollution or interference; it is any sound other than the sound being monitored (primary sound..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "YouTube",
+      "domain": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=ipf7ifVSeDU",
+      "title": "Relaxing Meadow with Ambient Nature Sounds, Wildflowers, and ...",
+      "text": "Relaxing Meadow with Ambient Nature Sounds, Wildflowers, and Mountain View - 8 Hours - YouTube This content isn't available. Enjoy..."
+     },
+     {
+      "type": "ai_overview_reference",
+      "position": "right",
+      "source": "Noisli",
+      "domain": "www.noisli.com",
+      "url": "https://www.noisli.com/",
+      "title": "Noisli",
+      "text": "Your digital place for calm and focus. perfect soundscape for work, sleep and relax. Sign Up for Free The benefits of ambient soun..."
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "video",
+    "rank_group": 1,
+    "rank_absolute": 2,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "video_element",
+      "source": "YouTube · Sound Asleep ASMR",
+      "title": "Dark Jasmine Sleep Sounds | Deep Ambient Noise for ...",
+      "timestamp": "2025-07-31 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=Isq8CfqhsWg"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Calming Audio",
+      "title": "Ambient Noise for 10 Hours | Best Sounds for Sleep",
+      "timestamp": "2022-02-28 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=LVDaE9LRL9U"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · Ivan Reash",
+      "title": "Ambient Noise Walls | Noise with Ivan #25",
+      "timestamp": "2025-11-19 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=Ft1zG19nNs4"
+     },
+     {
+      "type": "video_element",
+      "source": "YouTube · fastASMR",
+      "title": "Ambient Sounds of San Diego | Ambient Noise for Relaxation",
+      "timestamp": "2018-05-25 00:00:00 +00:00",
+      "url": "https://www.youtube.com/watch?v=up6cP2dX6AY"
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "people_also_ask",
+    "rank_group": 1,
+    "rank_absolute": 3,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]",
+    "items": [
+     {
+      "type": "people_also_ask_element",
+      "title": "What is meant by ambient noise?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What are examples of ambient sounds?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "How to get rid of ambient noise?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     },
+     {
+      "type": "people_also_ask_element",
+      "title": "What is the best ambient sound to sleep to?",
+      "seed_question": null,
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]",
+      "expanded_element": [
+       {
+        "type": "people_also_ask_ai_overview_expanded_element",
+        "items": null,
+        "references": null,
+        "asynchronous_ai_overview": true
+       }
+      ]
+     }
+    ],
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 1,
+    "rank_absolute": 4,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "Super Deep International Space Station Ambient Noise ( 12 ...",
+    "url": "https://www.youtube.com/watch?v=N4MegRohzCY",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "14.5K+ views  ·  10 years ago",
+    "website_name": "YouTube · crysknife007",
+    "is_image": false,
+    "is_video": true,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": [
+     "is_video"
+    ],
+    "description": "I was inspired by the recording that Col. Chris Hadfield made onboard the International Space Station so I cleaned up a part of his ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": null,
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2016-03-27 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 2,
+    "rank_absolute": 5,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[6]/div[1]/div[1]",
+    "domain": "play.google.com",
+    "title": "ZenSpace - Ambient Noise - Apps on Google Play",
+    "url": "https://play.google.com/store/apps/details?id=com.zenstudio.ambient.noise&hl=en_US",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://play.google.com › store › apps › details › id=com....",
+    "website_name": "Google Play",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Apr 19, 2026 — ZenSpace is a minimalist ambient sound machine designed to help you sleep better, focus deeper, and relax instantly. Professionally mastered ...",
+    "pre_snippet": "04/19/2026 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "ZenSpace is a minimalist ambient sound machine"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2026-04-19 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 3,
+    "rank_absolute": 6,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[1]",
+    "domain": "www.youtube.com",
+    "title": "Urban Sounds for Sleep, Study & Focus (No Ads)",
+    "url": "https://www.youtube.com/watch?v=wmhcFds8sxI",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "9 views  ·  2 weeks ago",
+    "website_name": "YouTube",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "City Ambient Noise 10 Hours Dark Screen - Urban Sounds for Sleep, Study & Focus (No Ads). Immerse yourself in the ambient soundscape of a ...",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "City Ambient Noise 10 Hours Dark Screen"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 4,
+    "rank_absolute": 7,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[10]/div[1]/div[1]",
+    "domain": "open.spotify.com",
+    "title": "Sleep Sound Ambient Noise Collections ! ! ! ! – Album von ...",
+    "url": "https://open.spotify.com/intl-de/album/1U1E3vMy1B7ZSyQlQmRvDW",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://open.spotify.com › intl-de › album",
+    "website_name": "Spotify - Web Player: Music for everyone",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Woodland Spring Showers · Windy Rain Birds · Park Ambience · Treetop Stream · American Lake Ambience · Garden Greenhouse Rain · Roof Bird Rain · Birds in a Downpour. Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Woodland Spring Showers"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://open.spotify.com/intl-de/album/1U1E3vMy1B7ZSyQlQmRvDW#:~:text=Woodland%20Spring%20Showers&text=Windy%20Rain%20Birds&text=Park%20Ambience&text=Treetop%20Stream&text=American%20Lake%20Ambience&text=Garden%20Greenhouse%20Rain&text=Roof%20Bird%20Rain&text=Birds%20in%20a%20Downpour",
+      "domain": "open.spotify.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 5,
+    "rank_absolute": 8,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[12]/div[1]/div[1]",
+    "domain": "www.collinsdictionary.com",
+    "title": "AMBIENT NOISE definition and meaning",
+    "url": "https://www.collinsdictionary.com/dictionary/english/ambient-noise",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.collinsdictionary.com › dictionary › english",
+    "website_name": "Collins Dictionary",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "The level of the total noise in an area.... Click for English pronunciations, examples sentences, video.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "The level of the total noise in an area"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 6,
+    "rank_absolute": 9,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[14]/div[1]/div[1]",
+    "domain": "www.makeuseof.com",
+    "title": "6 Ambient Noise Generators to Improve Your Focus",
+    "url": "https://www.makeuseof.com/tired-unfocused-or-stressed-try-these-ambient-noise-websites/",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.makeuseof.com › Online Tools",
+    "website_name": "MakeUseOf",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Aug 4, 2021 — 6 Ambient Noise Generators to Improve Your Focus · 1. Noisli · 2. myNoise · 3. Purrli · 4. Hipstersound · 5. Brain.fm · 6. Rainy Mood. Read more",
+    "pre_snippet": "08/04/2021 00:00:00",
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "1. Noisli"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://www.makeuseof.com/tired-unfocused-or-stressed-try-these-ambient-noise-websites/#:~:text=6%20Ambient%20Noise%20Generators%20to,Improve%20Your%20Focus&text=1.%20Noisli&text=2.%20myNoise&text=3.%20Purrli&text=4.%20Hipstersound&text=5.%20Brain.fm&text=6.%20Rainy%20Mood",
+      "domain": "www.makeuseof.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": "2021-08-04 00:00:00 +00:00",
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 7,
+    "rank_absolute": 10,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[16]/div[1]/div[1]",
+    "domain": "www.inhersight.com",
+    "title": "16 Apps & Websites for Ambient Noise (and Why You ...",
+    "url": "https://www.inhersight.com/blog/insight-commentary/ambient-noise",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://www.inhersight.com › Blog › Playlist",
+    "website_name": "InHerSight",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "According to science, listening to ambient noise can improve your focus and productivity: to waves crashing on the beach while I get my work grind on.",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "listening to ambient noise can improve your focus and productivity"
+    ],
+    "links": null,
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   },
+   {
+    "type": "organic",
+    "rank_group": 8,
+    "rank_absolute": 11,
+    "page": 1,
+    "position": "left",
+    "xpath": "/html[1]/body[1]/div[3]/div[1]/div[13]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[18]/div[1]/div[1]",
+    "domain": "apps.apple.com",
+    "title": "Dark Noise: Ambient Sounds - App Store",
+    "url": "https://apps.apple.com/jp/app/dark-noise-ambient-sounds/id1465439395?l=en-US&platform=mac",
+    "cache_url": null,
+    "related_search_url": null,
+    "breadcrumb": "https://apps.apple.com › app › dark-noise-ambient-sounds",
+    "website_name": "Apple",
+    "is_image": false,
+    "is_video": false,
+    "is_featured_snippet": false,
+    "is_malicious": false,
+    "is_web_story": false,
+    "checks": null,
+    "description": "Dark Noise is a simple yet powerful way to play ambient noise to help you sleep, focus, or relax. You can add to the 50 built in sounds by creating your own ... Read more",
+    "pre_snippet": null,
+    "extended_snippet": null,
+    "images": null,
+    "amp_version": false,
+    "rating": null,
+    "price": null,
+    "highlighted": [
+     "Dark Noise is a simple yet powerful way to play ambient noise"
+    ],
+    "links": [
+     {
+      "type": "link_element",
+      "title": "Read more",
+      "description": null,
+      "url": "https://apps.apple.com/jp/app/dark-noise-ambient-sounds/id1465439395?l=en-US&platform=mac#:~:text=Dark%20Noise%20is%20a%20simple,an%20endless%20variety%20of%20soundscapes.",
+      "domain": "apps.apple.com"
+     }
+    ],
+    "faq": null,
+    "extended_people_also_search": null,
+    "about_this_result": null,
+    "related_result": null,
+    "timestamp": null,
+    "rectangle": null
+   }
+  ]
+ }
+]
