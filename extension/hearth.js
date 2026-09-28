@@ -280,10 +280,11 @@ function dropEmber(focusSec) {
 
 // ---------- ПРОСЬБА ОБ ОЦЕНКЕ (реш. автора 07-22 · паттерн ExportGPT 08-09 · две громкости 08-10) ----------
 // Тихая плашка в углу — дверь с первого открытия; карточка поверх звезды — просьба с третьего рейса.
-// ≥4★ → отзывы CWS · 1–3★ → форма фидбека. Первый ответ закрывает просьбу навсегда.
+// ≥4★ → отзывы CWS · 1–3★ → страница «What went wrong?» (?stars=N; ответ — в форму удаления, колонка Source «rating N★»,
+// одна таблица — слово автора 28.09). Первый ответ закрывает просьбу навсегда.
 const ASK_AFTER = 3, BAR_AFTER = 0, ASK_MIN_MIN = 1;
 const RATE_URL = 'https://chromewebstore.google.com/detail/minimalist-timer/miknhphoakphfhgjajhkalmpdnadkeic/reviews';
-const FEEDBACK_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfTyBVwYzmT3Pvhj0xsmcgE3OzKnR5qCjEeR6HOLIU5msrwkg/viewform';  // форма автора (07-22)
+const FEEDBACK_URL = 'https://panarini.github.io/focus-pages/feedback/';  // до 28.09 — сама Google-форма автора (07-22)
 const flights = () => +(localStorage.getItem('hearth.sessions') || 0);
 const rateOpen = () => !!(RATE_URL || FEEDBACK_URL) && !localStorage.getItem('hearth.rated');
 const askReady = () => rateOpen() && flights() >= ASK_AFTER;
@@ -302,7 +303,7 @@ function makeStars(host) {
   }
 }
 function answerRate(n) {
-  const url = n >= 4 ? (RATE_URL || FEEDBACK_URL) : (FEEDBACK_URL || RATE_URL);
+  const url = n >= 4 ? (RATE_URL || FEEDBACK_URL) : (FEEDBACK_URL ? FEEDBACK_URL + '?stars=' + n : RATE_URL);
   localStorage.setItem('hearth.rated', '1');
   T('rate_answer', { stars: n });
   askArmed = false;
