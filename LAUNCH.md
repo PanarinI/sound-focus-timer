@@ -111,7 +111,11 @@ finish-правка ✅ · билд 1.0.0 + VirusTotal ✅.
 4. 👤 Графика из `lab/graphics/listing-1.2/` по её README: иконка 128 · три слайда (старые убрать) · плитка.
 5. 👤 Privacy → Single purpose: старое `A minimalist timer for focus and study.` под новое имя —
    предложение `A brown noise generator with a focus timer for work and study.` Обоснования прав не менялись.
-6. 👤 Submit.
+6. 👤 Submit. ✅ отправлено 27.09.
+
+**Rate us при переименовании** (проверено 27.09): `RATE_URL` в `hearth.js` несёт старое имя в адресе
+(`/detail/minimalist-timer/<id>/reviews`), но стор находит карточку по ID и сам переводит любое имя в адресе на
+нынешнее (`zzz-nonsense` → та же страница отзывов). Ради ссылки пересобирать не нужно.
 
 ## Заливка 1.2.0 — графика (26.09; выпуск решено делать одним разом — STATE, «Следующий шаг» 1)
 
