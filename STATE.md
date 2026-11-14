@@ -6,6 +6,16 @@
 Store: `chromewebstore.google.com/detail/minimalist-timer/miknhphoakphfhgjajhkalmpdnadkeic`
 Служебные страницы: `panarini.github.io/focus-pages/` (welcome · uninstall · privacy) — публичный репо.
 У welcome **одна задача** — показать, как закрепить расширение (решение автора 26.09).
+⬜ **14.11:** Chrome начал ставить новые расширения сразу на панель — у таких людей эта задача уже сделана. Нужен второй режим «как
+пользоваться» и выбор по `chrome.action.getUserSettings().isOnToolbar`; решение 26.09 — пересмотреть словом автора. Устройство и образец
+TubeBlock — `app-studio/knowledge-base/site-builders-2/03-vstrecha-03.md` §4; урок 3.2 (обновлён 14.11, с кодом) —
+`app-studio/knowledge-base/module-3/3.2-welcome-page-2026-11-14.md`.
+🔶 **14.11 вечер — дев 1.2.2 собран** (коммит `e929753`; в сторе живёт 1.2.1, 181 польз.): манифест `externally_connectable` →
+focus-pages, фон спрашивает `getUserSettings` через 1 с после установки и открывает welcome с `?pinned=1|0&id=`, отвечает странице
+на `getPinState`; дев-сборка отвечает и localhost. Черновик страницы в двух режимах — `lab/stend-welcome-2026-11-14/` (сервер ember-lab,
+:8783; в `focus-pages` НЕ лежит — push туда = публикация). Проверка в безголовом Chrome 157 с настоящей дев-сборкой — 13 из 13
+(`proverka/proverka.mjs`; установка — `proverka/ustanovka.mjs`). ⬜ Ждут слова автора: решение 26.09 · шаги «как пользоваться» ·
+`pinned` в счётчик установок (нужно пользовательское измерение в GA4 до публикации) · живой тест закрепить/открепить.
 
 ## 19.10 — «Rate us»: 5 кликов, новых отзывов 0
 GA4 `rate_answer` с включения счётчиков 02.09 — **5 кликов, 5 разных людей** (03.09 · 08.09 · 21.09 · 13.10 · 15.10) из 95
