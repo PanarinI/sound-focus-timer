@@ -91,6 +91,15 @@ if mode == 'dev':
         if k == 'version':
             out['version_name'] = f'{ver}-dev'
     m = out
+    # ДЕВ ОТВЕЧАЕТ И ЛОКАЛЬНОМУ СТЕНДУ (14.11). Черновик welcome живёт в lab/ на localhost, пока автор не скажет
+    # «публикуй»: push в focus-pages = публикация. Чтобы дев-сборка отвечала черновику «значок на панели?»,
+    # в её манифест добавляется localhost. Прод его не несёт — проверка ниже.
+    ec = m.get('externally_connectable')
+    if ec is not None:
+        pats = ec.setdefault('matches', [])
+        for p in ('http://localhost/*', 'http://127.0.0.1/*'):
+            if p not in pats:
+                pats.append(p)
 else:
     m.pop('version_name', None)
 json.dump(m, open(path, 'w'), ensure_ascii=False, indent=2)
@@ -113,6 +122,8 @@ done
 VNAME=$(unzip -p "$ZIP" manifest.json | python3 -c 'import json,sys;print(json.load(sys.stdin).get("version_name",""))')
 if [[ "$MODE" == dev && "$VNAME" != "$VER-dev" ]]; then echo "✗ дев-пакет без маркера версии"; exit 1; fi
 if [[ "$MODE" == prod && -n "$VNAME" ]]; then echo "✗ в прод-пакете остался version_name=$VNAME"; exit 1; fi
+LOCAL=$(unzip -p "$ZIP" manifest.json | python3 -c 'import json,sys;m=json.load(sys.stdin);print(" ".join(p for p in m.get("externally_connectable",{}).get("matches",[]) if "localhost" in p or "127.0.0.1" in p))')
+if [[ "$MODE" == prod && -n "$LOCAL" ]]; then echo "✗ в прод-пакете остался локальный адрес: $LOCAL"; exit 1; fi
 
 if [[ "$MODE" == dev ]]; then
   UNPACKED="$OUT/unpacked-$VER-dev"

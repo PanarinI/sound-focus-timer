@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brown Noise Generator is installed</title>
+<style>
+  /* Палитра — поле панели 1.2 (27.09): тёплое почти-чёрное, свет звезды. Прежде — синяя, под старую панель. */
+  :root{ --bg:#231911; --bg2:#0a0908; --warm:#ffb055; --ink:#efe6da; --ink-dim:#a39585; }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  /* холст страницы — тёмный: иначе фон body повторяется под контентом и даёт светлую полосу внизу */
+  html{background:var(--bg2)}
+  body{
+    min-height:100vh;
+    background:radial-gradient(130% 90% at 50% 0%, var(--bg) 0%, var(--bg2) 66%);
+    color:var(--ink);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    display:flex; flex-direction:column; align-items:center;
+    padding:clamp(28px,6vh,64px) 20px 56px;
+  }
+  /* ДВА РЕЖИМА (14.11, урок 3.2): на экране всегда один. Какой — решает data-mode у <body>; без JS остаётся «закрепи». */
+  .mode{display:none; width:100%; flex-direction:column; align-items:center}
+  body[data-mode="pin"] .mode-pin,
+  body[data-mode="usage"] .mode-usage{display:flex}
+  h1{
+    display:flex; align-items:center; gap:16px;
+    font-size:clamp(28px,4.4vw,42px); font-weight:600;
+    letter-spacing:-.02em; margin:0 0 14px; text-align:center;
+  }
+  h1 svg{flex:none}
+  .say{
+    margin:0 0 clamp(26px,4vh,40px); text-align:center;
+    font-size:clamp(16px,2.1vw,20px); color:var(--ink-dim); max-width:46ch;
+  }
+  .say b{color:#ff6a5c; font-weight:700}
+  .shot{width:100%; max-width:940px; height:auto; display:block}
+  .shot-panel{max-width:760px}
+  /* САЛЮТ (09-02) — как на welcome ExportGPT: конфетти на canvas, один раз при открытии.
+     Кольца вокруг пазла пробовались и отклонены автором: там это работало потому, что была
+     живая кнопка, а у нас картинка. Салют же — про сам факт «поставил», ему кнопка не нужна. */
+  #confetti{position:fixed; inset:0; width:100%; height:100%; pointer-events:none; z-index:9}
+  .say2{margin-top:26px}
+  .after{
+    margin:clamp(26px,4vh,40px) 0 0; text-align:center;
+    font-size:clamp(16px,2.1vw,19px); max-width:44ch;
+  }
+  /* ссылка-переключатель внизу каждого режима — страховка, если автоматика ошиблась */
+  .switch{margin:clamp(30px,5vh,48px) 0 0; text-align:center; font-size:15px; color:var(--ink-dim)}
+  .switch a{color:var(--warm); text-decoration:underline; text-underline-offset:3px}
+  .switch a:hover{color:#ffd9a0}
+</style>
+
+  <!-- Аналитика welcome-страницы (установка ≈ страница открылась 1 раз).
+       GA4 (08-06) — ОСНОВНОЙ счётчик установок. Ресурс `focus-pages` создан автором: он в нём
+       администратор, поэтому данные читаются по Data API и копятся в реестр студии автоматически.
+       Ресурс листинга (G-HNVT5MM6Y4) на это не годится — он живёт в служебном аккаунте
+       «Chrome Web Store developer properties», где администратора нет ни у кого из разработчиков.
+       Umami — остаётся живым, но только глазами: API-ключи у них с тарифа PRO.
+       ТОЛЬКО НА ЖИВОМ АДРЕСЕ (14.11): черновик на localhost не должен считать себя установкой —
+       иначе каждая перезагрузка стенда падает в счёт `install_welcome`.
+       `pinned` (14.11, предложение — ждёт слова автора и пользовательского измерения в GA4): что расширение
+       увидело при установке — 1 значок уже на панели, 0 под пазлом, none — старая версия без подсказки. -->
+  <script>
+    var LIVE = location.hostname === 'panarini.github.io';
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    if (LIVE) {
+      (function (d) {
+        function add(src, attrs) {
+          var s = d.createElement('script'); s.async = true; s.src = src;
+          for (var k in attrs) s.setAttribute(k, attrs[k]);
+          d.head.appendChild(s);
+        }
+        add('https://www.googletagmanager.com/gtag/js?id=G-X9WZSNCLXF', {});
+        add('https://cloud.umami.is/script.js', { 'data-website-id': '7999549b-1d50-4cbb-9563-39118274a20b' });
+      })(document);
+      gtag('js', new Date());
+      gtag('config', 'G-X9WZSNCLXF');
+      // отдельное именованное событие: page_view сюда может прийти и при повторном заходе,
+      // а нам нужен чистый счёт установок — его и считаем в реестре
+      var pinnedHint = new URLSearchParams(location.search).get('pinned');
+      gtag('event', 'install_welcome', { pinned: pinnedHint === '1' || pinnedHint === '0' ? pinnedHint : 'none' });
+      (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xto0omit59");
+    }
+  </script>
+
+</head>
+<body data-mode="pin">
+
+  <!-- ИКОНКА РАСШИРЕНИЯ — «шкала и звезда» (1.2, 27.09). Не рисуется по памяти: контур и цвета
+       перенесены из мастера `sound-focus-timer/lab/graphics/icon-2026-09-26-b-dajl.svg`
+       (из него же собраны extension/icons/*.png). Определена один раз, ставится через <use>:
+       заголовки · строка в меню расширений · закреплённая иконка в тулбаре. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+        <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity=".28"/>
+      </filter>
+      <radialGradient id="ic-pole" cx="64" cy="48" r="96" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#231911"/><stop offset=".5" stop-color="#100d0b"/><stop offset="1" stop-color="#0a0908"/>
+      </radialGradient>
+      <radialGradient id="ic-oreol" cx="64" cy="46" r="32" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#ffb055" stop-opacity=".62"/><stop offset=".45" stop-color="#ffb055" stop-opacity=".2"/><stop offset="1" stop-color="#ffb055" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="ic-zvezda" cx="64" cy="46" r="11.5" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#fff5e6"/><stop offset=".55" stop-color="#ffd9a0"/><stop offset="1" stop-color="#ffb866"/>
+      </radialGradient>
+      <g id="ext-icon">
+        <rect width="128" height="128" rx="22" fill="url(#ic-pole)"/>
+        <path d="M 22 88 A 42 42 0 0 1 106 88" fill="none" stroke="#433a32" stroke-width="11" stroke-linecap="round"/>
+        <path d="M 22 88 A 42 42 0 0 1 64 46" fill="none" stroke="#ffb055" stroke-width="11" stroke-linecap="round"/>
+        <circle cx="64" cy="46" r="32" fill="url(#ic-oreol)"/>
+        <circle cx="64" cy="46" r="11.5" fill="url(#ic-zvezda)"/>
+      </g>
+      <!-- окно браузера во втором кадре выше первого: в нём стоит панель целиком -->
+      <clipPath id="win2"><rect x="16" y="16" width="968" height="552" rx="13"/></clipPath>
+      <!-- скруглённые углы снимка панели крупно (режим «как пользоваться», второй кадр) -->
+      <clipPath id="panel-round"><rect x="197" y="20" width="366" height="608" rx="10"/></clipPath>
+    </defs>
+  </svg>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <!-- ═════════ РЕЖИМ 1 · «ЗАКРЕПИ» — расширение под пазлом. Прежняя страница как есть (урок 3.2: она проверена на людях). ═════════ -->
+  <main class="mode mode-pin">
+  <h1>
+    <svg width="42" height="42" viewBox="0 0 128 128" aria-hidden="true"><use href="#ext-icon"/></svg>
+    Brown Noise Generator is installed
+  </h1>
+
+  <p class="say">Click the puzzle piece <b>(1)</b> in the top right of your browser, then click the pin <b>(2)</b> next to Brown Noise Generator:</p>
+
+  <!-- Макет окна Chrome со шагами прямо на цели (паттерн эталонных WP метода) -->
+  <svg class="shot" viewBox="-8 -36 1024 448" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="Chrome toolbar: click the puzzle piece, then the pin next to Brown Noise Generator">
+
+    <!-- окно браузера -->
+    <g filter="url(#drop)">
+      <rect x="16" y="16" width="968" height="360" rx="13" fill="#ffffff"/>
+      <path d="M16 29a13 13 0 0 1 13-13h942a13 13 0 0 1 13 13v33H16Z" fill="#dee1e6"/>
+      <rect x="36" y="26" width="215" height="36" rx="9" fill="#fff"/>
+      <path d="M233 39l10 10M243 39l-10 10" stroke="#5f6368" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      <rect x="16" y="62" width="968" height="46" fill="#fff"/>
+      <!-- навигация -->
+      <g stroke="#5f6368" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M44 85h13M44 85l4.6-4.6M44 85l4.6 4.6"/>
+        <path d="M92 85h-13M92 85l-4.6-4.6M92 85l-4.6 4.6" opacity=".38"/>
+        <path d="M122.65 79.54A6.3 6.3 0 1 1 116.35 79.54"/>
+        <path d="M116.35 79.54L113.65 79.63M116.35 79.54L114.92 81.83"/>
+      </g>
+      <rect x="152" y="72" width="380" height="27" rx="13.5" fill="#f1f3f4"/>
+      <!-- иконки справа: соседние расширения · пазл · профиль · меню -->
+      <g fill="#9aa0a6" opacity=".38"><circle cx="566" cy="85" r="9"/><circle cx="598" cy="85" r="9"/><circle cx="630" cy="85" r="9"/></g>
+      <g fill="#5f6368">
+        <!-- ПАЗЛ РАСШИРЕНИЙ. Взят не по памяти: это текущий глиф `extension` из Material Symbols
+             Outlined, скачан из репозитория Google (material-design-icons, viewBox 0 -960 960 960).
+             Прежде стоял СТАРЫЙ Material Icons v12. Из эталонного контура вырезана НИЖНЯЯ ВЫЕМКА —
+             автор смотрит на живой Chrome и говорит, что её там нет. Сверка: `sound-focus-timer/lab/icon-compare.html`. -->
+        <path transform="translate(689.6,94.3) scale(0.0195)" fill="#5f6368"
+              d="M720-120H200q-33 0-56.5-23.5T120-200v-152q48 0 84-30.5t36-77.5q0-47-36-77.5T120-568v-152q0-33 23.5-56.5T200-800h160q0-42 29-71t71-29q42 0 71 29t29 71h160q33 0 56.5 23.5T800-720v160q42 0 71 29t29 71q0 42-29 71t-71 29v160q0 33-23.5 56.5T720-120Zm-520-80h520v-240h80q8 0 14-6t6-14q0-8-6-14t-14-6h-80v-240H480v-80q0-8-6-14t-14-6q-8 0-14 6t-6 14v80H200v88q54 20 87 67t33 105q0 57-33 104t-87 68v88Z"/>
+        <!-- порядок выверен по скриншоту панели автора (09-02): пазл → разделитель → аватар → ⋮.
+             Иконки боковой панели между ними НЕТ — она стояла ошибочно. -->
+        <line x1="752" y1="74" x2="752" y2="96" stroke="#dadce0" stroke-width="1.6"/>
+        <circle cx="790" cy="85" r="11" fill="#5f6368" opacity=".85"/>
+        <circle cx="828" cy="78.5" r="1.9"/><circle cx="828" cy="85" r="1.9"/><circle cx="828" cy="91.5" r="1.9"/>
+      </g>
+      <!-- попап Extensions -->
+      <g>
+        <rect x="600" y="120" width="336" height="176" rx="11" fill="#fff" filter="url(#drop)"/>
+        <text x="622" y="150" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="16" fill="#202124">Extensions</text>
+        <path d="M905 137l14 14M919 137l-14 14" stroke="#5f6368" stroke-width="1.7" stroke-linecap="round"/>
+        <text x="622" y="180" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12.5" font-weight="600" fill="#202124">No access needed</text>
+        <text x="622" y="199" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#5f6368">These extensions don’t need to see and change</text>
+        <text x="622" y="214" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#5f6368">information on this site.</text>
+        <!-- строка нашего расширения -->
+        <use href="#ext-icon" transform="translate(621,233) scale(0.156)"/>
+        <text x="652" y="248" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="13.5" fill="#202124">Brown Noise Generator</text>
+        <path d="M885 235h10l-1.3 8.6 5 5.2v2.6h-17.4v-2.6l5-5.2L885 235Z" fill="none" stroke="#3c4043" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M890 251.4V259" stroke="#3c4043" stroke-width="1.7" stroke-linecap="round"/>
+        <line x1="616" y1="270" x2="920" y2="270" stroke="#e8eaed" stroke-width="1.4"/>
+        <g transform="translate(623,277)" stroke="#5f6368" fill="none" stroke-linecap="round">
+          <circle cx="8" cy="8" r="4.1" stroke-width="1.5"/>
+          <path d="M8 2.5v1.5M8 12v1.5M2.5 8h1.5M12 8h1.5M4.2 4.2l1.1 1.1M10.7 10.7l1.1 1.1M11.8 4.2l-1.1 1.1M5.3 10.7l-1.1 1.1" stroke-width="2.1"/>
+        </g>
+        <text x="652" y="290" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="13" fill="#3c4043">Manage Extensions</text>
+      </g>
+    </g>
+
+    <!-- шаг 1: обводка пазла + стрелка + номер -->
+    <circle cx="699" cy="85" r="19" fill="none" stroke="#e2352a" stroke-width="4.2"/>
+    <path d="M 572.4 28.0 L 655.9 62.3 L 650.1 75.6 L 687.0 71.0 L 665.3 40.8 L 659.5 54.1 L 577.6 16.0 Z" fill="#e2352a"/>
+    <circle cx="543" cy="14" r="27" fill="#e2352a" stroke="#fff" stroke-width="2.5"/>
+    <text x="543" y="24" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif"
+          font-size="29" font-weight="700" fill="#fff">1</text>
+
+    <!-- шаг 2: обводка пина + стрелка + номер -->
+    <circle cx="889" cy="245" r="21" fill="none" stroke="#e2352a" stroke-width="4.2"/>
+    <path d="M 960.6 307.4 L 929.8 279.4 L 940.1 269.2 L 904.0 260.0 L 913.2 296.1 L 923.4 285.8 L 951.4 316.6 Z" fill="#e2352a"/>
+    <circle cx="976" cy="332" r="27" fill="#e2352a" stroke="#fff" stroke-width="2.5"/>
+    <text x="976" y="342" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif"
+          font-size="29" font-weight="700" fill="#fff">2</text>
+  </svg>
+
+
+  <p class="say say2">Then open it <b>(3)</b> on any page — it lives in the side panel:</p>
+
+  <!-- ВТОРОЙ КАДР (09-02). Канон 3.2 текстом его не требует, но ВСЕ три страницы, которые канон
+       называет лучшими, устроены одинаково: кадр «как закрепить» + кадр «как открыть». В
+       study-timer.pro нумерация прямо продолжается на (3): «Open the extension (3) on any page».
+       Без него человек закрепил иконку и не знает, что дальше — та же дыра, что дала голос 2.
+       ПАНЕЛЬ (27.09) — не рисунок, а снимок настоящей панели 1.2 (`panel.png` =
+       sound-focus-timer/lab/graphics/shots/variants/panel-dom--base.png, build-raw-shots.py panel dom).
+       Окно поднято до 552, чтобы панель стояла целиком: её узнают по шкале, Start и ручкам. -->
+  <svg class="shot" viewBox="-8 -36 1024 640" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="Click the pinned Brown Noise Generator icon to open the side panel">
+    <g filter="url(#drop)">
+      <rect x="16" y="16" width="968" height="552" rx="13" fill="#ffffff"/>
+      <path d="M16 29a13 13 0 0 1 13-13h942a13 13 0 0 1 13 13v33H16Z" fill="#dee1e6"/>
+      <rect x="36" y="26" width="215" height="36" rx="9" fill="#fff"/>
+      <path d="M233 39l10 10M243 39l-10 10" stroke="#5f6368" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      <rect x="16" y="62" width="968" height="46" fill="#fff"/>
+      <g stroke="#5f6368" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M44 85h13M44 85l4.6-4.6M44 85l4.6 4.6"/>
+        <path d="M92 85h-13M92 85l-4.6-4.6M92 85l-4.6 4.6" opacity=".38"/>
+        <path d="M122.65 79.54A6.3 6.3 0 1 1 116.35 79.54"/>
+        <path d="M116.35 79.54L113.65 79.63M116.35 79.54L114.92 81.83"/>
+      </g>
+      <rect x="152" y="72" width="380" height="27" rx="13.5" fill="#f1f3f4"/>
+      <!-- ЗАКРЕПЛЁННАЯ ИКОНКА — то, что появилось после шага 2 -->
+      <g fill="#9aa0a6" opacity=".38"><circle cx="559" cy="85" r="9"/><circle cx="591" cy="85" r="9"/><circle cx="623" cy="85" r="9"/></g>
+      <use href="#ext-icon" transform="translate(645,75) scale(0.156)"/>
+      <g fill="#5f6368">
+        <!-- пазл — тот же глиф Material Symbols, что в первом кадре -->
+        <path transform="translate(689.6,94.3) scale(0.0195)" fill="#5f6368"
+              d="M720-120H200q-33 0-56.5-23.5T120-200v-152q48 0 84-30.5t36-77.5q0-47-36-77.5T120-568v-152q0-33 23.5-56.5T200-800h160q0-42 29-71t71-29q42 0 71 29t29 71h160q33 0 56.5 23.5T800-720v160q42 0 71 29t29 71q0 42-29 71t-71 29v160q0 33-23.5 56.5T720-120Zm-520-80h520v-240h80q8 0 14-6t6-14q0-8-6-14t-14-6h-80v-240H480v-80q0-8-6-14t-14-6q-8 0-14 6t-6 14v80H200v88q54 20 87 67t33 105q0 57-33 104t-87 68v88Z"/>
+        <line x1="752" y1="74" x2="752" y2="96" stroke="#dadce0" stroke-width="1.6"/>
+        <circle cx="790" cy="85" r="11" fill="#5f6368" opacity=".85"/>
+        <circle cx="828" cy="78.5" r="1.9"/><circle cx="828" cy="85" r="1.9"/><circle cx="828" cy="91.5" r="1.9"/>
+      </g>
+      <!-- БОКОВАЯ ПАНЕЛЬ: то, ради чего всё -->
+      <g clip-path="url(#win2)">
+        <rect x="716" y="108" width="268" height="460" fill="#0d0c0b"/>
+        <image href="panel.png" x="716" y="108" width="268" height="460" preserveAspectRatio="xMidYMin slice"/>
+      </g>
+      <rect x="716" y="108" width="1.4" height="460" fill="#dadce0"/>
+    </g>
+
+    <!-- шаг 3 -->
+    <circle cx="655" cy="85" r="19" fill="none" stroke="#e2352a" stroke-width="4.2"/>
+    <path d="M 528.4 28.0 L 611.9 62.3 L 606.1 75.6 L 643.0 71.0 L 621.3 40.8 L 615.5 54.1 L 533.6 16.0 Z" fill="#e2352a"/>
+    <circle cx="499" cy="14" r="27" fill="#e2352a" stroke="#fff" stroke-width="2.5"/>
+    <text x="499" y="24" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif"
+          font-size="29" font-weight="700" fill="#fff">3</text>
+  </svg>
+
+  <p class="after">That’s it. Press Start whenever you need the room to go quiet.</p>
+
+  <p class="switch">Already pinned? <a href="#usage" data-switch="usage">See how to use it</a></p>
+  </main>
+
+
+  <!-- ═════════ РЕЖИМ 2 · «КАК ПОЛЬЗОВАТЬСЯ» — значок уже на панели (Chrome 153+ ставит его сам). ═════════
+       Образец — tubeblock.app/welcome/#usage (компания ведущего буткемпа): «… is ready», шаги с номерами, внизу
+       «не видите значок? — как закрепить». Язык кадров — тот же, что в режиме «закрепи»: макет окна, красные номера
+       прямо на цели. Снимки — настоящая панель 1.2.1 (`snimki.py` рядом: panel-pokoj.png — первое открытие,
+       open office, 15′; panel-vremya.png — шкала на 25). ЧЕРНОВИК: шаги и слова ждут слова автора. -->
+  <main class="mode mode-usage">
+  <h1>
+    <svg width="42" height="42" viewBox="0 0 128 128" aria-hidden="true"><use href="#ext-icon"/></svg>
+    Brown Noise Generator is ready
+  </h1>
+
+  <p class="say">It’s already on your toolbar. Click it <b>(1)</b> to open the panel:</p>
+
+  <svg class="shot" viewBox="-8 -36 1024 640" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="Click the Brown Noise Generator icon on the toolbar to open the side panel">
+    <g filter="url(#drop)">
+      <rect x="16" y="16" width="968" height="552" rx="13" fill="#ffffff"/>
+      <path d="M16 29a13 13 0 0 1 13-13h942a13 13 0 0 1 13 13v33H16Z" fill="#dee1e6"/>
+      <rect x="36" y="26" width="215" height="36" rx="9" fill="#fff"/>
+      <path d="M233 39l10 10M243 39l-10 10" stroke="#5f6368" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      <rect x="16" y="62" width="968" height="46" fill="#fff"/>
+      <g stroke="#5f6368" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M44 85h13M44 85l4.6-4.6M44 85l4.6 4.6"/>
+        <path d="M92 85h-13M92 85l-4.6-4.6M92 85l-4.6 4.6" opacity=".38"/>
+        <path d="M122.65 79.54A6.3 6.3 0 1 1 116.35 79.54"/>
+        <path d="M116.35 79.54L113.65 79.63M116.35 79.54L114.92 81.83"/>
+      </g>
+      <rect x="152" y="72" width="380" height="27" rx="13.5" fill="#f1f3f4"/>
+      <g fill="#9aa0a6" opacity=".38"><circle cx="559" cy="85" r="9"/><circle cx="591" cy="85" r="9"/><circle cx="623" cy="85" r="9"/></g>
+      <use href="#ext-icon" transform="translate(645,75) scale(0.156)"/>
+      <g fill="#5f6368">
+        <path transform="translate(689.6,94.3) scale(0.0195)" fill="#5f6368"
+              d="M720-120H200q-33 0-56.5-23.5T120-200v-152q48 0 84-30.5t36-77.5q0-47-36-77.5T120-568v-152q0-33 23.5-56.5T200-800h160q0-42 29-71t71-29q42 0 71 29t29 71h160q33 0 56.5 23.5T800-720v160q42 0 71 29t29 71q0 42-29 71t-71 29v160q0 33-23.5 56.5T720-120Zm-520-80h520v-240h80q8 0 14-6t6-14q0-8-6-14t-14-6h-80v-240H480v-80q0-8-6-14t-14-6q-8 0-14 6t-6 14v80H200v88q54 20 87 67t33 105q0 57-33 104t-87 68v88Z"/>
+        <line x1="752" y1="74" x2="752" y2="96" stroke="#dadce0" stroke-width="1.6"/>
+        <circle cx="790" cy="85" r="11" fill="#5f6368" opacity=".85"/>
+        <circle cx="828" cy="78.5" r="1.9"/><circle cx="828" cy="85" r="1.9"/><circle cx="828" cy="91.5" r="1.9"/>
+      </g>
+      <g clip-path="url(#win2)">
+        <rect x="716" y="108" width="268" height="460" fill="#0d0c0b"/>
+        <image href="panel-pokoj.png" x="716" y="108" width="268" height="460" preserveAspectRatio="xMidYMin slice"/>
+      </g>
+      <rect x="716" y="108" width="1.4" height="460" fill="#dadce0"/>
+    </g>
+
+    <!-- шаг 1: значок на панели -->
+    <circle cx="655" cy="85" r="19" fill="none" stroke="#e2352a" stroke-width="4.2"/>
+    <path d="M 528.4 28.0 L 611.9 62.3 L 606.1 75.6 L 643.0 71.0 L 621.3 40.8 L 615.5 54.1 L 533.6 16.0 Z" fill="#e2352a"/>
+    <circle cx="499" cy="14" r="27" fill="#e2352a" stroke="#fff" stroke-width="2.5"/>
+    <text x="499" y="24" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif"
+          font-size="29" font-weight="700" fill="#fff">1</text>
+  </svg>
+
+  <p class="say say2">Pick a room <b>(2)</b>, set the time <b>(3)</b>, and press Start <b>(4)</b>:</p>
+
+  <!-- Панель крупно, 1:1 при ширине кадра 760: номера стоят на настоящих органах — список комнат, шкала, Start.
+       Координаты органов сняты со снимка panel-vremya.png (366×608): список 114–252 × 443–472, шкала 93–273 × 266–368,
+       Start 105–205 × 394–431; в кадре панель сдвинута на (197, 20). -->
+  <svg class="shot shot-panel" viewBox="0 0 760 650" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="The Brown Noise Generator panel: the room list, the time dial and the Start button">
+    <g filter="url(#drop)">
+      <rect x="197" y="20" width="366" height="608" rx="10" fill="#0d0c0b"/>
+      <image href="panel-vremya.png" x="197" y="20" width="366" height="608" clip-path="url(#panel-round)"/>
+    </g>
+
+    <!-- шаг 2: комната -->
+    <rect x="307" y="460" width="146" height="36" rx="10" fill="none" stroke="#e2352a" stroke-width="3.6"/>
+    <path d="M 660.0 471.5 L 493.0 471.5 L 493.0 459.0 L 461.0 478.0 L 493.0 497.0 L 493.0 484.5 L 660.0 484.5 Z" fill="#e2352a"/>
+    <circle cx="690" cy="478" r="27" fill="#e2352a" stroke="#fff" stroke-width="2.5"/>
+    <text x="690" y="488" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif"
+          font-size="29" font-weight="700" fill="#fff">2</text>
+
+    <!-- шаг 3: время -->
+    <rect x="290" y="286" width="180" height="102" rx="16" fill="none" stroke="#e2352a" stroke-width="3.6"/>
+    <path d="M 660.1 289.6 L 510.8 311.0 L 509.0 298.6 L 480.0 322.0 L 514.4 336.3 L 512.6 323.9 L 661.9 302.4 Z" fill="#e2352a"/>
+    <circle cx="690" cy="292" r="27" fill="#e2352a" stroke="#fff" stroke-width="2.5"/>
+    <text x="690" y="302" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif"
+          font-size="29" font-weight="700" fill="#fff">3</text>
+
+    <!-- шаг 4: Start -->
+    <rect x="298" y="410" width="108" height="45" rx="10" fill="none" stroke="#e2352a" stroke-width="3.6"/>
+    <path d="M 99.0 438.5 L 258.0 438.5 L 258.0 451.0 L 290.0 432.0 L 258.0 413.0 L 258.0 425.5 L 99.0 425.5 Z" fill="#e2352a"/>
+    <circle cx="70" cy="432" r="27" fill="#e2352a" stroke="#fff" stroke-width="2.5"/>
+    <text x="70" y="442" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif"
+          font-size="29" font-weight="700" fill="#fff">4</text>
+  </svg>
+
+  <p class="after">Close the panel whenever you like — the sound keeps playing.</p>
+
+  <p class="switch">Don’t see the icon on your toolbar? <a href="#pin" data-switch="pin">Show how to pin it</a></p>
+  </main>
+
+
+<script>
+// Салют: сыпется один раз при открытии страницы и исчезает. Палитра — тёплая, продуктовая:
+// свет звезды из иконки и три цвета шума из панели (коричневый · розовый · белый).
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const cv = document.getElementById('confetti'); if (!cv) return;
+  const x = cv.getContext('2d');
+  const dpr = Math.min(2, window.devicePixelRatio || 1);
+  function size() { cv.width = innerWidth * dpr; cv.height = innerHeight * dpr; x.setTransform(dpr,0,0,dpr,0,0); }
+  size(); addEventListener('resize', size);
+  const COLORS = ['#fff5e6','#ffd9a0','#ffb866','#ffb055','#c98c4c','#c28b9b','#e6e2dc'];
+  const P = [];
+  for (let i = 0; i < 130; i++) P.push({
+    x: Math.random() * innerWidth, y: -20 - Math.random() * 340,
+    w: 7 + Math.random() * 8, h: 3.5 + Math.random() * 5,
+    c: COLORS[(Math.random() * COLORS.length) | 0],
+    a: Math.random() * Math.PI * 2, spin: (Math.random() - 0.5) * 0.18,
+    vx: (Math.random() - 0.5) * 2.6, vy: 2.4 + Math.random() * 3.4,
+    o: 1, delay: Math.random() * 60,
+  });
+  let f = 0;
+  (function draw() {
+    x.clearRect(0, 0, innerWidth, innerHeight);
+    let alive = 0;
+    for (const p of P) {
+      if (f < p.delay) { alive++; continue; }
+      p.x += p.vx; p.y += p.vy; p.vy += 0.07; p.a += p.spin;
+      if (p.y > innerHeight * 0.8) p.o -= 0.032;
+      if (p.o <= 0) continue;
+      alive++;
+      x.save(); x.globalAlpha = Math.max(0, p.o);
+      x.translate(p.x, p.y); x.rotate(p.a);
+      x.fillStyle = p.c; x.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+      x.restore();
+    }
+    f++;
+    if (alive > 0 || f < 80) requestAnimationFrame(draw);
+    else { x.clearRect(0, 0, innerWidth, innerHeight); cv.remove(); }
+  })();
+})();
+
+// КАКОЙ РЕЖИМ ПОКАЗАТЬ (урок 3.2 в редакции 14.11, код урока). Правила от сильного к слабому:
+// 1) выбор человека — ссылка-переключатель внизу или адрес #pin / #usage: дальше страница сама не переключает;
+// 2) живой ответ расширения — раз в 1,5 с, пока вкладка видна, и при возврате на неё: закрепил, пока читал, —
+//    страница сама перешла к «как пользоваться» (канал открывает `externally_connectable` в манифесте 1.2.2);
+// 3) подсказка в адресе `?pinned=1|0` — что расширение увидело при установке;
+// 4) по умолчанию — «закрепи».
+// Расширение не отвечает (другой браузер, старая версия, отключено) — спрашивать перестаём совсем.
+(function () {
+  'use strict';
+
+  var STORE_EXTENSION_ID = 'miknhphoakphfhgjajhkalmpdnadkeic';   // id в Chrome Web Store
+  var POLL_INTERVAL_MS = 1500;
+
+  var params = new URLSearchParams(location.search);
+  // id из адреса (у дев-сборки он свой), иначе id из стора
+  var extensionId = /^[a-p]{32}$/.test(params.get('id') || '') ? params.get('id') : STORE_EXTENSION_ID;
+  var manual = false;      // человек выбрал режим сам
+  var reachable = true;    // расширение отвечает
+  var pollTimer = 0;
+
+  function setMode(mode) {
+    if (mode !== 'pin' && mode !== 'usage') return;
+    if (document.body.dataset.mode === mode) return;
+    document.body.dataset.mode = mode;
+    window.scrollTo(0, 0);   // новый режим читается сверху, а не с той высоты, где был прежний
+  }
+
+  function stopPolling() { clearInterval(pollTimer); pollTimer = 0; }
+
+  // Спросить расширение, стоит ли его значок на панели прямо сейчас.
+  function checkPinState() {
+    if (manual || !reachable) return;
+    var runtime = window.chrome && chrome.runtime;
+    // chrome.runtime есть на странице только благодаря externally_connectable
+    if (!runtime || typeof runtime.sendMessage !== 'function') { reachable = false; stopPolling(); return; }
+    runtime.sendMessage(extensionId, { type: 'getPinState' }, function (reply) {
+      if (runtime.lastError) { reachable = false; stopPolling(); return; }   // не стоит, отключено или старая версия
+      if (!manual && reply && typeof reply.isOnToolbar === 'boolean') {
+        setMode(reply.isOnToolbar ? 'usage' : 'pin');
+      }
+    });
+  }
+
+  // Старт: адрес #… > подсказка ?pinned > по умолчанию.
+  var hash = location.hash.slice(1);
+  if (hash === 'pin' || hash === 'usage') {
+    manual = true; setMode(hash);
+  } else {
+    setMode(params.get('pinned') === '1' ? 'usage' : 'pin');
+    checkPinState();
+    pollTimer = setInterval(function () {
+      if (document.visibilityState === 'visible') checkPinState();
+    }, POLL_INTERVAL_MS);
+  }
+
+  // Вернулся с панели браузера — переспросить сразу.
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') checkPinState();
+  });
+
+  // Ссылка-переключатель всегда сильнее автоматики.
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('[data-switch]');
+    if (!link) return;
+    e.preventDefault();
+    manual = true; stopPolling();
+    setMode(link.dataset.switch);
+    history.replaceState(null, '', '#' + link.dataset.switch);
+  });
+})();
+</script>
+</body>
+</html>

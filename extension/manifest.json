@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_appName__",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "__MSG_shortDesc__",
   "default_locale": "en",
   "minimum_chrome_version": "116",
@@ -28,5 +28,8 @@
   "action": {},
   "side_panel": {
     "default_path": "hearth.html"
+  },
+  "externally_connectable": {
+    "matches": ["https://panarini.github.io/focus-pages/*"]
   }
 }

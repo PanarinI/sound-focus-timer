@@ -262,7 +262,49 @@ chrome.windows.onFocusChanged.addListener(async (windowId) => {
 // уходит обратно в выдачу, и Google понижает продукт. У нас дверь в дом одна (иконка в тулбаре),
 // потому pin критичен. Страница открывается РОВНО один раз — только на первой установке.
 // chrome.tabs.create прав не требует (permission "tabs" нужен лишь для чтения url/title) — не просим лишнего.
+//
+// ДВА РЕЖИМА (1.2.2, урок 3.2 в редакции 14.11): с Chrome 153 браузер у части людей сам ставит новое
+// расширение на панель (опыт «Default pinning»), у части по-прежнему прячет под пазл. Значок под пазлом →
+// страница учит закреплять; значок уже на панели → показывает, как пользоваться. Режим страница выбирает
+// сама: по подсказке в адресе и по живому ответу расширения (ниже). Новых разрешений это не требует.
 const WELCOME_URL = 'https://panarini.github.io/focus-pages/welcome/';
+// Chrome может закрепить значок через миг после установки — спрашиваем не сразу, а через секунду.
+// Даже если он не успел, страница переспросит сама и поправится.
+const PIN_CHECK_DELAY_MS = 1000;
+
+// true / false — Chrome знает, стоит ли значок на панели; null — API нет или он отказал.
+// chrome.action.getUserSettings есть с Chrome 91 (наш минимум — 116) и разрешений не требует.
+async function getPinnedState() {
+  try {
+    if (!chrome.action || typeof chrome.action.getUserSettings !== 'function') return null;
+    const s = await chrome.action.getUserSettings();
+    return Boolean(s && s.isOnToolbar);
+  } catch (e) {
+    return null;
+  }
+}
+
+// ?pinned=1|0 — что расширение увидело при установке: первый кадр страницы сразу верный.
+// ?id= — id этой копии расширения: у дев-сборки он свой, поэтому страница не зашивает id стора намертво.
+async function openWelcome() {
+  await new Promise((r) => setTimeout(r, PIN_CHECK_DELAY_MS));
+  const url = new URL(WELCOME_URL);
+  const pinned = await getPinnedState();
+  if (pinned !== null) url.searchParams.set('pinned', pinned ? '1' : '0');
+  url.searchParams.set('id', chrome.runtime.id);
+  chrome.tabs.create({ url: url.toString() }).catch(() => {});
+}
+
+// Страница сама переспрашивает «значок на панели?» — раз в 1,5 с, пока её видно, и при возврате на вкладку:
+// человек закрепил значок, пока читал, — страница сама переходит к «как пользоваться». Писать сюда могут
+// только страницы из `externally_connectable` манифеста (focus-pages); другим расширениям канал закрыт
+// (`ids` не заданы). `return true` держит канал открытым до асинхронного ответа — без него страница
+// получила бы пустоту.
+chrome.runtime.onMessageExternal.addListener((msg, sender, reply) => {
+  if (!msg || msg.type !== 'getPinState') return false;
+  getPinnedState().then((pinned) => reply({ isOnToolbar: pinned }));
+  return true;
+});
 
 chrome.runtime.onInstalled.addListener((details) => {
   chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => {});
@@ -274,6 +316,6 @@ chrome.runtime.onInstalled.addListener((details) => {
     chrome.storage.local.set({ 'hearth.mix': v });
   });
   if (details.reason === chrome.runtime.OnInstalledReason.INSTALL && !IS_DEV) {
-    chrome.tabs.create({ url: WELCOME_URL });
+    openWelcome();
   }
 });
