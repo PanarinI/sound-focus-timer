@@ -59,8 +59,9 @@
        Umami — остаётся живым, но только глазами: API-ключи у них с тарифа PRO.
        ТОЛЬКО НА ЖИВОМ АДРЕСЕ (14.11): черновик на localhost не должен считать себя установкой —
        иначе каждая перезагрузка стенда падает в счёт `install_welcome`.
-       `pinned` (14.11, предложение — ждёт слова автора и пользовательского измерения в GA4): что расширение
-       увидело при установке — 1 значок уже на панели, 0 под пазлом, none — старая версия без подсказки. -->
+       `pinned` (14.11, принято автором 15.11): что расширение увидело при установке — 1 значок уже на панели,
+       0 под пазлом, none — старая версия без подсказки. В отчётах GA4 видно только после того, как в ресурсе
+       заведено пользовательское измерение `pinned` (задним числом не восстанавливается — урок `stars`). -->
   <script>
     var LIVE = location.hostname === 'panarini.github.io';
     window.dataLayer = window.dataLayer || [];
@@ -211,8 +212,9 @@
        называет лучшими, устроены одинаково: кадр «как закрепить» + кадр «как открыть». В
        study-timer.pro нумерация прямо продолжается на (3): «Open the extension (3) on any page».
        Без него человек закрепил иконку и не знает, что дальше — та же дыра, что дала голос 2.
-       ПАНЕЛЬ (27.09) — не рисунок, а снимок настоящей панели 1.2 (`panel.png` =
-       sound-focus-timer/lab/graphics/shots/variants/panel-dom--base.png, build-raw-shots.py panel dom).
+       ПАНЕЛЬ (27.09) — не рисунок, а снимок настоящей панели. До 15.11 — 1.2.0 (`panel.png` =
+       lab/graphics/shots/variants/panel-dom--base.png); с 15.11 (слово автора) — 1.2.1, тот же снимок, что в
+       первом кадре режима «как пользоваться» (`panel-pokoj.png`: первое открытие, open office, 15′; snimki.py).
        Окно поднято до 552, чтобы панель стояла целиком: её узнают по шкале, Start и ручкам. -->
   <svg class="shot" viewBox="-8 -36 1024 640" xmlns="http://www.w3.org/2000/svg" role="img"
        aria-label="Click the pinned Brown Noise Generator icon to open the side panel">
@@ -243,7 +245,7 @@
       <!-- БОКОВАЯ ПАНЕЛЬ: то, ради чего всё -->
       <g clip-path="url(#win2)">
         <rect x="716" y="108" width="268" height="460" fill="#0d0c0b"/>
-        <image href="panel.png" x="716" y="108" width="268" height="460" preserveAspectRatio="xMidYMin slice"/>
+        <image href="panel-pokoj.png" x="716" y="108" width="268" height="460" preserveAspectRatio="xMidYMin slice"/>
       </g>
       <rect x="716" y="108" width="1.4" height="460" fill="#dadce0"/>
     </g>
@@ -266,7 +268,7 @@
        Образец — tubeblock.app/welcome/#usage (компания ведущего буткемпа): «… is ready», шаги с номерами, внизу
        «не видите значок? — как закрепить». Язык кадров — тот же, что в режиме «закрепи»: макет окна, красные номера
        прямо на цели. Снимки — настоящая панель 1.2.1 (`snimki.py` рядом: panel-pokoj.png — первое открытие,
-       open office, 15′; panel-vremya.png — шкала на 25). ЧЕРНОВИК: шаги и слова ждут слова автора. -->
+       open office, 15′; panel-vremya.png — шкала на 25). Шаги и слова приняты автором 15.11 после живого теста. -->
   <main class="mode mode-usage">
   <h1>
     <svg width="42" height="42" viewBox="0 0 128 128" aria-hidden="true"><use href="#ext-icon"/></svg>

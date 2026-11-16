@@ -500,3 +500,18 @@ Enter — отправить, Shift+Enter — новая строка.
 панелью — только звезда, звёздный поток и кнопки; навёл — за 0,45 с проступает шкала (раскручивается к нулю) и минуты. В покое
 циферблат на месте (по нему заводят). Ушла мышь — циферблата нет, значит, и случайно задеть шкалу в полёте нельзя.
 ![](kadry/2026-10-05-ciferblat-po-hoveru.jpg)
+
+## 2026-11-15 — Welcome в двух режимах: «закрепи» и «как пользоваться»
+**Слово автора:** «Да, отлично работает. Давай прод.» — после живого теста: в чистом Chrome закреплял и откреплял значок,
+страница переключалась за 0,6–0,8 с (DECISIONS 15.11).
+- **«Закрепи»** — страница 27.09 как есть; в третьем кадре вместо панели 1.2.0 (большая звезда, старая шкала) — снимок 1.2.1:
+  звезда 44 px, заводная шкала, open office, 15′. Внизу — «Already pinned? See how to use it».
+- **«Как пользоваться»** — «Brown Noise Generator is ready» · «It’s already on your toolbar. Click it (1) to open the panel» —
+  кадр браузера с открытой панелью · «Pick a room (2), set the time (3), and press Start (4)» — настоящая панель крупно,
+  кольца на списке комнат, шкале (на 25) и Start · «Close the panel whenever you like — the sound keeps playing.» Внизу —
+  «Don’t see the icon on your toolbar? Show how to pin it».
+- Целью шага стала кнопка Start, а не звезда: в покое звезда 44 px — мелкая цель; Start появился 02.09 ровно поэтому.
+![](kadry/2026-11-15-welcome-zakrepi.jpg)
+![](kadry/2026-11-15-welcome-kak-polzovatsya.jpg)
+Стенд — `lab/stend-welcome-2026-11-14/` (снимки панели — `snimki.py`; кадры — `proverka/kadr.mjs`; чистое окно для теста —
+`proverka/okno.mjs`).
