@@ -71,7 +71,7 @@ class RemoteEngine {
   // ---- контракт AudioEngine ----
   turnOn() { this._send('turnOn'); }
   turnOff() { this._send('turnOff'); }
-  startSession(d) { this._send('startSession', { duration: d }); }
+  startSession(d, countAt) { this._send('startSession', { duration: d, countAt }); }  // countAt — когда рейс в счёт (16.11)
   pause() { this._send('pause'); }
   resume() { this._send('resume'); }
   endSession() { this._send('endSession'); }

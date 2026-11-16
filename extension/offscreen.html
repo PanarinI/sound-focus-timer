@@ -7,9 +7,10 @@
   <!-- Кэш-бустер обязателен и здесь: offscreen — настоящий дом звука, и без метки он мог играть
        закэшированный движок, пока панель уже грузила новый (поймано автором 08-24: первая посадка
        после пересборки прозвучала по-старому). Метку `?b=` бампать вместе с hearth.html. -->
-  <script src="track.js?b=55"></script>
-  <script src="engine.js?b=55"></script>
-  <script src="tone.js?b=55"></script>
-  <script src="offscreen.js?b=55"></script>
+  <!-- track.js здесь не подключается с 1.2.3: в этом документе он молчал (нет getManifest и storage);
+       события дома звука уходят через фон — см. offscreen.js -->
+  <script src="engine.js?b=56"></script>
+  <script src="tone.js?b=56"></script>
+  <script src="offscreen.js?b=56"></script>
 </body>
 </html>

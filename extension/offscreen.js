@@ -4,21 +4,38 @@
 
 let lastState = null;
 
+// В этом документе из chrome.* есть только runtime, и тот без getManifest; chrome.storage нет вовсе (зонд
+// lab/stend-ocenka-2026-11-16/proverka/zond.mjs, 16.11). Поэтому счётчик и запись идут через фон: он видит всё.
+// До 1.2.3 track() звался прямо отсюда и молчал у всех — счёл себя дев-сборкой, не прочитав манифест, — и в GA4
+// за 60 дней не дошло ни одного конца рейса `arrived`/`finished`.
+const toBg = (m) => chrome.runtime.sendMessage(Object.assign({ target: 'bg' }, m)).catch(() => {});
+
+// СЧЁТ РЕЙСОВ ДЛЯ ПРОСЬБЫ ОБ ОЦЕНКЕ (слово автора 16.11). Рейс засчитан, как только звук пронёс человека countAt
+// секунд (панель шлёт 5 «минут»: в fast — 5 с) — любой длины, включая ∞, чем бы рейс ни кончился. Пауза в счёт не
+// идёт: движок после паузы сдвигает старт. Смена длины на ходу (Правило 3) — тот же рейс, второй раз не считается.
+const FLYING = ['собирание', 'ткань', 'рассвет'];
+let countAt = 300, counted = true;                   // до первого взлёта считать нечего
+const flownSec = () => (engine.sessionStart ? performance.now() / 1000 - engine.sessionStart : 0);
+
 const engine = new AudioEngine((state) => {
   lastState = state;
+  if (!counted && FLYING.includes(engine.phase) && flownSec() >= countAt) {
+    counted = true;
+    toBg({ type: 'flightCounted' });
+  }
   // КОНЕЦ РЕЙСА — только отсюда. В панели событие рождается в render(), а панель к этому моменту
   // обычно закрыта (см. строкой ниже: «слушать некому»). Повесив там, мы потеряли бы ровно те
   // рейсы, ради которых продукт и сделан: закрыл панель и работал.
-  if (state.justEnded && typeof track === 'function') {
+  if (state.justEnded) {
     const dawn = engine.DAWN || 0;
-    const el = engine.sessionStart ? (performance.now() / 1000 - engine.sessionStart) : 0;
+    const el = flownSec();
     const how = engine.phase === 'рассвет' ? 'arrived' : 'finished';
     const ordered = Math.max(0, (engine.sessionDur || 0) - dawn) / 60;
-    track('flight_end', {
+    toBg({ type: 'track', name: 'flight_end', params: {
       how,
       min: +Math.max(0, (how === 'arrived' ? el - dawn : el) / 60).toFixed(1),
       len: ordered > 1000 ? 'inf' : Math.round(ordered),
-    });
+    } });
   }
   // панель может быть закрыта — тогда слушать некому, и это нормально
   chrome.runtime.sendMessage({ target: 'panel', type: 'state', state, mirror: snapshot() }).catch(() => {});
@@ -44,7 +61,11 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   switch (msg.type) {
     case 'turnOn': engine.turnOn(); break;
     case 'turnOff': engine.turnOff(); break;
-    case 'startSession': engine.startSession(msg.duration); break;
+    case 'startSession':
+      // новый рейс — взлёт из покоя, из «ручья» или после конца; из рейса и паузы — перезапуск того же (Правило 3)
+      if (!['собирание', 'ткань', 'ниточка'].includes(engine.phase)) counted = false;
+      if (msg.countAt > 0) countAt = msg.countAt;
+      engine.startSession(msg.duration); break;
     case 'pause': engine.pause(); break;
     case 'resume': engine.resume(); break;
     case 'endSession': engine.endSession(); break;

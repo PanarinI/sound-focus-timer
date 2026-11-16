@@ -385,26 +385,59 @@ function dropEmber(focusSec) {
   const min = Math.max(0.2, focusSec / unit());
   embers.push({ ts: Date.now(), min: +min.toFixed(1) });
   localStorage.setItem('hearth.embers', JSON.stringify(embers));
-  // зачтённый рейс (≥ ASK_MIN_MIN «минуты») — топливо просьбы об оценке; тычок «послушать» не считается
-  if (min >= ASK_MIN_MIN) {
+  // рейс от «минуты» — в счёт прожитого (метки «не первое открытие» и «летал до 1.2.3»). Просьбу об оценке он больше
+  // НЕ взводит: сюда доходят лишь рейсы, кончившиеся при открытой панели, а люди её закрывают — счёт ведёт дом звука (16.11)
+  if (min >= 1) {
     localStorage.setItem('hearth.sessions', String(+(localStorage.getItem('hearth.sessions') || 0) + 1));
-    if (askReady()) askArmed = true;
-    setTimeout(syncAsk, 0);
   }
 }
 
-// ---------- ПРОСЬБА ОБ ОЦЕНКЕ (реш. автора 07-22 · паттерн ExportGPT 08-09 · две громкости 08-10) ----------
-// Тихая плашка в углу — дверь с первого открытия; карточка поверх звезды — просьба с третьего рейса.
-// ≥4★ → отзывы CWS · 1–3★ → страница «What went wrong?» (?stars=N; ответ — в форму удаления, колонка Source «rating N★»,
-// одна таблица — слово автора 28.09). Первый ответ закрывает просьбу навсегда.
-const ASK_AFTER = 3, BAR_AFTER = 0, ASK_MIN_MIN = 1;
+// ---------- ПРОСЬБА ОБ ОЦЕНКЕ (реш. автора 07-22 · паттерн ExportGPT 08-09 · две громкости 08-10 · счёт в доме звука 16.11) ----------
+// Тихая плашка в углу — дверь с первого открытия (в покое). Карточка поверх звезды — со 2-го рейса, где звук пронёс
+// человека COUNT_MIN «минут» (любая длина, включая ∞, чем бы рейс ни кончился), и снова после каждого следующего, пока
+// человек не ответит. Рейсы считает дом звука (offscreen.js → фон, ключ `rate` в storage.local): он живёт весь рейс,
+// а панель к концу обычно закрыта — до 1.2.3 просьба взводилась здесь и до людей почти не доходила (STATE 16.11).
+// Встаёт только в тихую минуту — в покое или на паузе; пока звук идёт — никогда. «Not now» / клик мимо — до
+// следующего засчитанного рейса, взлёта при этом нет (один клик на пути, как у ExportGPT; замка нет — правило стора
+// запрещает оценки «за что-то»). ≥4★ → отзывы CWS · 1–3★ → «What went wrong?» (?stars=N; ответ — в форму удаления,
+// колонка Source «rating N★», одна таблица — слово автора 28.09). Первый ответ закрывает просьбу навсегда.
+// Кто летал до 1.2.3 (слово автора 16.11): при первом открытии новой версии — одна просьба сразу.
+const COUNT_MIN = 5;
 const RATE_URL = 'https://chromewebstore.google.com/detail/minimalist-timer/miknhphoakphfhgjajhkalmpdnadkeic/reviews';
 const FEEDBACK_URL = 'https://panarini.github.io/focus-pages/feedback/';  // до 28.09 — сама Google-форма автора (07-22)
-const flights = () => +(localStorage.getItem('hearth.sessions') || 0);
-const rateOpen = () => !!(RATE_URL || FEEDBACK_URL) && !localStorage.getItem('hearth.rated');
-const askReady = () => rateOpen() && flights() >= ASK_AFTER;
-const barReady = () => rateOpen() && flights() >= BAR_AFTER;
-let askArmed = false, askCard = null, askVeil = null;
+const RATE_KEY = 'rate';
+const HAS_STORE = typeof chrome !== 'undefined' && !!(chrome.storage && chrome.storage.local);  // на file://-стенде нет
+const freshRate = (r) => Object.assign({ flights: 0, pending: false, rated: false }, r || {});
+let rate = freshRate();
+const rateOpen = () => !!(RATE_URL || FEEDBACK_URL) && !rate.rated && !localStorage.getItem('hearth.rated');
+const quiet = (p) => p === 'off' || p === 'ниточка';  // покой или пауза: звук молчит
+let askCard = null, askVeil = null, askUp = false, soundKnown = false;
+function rateEdit(fn) {                                // прочитать → поправить → записать: фон пишет тот же ключ
+  fn(rate); syncAsk();
+  if (!HAS_STORE) return;
+  chrome.storage.local.get(RATE_KEY, (o) => {
+    const r = freshRate(o && o[RATE_KEY]); fn(r); rate = r;
+    chrome.storage.local.set({ [RATE_KEY]: r }); syncAsk();
+  });
+}
+const flewBefore = () => localStorage.getItem(FLOWN_KEY) === '1'
+  || +(localStorage.getItem('hearth.sessions') || 0) > 0 || embers.length > 0;
+function rateLoad() {
+  if (!HAS_STORE) return;
+  chrome.storage.local.get(RATE_KEY, (o) => {
+    const r = freshRate(o && o[RATE_KEY]);
+    if (!r.moved) {                                    // первое открытие 1.2.3 — перенос из прежних версий, один раз
+      r.moved = true;
+      if (localStorage.getItem('hearth.rated')) r.rated = true;
+      else if (flewBefore()) { r.flights = Math.max(r.flights, 1); r.pending = true; }
+      chrome.storage.local.set({ [RATE_KEY]: r });
+    }
+    rate = r; syncAsk();
+  });
+  chrome.storage.onChanged.addListener((ch, area) => {
+    if (area === 'local' && ch[RATE_KEY] && ch[RATE_KEY].newValue) { rate = freshRate(ch[RATE_KEY].newValue); syncAsk(); }
+  });
+}
 
 function makeStars(host) {
   for (let n = 1; n <= 5; n++) {
@@ -421,8 +454,7 @@ function answerRate(n) {
   const url = n >= 4 ? (RATE_URL || FEEDBACK_URL) : (FEEDBACK_URL ? FEEDBACK_URL + '?stars=' + n : RATE_URL);
   localStorage.setItem('hearth.rated', '1');
   T('rate_answer', { stars: n });
-  askArmed = false;
-  syncAsk();
+  rateEdit((r) => { r.rated = true; r.pending = false; });
   if (url) window.open(url, '_blank');
 }
 makeStars(el.rstars);
@@ -438,17 +470,22 @@ function buildAsk() {
   askCard.querySelector('.later').addEventListener('click', dismissAsk);
   el.panel.append(askVeil, askCard);                   // внутри поля: вуаль ниже органов управления (z 3 < 4)
 }
-function dismissAsk() { askArmed = false; syncAsk(); }
-function syncAsk(phase) {                              // одна просьба на экране, и только в покое
-  const rest = (phase || phaseNow()) === 'off';
-  const up = !!(askArmed && rest && askReady());
+function dismissAsk() { rateEdit((r) => { r.pending = false; }); }
+function syncAsk(phase) {                              // одна просьба на экране, и только в тихую минуту
+  const p = phase || phaseNow();
+  // soundKnown: пока дом звука не прислал настоящую фазу, панель считает себя «в покое» — без этой проверки
+  // карточка мигала бы поверх уже идущего рейса и засчитывалась показанной
+  const up = !!(rate.pending && rateOpen() && quiet(p) && soundKnown);
   if (up && !askCard) buildAsk();
   if (askCard) {
     askCard.style.display = up ? 'flex' : 'none';
     askVeil.style.display = up ? 'block' : 'none';
   }
-  el.ratebar.hidden = !(rest && barReady() && !up);
+  if (up && !askUp) T('rate_shown');                   // один раз на каждое появление
+  askUp = up;
+  el.ratebar.hidden = !(p === 'off' && rateOpen() && !up);
 }
+rateLoad();
 
 // ---------- РЕЙС ----------
 let sleepTimer = 0, pendingEmber = null;
@@ -460,13 +497,13 @@ function start() {
   localStorage.setItem(FLOWN_KEY, '1');
   T('flight_start', { len: infinite ? 'inf' : SCALE[idx] });
   engine.turnOn();
-  engine.startSession(sessionLen());
+  engine.startSession(sessionLen(), COUNT_MIN * unit());
   pokazat('собирание');
 }
 // Правило 3: смена длины или режима на ходу — отсчёт заново с полной длины (без «продолжим с середины»).
 function perezapusk() {
   clearTimeout(sleepTimer);
-  engine.startSession(sessionLen());
+  engine.startSession(sessionLen(), COUNT_MIN * unit());
   pokazat('собирание');
 }
 function quench() {                                    // Finish: быстрый выдох, рейс закрыт целиком
@@ -496,6 +533,7 @@ function pauza() {                                     // тап по звезд
   pokazat('ниточка');
 }
 function tapStar() {
+  if (askUp) { dismissAsk(); return; }                // просьба на пути: первый клик — «не сейчас» (как у ExportGPT)
   const p = phaseNow();
   if (p === 'off' || p === 'ручей') start();
   else if (p === 'собирание' || p === 'ткань') pauza();
@@ -504,6 +542,8 @@ function tapStar() {
 }
 el.star.addEventListener('click', tapStar);
 el.start.addEventListener('click', () => {
+  // кнопка лежит выше вуали — без этой строки взлёт шёл мимо просьбы (так было до 1.2.3)
+  if (askUp) { dismissAsk(); return; }
   const p = phaseNow();
   if (inSession(p)) quench();
   else { if (fading(p)) killNow(); start(); }
@@ -678,6 +718,7 @@ el.droplist.addEventListener('click', (e) => {
 let lastPhase = null;
 function render(st) {
   const phase = st ? st.phase : 'off';
+  if (st) soundKnown = true;                           // просьба ждёт настоящую фазу от дома звука
   syncAsk(phase);
   if (st && st.justEnded) {                            // конец (рассвет ИЛИ выдох догорел) → слепок + тишина
     const focus = pendingEmber != null ? pendingEmber : Math.max(0, elapsedS() - engine.DAWN);

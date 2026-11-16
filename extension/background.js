@@ -13,6 +13,24 @@
 
 chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => {});
 
+// Шина событий — и здесь (с 1.2.3): дом звука шлёт свои события через фон, потому что в offscreen-документе
+// track.js молчит (нет getManifest и storage). Под try, как прежде icon.js: без файла пропадут лишь счётчики.
+try { importScripts('track.js'); } catch (e) { /* без шины — без счётчиков; звук и рейс живы */ }
+
+// ---------- ПРОСЬБА ОБ ОЦЕНКЕ: СЧЁТ РЕЙСОВ (16.11, слово автора) ----------
+// Дом звука сообщает о каждом рейсе, где звук пронёс 5 минут. Со 2-го такого рейса просьба ждёт (`rate.pending`)
+// и встаёт в панели в тихую минуту — в покое или на паузе (hearth.js). После ответа (`rate.rated`) не считаем.
+const ASK_FROM = 2;
+function countFlight() {
+  chrome.storage.local.get('rate', (o) => {
+    const r = Object.assign({ flights: 0, pending: false, rated: false }, o && o.rate);
+    if (r.rated) return;
+    r.flights += 1;
+    if (r.flights >= ASK_FROM) r.pending = true;
+    chrome.storage.local.set({ rate: r });
+  });
+}
+
 // Прощальная страница (канон 3.2:51 — причины удаления собираем формой; паттерн ExportGPT).
 // Дев-пакет несёт `version_name: <в>-dev` (см. lab/build-zip.sh). По этой метке он НЕ трогает ни
 // welcome, ни uninstall-страницу: иначе каждая `load unpacked` автора открывала welcome и умами
@@ -40,6 +58,12 @@ async function ensureOffscreen() {
 
 chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   if (!msg || msg.target !== 'bg') return;
+
+  if (msg.type === 'track') {                       // событие дома звука (offscreen.js) → GA4
+    try { if (typeof track === 'function') track(msg.name, msg.params); } catch (e) { /* счётчик не роняет фон */ }
+    return;
+  }
+  if (msg.type === 'flightCounted') { countFlight(); return; }
 
   if (msg.type === 'ensureOffscreen') {
     ensureOffscreen().then(() => reply({ ok: true })).catch((e) => reply({ ok: false, error: String(e) }));
