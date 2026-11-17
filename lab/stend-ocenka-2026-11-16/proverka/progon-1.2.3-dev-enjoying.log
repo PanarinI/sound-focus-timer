@@ -1,0 +1,69 @@
+сборка: unpacked-1.2.3-dev
+
+A · новый человек (чистый профиль)
+  ✓ панель узнала фазу от дома звука
+  ✓ перенос отработал: не летал → просьбы нет — {"flights":0,"moved":true,"pending":false,"rated":false}
+  ✓ карточки нет
+  ✓ плашка «Rate us» в углу видна в покое
+  ✓ звезда → взлёт — собирание
+  ✓ рейс 1 засчитан, как только звук пронёс 5 «минут» (ещё в полёте) — за 5.1 с
+  ✓ после 1-го рейса просьба не ждёт
+  ✓ рейс 1 долетел до конца
+  ✓ конец рейса ушёл в фон: flight_end · arrived — ["flight_end",{"how":"arrived","min":0.2,"len":0}]
+  ✓ карточки нет (рейс засчитан только один)
+  ✓ рейс 2 засчитан → просьба ждёт — {"flights":2,"moved":true,"pending":true,"rated":false}
+  ✓ пока звук идёт — карточки нет — ткань
+  ✓ и rate_shown не отправлен
+  ✓ пауза → карточка встала — ниточка
+  ✓ rate_shown — ровно один — ["panel_open","flight_start","flight_start","pause","rate_shown"]
+    кадр: kadry/2026-11-16-kartochka-na-pauze--1.2.3-enjoying.png
+  ✓ карточка закрывает звезду (под пальцем — карточка) — askcard
+  ✓ «Not now» → карточки нет, просьба снята — {"flights":2,"moved":true,"pending":false,"rated":false}
+  ✓ «Not now» не продолжает рейс — пауза стоит — ниточка
+  ✓ звезда → рейс продолжается — ткань
+  ✓ Finish → flight_end · finished ушёл в фон — ["flight_end",{"how":"finished","min":0.1,"len":0}]
+  ✓ после «Not now» в покое карточки нет
+  ✓ ∞ → взлёт
+  ✓ рейс ∞ засчитан по 5 «минутам» → просьба снова ждёт — {"flights":3,"moved":true,"pending":true,"rated":false}
+  ✓ в рейсе ∞ карточки нет
+  ✓ Finish ∞ → покой → карточка встала
+  ✓ rate_shown — второй
+  ✓ плашки в углу нет, пока карточка на экране
+    кадр: kadry/2026-11-16-kartochka-v-pokoe--1.2.3-enjoying.png
+  ✓ конец ∞ ушёл в фон: finished · len inf — ["flight_end",{"how":"finished","min":0.1,"len":"inf"}]
+  ✓ 5★ → rate_answer { stars: 5 } — [["rate_answer",{"stars":5}]]
+  ✓ 5★ → открылась страница отзывов CWS — ["https://chromewebstore.google.com/detail/minimalist-timer/miknhphoakphfhgjajhkalmpdnadkeic/reviews"]
+  ✓ после ответа: rated, просьба снята — {"flights":3,"moved":true,"pending":false,"rated":true}
+  ✓ карточки и плашки больше нет
+  ✓ после ответа рейсы не считаются — {"flights":3,"moved":true,"pending":false,"rated":true}
+  ✓ и карточка не встаёт
+  ✓ запись фона жива весь прогон (фон не перезапускался)
+  ✓ A: ни одной ошибки JS (панель, фон, дом звука)
+
+B · летал до 1.2.3 (в профиле hearth.flown = 1)
+  ✓ первое открытие новой версии → карточка сразу — {"flights":1,"moved":true,"pending":true,"rated":false}
+  ✓ перенос: flights 1, просьба ждёт — {"flights":1,"moved":true,"pending":true,"rated":false}
+  ✓ rate_shown — один
+    кадр: kadry/2026-11-16-staryj-letun--1.2.3-enjoying.png
+  ✓ Start при карточке лежит выше вуали (под пальцем — Start) — start
+  ✓ первый клик по Start → «не сейчас», а не взлёт — off · {"flights":1,"moved":true,"pending":false,"rated":false}
+  ✓ новое открытие: карточки нет, перенос второй раз не идёт — {"flights":1,"moved":true,"pending":false,"rated":false}
+  ✓ следующий рейс (2-й по счёту) → просьба ждёт — {"flights":2,"moved":true,"pending":true,"rated":false}
+  ✓ панель открыта посреди рейса: карточка не мигнула — ткань · rate_shown 0
+  ✓ пауза → карточка
+  ✓ есть место, где клик падает на вуаль — {"x":10,"y":360}
+  ✓ клик мимо карточки → «не сейчас», пауза стоит — ниточка · {"flights":2,"moved":true,"pending":false,"rated":false}
+  ✓ Finish → покой без карточки
+  ✓ B: ни одной ошибки JS
+
+C · летал и уже оценивал (hearth.rated = 1)
+  ✓ просьбы нет, плашки нет — {"flights":0,"moved":true,"pending":false,"rated":true}
+  ✓ перенос: rated, ничего не ждёт — {"flights":0,"moved":true,"pending":false,"rated":true}
+  ✓ C: ни одной ошибки JS
+
+D · открывал панель, но не летал (hearth.opened = 1)
+  ✓ просьбы нет, плашка в углу есть — {"flights":0,"moved":true,"pending":false,"rated":false}
+  ✓ перенос: flights 0, ничего не ждёт — {"flights":0,"moved":true,"pending":false,"rated":false}
+  ✓ D: ни одной ошибки JS
+
+✓ всё прошло: 55 проверок

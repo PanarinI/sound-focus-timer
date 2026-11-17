@@ -464,7 +464,9 @@ function buildAsk() {
   askVeil.addEventListener('pointerup', dismissAsk);   // клик в стороне = «не сейчас»: рейс НЕ поднимаем
   askCard = document.createElement('div');
   askCard.className = 'askcard';
-  askCard.innerHTML = '<span class="alab">How was the experience?</span><span class="astars"></span>'
+  // До 1.2.3 — «How was the experience?»: прошедшее время + «the experience» — фраза прощальных опросов, а карточка
+  // встречает человека посреди пользования (слово автора 17.11: «ощущение, что с ним прощаются»). Теперь — о звуке и сейчас.
+  askCard.innerHTML = '<span class="alab">Enjoying the sound?</span><span class="astars"></span>'
                     + '<span class="later">Not now</span>';
   makeStars(askCard.querySelector('.astars'));
   askCard.querySelector('.later').addEventListener('click', dismissAsk);

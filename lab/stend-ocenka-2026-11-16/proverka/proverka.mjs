@@ -20,6 +20,7 @@ import { fileURLToPath } from 'node:url';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const EXT = resolve(process.argv[2] || join(HERE, '../../../dist/unpacked-1.2.3-dev'));
 const KADRY = join(HERE, '../kadry');
+const TAG = process.env.TAG || '1.2.3';                   // метка кадров: новый вариант = новое имя, старые не трогаем
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const RATE_URL = 'https://chromewebstore.google.com/detail/minimalist-timer/miknhphoakphfhgjajhkalmpdnadkeic/reviews';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -228,7 +229,7 @@ async function scenarioA() {
     await waitFor(() => P.cardUp(), 3000);
     check('пауза → карточка встала', (await P.phase()) === 'ниточка' && (await P.cardUp()), await P.phase());
     check('rate_shown — ровно один', (await P.count('rate_shown')) === 1, J(await P.sent()));
-    await P.shot('2026-11-16-kartochka-na-pauze--1.2.3.png');
+    await P.shot(`2026-11-16-kartochka-na-pauze--${TAG}.png`);
     check('карточка закрывает звезду (под пальцем — карточка)', (await P.hit('#star')) === 'askcard', String(await P.hit('#star')));
 
     await P.click('.askcard .later');
@@ -258,7 +259,7 @@ async function scenarioA() {
     check('Finish ∞ → покой → карточка встала', await P.cardUp());
     check('rate_shown — второй', (await P.count('rate_shown')) === 2);
     check('плашки в углу нет, пока карточка на экране', !(await P.barUp()));
-    await P.shot('2026-11-16-kartochka-v-pokoe--1.2.3.png');
+    await P.shot(`2026-11-16-kartochka-v-pokoe--${TAG}.png`);
     await sleep(600);
     s = await swSent();
     const end3 = (s || []).filter((x) => x[0] === 'flight_end')[2];
@@ -302,7 +303,7 @@ async function scenarioB() {
     check('первое открытие новой версии → карточка сразу', await P.cardUp(), J(r));
     check('перенос: flights 1, просьба ждёт', r && r.moved && r.flights === 1 && r.pending === true, J(r));
     check('rate_shown — один', (await P.count('rate_shown')) === 1);
-    await P.shot('2026-11-16-staryj-letun--1.2.3.png');
+    await P.shot(`2026-11-16-staryj-letun--${TAG}.png`);
 
     check('Start при карточке лежит выше вуали (под пальцем — Start)', (await P.hit('#start')) === 'start', await P.hit('#start'));
     await P.click('#start');

@@ -20,6 +20,9 @@ import { fileURLToPath } from 'node:url';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
 const NOVYJ = args.includes('--novyj');
+// --samoproverka — прогон без автора: безголовый Chrome, панель открывается вкладкой (дважды — закрыть и открыть
+// снова), 14 с — и конец. Проверяет само окно: перехват fast на старте, перенос «летал», карточку, что ничего не висит.
+const SAMO = args.includes('--samoproverka');
 const EXT = resolve(args.find((a) => !a.startsWith('--')) || join(HERE, '../../../dist/unpacked-1.2.3-dev'));
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const BLOCK = ['www.googletagmanager.com', '*.googletagmanager.com', '*.google-analytics.com', 'analytics.google.com',
@@ -31,7 +34,7 @@ const now = () => { const d = new Date(); return `${d.toTimeString().slice(0, 8)
 const log = (s) => console.log(`${now()}  ${s}`);
 
 const prof = mkdtempSync(join(tmpdir(), 'ocenka-okno-'));
-const ch = spawn(CHROME, [`--user-data-dir=${prof}`, '--no-first-run', '--no-default-browser-check',
+const ch = spawn(CHROME, [...(SAMO ? ['--headless=new'] : []), `--user-data-dir=${prof}`, '--no-first-run', '--no-default-browser-check',
   '--disable-search-engine-choice-screen', '--use-mock-keychain', '--window-size=1280,900',
   `--host-resolver-rules=${BLOCK}`, '--remote-debugging-pipe', '--enable-unsafe-extension-debugging', 'about:blank'],
   { stdio: ['ignore', 'ignore', 'ignore', 'pipe', 'pipe'] });
@@ -60,9 +63,12 @@ const FAST = `(() => {
 })();`;
 async function onAttached(p) {
   const sid = p.sessionId;
+  if (process.env.OKNO_DEBUG) log(`[attach] ${p.targetInfo.type} ${p.targetInfo.url} · ждёт: ${p.waitingForDebugger}`);
   try {
     if (['page', 'other', 'iframe'].includes(p.targetInfo.type)) {
-      await send('Page.addScriptToEvaluateOnNewDocument', { source: FAST }, sid, 2000);
+      await send('Page.enable', {}, sid, 2000);
+      const r = await send('Page.addScriptToEvaluateOnNewDocument', { source: FAST }, sid, 2000);
+      if (process.env.OKNO_DEBUG) log(`[inject] ${p.targetInfo.url} → ${JSON.stringify(r.result || r.error)}`);
     }
   } catch (e) { /* не страница — пропускаем */ }
   if (p.waitingForDebugger) await send('Runtime.runIfWaitingForDebugger', {}, sid, 2000);
@@ -155,6 +161,18 @@ async function main() {
 
   let panel = null, panelTarget = null, st = {}, lastRate, ready = false;
   console.log('ГОТОВО — окно ждёт автора');
+  if (SAMO) {                                       // «автор» открывает панель, закрывает и открывает снова
+    (async () => {
+      const url = `chrome-extension://${id}/hearth.html`;
+      let t = await send('Target.createTarget', { url });
+      await sleep(5000);
+      await send('Target.closeTarget', { targetId: t.result.targetId });
+      await sleep(1500);
+      t = await send('Target.createTarget', { url });
+      await sleep(5000);
+      stop('самопроверка окончена');
+    })();
+  }
   for (let tick = 0; ; tick++) {
     // панель: новый документ — подключиться и включить fast
     const r = await send('Target.getTargets');
@@ -165,7 +183,9 @@ async function main() {
         panel = a.result.sessionId; panelTarget = pt.targetId; st = {};
         await sleep(300);
         // страховка: если перехват на старте не сработал — включить сейчас (DAWN вернётся к 4 с со следующего тика)
-        const was = await ev(panel, `(() => { const w = el.fast.checked; if (!w) { el.fast.checked = true; el.fast.dispatchEvent(new Event('change')); } return w; })()`);
+        // мерило — сам движок: рассвет 4 с значит, что панель стартовала уже в fast (applyFast при загрузке)
+        const was = await ev(panel, `(() => { const w = el.fast.checked && engine.DAWN === 4;
+          if (!w) { el.fast.checked = true; el.fast.dispatchEvent(new Event('change')); } return w; })()`);
         log(`панель открыта · быстрый режим ${was ? 'включён на старте' : 'включён после старта (перехват не успел)'}`);
       }
     } else if (!pt && panelTarget) {
@@ -185,7 +205,7 @@ async function main() {
     const rr = await rate();
     if (rr !== undefined && rr !== lastRate) {
       const a = lastRate ? JSON.parse(lastRate) : null, b = JSON.parse(rr);
-      if (b && (!a || b.flights !== a.flights)) log(`рейс засчитан — по счёту ${b.flights}`);
+      if (b && a && b.flights !== a.flights) log(`рейс засчитан — по счёту ${b.flights}`);
       if (b && a && b.pending && !a.pending) log('просьба ждёт тихой минуты');
       if (b && a && b.rated && !a.rated) log('оценка поставлена — просьба закрыта навсегда');
       if (b && a && !b.pending && a.pending && !b.rated) log('«не сейчас» — до следующего засчитанного рейса');
